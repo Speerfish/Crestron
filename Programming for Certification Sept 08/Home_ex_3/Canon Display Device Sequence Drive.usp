@@ -1,0 +1,696 @@
+/***********************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+/***********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************************/
+#SYMBOL_NAME "Canon Display Device Sequencing Drive"
+// #HINT ""
+#DEFINE_CONSTANT	ciCLEAR			9999
+#DEFINE_CONSTANT	ciRAMPDONE	8888
+#DEFINE_CONSTANT	ciPOLL			999
+#DEFINE_CONSTANT	ciMAXCOUNTS	5
+
+// #CATEGORY "" 
+#CATEGORY "24" // TV/Video Projector
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+
+#HELP_BEGIN
+	This module will sequence commands to control any display device. There are
+several things that will need to be done in Simpl Windows.
+
+1)	Any unused analog input should be set to the CLEAR value.
+2)	When the ramping has reached the limit, the Ramping_Commands_Request input must
+		be set to the RAMPING DONE value.
+3)	Setting the Check_*_State input to 1 will cause the Send_* output to send a
+		polling request value to after each command for that command type.
+4)	Time_Out_Time is in hundredths of a seconds. For a 1 second time out use a value
+		of 100. If this is set to a value of 0, the module will not use a time out.
+		
+		
+		
+CONSTANT VALUES:
+
+CLEAR						9999d
+RAMPING_DONE		8888d
+POLL						999d
+
+
+#HELP_END
+/***********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************************/
+DIGITAL_INPUT	Check_Power_State, Check_Input_State, Check_Picture_Mute_State,
+							Check_Aspect_State, Check_Volume_Mute_State,
+							Check_Extra_Command_1_State, Check_Extra_Command_2_State,
+							Check_Extra_Command_3_State, End_of_Message_Received, Enable_Polling,
+							Start_Polling, Get_Lamp_Hours, Time_Out;
+ANALOG_INPUT	Power_Request, Power_Current,
+							Input_Request, Input_Current,
+							Picture_Mute_Request, Picture_Mute_Current,
+							Aspect_Request, Aspect_Current,
+							Volume_Mute_Request, Volume_Mute_Current,
+							Extra_Command_1_Request, Extra_Command_1_Current,
+							Extra_Command_2_Request, Extra_Command_2_Current,
+							Extra_Command_3_Request, Extra_Command_3_Current,
+							Ramping_Commands_Request, Other_Commands_Request,
+							Warm_Up_Wait_Time, Cool_Down_Wait_Time,
+							Number_of_Poll_Commands, Command_Delay_Time, Time_Out_Time;
+
+DIGITAL_OUTPUT	Timed_Out, Communicating;
+ANALOG_OUTPUT	Send_Power, Send_Input, Send_Picture_Mute, Send_Aspect,
+							Send_Volume_Mute, Send_Extra_Command_1, Send_Extra_Command_2,
+							Send_Extra_Command_3, Send_Ramping, Send_Other, Send_Poll;
+/***********************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+***********************************************************************************/
+INTEGER	iNextPoll, iWaiting, iMaxPoll, iOktoSend, iPowerReq, iInputReq, iAspectReq,
+				iPictureMuteReq, iVolumeMuteReq, iExtra1Req, iExtra2Req, iExtra3Req,
+				iTimeOutTime, iPowerCounter, iInputCounter, iPicMuteCounter, iAspectCounter,
+				iVolMuteCounter, iX1Counter, iX2Counter, iX3Counter;
+/***********************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+***********************************************************************************/
+Function fWait(INTEGER fiWaitTime)
+{
+	wait(fiWaitTime)
+	{
+		iWaiting = 0;
+	}
+}
+
+Function fTimeOut()
+{
+	if(iTimeOutTime > 0)
+	{
+		wait(iTimeOutTime, wTimeOut)
+		{
+			if(Enable_Polling = 1)
+			{
+				Communicating = 0;
+			}
+			Timed_Out = 1;
+		}
+	}
+}
+
+Function fSendNext()
+{
+	if(Command_Delay_Time > 0)
+	{
+		delay(Command_Delay_Time);
+	}
+	if((iPowerReq <> ciCLEAR) && (iPowerReq <> Power_Current) && (iPowerCounter < ciMAXCOUNTS))
+	{
+		if((Check_Power_State = 1) && (Send_Power <> ciPOLL))
+		{
+			Send_Power = ciPOLL;
+			call fTimeOut();
+			iOktoSend = 0;
+		}
+		else
+		{
+			Send_Power = iPowerReq;
+			iPowerCounter = iPowerCounter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			if(Check_Power_State = 0)
+			{
+				if((iPowerReq = 0) && (Cool_Down_Wait_Time > 0))
+				{
+					iWaiting = 1;
+					call fWait(Cool_Down_Wait_Time);
+				}
+				else if((iPowerReq = 1) && (Warm_Up_Wait_Time > 0))
+				{
+					iWaiting = 1;
+					call fWait(Warm_Up_Wait_Time);
+				}
+			}
+			if(iPowerCounter >= ciMAXCOUNTS)
+			{
+				iPowerReq = ciCLEAR;
+			}
+		}
+	}
+	else if((iInputReq <> ciCLEAR) && (iInputReq <> Input_Current) && (iInputCounter < ciMAXCOUNTS))
+	{
+		if((Check_Input_State = 1) && (Send_Input <> ciPOLL))
+		{
+			Send_Input = ciPOLL;
+			call fTimeOut();
+			iOktoSend = 0;
+		}
+		else
+		{
+			Send_Input = iInputReq;
+			iInputCounter = iInputCounter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Input = ciCLEAR;
+			if(iInputCounter >= ciMAXCOUNTS)
+			{
+				iInputReq = ciCLEAR;
+			}
+		}
+	}
+	else if((iPictureMuteReq <> ciCLEAR) && (iPictureMuteReq <> Picture_Mute_Current) && (iPicMuteCounter < ciMAXCOUNTS))
+	{
+		if((Check_Picture_Mute_State = 1) && (Send_Picture_Mute <> ciPOLL))
+		{
+			Send_Picture_Mute = ciPOLL;
+			call fTimeOut();
+			iOktoSend = 0;
+		}
+		else
+		{
+			Send_Picture_Mute = iPictureMuteReq;
+			iPicMuteCounter = iPicMuteCounter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Picture_Mute = ciCLEAR;
+			if(iPicMuteCounter >= ciMAXCOUNTS)
+			{
+				iPictureMuteReq = ciCLEAR;
+			}
+		}
+	}
+	else if((iAspectReq <> ciCLEAR) && (iAspectReq <> Aspect_Current) && (iAspectCounter < ciMAXCOUNTS))
+	{
+		if((Check_Aspect_State = 1) && (Send_Aspect <> ciPOLL))
+		{
+			Send_Aspect = ciPOLL;
+			call fTimeOut();
+			iOktoSend = 0;
+		}
+		else
+		{
+			Send_Aspect = iAspectReq;
+			iAspectCounter = iAspectCounter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Aspect = ciCLEAR;
+			if(iAspectCounter >= ciMAXCOUNTS)
+			{
+				iAspectReq = ciCLEAR;
+			}
+		}
+	}
+	else if((iVolumeMuteReq <> ciCLEAR) && (iVolumeMuteReq <> Volume_Mute_Current) && (iVolMuteCounter < ciMAXCOUNTS))
+	{
+		if((Check_Volume_Mute_State = 1) && (Send_Volume_Mute <> ciPOLL))
+		{
+			call fTimeOut();
+			Send_Volume_Mute = ciPOLL;
+		}
+		else
+		{
+			Send_Volume_Mute = iVolumeMuteReq;
+			iVolMuteCounter = iVolMuteCounter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Volume_Mute = ciCLEAR;
+			if(iVolMuteCounter >= ciMAXCOUNTS)
+			{
+				iVolumeMuteReq = ciCLEAR;
+			}
+		}
+	}
+	else if((iExtra1Req <> ciCLEAR) && (iExtra1Req <> Extra_Command_1_Current) && (iX1Counter < ciMAXCOUNTS))
+	{
+		if((Check_Extra_Command_1_State = 1) && (Send_Extra_Command_1 <> ciPOLL))
+		{
+			call fTimeOut();
+			Send_Extra_Command_1 = ciPOLL;
+		}
+		else
+		{
+			Send_Extra_Command_1 = iExtra1Req;
+			iX1Counter = iX1Counter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Extra_Command_1 = ciCLEAR;
+			if(iX1Counter >= ciMAXCOUNTS)
+			{
+				iExtra1Req = ciCLEAR;
+			}
+		}
+	}
+	else if((iExtra2Req <> ciCLEAR) && (iExtra2Req <> Extra_Command_2_Current) && (iX2Counter < ciMAXCOUNTS))
+	{
+		if((Check_Extra_Command_2_State = 1) && (Send_Extra_Command_2 <> ciPOLL))
+		{
+			call fTimeOut();
+			Send_Extra_Command_2 = ciPOLL;
+		}
+		else
+		{
+			Send_Extra_Command_2 = iExtra2Req;
+			iX2Counter = iX2Counter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Extra_Command_2 = ciCLEAR;
+			if(iX2Counter >= ciMAXCOUNTS)
+			{
+				iExtra2Req = ciCLEAR;
+			}
+		}
+	}
+	else if((iExtra3Req <> ciCLEAR) && (iExtra3Req <> Extra_Command_3_Current) && (iX3Counter < ciMAXCOUNTS))
+	{
+		if((Check_Extra_Command_3_State = 1) && (Send_Extra_Command_3 <> ciPOLL))
+		{
+			call fTimeOut();
+			Send_Extra_Command_3 = ciPOLL;
+		}
+		else
+		{
+			Send_Extra_Command_3 = iExtra3Req;
+			iX3Counter = iX3Counter + 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Extra_Command_3 = ciCLEAR;
+			if(iX3Counter >= ciMAXCOUNTS)
+			{
+				iExtra3Req = ciCLEAR;
+			}
+		}
+	}
+	else if((Ramping_Commands_Request <> ciCLEAR) && (Ramping_Commands_Request <> ciRAMPDONE))
+	{
+		Send_Ramping = Ramping_Commands_Request;
+		call fTimeOut();
+		iOktoSend = 0;
+		delay(1);
+		Send_Ramping = ciCLEAR;
+	}
+	else if(Other_Commands_Request <> ciCLEAR)
+	{
+		Send_Other = Other_Commands_Request;
+		call fTimeOut();
+		iOktoSend = 0;
+		delay(1);
+		Send_Other = ciCLEAR;
+	}
+	else if((Enable_Polling = 1) && (iNextPoll <> 0))
+	{
+		Send_Poll = iNextPoll;
+		call fTimeOut();
+		iOktoSend = 0;
+		iNextPoll = iNextPoll + 1;
+		if(iNextPoll > iMaxPoll)
+		{
+			iNextPoll = 0;
+		}
+		delay(1);
+		Send_Poll = ciCLEAR;
+	}
+	else
+	{
+		iOktoSend = 1;
+	}
+}
+/***********************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************************/
+PUSH End_of_Message_Received
+{
+	if(Enable_Polling = 1)
+	{
+		Communicating = 1;
+	}
+	cancelwait(wTimeOut);
+	call fSendNext();
+}
+
+PUSH Time_Out
+{
+	delay(1);
+	Timed_Out = 0;
+	call fSendNext();
+}
+
+PUSH Enable_Polling
+{
+	Communicating = 1;
+}
+
+RELEASE Enable_Polling
+{
+	Communicating = 0;
+}
+
+PUSH Start_Polling
+{
+	if((Enable_Polling = 1) && (iNextPoll = 0))
+	{
+		iNextPoll = 1;
+		if(iOktoSend = 1)
+		{
+			Send_Poll = iNextPoll;
+			call fTimeOut();
+			iOktoSend = 0;
+			iNextPoll = iNextPoll + 1;
+			if(iNextPoll > iMaxPoll)
+			{
+				iNextPoll = 0;
+			}
+			delay(1);
+			Send_Poll = ciCLEAR;
+		}
+	}
+}
+
+PUSH Get_Lamp_Hours
+{
+	if(iNextPoll = 0)
+	{
+		iNextPoll = iMaxPoll;
+		if(iOktoSend = 1)
+		{
+			Send_Poll = iNextPoll;
+			call fTimeOut();
+			iNextPoll = iNextPoll + 1;
+			if(iNextPoll > iMaxPoll)
+			{
+				iNextPoll = 0;
+			}
+			delay(1);
+			Send_Poll = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Power_Request
+{
+	iPowerReq = Power_Request;
+	if(iOktoSend = 1)
+	{
+		if((iPowerReq <> ciCLEAR) && (iPowerReq <> Power_Current))
+		{
+			Send_Power = iPowerReq;
+			iPowerCounter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			if(Check_Power_State = 0)
+			{
+				if((iPowerReq = 0) && (Cool_Down_Wait_Time > 0))
+				{
+					iWaiting = 1;
+					call fWait(Cool_Down_Wait_Time);
+				}
+				else if((iPowerReq = 1) && (Warm_Up_Wait_Time > 0))
+				{
+					iWaiting = 1;
+					call fWait(Warm_Up_Wait_Time);
+				}
+			}
+		}
+	}
+}
+
+CHANGE Power_Current
+{
+	if((iPowerReq <> ciCLEAR) && (iPowerReq = Power_Current))
+	{
+		iPowerReq = ciCLEAR;
+	}
+}
+
+CHANGE Input_Request
+{
+	iInputReq = Input_Request;
+	if(iOktoSend = 1)
+	{
+		if((iInputReq <> ciCLEAR) && (iInputReq <> Input_Current))
+		{
+			Send_Input = iInputReq;
+			iInputCounter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Input = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Input_Current
+{
+	if((iInputReq <> ciCLEAR) && (iInputReq = Input_Current))
+	{
+		iInputReq = ciCLEAR;
+	}
+}
+
+CHANGE Picture_Mute_Request
+{
+	iPictureMuteReq = Picture_Mute_Request;
+	if(iOktoSend = 1)
+	{
+		if((iPictureMuteReq <> ciCLEAR) && (iPictureMuteReq <> Picture_Mute_Current))
+		{
+			Send_Picture_Mute = iPictureMuteReq;
+			iPicMuteCounter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Picture_Mute = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Picture_Mute_Current
+{
+	if((iPictureMuteReq <> ciCLEAR) && (iPictureMuteReq = Picture_Mute_Current))
+	{
+		iPictureMuteReq = ciCLEAR;
+	}
+}
+
+CHANGE Aspect_Request
+{
+	iAspectReq = Aspect_Request;
+	if(iOktoSend = 1)
+	{
+		if((iAspectReq <> ciCLEAR) && (iAspectReq <> Aspect_Current))
+		{
+			Send_Aspect = iAspectReq;
+			iAspectCounter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Aspect = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Aspect_Current
+{
+	if((iAspectReq <> ciCLEAR) && (iAspectReq = Aspect_Current))
+	{
+		iAspectReq = ciCLEAR;
+	}
+}
+
+CHANGE Volume_Mute_Request
+{
+	iVolumeMuteReq = Volume_Mute_Request;
+	if(iOktoSend = 1)
+	{
+		if((iVolumeMuteReq <> ciCLEAR) && (iVolumeMuteReq <> Volume_Mute_Current))
+		{
+			Send_Volume_Mute = iVolumeMuteReq;
+			iVolMuteCounter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Volume_Mute = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Volume_Mute_Current
+{
+	if((iVolumeMuteReq <> ciCLEAR) && (iVolumeMuteReq = Volume_Mute_Current))
+	{
+		iVolumeMuteReq = ciCLEAR;
+	}
+}
+
+CHANGE Extra_Command_1_Request
+{
+	iExtra1Req = Extra_Command_1_Request;
+	if(iOktoSend = 1)
+	{
+		if((iExtra1Req <> ciCLEAR) && (iExtra1Req <> Extra_Command_1_Current))
+		{
+			Send_Extra_Command_1 = iExtra1Req;
+			iX1Counter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Extra_Command_1 = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Extra_Command_1_Current
+{
+	if((iExtra1Req <> ciCLEAR) && (iExtra1Req = Extra_Command_1_Current))
+	{
+		iExtra1Req = ciCLEAR;
+	}
+}
+
+CHANGE Extra_Command_2_Request
+{
+	iExtra2Req = Extra_Command_2_Request;
+	if(iOktoSend = 1)
+	{
+		if((iExtra2Req <> ciCLEAR) && (iExtra2Req <> Extra_Command_2_Current))
+		{
+			Send_Extra_Command_2 = iExtra2Req;
+			iX2Counter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Extra_Command_2 = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Extra_Command_2_Current
+{
+	if((iExtra2Req <> ciCLEAR) && (iExtra2Req = Extra_Command_2_Current))
+	{
+		iExtra2Req = ciCLEAR;
+	}
+}
+
+CHANGE Extra_Command_3_Request
+{
+	iExtra3Req = Extra_Command_3_Request;
+	if(iOktoSend = 1)
+	{
+		if((iExtra3Req <> ciCLEAR) && (iExtra3Req <> Extra_Command_3_Current))
+		{
+			Send_Extra_Command_3 = iExtra3Req;
+			iX3Counter = 1;
+			call fTimeOut();
+			iOktoSend = 0;
+			delay(1);
+			Send_Extra_Command_3 = ciCLEAR;
+		}
+	}
+}
+
+CHANGE Extra_Command_3_Current
+{
+	if((iExtra3Req <> ciCLEAR) && (iExtra3Req = Extra_Command_3_Current))
+	{
+		iExtra3Req = ciCLEAR;
+	}
+}
+
+CHANGE Ramping_Commands_Request
+{
+	if(Ramping_Commands_Request = ciRAMPDONE)
+	{
+		iOktoSend = 1;
+		call fSendNext();
+	}
+	else if((iOktoSend = 1) && (Ramping_Commands_Request <> ciCLEAR))
+	{
+		Send_Ramping = Ramping_Commands_Request;
+		call fTimeOut();
+		iOktoSend = 0;
+		delay(1);
+		Send_Ramping = ciCLEAR;
+	}
+	else if(Ramping_Commands_Request = ciCLEAR)
+	{
+		cancelwait(wTimeOut);
+		call fSendNext();
+	}
+}
+
+CHANGE Other_Commands_Request
+{
+	if(iOktoSend = 1)
+	{
+		Send_Other = Other_Commands_Request;
+		call fTimeOut();
+		iOktoSend = 0;
+		delay(1);
+		Send_Other = ciCLEAR;
+	}
+}
+
+CHANGE Power_Current
+{
+	Send_Power = ciCLEAR;
+}
+
+CHANGE Time_Out_Time
+{
+	iTimeOutTime = Time_Out_Time;
+}
+/***********************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************************/
+Function Main()
+{
+	delay(1000);
+	Send_Power = ciCLEAR;
+	Send_Input = ciCLEAR;
+	Send_Picture_Mute = ciCLEAR;
+	Send_Aspect = ciCLEAR;
+	Send_Volume_Mute = ciCLEAR;
+	Send_Extra_Command_1 = ciCLEAR;
+	Send_Extra_Command_2 = ciCLEAR;
+	Send_Extra_Command_3 = ciCLEAR;
+	Send_Ramping = ciCLEAR;
+	Send_Other = ciCLEAR;
+	iMaxPoll = Number_of_Poll_Commands;
+	iNextPoll = 0;
+	iOktoSend = 1;
+	iPowerReq = ciCLEAR;
+	iInputReq = ciCLEAR;
+	iAspectReq = ciCLEAR;
+	iPictureMuteReq = ciCLEAR;
+	iVolumeMuteReq = ciCLEAR;
+	iExtra1Req = ciCLEAR;
+	iExtra2Req = ciCLEAR;
+	iExtra3Req = ciCLEAR;
+	if(Enable_Polling = 1)
+	{
+		Communicating = 1;
+	}
+}

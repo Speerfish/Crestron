@@ -1,0 +1,407 @@
+/***********************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+/***********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************************/
+#SYMBOL_NAME "Canon SX7 Ramp Processor"
+// #HINT ""
+#DEFINE_CONSTANT	ciBRIOFFSET			20
+#DEFINE_CONSTANT	ciCONOFFSET			20
+#DEFINE_CONSTANT	ciSHRPOFFSET		4
+#DEFINE_CONSTANT	ciSATOFFSET			20
+#DEFINE_CONSTANT	ciHUEOFFSET			20
+
+#DEFINE_CONSTANT	ciBRIMAX				40	//Range = -20 to 20
+#DEFINE_CONSTANT	ciCONMAX				40	//Range = -20 to 20
+#DEFINE_CONSTANT	ciSHRPMAX				8		//Range = -4 to 4
+#DEFINE_CONSTANT	ciSATMAX				40	//Range = -20 to 20
+#DEFINE_CONSTANT	ciHUEMAX				40	//Range = -20 to 20
+#DEFINE_CONSTANT	ciVOLMAX				20	//Range = 0 to 20
+
+
+#DEFINE_CONSTANT	csOK						"i:OK"
+
+#DEFINE_CONSTANT	csBRIGHTNESS		"g:BRI="
+#DEFINE_CONSTANT	csCONTRAST			"g:CONT="
+#DEFINE_CONSTANT	csSHARPNESS			"g:SHARP="
+#DEFINE_CONSTANT	csSATURATION		"g:SAT="
+#DEFINE_CONSTANT	csHUE						"g:HUE="
+#DEFINE_CONSTANT	csBRIGHTNESSNEG	"g:BRI=-"
+#DEFINE_CONSTANT	csCONTRASTNEG		"g:CONT=-"
+#DEFINE_CONSTANT	csSHARPNESSNEG	"g:SHARP=-"
+#DEFINE_CONSTANT	csSATURATIONNEG	"g:SAT=-"
+#DEFINE_CONSTANT	csHUENEG				"g:HUE=-"
+#DEFINE_CONSTANT	csVOLUME				"g:AVOL="
+#DEFINE_CONSTANT	csCR						"\x0D"
+
+// #CATEGORY "" 
+#CATEGORY "24" // TV/Video Projector
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+#HELP_BEGIN
+	For use inside the Canon SX50 module only.
+#HELP_END
+/***********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************************/
+DIGITAL_INPUT	Brightness_Up, Brightness_Down,
+							Contrast_Up, Contrast_Down,
+							Sharpness_Up, Sharpness_Down,
+							Saturation_Up, Saturation_Down,
+							Hue_Up, Hue_Down,
+							Volume_Up, Volume_Down;
+BUFFER_INPUT	From_Device$[100];
+
+DIGITAL_OUTPUT	Ramping_Done;
+ANALOG_OUTPUT	Brightness, Contrast, Sharpness, Saturation, Hue, Volume;
+STRING_OUTPUT	To_Device$;
+/***********************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+***********************************************************************************/
+INTEGER	iBright, iContrast, iSharp, iSaturation, iHue, iVol, iFlag1, iTemp;
+STRING	sTemp[100];
+/***********************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************************/
+PUSH Brightness_Up
+{
+	if(iBright < ciBRIMAX)
+	{
+		iBright = iBright + 1;
+		makestring(To_Device$, "BRI=%d%s", iBright - ciBRIOFFSET, csCR);
+		Brightness = iBright;
+	}
+	else if(iBright >= ciBRIMAX)
+	{
+		iBright = ciBRIMAX;
+		Brightness = iBright;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Brightness_Down
+{
+	if(iBright > 0)
+	{
+		iBright = iBright - 1;
+		makestring(To_Device$, "BRI=%d%s", iBright - ciBRIOFFSET, csCR);
+		Brightness = iBright;
+	}
+	else if(iBright S<= 0)
+	{
+		iBright = 0;
+		Brightness = iBright;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Contrast_Up
+{
+	if(iContrast < ciCONMAX)
+	{
+		iContrast = iContrast + 1;
+		makestring(To_Device$, "CONT=%d%s", iContrast - ciCONOFFSET, csCR);
+		Contrast = iContrast;
+	}
+	else if(iContrast >= ciCONMAX)
+	{
+		iContrast = ciCONMAX;
+		Contrast = iContrast;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Contrast_Down
+{
+	if(iContrast > 0)
+	{
+		iContrast = iContrast - 1;
+		makestring(To_Device$, "CONT=%d%s", iContrast - ciCONOFFSET, csCR);
+		Contrast = iContrast;
+	}
+	else if(iContrast S<= 0)
+	{
+		iContrast = 0;
+		Contrast = iContrast;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Sharpness_Up
+{
+	if(iSharp < ciSHRPMAX)
+	{
+		iSharp = iSharp + 1;
+		makestring(To_Device$, "SHARP=%d%s", iSharp - ciSHRPOFFSET, csCR);
+		Sharpness = iSharp;
+	}
+	else if(iSharp >= ciSHRPMAX)
+	{
+		iSharp = ciSHRPMAX;
+		Sharpness = iSharp;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Sharpness_Down
+{
+	if(iSharp > 0)
+	{
+		iSharp = iSharp - 1;
+		makestring(To_Device$, "SHARP=%d%s", iSharp - ciSHRPOFFSET, csCR);
+		Sharpness = iSharp;
+	}
+	else if(iSharp S<= 0)
+	{
+		iSharp = 0;
+		Sharpness = iSharp;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Saturation_Up
+{
+	if(iSaturation < ciSATMAX)
+	{
+		iSaturation = iSaturation + 1;
+		makestring(To_Device$, "SAT=%d%s", iSaturation - ciSATOFFSET, csCR);
+		Saturation = iSaturation;
+	}
+	else if(iSaturation >= ciSATMAX)
+	{
+		iSaturation = ciSATMAX;
+		Saturation = iSaturation;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Saturation_Down
+{
+	if(iSaturation > 0)
+	{
+		iSaturation = iSaturation - 1;
+		makestring(To_Device$, "SAT=%d%s", iSaturation - ciSATOFFSET, csCR);
+		Saturation = iSaturation;
+	}
+	else if(iSaturation S<= 0)
+	{
+		iSaturation = 0;
+		Saturation = iSaturation;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Hue_Up
+{
+	if(iHue < ciHUEMAX)
+	{
+		iHue = iHue + 1;
+		makestring(To_Device$, "HUE=%d%s", iHue - ciHUEOFFSET, csCR);
+		Hue = iHue;
+	}
+	else if(iHue >= ciHUEMAX)
+	{
+		iHue = ciHUEMAX;
+		Hue = iHue;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Hue_Down
+{
+	if(iHue > 0)
+	{
+		iHue = iHue - 1;
+		makestring(To_Device$, "HUE=%d%s", iHue - ciHUEOFFSET, csCR);
+		Hue = iHue;
+	}
+	else if(iHue S<= 0)
+	{
+		iHue = 0;
+		Hue = iHue;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Volume_Up
+{
+	if(iVol < ciVOLMAX)
+	{
+		iVol = iVol + 1;
+		makestring(To_Device$, "AVOL=%d%s", iVol, csCR);
+		Volume = iVol;
+	}
+	else if(iVol >= ciVOLMAX)
+	{
+		iVol = ciVOLMAX;
+		Volume = iVol;
+		pulse(10, Ramping_Done);
+	}
+}
+
+PUSH Volume_Down
+{
+	if(iVol > 0)
+	{
+		iVol = iVol - 1;
+		makestring(To_Device$, "AVOL=%d%s", iVol, csCR);
+		Volume = iVol;
+	}
+	else if(iVol S<= 0)
+	{
+		iVol = 0;
+		Volume = iVol;
+		pulse(10, Ramping_Done);
+	}
+}
+
+CHANGE From_Device$
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(find(csCR, From_Device$) > 0)
+		{
+			sTemp = remove(csCR, From_Device$);
+			if(find(csBRIGHTNESSNEG, sTemp) > 0)
+			{
+				iTemp = ciBRIOFFSET - atoi(sTemp);
+				if(iTemp <> iBright)
+				{
+					iBright = iTemp;
+					Brightness = iBright;
+				}
+			}
+			else if(find(csBRIGHTNESS, sTemp) > 0)
+			{
+				iTemp = ciBRIOFFSET + atoi(sTemp);
+				if(iTemp <> iBright)
+				{
+					iBright = iTemp;
+					Brightness = iBright;
+				}
+			}
+			else if(find(csCONTRASTNEG, sTemp) > 0)
+			{
+				iTemp = ciCONOFFSET - atoi(sTemp);
+				if(iTemp <> iContrast)
+				{
+					iContrast = iTemp;
+					Contrast = iContrast;
+				}
+			}
+			else if(find(csCONTRAST, sTemp) > 0)
+			{
+				iTemp = ciCONOFFSET + atoi(sTemp);
+				if(iTemp <> iContrast)
+				{
+					iContrast = iTemp;
+					Contrast = iContrast;
+				}
+			}
+			else if(find(csSHARPNESSNEG, sTemp) > 0)
+			{
+				iTemp = ciSHRPOFFSET - atoi(sTemp);
+				if(iTemp <> iSharp)
+				{
+					iSharp = iTemp;
+					Sharpness = iSharp;
+				}
+			}
+			else if(find(csSHARPNESS, sTemp) > 0)
+			{
+				iTemp = ciSHRPOFFSET + atoi(sTemp);
+				if(iTemp <> iSharp)
+				{
+					iSharp = iTemp;
+					Sharpness = iSharp;
+				}
+			}
+			else if(find(csSATURATIONNEG, sTemp) > 0)
+			{
+				iTemp = ciSATOFFSET - atoi(sTemp);
+				if(iTemp <> iSaturation)
+				{
+					iSaturation = iTemp;
+					Saturation = iSaturation;
+				}
+			}
+			else if(find(csSATURATION, sTemp) > 0)
+			{
+				iTemp = ciSATOFFSET + atoi(sTemp);
+				if(iTemp <> iSaturation)
+				{
+					iSaturation = iTemp;
+					Saturation = iSaturation;
+				}
+			}
+			else if(find(csHUENEG, sTemp) > 0)
+			{
+				iTemp = ciHUEOFFSET - atoi(sTemp);
+				if(iTemp <> iHue)
+				{
+					iHue = iTemp;
+					Hue = iHue;
+				}
+			}
+			else if(find(csHUE, sTemp) > 0)
+			{
+				iTemp = ciHUEOFFSET + atoi(sTemp);
+				if(iTemp <> iHue)
+				{
+					iHue = iTemp;
+					Hue = iHue;
+				}
+			}
+			else if(find(csVOLUME, sTemp) > 0)
+			{
+				iTemp = atoi(sTemp);
+				if(iTemp <> iVol)
+				{
+					iVol = iTemp;
+					Volume = iVol;
+				}
+			}
+			sTemp = "";
+		}
+		iFlag1 = 0;
+	}
+}
+/***********************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************************/
+Function Main()
+{
+	iBright= ciBRIOFFSET;
+	iContrast = ciCONOFFSET;
+	iSharp = ciSHRPOFFSET;
+	iSaturation = ciSATOFFSET;
+	iHue = ciHUEOFFSET;
+	iVol = 0;
+	Brightness = iBright;
+	Contrast = iContrast;
+	Sharpness = iSharp;
+	Saturation = iSaturation;
+	Hue = iHue;
+	Volume = iVol;
+	iFlag1 = 0;
+}
