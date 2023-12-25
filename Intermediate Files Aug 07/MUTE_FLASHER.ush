@@ -1,0 +1,63 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.02.13
+  InclDatVrs=1.45
+  CrossCplrVrs=1.2
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=||3THIS MODULE TAKES CONSTANT STATE FEEDBACK AND OUTPUTS A PULSING||1
+  Cmn2=FEEDBACK SIGNAL WHEN THE INPUT IS HIGH.\\   Example:  Insert in||1
+  Cmn3=series of your mute button feedback signal to have your mute button||1
+  Cmn4=flash on your touchpanel.
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+  Name=MUTE_FLASHER
+  SmplCName=MUTE_FLASHER.usp
+  Code=1
+  SysRev5=3.137
+  SMWRev=2.02.05
+  InputCue1=INPUT
+  InputSigType1=Digital
+  OutputCue1=FLASH
+  OutputSigType1=Digital
+  ParamCue1=[Reference Name]
+  MinVariableInputs=1
+  MaxVariableInputs=1
+  MinVariableInputsList2=0
+  MaxVariableInputsList2=0
+  MinVariableOutputs=1
+  MaxVariableOutputs=1
+  MinVariableOutputsList2=0
+  MaxVariableOutputsList2=0
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_MUTE_FLASHER
+  SymJam=NonExclusive
+[END]

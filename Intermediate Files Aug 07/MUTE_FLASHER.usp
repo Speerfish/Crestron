@@ -1,0 +1,38 @@
+/*
+Programmer: rgp
+Comments: For use with the Intermediate Entrance Exam
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+#HELP_BEGIN
+   THIS MODULE TAKES CONSTANT STATE FEEDBACK AND OUTPUTS A PULSING FEEDBACK SIGNAL WHEN THE INPUT IS HIGH.
+   Example:  Insert in series of your mute button feedback signal to have your mute button flash on your touchpanel.
+#HELP_END
+
+
+DIGITAL_INPUT INPUT;
+
+DIGITAL_OUTPUT FLASH; 
+
+PUSH input
+{
+    While(input)
+    {
+    	FLASH = !FLASH;
+    	delay(50);
+    }
+}
+
+release input
+{
+	flash = 0;
+}
+
+

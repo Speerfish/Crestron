@@ -1,0 +1,278 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x80000000         0x00200000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                __DYNAMIC=0x0
+                0x00400000                PROVIDE (__stack, 0x400000)
+                0x00000000                PROVIDE (hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (_hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (software_init_hook, 0x0)
+                0x00000000                PROVIDE (_software_init_hook, 0x0)
+
+.text           0x80000000    0x1f1b0
+ *(.text)
+ .text          0x80000000      0x1f2 S2_MUTE_FLASHER.o
+                0x800001a2                S2_MUTE_FLASHEREventHandler00001
+                0x800000d0                S2_MUTE_FLASHEREventHandler00000
+                0x80000040                S2_MUTE_FLASHER_EventHandler
+                0x80000000                S2_MUTE_FLASHER_main
+ *fill*         0x800001f2        0x2
+ .text          0x800001f4    0x1319a S2_CrestronTester_v2.o
+                0x800011c6                S2_CrestronTester_v2EventHandler00000
+                0x8000e3fc                S2_CrestronTester_v2_main
+                0x80005262                S2_CrestronTester_v2EventHandler00002
+                0x80012f28                S2_CrestronTester_v2__SPLS_TMPVAR__WAITLABEL_0__
+                0x8000e332                S2_CrestronTester_v2_EventHandler
+                0x800132e8                S2_CrestronTester_v2__SPLS_TMPVAR__WAITLABEL_4__
+                0x80002792                S2_CrestronTester_v2EventHandler00001
+                0x800131f8                S2_CrestronTester_v2__SPLS_TMPVAR__WAITLABEL_3__
+                0x80013108                S2_CrestronTester_v2__SPLS_TMPVAR__WAITLABEL_2__
+                0x80013018                S2_CrestronTester_v2__SPLS_TMPVAR__WAITLABEL_1__
+ *fill*         0x8001338e        0x2
+ .text          0x80013390     0x2102 S2_WritePassingtoCF0.o
+                0x800153be                S2_WritePassingtoCF0EventHandler00001
+                0x80013390                S2_WritePassingtoCF0EventHandler00000
+                0x80015244                S2_WritePassingtoCF0_main
+                0x80015320                S2_WritePassingtoCF0_EventHandler
+ *fill*         0x80015492        0x2
+ .text          0x80015494     0x2d34 S2_Timeouts.o
+                0x80015e34                S2_TimeoutsQ4
+                0x80015494                S2_TimeoutsEventHandler00000
+                0x80016022                S2_TimeoutsQ5
+                0x80017f02                S2_Timeouts_EventHandler
+                0x8001586a                S2_TimeoutsQ1
+                0x800167da                S2_TimeoutsQ9
+                0x800169c8                S2_TimeoutsQ10
+                0x8001736e                S2_TimeoutsQ15
+                0x80016da4                S2_TimeoutsQ12
+                0x80015a58                S2_TimeoutsQ2
+                0x80016f92                S2_TimeoutsQ13
+                0x80017862                S2_TimeoutsEventHandler00001
+                0x800163fe                S2_TimeoutsQ7
+                0x8001755c                S2_TimeoutsQ16
+                0x80016210                S2_TimeoutsQ6
+                0x800165ec                S2_TimeoutsQ8
+                0x80016bb6                S2_TimeoutsQ11
+                0x80017fcc                S2_Timeouts_main
+                0x80017180                S2_TimeoutsQ14
+                0x80015c46                S2_TimeoutsQ3
+ .text          0x800181c8     0x3040 library.o
+                0x8001a1f6                RotateRightLong
+                0x8001a6f6                IsSystem
+                0x8001a16e                Seed
+                0x8001877e                Remove
+                0x80019e26                Ltoa
+                0x80019c06                Atoi
+                0x8001a4e0                Right
+                0x8001a0a8                Mod
+                0x8001a2f2                Getc
+                0x80019fea                SMuldiv
+                0x8001a6dc                IsHidden
+                0x80019ee4                Min
+                0x8001b0de                hextosi
+                0x8001a880                WriteIntegerArray
+                0x8001adbe                GetSignedIntArrayElementPtr
+                0x80019a2a                CheckStructArray
+                0x8001b0f0                hextosl
+                0x8001a9bc                WriteSignedIntegerArray
+                0x8001980c                InitStringParamArray
+                0x80019000                ReadSignedLongIntegerArray
+                0x80018450                GatherToDelimiter
+                0x8001977a                InitStringArray
+                0x80019ec2                Max
+                0x8001a72a                IsReadOnly
+                0x80019fba                SMax
+                0x80018632                GatherByLength
+                0x80019d7e                Chr
+                0x8001a858                ReadSignedLongInteger
+                0x80019de2                Itohex
+                0x800199c8                GetStructArrayElement
+                0x8001a4b4                ReverseFindi
+                0x800192c0                ReadStringArray
+                0x8001ac3a                GetIntArrayElementPtr
+                0x8001a3be                Lower
+                0x8001a188                RotateLeft
+                0x80019522                CheckInputArray
+                0x80019d28                Atosl
+                0x80019bde                High
+                0x8001a142                Rnd
+                0x8001a070                UMod
+                0x8001a1d2                RotateLeftLong
+                0x8001b1d0                FindNumericChar
+                0x80019fd2                SMin
+                0x8001a34a                Left
+                0x8001a80c                ReadSignedInteger
+                0x80019bfc                LowWord
+                0x80019ad4                Bit
+                0x8001a7b8                ReadLongInteger
+                0x80019b6a                Byte
+                0x8001acfc                GetLongArrayElementPtr
+                0x8001a486                ReverseFind
+                0x8001a3aa                Len
+                0x80019f06                Divide
+                0x80019cc6                Atol
+                0x8001af42                CheckIOArrayBounds
+                0x80019576                CheckStringInputArray
+                0x8001aa5a                WriteSignedLongIntegerArray
+                0x80019946                GetStringArrayElement
+                0x80019e66                Ltohex
+                0x80019d9e                Itoa
+                0x8001a1ac                RotateRight
+                0x800189dc                InternalReverseFind
+                0x8001a794                WriteLongInteger
+                0x8001967e                SetStringArray
+                0x80018e64                ReadSignedIntegerArray
+                0x8001a6a2                InitIntArray
+                0x800195ca                SetOutputArray
+                0x8001a740                WriteInteger
+                0x8001a542                SetString
+                0x8001a0e0                Random
+                0x8001a7e0                WriteSignedInteger
+                0x8001a224                Find
+                0x8001a41a                Mid
+                0x8001ae80                GetSignedLongArrayElementPtr
+                0x8001b100                hextol
+                0x8001ab60                ReadString
+                0x8001b1ae                UpperChar
+                0x80019c6e                Atosi
+                0x8001a76c                ReadInteger
+                0x80019f72                Muldiv
+                0x80019634                SetStringOutputArray
+                0x8001aaf8                WriteString
+                0x800194f0                InitInOutArray
+                0x8001988e                InitNvramStringArray
+                0x80019ea6                Abs
+                0x8001a032                SDivide
+                0x80018b2c                ReadIntegerArray
+                0x800181c8                CompareStrings
+                0x8001b18c                LowerChar
+                0x8001a218                ClearBuffer
+                0x8001a5f6                Upper
+                0x80019926                InitStructArray
+                0x8001a652                MakeLower
+                0x8001a710                IsVolume
+                0x800188c8                RemoveByLength
+                0x80019a72                CheckStringOutputArrayIndex
+                0x8001a91e                WriteLongIntegerArray
+                0x8001aff6                InitRampInfoStructArray
+                0x80019bf2                HighWord
+                0x8001a6c2                IsDirectory
+                0x80018cc8                ReadLongIntegerArray
+                0x80019be8                Low
+                0x80018284                Gather
+                0x8001a67a                MakeUpper
+                0x800196fc                InitStringStruct
+                0x80019f44                CheckDenominator
+                0x8001b0c8                hextoi
+                0x8001919c                WriteStringArray
+                0x8001afa4                InitializeRampInfo
+                0x8001a834                WriteSignedLongInteger
+                0x80019736                InitNvramStringStruct
+ *fill*         0x8001b208        0x8
+                0x8001b210                .=ALIGN(0x10)
+ *(.eh_frame)
+                0x8001b210                .=ALIGN(0x10)
+ *(.gnu.linkonce.t.*)
+                0x8001b210                .=ALIGN(0x4)
+                0x8001b210                __CTOR_LIST__=.
+                0x8001b210                ___CTOR_LIST__=.
+                0x8001b210        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
+ *(.ctors)
+                0x8001b214        0x4 LONG 0x0
+                0x8001b218                __CTOR_END__=.
+                0x8001b218                __DTOR_LIST__=.
+                0x8001b218                ___DTOR_LIST__=.
+                0x8001b218        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
+ *(.dtors)
+                0x8001b21c        0x4 LONG 0x0
+                0x8001b220                __DTOR_END__=.
+ *(.rodata)
+ .rodata        0x8001b220      0x212 S2_MUTE_FLASHER.o
+ .rodata        0x8001b432     0x2b78 S2_CrestronTester_v2.o
+ .rodata        0x8001dfaa      0x772 S2_WritePassingtoCF0.o
+ .rodata        0x8001e71c      0x4bc S2_Timeouts.o
+ .rodata        0x8001ebd8      0x5c3 library.o
+ *(.gcc_except_table)
+ *fill*         0x8001f19b        0x1
+                0x8001f19c                .=ALIGN(0x2)
+                0x8001f19c                __INIT_SECTION__=.
+                0x8001f19c        0x4 LONG 0x4e560000
+ *(.init)
+                0x8001f1a0        0x2 SHORT 0x4e5e
+                0x8001f1a2        0x2 SHORT 0x4e75
+                0x8001f1a4                __FINI_SECTION__=.
+                0x8001f1a4        0x4 LONG 0x4e560000
+ *(.fini)
+                0x8001f1a8        0x2 SHORT 0x4e5e
+                0x8001f1aa        0x2 SHORT 0x4e75
+ *(.lit)
+ *fill*         0x8001f1ac        0x4
+                0x8001f1b0                .=ALIGN(0x10)
+                0x8001f1b0                _etext=.
+                0x8001f1b0                etext=.
+
+.data           0x8001f1b0        0x0
+                0x8001f1b0                copy_start=.
+ *(.shdata)
+ *(.data)
+ *(.gnu.linkonce.d.*)
+                0x8001f1b0                .=ALIGN(0x10)
+                0x8001f1b0                _edata=.
+                0x8001f1b0                copy_end=.
+
+.got
+ *(.got.plt)
+ *(.got)
+
+EntryList       0x8001f1b0      0x440
+ *(EntryList)
+ EntryList      0x8001f1b0      0x110 S2_MUTE_FLASHER.o
+                0x8001f1b0                S2_MUTE_FLASHER_Entry
+ EntryList      0x8001f2c0      0x110 S2_CrestronTester_v2.o
+                0x8001f2c0                S2_CrestronTester_v2_Entry
+ EntryList      0x8001f3d0      0x110 S2_WritePassingtoCF0.o
+                0x8001f3d0                S2_WritePassingtoCF0_Entry
+ EntryList      0x8001f4e0      0x110 S2_Timeouts.o
+                0x8001f4e0                S2_Timeouts_Entry
+                0x8001f5f0                .=ALIGN(0x4)
+
+FunctionList    0x8001f5f0        0x4
+ *(FunctionList)
+ FunctionList   0x8001f5f0        0x4 globals.o
+                0x8001f5f0                g_pFunctions
+                0x8001f5f4                .=ALIGN(0x4)
+
+.bss            0x8001f5f4        0x0
+                0x8001f5f4                .=ALIGN(0x4)
+                0x8001f5f4                __bss_start=.
+ *(.shbss)
+ *(.bss)
+ *(COMMON)
+                0x8001f5f8                _end=ALIGN(0x8)
+                0x8001f5f8                __end=_end
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *
