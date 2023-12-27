@@ -1,0 +1,271 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.13
+  InclDatVrs=1.69
+  CrossCplrVrs=1.3
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=See PDF File "Lutron Homeworks Modules for Crestron User Guide.pdf"
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,213,214,215,216,217,225,226,248,249,266,267,310,718,756,854,
+  Name=Lutron Homeworks Core Module
+  SmplCName=Lutron Homeworks Core Module.usp
+  Code=1
+  SysRev5=4.000
+  SMWRev=2.02.05
+  InputCue1=[~UNUSED~]
+  InputSigType1=Digital
+  InputCue2=[~UNUSED~]
+  InputSigType2=Digital
+  InputCue3=[~UNUSED~]
+  InputSigType3=Digital
+  InputCue4=[~UNUSED~]
+  InputSigType4=Digital
+  InputCue5=[~UNUSED~]
+  InputSigType5=Digital
+  InputCue6=[~UNUSED~]
+  InputSigType6=Digital
+  InputCue7=[~UNUSED~]
+  InputSigType7=Digital
+  InputCue8=[~UNUSED~]
+  InputSigType8=Digital
+  InputCue9=Enable
+  InputSigType9=Digital
+  InputList2Cue1=[~UNUSED~]
+  InputList2SigType1=Serial
+  InputList2Cue2=[~UNUSED~]
+  InputList2SigType2=Serial
+  InputList2Cue3=[~UNUSED~]
+  InputList2SigType3=Serial
+  InputList2Cue4=[~UNUSED~]
+  InputList2SigType4=Serial
+  InputList2Cue5=FromModules$
+  InputList2SigType5=Serial
+  InputList2Cue6=UserCommand$
+  InputList2SigType6=Serial
+  InputList2Cue7=RS232_rx$
+  InputList2SigType7=Serial
+  OutputList2Cue1=ToDimmers$
+  OutputList2SigType1=Serial
+  OutputList2Cue2=ToGrafikEye$
+  OutputList2SigType2=Serial
+  OutputList2Cue3=ToKeypads$
+  OutputList2SigType3=Serial
+  OutputList2Cue4=ToLoadControl$
+  OutputList2SigType4=Serial
+  OutputList2Cue5=ToUtilities$
+  OutputList2SigType5=Serial
+  OutputList2Cue6=PacketTransmission$
+  OutputList2SigType6=Serial
+  OutputList2Cue7=RS232_tx$
+  OutputList2SigType7=Serial
+  ParamCue1=[Reference Name]
+  ParamCue2=Communication_Method,0d,1d
+  ParamSigType2=List
+  ParamCue3=IPAddress_Or_Hostname
+  ParamSigType3=String
+  ParamCue4=Telnet_Port
+  ParamSigType4=Constant
+  ParamCue5=Username
+  ParamSigType5=String
+  ParamCue6=Password
+  ParamSigType6=String
+  ParamCue7=BaudRate,0d,1d,2d,3d,4d
+  ParamSigType7=List
+  ParamCue8=Handshake,0d,1d
+  ParamSigType8=List
+  ParamCue9=ComPort,65d,66d,67d,68d,69d,70d
+  ParamSigType9=List
+  MinVariableInputs=9
+  MaxVariableInputs=9
+  MinVariableInputsList2=7
+  MaxVariableInputsList2=7
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=7
+  MaxVariableOutputsList2=7
+  MinVariableParams=8
+  MaxVariableParams=8
+  Expand=expand_separately
+  Expand2=expand_separately
+  OffsetOutputs=9
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=LutronHWICore
+  PdfHelp=Lutron Homeworks Modules for Crestron User Guide.pdf
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  Pp2=2
+  Pp3=3
+  Pp4=4
+  Pp5=5
+  Pp6=6
+  Pp7=7
+  Pp8=8
+  Pp9=9
+  MPp=9
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_Lutron_Homeworks_Core_Module
+  SymJam=NonExclusive
+  Usl1=LutronHWI_Lib.usl
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=2
+  Tp=1
+  SD=Communication method used to talk to HWI processor
+  HD=True
+  DV=0d
+  Sgn=0
+  Lng=False
+  NF=1
+  NoS=True
+  DNF=1
+  VVS=2
+  VN=2
+  Val1=0d
+  Lbl1=IP
+  Val2=1d
+  Lbl2=RS-232
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=3
+  Tp=1
+  SD=Lutron HWI Processor IP Address/Hostname
+  HD=True
+  DV=0.0.0.0
+  NoS=False
+  VVS=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=4
+  Tp=1
+  SD=Lutron HWI Processor Telnet Port for IP
+  HD=True
+  DV=23d
+  Sgn=0
+  Lng=False
+  NF=1
+  NoS=True
+  DNF=1
+  VVS=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=5
+  Tp=1
+  SD=Username
+  HD=True
+  DV=Username
+  NoS=False
+  VVS=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=6
+  Tp=1
+  SD=Password
+  HD=True
+  DV=Password
+  NoS=False
+  VVS=0
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=7
+  Tp=1
+  SD=Baud rate of Lutron HWI processor for RS232
+  HD=True
+  DV=0d
+  Sgn=0
+  Lng=False
+  NF=1
+  NoS=True
+  DNF=1
+  VVS=2
+  VN=5
+  Val1=0d
+  Lbl1=9600
+  Val2=1d
+  Lbl2=19200
+  Val3=2d
+  Lbl3=38400
+  Val4=3d
+  Lbl4=57600
+  Val5=4d
+  Lbl5=115200
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=8
+  Tp=1
+  SD=Handshake method used to talk to HWI processor for RS232
+  HD=True
+  DV=0d
+  Sgn=0
+  Lng=False
+  NF=1
+  NoS=True
+  DNF=1
+  VVS=2
+  VN=2
+  Val1=0d
+  Lbl1=None
+  Val2=1d
+  Lbl2=Hardware
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=9
+  Tp=1
+  SD=Connected com port letter on slot
+  HD=True
+  DV=65d
+  Sgn=0
+  Lng=False
+  NF=1
+  NoS=True
+  DNF=1
+  VVS=2
+  VN=6
+  Val1=65d
+  Lbl1=A
+  Val2=66d
+  Lbl2=B
+  Val3=67d
+  Lbl3=C
+  Val4=68d
+  Lbl4=D
+  Val5=69d
+  Lbl5=E
+  Val6=70d
+  Lbl6=F
+[END]
