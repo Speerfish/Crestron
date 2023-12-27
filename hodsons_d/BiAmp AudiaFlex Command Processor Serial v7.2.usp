@@ -1,0 +1,264 @@
+/***********************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+/***********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************************/
+#SYMBOL_NAME "BiAmp Command Processor Serial v7.2"
+// #HINT ""
+#DEFINE_CONSTANT	ciMAXCHARACTERS		100
+#DEFINE_CONSTANT	ciQUEUESIZE				500
+#DEFINE_CONSTANT	ciMAXINSTANCES		500
+
+#DEFINE_CONSTANT	csSENDNAME				"Send Name\x0D\x0A"
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+// #DIGITAL_EXPAND 
+// #PRINT_TO_TRACE
+// #ENABLE_TRACE
+#ANALOG_SERIAL_EXPAND InputsWithOutputs
+// #HELP_PDF_FILE ""
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+/***********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************************/
+DIGITAL_INPUT	Send_Next, Initialize, Get_Next_Name;
+BUFFER_INPUT	From_Device[5000], From_Modules[5000];
+
+DIGITAL_OUTPUT	Timed_Out, Initialize_Busy, Name_Timed_Out;
+STRING_OUTPUT		To_Device, _SKIP_, To_Modules[ciMAXINSTANCES];
+/***********************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+***********************************************************************************/
+INTEGER	iNextCommandStore, iNextCommandSend, iNextGetStore, iNextGetSend, iTempID,
+				bFlag1, bFlag2, bOkToSend, iTemp, a, b, iSendName;
+STRING	sCommand[ciQUEUESIZE][ciMAXCHARACTERS], sGet[ciQUEUESIZE][ciMAXCHARACTERS],
+				sTempModules[ciMAXCHARACTERS], sTempDevice[ciMAXCHARACTERS],
+				sModuleInstanceID[ciMAXINSTANCES][ciMAXCHARACTERS];
+/***********************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+***********************************************************************************/
+Function fTimeOut()
+{
+	wait(200, wTimeOut)
+	{
+		Timed_Out = 1;
+	}
+}
+
+Function fNameTimeOut()
+{
+	wait(25, wNameTimeOut)
+	{
+		Name_Timed_Out = 1;
+	}
+}
+/***********************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************************/
+PUSH Initialize
+{
+	Initialize_Busy = 1;
+	bOkToSend = 0;
+	iSendName = 1;
+	makestring(To_Modules[iSendName], "%d %s", iSendName, csSENDNAME);
+	call fNameTimeOut();
+}
+
+PUSH Send_Next
+{
+	delay(1);
+	Timed_Out = 0;
+	if(len(sCommand[iNextCommandSend]) > 0)
+	{
+		To_Device = sCommand[iNextCommandSend];
+		sCommand[iNextCommandSend] = "";
+		call fTimeOut();
+		bOkToSend = 0;
+		iNextCommandSend = iNextCommandSend + 1;
+		if(iNextCommandSend > ciQUEUESIZE)
+		{
+			iNextCommandSend = 1;
+		}
+	}
+	else if(len(sGet[iNextGetSend]) > 0)
+	{
+		To_Device = sGet[iNextGetSend];
+		sGet[iNextGetSend] = "";
+		call fTimeOut();
+		bOkToSend = 0;
+		iNextGetSend = iNextGetSend + 1;
+		if(iNextGetSend > ciQUEUESIZE)
+		{
+			iNextGetSend = 1;
+		}
+	}
+	else
+	{
+		bOkToSend = 1;
+	}
+}
+
+PUSH Get_Next_Name
+{
+	delay(1);
+	Name_Timed_Out = 0;
+	if(iSendName < ciMAXINSTANCES)
+	{
+		sModuleInstanceID[iSendName] = "";
+		iSendName = iSendName + 1;
+		makestring(To_Modules[iSendName], "%d %s", iSendName, csSENDNAME);
+		call fNameTimeOut();
+	}
+	else if(iSendName = ciMAXINSTANCES)
+	{
+		Initialize_Busy = 0;
+		bOkToSend = 1;
+		Timed_Out = 1;
+	}
+}
+
+CHANGE From_Modules
+{
+	if(bFlag1 = 0)
+	{
+		bFlag1 = 1;
+		while(find("\x0A", From_Modules) > 0)
+		{
+			sTempModules = remove("\x0A", From_Modules);
+			if(find("Send Name", sTempModules) > 0)
+			{
+				cancelwait(wNameTimeOut);
+				iTempID = atoi(sTempModules);
+				sTempModules = left(sTempModules, len(sTempModules) - 2);
+				sModuleInstanceID[iTempID] = mid(sTempModules, find("=", sTempModules) + 1, len(sTempModules) - find("=", sTempModules)) + " ";
+				if(iSendName < ciMAXINSTANCES)
+				{
+					iSendName = iSendName + 1;
+					makestring(To_Modules[iSendName], "%d %s", iSendName, csSENDNAME);
+					call fNameTimeOut();
+				}
+				else
+				{
+					Initialize_Busy = 0;
+					bOkToSend = 1;
+					Timed_Out = 1;
+				}
+			}
+			else if(bOkToSend = 1)
+			{
+				To_Device = sTempModules;
+				call fTimeOut();
+				bOkToSend = 0;
+			}
+			else if(find("GET", sTempModules) > 0)
+			{
+				sGet[iNextGetStore] = sTempModules;
+				iNextGetStore = iNextGetStore + 1;
+				if(iNextGetStore > ciQUEUESIZE)
+				{
+					iNextGetStore = 1;
+				}
+			}
+			else
+			{
+				sCommand[iNextCommandStore] = sTempModules;
+				iNextCommandStore = iNextCommandStore + 1;
+				if(iNextCommandStore > ciQUEUESIZE)
+				{
+					iNextCommandStore = 1;
+				}
+			}
+			sTempModules = "";
+		}
+		bFlag1 = 0;
+	}
+}
+
+CHANGE From_Device
+{
+	if(bFlag2 = 0)
+	{
+		bFlag2 = 1;
+		while(1)
+		{
+			sTempDevice = gather("\x0D\x0A", From_Device);
+			cancelwait(wTimeOut);
+			if((find("RECALL", upper(sTempDevice)) = 0) && (find("PRESET", upper(sTempDevice)) = 0) && (find("-ERR", upper(sTempDevice)) = 0))
+			{
+				for(b = 1 to ciMAXINSTANCES)
+				{
+					if((len(sModuleInstanceID[b]) > 0) && (find(sModuleInstanceID[b], sTempDevice) > 0))
+					{
+						To_Modules[b] = sTempDevice;
+						break;
+					}
+				}
+			}
+			bOkToSend = 1;
+			if(len(sCommand[iNextCommandSend]) > 0)
+			{
+				To_Device = sCommand[iNextCommandSend];
+				sCommand[iNextCommandSend] = "";
+				call fTimeOut();
+				bOkToSend = 0;
+				iNextCommandSend = iNextCommandSend + 1;
+				if(iNextCommandSend > ciQUEUESIZE)
+				{
+					iNextCommandSend = 1;
+				}
+			}
+			else if(len(sGet[iNextGetSend]) > 0)
+			{
+				To_Device = sGet[iNextGetSend];
+				sGet[iNextGetSend] = "";
+				call fTimeOut();
+				bOkToSend = 0;
+				iNextGetSend = iNextGetSend + 1;
+				if(iNextGetSend > ciQUEUESIZE)
+				{
+					iNextGetSend = 1;
+				}
+			}
+			sTempDevice = "";
+		}
+		bFlag2 = 0;
+	}
+}
+/***********************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************************/
+Function Main()
+{
+	sTempModules = "";
+	sTempDevice = "";
+	setarray(sCommand, "");
+	setarray(sGet, "");
+	bOkToSend = 1;
+	bFlag1 = 0;
+	bFlag2 = 0;
+}

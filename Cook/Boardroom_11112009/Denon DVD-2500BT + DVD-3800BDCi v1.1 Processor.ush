@@ -1,0 +1,100 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.11
+  InclDatVrs=1.69
+  CrossCplrVrs=1.3
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=||3To be used only with the Denon DVD-2500BT + DVD-3800BDCi v1.1.
+  Cmn2=umc module.
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+  Name=Denon DVD-2500BT + DVD-3800BDCi v1.1 Processor
+  SmplCName=Denon DVD-2500BT + DVD-3800BDCi v1.1 Processor.usp
+  Code=1
+  InputCue1=CommandSent
+  InputSigType1=Digital
+  InputCue2=Acked
+  InputSigType2=Digital
+  OutputCue1=TimedOut
+  OutputSigType1=Digital
+  OutputCue2=PleaseWait
+  OutputSigType2=Digital
+  OutputCue3=AckIn
+  OutputSigType3=Digital
+  InputList2Cue1=FromDevice$
+  InputList2SigType1=Serial
+  OutputList2Cue1=TimeOut
+  OutputList2SigType1=Analog
+  OutputList2Cue2=Disc_Type_Code
+  OutputList2SigType2=Analog
+  OutputList2Cue3=Audio_Format_Code
+  OutputList2SigType3=Analog
+  OutputList2Cue4=Audio_Channel_Code
+  OutputList2SigType4=Analog
+  OutputList2Cue5=Dialog_Code
+  OutputList2SigType5=Analog
+  OutputList2Cue6=Subtitle_Code
+  OutputList2SigType6=Analog
+  OutputList2Cue7=Angle_Code
+  OutputList2SigType7=Analog
+  OutputList2Cue8=Status_Code
+  OutputList2SigType8=Analog
+  OutputList2Cue9=Play_Mode_Code
+  OutputList2SigType9=Analog
+  OutputList2Cue10=Time_Mode
+  OutputList2SigType10=Analog
+  OutputList2Cue11=Group_Title
+  OutputList2SigType11=Analog
+  OutputList2Cue12=Track_Chapter
+  OutputList2SigType12=Analog
+  ParamCue1=[Reference Name]
+  MinVariableInputs=2
+  MaxVariableInputs=2
+  MinVariableInputsList2=1
+  MaxVariableInputsList2=1
+  MinVariableOutputs=3
+  MaxVariableOutputs=3
+  MinVariableOutputsList2=12
+  MaxVariableOutputsList2=12
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=17
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_Denon_DVD_2500BT___DVD_3800BDCi_v1_1_Processor
+  SymJam=NonExclusive
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]

@@ -1,0 +1,208 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name: Crestron Electronics
+System Name:
+System Number:
+Programmer: CRR/ GM mods July 8/08
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "Denon DVD-2500BT + DVD-3800BDCi v1.1 Processor"
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+#CATEGORY "17" // Transport Decks
+// #DEFAULT_VOLATILE
+#DEFAULT_NONVOLATILE
+#HELP_BEGIN
+   To be used only with the Denon DVD-2500BT + DVD-3800BDCi v1.1.umc module.
+#HELP_END
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT CommandSent;
+DIGITAL_INPUT Acked;  
+BUFFER_INPUT FromDevice$[255]; 
+
+DIGITAL_OUTPUT TimedOut;
+DIGITAL_OUTPUT PleaseWait;
+DIGITAL_OUTPUT AckIn;
+
+
+ANALOG_OUTPUT TimeOut;
+
+ANALOG_OUTPUT Disc_Type_Code, Audio_Format_Code, Audio_Channel_Code,
+			  Dialog_Code, Subtitle_Code, Angle_Code, Status_Code,
+			  Play_Mode_Code, Time_Mode, Group_Title, Track_Chapter;
+			  
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+*******************************************************************************************/
+INTEGER Semaphore, Hour, Minute, Second, Marker;
+INTEGER  	Status_Byte_4, //Disc Type starts at 0 in protocol so we will adjust by 1 (so byte 3 is our byte 4)
+ 			Status_Byte_5, //Audio Format
+			Status_Byte_6, //Audio Ch Code
+			Status_Byte_7, //
+			Status_Byte_8, //
+			Status_Byte_9, //
+			Status_Byte_10, //
+			Status_Byte_11, //
+			Status_Byte_12, //
+			Status_Byte_13, //
+			Status_Byte_14, //
+			Status_Byte_15, //
+			Status_Byte_16, //
+			Status_Byte_17, //
+			Status_Byte_18, //
+			Status_Byte_19, //
+			Status_Byte_20, //
+			Status_Byte_21, //
+			Status_Byte_22, //
+			Status_Byte_23, //
+			Status_Byte_24, //
+			Status_Byte_25; //
+ 
+STRING TempString$[70], sTemp2$[70];
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+PUSH CommandSent
+	{
+	wait(100, CommandWait1)
+		{
+		PleaseWait = 1;
+		wait(1200, CommandWait2)
+	    	{
+			TimedOut = 1;
+			processlogic();
+			TimedOut = 0;
+			PleaseWait = 0;
+			}
+		}
+	}
+	
+PUSH Acked
+	{
+	cancelallwait();
+	PleaseWait = 0;
+	}
+
+CHANGE FromDevice$
+	{
+    If(Semaphore = 0)
+    	{
+    	Semaphore = 1;
+    	While(Find("\x03", FromDevice$) > 0)
+    		{
+    		TempString$ = left(Remove("\x03", FromDevice$), 50);
+    		Marker = find("\x02", TempString$);
+    		Tempstring$ = Right(TempString$, len(Tempstring$) - Marker + 1);
+    		Switch(Byte(Tempstring$, 2))
+    			{
+    			Case(48):
+    				{
+
+    				Hour = atoi(mid(Tempstring$, 20, 2));
+    				Minute = atoi(mid(Tempstring$, 22, 2));
+    				Second = atoi(mid(Tempstring$, 24, 2));
+    				TimeOut = Hour * 3600 + Minute * 60 + Second; 
+    				
+    				// Gregg - July 2, 2008
+    				Status_Byte_4=Byte(Tempstring$, 4); // Disc Type
+    					Disc_Type_Code = Status_Byte_4;			    				
+    				Status_Byte_5 = Byte(Tempstring$, 5); // Audio Format Code				
+    					Audio_Format_Code = Status_Byte_5;
+    				Status_Byte_6=Byte(Tempstring$, 6); // Audio Ch Code				
+    					Audio_Channel_Code = Status_Byte_6;
+    				Status_Byte_7=Byte(Tempstring$, 7); // Dialog Code				
+    					Dialog_Code = Status_Byte_7;
+    				Status_Byte_8=Byte(Tempstring$, 8); // Subtitle Code				
+    					Subtitle_Code = Status_Byte_8;
+    				Status_Byte_9=Byte(Tempstring$, 9); // Angle Code    								
+    					Angle_Code = Status_Byte_9;
+    					sTemp2$ =  CHR(Angle_Code);
+    					Status_Byte_10=Byte(Tempstring$, 10);	// Status Code (1-15 in ASCII)			
+    					Status_Code = Status_Byte_10;
+     					sTemp2$ =  CHR(Status_Code);
+ 					
+    				Status_Byte_11=Byte(Tempstring$, 11);	// Play Mode Code			
+    					Play_Mode_Code = Status_Byte_11;
+    				Status_Byte_12=Byte(Tempstring$, 12);	// Group or Title hundreds			   					
+    				Status_Byte_13=Byte(Tempstring$, 13);	// Group or Title tens			
+       				Status_Byte_14=Byte(Tempstring$, 14);	// Group or Title ones				
+    					//Group_Title = Status_Byte_12*100 + Status_Byte_13*10+ Status_Byte_14;
+    					Group_Title=atoi(mid(Tempstring$, 13, 2));
+    				
+    				Status_Byte_15=Byte(Tempstring$, 15);	// Track or Chapter thousands			
+    				Status_Byte_16=Byte(Tempstring$, 16);	// Track or Chapter hundreds			
+    				Status_Byte_17=Byte(Tempstring$, 17);	// Track or Chapter tens			
+    				Status_Byte_18=Byte(Tempstring$, 18);	// Track or Chapter ones			
+ 						Track_Chapter = atoi(mid(Tempstring$, 15, 4));
+     				Status_Byte_19=Byte(Tempstring$, 19);	// Time Mode			
+ 						Time_Mode =  Status_Byte_19;
+
+    				Status_Byte_20=Byte(Tempstring$, 20);	// Elapsed time hours tens			
+    				Status_Byte_21=Byte(Tempstring$, 21);	// Elapsed time hours 1			
+    				Status_Byte_22=Byte(Tempstring$, 22);	// Elapsed time minutes 10				
+    				Status_Byte_23=Byte(Tempstring$, 23);	// Elapsed time minutes 1			
+    				Status_Byte_24=Byte(Tempstring$, 24);	// Elapsed time secs 10			
+    				Status_Byte_25=Byte(Tempstring$, 25);	// Elapsed time secs 1			
+      					
+    				}
+    			Case(75):
+    				{
+      				AckIn = 1;
+    				Processlogic();
+    				AckIn = 0;
+    				}
+    			Default:
+    				{
+    				AckIn = 1;
+    				Processlogic();
+    				AckIn = 0;
+    				} 
+    			}
+    		}
+    	Semaphore = 0;
+    	}
+    }
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+	{
+    Semaphore = 0;
+	}
+
+

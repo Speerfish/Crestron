@@ -1,0 +1,911 @@
+/***********************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+/***********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************************/
+#SYMBOL_NAME "LifeSize Drive v3.2"
+// #HINT ""
+#DEFINE_CONSTANT	ciCALLMAXCHARS				100
+#DEFINE_CONSTANT	ciMAXENTRIES					2000
+#DEFINE_CONSTANT	ciMAXCHARS						100
+#DEFINE_CONSTANT	ciMAXENTRIESPERPAGE		20
+#DEFINE_CONSTANT	ciMAXCALLS						3
+#DEFINE_CONSTANT	ciMAXPOLLS						6
+#DEFINE_CONSTANT	ciQUEUESIZE						20
+
+#DEFINE_CONSTANT	ciNOTCONNECTED				0
+#DEFINE_CONSTANT	ciAUDIOCONNECTED			1
+#DEFINE_CONSTANT	ciVIDEOCONNECTED			2
+
+#DEFINE_CONSTANT	ciPOLLPRIMINPUT				1
+#DEFINE_CONSTANT	ciPOLLSECINPUT				2
+#DEFINE_CONSTANT	ciPOLLPIPMODE					3
+#DEFINE_CONSTANT	ciPOLLAUTOANSWER			4
+#DEFINE_CONSTANT	ciPOLLVOLUME					5
+#DEFINE_CONSTANT	ciPOLLMICMUTE					6
+
+#DEFINE_CONSTANT	csLOCAL								"local"
+#DEFINE_CONSTANT	csCORPORATE						"corporate"
+// #CATEGORY "" 
+#CATEGORY "20" // Conferencing
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+
+#HELP_BEGIN
+	For use inside the LifeSize Video Conference module only.
+#HELP_END
+/***********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************************/
+DIGITAL_INPUT	Volume_Changing, Dial, Get_Local_Directory, Get_Corporate_Directory,
+							Search_Directory, First_Page, Page_Up, Page_Down, Last_Page,
+							Send_Next, Dial_Directory, Hang_Up_All, Answer_Incoming,
+							Reject_Incoming, Poll_Next, Presentation_Mode_On, Directory_Time_Out,
+							Presentation_Mode_Off, Poll_Enable,
+							Select_Directory[ciMAXENTRIESPERPAGE],
+							Hang_Up_Call[ciMAXCALLS], Control_Call[ciMAXCALLS], DTMF_Key[12];
+ANALOG_INPUT	Volume_In, Entries_Per_Page, Next_Poll, FE_Camera_Preset_Recall,
+							FE_Camera_Move;
+STRING_INPUT	Call_Quality$[8], Call_Type$[9], Call_Interface$[10];
+STRING_INPUT	Text$[ciCALLMAXCHARS];
+BUFFER_INPUT	From_Device$[10000], From_Module$[500];
+
+DIGITAL_OUTPUT	Requesting_Directory_Fb, Incoming_Call_Fb, Commands_To_Send,
+								Directory_Timed_Out, Timed_Out;
+ANALOG_OUTPUT		Current_Page_Fb, Number_Of_Pages_Fb, Primary_Input_In,
+								Secondary_Input_In, PIP_Mode_In, Auto_Answer_In, Volume_Fb,
+								Volume_Mute_In, Mic_Mute_In, Presentation_Mode_In;
+STRING_OUTPUT		Call_Number_Text$, To_Device$, Selected_Name$, Incoming_Call_Name$,
+								Incoming_Call_Number$, Incoming_Call_Type$;
+STRING_OUTPUT		Directory_Name$[ciMAXENTRIESPERPAGE];
+DIGITAL_OUTPUT	Control_Call_Fb[ciMAXCALLS];
+STRING_OUTPUT		Connected_Call_Type$[ciMAXCALLS], Connected_Call_Number$[ciMAXCALLS],
+								Connected_Call_Name$[ciMAXCALLS], Connected_Call_State$[ciMAXCALLS],
+								Connected_Disconnect_Reason$[ciMAXCALLS];
+/***********************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+***********************************************************************************/
+INTEGER	iTempCallConnected, iSelected, iOffSet, iPage, iEntriesPerPage, iOkToSend,
+				iNextEntry, iTemp, iDirectoryFB, a, iFlag1, iNumPages, iTemp1, iTemp2,
+				iCallTerminate, iControlCall, iPoll, iSent, iCallNum, iNextStore, iNextSend,
+				iFlag2;
+STRING	sDirectory[ciMAXENTRIES][ciMAXCHARS], sDirectoryText[10], sTemp[200],
+				sTempCallID[5], sDTMFKey[12][1], sPollQueue[ciMAXPOLLS][30],
+				sQueue[ciQUEUESIZE][100], sTempCommand[100], sCallHandle[5], sTemp1[100];
+/***********************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+***********************************************************************************/
+STRUCTURE Calls
+{
+	STRING	ID[5];
+	STRING	State[20];
+	STRING	Type[10];
+	STRING	Name$[50];
+	STRING	Number[50];
+	STRING	Reason[20];
+	INTEGER	Connected;
+};
+
+Calls stCalls[ciMAXCALLS];
+/***********************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+***********************************************************************************/
+Function fTimeOut()
+{
+	wait(500, wTimeOut)
+	{
+		Timed_Out = 1;
+	}
+}
+
+Function fDirectoryTimeOut()
+{
+	wait(500, wDirectoryTimeOut)
+	{
+		Directory_Timed_Out = 1;
+	}
+}
+
+Function fShowDirectory(INTEGER fiPage)
+{
+	iSelected = 0;
+	Selected_Name$ = "";
+	iOffSet = (fiPage - 1) * iEntriesPerPage;
+	for(a = 1 to iEntriesPerPage)
+	{
+		Directory_Name$[a] = sDirectory[a + iOffSet];
+	}
+}
+
+Function fProcessFB(STRING fsTemp)
+{
+	cswitch(iSent)
+	{
+		case(ciPOLLPRIMINPUT):
+		{
+			if(find("hd0", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 0;
+			}
+			else if(find("hd1", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 1;
+			}
+			else if(find("sd0", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 2;
+			}
+			else if(find("sd1", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 3;
+			}
+			else if(find("vga", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 4;
+			}
+			else if(find("hdmi0", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 5;
+			}
+			else if(find("hdmi1", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 6;
+			}
+			else if(find("comp0", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 7;
+			}
+			else if(find("dvi0", lower(fsTemp)) > 0)
+			{
+				Primary_Input_In = 8;
+			}
+			break;
+		}
+		case(ciPOLLSECINPUT):
+		{
+			if(find("hd0", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 0;
+			}
+			else if(find("hd1", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 1;
+			}
+			else if(find("sd0", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 2;
+			}
+			else if(find("sd1", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 3;
+			}
+			else if(find("vga", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 4;
+			}
+			else if(find("hdmi0", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 5;
+			}
+			else if(find("hdmi1", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 6;
+			}
+			else if(find("comp0", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 7;
+			}
+			else if(find("dvi0", lower(fsTemp)) > 0)
+			{
+				Secondary_Input_In = 8;
+			}
+			break;
+		}
+		case(ciPOLLPIPMODE):
+		{
+			if(find("off", lower(fsTemp)) > 0)
+			{
+				PIP_Mode_In = 0;
+			}
+			else if(find("on", lower(fsTemp)) > 0)
+			{
+				PIP_Mode_In = 1;
+			}
+			else if(find("auto", lower(fsTemp)) > 0)
+			{
+				PIP_Mode_In = 2;
+			}
+			break;
+		}
+		case(ciPOLLAUTOANSWER):
+		{
+			if(find("off", lower(fsTemp)) > 0)
+			{
+				Auto_Answer_In = 0;
+			}
+			else if(find("on", lower(fsTemp)) > 0)
+			{
+				Auto_Answer_In = 1;
+			}
+			break;
+		}
+		case(ciPOLLVOLUME):
+		{
+			Volume_Fb = atoi(fsTemp);
+			if(atoi(fsTemp) = 0)
+			{
+				Volume_Mute_In = 1;
+			}
+			else
+			{
+				Volume_Mute_In = 0;
+			}
+			break;
+		}
+		case(ciPOLLMICMUTE):
+		{
+			if(find("off", lower(fsTemp)) > 0)
+			{
+				Mic_Mute_In = 0;
+			}
+			else if(find("on", lower(fsTemp)) > 0)
+			{
+				Mic_Mute_In = 1;
+			}
+			break;
+		}
+	}
+}
+
+Function fHangUp(INTEGER fiCallNum)
+{
+	stCalls[fiCallNum].ID = "";
+	stCalls[fiCallNum].State = "";
+	stCalls[fiCallNum].Type = "";
+	stCalls[fiCallNum].Name$ = "";
+	stCalls[fiCallNum].Number = "";
+	stCalls[fiCallNum].Reason = "";
+	stCalls[fiCallNum].Connected = ciNOTCONNECTED;
+	Connected_Call_Type$[fiCallNum] = stCalls[fiCallNum].Type;
+	Connected_Call_Number$[fiCallNum] = stCalls[fiCallNum].Number;
+	Connected_Call_Name$[fiCallNum] = stCalls[fiCallNum].Name$;
+	Connected_Call_State$[fiCallNum] = stCalls[fiCallNum].State;
+	Connected_Disconnect_Reason$[fiCallNum] = stCalls[fiCallNum].Reason;
+}
+
+Function fStore(STRING fsTemp1)
+{
+	sQueue[iNextStore] = fsTemp1;
+	iNextStore = iNextStore + 1;
+	if(iNextStore > ciQUEUESIZE)
+	{
+		iNextStore = 1;
+	}
+	if(iNextStore <> iNextSend)
+	{
+		Commands_To_Send = 1;
+	}
+	else
+	{
+		Commands_To_Send = 0;
+	}
+}
+
+Function fSendNext()
+{
+	if(iOkToSend = 1)
+	{
+		if(iNextSend <> iNextStore)
+		{
+			To_Device$ = sQueue[iNextSend];
+			fTimeOut();
+			iOkToSend = 0;
+			iNextSend = iNextSend + 1;
+			if(iNextSend > ciQUEUESIZE)
+			{
+				iNextSend = 1;
+			}
+			if(iNextSend = iNextStore)
+			{
+				Commands_To_Send = 0;
+			}
+			else
+			{
+				Commands_To_Send = 1;
+			}
+		}
+		else if((Poll_Enable = 1) && (iPoll > 0))
+		{
+			To_Device$ = sPollQueue[iPoll];
+			fTimeOut();
+			iOkToSend = 0;
+			iSent = iPoll;
+			iPoll = iPoll + 1;
+			if(iPoll > ciMAXPOLLS)
+			{
+				iPoll = 0;
+			}
+		}
+	}
+}
+
+Integer_Function fFindOpenCall()
+{
+	INTEGER fA, fiTemp;
+	
+	for(fA = 1 to ciMAXCALLS)
+	{
+		if(stCalls[fA].Connected = ciNOTCONNECTED)
+		{
+			fiTemp = fA;
+			break;
+		}
+		else
+		{
+			fiTemp = 0;
+		}
+	}
+	Return (fiTemp);
+}
+
+Integer_Function fGetCallNum(STRING fsCallID)
+{
+	INTEGER fA, fiTemp;
+	
+	for(fA = 1 to ciMAXCALLS)
+	{
+		if(stCalls[fA].ID = fsCallID)
+		{
+			fiTemp = fA;
+			break;
+		}
+		else
+		{
+			fiTemp = 0;
+		}
+	}
+	Return(fiTemp);
+}
+/***********************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************************/
+PUSH Volume_Changing
+{
+	iOkToSend = 0;
+}
+
+RELEASE Volume_Changing
+{
+	iOkToSend = 1;
+}
+
+PUSH Dial
+{
+	for(a = 1 to ciMAXCALLS)
+	{
+		if(stCalls[a].ID <> "")
+		{
+			iTempCallConnected = 1;
+			break;
+		}
+		else
+		{
+			iTempCallConnected = 0;
+		}
+	}
+	if(iTempCallConnected > 0)
+	{
+		makestring(sTempCommand, "control call add-part 0 %s %s %s %s\n", Call_Interface$, Call_Type$, Text$, Call_Quality$);
+	}
+	else
+	{
+		makestring(sTempCommand, "control call dial %s %s %s %s\n", Call_Interface$, Call_Type$, Text$, Call_Quality$);
+	}
+	call fStore(sTempCommand);
+	call fSendNext();
+}
+
+PUSH Get_Local_Directory
+{
+	iNextEntry = 0;
+	sTempCommand = "get directory local\n";
+	call fStore(sTempCommand);
+	call fSendNext();
+	sDirectoryText = csLOCAL;
+	Requesting_Directory_Fb = 1;
+	call fDirectoryTimeOut();
+}
+
+PUSH Get_Corporate_Directory
+{
+	iNextEntry = 0;
+	sTempCommand = "get corporate directory\n";
+	call fStore(sTempCommand);
+	call fSendNext();
+	sDirectoryText = csCORPORATE;
+	Requesting_Directory_Fb = 1;
+	call fDirectoryTimeOut();
+}
+
+PUSH Directory_Time_Out
+{
+	Directory_Timed_Out = 0;
+	delay(1);
+	Requesting_Directory_Fb = 0;
+}
+
+PUSH Search_Directory
+{
+	iNextEntry = 0;
+	makestring(sTempCommand, "get directory %s %s\n", sDirectoryText, Text$);
+	call fStore(sTempCommand);
+	call fSendNext();
+	Requesting_Directory_Fb = 1;
+	call fDirectoryTimeOut();
+}
+
+PUSH First_Page
+{
+	iPage = 1;
+	Current_Page_Fb = iPage;
+	call fShowDirectory(iPage);
+}
+
+PUSH Page_Up
+{
+	if(iPage >= 2)
+	{
+		iPage = iPage - 1;
+		Current_Page_Fb = iPage;
+		call fShowDirectory(iPage);
+	}
+}
+
+PUSH Page_Down
+{
+	if(iPage < iNumPages)
+	{
+		iPage = iPage + 1;
+		Current_Page_Fb = iPage;
+		call fShowDirectory(iPage);
+	}
+}
+
+PUSH Last_Page
+{
+	iPage = iNumPages;
+	Current_Page_Fb = iPage;
+	call fShowDirectory(iPage);
+}
+
+PUSH Send_Next
+{
+	Timed_Out = 0;
+}
+
+RELEASE Send_Next
+{
+	iOkToSend = 1;
+	call fSendNext();
+}
+
+PUSH Dial_Directory
+{
+	if(iSelected > 0)
+	{
+		for(a = 1 to ciMAXCALLS)
+		{
+			if(stCalls[a].ID <> "")
+			{
+				iTempCallConnected = 1;
+				break;
+			}
+			else
+			{
+				iTempCallConnected = 0;
+			}
+		}
+		if(iTempCallConnected > 0)
+		{
+			makestring(sTempCommand, "control call add-part 0 \x22%s:%s\x22\n", sDirectoryText, sDirectory[iSelected + iOffSet]);
+		}
+		else
+		{
+			makestring(sTempCommand, "control call dial \x22%s:%s\x22\n", sDirectoryText, sDirectory[iSelected + iOffSet]);
+		}
+		call fStore(sTempCommand);
+		call fSendNext();
+	}
+}
+
+PUSH Answer_Incoming
+{
+	makestring(sTempCommand, "control call answer %s\n", sCallHandle);
+	call fStore(sTempCommand);
+	call fSendNext();
+}
+
+PUSH Hang_Up_All
+{
+	makestring(sTempCommand, "control call hangup -a\n");
+	call fStore(sTempCommand);
+	call fSendNext();
+}
+
+PUSH Reject_Incoming
+{
+	makestring(sTempCommand, "control call answer %s -r\n", sCallHandle);
+	call fStore(sTempCommand);
+	call fSendNext();
+}
+
+PUSH Select_Directory
+{
+	INTEGER iTemp;
+	
+	iTemp = getlastmodifiedarrayindex();
+	if(iSelected = iTemp)
+	{
+		iSelected = 0;
+		Selected_Name$ = "";
+	}
+	else
+	{
+		iSelected = iTemp;
+		Selected_Name$ = sDirectory[iSelected + iOffSet];
+	}
+}
+
+PUSH Hang_Up_Call
+{
+	INTEGER	piTemp;
+	
+	piTemp = getlastmodifiedarrayindex();
+	makestring(sTempCommand, "control call del-part %s\n", stCalls[piTemp].ID);
+	call fStore(sTempCommand);
+	call fSendNext();
+}
+
+PUSH Control_Call
+{
+	INTEGER	iControlCallTemp;
+	INTEGER iTempA;
+	iControlCallTemp = getlastmodifiedarrayindex();
+	for(iTempA = 1 to ciMAXCALLS)
+	{
+		Control_Call_Fb[iTempA] = 0;
+	}
+	Control_Call_Fb[iControlCallTemp] = 1;
+	iControlCall = iControlCallTemp;
+}
+
+PUSH DTMF_Key
+{
+	INTEGER iTempKey;
+	iTempKey = getlastmodifiedarrayindex();
+	if((iControlCall > 0) && (iControlCall < ciMAXCALLS) && (lower(stCalls[iControlCall].State) = "connected"))
+	{
+		makestring(sTempCommand, "control call dtmf %s %s\n", stCalls[iControlCall].ID, sDTMFKey[iTempKey]);
+		call fStore(sTempCommand);
+		call fSendNext();
+	}
+}
+
+PUSH Poll_Next
+{
+	iPoll = 1;
+	call fSendNext();
+}
+
+PUSH Presentation_Mode_On
+{
+	if(iControlCall <> 0)
+	{
+		makestring(sTempCommand, "control call presentation %s start\n", stCalls[iControlCall].ID);
+		call fStore(sTempCommand);
+		call fSendNext();
+	}
+}
+
+PUSH Presentation_Mode_Off
+{
+	if(iControlCall <> 0)
+	{
+		makestring(sTempCommand, "control call presentation %s stop\n", stCalls[iControlCall].ID);
+		call fStore(sTempCommand);
+		call fSendNext();
+	}
+}
+
+CHANGE Volume_In
+{
+	if(Volume_Changing = 1)
+	{
+		makestring(To_Device$, "set volume speaker %u\n", Volume_In);
+	}
+}
+
+CHANGE Entries_Per_Page
+{
+	if(Entries_Per_Page <= ciMAXENTRIESPERPAGE)
+	{
+		iEntriesPerPage = Entries_Per_Page;
+	}
+}
+
+CHANGE Next_Poll
+{
+	if(Next_Poll <= ciMAXPOLLS)
+	{
+		iPoll = Next_Poll;
+	}
+}
+
+CHANGE FE_Camera_Preset_Recall
+{
+	if(iControlCall <> 0)
+	{
+		makestring(sTempCommand, "set camera position -P %d -c %s\n", FE_Camera_Preset_Recall, stCalls[iControlCall].ID);
+		call fStore(sTempCommand);
+		call fSendNext();
+	}
+}
+
+CHANGE FE_Camera_Move
+{
+	if(iControlCall <> 0)
+	{
+		makestring(sTempCommand, "set camera position -%s -c %s\n", chr(FE_Camera_Move), stCalls[iControlCall].ID);
+		call fStore(sTempCommand);
+		call fSendNext();
+	}
+}
+
+CHANGE From_Device$
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(find("\x0D\x0A", From_Device$))
+		{
+			sTemp = left(gather("\x0D\x0A", From_Device$), 200);
+			cancelwait(wTimeOut);
+			if(find("\x0D\x0A", sTemp) = 1)
+			{
+				sTemp = "";
+			}
+			else if(find("get directory", lower(sTemp)) > 0)
+			{
+				iDirectoryFB = 1;
+				sTemp = "";
+			}
+			else if(find("cs", lower(sTemp)) = 1)
+			{
+				if((find("connected", lower(sTemp)) > 0) || (find("ringing", lower(sTemp)) > 0) ||
+					(find("off hook", lower(sTemp)) > 0) || (find("dialing", lower(sTemp)) > 0) ||
+					(find("proceeding", lower(sTemp)) > 0) || (find("answered number", lower(sTemp)) > 0))
+				{
+					iTemp1 = find(",", sTemp);
+					iTemp2 = find(",", sTemp, iTemp1 + 1);
+					sTempCallID = mid(sTemp, iTemp1 + 1, iTemp2 - iTemp1 - 1);
+					iCallNum = fGetCallNum(sTempCallID);
+					if(iCallNum = 0)
+					{
+						iCallNum = fFindOpenCall();
+					}
+					if(iCallNum <> 0)
+					{
+						stCalls[iCallNum].ID = sTempCallID;
+						iTemp1 = find(",", sTemp, iTemp2 + 1);
+						iTemp2 = find(",", sTemp, iTemp1 + 1);
+						stCalls[iCallNum].State = left(mid(sTemp, iTemp1 + 1, iTemp2 - iTemp1 -1), 20);
+						Connected_Call_State$[iCallNum] = stCalls[iCallNum].State;
+						iTemp1 = find(",", sTemp, iTemp2 + 1);
+						stCalls[iCallNum].Type = left(mid(sTemp, iTemp2 + 1, iTemp1 - iTemp2 - 1), 10);
+						if(lower(stCalls[iCallNum].Type) = "audio")
+						{
+							stCalls[iCallNum].Connected = ciAUDIOCONNECTED;
+						}
+						else if(lower(stCalls[iCallNum].Type) = "video")
+						{
+							stCalls[iCallNum].Connected = ciVIDEOCONNECTED;
+						}
+						Connected_Call_Type$[iCallNum] = stCalls[iCallNum].Type;
+						iTemp2 = find(",", sTemp, iTemp1 + 1);
+						stCalls[iCallNum].Reason = left(mid(sTemp, iTemp1 + 1, iTemp2 - iTemp1 - 1), 20);
+						Connected_Disconnect_Reason$[iCallNum] = stCalls[iCallNum].Reason;
+						iTemp1 = find(",", sTemp, iTemp2 + 1);
+						Connected_Call_Number$[iCallNum] = left(mid(sTemp, iTemp2 + 1, iTemp1 - iTemp2 - 1), 50);
+						Connected_Call_Name$[iCallNum] = left(mid(sTemp, iTemp1 + 1, len(sTemp) - iTemp1 - 1), 50);
+					}
+					sTemp = "";
+				}
+				else if(find("terminated", lower(sTemp)) > 0)
+				{
+					iTemp1 = find(",", sTemp);
+					iTemp2 = find(",", sTemp, iTemp1 + 1);
+					sTempCallID = mid(sTemp, iTemp1 + 1, iTemp2 - iTemp1 - 1);
+					iCallNum = fGetCallNum(sTempCallID);
+					if(iCallNum <> 0)
+					{
+						call fHangUp(iCallNum);
+						sTemp = "";
+					}
+				}
+				else if(find("on hook", lower(sTemp)) > 0)
+				{
+					iTemp1 = find(",", sTemp);
+					iTemp2 = find(",", sTemp, iTemp1 + 1);
+					sTempCallID = mid(sTemp, iTemp1 + 1, iTemp2 - iTemp1 - 1);
+					iCallNum = fGetCallNum(sTempCallID);
+					if(iCallNum <> 0)
+					{
+						call fHangUp(iCallNum);
+					}
+				}
+			}
+			else if(find("ic", lower(sTemp)) = 1)
+			{
+				if(find("ring", lower(sTemp)) > 0)
+				{
+					Incoming_Call_Fb = 1;
+					iTemp1 = find(",", sTemp);
+					iTemp2 = find(",", sTemp, iTemp1 + 1);
+					sCallHandle = mid(sTemp, iTemp1 + 1, iTemp2 - iTemp1 - 1);
+					iTemp1 = find(",", sTemp, iTemp2 + 1);
+					iTemp2 = find(",", sTemp, iTemp1 + 1);
+					iTemp1 = find(",", sTemp, iTemp2 + 1);
+					Incoming_Call_Type$ = mid(sTemp, iTemp2 + 1, iTemp1 - iTemp2 - 1);
+					iTemp2 = find(",", sTemp, iTemp1 + 1);
+					Incoming_Call_Number$ = mid(sTemp, iTemp1 + 1, iTemp2 - iTemp1 - 1);
+					Incoming_Call_Name$ = mid(sTemp, iTemp2 + 1, len(sTemp) - iTemp2 - 1);
+				}
+				else if(find("terminated", lower(sTemp)) > 0)
+				{
+					Incoming_Call_FB = 0;
+					sCallHandle = "";
+					Incoming_Call_Type$ = "";
+					Incoming_Call_Number$ = "";
+					Incoming_Call_Name$ = "";
+				}
+				sTemp = "";
+			}
+			else if(find("ps", lower(sTemp)) = 1)
+			{
+				if((find("initiated", lower(sTemp)) > 0) && (find("no", lower(sTemp)) > 0))
+				{
+					Presentation_Mode_In = 1;
+				}
+				else if((find("terminated", lower(sTemp)) > 0) && (find("no", lower(sTemp)) > 0))
+				{
+					Presentation_Mode_In = 0;
+				}
+				else if((find("relinquished", lower(sTemp)) > 0) && (find("no", lower(sTemp)) > 0))
+				{
+					Presentation_Mode_In = 0;
+				}
+			}
+			else if((find("ok", lower(sTemp)) = 1) && (iDirectoryFB = 1))
+			{
+				iDirectoryFB = 0;
+				Requesting_Directory_Fb = 0;
+				iPage = 1;
+				Current_Page_Fb = iPage;
+				call fShowDirectory(iPage);
+				sTemp = "";
+			}
+			else if((find("ok", lower(sTemp)) = 1) || (find("ack", lower(sTemp)) = 1))
+			{
+				sTemp = "";
+			}
+			else if(iDirectoryFB = 1)
+			{
+				cancelwait(wDirectoryTimeOut);
+				if(iNextEntry < ciMAXENTRIES)
+				{
+					iTemp = find(",", sTemp);
+					iNextEntry = iNextEntry + 1;
+					sDirectory[iNextEntry] = left(left(sTemp, iTemp - 1), ciMAXCHARS);
+					iNumPages = iNextEntry / iEntriesPerPage;
+					if((iNextEntry mod iEntriesPerPage) > 0)
+					{
+						iNumPages = iNumPages + 1;
+					}
+					Number_Of_Pages_Fb = iNumPages;
+				}
+			}
+			else if((len(sTemp) > 2) && (find("$", sTemp) = 0) && (find("get", lower(sTemp)) = 0))
+			{
+				call fProcessFB(sTemp);
+			}
+			sTemp = "";
+		}
+		iFlag1 = 0;
+	}
+}
+
+CHANGE Text$
+{
+	Call_Number_Text$ = Text$;
+}
+
+CHANGE From_Module$
+{
+	if(iFlag2 = 0)
+	{
+		iFlag2 = 1;
+		while(find("\x0D\x0A", From_Module$) > 0)
+		{
+			sTemp1 = gather("\x0D\x0A", From_Module$);
+			call fStore(sTemp1);
+			call fSendNext();
+		}
+		iFlag2 = 0;
+	}
+}
+
+/***********************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************************/
+Function Main()
+{
+	iEntriesPerPage = ciMAXENTRIESPERPAGE;
+	iPage = 1;
+	sTemp = "";
+	iDirectoryFB = 0;
+	iNextEntry = 0;
+	sDTMFKey[1] = "1";
+	sDTMFKey[2] = "2";
+	sDTMFKey[3] = "3";
+	sDTMFKey[4] = "4";
+	sDTMFKey[5] = "5";
+	sDTMFKey[6] = "6";
+	sDTMFKey[7] = "7";
+	sDTMFKey[8] = "8";
+	sDTMFKey[9] = "9";
+	sDTMFKey[10] = "0";
+	sDTMFKey[11] = "*";
+	sDTMFKey[12] = "#";
+	iControlCall = 1;
+	sPollQueue[ciPOLLPRIMINPUT] = "get video primary-input\n";
+	sPollQueue[ciPOLLSECINPUT] = "get video secondary-input\n";
+	sPollQueue[ciPOLLPIPMODE] = "get video pip-mode\n";
+	sPollQueue[ciPOLLAUTOANSWER] = "get call auto-answer\n";
+	sPollQueue[ciPOLLVOLUME] = "get volume speaker\n";
+	sPollQueue[ciPOLLMICMUTE] = "get audio mics\n";
+	Control_Call_Fb[2] = 0;
+	Control_Call_Fb[3] = 0;
+	Control_Call_Fb[1] = 1;
+	iTempCallConnected = 0;
+	Incoming_Call_Fb = 0;
+	iFlag1 = 0;
+	iNextStore = 1;
+	iNextSend = 1;
+	iFlag2 = 0;
+	iOkToSend = 1;
+	iPoll = 0;
+	iSent = 0;
+}
