@@ -1,0 +1,60 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:    Speerfish
+System Name:
+System Number:
+Programmer:     Armin Mitchell
+Comments:
+*/
+#SYMBOL_NAME "Christie DS+ 65 Warm_Cool"
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+STRING_INPUT From_Device$[100]; 
+
+DIGITAL_OUTPUT  Lamp_1_FB, Lamp_2_FB;
+
+CHANGE From_Device$ 
+{ 
+string sTemp[100];
+ 	
+  	 sTemp = gather("\x0D", from_device$);     
+  	 clearbuffer(from_device$);
+
+	if((find("%001 LST1 000002", sTemp)) )   // on
+	{		
+		Lamp_1_FB = 0;
+	}  
+	else if((find("%001 LST1 000003", sTemp)) )  // off
+	{
+		Lamp_1_FB = 0;
+	}  
+	else if((find("%001 LST1 000001", sTemp)) )  // warming
+	{
+		Lamp_1_FB = 1;
+	}
+	else if((find("%001 LST1 000004", sTemp)) )  // cooling
+	{
+		Lamp_1_FB = 1;
+	}
+	else if((find("%001 LST2 000002", sTemp)) )  // on
+	{
+		Lamp_2_FB = 0;
+	}
+	else if((find("%001 LST2 000003", sTemp)) )  // off
+	{
+		Lamp_2_FB = 0;
+	}
+	else if((find("%001 LST2 000001", sTemp)) )  // warming
+	{
+		Lamp_2_FB = 1;
+	}
+	else if((find("%001 LST2 000004", sTemp)) )  // cooling
+	{
+		Lamp_2_FB = 1;
+	}
+
+}
