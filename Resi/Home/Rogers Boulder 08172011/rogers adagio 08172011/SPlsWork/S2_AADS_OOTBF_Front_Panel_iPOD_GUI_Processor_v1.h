@@ -1,0 +1,174 @@
+#ifndef __S2_AADS_OOTBF_FRONT_PANEL_IPOD_GUI_PROCESSOR_V1_H__
+#define __S2_AADS_OOTBF_FRONT_PANEL_IPOD_GUI_PROCESSOR_V1_H__
+
+
+
+
+/*
+* Constructor and Destructor
+*/
+
+/*
+* DIGITAL_INPUT
+*/
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_START_DIG_INPUT 0
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_KNOBLEFT_DIG_INPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_KNOBRIGHT_DIG_INPUT 2
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_ENTER_DIG_INPUT 3
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_MENU_DIG_INPUT 4
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_MORE_DIG_INPUT 5
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_DISPLAY_DIG_INPUT 6
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_EXITBROWSE_DIG_INPUT 7
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_DOCKED_DIG_INPUT 8
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_OFFLINE_DIG_INPUT 9
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHOWNOWPLAYING_DIG_INPUT 10
+
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEATFB_DIG_INPUT 11
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEATFB_ARRAY_LENGTH 3
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLEFB_DIG_INPUT 14
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLEFB_ARRAY_LENGTH 3
+
+/*
+* ANALOG_INPUT
+*/
+
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROLLINE1$_STRING_INPUT 0
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROLLINE1$_STRING_MAX_LEN 100
+CREATE_STRING_STRUCT( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __CONTROLLINE1$, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROLLINE1$_STRING_MAX_LEN );
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROLLINE2$_STRING_INPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROLLINE2$_STRING_MAX_LEN 100
+CREATE_STRING_STRUCT( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __CONTROLLINE2$, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROLLINE2$_STRING_MAX_LEN );
+
+
+
+/*
+* DIGITAL_OUTPUT
+*/
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_EXIT_DIG_OUTPUT 0
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_ENTERACTIVE_DIG_OUTPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_PLAYPAUSE_DIG_OUTPUT 2
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_TRACKFWD_DIG_OUTPUT 3
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_TRACKREV_DIG_OUTPUT 4
+
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEAT_DIG_OUTPUT 5
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEAT_ARRAY_LENGTH 3
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLE_DIG_OUTPUT 8
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLE_ARRAY_LENGTH 3
+
+/*
+* ANALOG_OUTPUT
+*/
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CURRENTMENU_ANALOG_OUTPUT 0
+
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_LINE1$_STRING_OUTPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_LINE2$_STRING_OUTPUT 2
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_LINE2SCROLLARROW$_STRING_OUTPUT 3
+
+
+/*
+* Direct Socket Variables
+*/
+
+
+
+
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* STRING_PARAMETER
+*/
+
+
+/*
+* INTEGER
+*/
+
+
+/*
+* LONG_INTEGER
+*/
+
+
+/*
+* SIGNED_INTEGER
+*/
+
+
+/*
+* SIGNED_LONG_INTEGER
+*/
+
+
+/*
+* STRING
+*/
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_ELEMS 4
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_CHARS 8
+CREATE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __MAINMENU$, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_ELEMS, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_CHARS );
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROL$_ARRAY_NUM_ELEMS 3
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROL$_ARRAY_NUM_CHARS 10
+CREATE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __CONTROL$, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROL$_ARRAY_NUM_ELEMS, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_CONTROL$_ARRAY_NUM_CHARS );
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEAT$_ARRAY_NUM_ELEMS 3
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEAT$_ARRAY_NUM_CHARS 8
+CREATE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __REPEAT$, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEAT$_ARRAY_NUM_ELEMS, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_REPEAT$_ARRAY_NUM_CHARS );
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLE$_ARRAY_NUM_ELEMS 3
+#define __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLE$_ARRAY_NUM_CHARS 8
+CREATE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __SHUFFLE$, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLE$_ARRAY_NUM_ELEMS, __S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1_SHUFFLE$_ARRAY_NUM_CHARS );
+
+/*
+* STRUCTURE
+*/
+
+START_GLOBAL_VAR_STRUCT( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1 )
+{
+   void* InstancePtr;
+   struct GenericOutputString_s sGenericOutStr;
+   unsigned short LastModifiedArrayIndex;
+
+   DECLARE_IO_ARRAY( __REPEATFB );
+   DECLARE_IO_ARRAY( __SHUFFLEFB );
+   DECLARE_IO_ARRAY( __REPEAT );
+   DECLARE_IO_ARRAY( __SHUFFLE );
+   unsigned short __SCROLLINDEX;
+   unsigned short __SCROLLMAX;
+   unsigned short __NOWPLAYINGCALLINGMENU;
+   unsigned short __NOWPLAYINGCALLINGSCROLLINDEX;
+   DECLARE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __MAINMENU$ );
+   DECLARE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __CONTROL$ );
+   DECLARE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __REPEAT$ );
+   DECLARE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __SHUFFLE$ );
+   DECLARE_STRING_STRUCT( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __CONTROLLINE1$ );
+   DECLARE_STRING_STRUCT( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, __CONTROLLINE2$ );
+};
+
+START_NVRAM_VAR_STRUCT( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1 )
+{
+};
+
+DEFINE_WAITEVENT( S2_AADS_OOTBF_Front_Panel_iPOD_GUI_Processor_v1, CONTROLMESSAGEWAIT );
+
+
+#endif //__S2_AADS_OOTBF_FRONT_PANEL_IPOD_GUI_PROCESSOR_V1_H__
+

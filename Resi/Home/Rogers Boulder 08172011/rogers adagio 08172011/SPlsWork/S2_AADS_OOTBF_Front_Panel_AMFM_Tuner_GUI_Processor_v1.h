@@ -1,0 +1,163 @@
+#ifndef __S2_AADS_OOTBF_FRONT_PANEL_AMFM_TUNER_GUI_PROCESSOR_V1_H__
+#define __S2_AADS_OOTBF_FRONT_PANEL_AMFM_TUNER_GUI_PROCESSOR_V1_H__
+
+
+
+
+/*
+* Constructor and Destructor
+*/
+
+/*
+* DIGITAL_INPUT
+*/
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_START_DIG_INPUT 0
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_KNOBLEFT_DIG_INPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_KNOBRIGHT_DIG_INPUT 2
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_ENTER_DIG_INPUT 3
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_MENU_DIG_INPUT 4
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_MORE_DIG_INPUT 5
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMACTIVE_DIG_INPUT 6
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETSAVEFB_DIG_INPUT 7
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETSAVEFB_DIG_INPUT 8
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETCLEARFB_DIG_INPUT 9
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETCLEARFB_DIG_INPUT 10
+
+
+/*
+* ANALOG_INPUT
+*/
+
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_CURRENTSTATION$_STRING_INPUT 0
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_CURRENTSTATION$_STRING_MAX_LEN 9
+CREATE_STRING_STRUCT( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1, __CURRENTSTATION$, __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_CURRENTSTATION$_STRING_MAX_LEN );
+
+
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETVALUE_ANALOG_INPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETVALUE_ARRAY_LENGTH 10
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETVALUE_ANALOG_INPUT 11
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETVALUE_ARRAY_LENGTH 20
+
+/*
+* DIGITAL_OUTPUT
+*/
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_EXIT_DIG_OUTPUT 0
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_ENTERACTIVE_DIG_OUTPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_SELECTAM_DIG_OUTPUT 2
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_SELECTFM_DIG_OUTPUT 3
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETSAVE_DIG_OUTPUT 4
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETSAVE_DIG_OUTPUT 5
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETCLEAR_DIG_OUTPUT 6
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETCLEAR_DIG_OUTPUT 7
+
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETSELECT_DIG_OUTPUT 8
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_AMPRESETSELECT_ARRAY_LENGTH 10
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETSELECT_DIG_OUTPUT 18
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_FMPRESETSELECT_ARRAY_LENGTH 20
+
+/*
+* ANALOG_OUTPUT
+*/
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_CURRENTMENU_ANALOG_OUTPUT 0
+
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_LINE1$_STRING_OUTPUT 1
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_LINE2$_STRING_OUTPUT 2
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_LINE2SCROLLARROW$_STRING_OUTPUT 3
+
+
+/*
+* Direct Socket Variables
+*/
+
+
+
+
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* STRING_PARAMETER
+*/
+
+
+/*
+* INTEGER
+*/
+
+
+/*
+* LONG_INTEGER
+*/
+
+
+/*
+* SIGNED_INTEGER
+*/
+
+
+/*
+* SIGNED_LONG_INTEGER
+*/
+
+
+/*
+* STRING
+*/
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_ELEMS 5
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_CHARS 14
+CREATE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1, __MAINMENU$, __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_ELEMS, __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_MAINMENU$_ARRAY_NUM_CHARS );
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_PRESETCONFIRM$_ARRAY_NUM_ELEMS 2
+#define __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_PRESETCONFIRM$_ARRAY_NUM_CHARS 6
+CREATE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1, __PRESETCONFIRM$, __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_PRESETCONFIRM$_ARRAY_NUM_ELEMS, __S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1_PRESETCONFIRM$_ARRAY_NUM_CHARS );
+
+/*
+* STRUCTURE
+*/
+
+START_GLOBAL_VAR_STRUCT( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1 )
+{
+   void* InstancePtr;
+   struct GenericOutputString_s sGenericOutStr;
+   unsigned short LastModifiedArrayIndex;
+
+   DECLARE_IO_ARRAY( __AMPRESETSELECT );
+   DECLARE_IO_ARRAY( __FMPRESETSELECT );
+   DECLARE_IO_ARRAY( __AMPRESETVALUE );
+   DECLARE_IO_ARRAY( __FMPRESETVALUE );
+   unsigned short __SCROLLINDEX;
+   unsigned short __SCROLLMAX;
+   unsigned short __PRESETTOSAVE;
+   DECLARE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1, __MAINMENU$ );
+   DECLARE_STRING_ARRAY( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1, __PRESETCONFIRM$ );
+   DECLARE_STRING_STRUCT( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1, __CURRENTSTATION$ );
+};
+
+START_NVRAM_VAR_STRUCT( S2_AADS_OOTBF_Front_Panel_AMFM_Tuner_GUI_Processor_v1 )
+{
+};
+
+
+
+#endif //__S2_AADS_OOTBF_FRONT_PANEL_AMFM_TUNER_GUI_PROCESSOR_V1_H__
+
