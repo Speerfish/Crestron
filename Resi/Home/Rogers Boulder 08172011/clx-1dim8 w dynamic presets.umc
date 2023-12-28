@@ -1,0 +1,3506 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.12.39
+IntStrVrs=2
+MinSMWVrs=2.02.00
+MinTIOVrs=0
+SavedBy=SMW2.12.39
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=clx-1dim8 w dynamic presets.umc
+DbVr=21.04.015.00
+DvcDbVr=27.01.004.00
+Incl=362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,767,830,883,1032,1062,1079,1134,1157,1199,1220,1222,1299,1348,1439,1472,1473,1499,1746,1803,1975,2229,
+McNm=clx-1dim8 w dynamic presets
+SmVr=663
+DvVr=663
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+APg=1
+FltTmp=1
+FpCS=0
+Cmn1=MODULE NAME: CLX-1DIM8 /w Dynamic Preset v1.1 (cm)\\\\CATEGORY:||1
+Cmn2=Lighting\\\\VERSION: 1.1.0 (6/30/2010)\\\\SUMMARY: Provides basic||1
+Cmn3=control with 4 user-defined presets for a single \\         CLX-
+Cmn4=1DIM8 lighting module.\\\\MODULE DESCRIPTION:\\    \\This module||1
+Cmn5=controls the Crestron CLX-1DIM8 lighting module.  It provides a||1
+Cmn6=\\total of six presets (two fixed and four dynamically adjustable)||1
+Cmn7=as well as \\discrete channel dimming capabilities.\\\\\\CONFIGURATION||1
+Cmn8=REQUIRED: Enable NVRamDisk in MP2 using the Viewport.\\\\CRESTRON||1
+Cmn9=HARDWARE REQUIRED: CLX-1DIM8, 2-series processor\\\\INPUT DESCRIPTIONS:
+Cmn10=\\\\Name                           Type Description\\-----------
+Cmn11=----------------------------------------------------------------
+Cmn12=---\\\\On                             D    Sets all channels to||1
+Cmn13=100%       \\Off                            D    Sets all channels||1
+Cmn14=to 0%\\Preset_1                       D    Sets channels to Preset||1
+Cmn15=1 levels\\Preset_2                       D    Sets channels to Preset||1
+Cmn16=2 levels\\Preset_3                       D    Sets channels to Preset||1
+Cmn17=3 levels\\Preset_4                       D    Sets channels to Preset||1
+Cmn18=4 levels  \\Raise                          D    Raises levels of||1
+Cmn19=all channels\\Lower                          D    Lowers levels||1
+Cmn20=of all channels\\Level                          A    Sets all channels||1
+Cmn21=to given level  \\\\Save                           D    Saves current||1
+Cmn22=channel levels to the current \\||P
+Cmn23=||4preset.  Does not affect "On" or "Off" channel\\||<
+Cmn24=||Hlevels.\\ \\Reset||G
+Cmn25=||3D    Recalls the default channel levels for the \\||;
+Cmn26=||Icurrent preset (see note below)\\ \\Channel_1_Raise||1
+Cmn27=||?D    Raises level of channel 1 \\Channel_1_Lower||1
+Cmn28=||?D    Lowers level of channel 1 \\Channel_2_Raise||1
+Cmn29=||?D    Raises level of channel 2 \\Channel_2_Lower||1
+Cmn30=||?D    Lowers level of channel 2 \\Channel_3_Raise||1
+Cmn31=||?D    Raises level of channel 3 \\Channel_3_Lower||1
+Cmn32=||?D    Lowers level of channel 3 \\Channel_4_Raise||1
+Cmn33=||?D    Raises level of channel 4 \\Channel_4_Lower||1
+Cmn34=||?D    Lowers level of channel 4\\Channel_5_Raise||2
+Cmn35=||>D    Raises level of channel 4 \\Channel_5_Lower||2
+Cmn36=||>D    Lowers level of channel 5 \\Channel_6_Raise||2
+Cmn37=||>D    Raises level of channel 6 \\Channel_6_Lower||2
+Cmn38=||>D    Lowers level of channel 6 \\Channel_7_Raise||2
+Cmn39=||>D    Raises level of channel 7 \\Channel_7_Lower||2
+Cmn40=||>D    Lowers level of channel 7 \\Channel_8_Raise||2
+Cmn41=||>D    Raises level of channel 8 \\Channel_8_Lower||2
+Cmn42=||>D    Lowers level of channel 8\\\\\\Notes:\\\\Default||1
+Cmn43=Channel Levels\\\\- When a program containing this module is run||1
+Cmn44=for the first time, the following \\  levels will saved in the presets.
+Cmn45=||2\\  \\  Preset 1: All channels =  25%\\  Preset 2: All channels||1
+Cmn46==  50%\\  Preset 3: All channels =  75%\\  Preset 4: All channels||1
+Cmn47== 100%\\  \\- Whenever the signal on the Reset cue goes high, the||1
+Cmn48=above default levels for \\  the currently selected preset will||1
+Cmn49=be recalled.\\\\\\OUTPUT DESCRIPTIONS:\\\\Name||B
+Cmn50=||9Type Description\\-------------------------------------
+Cmn51=-----------------------------------------\\||E
+Cmn52=||1\\On_Selected                    D    "On" preset was selected\\
+Cmn53=Off_Selected                   D    "Off" preset was selected\\Preset_1_Selected||1
+Cmn54=||=D    Preset 1 was selected \\Preset_2_Selected||5
+Cmn55=||9D    Preset 2 was selected\\Preset_3_Selected||:
+Cmn56=||4D    Preset 3 was selected\\Preset_4_Selected              D||1
+Cmn57=||3Preset 4 was selected \\\\Busy                           D||3
+Cmn58=||1Module is changing between presets\\ \\Channel_1_Level||9
+Cmn59=||7A    Current level for channel 1\\||G
+Cmn60=||=- Connected to "dim1" on CLX-1DIM8  \\Channel_2_Level||1
+Cmn61=||?A    Current level for channel 2\\||?
+Cmn62=||E- Connected to "dim2" on CLX-1DIM8\\Channel_3_Level||1
+Cmn63=||?A    Current level for channel 3\\||?
+Cmn64=||E- Connected to "dim3" on CLX-1DIM8 \\Channel_4_Level||1
+Cmn65=||?A    Current level for channel 4\\||?
+Cmn66=||E- Connected to "dim4" on CLX-1DIM8 \\Channel_5_Level||1
+Cmn67=||?A    Current level for channel 5\\||?
+Cmn68=||E- Connected to "dim5" on CLX-1DIM8  \\Channel_6_Level||1
+Cmn69=||?A    Current level for channel 6\\||?
+Cmn70=||E- Connected to "dim6" on CLX-1DIM8\\Channel_7_Level||1
+Cmn71=||?A    Current level for channel 7\\||?
+Cmn72=||E- Connected to "dim7" on CLX-1DIM8 \\Channel_8_Level||1
+Cmn73=||?A    Current level for channel 8\\||?
+Cmn74=||E- Connected to "dim8" on CLX-1DIM8 \\||6
+Cmn75=||N\\{{Channel_1_Override}}         A||1
+Cmn76=||3Connected to "Override1" on CLX-1DIM8\\{{Channel_2_Override}}||1
+Cmn77=||8A    Connected to "Override2" on CLX-1DIM8\\{{Channel_3_Override}}||1
+Cmn78=||8A    Connected to "Override3" on CLX-1DIM8\\{{Channel_4_Override}}||1
+Cmn79=||8A    Connected to "Override4" on CLX-1DIM8\\{{Channel_5_Override}}||1
+Cmn80=||8A    Connected to "Override5" on CLX-1DIM8\\{{Channel_6_Override}}||1
+Cmn81=||8A    Connected to "Override6" on CLX-1DIM8\\{{Channel_7_Override}}||1
+Cmn82=||8A    Connected to "Override7" on CLX-1DIM8\\{{Channel_8_Override}}||1
+Cmn83=||8A    Connected to "Override8" on CLX-1DIM8\\\\Note:\\\\{{**{{.
+Cmn84=..}}**}}_Selected Output Cues\\- Users should be aware of the behavior||1
+Cmn85=of the {{**{{...}}**}}_Selected output cues.  The \\states of these cues are||1
+Cmn86=determined only by the "On", "Off", "Preset_1", \\"Preset_2", "Preset_3",||1
+Cmn87=and "Preset_4" input cues.  They are not determined by \\the channel||1
+Cmn88=output levels.  Thus, selecting "Preset_1" and subsequently lowering||1
+Cmn89=\\all channels manually to 0% will not cause "Off_Selected" to go||1
+Cmn90=high.\\\\\\\\PARAMETER DESCRIPTIONS:\\\\Name||D
+Cmn91=||<Description\\---------------------------------------
+Cmn92=---------------------------------------\\    \\Channel 1 Curve Type==incandescent
+Cmn93=||2Load type connected to channel 1  \\Channel 2 Curve Type==incandescent||1
+Cmn94=||1Load type connected to channel 2 \\Channel 3 Curve Type==incandescent||1
+Cmn95=||1Load type connected to channel 3\\Channel 4 Curve Type==incandescent||1
+Cmn96=||1Load type connected to channel 4 \\Channel 5 Curve Type==incandescent||1
+Cmn97=||1Load type connected to channel 5  \\Channel 6 Curve Type==incandescent||1
+Cmn98=||1Load type connected to channel 6 \\Channel 7 Curve Type==incandescent||1
+Cmn99=||1Load type connected to channel 7\\Channel 8 Curve Type==incandescent||1
+Cmn100=||1Load type connected to channel 8 \\Ramp Time==3s||?
+Cmn101=||8Fade time used for all level transitions  \\Channel 1 Override==100%||1
+Cmn102=||;Override level for channel 1   \\Channel 2 Override==100%||1
+Cmn103=||;Override level for channel 2  \\Channel 3 Override==100%||1
+Cmn104=||;Override level for channel 3  \\Channel 4 Override==100%||1
+Cmn105=||;Override level for channel 4\\Channel 5 Override==100%||1
+Cmn106=||;Override level for channel 5   \\Channel 6 Override==100%||1
+Cmn107=||;Override level for channel 6  \\Channel 7 Override==100%||1
+Cmn108=||;Override level for channel 7  \\Channel 8 Override==100%||1
+Cmn109=||;Override level for channel 8\\{{Instance ID}}||8
+Cmn110=||=A unique number which differentiates this \\||7
+Cmn111=||Mmodule from all other modules in the||1
+Cmn112=control \\                                    system program.\\\\
+Cmn113=\\CUZ USED FOR TESTING: 3.034\\\\COMPILER USED FOR TESTING: 1.00.
+Cmn114=34\\\\SAMPLE PROGRAM:\\\\REVISION HISTORY:\\\\v1.1.0:     Added||1
+Cmn115="In-Override" output\\v1.0.02:    Updated for SystemBuilder compatibility\\
+Cmn116=v1.0:       Initial release\\\\\\#BEGIN_TOOL_TIPS\\#P,Channel 1||1
+Cmn117=Curve Type==incandescent,Acceptable values: incandescent | non-dim||1
+Cmn118=| fluorescent | cold-cathode | neon\\#P,Channel 2 Curve Type==incandescent,Accept
+Cmn119=able values: incandescent | non-dim | fluorescent | cold-cathode||1
+Cmn120=| neon\\#P,Channel 3 Curve Type==incandescent,Acceptable values:
+Cmn121=||1incandescent | non-dim | fluorescent | cold-cathode | neon\\#P,Channel||1
+Cmn122=4 Curve Type==incandescent,Acceptable values: incandescent | non-
+Cmn123=dim | fluorescent | cold-cathode | neon\\#P,Channel 5 Curve Type==incandescent,Ac
+Cmn124=ceptable values: incandescent | non-dim | fluorescent | cold-cathode||1
+Cmn125=| neon\\#P,Channel 6 Curve Type==incandescent,Acceptable values:
+Cmn126=||1incandescent | non-dim | fluorescent | cold-cathode | neon\\#P,Channel||1
+Cmn127=7 Curve Type==incandescent,Acceptable values: incandescent | non-
+Cmn128=dim | fluorescent | cold-cathode | neon\\#P,Channel 8 Curve Type==incandescent,Ac
+Cmn129=ceptable values: incandescent | non-dim | fluorescent | cold-cathode||1
+Cmn130=| neon\\#P,Channel 1 Override==100%,Level for channel 1 when module||1
+Cmn131=enters override mode\\#P,Channel 2 Override==100%,Level for channel||1
+Cmn132=2 when module enters override mode\\#P,Channel 3 Override==100%,Level||1
+Cmn133=for channel 3 when module enters override mode\\#P,Channel 4 Override==100%,Level
+Cmn134=||1for channel 4 when module enters override mode\\#P,Channel 5 Override==100%,Leve
+Cmn135=l for channel 5 when module enters override mode\\#P,Channel 6 Override==100%,Lev
+Cmn136=el for channel 6 when module enters override mode\\#P,Channel 7||1
+Cmn137=Override==100%,Level for channel 7 when module enters override mode\\
+Cmn138=#P,Channel 8 Override==100%,Level for channel 8 when module enters||1
+Cmn139=override mode\\#P,Ramp Time==3s,Fade time used for all level transitions||1
+Cmn140=||1\\#I,On,Sets all channels to 100%\\#I,Off,Sets all channels to||1
+Cmn141=0%\\#I,Save,Saves all channel levels into the selected preset (has||1
+Cmn142=no effect when "On" or "Off" is selected)\\#I,Reset,Resets all channels||1
+Cmn143=to the default levels for the selected preset\\#I,Raise,Raises all||1
+Cmn144=channels simultaneously using Ramp Time parameter\\#I,Lower,Lowers||1
+Cmn145=all channels simultaneously using Ramp Time parameter\\#I,Level,Sets||1
+Cmn146=all channels simultaneously to the same level\\#END_TOOL_TIPS\\\\
+Cmn147=#BEGIN_DIRECT_HW_PARAM\\#P,Channel 1 Curve Type==incandescent,curve_type1\\
+Cmn148=#P,Channel 2 Curve Type==incandescent,curve_type2\\#P,Channel 3||1
+Cmn149=Curve Type==incandescent,curve_type3\\#P,Channel 4 Curve Type==incandescent,curve
+Cmn150=_type4\\#P,Channel 5 Curve Type==incandescent,curve_type5\\#P,Channel||1
+Cmn151=6 Curve Type==incandescent,curve_type6\\#P,Channel 7 Curve Type==incandescent,cur
+Cmn152=ve_type7\\#P,Channel 8 Curve Type==incandescent,curve_type8\\#END_DIRECT_HW_PARAM
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Bw
+H=1
+Lx=0
+Ly=0
+Rx=895
+Ry=646
+Xm=-1
+Ym=-1
+SH=6
+Z=100
+Ht=3
+Hi=8
+]
+[
+ObjTp=Symbol
+Name=clx-1dim8 w dynamic presets
+Code=1
+SmplCName=clx-1dim8 w dynamic presets.umc
+Smpl-C=3
+CompilerTimePrecision=Single_Or_Double_Precision
+Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,302,305,310,635,718,756,
+SMWRev=2.02.00
+TIORev=0
+S+=1
+HelpID=1055
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+NumFixedInputs=28
+NumFixedOutputs=24
+NumFixedParams=18
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=6
+InputSigType1=Digital
+InputSigType2=Digital
+InputSigType3=Digital
+InputSigType4=Digital
+InputSigType5=Digital
+InputSigType6=Digital
+InputSigType7=Digital
+InputSigType8=Digital
+InputSigType9=Analog
+InputSigType10=Digital
+OutputSigType1=Digital
+OutputSigType2=Digital
+OutputSigType3=Digital
+OutputSigType4=Digital
+OutputSigType5=Digital
+OutputSigType6=Digital
+OutputSigType7=Digital
+OutputSigType8=Analog
+OutputSigType9=Analog
+OutputSigType10=Analog
+OutputSigType11=Analog
+OutputSigType12=Analog
+OutputSigType13=Analog
+OutputSigType14=Analog
+OutputSigType15=Analog
+OutputSigType16=Analog
+OutputSigType17=Analog
+OutputSigType18=Analog
+OutputSigType19=Analog
+OutputSigType20=Analog
+OutputSigType21=Analog
+OutputSigType22=Analog
+OutputSigType23=Analog
+OutputSigType24=Digital
+ParamSigType1=List
+ParamSigType2=List
+ParamSigType3=List
+ParamSigType4=List
+ParamSigType5=List
+ParamSigType6=List
+ParamSigType7=List
+ParamSigType8=List
+ParamSigType9=Time|Constant
+ParamSigType10=Percent|Constant
+ParamSigType11=Percent|Constant
+ParamSigType12=Percent|Constant
+ParamSigType13=Percent|Constant
+ParamSigType14=Percent|Constant
+ParamSigType15=Percent|Constant
+ParamSigType16=Percent|Constant
+ParamSigType17=Percent|Constant
+ParamSigType18=Constant
+InputCue1=On
+InputCue2=Off
+InputCue3=Preset_1
+InputCue4=Preset_2
+InputCue5=Preset_3
+InputCue6=Preset_4
+InputCue7=Raise
+InputCue8=Lower
+InputCue9=Level
+InputCue10=Save
+InputCue11=Reset
+InputCue12=Channel_1_Raise
+InputCue13=Channel_1_Lower
+InputCue14=Channel_2_Raise
+InputCue15=Channel_2_Lower
+InputCue16=Channel_3_Raise
+InputCue17=Channel_3_Lower
+InputCue18=Channel_4_Raise
+InputCue19=Channel_4_Lower
+InputCue20=Channel_5_Raise
+InputCue21=Channel_5_Lower
+InputCue22=Channel_6_Raise
+InputCue23=Channel_6_Lower
+InputCue24=Channel_7_Raise
+InputCue25=Channel_7_Lower
+InputCue26=Channel_8_Raise
+InputCue27=Channel_8_Lower
+InputCue28={{CLX-1DIM8>>In-Override}}
+OutputCue1=On_Selected
+OutputCue2=Off_Selected
+OutputCue3=Preset_1_Selected
+OutputCue4=Preset_2_Selected
+OutputCue5=Preset_3_Selected
+OutputCue6=Preset_4_Selected
+OutputCue7=Busy
+OutputCue8=Channel_1_Level
+OutputCue9=Channel_2_Level
+OutputCue10=Channel_3_Level
+OutputCue11=Channel_4_Level
+OutputCue12=Channel_5_Level
+OutputCue13=Channel_6_Level
+OutputCue14=Channel_7_Level
+OutputCue15=Channel_8_Level
+OutputCue16={{Channel_1_Override}}
+OutputCue17={{Channel_2_Override}}
+OutputCue18={{Channel_3_Override}}
+OutputCue19={{Channel_4_Override}}
+OutputCue20={{Channel_5_Override}}
+OutputCue21={{Channel_6_Override}}
+OutputCue22={{Channel_7_Override}}
+OutputCue23={{Channel_8_Override}}
+OutputCue24=In-Override
+ParamCue1=Channel 1 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue2=Channel 2 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue3=Channel 3 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue4=Channel 4 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue5=Channel 5 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue6=Channel 6 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue7=Channel 7 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue8=Channel 8 Curve Type==incandescent,incandescent,non-dim,fluorescent,cold-cathode,neon
+ParamCue9=Ramp Time==3s
+ParamCue10=Channel 1 Override==100%
+ParamCue11=Channel 2 Override==100%
+ParamCue12=Channel 3 Override==100%
+ParamCue13=Channel 4 Override==100%
+ParamCue14=Channel 5 Override==100%
+ParamCue15=Channel 6 Override==100%
+ParamCue16=Channel 7 Override==100%
+ParamCue17=Channel 8 Override==100%
+ParamCue18={{Instance ID}}
+MPi=19
+Pi1=11
+Pi2=12
+Pi3=13
+Pi4=14
+Pi5=15
+Pi6=16
+Pi7=17
+Pi8=18
+Pi9=29
+Pi10=19
+Pi11=20
+Pi12=21
+Pi13=22
+Pi14=23
+Pi15=24
+Pi16=25
+Pi17=26
+Pi18=27
+Pi19=28
+MPo=7
+Po7=30
+MPp=18
+Pp1=7
+Pp2=8
+Pp3=9
+Pp4=10
+Pp5=31
+Pp6=32
+Pp7=33
+Pp8=34
+Pp9=6
+Pp10=2
+Pp11=3
+Pp12=4
+Pp13=5
+Pp14=35
+Pp15=36
+Pp16=37
+Pp17=38
+Pp18=1
+CnxLogic1=C O 0008 I Q:dim1
+CnxLogic2=C O 0009 I Q:dim2
+CnxLogic3=C O 0010 I Q:dim3
+CnxLogic4=C O 0011 I Q:dim4
+CnxLogic5=C O 0012 I Q:dim5
+CnxLogic6=C O 0013 I Q:dim6
+CnxLogic7=C O 0014 I Q:dim7
+CnxLogic8=C O 0015 I Q:dim8
+CnxLogic9=C O 0016 I Q:Override1
+CnxLogic10=C O 0017 I Q:Override2
+CnxLogic11=C O 0018 I Q:Override3
+CnxLogic12=C O 0019 I Q:Override4
+CnxLogic13=C O 0020 I Q:Override5
+CnxLogic14=C O 0021 I Q:Override6
+CnxLogic15=C O 0022 I Q:Override7
+CnxLogic16=C O 0023 I Q:Override8
+CnxLogic17=C I 0028 O Q:In-Override
+FileName=clx-1dim8 w dynamic presets.umc
+]
+[
+ObjTp=Sm
+H=1
+SmC=157
+Nm=Central Control Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=2
+SmC=157
+Nm=Network Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=3
+SmC=157
+Nm=Ethernet
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=4
+SmC=156
+Nm=Logic
+ObjVer=1
+CF=2
+mC=10
+C1=7
+C2=8
+C3=28
+C4=31
+C5=29
+C6=38
+C7=15
+C8=47
+C9=62
+C10=63
+]
+[
+ObjTp=Sm
+H=5
+SmC=157
+Nm=DefineArguments
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mC=1
+C1=6
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=6
+SmC=55
+ObjVer=1
+PrH=5
+CF=2
+n1I=28
+n1O=24
+mI=28
+I1=10
+I2=12
+I3=57
+I4=58
+I5=59
+I6=60
+I7=5
+I8=4
+I9=15
+I10=51
+I11=56
+I12=8
+I13=9
+I14=11
+I15=13
+I16=17
+I17=18
+I18=21
+I19=22
+I20=6
+I21=7
+I22=14
+I23=16
+I24=24
+I25=34
+I26=41
+I27=42
+I28=107
+mO=24
+tO=24
+O1=61
+O2=54
+O3=49
+O4=50
+O5=52
+O6=53
+O7=106
+O8=35
+O9=37
+O10=38
+O11=36
+O12=43
+O13=70
+O14=84
+O15=85
+O16=28
+O17=30
+O18=31
+O19=32
+O20=108
+O21=109
+O22=110
+O23=111
+O24=20
+mP=18
+P1=Channel 1 Curve Type==incandescent
+P2=Channel 2 Curve Type==incandescent
+P3=Channel 3 Curve Type==incandescent
+P4=Channel 4 Curve Type==incandescent
+P5=Channel 5 Curve Type==incandescent
+P6=Channel 6 Curve Type==incandescent
+P7=Channel 7 Curve Type==incandescent
+P8=Channel 8 Curve Type==incandescent
+P9=Ramp Time==3s
+P10=Channel 1 Override==100%
+P11=Channel 2 Override==100%
+P12=Channel 3 Override==100%
+P13=Channel 4 Override==100%
+P14=Channel 5 Override==100%
+P15=Channel 6 Override==100%
+P16=Channel 7 Override==100%
+P17=Channel 8 Override==100%
+P18={{Instance ID}}
+MPi=19
+Pi1=11
+Pi2=12
+Pi3=13
+Pi4=14
+Pi5=15
+Pi6=16
+Pi7=17
+Pi8=18
+Pi9=29
+Pi10=19
+Pi11=20
+Pi12=21
+Pi13=22
+Pi14=23
+Pi15=24
+Pi16=25
+Pi17=26
+Pi18=27
+Pi19=28
+MPo=7
+Po7=30
+MPp=18
+Pp1=7
+Pp2=8
+Pp3=9
+Pp4=10
+Pp5=31
+Pp6=32
+Pp7=33
+Pp8=34
+Pp9=6
+Pp10=2
+Pp11=3
+Pp12=4
+Pp13=5
+Pp14=35
+Pp15=36
+Pp16=37
+Pp17=38
+Pp18=1
+]
+[
+ObjTp=Sm
+H=7
+SmC=286
+ObjVer=1
+PrH=4
+CF=2
+n1I=16
+n1O=1
+mI=16
+I1=35
+I2=37
+I3=38
+I4=36
+I5=43
+I6=70
+I7=84
+I8=85
+I9=28
+I10=30
+I11=31
+I12=32
+I13=108
+I14=109
+I15=110
+I16=111
+mO=1
+tO=1
+O1=107
+mP=18
+P1=
+P2=dim1
+P3=dim2
+P4=dim3
+P5=dim4
+P6=dim5
+P7=dim6
+P8=dim7
+P9=dim8
+P10=Override1
+P11=Override2
+P12=Override3
+P13=Override4
+P14=Override5
+P15=Override6
+P16=Override7
+P17=Override8
+P18=In-Override
+]
+[
+ObjTp=Sm
+H=8
+SmC=472
+ObjVer=1
+PrH=4
+CF=2
+n1I=16
+mI=16
+I1=25
+I2=29
+I3=26
+I4=27
+I5=112
+I6=113
+I7=114
+I8=115
+I9=28
+I10=30
+I11=31
+I12=32
+I13=108
+I14=109
+I15=110
+I16=111
+]
+[
+ObjTp=Sm
+H=9
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 4 Level\\
+mI=3
+I1=21
+I2=22
+mO=1
+tO=1
+O1=27
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=10
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 1 Level\\
+mI=3
+I1=8
+I2=9
+mO=1
+tO=1
+O1=25
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=11
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 2 Level\\
+mI=3
+I1=11
+I2=13
+mO=1
+tO=1
+O1=29
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=12
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 3 Level\\
+mI=3
+I1=17
+I2=18
+mO=1
+tO=1
+O1=26
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=13
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 8 Level\\
+mI=3
+I1=41
+I2=42
+mO=1
+tO=1
+O1=115
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=14
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 4\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=27
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=15
+SmC=156
+ObjVer=1
+PrH=4
+CF=2
+Cmn1=Master Raise/Lower\\
+mC=10
+C1=25
+C2=26
+C3=24
+C4=27
+C5=41
+C6=14
+C7=68
+C8=69
+C9=70
+C10=67
+]
+[
+ObjTp=Sm
+H=16
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 5 Level\\
+mI=3
+I1=6
+I2=7
+mO=1
+tO=1
+O1=112
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=17
+SmC=46
+ObjVer=1
+PrH=38
+CF=2
+n1I=9
+n1O=8
+Cmn1=Master level\\
+mI=9
+I1=2
+I2=15
+I3=15
+I4=15
+I5=15
+I6=15
+I7=15
+I8=15
+I9=15
+mO=8
+tO=8
+O1=25
+O2=29
+O3=26
+O4=27
+O5=112
+O6=113
+O7=114
+O8=115
+]
+[
+ObjTp=Sm
+H=18
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 4\\
+mI=1
+I1=27
+mO=1
+tO=1
+O1=36
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=19
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 1\\
+mI=1
+I1=25
+mO=1
+tO=1
+O1=35
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=20
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 2\\
+mI=1
+I1=29
+mO=1
+tO=1
+O1=37
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=21
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 3\\
+mI=1
+I1=26
+mO=1
+tO=1
+O1=38
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=22
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 4 recall\\
+mI=9
+I1=60
+I2=98
+I3=87
+I4=86
+I5=88
+I6=128
+I7=129
+I8=130
+I9=131
+mO=8
+tO=8
+O1=46
+O2=55
+O3=67
+O4=68
+O5=132
+O6=136
+O7=134
+O8=135
+]
+[
+ObjTp=Sm
+H=23
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 6 Level\\
+mI=3
+I1=14
+I2=16
+mO=1
+tO=1
+O1=113
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=24
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 1\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=25
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=25
+SmC=3
+ObjVer=1
+PrH=15
+CF=2
+n1I=1
+n1O=1
+Cmn1=When to raise master level\\
+mI=1
+I1=5
+mO=1
+tO=1
+O1=44
+]
+[
+ObjTp=Sm
+H=26
+SmC=3
+ObjVer=1
+PrH=15
+CF=2
+n1I=1
+n1O=1
+Cmn1=When to lower master level\\
+mI=1
+I1=4
+mO=1
+tO=1
+O1=45
+]
+[
+ObjTp=Sm
+H=27
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 2\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=29
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=28
+SmC=32
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n1O=8
+Cmn1=Override levels\\
+mI=1
+I1=2
+mO=8
+tO=8
+O1=28
+O2=30
+O3=31
+O4=32
+O5=108
+O6=109
+O7=110
+O8=111
+mP=8
+P1=#Channel 1 Override==100%
+P2=#Channel 2 Override==100%
+P3=#Channel 3 Override==100%
+P4=#Channel 4 Override==100%
+P5=#Channel 5 Override==100%
+P6=#Channel 6 Override==100%
+P7=#Channel 7 Override==100%
+P8=#Channel 8 Override==100%
+]
+[
+ObjTp=Sm
+H=29
+SmC=156
+ObjVer=1
+PrH=4
+CF=2
+Cmn1=System Startup\\
+mC=9
+C1=30
+C2=32
+C3=33
+C4=34
+C5=35
+C6=36
+C7=37
+C8=52
+C9=43
+]
+[
+ObjTp=Sm
+H=30
+SmC=9
+ObjVer=1
+PrH=29
+CF=2
+n1I=3
+n1O=2
+Cmn1=System Startup\\
+mI=3
+I1=2
+mO=2
+tO=2
+O1=47
+mP=1
+P1=1s
+]
+[
+ObjTp=Sm
+H=31
+SmC=19
+ObjVer=1
+PrH=4
+CF=2
+n1I=8
+n1O=6
+Cmn1=Keep track of selected preset\\
+mI=8
+I3=10
+I4=12
+I5=57
+I6=58
+I7=59
+I8=60
+mO=6
+tO=6
+O1=61
+O2=54
+O3=49
+O4=50
+O5=52
+O6=53
+]
+[
+ObjTp=Sm
+H=32
+SmC=103
+Nm=analogsettings.csp
+ObjVer=1
+PrH=29
+CF=2
+n1I=2
+n2I=1
+n1O=5
+mI=3
+I1=62
+I2=63
+I3=64
+mO=37
+tO=37
+O1=1
+O2=1
+O3=65
+O4=66
+O5=1
+O6=76
+O7=77
+O8=78
+O9=79
+O10=116
+O11=117
+O12=118
+O13=119
+O14=90
+O15=91
+O16=92
+O17=93
+O18=120
+O19=121
+O20=122
+O21=123
+O22=94
+O23=95
+O24=96
+O25=97
+O26=124
+O27=125
+O28=126
+O29=127
+O30=98
+O31=87
+O32=86
+O33=88
+O34=128
+O35=129
+O36=130
+O37=131
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=33
+SmC=89
+ObjVer=1
+PrH=29
+CF=2
+n1I=1
+n1O=1
+Cmn1=Initialize filename\\
+mI=1
+I1=80
+mO=1
+tO=1
+O1=64
+mP=1
+P1=\\nvram\\clx1dim4_\[#{{Instance ID}}\].pst
+]
+[
+ObjTp=Sm
+H=34
+SmC=1
+ObjVer=1
+PrH=29
+CF=2
+n1I=2
+n1O=1
+Cmn1=Save default settings\\Should only be called when the processor||1
+Cmn2=starts up for the first time (with correctly configured NVRAMDisk
+mI=2
+I1=65
+I2=81
+mO=1
+tO=1
+O1=82
+]
+[
+ObjTp=Sm
+H=35
+SmC=3
+ObjVer=1
+PrH=29
+CF=2
+n1I=2
+n1O=1
+Cmn1=Write settings to NVRAM\\
+mI=2
+I1=83
+I2=82
+mO=1
+tO=1
+O1=63
+]
+[
+ObjTp=Sm
+H=36
+SmC=98
+ObjVer=1
+PrH=29
+CF=2
+n1I=1
+n1O=3
+Cmn1=Handle first program execution (no file present)\\
+mI=1
+I1=66
+mO=3
+tO=3
+O1=23
+O2=48
+O3=81
+mP=4
+P1=0s
+P2=1s
+P3=0s
+P4=0.01s
+]
+[
+ObjTp=Sm
+H=37
+SmC=98
+ObjVer=1
+PrH=29
+CF=2
+n1I=1
+n1O=2
+Cmn1=System startup sequence\\
+mI=1
+I1=47
+mO=2
+tO=2
+O1=80
+O2=62
+mP=2
+P1=0.01s
+P2=0.01s
+]
+[
+ObjTp=Sm
+H=38
+SmC=156
+ObjVer=1
+PrH=4
+CF=2
+Cmn1=Master settings\\
+mC=20
+C1=44
+C2=45
+C3=39
+C4=17
+C5=10
+C6=11
+C7=12
+C8=9
+C9=16
+C10=23
+C11=60
+C12=13
+C13=19
+C14=20
+C15=21
+C16=18
+C17=64
+C18=65
+C19=66
+C20=61
+]
+[
+ObjTp=Sm
+H=39
+SmC=408
+ObjVer=1
+PrH=38
+CF=2
+n1I=7
+n1O=7
+mI=7
+I1=10
+I2=12
+I3=57
+I4=58
+I5=59
+I6=60
+I7=51
+mO=7
+tO=7
+O1=39
+O2=40
+O3=72
+O4=73
+O5=74
+O6=75
+O7=83
+mP=7
+P1=1d
+P2=1d
+P3=1d
+P4=1d
+P5=1d
+P6=1d
+P7=3d
+]
+[
+ObjTp=Sm
+H=40
+SmC=20
+ObjVer=1
+PrH=47
+CF=2
+n1I=5
+n1O=4
+Cmn1=Save\\
+mI=5
+I1=51
+I2=49
+I3=50
+I4=52
+I5=53
+mO=4
+tO=4
+O1=69
+O2=99
+O3=89
+O4=71
+]
+[
+ObjTp=Sm
+H=41
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 3\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=26
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=42
+SmC=44
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n2I=6
+n1O=9
+mI=15
+I1=33
+I2=46
+I3=55
+I4=67
+I5=68
+I6=132
+I7=136
+I8=134
+I9=135
+I10=39
+I11=40
+I12=72
+I13=73
+I14=74
+I15=75
+mO=9
+tO=9
+O1=106
+O2=25
+O3=29
+O4=26
+O5=27
+O6=112
+O7=113
+O8=114
+O9=115
+]
+[
+ObjTp=Sm
+H=43
+SmC=32
+ObjVer=1
+PrH=29
+CF=2
+n1I=1
+n1O=1
+Cmn1=Initialize ramp time\\
+mI=1
+I1=2
+mO=1
+tO=1
+O1=33
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=44
+SmC=32
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=8
+Cmn1="On" Levels\\
+mI=1
+I1=10
+mO=8
+tO=8
+O1=46
+O2=55
+O3=67
+O4=68
+O5=132
+O6=136
+O7=134
+O8=135
+mP=8
+P1=100%
+P2=100%
+P3=100%
+P4=100%
+P5=100%
+P6=100%
+P7=100%
+P8=100%
+]
+[
+ObjTp=Sm
+H=45
+SmC=32
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=8
+Cmn1="Off" Levels\\
+mI=1
+I1=12
+mO=8
+tO=8
+O1=46
+O2=55
+O3=67
+O4=68
+O5=132
+O6=136
+O7=134
+O8=135
+mP=8
+P1=0%
+P2=0%
+P3=0%
+P4=0%
+P5=0%
+P6=0%
+P7=0%
+P8=0%
+]
+[
+ObjTp=Sm
+H=46
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 1 save\\
+mI=9
+I1=69
+I2=25
+I3=29
+I4=26
+I5=27
+I6=112
+I7=113
+I8=114
+I9=115
+mO=8
+tO=8
+O1=76
+O2=77
+O3=78
+O4=79
+O5=116
+O6=117
+O7=118
+O8=119
+]
+[
+ObjTp=Sm
+H=47
+SmC=156
+ObjVer=1
+PrH=4
+CF=2
+Cmn1=Presets\\
+mC=19
+C1=42
+C2=49
+C3=50
+C4=51
+C5=22
+C6=40
+C7=46
+C8=48
+C9=53
+C10=54
+C11=59
+C12=56
+C13=57
+C14=58
+C15=55
+C16=72
+C17=73
+C18=74
+C19=71
+]
+[
+ObjTp=Sm
+H=48
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 2 save\\
+mI=9
+I1=99
+I2=25
+I3=29
+I4=26
+I5=27
+I6=112
+I7=113
+I8=114
+I9=115
+mO=8
+tO=8
+O1=90
+O2=91
+O3=92
+O4=93
+O5=120
+O6=121
+O7=122
+O8=123
+]
+[
+ObjTp=Sm
+H=49
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 1 recall\\
+mI=9
+I1=57
+I2=76
+I3=77
+I4=78
+I5=79
+I6=116
+I7=117
+I8=118
+I9=119
+mO=8
+tO=8
+O1=46
+O2=55
+O3=67
+O4=68
+O5=132
+O6=136
+O7=134
+O8=135
+]
+[
+ObjTp=Sm
+H=50
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 2 recall\\
+mI=9
+I1=58
+I2=90
+I3=91
+I4=92
+I5=93
+I6=120
+I7=121
+I8=122
+I9=123
+mO=8
+tO=8
+O1=46
+O2=55
+O3=67
+O4=68
+O5=132
+O6=136
+O7=134
+O8=135
+]
+[
+ObjTp=Sm
+H=51
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 3 recall\\
+mI=9
+I1=59
+I2=94
+I3=95
+I4=96
+I5=97
+I6=124
+I7=125
+I8=126
+I9=127
+mO=8
+tO=8
+O1=46
+O2=55
+O3=67
+O4=68
+O5=132
+O6=136
+O7=134
+O8=135
+]
+[
+ObjTp=Sm
+H=52
+SmC=32
+ObjVer=1
+PrH=29
+CF=2
+n1I=1
+n1O=32
+Cmn1=Default preset levels\\
+mI=1
+I1=48
+mO=32
+tO=32
+O1=76
+O2=77
+O3=78
+O4=79
+O5=116
+O6=117
+O7=118
+O8=119
+O9=90
+O10=91
+O11=92
+O12=93
+O13=120
+O14=121
+O15=122
+O16=123
+O17=94
+O18=95
+O19=96
+O20=97
+O21=124
+O22=125
+O23=126
+O24=127
+O25=98
+O26=87
+O27=86
+O28=88
+O29=128
+O30=129
+O31=130
+O32=131
+mP=32
+P1=25%
+P2=25%
+P3=25%
+P4=25%
+P5=25%
+P6=25%
+P7=25%
+P8=25%
+P9=50%
+P10=50%
+P11=50%
+P12=50%
+P13=50%
+P14=50%
+P15=50%
+P16=50%
+P17=75%
+P18=75%
+P19=75%
+P20=75%
+P21=75%
+P22=75%
+P23=75%
+P24=75%
+P25=100%
+P26=100%
+P27=100%
+P28=100%
+P29=100%
+P30=100%
+P31=100%
+P32=100%
+]
+[
+ObjTp=Sm
+H=53
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 3 save\\
+mI=9
+I1=89
+I2=25
+I3=29
+I4=26
+I5=27
+I6=112
+I7=113
+I8=114
+I9=115
+mO=8
+tO=8
+O1=94
+O2=95
+O3=96
+O4=97
+O5=124
+O6=125
+O7=126
+O8=127
+]
+[
+ObjTp=Sm
+H=54
+SmC=46
+ObjVer=1
+PrH=47
+CF=2
+n1I=9
+n1O=8
+Cmn1=Preset 4 save\\
+mI=9
+I1=71
+I2=25
+I3=29
+I4=26
+I5=27
+I6=112
+I7=113
+I8=114
+I9=115
+mO=8
+tO=8
+O1=98
+O2=87
+O3=86
+O4=88
+O5=128
+O6=129
+O7=130
+O8=131
+]
+[
+ObjTp=Sm
+H=55
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 4\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=27
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sm
+H=56
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 1\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=25
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sm
+H=57
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 2\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=29
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sm
+H=58
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 3\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=26
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sm
+H=59
+SmC=20
+ObjVer=1
+PrH=47
+CF=2
+n1I=7
+n1O=6
+Cmn1=Reset\\
+mI=7
+I1=56
+I2=49
+I3=50
+I4=52
+I5=53
+I6=61
+I7=54
+mO=6
+tO=6
+O1=100
+O2=101
+O3=102
+O4=103
+O5=104
+O6=105
+]
+[
+ObjTp=Sm
+H=60
+SmC=22
+ObjVer=1
+PrH=38
+CF=2
+n1I=3
+n1O=1
+Cmn1=Channel 7 Level\\
+mI=3
+I1=24
+I2=34
+mO=1
+tO=1
+O1=114
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=61
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 8\\
+mI=1
+I1=115
+mO=1
+tO=1
+O1=85
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=62
+SmC=471
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+mI=1
+I1=107
+]
+[
+ObjTp=Sm
+H=63
+SmC=20
+ObjVer=1
+PrH=4
+CF=2
+n1I=2
+n1O=1
+mI=2
+I1=2
+I2=107
+mO=1
+tO=1
+O1=20
+]
+[
+ObjTp=Sm
+H=64
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 5\\
+mI=1
+I1=112
+mO=1
+tO=1
+O1=43
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=65
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 6\\
+mI=1
+I1=113
+mO=1
+tO=1
+O1=70
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=66
+SmC=66
+ObjVer=1
+PrH=38
+CF=2
+n1I=1
+n1O=1
+Cmn1=Channel 7\\
+mI=1
+I1=114
+mO=1
+tO=1
+O1=84
+mP=1
+P1=0.5s
+]
+[
+ObjTp=Sm
+H=67
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 8\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=115
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=68
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 5\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=112
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=69
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 6\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=113
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=70
+SmC=22
+ObjVer=1
+PrH=15
+CF=2
+n1I=3
+n1O=1
+Cmn1=Master Raise/Lower - Channel 7\\
+mI=3
+I1=44
+I2=45
+mO=1
+tO=1
+O1=114
+mP=1
+P1=#Ramp Time==3s
+]
+[
+ObjTp=Sm
+H=71
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 8\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=115
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sm
+H=72
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 5\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=112
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sm
+H=73
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 6\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=113
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sm
+H=74
+SmC=32
+ObjVer=1
+PrH=47
+CF=2
+n1I=6
+n1O=1
+Cmn1=Reset channel 7\\
+mI=6
+I1=104
+I2=105
+I3=100
+I4=101
+I5=102
+I6=103
+mO=1
+tO=1
+O1=114
+mP=6
+P1=100%
+P2=0%
+P3=25%
+P4=50%
+P5=75%
+P6=100%
+]
+[
+ObjTp=Sg
+H=4
+Nm=Lower
+]
+[
+ObjTp=Sg
+H=5
+Nm=Raise
+]
+[
+ObjTp=Sg
+H=6
+Nm=Channel_5_Raise
+]
+[
+ObjTp=Sg
+H=7
+Nm=Channel_5_Lower
+]
+[
+ObjTp=Sg
+H=8
+Nm=Channel_1_Raise
+]
+[
+ObjTp=Sg
+H=9
+Nm=Channel_1_Lower
+]
+[
+ObjTp=Sg
+H=10
+Nm=On
+]
+[
+ObjTp=Sg
+H=11
+Nm=Channel_2_Raise
+]
+[
+ObjTp=Sg
+H=12
+Nm=Off
+]
+[
+ObjTp=Sg
+H=13
+Nm=Channel_2_Lower
+]
+[
+ObjTp=Sg
+H=14
+Nm=Channel_6_Raise
+]
+[
+ObjTp=Sg
+H=15
+Nm=Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=16
+Nm=Channel_6_Lower
+]
+[
+ObjTp=Sg
+H=17
+Nm=Channel_3_Raise
+]
+[
+ObjTp=Sg
+H=18
+Nm=Channel_3_Lower
+]
+[
+ObjTp=Sg
+H=20
+Nm=In-Override
+]
+[
+ObjTp=Sg
+H=21
+Nm=Channel_4_Raise
+]
+[
+ObjTp=Sg
+H=22
+Nm=Channel_4_Lower
+]
+[
+ObjTp=Sg
+H=23
+Nm=//Configuring_Default_Settings
+]
+[
+ObjTp=Sg
+H=24
+Nm=Channel_7_Raise
+]
+[
+ObjTp=Sg
+H=25
+Nm=Channel_1_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=26
+Nm=Channel_3_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=27
+Nm=Channel_4_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=28
+Nm={{Channel_1_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=29
+Nm=Channel_2_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=30
+Nm={{Channel_2_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=31
+Nm={{Channel_3_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=32
+Nm={{Channel_4_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=33
+Nm=Ramp_Time
+SgTp=2
+]
+[
+ObjTp=Sg
+H=34
+Nm=Channel_7_Lower
+]
+[
+ObjTp=Sg
+H=35
+Nm=Channel_1_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=36
+Nm=Channel_4_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=37
+Nm=Channel_2_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=38
+Nm=Channel_3_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=39
+Nm=Execute_On_Preset
+]
+[
+ObjTp=Sg
+H=40
+Nm=Execute_Off_Preset
+]
+[
+ObjTp=Sg
+H=41
+Nm=Channel_8_Raise
+]
+[
+ObjTp=Sg
+H=42
+Nm=Channel_8_Lower
+]
+[
+ObjTp=Sg
+H=43
+Nm=Channel_5_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=44
+Nm=Raise_Master_Level
+]
+[
+ObjTp=Sg
+H=45
+Nm=Lower_Master_Level
+]
+[
+ObjTp=Sg
+H=46
+Nm=CH1_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=47
+Nm=internal_System_Startup
+]
+[
+ObjTp=Sg
+H=48
+Nm=Revert_to_Default_Settings
+]
+[
+ObjTp=Sg
+H=49
+Nm=Preset_1_Selected
+]
+[
+ObjTp=Sg
+H=50
+Nm=Preset_2_Selected
+]
+[
+ObjTp=Sg
+H=51
+Nm=Save
+]
+[
+ObjTp=Sg
+H=52
+Nm=Preset_3_Selected
+]
+[
+ObjTp=Sg
+H=53
+Nm=Preset_4_Selected
+]
+[
+ObjTp=Sg
+H=54
+Nm=Off_Selected
+]
+[
+ObjTp=Sg
+H=55
+Nm=CH2_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=56
+Nm=Reset
+]
+[
+ObjTp=Sg
+H=57
+Nm=Preset_1
+]
+[
+ObjTp=Sg
+H=58
+Nm=Preset_2
+]
+[
+ObjTp=Sg
+H=59
+Nm=Preset_3
+]
+[
+ObjTp=Sg
+H=60
+Nm=Preset_4
+]
+[
+ObjTp=Sg
+H=61
+Nm=On_Selected
+]
+[
+ObjTp=Sg
+H=62
+Nm=Read_Last_Configuration
+]
+[
+ObjTp=Sg
+H=63
+Nm=Write_Settings
+]
+[
+ObjTp=Sg
+H=64
+Nm=preset_file$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=65
+Nm=NVRAM_AVAILABLE
+]
+[
+ObjTp=Sg
+H=66
+Nm=ERR_Audio_Cfg_File_Not_Found
+]
+[
+ObjTp=Sg
+H=67
+Nm=CH3_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=68
+Nm=CH4_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=69
+Nm=Preset_1_Save
+]
+[
+ObjTp=Sg
+H=70
+Nm=Channel_6_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=71
+Nm=Preset_4_Save
+]
+[
+ObjTp=Sg
+H=72
+Nm=Execute_Preset_1
+]
+[
+ObjTp=Sg
+H=73
+Nm=Execute_Preset_2
+]
+[
+ObjTp=Sg
+H=74
+Nm=Execute_Preset_3
+]
+[
+ObjTp=Sg
+H=75
+Nm=Execute_Preset_4
+]
+[
+ObjTp=Sg
+H=76
+Nm=P1_CH1
+SgTp=2
+]
+[
+ObjTp=Sg
+H=77
+Nm=P1_CH2
+SgTp=2
+]
+[
+ObjTp=Sg
+H=78
+Nm=P1_CH3
+SgTp=2
+]
+[
+ObjTp=Sg
+H=79
+Nm=P1_CH4
+SgTp=2
+]
+[
+ObjTp=Sg
+H=80
+Nm=Starting_System
+]
+[
+ObjTp=Sg
+H=81
+Nm=Ready_To_Save_Defaults
+]
+[
+ObjTp=Sg
+H=82
+Nm=Save_Default_Settings
+]
+[
+ObjTp=Sg
+H=83
+Nm=Save_Settings
+]
+[
+ObjTp=Sg
+H=84
+Nm=Channel_7_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=85
+Nm=Channel_8_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=86
+Nm=P4_CH3
+SgTp=2
+]
+[
+ObjTp=Sg
+H=87
+Nm=P4_CH2
+SgTp=2
+]
+[
+ObjTp=Sg
+H=88
+Nm=P4_CH4
+SgTp=2
+]
+[
+ObjTp=Sg
+H=89
+Nm=Preset_3_Save
+]
+[
+ObjTp=Sg
+H=90
+Nm=P2_CH1
+SgTp=2
+]
+[
+ObjTp=Sg
+H=91
+Nm=P2_CH2
+SgTp=2
+]
+[
+ObjTp=Sg
+H=92
+Nm=P2_CH3
+SgTp=2
+]
+[
+ObjTp=Sg
+H=93
+Nm=P2_CH4
+SgTp=2
+]
+[
+ObjTp=Sg
+H=94
+Nm=P3_CH1
+SgTp=2
+]
+[
+ObjTp=Sg
+H=95
+Nm=P3_CH2
+SgTp=2
+]
+[
+ObjTp=Sg
+H=96
+Nm=P3_CH3
+SgTp=2
+]
+[
+ObjTp=Sg
+H=97
+Nm=P3_CH4
+SgTp=2
+]
+[
+ObjTp=Sg
+H=98
+Nm=P4_CH1
+SgTp=2
+]
+[
+ObjTp=Sg
+H=99
+Nm=Preset_2_Save
+]
+[
+ObjTp=Sg
+H=100
+Nm=Preset_1_Defaults
+]
+[
+ObjTp=Sg
+H=101
+Nm=Preset_2_Defaults
+]
+[
+ObjTp=Sg
+H=102
+Nm=Preset_3_Defaults
+]
+[
+ObjTp=Sg
+H=103
+Nm=Preset_4_Defaults
+]
+[
+ObjTp=Sg
+H=104
+Nm=On_Defaults
+]
+[
+ObjTp=Sg
+H=105
+Nm=Off_Defaults
+]
+[
+ObjTp=Sg
+H=106
+Nm=Busy
+]
+[
+ObjTp=Sg
+H=107
+Nm={{CLX-1DIM8>>In-Override}}
+]
+[
+ObjTp=Sg
+H=108
+Nm={{Channel_5_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=109
+Nm={{Channel_6_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=110
+Nm={{Channel_7_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=111
+Nm={{Channel_8_Override}}
+SgTp=2
+]
+[
+ObjTp=Sg
+H=112
+Nm=Channel_5_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=113
+Nm=Channel_6_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=114
+Nm=Channel_7_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=115
+Nm=Channel_8_Internal_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=116
+Nm=P1_CH5
+SgTp=2
+]
+[
+ObjTp=Sg
+H=117
+Nm=P1_CH6
+SgTp=2
+]
+[
+ObjTp=Sg
+H=118
+Nm=P1_CH7
+SgTp=2
+]
+[
+ObjTp=Sg
+H=119
+Nm=P1_CH8
+SgTp=2
+]
+[
+ObjTp=Sg
+H=120
+Nm=P2_CH5
+SgTp=2
+]
+[
+ObjTp=Sg
+H=121
+Nm=P2_CH6
+SgTp=2
+]
+[
+ObjTp=Sg
+H=122
+Nm=P2_CH7
+SgTp=2
+]
+[
+ObjTp=Sg
+H=123
+Nm=P2_CH8
+SgTp=2
+]
+[
+ObjTp=Sg
+H=124
+Nm=P3_CH5
+SgTp=2
+]
+[
+ObjTp=Sg
+H=125
+Nm=P3_CH6
+SgTp=2
+]
+[
+ObjTp=Sg
+H=126
+Nm=P3_CH7
+SgTp=2
+]
+[
+ObjTp=Sg
+H=127
+Nm=P3_CH8
+SgTp=2
+]
+[
+ObjTp=Sg
+H=128
+Nm=P4_CH5
+SgTp=2
+]
+[
+ObjTp=Sg
+H=129
+Nm=P4_CH6
+SgTp=2
+]
+[
+ObjTp=Sg
+H=130
+Nm=P4_CH7
+SgTp=2
+]
+[
+ObjTp=Sg
+H=131
+Nm=P4_CH8
+SgTp=2
+]
+[
+ObjTp=Sg
+H=132
+Nm=CH5_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=134
+Nm=CH7_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=135
+Nm=CH8_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Sg
+H=136
+Nm=CH6_Preset_Level
+SgTp=2
+]
+[
+ObjTp=Dp
+H=1
+Tp=1
+FD1=A unique number which differentiates this module from all other||1
+FD2=modules in the control system program.
+NF=3
+DNF=1
+Sgn=0
+]
+[
+ObjTp=Dp
+H=2
+Tp=1
+SD=Light level for channel 1 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]
+[
+ObjTp=Dp
+H=3
+Tp=1
+SD=Light level for channel 2 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]
+[
+ObjTp=Dp
+H=4
+Tp=1
+SD=Light level for channel 3 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]
+[
+ObjTp=Dp
+H=5
+Tp=1
+SD=Light level for channel 4 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]
+[
+ObjTp=Dp
+H=6
+Tp=1
+SD=Ramp time used for all Raise, Lower, and preset recall commands
+HD=TRUE
+DV=3s
+NF=48
+DNF=16
+Sgn=0
+]
+[
+ObjTp=Dp
+H=7
+Tp=1
+SD=Load type connected to channel 1
+Nt1=#HW_PARAM curve_type1
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=8
+Tp=1
+SD=Load type connected to channel 2
+Nt1=#HW_PARAM curve_type2
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=9
+Tp=1
+SD=Load type connected to channel 3
+Nt1=#HW_PARAM curve_type3
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=10
+Tp=1
+SD=Load type connected to channel 4
+Nt1=#HW_PARAM curve_type4
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=11
+Tp=2
+DT=1
+SD=Sets light levels of all channels to 100%
+Trg=1
+]
+[
+ObjTp=Dp
+H=12
+Tp=2
+DT=1
+SD=Sets light levels of all channels to 0%
+Trg=1
+]
+[
+ObjTp=Dp
+H=13
+Tp=2
+DT=1
+SD=Recalls Preset 1 lighting levels for all four channels
+Trg=1
+]
+[
+ObjTp=Dp
+H=14
+Tp=2
+DT=1
+SD=Recalls Preset 2 lighting levels for all four channels
+Trg=1
+]
+[
+ObjTp=Dp
+H=15
+Tp=2
+DT=1
+SD=Recalls Preset 3 lighting levels for all four channels
+Trg=1
+]
+[
+ObjTp=Dp
+H=16
+Tp=2
+DT=1
+SD=Recalls Preset 4 lighting levels for all four channels
+Trg=1
+]
+[
+ObjTp=Dp
+H=17
+Tp=2
+DT=1
+FD1=This input will cause the light levels of all four channels to increase||1
+FD2=linearly for as long \\as it is held high.
+SD=Raises light levels of all four channels for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=18
+Tp=2
+DT=1
+FD1=This input will cause the light levels of all four channels to decrease||1
+FD2=linearly for as long \\as it is held high.
+SD=Lowers light levels of all four channels for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=19
+Tp=2
+DT=1
+FD1=Saves the current lighting levels for all four channels to the current||1
+FD2=preset.  Levels are not saved if "On" or "Off" is the current preset.
+SD=Saves current lighting levels to current preset
+Trg=1
+]
+[
+ObjTp=Dp
+H=20
+Tp=2
+DT=1
+FD1=When a program containing this module is run for the first time,||1
+FD2=the following lighting levels will saved in the presets.  \\\\Preset||1
+FD3=1: All channels =  25%\\Preset 2: All channels =  50%\\Preset 3:
+FD4=||1All channels =  75%\\Preset 4: All channels = 100%\\ \\Whenever||1
+FD5=the signal on the Reset cue goes high, the above default levels||1
+FD6=for the currently selected preset will be recalled.
+SD=Recalls default lighting levels for selected preset
+Trg=1
+]
+[
+ObjTp=Dp
+H=21
+Tp=2
+DT=1
+SD=Raises light level of all channel 1 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=22
+Tp=2
+DT=1
+SD=Lowers light level of all channel 1 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=23
+Tp=2
+DT=1
+SD=Raises light level of all channel 2 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=24
+Tp=2
+DT=1
+SD=Lowers light level of all channel 2 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=25
+Tp=2
+DT=1
+SD=Raises light level of all channel 3 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=26
+Tp=2
+DT=1
+SD=Lowers light level of all channel 3 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=27
+Tp=2
+DT=1
+SD=Raises light level of all channel 4 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=28
+Tp=2
+DT=1
+SD=Lowers light level of all channel 4 for as long as this input is held high
+Trg=2
+]
+[
+ObjTp=Dp
+H=29
+Tp=4
+SD=Sets all channels to given level
+Nt1=#FADE 2s 0.25s 0.5s 1s 2s 4s 10s 30s 60s\\#VALUES 100% 75% 50% 25%||1
+Nt2=0%\\#TEMPLATE ON 100%\\#TEMPLATE OFF 0%
+NF=4
+DNF=4
+]
+[
+ObjTp=Dp
+H=30
+Tp=3
+DT=1
+SD=A fade is in process
+]
+[
+ObjTp=Dp
+H=31
+Tp=1
+SD=Load type connected to channel 5
+Nt1=#HW_PARAM curve_type5
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=32
+Tp=1
+SD=Load type connected to channel 6
+Nt1=#HW_PARAM curve_type6
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=33
+Tp=1
+SD=Load type connected to channel 7
+Nt1=#HW_PARAM curve_type7
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=34
+Tp=1
+SD=Load type connected to channel 8
+Nt1=#HW_PARAM curve_type8
+HD=TRUE
+DV=incandescent
+NoS=FALSE
+VVS=2
+VN=5
+Val1=incandescent
+Lbl1=incandescent
+Val2=non-dim
+Lbl2=non-dim
+Val3=fluorescent
+Lbl3=fluorescent
+Val4=cold-cathode
+Lbl4=cold-cathode
+Val5=neon
+Lbl5=neon
+Sgn=0
+]
+[
+ObjTp=Dp
+H=35
+Tp=1
+SD=Light level for channel 5 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]
+[
+ObjTp=Dp
+H=36
+Tp=1
+SD=Light level for channel 6 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]
+[
+ObjTp=Dp
+H=37
+Tp=1
+SD=Light level for channel 7 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]
+[
+ObjTp=Dp
+H=38
+Tp=1
+SD=Light level for channel 8 when module in manual override mode
+HD=TRUE
+DV=100%
+NF=7
+DNF=4
+Sgn=0
+]

@@ -1,0 +1,37 @@
+
+System log:
+
+  1. Notice: System startup: PRO2 Cntrl Eng [v4.003.0015 (Oct 04 2010), #002A4951]
+     TimeStamp: 11:53:52  8-19-11   UpTime: 0 days 00:00:04.26  Task: IdleTask
+  2. Error: Ethernet Initialization is NOT completed.
+     TimeStamp: 11:53:56  8-19-11   UpTime: 0 days 00:00:09.26  Task: IdleTask
+  3. Error: CListenSocket::InitializeCommon - NU_Bind Error (-264)
+     TimeStamp: 11:53:58  8-19-11   UpTime: 0 days 00:00:11.43  Task: LogicPro
+  4. Error: XML Server: Port conflict or invalid port number (80)
+     TimeStamp: 11:53:58  8-19-11   UpTime: 0 days 00:00:11.43  Task: LogicPro
+  5. Error: Unable Initialize ListenSocket
+     TimeStamp: 11:53:58  8-19-11   UpTime: 0 days 00:00:11.43  Task: LogicPro
+  6. Error: Attempt to add ZPanel Listen Socket Failed Port=80
+     TimeStamp: 11:53:58  8-19-11   UpTime: 0 days 00:00:11.43  Task: LogicPro
+  7. Notice: Update request from Slot-08.IP-ID-05
+     TimeStamp: 11:53:58  8-19-11   UpTime: 0 days 00:00:11.48  Task: RxID05
+  8. Error: Message from device Slot-09.ID-2A: HEAT setpoint input '0' out of range (0056:0000:0056)
+     TimeStamp: 11:53:59  8-19-11   UpTime: 0 days 00:00:12.25  Task: CRHostH
+  9. Error: Message from device Slot-09.ID-2A: COOL setpoint input '0' out of range (0056:0000:0056)
+     TimeStamp: 11:53:59  8-19-11   UpTime: 0 days 00:00:12.29  Task: CRHostH
+ 10. Error: Message from device Slot-09.ID-2A: AUTO setpoint input '0' out of range (0056:0000:0056)
+     TimeStamp: 11:53:59  8-19-11   UpTime: 0 days 00:00:12.39  Task: CRHostH
+ 11. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 11:54:02  8-19-11   UpTime: 0 days 00:00:14.60  Task: TCP_Read
+ 12. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 11:54:02  8-19-11   UpTime: 0 days 00:00:14.63  Task: RxID03
+ 13. Notice: Gateway Connection (ID: 3) from 192.168.1.4
+     TimeStamp: 11:54:23  8-19-11   UpTime: 0 days 00:00:36.08  Task: TCP_Read
+ 14. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 11:54:23  8-19-11   UpTime: 0 days 00:00:36.17  Task: RxID03
+ 15. Notice: Update request from Slot-08.IP-ID-05
+     TimeStamp: 12:00:42  8-19-11   UpTime: 0 days 00:06:55.03  Task: RxID05
+ 16. Notice: CTP Connection from 192.168.1.12
+     TimeStamp: 12:04:27  8-19-11   UpTime: 0 days 00:10:40.16  Task: TCP_Task
+Total Errors Logged = 16
+End of System log
