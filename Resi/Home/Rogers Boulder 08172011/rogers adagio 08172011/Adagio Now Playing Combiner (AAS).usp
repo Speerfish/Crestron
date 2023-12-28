@@ -1,0 +1,86 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT Offline; 
+// ANALOG_INPUT 
+STRING_INPUT Line1$[100], Line2$[100], Transport$[1];
+// BUFFER_INPUT 
+
+// DIGITAL_OUTPUT 
+// ANALOG_OUTPUT 
+STRING_OUTPUT NowPlaying$; 
+
+FUNCTION Create()
+	{
+	STRING Temp$[255];
+	
+	if(Offline = 0)
+		{
+		Temp$ = "";
+		if(Line1$ = "")
+			Temp$ = Temp$ + "\x1B\x21\x20";
+		else
+			Temp$ = Temp$ + "\x1B\x21" + Line1$;
+		if(Line2$ = "")
+			Temp$ = Temp$ + "\x1B\x22\x20";
+		else
+			Temp$ = Temp$ + "\x1B\x22" + Line2$;
+		if(Transport$ = "")
+			Temp$ = Temp$ + "\x1B\x23\x20";
+		else
+			Temp$ = Temp$ + "\x1B\x23" + Transport$;
+		NowPlaying$ = Temp$;
+		}
+	else if(Offline = 1)
+		{
+		NowPlaying$ = "\x1B\x21Not Found\x1B\x22On Network\x1B\x23 ";
+		}
+	}		
+	
+CHANGE Line1$, Line2$, Transport$, Offline
+	{
+	Call Create();
+	}
+
+Function Main()
+	{
+	NowPlaying$ = "\x1B\x21 \x1B\x22 \x1B\x23 ";
+	}
+	

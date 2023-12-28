@@ -1,0 +1,141 @@
+#ifndef __S2_APAD_AAS_SCROLLER_V2_H__
+#define __S2_APAD_AAS_SCROLLER_V2_H__
+
+
+
+
+/*
+* Constructor and Destructor
+*/
+
+/*
+* DIGITAL_INPUT
+*/
+#define __S2_APAD_AAS_Scroller_v2_SCROLLUP_DIG_INPUT 0
+#define __S2_APAD_AAS_Scroller_v2_SCROLLDOWN_DIG_INPUT 1
+#define __S2_APAD_AAS_Scroller_v2_TOP_DIG_INPUT 2
+#define __S2_APAD_AAS_Scroller_v2_BOTTOM_DIG_INPUT 3
+#define __S2_APAD_AAS_Scroller_v2_SEARCHPRESSED_DIG_INPUT 4
+#define __S2_APAD_AAS_Scroller_v2_RESET_DIG_INPUT 5
+
+
+/*
+* ANALOG_INPUT
+*/
+#define __S2_APAD_AAS_Scroller_v2_SCROLLPAGESIZE_ANALOG_INPUT 0
+#define __S2_APAD_AAS_Scroller_v2_SCROLLMAX_ANALOG_INPUT 1
+#define __S2_APAD_AAS_Scroller_v2_SCROLLLEVEL_ANALOG_INPUT 2
+#define __S2_APAD_AAS_Scroller_v2_FIRSTSHOWN_ANALOG_INPUT 3
+
+
+
+
+/*
+* DIGITAL_OUTPUT
+*/
+#define __S2_APAD_AAS_Scroller_v2_SCROLLUPFB_DIG_OUTPUT 0
+#define __S2_APAD_AAS_Scroller_v2_SCROLLDOWNFB_DIG_OUTPUT 1
+#define __S2_APAD_AAS_Scroller_v2_SHOWTOP_DIG_OUTPUT 2
+#define __S2_APAD_AAS_Scroller_v2_SHOWBOTTOM_DIG_OUTPUT 3
+#define __S2_APAD_AAS_Scroller_v2_SEARCHENABLE_DIG_OUTPUT 4
+#define __S2_APAD_AAS_Scroller_v2_BOTTOMGO_DIG_OUTPUT 5
+
+#define __S2_APAD_AAS_Scroller_v2_SCROLLHIGHLIGHTFB_DIG_OUTPUT 6
+#define __S2_APAD_AAS_Scroller_v2_SCROLLHIGHLIGHTFB_ARRAY_LENGTH 10
+
+/*
+* ANALOG_OUTPUT
+*/
+#define __S2_APAD_AAS_Scroller_v2_SCROLLINDEXOUT_ANALOG_OUTPUT 0
+#define __S2_APAD_AAS_Scroller_v2_SCROLLBAR_ANALOG_OUTPUT 1
+
+
+
+/*
+* Direct Socket Variables
+*/
+
+
+
+
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* INTEGER_PARAMETER
+*/
+/*
+* SIGNED_INTEGER_PARAMETER
+*/
+/*
+* LONG_INTEGER_PARAMETER
+*/
+/*
+* SIGNED_LONG_INTEGER_PARAMETER
+*/
+/*
+* STRING_PARAMETER
+*/
+
+
+/*
+* INTEGER
+*/
+CREATE_INTARRAY1D( S2_APAD_AAS_Scroller_v2, __OLDSCROLLHIGHLIGHT, 10 );;
+
+
+/*
+* LONG_INTEGER
+*/
+
+
+/*
+* SIGNED_INTEGER
+*/
+
+
+/*
+* SIGNED_LONG_INTEGER
+*/
+
+
+/*
+* STRING
+*/
+
+/*
+* STRUCTURE
+*/
+
+START_GLOBAL_VAR_STRUCT( S2_APAD_AAS_Scroller_v2 )
+{
+   void* InstancePtr;
+   struct GenericOutputString_s sGenericOutStr;
+   unsigned short LastModifiedArrayIndex;
+
+   DECLARE_IO_ARRAY( __SCROLLHIGHLIGHTFB );
+   unsigned short __SCROLLHIGHLIGHT;
+   unsigned short __SCROLLINDEX;
+   unsigned short __OLDSCROLLLEVEL;
+   unsigned short __SEARCHING;
+   DECLARE_INTARRAY( S2_APAD_AAS_Scroller_v2, __OLDSCROLLHIGHLIGHT );
+};
+
+START_NVRAM_VAR_STRUCT( S2_APAD_AAS_Scroller_v2 )
+{
+};
+
+DEFINE_WAITEVENT( S2_APAD_AAS_Scroller_v2, __SPLS_TMPVAR__WAITLABEL_0__ );
+
+
+#endif //__S2_APAD_AAS_SCROLLER_V2_H__
+

@@ -1,0 +1,124 @@
+Crosspoint listing for D:\Home Architects\RogersPart1\gunn adagio 03122010\rogers adagio 08172011.SMW
+
+Note:  Crosspoint symbols with EquipID or ControlID set to 0d are not routeable.
+
+Equipment Crosspoint Routing.                                                                       EquipID
+===========================================================================================================
+S-2.1 in macro S-4.1 (Module File C:\Crestron\Cresdb\Modules\Adagio Room Control and Setup          50001
+ v1.1.cmc)                                                                                          
+S-2.1 in macro S-4.2 (Module File C:\Crestron\Cresdb\Modules\Adagio Room Control and Setup          50002
+ v1.1.cmc)                                                                                          
+S-2.1 in macro S-4.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Room Control and Setup          50003
+ v1.1.cmc)                                                                                          
+S-2.1 in macro S-4.4 (Module File C:\Crestron\Cresdb\Modules\Adagio Room Control and Setup          50004
+ v1.1.cmc)                                                                                          
+S-2.1 in macro S-4.5 (Module File C:\Crestron\Cresdb\Modules\Adagio Room Control and Setup          50005
+ v1.1.cmc)                                                                                          
+S-2.1 in macro S-4.6 (Module File C:\Crestron\Cresdb\Modules\Adagio Room Control and Setup          50006
+ v1.1.cmc)                                                                                          
+S-12 in macro S-5.3.1 (Module File C:\Crestron\Cresdb\Modules\CEN-IDOC Hardware Interface           51004
+v1.0.cmc)                                                                                           
+S-5 in macro S-5.1.1 (Module File C:\Crestron\Cresdb\Modules\AFC-AMFM Hardware Interface v          51005
+1.cmc)                                                                                              
+S-5 in macro S-5.2.1 (Module File C:\Crestron\Cresdb\Modules\XM Hardware Interface v1.2.cm          51006
+c)                                                                                                  
+S-1 in macro S-2.3 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel iPod GUI Inter          51012
+face v1.cmc)                                                                                        
+S-1 in macro S-2.4 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel AAS GUI Interf          51013
+ace v1.cmc)                                                                                         
+S-1 in macro S-2.5 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel AMFM Tuner GUI          51014
+ Interface v1.cmc)                                                                                  
+S-1 in macro S-2.6 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel XM Tuner GUI I          51015
+nterface v1.cmc)                                                                                    
+S-1 in macro S-3.1.1.2 (Module File C:\Crestron\Cresdb\Modules\APAD iPod GUI Interface v1.          51022
+cmc)                                                                                                
+S-1 in macro S-3.1.1.3 (Module File C:\Crestron\Cresdb\Modules\APAD AAS GUI Interface v1.c          51023
+mc)                                                                                                 
+S-1 in macro S-3.1.1.4 (Module File C:\Crestron\Cresdb\Modules\APAD AMFM Tuner GUI Interfa          51024
+ce v1.cmc)                                                                                          
+S-1 in macro S-3.1.1.5 (Module File C:\Crestron\Cresdb\Modules\APAD XM Tuner GUI Interface          51025
+ v1.cmc)                                                                                            
+S-1 in macro S-3.1.1.6 (Module File D:\Home Architects\RogersPart1\gunn adagio 03122010\AP          51027
+AD Basic Generic GUI Interface v1.umc)                                                              
+S-1 in macro S-3.1.6.2 (Module File C:\Crestron\Cresdb\Modules\APAD iPod GUI Interface v1.          51122
+cmc)                                                                                                
+S-1 in macro S-3.1.6.3 (Module File C:\Crestron\Cresdb\Modules\APAD AAS GUI Interface v1.c          51123
+mc)                                                                                                 
+S-1 in macro S-3.1.6.4 (Module File C:\Crestron\Cresdb\Modules\APAD AMFM Tuner GUI Interfa          51124
+ce v1.cmc)                                                                                          
+S-1 in macro S-3.1.6.5 (Module File C:\Crestron\Cresdb\Modules\APAD XM Tuner GUI Interface          51125
+ v1.cmc)                                                                                            
+S-1 in macro S-3.1.6.6 (Module File D:\Home Architects\RogersPart1\gunn adagio 03122010\AP          51127
+AD Basic Generic GUI Interface v1.umc)                                                              
+
+Control Crosspoint Routing.                                                                         ControlID
+=============================================================================================================
+S-7.3 in macro S-1.1 (Module File C:\Crestron\Cresdb\Modules\AADS-XM Front Panel Interface          50025
+ v1_0_0.cmc)                                                                                        
+S-6.3 in macro S-3.1.1.1 (Module File C:\Crestron\Cresdb\Modules\APAD Interface v1_0_1.cmc          50026
+)                                                                                                   
+S-6.7.3 in macro S-3.1.1.1 (Module File C:\Crestron\Cresdb\Modules\APAD Interface v1_0_1.c          50027
+mc)                                                                                                 
+S-6.3 in macro S-3.1.6.1 (Module File C:\Crestron\Cresdb\Modules\APAD Interface v1_0_1.cmc          50041
+)                                                                                                   
+S-6.7.3 in macro S-3.1.6.1 (Module File C:\Crestron\Cresdb\Modules\APAD Interface v1_0_1.c          50042
+mc)                                                                                                 
+S-7.1 in macro S-3.4.1.1.1 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP Room GU          50099
+I Interface v1.1.cmc)                                                                               
+S-7.1 in macro S-3.4.1.1.2 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP Room GU          50100
+I Interface v1.1.cmc)                                                                               
+S-7.1 in macro S-3.4.1.1.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP Room GU          50101
+I Interface v1.1.cmc)                                                                               
+S-7.1 in macro S-3.4.1.1.4 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP Room GU          50102
+I Interface v1.1.cmc)                                                                               
+S-7.1 in macro S-3.4.1.1.5 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP Room GU          50103
+I Interface v1.1.cmc)                                                                               
+S-7.1 in macro S-3.4.1.1.6 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP Room GU          50104
+I Interface v1.1.cmc)                                                                               
+S-6.4 in macro S-1.1 (Module File C:\Crestron\Cresdb\Modules\AADS-XM Front Panel Interface          51000
+ v1_0_0.cmc)                                                                                        
+S-18 in macro S-2.3 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel iPod GUI Inte          51012
+rface v1.cmc)                                                                                       
+S-20 in macro S-2.4 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel AAS GUI Inter          51013
+face v1.cmc)                                                                                        
+S-11 in macro S-2.5 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel AMFM Tuner GU          51014
+I Interface v1.cmc)                                                                                 
+S-10 in macro S-2.6 (Module File C:\Crestron\Cresdb\Modules\AADS Front Panel XM Tuner GUI           51015
+Interface v1.cmc)                                                                                   
+S-5.7 in macro S-3.1.1.1 (Module File C:\Crestron\Cresdb\Modules\APAD Interface v1_0_1.cmc          51021
+)                                                                                                   
+S-35 in macro S-3.1.1.2 (Module File C:\Crestron\Cresdb\Modules\APAD iPod GUI Interface v1          51022
+.cmc)                                                                                               
+S-40 in macro S-3.1.1.3 (Module File C:\Crestron\Cresdb\Modules\APAD AAS GUI Interface v1.          51023
+cmc)                                                                                                
+S-31 in macro S-3.1.1.4 (Module File C:\Crestron\Cresdb\Modules\APAD AMFM Tuner GUI Interf          51024
+ace v1.cmc)                                                                                         
+S-31 in macro S-3.1.1.5 (Module File C:\Crestron\Cresdb\Modules\APAD XM Tuner GUI Interfac          51025
+e v1.cmc)                                                                                           
+S-2 in macro S-3.1.1.6 (Module File D:\Home Architects\RogersPart1\gunn adagio 03122010\AP          51027
+AD Basic Generic GUI Interface v1.umc)                                                              
+S-5.7 in macro S-3.1.6.1 (Module File C:\Crestron\Cresdb\Modules\APAD Interface v1_0_1.cmc          51121
+)                                                                                                   
+S-35 in macro S-3.1.6.2 (Module File C:\Crestron\Cresdb\Modules\APAD iPod GUI Interface v1          51122
+.cmc)                                                                                               
+S-40 in macro S-3.1.6.3 (Module File C:\Crestron\Cresdb\Modules\APAD AAS GUI Interface v1.          51123
+cmc)                                                                                                
+S-31 in macro S-3.1.6.4 (Module File C:\Crestron\Cresdb\Modules\APAD AMFM Tuner GUI Interf          51124
+ace v1.cmc)                                                                                         
+S-31 in macro S-3.1.6.5 (Module File C:\Crestron\Cresdb\Modules\APAD XM Tuner GUI Interfac          51125
+e v1.cmc)                                                                                           
+S-2 in macro S-3.1.6.6 (Module File D:\Home Architects\RogersPart1\gunn adagio 03122010\AP          51127
+AD Basic Generic GUI Interface v1.umc)                                                              
+S-1 in macro S-3.4.1.3.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP iPod GUI           52001
+Interface v1.0.cmc)                                                                                 
+S-1 in macro S-3.4.1.4.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP iPod GUI           52002
+Interface v1.0.cmc)                                                                                 
+S-1 in macro S-3.4.1.5.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP iPod GUI           52003
+Interface v1.0.cmc)                                                                                 
+S-1 in macro S-3.4.1.6.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP iPod GUI           52004
+Interface v1.0.cmc)                                                                                 
+S-1 in macro S-3.4.1.7.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP iPod GUI           52005
+Interface v1.0.cmc)                                                                                 
+S-1 in macro S-3.4.1.8.3 (Module File C:\Crestron\Cresdb\Modules\Adagio Large TP iPod GUI           52006
+Interface v1.0.cmc)                                                                                 
+
