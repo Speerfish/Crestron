@@ -1,0 +1,435 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name: Crestron
+System Name:
+System Number:
+Programmer: James Johnston
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #ENABLE_DYNAMIC
+ #SYMBOL_NAME "iPod Virtual Engine Music v1.1"
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+// #DEFAULT_VOLATILE
+// #PRINT_TO_TRACE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+// #HELP_PDF_FILE ""
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional libraries as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT First_Page;
+DIGITAL_INPUT Page_Up;
+DIGITAL_INPUT Page_Down;
+DIGITAL_INPUT Last_Page;
+
+DIGITAL_INPUT Previous_Song;
+DIGITAL_INPUT Next_Song;
+
+DIGITAL_INPUT Shuffle;
+DIGITAL_INPUT Repeat;
+
+DIGITAL_INPUT Select_Line[5];
+//DIGITAL_INPUT Select_Song[20];
+
+ 
+STRING_OUTPUT NowPlaying_Song$;
+STRING_OUTPUT NowPlaying_Album$;
+STRING_OUTPUT NowPlaying_Artist$;
+ANALOG_OUTPUT NowPlaying_Duration$;
+ANALOG_OUTPUT NowPlaying_AlbumArt;
+
+STRING_OUTPUT NextUp_Song$;
+STRING_OUTPUT NextUp_Album$;
+STRING_OUTPUT NextUp_Artist$;
+//ANALOG_OUTPUT NextUp_Duration$;
+
+STRING_OUTPUT Shuffle_Mode$;
+STRING_OUTPUT Repeat_Mode$;
+
+ANALOG_OUTPUT Menu_Position;
+ANALOG_OUTPUT NowPlaying_Index;
+
+STRING_OUTPUT Menu_Line$[5];      
+ANALOG_OUTPUT Album_Art_Menu_Line[5];
+
+
+//STRING_OUTPUT Song_List$[20];
+ 
+
+/*******************************************************************************************
+  SOCKETS
+  (Uncomment and define socket definitions as needed)
+*******************************************************************************************/
+// TCP_CLIENT
+// TCP_SERVER
+// UDP_SOCKET
+
+/*******************************************************************************************
+  Parameters
+  (Uncomment and declare parameters as needed)
+*******************************************************************************************/
+// INTEGER_PARAMETER
+// SIGNED_INTEGER_PARAMETER
+// LONG_INTEGER_PARAMETER
+// SIGNED_LONG_INTEGER_PARAMETER
+// STRING_PARAMETER
+
+/*******************************************************************************************
+  Parameter Properties
+  (Uncomment and declare parameter properties as needed)
+*******************************************************************************************/
+/*
+#BEGIN_PARAMETER_PROPERTIES parameter_variable, parameter_variable, ...
+   // propValidUnits = // unitString or unitDecimal|unitHex|unitPercent|unitCharacter|unitTime|unitTicks;
+   // propDefaultUnit = // unitString, unitDecimal, unitHex, unitPercent, unitCharacter, unitTime or unitTicks;
+   // propBounds = lower_bound , upper_bound;
+   // propDefaultValue = ;  // or, propDefaultValue = "";
+   // propList = // { "value" , "label" } , { "value" , "label" } , ... ;
+   // propShortDescription = "status_bar_hint_text";
+   // #BEGIN_PROP_FULL_DESCRIPTION  line_1...  line_2...  line_n  #END_PROP_FULL_DESCRIPTION
+   // #BEGIN_PROP_NOTES line_1...  line_2...  line_n  #END_PROP_NOTES
+#END_PARAMETER_PROPERTIES
+*/
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+
+STRUCTURE SongInfo_struct
+{
+	STRING Song[30];
+	STRING Album[30];
+	STRING Artist[30];
+	INTEGER Duration;
+	INTEGER AlbumArt;
+};
+
+SongInfo_struct SongInfo[20];
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER NowPlayingIndex;
+INTEGER MenuIndex;
+INTEGER ShuffleIndex;
+INTEGER RepeatIndex;
+STRING ShuffleM[3][10];
+STRING RepeatM[3][10];
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+
+INTEGER_FUNCTION CalcMenuPosition(INTEGER mIndex)
+{
+	RETURN(65535-((MenuIndex -1)*65535/15));
+}
+
+FUNCTION UpdateMenuOutput()
+{
+	INTEGER i;
+	FOR (i=1 TO 5)
+	{
+		Menu_Line$[i] = SongInfo[MenuIndex +i -1].Song;
+		Album_Art_Menu_Line[i] = SongInfo[MenuIndex +i -1].AlbumArt;  
+	}
+        
+	Menu_Position =CalcMenuPosition(MenuIndex);
+	NowPlaying_Index =NowPlayingIndex;
+
+}
+
+FUNCTION UpdateNowPlayingOutput()
+{
+NowPlaying_Song$ = SongInfo[NowPlayingIndex].Song;
+NowPlaying_Album$ = SongInfo[NowPlayingIndex].Album;
+NowPlaying_Artist$ = SongInfo[NowPlayingIndex].Artist;
+NowPlaying_Duration$ = SongInfo[NowPlayingIndex].Duration;
+NowPlaying_AlbumArt = SongInfo[NowPlayingindex].AlbumArt; 
+
+NextUp_Song$ = SongInfo[((NowPlayingIndex MOD 20)+1)].Song;
+NextUp_Album$ = SongInfo[((NowPlayingIndex MOD 20)+1)].Album;
+NextUp_Artist$ = SongInfo[((NowPlayingIndex MOD 20)+1)].Artist;
+//NextUp_Duration$ = SongInfo[((NowPlayingIndex MOD 20)+1)].Duration;
+
+Menu_Position =CalcMenuPosition(MenuIndex);
+NowPlaying_Index =NowPlayingIndex;
+}	
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+
+PUSH First_Page
+{
+	MenuIndex =1;
+	UpdateMenuOutput();	   
+}
+
+PUSH Last_Page
+{
+	MenuIndex =16;
+	UpdateMenuOutput();	   
+}
+
+PUSH Page_Up
+{
+	IF (MenuIndex != 1)
+		{
+			MenuIndex = (MenuIndex -5);
+			UpdateMenuOutput();
+		}	   
+}
+
+PUSH Page_Down
+{
+	IF (MenuIndex != 16)
+		{
+			MenuIndex = (MenuIndex +5);
+			UpdateMenuOutput();
+		}	   
+}
+
+PUSH Select_Line
+{
+	INTEGER lineSelected;
+	lineSelected = GetLastModifiedArrayIndex ();
+	NowPlayingIndex = MenuIndex -1 +lineSelected;
+	UpdateNowPlayingOutput();
+}
+
+PUSH Previous_Song
+{
+	IF (NowPlayingIndex > 1)
+	{
+		NowPlayingIndex = NowPlayingIndex -1;
+		UpdateNowPlayingOutput();
+	}
+	ELSE // NowPlayingIndex =1
+	{
+		NowPlayingIndex = 20;
+		UpdateNowPlayingOutput();
+	}	
+}
+
+PUSH Next_Song
+{
+	NowPlayingIndex = ( (NowPlayingIndex MOD 20)+1 );
+	UpdateNowPlayingOutput();			
+}
+
+/*
+PUSH Select_Song
+{
+	NowPlayingIndex = GetLastModifiedArrayIndex ();
+	UpdateNowPlayingOutput();
+}
+*/
+
+PUSH Shuffle
+{
+	ShuffleIndex = (ShuffleIndex MOD 3) +1;
+    Shuffle_Mode$ = ShuffleM[ShuffleIndex];
+}
+
+PUSH Repeat
+{
+	RepeatIndex = (RepeatIndex MOD 3) +1;
+    Repeat_Mode$ = RepeatM[RepeatIndex];
+}
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+FUNCTION Main()
+{
+
+INTEGER i;
+
+NowPlayingIndex =1;
+MenuIndex =1;
+
+ShuffleIndex=1;
+RepeatIndex=1;
+
+ShuffleM[1]="Off";
+ShuffleM[2]="Tracks";
+ShuffleM[3]="Albums";
+
+RepeatM[1]="Off";
+RepeatM[2]="1 Track";
+RepeatM[3]="All";
+
+SongInfo[1].Song = "I Gotta Feeling";
+SongInfo[1].Artist = "The Black Eyed Peas";
+SongInfo[1].Album = "The E.N.D. (Energy Never Dies)";
+SongInfo[1].Duration = 289;
+SongInfo[1].AlbumArt = 1;
+   
+SongInfo[2].Song = "You Belong With Me";
+SongInfo[2].Artist = "Taylor Swift";
+SongInfo[2].Album = "Fearless";
+SongInfo[2].Duration = 231;
+SongInfo[2].AlbumArt = 2;
+
+SongInfo[3].Song = "Knock You Down";
+SongInfo[3].Artist = "Keri Hilson ft. Kanye West";
+SongInfo[3].Album = "In a Perfect World";
+SongInfo[3].Duration = 326;
+SongInfo[3].AlbumArt = 3;
+
+SongInfo[4].Song = "Use Somebody";
+SongInfo[4].Artist = "Kings of Leon";
+SongInfo[4].Album = "Only by the Night";
+SongInfo[4].Duration = 230;
+SongInfo[4].AlbumArt = 4;
+
+SongInfo[5].Song = "That's Not My Name";
+SongInfo[5].Artist = "The Ting Tings";
+SongInfo[5].Album = "We Started Nothing";
+SongInfo[5].Duration = 310;
+SongInfo[5].AlbumArt = 5;
+
+SongInfo[6].Song = "Fire Burning";
+SongInfo[6].Artist = "Sean Kingston";
+SongInfo[6].Album = "Fire Burning - (Single)";
+SongInfo[6].Duration = 243;
+SongInfo[6].AlbumArt = 6;
+
+SongInfo[7].Song = "Boom Boom Pow";
+SongInfo[7].Artist = "The Black Eyed Peas";
+SongInfo[7].Album = "The E.N.D. (Energy Never Dies)";
+SongInfo[7].Duration = 251;
+SongInfo[7].AlbumArt = 7;
+
+SongInfo[8].Song = "LoveGame";
+SongInfo[8].Artist = "Lady Gaga";
+SongInfo[8].Album = "The Fame";
+SongInfo[8].Duration = 217;
+SongInfo[8].AlbumArt = 8;
+
+SongInfo[9].Song = "If Today was Your Last Day";
+SongInfo[9].Artist = "Nickelback";
+SongInfo[9].Album = "Dark Horse";
+SongInfo[9].Duration = 248;
+SongInfo[9].AlbumArt = 9;
+
+SongInfo[10].Song = "Waking Up In Vegas";
+SongInfo[10].Artist = "Katy Perry";
+SongInfo[10].Album = "One of the Boys";
+SongInfo[10].Duration = 199;
+SongInfo[10].AlbumArt = 10;
+
+SongInfo[11].Song = "I Know You Want Me";
+SongInfo[11].Artist = "Pitbull";
+SongInfo[11].Album = "I Know You Want Me";
+SongInfo[11].Duration = 266;
+SongInfo[11].AlbumArt = 11;
+
+SongInfo[12].Song = "Battlefield";
+SongInfo[12].Artist = "Jordin Sparks";
+SongInfo[12].Album = "Battlefield";
+SongInfo[12].Duration = 241;
+SongInfo[12].AlbumArt = 12;
+
+SongInfo[13].Song = "Poker Face";
+SongInfo[13].Artist = "Lady Gaga";
+SongInfo[13].Album = "The Fame";
+SongInfo[13].Duration = 237;
+SongInfo[13].AlbumArt = 13;
+
+SongInfo[14].Song = "Please Don't Leave me";
+SongInfo[14].Artist = "Pink";
+SongInfo[14].Album = "Funhouse";
+SongInfo[14].Duration = 231;
+SongInfo[14].AlbumArt = 14;
+
+SongInfo[15].Song = "New Divide";
+SongInfo[15].Artist = "Linkin Park";
+SongInfo[15].Album = "Transformers ROTF-(Soundtrack)";
+SongInfo[15].Duration = 269;
+SongInfo[15].AlbumArt = 15;
+
+SongInfo[16].Song = "Hotel Room Service";
+SongInfo[16].Artist = "Pitbull";
+SongInfo[16].Album = "I Know You Want Me";
+SongInfo[16].Duration = 238;
+SongInfo[16].AlbumArt = 16;
+
+SongInfo[17].Song = "Don't Trust Me";
+SongInfo[17].Artist = "3OH!3";
+SongInfo[17].Album = "Want";
+SongInfo[17].Duration = 192;
+SongInfo[17].AlbumArt = 17;
+
+SongInfo[18].Song = "Second Chance";
+SongInfo[18].Artist = "Shinedown";
+SongInfo[18].Album = "The Sound of Madness";
+SongInfo[18].Duration = 220;
+SongInfo[18].AlbumArt = 18;
+
+SongInfo[19].Song = "21 Guns";
+SongInfo[19].Artist = "Green Day";
+SongInfo[19].Album = "21st Century Breakdown";
+SongInfo[19].Duration = 321;
+SongInfo[19].AlbumArt = 19;
+
+SongInfo[20].Song = "My Life Would Suck Without You";
+SongInfo[20].Artist = "Kelly Clarkson";
+SongInfo[20].Album = "All I Ever Wantedt";
+SongInfo[20].Duration = 211;
+SongInfo[20].AlbumArt = 20;
+
+UpdateNowPlayingOutput();
+UpdateMenuOutput();
+
+Shuffle_Mode$="Off";
+Repeat_Mode$="Off";
+
+//FOR (i=1 TO 20)
+//	Song_List$[i] = SongInfo[i].Song;
+
+}
+
+

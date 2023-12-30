@@ -1,0 +1,16 @@
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+
+STRING_OUTPUT Code$;
+ANALOG_INPUT VALUE;
+ 
+
+CHANGE VALUE
+{
+	integer Tempval;
+	Tempval = value * 100 / 65535;
+	Code$ = ITOA(tempval);
+	// PRINT("Code = %s\n", ITOA(VALUE));
+}
+

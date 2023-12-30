@@ -1,0 +1,495 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name: Crestron Electronics Inc.
+System Name:
+System Number:
+Programmer: Omer Brookstein (2008)
+Comments:
+
+Version 1.2:
+============
+- Fixed overflow bug, for traffic image link. Commented Link out.
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #ENABLE_DYNAMIC
+#SYMBOL_NAME "Generic Yahoo RSS Engine 1.2"
+// #HINT ""
+// #DEFINE_CONSTANT
+#DEFINE_CONSTANT Debug 0
+#DEFINE_CONSTANT MaxItems 20  
+#DEFINE_CONSTANT Port 80
+#DEFINE_CONSTANT NewsHost "rss.news.yahoo.com"
+#DEFINE_CONSTANT TrafficHost "local.yahooapis.com"
+#DEFINE_CONSTANT WeatherHost "Weather"
+#DEFINE_CONSTANT NewsPath "/rss/topstories"
+#DEFINE_CONSTANT TrafficPath "/MapsService/rss/trafficData.xml?appid="
+#DEFINE_CONSTANT WeatherPath "WeatherPath"
+
+
+
+#CATEGORY "35" 
+// #DEFAULT_VOLATILE
+// #PRINT_TO_TRACE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+// #HELP_PDF_FILE ""
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+ 
+#HELP_BEGIN
+	Recives RSS Feeds from Yahho RSS Service.
+	Service Type - 1=News; 2=Traffic; 3=Weather
+#HELP_END
+
+
+DIGITAL_INPUT Get_RSS_Info,Scroll_Next,Scroll_Prev;
+ANALOG_INPUT RSS_Type,Traffic_Severity,Traffic_Radius,Image_Height, Image_Width;
+STRING_INPUT Yahoo_ID$[250],Zip_Code$[10];
+//BUFFER_INPUT RSS_Rx$[50000];
+
+DIGITAL_OUTPUT Busy;
+Analog_Output Number_Of_Items;
+STRING_OUTPUT RSS_Type$,Status_Line$,Channel_Name$,Copyrights$,TotalItemsString$,Item_Title_fb$[MaxItems],Item_Desc_fb$[MaxItems],Image_Url_fb$[MaxItems],Item_Date_fb$[MaxItems];
+
+STRING Temp$[100],Rx$[65534],Item_Title$[MaxItems][255],Item_Desc$[MaxItems][255],Image_Url$[MaxItems][255],Item_Date$[MaxItems][255];
+Integer NumberOfItems,DoneRecFlag;
+
+
+/*******************************************************************************************
+  SOCKETS
+  (Uncomment and define socket definitions as needed)
+*******************************************************************************************/
+TCP_CLIENT Yahoo_Rss[65534];
+
+// TCP_SERVER
+// UDP_SOCKET
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+
+STRUCTURE SOCKET_STRUCT 
+{ 
+	INTEGER SocketStatus; 
+	STRING  SocketRxBuf[65534]; 
+};
+
+
+//TCP_CLIENT, TCP_SERVER, UDP_SOCKET
+
+// INTEGER
+// LONG_INTEGER
+// SIGNED_INTEGER
+// SIGNED_LONG_INTEGER
+
+Function WriteStatus(STRING Desc$)
+{
+	Status_Line$=Desc$;
+}
+
+
+Function ScrollNext ()
+{
+
+	Integer i;
+	STRING Temp_Title$[200],Temp_Desc$[200], Temp_Url$[200], Temp_Date$[200];
+             
+	Temp_Title$= Item_Title$[1];
+	Temp_Desc$= Item_Desc$[1];
+	Temp_Url$ = Image_Url$[1];
+	Temp_Date$= Item_Date$[1];
+	
+	For (i=1 to (NumberOfItems-1))
+	{
+		Item_Title$[i]=Item_Title$[i+1];
+		Item_Title_fb$[i]=Item_Title$[i];
+		Item_Desc$[i]=Item_Desc$[i+1];
+		Item_Desc_fb$[i]=Item_Desc$[i];
+		Image_Url$[i]=Image_Url$[i+1];
+		Image_Url_fb$[i]=Image_Url$[i];
+		Item_Date$[i]=Item_Date$[i+1];
+		Item_Date_fb$[i]=Item_Date$[i];
+	}
+	Item_Title$[NumberofItems]=Temp_Title$;
+	Item_Title_fb$[NumberofItems]=Temp_Title$;
+	Item_Desc$[NumberofItems]=Temp_Desc$;
+	Item_Desc_fb$[NumberofItems]=Temp_Desc$;
+	Image_Url$[NumberofItems]=Temp_Url$;
+	Image_Url_fb$[NumberofItems]=Temp_Url$;
+	Item_Date$[NumberofItems]=Temp_Date$;
+	Item_Date_fb$[NumberofItems]=Temp_Date$;
+	
+}
+Function ScrollPrev () //Need to Be fixed!
+{
+	Integer i;
+	STRING Temp_Title$[200],Temp_Desc$[200], Temp_Url$[200], Temp_Date$[200];
+ 
+	Temp_Title$= Item_Title$[1];
+	Temp_Desc$= Item_Desc$[1];
+	Temp_Url$ = Image_Url$[1];
+	Temp_Date$= Item_Date$[1];
+
+	Item_Title$[1]=Item_Title$[NumberofItems];
+	Item_Title_fb$[1]=Item_Title$[NumberofItems];
+	Item_Desc$[1]=Item_Desc$[NumberofItems];
+	Item_Desc_fb$[1]=Item_Desc$[NumberofItems];
+	Image_Url$[1]=Image_Url$[NumberofItems];
+	Image_Url_fb$[1]=Image_Url$[NumberofItems];
+	Item_Date$[1]=Item_Date$[NumberofItems];
+	Item_Date_fb$[1]=Item_Date$[NumberofItems];	
+	
+	For (i=0 to (NumberOfItems-3))
+	{
+		Item_Title$[NumberOfItems-i]=Item_Title$[NumberOfItems-i-1];
+		Item_Title_fb$[NumberOfItems-i]=Item_Title$[i];
+		Item_Desc$[NumberOfItems-i]=Item_Desc$[NumberOfItems-i-1];
+		Item_Desc_fb$[NumberOfItems-i]=Item_Desc$[i];
+		Image_Url$[NumberOfItems-i]=Image_Url$[NumberOfItems-i-1];
+		Image_Url_fb$[NumberOfItems-i]=Image_Url$[i];
+		Item_Date$[NumberOfItems-i]=Item_Date$[NumberOfItems-i-1];
+		Item_Date_fb$[NumberOfItems-i]=Item_Date$[i];
+	}
+	Item_Title$[2]=Temp_Title$;
+	Item_Title_fb$[2]=Temp_Title$;
+	Item_Desc$[2]=Temp_Desc$;
+	Item_Desc_fb$[2]=Temp_Desc$;
+	Image_Url$[2]=Temp_Url$;
+	Image_Url_fb$[2]=Temp_Url$;
+	Item_Date$[2]=Temp_Date$;
+	Item_Date_fb$[2]=Temp_Date$;
+	
+}
+
+
+Function ExtractInfo ()
+{
+	integer i,j,Current_Pos,Start_Pos,End_Pos,InfoLength,ItemStartPos,ItemEndPos,RightSideLen;
+	String LeftPart[200],RightPart[200];
+
+	if ((Find ("<rss",Rx$)=0) && (Find("</rss>",Rx$)=0)) //No Rss Tags
+	{
+		WriteStatus ("Could not find any RSS Tags");
+	}
+	Else if ((Find ("<rss",Rx$)=0) && (Find("</rss>",Rx$)>0)) //Feed too Large
+	{
+		WriteStatus ("Found only Closing Tag - Feed is Too long!");
+	}
+	Else if ((Find ("<rss",Rx$)>0) && (Find("</rss>",Rx$)>0)) //Found both Begining and Ending Tags
+	{
+		WriteStatus ("Found RSS Tags, Starting to Extract Information!");
+		//Extracting General Info
+		//Extracting Channel Name
+		Start_Pos = Find("<title>",Rx$)+7;
+		End_Pos = Find("</title>",Rx$);
+		InfoLength = (End_Pos-Start_Pos);
+		MakeString(Temp$,"Looking for Channel Name form %d to %d",Start_Pos,InfoLength);
+		Channel_Name$ = mid(Rx$,Start_Pos,InfoLength);
+		
+		//Extracting Copyrights
+		Start_Pos = Find("<copyright>",Rx$)+11;
+		End_Pos = Find("</copyright>",Rx$);
+		InfoLength = End_Pos-Start_Pos;
+		Copyrights$ = mid(Rx$,Start_Pos,InfoLength);
+				
+		//Counting Number of Items in feed
+		NumberOfItems=0;
+		Current_Pos=1;
+		for (i=1 to MaxItems)
+		{
+			if (Find("</item>",Rx$,Current_Pos)>0)
+			{ 
+				NumberOfItems=NumberOfItems+1;
+				Current_Pos=(Find("</item>",Rx$,Current_Pos))+7;
+
+				if(Debug)
+					print("So far found %d closing item tags. Current Pos is %u out of Len of %u\n",NumberOfItems,Current_Pos, len(Rx$));
+
+				If ((Current_Pos>=Len(Rx$))|(NumberOfItems>=MaxItems))
+					break;
+				
+			}
+		}
+		Number_Of_Items=NumberOfItems;
+		Makestring(TotalItemsString$,"Total of %d Feeds available",NumberOfItems);
+		MakeString(Temp$,"Found %d RSS Items in Feed. Maximum allowd by Const is %d",NumberofITems,MaxItems);
+		WriteStatus (Temp$);
+		
+		
+		If (NumberofItems>MaxItems) //Truncing to limit
+			NumberofItems=MaxItems;
+		if (Numberofitems<maxitems)
+		{
+			for (i= (numberofitems+1) to maxitems)
+			{
+				Item_Title$[i]="";
+				Item_Title_fb$[i]="";
+				Item_Desc$[i]="";
+				Item_Desc_fb$[i]="";
+				Image_Url$[i]="";
+				Image_Url_fb$[i]="";
+				Item_Date$[i]="";
+				Item_Date_fb$[i]="";
+			}
+		}
+		
+		//Extracting Titles Information
+		ItemStartPos=0;
+		ItemEndPos = Find("<item>",Rx$)-8;
+		For (i=1 to NumberofItems)//NumberOfItems)
+		{
+			Current_Pos = ItemEndPos+7;
+			
+			//Gets Item's Title
+			ItemStartPos = (Find("<title>",Rx$,Current_Pos)+7);
+			ItemEndPos = (Find("</title>",Rx$,Current_Pos));
+			InfoLength = ItemEndPos - ItemStartPos;
+			Item_Title$[i] = Mid(Rx$,ItemStartPos, InfoLength);
+			for (j=1 to (len(Item_Title$[i])))
+			{
+				if (Find("&#039;",Item_Title$[i])>0) //Looking for (') Sign in Text
+				{
+					LeftPart=Left(Item_Title$[i],(Find("&#039;",Item_Title$[i])-1));
+					RightSideLen=(len(Item_Title$[i]) - (Find("&#039;",Item_Title$[i])+5));
+					RightPart=Right(Item_Title$[i],RightSideLen);
+					Item_Title$[i]=LeftPart + "'" + RightPart;
+				}
+				Else if (Find("&#39;",Item_Title$[i])>0) //Looking for (') Sign in Text
+				{
+					LeftPart=Left(Item_Title$[i],(Find("&#39;",Item_Title$[i])-1));
+					RightSideLen=(len(Item_Title$[i]) - (Find("&#39;",Item_Title$[i])+4));
+					RightPart=Right(Item_Title$[i],RightSideLen);
+					Item_Title$[i]=LeftPart + "'" + RightPart;
+				}
+				Else if (Find("    (",Item_Title$[i])>0) //Looking for (') Sign in Text
+				{	
+					LeftPart=Left(Item_Title$[i],(Find("  (",Item_Title$[i])-5));
+					RightSideLen=(len(Item_Title$[i]) - (Find("    (",Item_Title$[i])+2));
+					RightPart=Right(Item_Title$[i],RightSideLen);
+					Item_Title$[i]=LeftPart +" *" + RightPart;
+				}
+				Else if (Find("&quot;",Item_Title$[i])>0) //Looking for (') Sign in Text
+				{
+					LeftPart=Left(Item_Title$[i],(Find("&quot;",Item_Title$[i])-1));
+					RightSideLen=(len(Item_Title$[i]) - (Find("&quot;",Item_Title$[i])+5));
+					RightPart=Right(Item_Title$[i],RightSideLen);
+					Item_Title$[i]=LeftPart + chr(34) + RightPart;
+				}
+				if(Debug)
+					print ("%s",Item_Title$[i]);
+			}
+			Item_Title$[i]=Item_Title$[i]+"   ";
+			Item_Title_fb$[i]=Item_Title$[i];
+			
+			//Gets Item's Description
+			if (Rss_Type=2) //Only if Traffic
+			{
+				ItemStartPos = (Find("<description>",Rx$,Current_Pos)+13);
+				ItemEndPos = (Find("</description>",Rx$,Current_Pos));
+				InfoLength = ItemEndPos - ItemStartPos;
+				Item_Desc$[i] = Mid(Rx$,ItemStartPos, InfoLength);
+				Item_Desc_fb$[i] = Mid(Rx$,ItemStartPos, InfoLength);
+			}
+			
+			//Gets Item's Image URL
+			/*
+			if (Rss_Type=2) //Only if Traffic
+			{
+				ItemStartPos = (Find("<link>",Rx$,Current_Pos)+6);
+				ItemEndPos = (Find("</link>",Rx$,Current_Pos));
+				InfoLength = ItemEndPos - ItemStartPos;
+				Image_Url$[i] = Mid(Rx$,ItemStartPos, InfoLength);			
+				Image_Url_fb$[i] = Mid(Rx$,ItemStartPos, InfoLength);			
+			}
+			*/
+
+			//Gets Item's LastUpdated
+			ItemStartPos = (Find("<pubDate>",Rx$,Current_Pos)+9);
+			ItemEndPos = (Find("</pubDate>",Rx$,Current_Pos));
+			InfoLength = ItemEndPos - ItemStartPos;
+			Item_Date$[i] = Mid(Rx$,ItemStartPos, InfoLength);	
+			Item_Date_fb$[i] = Mid(Rx$,ItemStartPos, InfoLength);	
+			ItemEndPos = (Find("</item>",Rx$,Current_Pos)); //Finding the closing Tag for this Item
+							
+		}
+	}
+	
+}
+
+SocketConnect Yahoo_Rss
+{
+	Signed_Long_Integer PortNumber;
+	Signed_Integer Local_Status;
+	String Remote_IP[20];
+	String Requested_IP[256];
+	STRING TempStatus$[200],Tx$[255];
+	
+	
+	Busy=1;
+	
+	Local_Status = SocketGetAddressAsRequested(Yahoo_Rss,Requested_IP);
+	if (Local_Status <0)
+	{
+		Makestring(TempStatus$,"Error getting remote ip address as Requested - %d", Local_Status);
+		WriteStatus (TempStatus$);
+	}
+	ELSE
+	{
+		Makestring(TempStatus$,"Successfully Connected to IP %s",Requested_IP);
+	}
+	PortNumber = Socketgetportnumber(Yahoo_Rss);
+	if (PortNumber<0)
+	{
+		Makestring(TempStatus$,"Error getting remote Port Number - %d", Local_Status);
+		WriteStatus (TempStatus$);	
+	}
+	ELSE
+	{
+		Makestring(TempStatus$,"Successfully Received Port Number - %ld",PortNumber);
+		WriteStatus(TempStatus$);
+	}
+    Local_Status = SocketGetRemoteIPAddress(Yahoo_Rss, Remote_IP);
+    If (Local_Status <0)
+    {
+		Makestring(TempStatus$,"Error getting Remote IP Address - %d", Local_Status);
+		WriteStatus (TempStatus$);	
+	}
+	ELSE
+	{
+		Makestring(TempStatus$,"Successfully Connected to Port %ld on address %s",PortNumber, Remote_IP);
+		WriteStatus(TempStatus$);
+	}
+	
+	Switch (Rss_Type)
+	{
+		Case (1): //News
+		{
+			Makestring(Tx$,"GET %s HTTP/1.0\x0D\x0AHost: %s\x0D\x0A\x0D\x0A", NewsPath,NewsHost);
+			SocketSend (Yahoo_Rss,Tx$);
+			WriteStatus(Tx$);
+		}
+		
+		Case (2): //Traffic
+		{
+			Makestring(Tx$,"GET %s%s&zip=%s&severity=%d&radius=%d&image_height=%d&image_width=%d HTTP/1.0\x0D\x0AHost: %s\x0D\x0A\x0D\x0A", TrafficPath,Yahoo_ID$,Zip_Code$,Traffic_Severity,Traffic_Radius,Image_Height,Image_Width,TrafficHost);
+			SocketSend (Yahoo_Rss,Tx$);
+			WriteStatus (Tx$);
+		}
+		Default:
+		{
+			Makestring(temp$,"Error - Undefined Service");
+			WriteStatus("Temp$");
+		}
+	}
+
+}
+SocketDisconnect Yahoo_RSS
+{
+	Busy=0;
+}
+
+SOCKETRECEIVE Yahoo_Rss
+{
+	if(Debug)
+		print("Buffer Length so far is %u\n",len(Yahoo_Rss.SocketRxBuf)); 
+		
+	WriteStatus("Data Received, Looking for RSS Tags");
+	if ((Yahoo_Rss.SocketStatus=4)||(Yahoo_Rss.SocketStatus=5)) //Socket disconnected - Locally, or Remotly.
+	{
+		Writestatus("Socket Closed");
+
+		If ((find("</rss>",(Yahoo_Rss.SocketRxBuf))>0)&&(DoneRecFlag=0)) //Recived All Info
+		{
+			DoneRecFlag=1; //Indicates that all info has been received.
+			Rx$=Yahoo_Rss.SocketRxBuf;
+			Makestring(Temp$,"Successfuly found Closing Rss Tag - Total Rx$ Len is %d\n",(Len(Rx$)));
+			WriteStatus(Temp$);
+			clearbuffer(Yahoo_Rss.SocketRxBuf);
+			WriteStatus("Connection Closed, Starting to Extract Information");
+			ExtractInfo();
+		}
+		Else
+		{
+			WriteStatus("Could Not Find Rss Closing Tag");
+		}
+	}
+}
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+Release Scroll_Next
+{
+	ScrollNext();
+}
+
+Release Scroll_Prev
+{
+	ScrollPrev();
+}
+
+Change RSS_Type
+{
+	Switch(RSS_TYPE)
+	{
+		case (1):
+			Rss_Type$="News RSS"; 	
+		case (2):
+			Rss_Type$="Traffic RSS";
+		case (3):
+			Rss_Type$="Weather RSS";		
+	}
+}
+
+Release Get_RSS_Info
+{
+	Signed_Integer ConnStatus;
+	
+	
+    DoneRecFlag=0;
+	Clearbuffer (Yahoo_Rss.SocketRxBuf);
+	Rx$=Yahoo_Rss.SocketRxBuf;
+	WriteStatus("Buffer Cleared");
+	WriteStatus("Sending RSS Information");
+	Switch (RSS_Type)
+	{
+		Case (1): //News
+		{
+				WriteStatus("Sending News RSS Information");
+				ConnStatus=SocketConnectClient(Yahoo_RSS, NewsHost,80, 0);
+				If (ConnStatus<0) 
+				{
+					WriteStatus("Error Connecting to Yahoo News Host");							
+					Busy=0;
+				}
+		}
+		
+		Case (2): //Traffic
+			{
+				WriteStatus("Sending Traffic RSS Information");
+				ConnStatus=SocketConnectClient(Yahoo_RSS, TrafficHost,80, 0);
+				If (ConnStatus<0) 
+				{
+					WriteStatus("Error Connecting to Yahoo Traffic Host");				
+					Busy=0;
+				}
+			}
+		Default:
+		{
+			WriteStatus("Error - Undefined Service");
+		}
+	}
+}

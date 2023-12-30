@@ -1,0 +1,805 @@
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+DIGITAL_INPUT CONNECT_F,Clear;
+DIGITAL_INPUT KPD0, KPD1, KPD2, KPD3, KPD4, KPD5, KPD6, KPD7, KPD8, KPD9;  
+ANALOG_INPUT Status, Days_to_forecast;
+STRING_INPUT URL$[255],ZIP$[8];
+BUFFER_INPUT RETURNED_DATA$[8000];
+DIGITAL_OUTPUT CONNECT,Polling,ZipCode_Error;
+ANALOG_OUTPUT Day_Being_Retrieved;
+STRING_OUTPUT REQUEST$, ZIPCODE$; 
+STRING_OUTPUT CCLOCATION$;
+STRING_OUTPUT CCTIME$;
+STRING_OUTPUT CCLATITUDE$;
+STRING_OUTPUT CCLONGITUDE$;
+STRING_OUTPUT CCSUNRISE$;
+STRING_OUTPUT CCSUNSET$;
+STRING_OUTPUT CCZONE$;
+STRING_OUTPUT CCLASTUPDATE$;
+STRING_OUTPUT CCTEMP$;
+STRING_OUTPUT CCFEELSLIKE$;	
+STRING_OUTPUT CCCONDITIONS$;
+STRING_OUTPUT CCICON$;
+STRING_OUTPUT CCBARPRESSURE$;
+STRING_OUTPUT CCBAROMETER$;
+STRING_OUTPUT CCWINDMPH$;
+STRING_OUTPUT CCWINDGUST$;
+STRING_OUTPUT CCWINDDEGREE$;
+STRING_OUTPUT CCWINDFROM$;
+STRING_OUTPUT CCHUMIDITY$;
+STRING_OUTPUT CCVISABILITY$;
+STRING_OUTPUT CCUVINDEX$;
+STRING_OUTPUT CCUVREAD$;
+STRING_OUTPUT CCDEWPOINT$;
+STRING_OUTPUT CCWINDFORMATTED$;
+STRING_OUTPUT CCSPECIAL$;
+STRING_OUTPUT FCDAY_NAME$;
+STRING_OUTPUT FCDATE$;
+STRING_OUTPUT FCHIGH$;
+STRING_OUTPUT FCLOW$;
+STRING_OUTPUT FCSUNRISE$;
+STRING_OUTPUT FCSUNSET$;
+STRING_OUTPUT FCDAY_ICON$;
+STRING_OUTPUT FCDAY_Conditions$;
+STRING_OUTPUT FCDAY_WINDMPH$;
+STRING_OUTPUT FCDAY_WINDGUSTS$;
+STRING_OUTPUT FCDAY_WINDDEGREES$;
+STRING_OUTPUT FCDAY_WINDFROM$;
+STRING_OUTPUT FCDAY_PRECIP$;
+STRING_OUTPUT FCDAY_HMID$;
+STRING_OUTPUT FCNIGHT_ICON$;
+STRING_OUTPUT FCNIGHT_Conditions$;
+STRING_OUTPUT FCNIGHT_WINDMPH$;
+STRING_OUTPUT FCNIGHT_WINDGUSTS$;
+STRING_OUTPUT FCNIGHT_WINDDEGREES$;
+STRING_OUTPUT FCNIGHT_WINDFROM$;
+STRING_OUTPUT FCNIGHT_PRECIP$;
+STRING_OUTPUT FCNIGHT_HMID$;
+
+STRUCTURE FCDays
+{ 
+	String DayName$[100];
+	String Date$[100];
+	String High$[100];
+	String Low$[100];
+	String Sunrise$[100];
+	String Sunset$[100];
+	String DIcon$[100];
+	String DConditions$[100];
+	String DWindMPH$[100];
+	String DWindGusts$[100];
+	String DWindDegree$[100];
+	String DWindFrom$[100];
+	String DPrecip$[100];
+	String DHmid$[100];
+	String NIcon$[100];
+	String NConditions$[100];
+	String NWindMPH$[100];
+	String NWindGusts$[100];
+	String NWindDegree$[100];
+	String NWindFrom$[100];
+	String NPrecip$[100];
+	String NHmid$[100];	
+	
+};
+ 	FCDays Daynum[7];
+
+INTEGER nCCStartLoc, nCCStopLoc, nCCTagNum, nCCTagLength, lockout;
+INTEGER nFCDay,nFCStartLoc,nFCStopLoc, nFCTagNum, nFCTagLength;
+INTEGER MarkerNum;
+STRING TempZipNum$[8];
+
+// strings should not be any bigger than the largest block of data in the buffer input after the tcp/ip client disconnects.
+// the following needed to be changed:
+// BUFFER_INPUT RETURNED_DATA$[65534];
+// StrTempFile$[65534]
+// StrCCTempSeg$[65534]
+// StrCCData$[65534]
+// StrCCReturned$[65534]
+// StrFCTempSeg$[65534]
+// StrFCReturned$[65534]
+// StrRequest$[65534]
+
+STRING StrTempFile$[8000],TempZip$[8], StrWindFromTemp$[255],StrWindGustTemp$[255], StrWindMPHTemp$[255];
+STRING StrCCTempSeg$[8000], StrCCData$[8000], StrCCTag$[100], StrCCTagStart$[25],StrCCTagStop$[25],StrCCReturned$[8000];
+STRING StrTemp$[7][50], StrTempDay$[7][1024], StrFCTempSeg$[8000], StrFCTag$[100], StrFCTagStart$[25],StrFCTagStop$[25],StrFCReturned$[8000];
+
+Function Request()
+	{
+    	INTEGER nStartLoc, nCounter;
+		STRING StrRequest$[8000], StrHost$[255], StrGet$[255];
+		
+		IF (len (ZIP$) > 4)
+			{
+				TempZip$ = ZIP$;					//Assign the temp zip to an output to display on TP
+    			ZIPCODE$ = TempZip$;				//Assign the temp zip to a variable for the String Request				
+				nStartLoc = Find (CHR(47), URL$);   //Find the First Back-Slash in the URL String
+				Polling = 1;						//Set the polling ouput high until polling is done	
+
+				Makestring (StrHost$, "Host: %s\n",Left(URL$,(nStartLoc - 1)));  //GET THE HOST INFO
+
+				Makestring (StrGet$, "GET %s%s?cc=*&dayf=%d&link=xoap&prod=xoap&par=1131203464&key=fe965f7cbdc0674d HTTP/1.0\n", Right(URL$, (Len(URL$) - (nStartLoc - 1))),TempZip$,Days_to_forecast);//CREATE THE GET INFO
+	
+				Makestring (StrRequest$, "%s%s\n", StrGet$, StrHost$);  //MAKE THE WHOLE STRING TOGETHER 
+	
+				Connect = 1;  //Set Connect to TCP/IP Client high
+	 
+				nCounter = 0;   //Go through loop until status is 2 (connected) or it hits 20
+
+					DO
+						{
+							nCounter = nCounter + 1;
+		
+							//If connected escape do and store string to local
+								IF (Status = 2)
+									{
+										REQUEST$ = StrRequest$;
+										Clearbuffer(Returned_Data$);
+				                        Break;	// Break out of the DO
+																				
+									}	//Close IF
+
+							Else IF (nCounter = 20)
+									{
+										Polling = 0;
+									}	//Close the ELSE
+		
+										Delay (30);				
+						}	//Close the DO
+						
+								Until (nCounter = 20);
+ 
+  				}  //Close IF
+					Else
+					ZIPCODE$ = TempZip$;  
+    }//Close Function
+
+String_Function WindFrom(String StrWindFromTemp$ )
+{    
+	String TempWindfrom$[100];
+
+ 	If (StrWindFromTemp$ = "N") 
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the North";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "S")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the South";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "E")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the East";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "W")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the West";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "NNE")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the North NorthEast";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "NNW")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the North NorthWest";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "SSE")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the South SouthEast";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "SSW")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the South SouthWest";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "ENE")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the East NorthEast";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "ESE")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the East SouthEast";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "WNW")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the West NorthWest";
+ 		 	Return(TempWindFrom$);		 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "WSW")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the West Southwest";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "NW")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the NorthWest";
+ 		 	Return(TempWindFrom$);
+ 		 		 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "NE")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the NorthEast";
+ 		 	Return(TempWindFrom$);
+ 		 		 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "SW")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the SouthWest";
+ 		 	Return(TempWindFrom$);
+ 		 		 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "SE")
+ 		{ 		  		 		
+			TempWindFrom$ = "Moving from the SouthEast";
+ 		 	Return(TempWindFrom$);
+ 		 		 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "CALM")
+ 		{ 		  		 		
+			TempWindFrom$ = "Winds are Calm.";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "VAR")
+ 		{ 		  		 		
+			TempWindFrom$ = "Winds are varying at around.";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 		Else If (StrWindFromTemp$ = "N/A")
+ 		{ 		  		 		
+			TempWindFrom$ = "No Wind Conditions Available.";
+ 		 	Return(TempWindFrom$);	 		
+ 		}
+ 	
+ 			 		
+}
+String_Function WindGust(String StrWindGustTemp$ )
+{    
+	String TempWindGust$[100];
+
+ 	If (StrWindGustTemp$ = "N/A") 
+ 		{ 		  		 		
+			TempWindGust$ = "";
+ 		 	Return(TempWindGust$);
+ 		} 	
+ 		 	
+ 		 Else If (StrWindGustTemp$ = "calm") 
+ 		{ 		  		 		
+			TempWindGust$ = "";
+ 		 	Return(TempWindGust$);	 		
+ 		}
+ 		
+ 		Else
+ 		{ 		  		 		
+			Makestring (TempWindGust$, "gusting to %s MPH.",StrWindGustTemp$);
+ 		 	Return(TempWindGust$);	 		
+ 		}
+ }
+ 
+String_Function WindMPH(String StrWindMPHTemp$ )
+{    
+	String TempWindMPH$[100];
+
+ 	If (StrWindMPHTemp$ = "N/A") 
+ 		{ 		  		 		
+			TempWindMPH$ = "";
+ 		 	Return(TempWindMPH$);	 		
+ 		}
+ 		
+ 		If (StrWindMPHTemp$ = "calm") 
+ 		{ 		  		 		
+			TempWindMPH$ = "";
+ 		 	Return(TempWindMPH$);	 		
+ 		}
+ 		
+ 		Else
+ 		{ 		  		 		
+			Makestring (TempWindMPH$, "\rat %s MPH\x20",StrWindMPHTemp$);
+ 		 	Return(TempWindMPH$);	 		
+ 		}
+ } 
+  
+String_Function ParseCC(String StrCCTempTag$)
+ {   
+ 	////Get the Tag returned as a string
+ 	Makestring (StrCCTagStart$ ,"<%s>",StrCCTemptag$); 						  //Add the open and close carrots to tag name
+ 	Makestring (StrCCTagStop$ ,"</%s>",StrCCTemptag$); 						  //Add the open and close carrots as well as f-slash to tag name
+	nCCStartLoc = Find(StrCCTagStart$,StrCCTempSeg$,nCCStartLoc);			  //Get location of Start Tag
+	nCCTagLength = len(StrCCTagStart$);										  // Get the total length of tag
+	nCCStartLoc = nCCStartLoc + nCCTagLength; 								  // Add the Tag start location and the size of the tag to determine real Start
+	nCCStopLoc = Find(StrCCTagStop$,StrCCTempSeg$,nCCStartLoc);				  //Find where the stop tag is located
+	StrCCReturned$ = Mid (StrCCTempSeg$,nCCStartLoc,nCCStopLoc - nCCStartLoc);//Set the data between Start and Stop tag to Temp String
+	nCCStartLoc = nCCStopLoc;												  //The new Start Location is the old Stop location so that the next time the Function is called it starts from the right place
+		
+  	return(StrCCReturned$); //Return the Data as a string to the "Data Setup Function"
+ }
+		       
+	
+Function CCData_Setup()
+{	
+	String CCWindFromFormat$[100], CCWindGustFormat$[100], CCWindMPHFormat$[100]; 		  
+    nCCStartLoc = 0;
+	nCCStartLoc = Find ("<error>",StrTempFile$);  //If the Zip code returns an error don't parse data
+		
+		            
+		If (nCCStartLoc = 0)
+			{
+				
+				//If the ZIP is valid then find out the start byte number and end byte number of the Current Conditions
+				//only.  After that is determined assign those byte numbers to a Temp String to hold for parsing.
+						
+				nCCStartLoc = Find ("<dnam>",StrTempFile$);                              //Find the begining of the Data needed.
+				nCCStopLoc = Find("</weather>",StrTempFile$,nCCStartLoc);                //Find the end of all data needed. 
+		        StrCCTempSeg$ = Mid(StrTempFile$,nCCStartLoc,(nCCStopLoc - nCCStartLoc));//Assign the data to a temp string
+		        
+		         			nCCStartLoc = Find("<dnam>",StrCCTempSeg$,nCCStartLoc);
+		         			nCCTagLength = len("<dnam>");
+		         			nCCStartLoc = nCCStartLoc + nCCTagLength+1; 
+		            		nCCStopLoc = Find("</dnam>",StrCCTempSeg$,nCCStartLoc);
+							CCLocation$ = Mid (StrCCTempSeg$,nCCStartLoc,nCCStopLoc - nCCStartLoc);
+							
+								CCSpecial$ = ParseCC("t");	        
+		         	 			CCTime$ = ParseCC("tm");
+		         	 			CCLatitude$ = ParseCC("lat");
+		         	 			CCLongitude$ = ParseCC("lon"); 
+		         	 			CCSunrise$ = ParseCC("sunr"); 	
+		         	 			CCSunset$ = ParseCC("suns");    
+		         	 			CCZone$ = ParseCC("zone");
+		         	 			CCLastupdate$ = ParseCC("lsup");
+		         	 			CCTemp$ = ParseCC("tmp");
+		         	 			CCFeelsLike$ = ParseCC("flik");
+		         	 			CCConditions$ = ParseCC("t");
+		         	 			CCIcon$ = ParseCC("icon");
+		         	 			CCBarPressure$ = ParseCC("r");
+		         	 			CCBarometer$ = ParseCC("d");
+
+		         	 			StrWindMPHTemp$ = ParseCC("s");
+		         	 			CCWindMPH$ = StrWindMPHTemp$;
+		         	 			CCWindMPHFormat$ = WindMPH(StrWindMPHTemp$);
+		         	 			    
+		         	 			StrWindGustTemp$ = ParseCC("gust");
+		         	 			CCWindGust$ = StrWindGustTemp$;
+		         	 			CCWindGustFormat$ = WindGust(StrWindGustTemp$);
+		         	 			
+		         	 			CCWindDegree$ = ParseCC("d");
+		         	 			
+		         	 			StrWindFromTemp$ = ParseCC("t");
+		         	 			CCWindFrom$ = StrWindFromTemp$;
+		         	 			CCWindFromFormat$ = WindFrom(StrWindFromTemp$);
+		         	 			
+		         	 			CCHumidity$ = ParseCC("hmid");
+		         	 			CCVisability$ = ParseCC("vis");
+		         	 			CCUVIndex$ = ParseCC("i");
+		         	 			CCUVRead$ = ParseCC("t");
+		         	 			CCDewpoint$ = ParseCC("dewp");
+		        
+		         	 			MakeString (CCWINDFORMATTED$, "%s%s%s", CCWindFromFormat$,CCWindMPHFormat$,CCWindGustFormat$);				
+		         	 			//Print ("Wind: %s%s%s",CCWindFromFormat$,CCWindMPHFormat$,CCWindGustFormat$);                 
+			                    
+			   }// Close If 
+			                   
+		Else if (nCCStartLoc >0) 
+	    	{   
+	    		Zipcode_Error = 1;
+	    		
+			    CCLOCATION$ = "--:--";
+ 				CCTIME$ = "--:--";
+ 				CCLATITUDE$ = "--:--";
+ 				CCLONGITUDE$ = "--:--";
+ 				CCSUNRISE$ = "--:--";
+ 				CCSUNSET$ = "--:--";
+ 				CCZONE$ = "--:--";
+ 				CCLASTUPDATE$ = "--:--";
+ 				CCTEMP$ = "--:--";
+ 				CCFEELSLIKE$ = "--:--";	
+ 				CCCONDITIONS$ = "--:--";
+ 				CCICON$ = "--:--";
+ 				CCBARPRESSURE$ = "--:--";
+ 				CCBAROMETER$ = "--:--";
+ 				CCWINDMPH$ = "--:--";
+ 				CCWINDGUST$ = "--:--";
+ 				CCWINDDEGREE$ = "--:--";
+ 				CCWINDFROM$ = "--:--";
+ 				CCHUMIDITY$ = "--:--";
+ 				CCVISABILITY$ = "--:--";
+ 				CCUVINDEX$ = "--:--";
+ 				CCUVREAD$ = "--:--";
+ 				CCDEWPOINT$ = "--:--";
+                CCWINDFORMATTED$ = "--:--";
+                CCSPECIAL$ = "--:--";
+ 				
+ 			nFCDay = 5;
+ 			Day_Being_Retrieved = nFcDay;
+ 			delay(100);				
+			FCDAY_NAME$ = Daynum[nFCDay].DayName$;
+ 			FCDATE$ = Daynum[nFCDay].Date$;
+ 			FCHIGH$ = Daynum[nFCDay].High$;
+ 			FCLOW$ = Daynum[nFCDay].Low$;
+ 			FCSUNRISE$ = Daynum[nFCDay].Sunrise$;
+ 			FCSUNSET$ = Daynum[nFCDay].Sunset$;
+ 			FCDAY_ICON$ = Daynum[nFCDay].DIcon$;
+ 			FCDAY_Conditions$ = Daynum[nFCDay].DConditions$;
+ 			FCDAY_WINDMPH$ = Daynum[nFCDay].DWindMPH$;
+ 			FCDAY_WINDGUSTS$ = Daynum[nFCDay].DWindGusts$;
+ 			FCDAY_WINDDEGREES$ = Daynum[nFCDay].DWindDegree$;
+ 			FCDAY_WINDFROM$ = Daynum[nFCDay].DWindFrom$;
+ 			FCDAY_PRECIP$ = Daynum[nFCDay].DPrecip$;
+ 			FCDAY_HMID$ = Daynum[nFCDay].DHmid$; 
+ 			FCNIGHT_ICON$ = Daynum[nFCDay].NIcon$;
+ 			FCNIGHT_Conditions$ = Daynum[nFCDay].NConditions$;
+ 			FCNIGHT_WINDMPH$ = Daynum[nFCDay].NWindMPH$;
+ 			FCNIGHT_WINDGUSTS$ = Daynum[nFCDay].NWindGusts$;
+ 			FCNIGHT_WINDDEGREES$ = Daynum[nFCDay].NWindDegree$;
+ 			FCNIGHT_WINDFROM$ = Daynum[nFCDay].NWindFrom$;
+ 			FCNIGHT_PRECIP$ = Daynum[nFCDay].NPrecip$;
+ 			FCNIGHT_HMID$ = Daynum[nFCDay].NHmid$;
+ 			nFCDay = 0;
+ 			Day_Being_Retrieved = nFcDay;	 	
+			
+
+	    	Print ("Zip Code is invalid.\n");
+					
+		}		 
+                 					         	                    
+}//Close Setup Data Function		         	                    
+Function GetFC()
+{
+	nFCDay = 0;
+	Do
+		{
+		  
+		  Day_Being_Retrieved = nFCDay;
+		  //Print ("Day Being Retrieved is %d\n",nFCDay);
+		  ProcessLogic();
+		  	Delay(8);	 	
+		  	FCDAY_NAME$ = Daynum[nFCDay].DayName$;
+ 			FCDATE$ = Daynum[nFCDay].Date$;
+ 			FCHIGH$ = Daynum[nFCDay].High$;
+ 			FCLOW$ = Daynum[nFCDay].Low$;
+ 			FCSUNRISE$ = Daynum[nFCDay].Sunrise$;
+ 			FCSUNSET$ = Daynum[nFCDay].Sunset$;
+ 			FCDAY_ICON$ = Daynum[nFCDay].DIcon$;
+ 			FCDAY_Conditions$ = Daynum[nFCDay].DConditions$;
+ 			FCDAY_WINDMPH$ = Daynum[nFCDay].DWindMPH$;
+ 			FCDAY_WINDGUSTS$ = Daynum[nFCDay].DWindGusts$;
+ 			FCDAY_WINDDEGREES$ = Daynum[nFCDay].DWindDegree$;
+ 			FCDAY_WINDFROM$ = Daynum[nFCDay].DWindFrom$;
+ 			FCDAY_PRECIP$ = Daynum[nFCDay].DPrecip$;
+ 			FCDAY_HMID$ = Daynum[nFCDay].DHmid$; 
+ 			FCNIGHT_ICON$ = Daynum[nFCDay].NIcon$;
+ 			FCNIGHT_Conditions$ = Daynum[nFCDay].NConditions$;
+ 			FCNIGHT_WINDMPH$ = Daynum[nFCDay].NWindMPH$;
+ 			FCNIGHT_WINDGUSTS$ = Daynum[nFCDay].NWindGusts$;
+ 			FCNIGHT_WINDDEGREES$ = Daynum[nFCDay].NWindDegree$;
+ 			FCNIGHT_WINDFROM$ = Daynum[nFCDay].NWindFrom$;
+ 			FCNIGHT_PRECIP$ = Daynum[nFCDay].NPrecip$;
+ 			FCNIGHT_HMID$ = Daynum[nFCDay].NHmid$;
+ 			ProcessLogic();     
+ 			nFCDay = nFCDay + 1;
+ 		}//Close Do
+ 		
+ 		Until (nFCDay = 5);
+ 		nFCDay = 0;	
+}//Close GetFC Function
+
+
+String_Function ParseFC(String StrFCTempTag$)
+ {   
+ 	////Get the Tag returned as a string
+ 	Makestring (StrFCTagStart$ ,"<%s>",StrFCTemptag$); 						  //Add the open and close carrots to tag name
+ 	Makestring (StrFCTagStop$ ,"</%s>",StrFCTemptag$); 						  //Add the open and close carrots as well as f-slash to tag name
+	nFCStartLoc = Find(StrFCTagStart$,StrTempDay$[nFCDay],nFCStartLoc);			  //Get location of Start Tag
+	nFCTagLength = len(StrFCTagStart$);										  // Get the total length of tag
+	nFCStartLoc = nFCStartLoc + nFCTagLength; 								  // Add the Tag start location and the size of the tag to determine real Start
+	nFCStopLoc = Find(StrFCTagStop$,StrTempDay$[nFCDay],nFCStartLoc);				  //Find where the stop tag is located
+	StrFCReturned$ = Mid (StrTempDay$[nFCDay],nFCStartLoc,nFCStopLoc - nFCStartLoc);//Set the data between Start and Stop tag to Temp String
+	nFCStartLoc = nFCStopLoc;												  //The new Start Location is the old Stop location so that the next time the Function is called it starts from the right place
+		
+  	return(StrFCReturned$); //Return the Data as a string to the "Data Setup Function"
+ }
+		         	      				
+String_Function FCData_Setup()
+{    
+   If(Zipcode_Error = 0)
+   {
+	Do
+	{ 
+		
+		Makestring (StrTemp$[nFCDay],"<day d=\x22%d\x22\x20t=\x22",nFCDay);//Size of this String is 14 Chr
+		nFCStartLoc = Find(StrTemp$[nFCDay],StrTempFile$)+ len(StrTemp$[nFCDay]);
+	
+			If(nFCStartLoc > 0)
+		    	{ 	
+		         nFCStopLoc = Find("</day>",StrTempFile$,nFCStartLoc);
+
+		         StrTempDay$[nFCDay] = Mid(StrTempFile$,nFCStartLoc,(nFCStopLoc - nFCStartLoc));
+		  
+		         nFCStartLoc = 1;
+		         
+		         nFCStopLoc =  Find("\x22", StrTempDay$[nFCDay],nFCStartLoc);
+		         
+				 Daynum[nFCDay].DayName$ = Mid (StrTempDay$[nFCDay],nFCStartLoc,nFCStopLoc - nFCStartLoc);
+	
+				 nFCStartLoc = nFCStopLoc + 6;
+				 
+                 nFCStopLoc =  Find(">", StrTempDay$[nFCDay],nFCStartLoc)-1;
+                 
+                 Daynum[nFCDay].Date$ = Mid (StrTempDay$[nFCDay],nFCStartLoc,nFCStopLoc - nFCStartLoc);
+                 
+                 nFCStartLoc = nFCStopLoc + Len(Daynum[nFCDay].Date$);
+                 
+                 	Daynum[nFCDay].High$ = ParseFC("hi"); 
+                    Daynum[nFCDay].Low$ = ParseFC("low");                	
+                 	Daynum[nFCDay].Sunrise$ = ParseFC("sunr");               	
+                 	Daynum[nFCDay].Sunset$ = ParseFC("suns");                	
+                 	Daynum[nFCDay].DIcon$ = ParseFC("icon");                 	
+                 	Daynum[nFCDay].DConditions$ = ParseFC("t");                 	
+                 	Daynum[nFCDay].DWindMPH$ = ParseFC("s");                 	
+                 	Daynum[nFCDay].DWindGusts$ = ParseFC("gust");                 	
+                 	Daynum[nFCDay].DWindDegree$ = ParseFC("d");                 	
+                 	Daynum[nFCDay].DWindFrom$ = ParseFC("t");                 	
+                 	Daynum[nFCDay].DPrecip$ = ParseFC("ppcp");                	
+                 	Daynum[nFCDay].DHmid$ = ParseFC("hmid");                 	
+                 	Daynum[nFCDay].NIcon$ = ParseFC("icon");                 	
+                 	Daynum[nFCDay].NConditions$ = ParseFC("t");
+                 	Daynum[nFCDay].NWindMPH$ = ParseFC("s");                 	
+                 	Daynum[nFCDay].NWindGusts$ = ParseFC("gust");                 	
+                 	Daynum[nFCDay].NWindDegree$ = ParseFC("d");                 	
+                 	Daynum[nFCDay].NWindFrom$ = ParseFC("t");                 	
+                 	Daynum[nFCDay].NPrecip$ = ParseFC("ppcp");                 	
+                 	Daynum[nFCDay].NHmid$ = ParseFC("hmid");
+		         							
+				}
+			Else
+				Print("Can't find Day %d to forecast!",nFCDay);
+				
+			nFCDay = nFCDay + 1;				
+				
+	 }//Close the Do		
+			Until (nFCDay = 5);				
+			nFCDay = 0;
+			Call GetFC();
+	}//Close the If			
+}	
+Function ZipCodeBuilder()
+{  
+ 	String ZipHolder$[8];
+ 	
+ 	   CSwitch (MarkerNum)
+ 	   	{
+ 	   		Case(1):
+ 	   			{ 
+ 					TempZip$ = TempZipNum$;
+ 					
+ 					ZipHolder$ = TempZip$;
+ 					
+  					ZIPCODE$ = TempZip$;
+ 					MarkerNum = 2;
+ 					Break;
+ 		        }
+ 		        
+ 		    Case(2):
+ 	   			{   
+ 	   				ZipHolder$ = TempZip$;
+  					Makestring(TempZip$, "%s%s",ZipHolder$,TempZipNum$);
+  
+ 					ZIPCODE$ = TempZip$;
+ 					MarkerNum = 3;
+ 					Break;
+ 		        }
+ 		        
+ 		    Case(3):
+ 	   			{   
+ 	   				ZipHolder$ = TempZip$;
+ 					Makestring(TempZip$, "%s%s",ZipHolder$,TempZipNum$);
+ 					  
+ 					ZIPCODE$ = TempZip$;
+ 					MarkerNum = 4;
+ 					Break;
+ 		        }
+ 		        
+ 		    Case(4):
+ 	   			{   ZipHolder$ = TempZip$;
+ 					Makestring(TempZip$, "%s%s",ZipHolder$,TempZipNum$);
+ 					  
+ 					ZIPCODE$ = TempZip$;
+ 					MarkerNum = 5;
+ 					Break;
+ 		        }
+ 		        
+ 		    Case(5):
+ 	   			{   ZipHolder$ = TempZip$;
+ 					Makestring(TempZip$, "%s%s",ZipHolder$,TempZipNum$);
+ 					  
+ 					ZIPCODE$ = TempZip$;
+ 					ZIP$ = Tempzip$;
+ 					MarkerNum = 1;		 			
+		 			Zipcode_Error = 0;
+		 			Call Request();
+		 			Break;
+ 		        }		        
+ 		        
+ 		  }//Close Switch      
+
+}//Close Function ZipCodeBuilder
+
+Release CONNECT_F
+{   
+	//After the Connection to TCP/IP Server is done
+	StrTempFile$ = RETURNED_DATA$; //Store All of the Data in a Global Temp Location.   	    				    
+	//print ("length = %u\n", len(strtempfile$)); //used to see max amount of data on buffer input.
+    Connect = 0; 				   //Release Connect	
+    Polling = 0;                   //Set polling to low because we have all of the data
+    Call CCData_Setup();		   //Call Current Conditions Data Setup Function abaove
+    nFCDay = 0;
+    Call FCData_Setup();           //Call Forecast Data Setup Function above
+    lockout = 0;
+	
+}
+ 
+Change ZIP$
+{	
+	if(lockout=0)
+	{
+		lockout=1;
+				
+		IF (len (ZIP$) > 4)
+		{
+			Tempzip$ = ZIP$;
+			ZIPCODE$ = TempZip$;
+		 	Zipcode_Error = 0;
+		 	Call Request();		
+		}
+		Else
+		{
+			Tempzip$ = ZIP$;
+			// Didn't request any data, unlock the module.
+			lockout = 0;
+		}
+
+		ZIPCODE$ = TempZip$;		
+	}
+
+}
+
+Push KPD0
+{ 
+  TempZipNum$ = "0";
+  Call ZipCodeBuilder();
+}
+Push KPD1
+{ 
+  TempZipNum$ = "1";
+  Call ZipCodeBuilder();
+}
+Push KPD2
+{ 
+  TempZipNum$ = "2";
+  Call ZipCodeBuilder();
+}
+Push KPD3
+{ 
+  TempZipNum$ = "3";
+  Call ZipCodeBuilder();
+}
+Push KPD4
+{ 
+  TempZipNum$ = "4";
+  Call ZipCodeBuilder();
+}
+Push KPD5
+{ 
+  TempZipNum$ = "5";
+  Call ZipCodeBuilder();
+}
+Push KPD6
+{ 
+  TempZipNum$ = "6";
+  Call ZipCodeBuilder();
+}
+Push KPD7
+{ 
+  TempZipNum$ = "7";
+  Call ZipCodeBuilder();
+}
+Push KPD8
+{ 
+  TempZipNum$ = "8";
+  Call ZipCodeBuilder();
+}
+Push KPD9
+{ 
+  TempZipNum$ = "9";
+  Call ZipCodeBuilder();
+}
+Push Clear
+{
+ 	MarkerNum = 1;
+ 	ZIPCODE$ = "--:--";
+}
+
+Function Main()
+{
+ lockout = 0;
+ ClearBuffer(RETURNED_DATA$);
+ MarkerNum = 1;   
+ CCLOCATION$ = "--:--";
+ CCTIME$ = "--:--";
+ CCLATITUDE$ = "--:--";
+ CCLONGITUDE$ = "--:--";
+ CCSUNRISE$ = "--:--";
+ CCSUNSET$ = "--:--";
+ CCZONE$ = "--:--";
+ CCLASTUPDATE$ = "--:--";
+ CCTEMP$ = "--:--";
+ CCFEELSLIKE$ = "--:--";	
+ CCCONDITIONS$ = "--:--";
+ CCICON$ = "--:--";
+ CCBARPRESSURE$ = "--:--";
+ CCBAROMETER$ = "--:--";
+ CCWINDMPH$ = "--:--";
+ CCWINDGUST$ = "--:--";
+ CCWINDDEGREE$ = "--:--";
+ CCWINDFROM$ = "--:--";
+ CCHUMIDITY$ = "--:--";
+ CCVISABILITY$ = "--:--";
+ CCUVINDEX$ = "--:--";
+ CCUVREAD$ = "--:--";
+ CCDEWPOINT$ = "--:--";
+ CCWINDFORMATTED$ = "--:--";
+ CCSPECIAL$ = "--:--";
+ 
+ FCDAY_NAME$ = "--:--";
+ FCDATE$ = "--:--";
+ FCHIGH$ = "--:--";
+ FCLOW$ = "--:--";
+ FCSUNRISE$ = "--:--";
+ FCSUNSET$ = "--:--";
+ FCDAY_ICON$ = "--:--";
+ FCDAY_CONDITIONS$ = "--:--";
+ FCDAY_WINDMPH$ = "--:--";
+ FCDAY_WINDGUSTS$ = "--:--";
+ FCDAY_WINDDEGREES$ = "--:--";
+ FCDAY_WINDFROM$ = "--:--";
+ FCDAY_PRECIP$ = "--:--";
+ FCDAY_HMID$ = "--:--";
+ FCNIGHT_ICON$ = "--:--";
+ FCNIGHT_CONDITIONS$ = "--:--";
+ FCNIGHT_WINDMPH$ = "--:--";
+ FCNIGHT_WINDGUSTS$ = "--:--";
+ FCNIGHT_WINDDEGREES$ = "--:--";
+ FCNIGHT_WINDFROM$ = "--:--";
+ FCNIGHT_PRECIP$ = "--:--";
+ FCNIGHT_HMID$ = "--:--";
+ 
+ Daynum[7].High$ = "--:--"; 
+ Daynum[7].Low$ = "--:--";                	
+ Daynum[7].Sunrise$ = "--:--";               	
+ Daynum[7].Sunset$ = "--:--";                	
+ Daynum[7].DIcon$ = "--:--";                 	
+ Daynum[7].DConditions$ = "--:--";                 	
+ Daynum[7].DWindMPH$ = "--:--";                 	
+ Daynum[7].DWindGusts$ = "--:--";                 	
+ Daynum[7].DWindDegree$ = "--:--";                 	
+ Daynum[7].DWindFrom$ = "--:--";                 	
+ Daynum[7].DPrecip$ = "--:--";                	
+ Daynum[7].DHmid$ = "--:--";                 	
+ Daynum[7].NIcon$ = "--:--";                 	
+ Daynum[7].NConditions$ = "--:--";
+ Daynum[7].NWindMPH$ = "--:--";                 	
+ Daynum[7].NWindGusts$ = "--:--";                 	
+ Daynum[7].NWindDegree$ = "--:--";                 	
+ Daynum[7].NWindFrom$ = "--:--";                 	
+ Daynum[7].NPrecip$ = "--:--";                 	
+ Daynum[7].NHmid$ = "--:--";
+ 
+	wait(20);
+		TempZip$ = ZIP$;
+}
