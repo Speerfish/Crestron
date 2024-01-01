@@ -1,0 +1,83 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+CAIP Name:     1 Touch Control
+System Name:   Extron MAV Switcher Volume module 
+System Number:
+Programmer:    Tres Little   - with Help from Mark Lambert's Extron Switch Module Crestron Style
+Comments:      Matirx switcher module. It emulates how Crestron volume gear works, with
+			   one analog input for each output.
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "Extron MAV-Volume Control"
+#CATEGORY "23" // Switcher
+#DEFAULT_VOLATILE  
+
+#DEFINE_CONSTANT ASIZE 32		//Number of Inputs allowed      
+
+#HELP_BEGIN
+   This module generates Extron volume commands. It's interface is designed to emulate
+   Crestron pad8/bipad where there is an analog value for each output of the switcher
+   and all that is needed to change the volume is to change that analog value.
+   
+    ANALOG INPUT Volume[x]		Expandable array of switcher volume inputs.
+   								Define one for each output on the switcher. 
+   								Acceptable analog input values range from 0d-64d to 
+   								represent 0%-100% or 00-64 Hex
+   								   								
+   NOTE:	defining only one volume causes the module to generate commands in Extron 
+   			single output volume format, i.e. 1v instead of 1*1v 
+#HELP_END
+
+
+
+// I/O declarations
+ANALOG_INPUT  Volume[ASIZE];	// ouput number, as integer.
+
+STRING_OUTPUT Extron_TX$;		// Output string to Extron Switch
+
+// Event Handlers
+
+INTEGER NumOuts;				//outputs
+INTEGER i;						//loop counter and array index value
+
+
+CHANGE Volume{
+   integer x;   
+	i = getlastmodifiedarrayindex();
+	
+
+	if (Volume[i] < 65 && x=off) // ignore values over 64	
+	{
+		//If there is only one InForOut defined, treat the switcher as a single output device,
+		//i.e. Extron SIS 1! rather than 1*1!
+		x=on;
+		if (NumOuts = 1)			 
+		{			
+			makestring(Extron_TX$,"%dv",Volume[i]);
+		}
+		else
+		{			
+			makestring(Extron_TX$,"%d*%dv",i,Volume[i]);
+		}
+		processlogic();
+		x=off;
+	}
+	
+}
+
+function main()
+{
+	waitforinitializationcomplete();
+	
+	//find out how many real outputs we have
+	For(NumOuts = ASIZE to 1 Step -1)
+		If(IsSignalDefined(Volume[NumOuts])) Break;
+
+}

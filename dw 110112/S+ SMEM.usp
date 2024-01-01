@@ -1,0 +1,152 @@
+/***********************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/***********************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/***********************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+***********************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/***********************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************/
+DIGITAL_INPUT STORE, RECALL, CLEAR_MEMORY, SELECT[100];
+// ANALOG_INPUT 
+STRING_INPUT IN$[50];
+// BUFFER_INPUT 
+
+DIGITAL_OUTPUT DIAL;
+// ANALOG_OUTPUT 
+STRING_OUTPUT OUT$;
+
+/***********************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+***********************************************************************/
+INTEGER X,I;
+STRING STORED$[100][50];
+
+/***********************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+***********************************************************************/
+/*
+Function MyFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+}
+*/
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+
+/***********************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************/
+
+PUSH SELECT
+{
+    X=GETLASTMODIFIEDARRAYINDEX();
+    IF ((STORE=1) && (RECALL=1))
+    	PRINT("STORE AND RECALL BOTH HIGH ON S+ SMEM - NO ACTION TAKEN.\n");
+    ELSE IF ((STORE=0) && (RECALL=0))
+    	PRINT("STORE AND RECALL BOTH LOW ON S+ SMEM - NOTHING TO DO!\n");
+    ELSE IF ((STORE=1) && (RECALL=0))
+       	STORED$[X]=IN$;
+    ELSE IF ((RECALL=1) && (STORE=0))
+    {
+      	OUT$=STORED$[X];
+   	    PULSE(1, DIAL);
+   	    PROCESSLOGIC();
+   	}  
+}
+
+PUSH CLEAR_MEMORY
+{
+	FOR (I=1 TO 100)
+	STORED$[I]="";
+}	
+
+/*
+RELEASE input
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+CHANGE input
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+EVENT
+{
+    // TODO:  Add code here
+}
+*/
+
+/***********************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************/
+
+Function Main()
+{
+    OUT$="";
+    IN$="";
+    DIAL=0;
+}
+
+

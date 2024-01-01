@@ -1,0 +1,273 @@
+/***********************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************/
+/*
+Dealer Name: Crestron Electronics
+System Name:
+System Number:
+Programmer: PAC
+Comments:
+*/
+
+/***********************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************/
+#SYMBOL_NAME "Polycom VSX7000 & VSX8000 Processor"
+// #HINT ""
+// #DEFINE_CONSTANT
+
+#HELP_BEGIN
+For use only within the Polycom VSX7000 & VSX8000 suite of Crestron modules
+#HELP_END
+
+
+/***********************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+***********************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/***********************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************/
+
+ANALOG_INPUT MaxCharactersName, MaxCharactersSpeed, MaxCharactersNumber, EntriesPerScreen;
+BUFFER_INPUT Polycom_Rx$[2000];
+DIGITAL_INPUT First, Prev, Next, Last, Done_Receiving, Dial, Select[25]; 
+
+ANALOG_OUTPUT CurrentPage, TotalPages;
+STRING_OUTPUT NameSelected$, NumberSelected$, SpeedSelected$, Status$, ToDevice$, Name$[25];
+
+/***********************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+***********************************************************************/
+INTEGER RxOk, AddressBookEntry, Marker0, Marker1, Marker2, Marker3, Totalrecords,
+WaitingForAbk, EntryValid[26], i, Marker, FirstEntry, LastEntry, mark1, mark2,
+RangeStart, RangeEnd, Selected, EntriesRequested, SiteRequested, RemappedEntry, junk,
+iOffSet;
+STRING TempString$[100], NameInt$[50], sTempCurrent$[50], sTempPrevious$[50];
+
+/***********************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+***********************************************************************/
+
+/***********************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************/
+                   
+Function RequestAbkPage()
+	{
+	RangeStart = (CurrentPage - 1) * EntriesPerScreen;
+	if(CurrentPage * EntriesPerScreen <= TotalRecords)
+		RangeEnd = CurrentPage * EntriesPerScreen - 1;
+	else
+		RangeEnd = LastEntry;
+	iOffSet = 0;
+	sTempCurrent$ = "";
+	sTempPrevious$ = "";
+	Makestring(ToDevice$, "abk range %d %d\n", RangeStart, RangeEnd);
+	EntriesRequested = RangeEnd - RangeStart + 1;
+	for(i = 1 to 25)
+		{
+		EntryValid[i] = 0;
+		}
+	if(EntriesRequested < EntriesPerScreen)
+		{
+		For(i = EntriesRequested + 1 to EntriesPerScreen)
+			{
+			Name$[i] = " ";
+			}
+		}
+	}
+                   
+PUSH Done_Receiving
+	{
+	if(RxOk = 1)
+		{
+		RxOk = 0; 
+    	While((find("\x0D\x0A", Polycom_Rx$) > 0) || (find("\x0A\x0D", Polycom_Rx$) > 0))
+    		{
+    		mark1 = find("\x0D\x0A", Polycom_Rx$);
+    		mark2 = find("\x0A\x0D", Polycom_Rx$);
+    		if(((mark1 < mark2) && (mark1 > 0) && (mark2 > 0)) || (mark2 = 0)) 
+    			{
+    			Tempstring$ = Remove("\x0D\x0A", Polycom_Rx$);
+    			Tempstring$ = left(Tempstring$, len(Tempstring$) - 2);
+    			if(len(Tempstring$) > 0)
+    				{
+    				While((byte(Tempstring$, 1) = 13) || (byte(Tempstring$, 1) = 10))
+    					{
+    					Junk = getc(Tempstring$);
+    					}
+    				}
+    			}
+    		else
+    			{
+    			Tempstring$ = Remove("\x0A\x0D", Polycom_Rx$);
+    			Tempstring$ = left(Tempstring$, len(Tempstring$) - 2);
+    			if(len(Tempstring$) > 0)
+    				{
+    				While((byte(Tempstring$, 1) = 13) || (byte(Tempstring$, 1) = 10))
+    					{
+    					Junk = getc(Tempstring$);
+    					}
+    				}
+    			}
+			if(len(TempString$) > 0)
+    			{
+    			if((left(TempString$, 4) = "abk ") && (find("abk range ", Tempstring$) = 0))
+               		{
+					if(SiteRequested = 0)
+						{
+						AddressbookEntry = atoi(Tempstring$);
+						Marker0 = find(" ", Tempstring$, 5);
+						Marker1 = find("spd:", TempString$, Marker0);
+            sTempCurrent$ = mid(TempString$, Marker0 + 1, Marker1 - Marker0 - 1);
+						if(sTempCurrent$ = sTempPrevious$)
+							{
+							iOffset = iOffset + 1;
+							}
+						else
+							{
+							RemappedEntry =((AddressbookEntry - iOffSet) mod EntriesPerScreen) + 1;
+    	      	Name$[RemappedEntry] = left(sTempCurrent$, MaxCharactersName);
+      	    	sTempPrevious$ = sTempCurrent$;
+      	    	EntryValid[RemappedEntry] = 1;
+      	    	}
+      			}
+       		else
+       			{
+       			SiteRequested = 0;
+       			AddressbookEntry = atoi(Tempstring$);
+						Marker0 = find(" ", Tempstring$, 5);
+						Marker1 = find("spd:", TempString$, Marker0);
+       			Marker2 = find("num:", TempString$, Marker1);
+       			Marker3 = find("\x0D", Tempstring$, Marker2);
+       			NameInt$ = mid(Tempstring$, Marker0 + 1, Marker1 - Marker0 - 1);
+       			NameSelected$ = left(NameInt$, MaxCharactersName);
+       			NumberSelected$ = left(mid(Tempstring$, Marker2 + 4, Marker3 - Marker2 - 4), MaxCharactersNumber);
+       			SpeedSelected$ = left(mid(Tempstring$, Marker1 + 4, Marker2 - Marker1 - 4), MaxCharactersSpeed);
+       			}
+       		}
+       	else if(left(Tempstring$, 4) = "cs: ")
+       		{
+      		Marker1 = find("state[", Tempstring$);
+       		Marker2 = find("]", Tempstring$, Marker1);
+      		Status$ = mid(Tempstring$, Marker1 + 6, Marker2 - Marker1 - 6);
+       		}
+       	else if(left(Tempstring$, 7) = "active:")
+       		{
+       		Marker1 = find("speed[", Tempstring$);
+       		Marker2 = find("]", Tempstring$, Marker1);
+       		Makestring(Status$, "CALL ACTIVE AT %sK", mid(Tempstring$, Marker1 + 6, Marker2 - Marker1 - 6));
+       		}
+       	else if(left(Tempstring$, 8) = "cleared:")
+       		{
+       		Status$ = "CALL ENDED";
+       		}
+       	else if(find("Valid abk range:", Tempstring$) > 0)
+       		{
+       		Marker = find(" through ", Tempstring$);
+       		FirstEntry = atoi(Tempstring$);
+       		LastEntry = atoi(mid(Tempstring$, Marker, len(Tempstring$) - Marker + 9));
+       		TotalRecords = LastEntry - FirstEntry + 1;
+       		if((TotalRecords mod EntriesPerScreen) = 0)
+       			TotalPages = TotalRecords / EntriesPerScreen;
+       		else
+       			TotalPages = TotalRecords / EntriesPerScreen + 1;
+       		}
+       	}
+      }
+	     RxOk = 1;
+  	}
+	}
+    
+PUSH Select
+	{
+	if(RxOk = 1)
+		{
+		if(EntryValid[getlastmodifiedarrayindex()] = 1)
+			{
+			SiteRequested = 1;
+			Selected = (CurrentPage - 1) * EntriesPerScreen + getlastmodifiedarrayindex() - 1;
+			MakeString(ToDevice$, "abk range %d %d\n", Selected, Selected);
+			}
+		}
+	}
+	
+PUSH Dial
+	{
+	Makestring(ToDevice$, "dial addressbook \x22%s\x22\n", NameInt$);
+	}
+
+PUSH First
+	{
+	if(RxOk = 1)
+		{
+		CurrentPage = 1;
+		SiteRequested = 0;
+		Call RequestAbkPage();
+		}
+	}
+	
+PUSH Prev
+	{
+	if(RxOk = 1) 
+		{
+		if(CurrentPage > 1)
+			{
+			CurrentPage = CurrentPage - 1;
+			SiteRequested = 0;
+			Call RequestAbkPage();
+			}
+		}
+	}
+	
+PUSH Next
+	{
+	if(RxOk = 1)
+		{
+		if(CurrentPage < TotalPages)
+			{
+			CurrentPage = CurrentPage + 1;
+			SiteRequested = 0;
+			Call RequestAbkPage();
+			}
+		}
+	}
+	
+PUSH Last
+	{
+	if(RxOk = 1)
+		{
+		CurrentPage = TotalPages;
+		SiteRequested = 0;
+		Call RequestAbkPage();
+		}
+	}
+    
+/***********************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************/
+
+Function Main()
+	{
+    RxOk = 1;
+    SiteRequested = 0;
+    for(i = 1 to 25)
+    	{
+    	EntryValid[i] = 0;
+    	}
+	}
+

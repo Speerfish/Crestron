@@ -1,0 +1,56 @@
+#symbol_name "mif"
+#hint "multiple IF statement"
+#help_begin
+   on a rising edge of TRIGGER, for every
+IFTRUE input which is true, the corresponding
+THEN output will latch high and remain so
+until IN is released.  Any changes to the
+IFTRUE inputs while TRIGGER is high have no
+effect.
+   if EXCLUSIVE is high, only the FIRST true
+input will be passed to the output.  The logic
+will STOP checking IFTRUE conditions after it
+finds one to be true.
+
+#help_end
+
+#DIGITAL_EXPAND InputsWithOutputs
+
+
+//--------------------------------CONSTANTS
+#DEFINE_CONSTANT	ARRAY_SIZE	64
+
+//---------------------------------------IO
+digital_input	trigger, exclusive;
+
+digital_input	ifTrue[ARRAY_SIZE];
+
+digital_output	_skip_, _skip_;
+
+digital_output	then[ARRAY_SIZE];
+
+//----------------------------------GLOBALS
+integer			size, x;
+
+//--------------------------------FUNCTIONS
+
+//-----------------------------------EVENTS
+push trigger {
+	for (x = 1 to size)	if (ifTrue[x] = 1)	{	// loop through inputs
+		then[x] = 1;							// set output
+		if (exclusive = 1) break;				// stop for exclusive mode
+	}	// end loop
+}	// end push event
+
+release trigger {
+	for (x = 1 to size)	{						// loop through outputs
+		then[x] = 0;							// reset ALL outputs
+	}	// end loop
+}	// end release event
+
+//-------------------------------------MAIN
+Function Main() {
+	for (size = 64 to 1 step -1)
+		if (isSignalDefined (ifTrue[size])) break;
+}	// measure IO size
+

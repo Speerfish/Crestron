@@ -1,0 +1,237 @@
+/*******************************************************************************************
+	EXTRON Crosspoint router
+*******************************************************************************************/
+/*
+Dealer Name:AVWorkz
+System Name:AVWorkz Extron CrossPoint router
+System Number:
+Programmer:Richard, Sean
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+*******************************************************************************************/
+// #SYMBOL_NAME "AVWorkz Extron CrossPoint router 32x32 v7"
+// #HINT ""
+#DEFINE_CONSTANT TRUE 1
+#DEFINE_CONSTANT FALSE 0
+
+
+// #CATEGORY "" 
+#CATEGORY "23" // Switcher
+// #DEFAULT_VOLATILE
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+DIGITAL_INPUT Video_Only, Audio_Only, Audio_Video, Enable_Breakaway_Audio, Route_Audio_On_Input_Press;
+DIGITAL_INPUT Clear_Routes; 
+
+ANALOG_INPUT Input_Select, Output_Select, Breakaway_Audio_Output;
+STRING_OUTPUT To_Extron$;
+STRING_OUTPUT debug$;
+STRING_OUTPUT Current_Selected$;
+STRING_OUTPUT Out$[32,32];
+
+Digital_Output Route_Changed;
+Digital_Output ind[30];
+
+STRING_PARAMETER Input_Label[32][15];
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+INTEGER Current_VI_selected;
+STRING Route_Type[2];
+STRING Source_Name[32][15];
+STRING Output_Source_Name[31][15];
+//source_counts holds an integer value for each input source, representing the number of destinations it is currently routed to.
+INTEGER source_counts[30];  
+//current_routes holds an integer value for each destination (32), representing the current source routed to that destination.
+INTEGER current_routes[31]; 
+/*******************************************************************************************
+  FUNCTIONS
+*******************************************************************************************/
+
+Function Set_Switch_type()
+{
+	if (Video_Only) Route_Type = "&";
+ 	if (Audio_Only) Route_Type = "$";
+ 	if (Audio_Video) Route_Type = "!";
+}
+
+
+Function Update_Outputs()
+{
+	INTEGER X;
+	FOR (X = 1 TO 32){ 
+		Out$[X] = Output_Source_Name[X-1]; 
+	}
+}
+
+Function Clear_Text(){
+	INTEGER X;
+	FOR (X = 0 TO 31){  
+    	Output_Source_Name[X] = "None"; 
+	}	
+}
+
+Function Select_my_Route(integer my_Destination)
+{
+	STRING temp[10];
+	//makestring(debug$, "enable_breakaway_audio = %i\n", Enable_Breakaway_Audio);
+	//print ("Output= %i\n", my_Destination);
+	if ((Enable_Breakaway_Audio = TRUE) && (Breakaway_Audio_Output > 0)){		
+		makestring (To_Extron$,"%i*%i&", Current_VI_selected, my_Destination);
+		if (Route_Audio_On_Input_Press = FALSE){		
+			makestring (To_Extron$,"%i*%i$", Current_VI_selected, Breakaway_Audio_Output);		
+		}	
+	}
+	else{
+		makestring (To_Extron$,"%i*%i%s", Current_VI_selected, my_Destination, Route_Type);
+	}
+	Output_Source_Name[my_Destination-1] = Input_Label[Current_VI_selected];
+	Out$[my_Destination] = Output_Source_Name[my_Destination-1];		
+	//print ("Input Label 0: %s\n", Input_Label[0]);
+	//print ("Input Label 1: %s\n", Input_Label[1]);
+	//print ("Input Label 2: %s\n", Input_Label[2]);
+	//print ("Input Label 3: %s\n", Input_Label[3]);
+	//print ("Current_VI_Selected: %i\n", Current_VI_selected); 
+	pulse(100,Route_Changed);
+}
+
+/*
+A 'light' for each input shows whether that source is currently routed somewhere in the system.  
+Used in the WireOne TBI system.
+*/
+Function Update_Lights()
+{	
+   	integer i;
+	for(i = 0 to 29)
+	{
+		//print ("I=%i::src_cnt=%i\n",i,source_counts[i]);
+		if (source_counts[i] > 0)
+		{
+    		ind[i+1] = 1;
+			//print ("src %i light on\n",i);
+		}
+		else
+		{
+			ind[i+1] = 0;
+			//print ("src %i light off\n",i);		
+		}
+	} 
+}
+
+
+Function Update_Source_Counts(integer my_Destination)
+{
+	integer previous_src;
+	if (my_Destination < 32){
+		previous_src = current_routes[my_Destination-1];//save the value of previously routed source
+		if (previous_src != Current_VI_selected){//if try to route same src again, do nothing
+			//print ("Previous Src at this location: %i\n",previous_src);
+			//update source count of src we are unrouting:
+			if ((previous_src != 0) && (source_counts[previous_src-1] > 0)){
+				//print ("Source Count of Previous src: %i\n",source_counts[previous_src-1]);
+				source_counts[previous_src-1] = source_counts[previous_src-1] - 1;
+			}
+			//update source count of current source we're routing:
+			source_counts[Current_VI_selected-1] = source_counts[Current_VI_selected-1]+1;
+			//update route:
+			current_routes[my_Destination-1] = Current_VI_selected;
+		}
+	}
+}
+
+/*
+Clears all 'Lights'
+*/
+Function Clear_All_Indicator_Arrays()
+{
+	INTEGER i;
+	for (i = 0 to 29)
+	{
+		source_counts[i] = 0;				
+	}
+	for (i = 0 to 9)
+	{
+		current_routes[i] = 0;				
+	}
+}
+
+/*******************************************************************************************
+  Event Handlers
+*******************************************************************************************/
+// select the single video source of current interest
+Push Clear_Routes{
+	//makestring(debug$, "Clearing Routes");
+	makestring (To_Extron$,"0*1!0*2!0*3!0*4!0*5!0*6!0*7!0*8!0*9!0*10!0*11!0*12!0*13!0*14!0*15!0*16!0*17!0*18!0*19!0*20!0*21!0*22!0*23!0*24!0*25!0*26!0*27!0*28!0*29!0*30!0*31!0*32!"); 	
+	Clear_Text();			//init all output text to "none"
+	Update_Outputs();
+	Clear_All_Indicator_Arrays();
+	Update_Lights();
+}
+
+
+Change Input_Select{
+	Current_VI_selected = Input_Select;
+	//print ("%s%i\n","Input=",Current_VI_selected);//for debugging
+	Current_Selected$ =	Source_Name[Current_VI_selected-1];
+	if ((Enable_Breakaway_Audio = TRUE) && (Breakaway_Audio_Output > 0) && (Route_Audio_On_Input_Press = TRUE)){		
+		makestring (To_Extron$,"%i*%i$", Current_VI_selected, Breakaway_Audio_Output);		
+	}
+}
+
+// Latch all the outputs until cleared
+Change Output_Select{
+	Set_Switch_type();
+	Select_my_Route(Output_Select);
+	Update_Source_Counts(Output_Select);
+	Update_Lights();
+}
+
+
+Change Video_Only{
+	Set_Switch_type();
+}
+Change Audio_Only{
+	Set_Switch_type();
+}
+Change Audio_Video{
+	Set_Switch_type();
+}
+
+
+/*
+EVENT
+{
+}
+
+
+/*******************************************************************************************
+  Main()
+*******************************************************************************************/
+
+Function Main()
+{
+	WaitForInitializationComplete();
+    Route_Type = "!";		//default audio and video
+	Clear_Text();			//init all output text to "none"
+	Set_Switch_type();
+	Update_Outputs();
+	Clear_All_Indicator_Arrays();
+	Update_Lights();
+}
+
+

@@ -1,0 +1,104 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.13
+  InclDatVrs=1.69
+  CrossCplrVrs=1.3
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=For use only within the Polycom VSX7000 & VSX8000 suite of Crestron||1
+  Cmn2=modules
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,310,718,756,854,
+  Name=Polycom VSX7000 & VSX8000 Processor
+  SmplCName=PolyproE.usp
+  Code=1
+  InputCue1=First
+  InputSigType1=Digital
+  InputCue2=Prev
+  InputSigType2=Digital
+  InputCue3=Next
+  InputSigType3=Digital
+  InputCue4=Last
+  InputSigType4=Digital
+  InputCue5=Done_Receiving
+  InputSigType5=Digital
+  InputCue6=Dial
+  InputSigType6=Digital
+  InputCue7=Select[#]
+  InputSigType7=Digital
+  InputList2Cue1=MaxCharactersName
+  InputList2SigType1=Analog
+  InputList2Cue2=MaxCharactersSpeed
+  InputList2SigType2=Analog
+  InputList2Cue3=MaxCharactersNumber
+  InputList2SigType3=Analog
+  InputList2Cue4=EntriesPerScreen
+  InputList2SigType4=Analog
+  InputList2Cue5=Polycom_Rx$
+  InputList2SigType5=Serial
+  OutputList2Cue1=CurrentPage
+  OutputList2SigType1=Analog
+  OutputList2Cue2=TotalPages
+  OutputList2SigType2=Analog
+  OutputList2Cue3=NameSelected$
+  OutputList2SigType3=Serial
+  OutputList2Cue4=NumberSelected$
+  OutputList2SigType4=Serial
+  OutputList2Cue5=SpeedSelected$
+  OutputList2SigType5=Serial
+  OutputList2Cue6=Status$
+  OutputList2SigType6=Serial
+  OutputList2Cue7=ToDevice$
+  OutputList2SigType7=Serial
+  OutputList2Cue8=Name$[#]
+  OutputList2SigType8=Serial
+  ParamCue1=[Reference Name]
+  MinVariableInputs=7
+  MaxVariableInputs=31
+  MinVariableInputsList2=5
+  MaxVariableInputsList2=5
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=8
+  MaxVariableOutputsList2=32
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_PolyproE
+  SymJam=NonExclusive
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]

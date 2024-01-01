@@ -1,0 +1,323 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name: TANDBERG
+System Name:                                                                                      
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "xacli Control (Rev0-00-2)"
+// #HINT ""
+#DEFINE_CONSTANT NONE 0 
+#DEFINE_CONSTANT INTERNAL 1
+#DEFINE_CONSTANT EXTERNAL 2
+
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+//#DEFAULT_NONVOLATILE
+//#ENABLE_STACK_CHECKING
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT MCU_Drop_Site_Go;
+ANALOG_INPUT MCU_Drop_Site_Number,CurrentMcuScreen; 
+// STRING_INPUT 
+BUFFER_INPUT  XACLIRX$[2096];
+
+DIGITAL_OUTPUT FLOOR_OFF,FLOOR_ON;
+ANALOG_OUTPUT FECC_Source,MCU_STATE,ONAIR;
+STRING_OUTPUT ONAIR_NAME,CODECTX$;
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+STRUCTURE sMCUSiteList
+{
+  STRING strSiteName[50];
+  INTEGER nMCUID;
+  INTEGER nTerminalID;
+  INTEGER nCallRef;
+};
+
+sMCUSiteList MCUSiteList[100];
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER nBusy,nMCUState,nMCUOnAirID,nMCUOnAirTerminal,nTotalSites,nMCUID,nSiteNumber,nSelfID; 
+INTEGER nDuoLocal[11],nDuoRemote[11],nCallID,nLocalDuoActive,nRemoteDuoActive;
+INTEGER nCount,nMarker,nMarker1,nSite;
+//sMCUSiteName MCUSiteName[100];
+STRING TempString$[100],Dump$[20];
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+/*
+Function MyFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+}
+*/
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+PUSH MCU_Drop_Site_Go
+{
+ IF(MCU_Drop_Site_Number>0)
+ {
+  IF(MCUSiteList[MCU_Drop_Site_Number].nMCUID=nMCUID && nMCUState=INTERNAL)
+  {
+   nSite = (CurrentMcuScreen - 1) * 8 + MCU_Drop_Site_Number; 
+   MAKESTRING(CODECTX$,"xcommand disconnectcall %d\n",MCUSiteList[nSite].nCallRef); 
+   }
+   IF(nMCUState=EXTERNAL)
+   {
+    nSite = (CurrentMcuScreen - 1) * 8 + MCU_Drop_Site_Number;
+    MAKESTRING(CODECTX$,"xcommand sitedisconnect mcuid: %d terminalid: %d\n",MCUSiteList[nSite].nMCUID,MCUSiteList[nSite].nTerminalID);
+   } 
+ }
+}   
+
+CHANGE XACLIRX$
+{
+ IF(nBusy=0)
+ {
+  nBusy=1;
+  WHILE(FIND("\x0D\x0A",XACLIRX$)>0)
+  {
+   TempString$=REMOVE("\x0D\x0A",XACLIRX$); 
+   IF(FIND("*s FarEndInformation:",TempString$)>0)
+   {
+    IF(FIND("CurrentSource:",TempString$)>0)
+    {
+     FECC_SOURCE=ATOI(TempString$);
+    } 
+   }
+   ELSE IF(FIND("*s Call",TempString$)>0)
+   {
+     nCallID=ATOI(TempString$);
+     IF(FIND("Channels 1",TempString$)>0)
+     {
+      IF(FIND("Video 2 (status=Inactive)",TempString$)>0)
+      {
+       nDuoRemote[nCallID]=0; 
+       nRemoteDuoActive=nDuoRemote[1] + nDuoRemote[2] + nDuoRemote[3] + nDuoRemote[4] + nDuoRemote[5] +
+       nDuoRemote[6] + nDuoRemote[7] + nDuoRemote[8] + nDuoRemote[9] + nDuoRemote[10] + nDuoRemote[11]; 
+       PRINT("nRemoteDuoActive=%d\n",nRemoteDuoActive);
+      } 
+      IF(FIND("Video 2 (status=Active):Protocol",TempString$)>0)
+      {
+       nDuoRemote[nCallID]=1;
+       nRemoteDuoActive=nDuoRemote[1] + nDuoRemote[2] + nDuoRemote[3] + nDuoRemote[4] + nDuoRemote[5] +
+       nDuoRemote[6] + nDuoRemote[7] + nDuoRemote[8] + nDuoRemote[9] + nDuoRemote[10] + nDuoRemote[11]; 
+       PRINT("nRemoteDuoActive=%d\n",nRemoteDuoActive);
+      } 
+     }
+     IF(FIND("Channels 2",TempString$)>0)
+     {
+      IF(FIND("Video 2 (status=Inactive)",TempString$)>0)
+      {
+       nDuoLocal[nCallID]=0;
+       nLocalDuoActive=nDuoLocal[1] + nDuoLocal[2] + nDuoLocal[3] + nDuoLocal[4]+ nDuoLocal[5]+nDuoLocal[6] +
+       nDuoLocal[7] + nDuoLocal[8] + nDuoLocal[9] + nDuoLocal[10] + nDuoLocal[11];
+       PRINT("nLocalDuoActive=%d\n",nLocalDuoActive); 
+      } 
+      IF(FIND("Video 2 (status=Active):Protocol",TempString$)>0)
+      {
+       nDuoLocal[nCallID]=1;
+       nLocalDuoActive=nDuoLocal[1] + nDuoLocal[2] + nDuoLocal[3] + nDuoLocal[4]+ nDuoLocal[5]+nDuoLocal[6] +
+       nDuoLocal[7] + nDuoLocal[8] + nDuoLocal[9] + nDuoLocal[10] + nDuoLocal[11];
+       PRINT("nLocalDuoActive=%d\n",nLocalDuoActive);
+      } 
+    }
+   }   
+         
+   ELSE IF(FIND("*s Conference (type=",TempString$)>0)
+   {
+    IF(FIND("Idle",TempString$)>0)
+    {
+     nMCUState=0;
+     MCU_State=nMCUState; 
+     SETARRAY(nDuoLocal,0);
+     SETARRAY(nDuoRemote,0);
+     nLocalDuoActive=0;
+     nRemoteDuoActive=0;
+    }
+    IF(FIND("PointToPoint",TempString$)>0)
+    {
+     nMCUState=0;
+     MCU_State=nMCUState;
+    }
+    IF(FIND("Multisite",TempString$)>0)
+    {
+     IF(FIND("Point",TempString$)>0)
+     nMCUState=EXTERNAL;
+     ELSE
+     nMCUState=INTERNAL;
+     MCU_State=nMCUState;
+    }  
+   } //END OF *s Conference 
+   ELSE IF(FIND("*s Conference NumberOfSites",TempString$)>0)
+   {
+    nTotalSites=ATOI(TempString$);
+    PRINT("nTotalSites=%d",nTotalSites);
+   }
+   ELSE IF(FIND("*s Conference LocalSite:",TempString$)>0)
+   {
+    IF(FIND(":Floor",TempString$)>0)
+    {
+     IF(FIND("Off",TempString$)>0)
+     PULSE(20,FLOOR_OFF); 
+     IF(FIND("On",TempString$)>0)
+     PULSE(20,FLOOR_ON);
+    }
+    ELSE IF(FIND("OnAir",TempString$)>0)
+    {
+     IF(FIND(" Off",TempString$)>0)
+     ONAIR=0; 
+     IF(FIND(" On",TempString$)>0)
+     ONAIR=1; 
+    }
+    ELSE IF(FIND("View",TempString$)>0)
+    {
+     IF(FIND("MCUID",TempString$)>0)
+     nMCUOnAirID=ATOI(TempString$); 
+     IF(FIND("TerminalID",TempString$)>0)
+     {
+      nMCUOnAirTerminal=ATOI(TempString$);
+      IF(nMCUOnAirTerminal=0)
+      ONAIR_NAME="";
+      ELSE
+      {
+       nCount=1;
+       while(nCount<= nTotalSites) 
+       {
+        IF(MCUSiteList[nCount].nMCUID=nMCUOnAirID && MCUSiteList[nCount].nTerminalID=nMCUOnAirTerminal)
+        { 
+         ONAIR_NAME=MCUSiteList[nCount].strSiteName;
+         nCount=nTotalSites+2;
+        }
+        nCount=nCount+1;
+       }
+      }
+     }
+    } 
+   }
+   ELSE IF(FIND("*s Conference MCUID",TempString$)>0)
+   {
+    nMCUID=ATOI(TempString$);
+   }
+   ELSE IF(FIND("*s Conference MCUSiteList:",TempString$)>0)
+   { 
+     Dump$=REMOVE(":",TempString$);
+     nSiteNumber=ATOI(TempString$);
+     Dump$=REMOVE(":",TempString$);
+     IF(nSiteNumber>0)
+     {
+      IF(FIND("MCUID",TempString$)>0)
+      {
+       MCUSiteList[nSiteNumber].nMCUID=ATOI(TempString$); 
+      }
+      IF(FIND("TerminalID",TempString$)>0)
+      {
+       MCUSiteList[nSiteNumber].nTerminalID=ATOI(TempString$);
+      }
+      IF(FIND("CallRef",TempString$)>0)
+      {
+       MCUSiteList[nSiteNumber].nCallRef=ATOI(TempString$);
+       IF(MCUSiteList[nSiteNumber].nCallRef=0)
+       nSelfID=MCUSiteList[nSiteNumber].nTerminalID;
+      } 
+      IF(FIND("Name",TempString$)>0)
+      {
+       nMarker=FIND("\x22",TempString$); 
+       nMarker1=REVERSEFIND("\x22",TempString$);
+       IF(nMarker1-nMarker > 1)
+       MCUSiteList[nSiteNumber].strSiteName=MID(TempString$,nMarker+1,(nMarker1-1)-nMarker); 
+       ELSE
+       MCUSiteList[nSiteNumber].strSiteName="Site " + ITOA(nSiteNumber);
+       IF(MCUSiteList[nSiteNumber].nMCUID=nMCUOnAirID && MCUSiteList[nSiteNumber].nTerminalID=nMCUOnAirTerminal)
+       ONAIR_NAME=MCUSiteList[nSiteNumber].strSiteName ;
+      }
+      } // End of IF nSiteNumber>0 
+    } //End 
+  }
+  nBusy=0;  
+ }
+} 
+
+
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+ nBusy=0;
+ nLocalDuoActive=0;
+ nRemoteDuoActive=0; 
+ SETARRAY(nDuoLocal,0);
+ SETARRAY(nDuoRemote,0); 
+}
+
+

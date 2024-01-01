@@ -1,0 +1,608 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:		TANDBERG
+System Name:
+System Number:
+Programmer:			David B-L
+Comments:
+*/
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "Tandberg C90 + C60 Call Control v1.3"
+// #HINT
+// #DEFINE_CONSTANT
+// #CATEGORY
+// #DEFAULT_VOLATILE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING     
+#DEFINE_CONSTANT MAXCALLS 3
+#DEFINE_CONSTANT NOTAVAILABLETEXT ""
+#DEFINE_CONSTANT GHOSTTAG "(ghost=True): /"
+
+#HELP_BEGIN
+	For use inside the Tandberg C90 + C60 v1.3 module only.
+#HELP_END
+/*******************************************************************************************
+  Inputs & Outputs
+*******************************************************************************************/
+BUFFER_INPUT	device_rx$[10000];
+STRING_OUTPUT 	device_tx$;
+                            
+ANALOG_INPUT DTMFSendCallSlot;
+STRING_INPUT DTMFSend[32];
+
+DIGITAL_INPUT	callControlAcceptIncomingCall;
+DIGITAL_INPUT	callControlRejectIncomingCall;
+ANALOG_INPUT	disconnectCallWithId;
+DIGITAL_INPUT	disconnectAllCalls;
+STRING_INPUT	dialNumber[255];
+STRING_INPUT	dialCallRate[6];
+STRING_INPUT	dialCallProtocol[4];
+DIGITAL_INPUT 	dialCall;
+
+ANALOG_INPUT   farEndControlCallSlot; // the active call to control farEndControl camera and presentation for
+DIGITAL_INPUT  farEndControlCameraPanLeft;
+DIGITAL_INPUT  farEndControlCameraPanRight;
+DIGITAL_INPUT  farEndControlCameraTiltUp;
+DIGITAL_INPUT  farEndControlCameraTiltDown;
+DIGITAL_INPUT  farEndControlCameraZoomIn;
+DIGITAL_INPUT  farEndControlCameraZoomOut;
+DIGITAL_INPUT  farEndControlCameraFocusIn;
+DIGITAL_INPUT  farEndControlCameraFocusOut;
+DIGITAL_INPUT  farEndControlCameraStop;
+ANALOG_INPUT   farEndControlPresentationSourceId;
+ANALOG_INPUT   farEndControlPresetActivateId;   
+
+DIGITAL_INPUT 	resyncronizeCallStatusList;
+
+
+STRING_OUTPUT  TString_Receive_Text;
+STRING_INPUT   TString_Send_Text[1450]; // max message size is 1450 bytes
+
+STRING_OUTPUT  SString_Receive_Text;
+STRING_INPUT   SString_Send_Text[256];// max message size is 256 bytes
+
+
+DIGITAL_OUTPUT	signalIncomingCall;
+STRING_OUTPUT	incomingCallNumber;
+ANALOG_OUTPUT	NumberOfActiveCalls;
+DIGITAL_OUTPUT 	CallStatus_IsConnected[MAXCALLS]; // indicates whether a call is connected or not
+DIGITAL_OUTPUT 	CallStatus_SupportsPresentation[MAXCALLS]; // indicates whether the remote site supports presentation (H.239 or not)
+DIGITAL_OUTPUT 	CallStatus_IsActive[MAXCALLS, MAXCALLS]; // indicates whether a call is active or not
+
+// These MUST be last as they are expandable: 
+STRING_OUTPUT	CallStatus_Status[MAXCALLS]
+				, CallStatus_CallType[MAXCALLS]
+				, CallStatus_RemoteSite[MAXCALLS]
+		        , CallStatus_Duration[MAXCALLS]
+				, CallStatus_TransmitCallRate[MAXCALLS]
+				, CallStatus_ReceiveCallRate[MAXCALLS]
+   		        , CallStatus_Direction[MAXCALLS, MAXCALLS]; // Let the last one be fully expanded or else user might not see that more calls have been added if MAXCALLs is changed
+ANALOG_OUTPUT 	CallStatus_CallId[MAXCALLS,MAXCALLS];
+/*******************************************************************************************
+  Variable Declarations
+*******************************************************************************************/
+INTEGER 	Semaphore, dialSemaphore;
+STRING 		Tempstring$[1000];
+INTEGER 	callId;
+STRING 		callresponsetype[40];
+STRING 		callStatus[30];
+INTEGER 	tmp;
+STRING 		remoteNumber[255];
+INTEGER 	CallSlot;
+/*******************************************************************************************
+	Functions
+*******************************************************************************************/
+/* Gets whatever comes after token in text string */
+STRING_FUNCTION getStringAfterToken(STRING text, STRING token)
+{
+	INTEGER marker1, marker2;
+	STRING retVal[255];
+	if(find("\x0D\x0A", text) > 0)
+	{
+		text = mid(text, 1, find("\x0D\x0A", text)-1);
+	}
+	marker1 = find(token, text) + len(token);
+	marker2 = len(text) - (marker1-1);
+	retVal = mid(text, marker1, marker2);
+	return (retVal);
+}
+                  
+
+// Gets whatever comes after ":" in input string. Does NOT change the data string.
+STRING_FUNCTION getTagValueRemoveAmpersands(ByRef STRING data)
+{
+	INTEGER marker1, marker2;
+	STRING value[500];
+	marker1 = find(": \x22", data) + 3; // after ': "'
+	marker2 = find("\x22", data, marker1); // before last '"'
+	value = mid(data, marker1, marker2 - marker1);
+	return(value);
+}
+
+
+// Gets whatever comes after ":" in input string. Does NOT change the data string.
+STRING_FUNCTION getTagValue(ByRef STRING data)
+{
+	INTEGER marker1, marker2;
+	STRING value[500];
+	if(find(GHOSTTAG, data))
+	{
+		return(NOTAVAILABLETEXT);
+	}
+	marker1 = find(": ", data) + 2; // after ": "
+	marker2 = find("\x0D\x0A", data); // before "\x0D\x0A"
+	value = mid(data, marker1, marker2 - marker1);
+	return(value);
+}
+
+// Gets whatever is in between two ampersands ("). e.g. str = '"hello world"' will return 'hello world'. If it does not find two '"' then returns str.
+STRING_FUNCTION removeAmpersands(STRING str)
+{
+	INTEGER marker1, marker2;
+	STRING value[500];
+	if(left(str, 2) = "\x22\x22")
+	{
+		return ("");
+	}
+	marker1 = find("\x22", str)+1;
+	marker2 = find("\x22", str, marker1)- marker1;
+	if(marker2 > marker1)
+	{
+		return(mid(str, marker1, marker2));
+	}
+	else
+	{
+		return(str);
+	}
+}
+
+// Gets whatever is in between two ampersands (") after give token e.g. text = ' myvalue: "hello world"' will return 'hello world'. If it does not find myvalue and two '"' then returns ""
+STRING_FUNCTION getStringTokenValue(STRING text, STRING token)
+{
+	INTEGER marker1, marker2;
+	STRING value[500];
+	INTEGER endOfToken, startOfText, endOfText;
+	STRING retVal[255];
+	endOfToken = find(token, text) + len(token);
+	startOfText = find("\x22", text, endOfToken+1) + 1;
+	endOfText = find("\x22", text, startOfText);
+	if(endOfText > startOfText)
+	{
+		retVal = mid(text, startOfText, endOfText - startOfText);
+	}
+	return (retVal);
+}
+
+STRING_FUNCTION getCallRateFromText(STRING text)
+{
+	STRING retVal[20];
+	if(text = NOTAVAILABLETEXT)
+	{
+		return (text);
+	}
+	makeString(retVal, "%s Kbps", text);
+	return (retVal);
+}
+
+STRING_FUNCTION getDurationFromText(STRING text)
+{
+	STRING retVal[20];
+	if(text = NOTAVAILABLETEXT)
+	{
+		return (text);
+	}
+	makeString(retVal, "%s s", text);
+	return (retVal);
+}
+
+//Simulate call slots
+INTEGER_FUNCTION getCallSlotFromCallId(INTEGER CallId)
+{
+	INTEGER callNumber;
+	INTEGER i;
+	callNumber = 0;
+	for(i = 1 to MAXCALLS)
+	{
+		if(CallStatus_CallId[i] = CallId) // we have found a matching call Id, break for loop and return this callslot
+		{
+			callNumber = i;
+			break;
+		}
+		else
+		{
+			if(CallStatus_CallId[i] = 0 && callNumber = 0) // we have not yet found the call id, but we have found an empty slot, lets use this as the current call slot, but
+			{		// continue to search for one that matches further in the list. If not found then this will become the found call slot!
+				callNumber = i;
+			}
+		}
+	}
+	return (callNumber);
+}
+
+FUNCTION clearCall(INTEGER CallSlot)
+{
+	CallStatus_CallId[CallSlot] = 0;
+	if(isSignalDefined(CallStatus_Status[CallSlot]))
+	{
+		CallStatus_Status[CallSlot] = NOTAVAILABLETEXT;
+	}
+	if(isSignalDefined(CallStatus_Direction[CallSlot]))
+	{
+		CallStatus_Direction[CallSlot] = NOTAVAILABLETEXT;
+	}
+	if(isSignalDefined(CallStatus_CallType[CallSlot]))
+	{
+		CallStatus_CallType[CallSlot] = NOTAVAILABLETEXT;
+	}
+	if(isSignalDefined(CallStatus_TransmitCallRate[CallSlot]))
+	{
+		CallStatus_TransmitCallRate[CallSlot] = NOTAVAILABLETEXT;
+	}
+	if(isSignalDefined(CallStatus_ReceiveCallRate[CallSlot]))
+	{
+		CallStatus_ReceiveCallRate[CallSlot] = NOTAVAILABLETEXT;
+	}
+	if(isSignalDefined(CallStatus_RemoteSite[CallSlot]))
+	{
+		CallStatus_RemoteSite[CallSlot] = NOTAVAILABLETEXT;
+	}
+	if(isSignalDefined(CallStatus_Duration[CallSlot]))
+	{
+		CallStatus_Duration[CallSlot] = NOTAVAILABLETEXT;
+	}
+	CallStatus_IsActive[CallSlot] = 0;
+	CallStatus_IsConnected[CallSlot] = 0;
+}
+        
+
+FUNCTION resetCallList(){
+	INTEGER i;
+
+	for(i = 1 to MAXCALLS)
+	{
+		clearCall(i);
+	}
+	makeString(device_tx$, "xStatus Call\n");	
+}
+
+PUSH resyncronizeCallStatusList{
+    resetCallList();
+}
+   
+FUNCTION disconnectCall(INTEGER callSlot)
+{
+	makeString(device_tx$, "xCommand Call Disconnect CallId: %d\n", CallStatus_CallId[callSlot]);
+}
+/*******************************************************************************************
+  Event Handlers
+*******************************************************************************************/       
+CHANGE device_rx$
+{
+	String tempDisplayName[40];
+	String tempValue[10];
+	if(Semaphore = 0)
+	{
+		Semaphore = 1;
+
+		while(find("\x0D\x0A", device_rx$) > 0)
+		{
+			Tempstring$ = remove("\x0D\x0A", device_rx$);
+			if(find("*s Call ", Tempstring$) > 0)
+			{	
+				Tempstring$ = getStringAfterToken(Tempstring$, "*s Call ");
+				// Tempstring now contains e.g. "1 (status=Disconnected, type=NA, protocol=NA, direction=NA, logTag=NA):"
+				callId = atoi(remove(" ", Tempstring$)); // Return everything before blank and remove from tempstring to get the callid.
+				CallSlot = getCallSlotFromCallId(callId);
+				CallStatus_CallId[CallSlot] = callId;
+				callresponsetype = remove(":", Tempstring$);
+				if (callresponsetype = "(ghost=True):")
+				{
+					clearCall(CallSlot);					
+				}
+				else if (callresponsetype = "Status:")
+				{
+					CallStatus_IsActive[CallSlot] = 1;
+					callStatus = getTagValue(Tempstring$);
+					if(isSignalDefined(CallStatus_Status[CallSlot]))
+					{
+						CallStatus_Status[CallSlot] = callStatus;
+					}
+					if(isSignalDefined(CallStatus_IsConnected[CallSlot])){
+						if(callStatus = "Connected"){
+							CallStatus_IsConnected[CallSlot] = 1;
+						}
+						else{
+							CallStatus_IsConnected[CallSlot] = 0;
+						}
+					}
+				}
+				else if (callresponsetype = "RemoteNumber:")
+				{
+					if(isSignalDefined(CallStatus_RemoteSite[CallSlot]))
+					{
+						CallStatus_RemoteSite[CallSlot] = removeAmpersands(getTagValue(Tempstring$));;
+					}
+				}
+				/* Not yet available in TC 1.1 */
+				else if (callresponsetype = "Duration:")
+				{
+					if(isSignalDefined(CallStatus_Duration[CallSlot]))
+					{
+						CallStatus_Duration[CallSlot] = getDurationFromText(getTagValue(Tempstring$));
+					}
+				}
+				/* Not yet available in TC 1.1 */
+				else if (callresponsetype = "CallType:")
+				{
+					if(isSignalDefined(CallStatus_CallType[CallSlot]))
+					{
+						CallStatus_CallType[CallSlot] = getTagValue(Tempstring$);
+					}
+				}
+
+				else if (callresponsetype = "Direction:")
+				{
+					if(isSignalDefined(CallStatus_Direction[CallSlot]))
+					{
+						CallStatus_Direction[CallSlot] = getTagValue(Tempstring$);
+					}
+				}
+				else if (callresponsetype = "DisplayName:")
+				{
+					if(isSignalDefined(CallStatus_RemoteSite[CallSlot]))
+					{
+						tempDisplayName = removeAmpersands(getTagValue(Tempstring$));
+                        if(tempDisplayName = ""){
+							// Don't set it if it is blank, which it will be before connection
+						}
+						else{
+							CallStatus_RemoteSite[CallSlot] = tempDisplayName;
+						}
+					}
+				}
+				else if (callresponsetype = "CallbackNumber:")
+				{
+					if(isSignalDefined(CallStatus_RemoteSite[CallSlot]))
+					{
+						CallStatus_RemoteSite[CallSlot] = removeAmpersands(getTagValue(Tempstring$));
+					}
+				}
+				else if (callresponsetype = "TransmitCallRate:") // >= TC 2.x
+				{
+					if(isSignalDefined(CallStatus_TransmitCallRate[CallSlot]))
+					{
+						CallStatus_TransmitCallRate[CallSlot] = getCallRateFromText(getTagValue(Tempstring$));
+					}
+				}
+				else if (callresponsetype = "ReceiveCallRate:") // >= TC 2.x
+				{
+					if(isSignalDefined(CallStatus_ReceiveCallRate[CallSlot]))
+					{
+						CallStatus_ReceiveCallRate[CallSlot] = getCallRateFromText(getTagValue(Tempstring$));
+					}
+				}
+			}
+
+			else if(find("*e IncomingCallIndication", Tempstring$) > 0) // TC 2.0+
+			{
+				incomingCallNumber = getStringTokenValue(Tempstring$, "DisplayNameValue:");
+				signalIncomingCall = 1;
+			}
+			else if(find("*s Conference Site", Tempstring$) > 0)
+			{
+				if(find("Capabilities Presentation:", Tempstring$) > 0){ // TC 2.1+
+					callId = atoi(Tempstring$);
+					CallSlot = getCallSlotFromCallId(callId);
+	
+					tempValue = getStringTokenValue(Tempstring$, "Presentation:");
+					if(tempValue = "True"){
+						CallStatus_SupportsPresentation[CallSlot] = 1;
+					}
+					else{
+						CallStatus_SupportsPresentation[CallSlot] = 0;
+					}
+				}
+			}
+			else if(find("*s SystemUnit State NumberOfInProgressCalls: 0", Tempstring$) > 0)
+			{
+				signalIncomingCall = 0;
+				incomingCallNumber = "";
+			}
+			else if(find("*s SystemUnit State NumberOfActiveCalls: ", Tempstring$) > 0)
+			{
+				NumberOfActiveCalls = atoi(getTagValue(Tempstring$));
+			}
+//			else if(find("*e DTMFReceive", Tempstring$) > 0) // its there but not in use in this module at the moment. Uncomment if you need it
+//			{
+//				SString_Receive_Text = getTagValueRemoveAmpersands(Tempstring$);
+//			}
+			else if(find("*e SString ", Tempstring$) > 0)
+			{
+				SString_Receive_Text = getTagValueRemoveAmpersands(Tempstring$);
+			}
+			else if(find("*e TString: ", Tempstring$) > 0)
+			{
+				TString_Receive_Text = getTagValueRemoveAmpersands(Tempstring$);
+			}
+		}
+		Semaphore = 0;
+	}
+}
+
+PUSH dialCall
+{
+	STRING dialString[220];
+	
+	if(len(dialNumber)>0)
+	{
+		makeString(dialString, "xCommand Dial Number: %s", dialNumber);
+		if(len(dialCallRate) > 0)
+		{
+			dialString = dialString + " CallRate: " + dialCallRate;
+		}
+		if(len(dialCallProtocol) > 0)
+		{
+			if(find("VOIP", dialCallProtocol) > 0)
+			{
+				makeString(dialString, "%s onlyaudio: true", dialString);
+			}
+			else
+			{
+				makeString(dialString, "%s Protocol: %s", dialString, dialCallProtocol);
+			}
+		}
+		makeString(device_tx$, "%s\n", dialString);
+	}
+}
+
+CHANGE disconnectCallWithId
+{
+	call disconnectCall(disconnectCallWithId);
+}
+
+PUSH callControlAcceptIncomingCall
+{
+	makeString(device_tx$, "xCommand Call Accept\n");
+}
+
+PUSH callControlRejectIncomingCall
+{
+	makeString(device_tx$, "xCommand Call Reject\n");
+}
+
+PUSH disconnectAllCalls
+{
+	makeString(device_tx$, "xCommand Call DisconnectAll\n");
+}
+
+
+
+/* Send DTMF Signal to a call. If callId is not selected (0) then sends it to the first call */
+CHANGE DTMFSend{ 
+	if(DTMFSendCallSlot = 0){
+		MakeString(device_tx$, "xCommand DTMFSend DTMFString: \"%s\" CallId: \"%d\"\n", DTMFSend , CallStatus_CallId[1]);
+	}
+	else{
+		MakeString(device_tx$, "xCommand DTMFSend DTMFString: \"%s\" CallId: \"%d\"\n", DTMFSend , CallStatus_CallId[DTMFSendCallSlot]);
+	}
+}
+ 
+function farEndControlCameraMove(STRING direction){
+    if(farEndControlCallSlot = 0){
+		MakeString(device_tx$, "xCommand FarEndControl Camera Move Value: %s\n", direction);
+	}
+	else{
+		MakeString(device_tx$, "xCommand FarEndControl Camera Move Value: %s CallId: \"%d\"\n", direction, CallStatus_CallId[farEndControlCallSlot]);
+	}                                                              
+}
+
+CHANGE farEndControlPresentationSourceId{
+    if(farEndControlCallSlot = 0){
+		MakeString(device_tx$, "xCommand FarEndControl Source Select SourceId: %d\n", farEndControlPresentationSourceId);
+	}
+	else{
+		MakeString(device_tx$, "xCommand FarEndControl Source Select SourceId: %d  CallId: \"%d\"\n", farEndControlPresentationSourceId, CallStatus_CallId[farEndControlCallSlot]);
+	}                                                              
+}
+
+
+CHANGE farEndControlPresetActivateId{
+    if(farEndControlCallSlot = 0){
+		MakeString(device_tx$, "xCommand FarEndControl Preset Activate PresetId: %d\n", farEndControlPresetActivateId);
+	}
+	else{
+		MakeString(device_tx$, "xCommand FarEndControl Preset Activate PresetId: %d  CallId: \"%d\"\n", farEndControlPresetActivateId, CallStatus_CallId[farEndControlCallSlot]);
+	}                                                              
+}
+
+ 
+PUSH farEndControlCameraStop{
+    if(farEndControlCallSlot = 0){
+		MakeString(device_tx$, "xCommand FarEndControl Camera Stop\n");
+	}
+	else{
+		MakeString(device_tx$, "xcommand FarEndControl Camera Stop CallId: \"%d\"\n", CallStatus_CallId[farEndControlCallSlot]);
+	}                                                              
+}
+
+
+ 
+function sStringSendMessage(STRING message){
+		MakeString(device_tx$, "xCommand SStringSend Message: \"%s\"\n", message);
+}
+   
+function tStringSendMessage(STRING message){
+    if(DTMFSendCallSlot = 0){
+		MakeString(device_tx$, "xCommand TStringSend Message: \"%s\"\n", message);
+	}
+	else{
+		MakeString(device_tx$, "xCommand TStringSend Message: \"%s\" CallId: \"%d\"\n", message, CallStatus_CallId[DTMFSendCallSlot]);
+	}                                                              
+}
+
+CHANGE TString_Send_Text{
+      tStringSendMessage(TString_Send_Text);
+}
+
+
+CHANGE SString_Send_Text{
+      sStringSendMessage(SString_Send_Text);
+}
+
+
+PUSH farEndControlCameraPanLeft{
+    farEndControlCameraMove("Left");
+}
+
+PUSH farEndControlCameraPanRight{
+    farEndControlCameraMove("Right");
+}
+
+PUSH farEndControlCameraTiltUp{
+    farEndControlCameraMove("Up");
+}
+
+PUSH farEndControlCameraTiltDown{
+    farEndControlCameraMove("Down");
+}
+
+PUSH farEndControlCameraZoomIn{
+    farEndControlCameraMove("ZoomIn");
+}
+
+PUSH farEndControlCameraZoomOut{
+    farEndControlCameraMove("ZoomOut");
+}
+
+PUSH farEndControlCameraFocusIn{
+    farEndControlCameraMove("FocusIn");
+}
+
+PUSH farEndControlCameraFocusOut{
+    farEndControlCameraMove("FocusOut");
+}
+
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+	Semaphore = 0;
+	dialSemaphore = 0;
+	signalIncomingCall = 0;
+	NumberOfActiveCalls = 0;
+//	resetCallList(); // explicitly called from SIMPL on init ready
+}  
+ 

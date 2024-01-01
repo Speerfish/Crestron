@@ -1,0 +1,240 @@
+#symbol_name "nvstrings v3"
+#hint "non-volatile string memory"
+#help_begin
+Simply saves strings in non-volatile ram.  There is no need to recall and store, 
+as this happens automatically.  Both key_in and key_out should both see the 
+same keyboard output signal.
+#help_end
+#DEFAULT_NONVOLATILE
+//#DIGITAL_EXPAND InputsWithOutputs
+
+//--------------------------------CONSTANTS
+// Comment this line out if you don't want Print() statements to be viewable in Toolbox for debugging
+//#define_constant	DEBUG	1
+//---------------------------------------IO
+digital_input recall; 
+digital_input reset_selected; 
+digital_input reset_all; 
+digital_input use_integer_default;
+analog_input	affect_string;
+string_input key_in[50];
+
+digital_output	saved, recalled;
+string_output key_out, string_out_1, string_out_2, string_out_3, string_out_4, string_out_5, string_out_6, string_out_7, string_out_8;
+
+//----------------------------------GLOBALS
+integer			state;
+string string_store_1[50], string_store_2[50], string_store_3[50], string_store_4[50], string_store_5[50], string_store_6[50], string_store_7[50], string_store_8[50]; 
+
+//--------------------------------FUNCTIONS
+Function set_outputs (){
+	SWITCH (affect_string)
+    {
+     CASE (1):
+     {
+		if (string_store_1 = "") {
+			if (use_integer_default) 
+			string_store_1 = "1";		
+		}
+		string_out_1 = string_store_1;
+     }
+     CASE (2):
+     {
+ 		if (string_store_2 = "") {
+			if (use_integer_default) 
+			string_store_2 = "2";		
+		}
+		string_out_2 = string_store_2;  
+	 }
+	 CASE (3):
+     {
+ 		if (string_store_3 = "") {
+			if (use_integer_default) 
+			string_store_3 = "3";		
+		}
+		string_out_3 = string_store_3;
+     }
+     CASE (4):
+     {
+ 		if (string_store_4 = "") {
+			if (use_integer_default) 
+			string_store_4 = "4";		
+		}
+		string_out_4 = string_store_4;
+     }
+     CASE (5):
+     {
+ 		if (string_store_5 = "") {
+			if (use_integer_default) 
+			string_store_5 = "5";		
+		}
+		string_out_5 = string_store_5;
+     }
+     CASE (6):
+     {
+ 		if (string_store_6 = "") {
+			if (use_integer_default) 
+			string_store_6 = "6";		
+		}
+		string_out_6 = string_store_6;
+     }
+	 CASE (7):
+     {
+ 		if (string_store_7 = "") {
+			if (use_integer_default) 
+			string_store_7 = "7";		
+		}
+		string_out_7 = string_store_7;
+     }
+     CASE (8):
+     {
+ 		if (string_store_8 = "") {
+			if (use_integer_default) 
+			string_store_8 = "8";		
+		}
+		string_out_8 = string_store_8;
+     }
+
+    }//switch
+}
+
+
+//-----------------------------------EVENTS
+push recall {
+   	set_outputs();	
+}	// end push event
+
+push reset_selected {
+	string_store_1 = " ";
+	string_store_2 = " ";
+	string_store_3 = " ";
+	string_store_4 = " ";
+	string_store_5 = " ";
+	string_store_6 = " ";
+	string_store_7 = " ";
+	string_store_8 = " ";
+	set_outputs();
+}	
+
+push reset_all {
+	string_store_1 = " ";
+	string_store_2 = " ";
+	string_store_3 = " ";
+	string_store_4 = " ";
+	string_store_5 = " ";
+	string_store_6 = " ";
+	string_store_7 = " ";
+	string_store_8 = " ";
+	string_out_1 = string_store_1;
+	string_out_2 = string_store_2;
+	string_out_3 = string_store_3;
+	string_out_4 = string_store_4;
+	string_out_5 = string_store_5;
+	string_out_6 = string_store_6;
+	string_out_7 = string_store_7;
+	string_out_8 = string_store_8;	
+}
+
+
+change key_in {
+#if_defined DEBUG
+	Print ("key_in changed");
+#endif
+   
+    SWITCH (affect_string)
+    {
+     CASE (1):
+     {
+		string_store_1 = key_in; 
+		set_outputs();
+     }
+     CASE (2):
+     {
+      	string_store_2 = key_in; 
+		set_outputs();
+     }
+	 CASE (3):
+     {
+      	string_store_3 = key_in; 
+		set_outputs();
+     }
+     CASE (4):
+     {
+      	string_store_4 = key_in; 
+		set_outputs();
+     }
+     CASE (5):
+     {
+      	string_store_5 = key_in; 
+		set_outputs();
+     }
+     CASE (6):
+     {
+      	string_store_6 = key_in; 
+		set_outputs();
+     }
+	 CASE (7):
+     {
+      	string_store_7 = key_in; 
+		set_outputs();
+     }
+	 CASE (8):
+     {
+      	string_store_8 = key_in; 
+		set_outputs();
+     }
+
+    }//switch
+}	// end change event
+
+change affect_string{
+#if_defined DEBUG
+	Print ("affect_string changed");
+#endif
+
+	SWITCH (affect_string)
+    {
+     CASE (1):
+     {
+		key_out = string_store_1; 
+     }
+     CASE (2):
+     {
+      	key_out = string_store_2 ; 
+     }
+	 CASE (3):
+     {
+      	key_out = string_store_3; 
+     }
+     CASE (4):
+     {
+      	key_out = string_store_4; 
+     }
+     CASE (5):
+     {
+      	key_out = string_store_5; 
+     }
+     CASE (6):
+     {
+      	key_out = string_store_6; 
+     }
+     CASE (7):
+     {
+      	key_out = string_store_7; 
+     }
+     CASE (8):
+     {
+      	key_out = string_store_8; 
+     }
+
+    }//switch
+
+}
+
+
+//-------------------------------------MAIN
+Function Main() {
+	WaitForInitializationComplete();
+	set_outputs();
+}
+

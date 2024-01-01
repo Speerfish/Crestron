@@ -1,0 +1,666 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:		TANDBERG
+System Name:
+System Number:
+Programmer:			David B-L
+Comments:
+*/
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "Tandberg C90 + C60 Processor v1.3"
+// #HINT
+// #DEFINE_CONSTANT
+// #CATEGORY
+// #DEFAULT_VOLATILE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING     
+#DEFINE_CONSTANT MAXENTRIES 20
+#DEFINE_CONSTANT MAXENTRIESINLOCALPHONEBOOK 300
+#DEFINE_CONSTANT PHONEBOOKSOURCELOCALPHONEBOOK 1
+#DEFINE_CONSTANT PHONEBOOKSOURCECORPORATEPHONEBOOK 2
+
+#DEFINE_CONSTANT CORPDIRDIRECTIONFIRST 1
+#DEFINE_CONSTANT CORPDIRDIRECTIONNEXT 2
+#DEFINE_CONSTANT CORPDIRDIRECTIONPREV 3
+
+#DEFINE_CONSTANT NOTAVAILABLETEXT ""
+#DEFINE_CONSTANT GHOSTTAG "(ghost=True): /"
+
+#DEFINE_CONSTANT DEBUGMODE 0
+
+#HELP_BEGIN
+	For use inside the Tandberg C90 + C60 v1.3 module only.
+#HELP_END
+/*******************************************************************************************
+  Inputs & Outputs
+*******************************************************************************************/
+ANALOG_INPUT   entryOffSet;
+ANALOG_INPUT   entriesPerPage;
+BUFFER_INPUT   device_rx$[20000];
+DIGITAL_INPUT  getLocalPhonebook;
+ANALOG_INPUT   selectedEntryNumber;
+DIGITAL_INPUT  clearSelectedEntryNumber;
+DIGITAL_INPUT  dialSelectedPhonebookEntryNumber;
+ANALOG_INPUT   phonebookSourceId; // local or corporate
+ANALOG_INPUT   setVolumeLevel;
+DIGITAL_INPUT  upOneLevel; // pressed when in a subfolder and user has asked to browse to previous level
+DIGITAL_INPUT  searchPhonebook;
+
+STRING_INPUT   phonebookSearchString[82];
+STRING_OUTPUT  device_tx$;
+STRING_OUTPUT  SelectedPhonebook_Name, SelectedPhonebook_Number,	SelectedPhonebook_CallRate, Phonebook_Search_Text;
+ANALOG_OUTPUT  getVolumeLevel;
+STRING_OUTPUT  getSystemName;
+STRING_OUTPUT  getSystemNetworkAddress;
+STRING_OUTPUT  getGatekeeperStatus;
+STRING_OUTPUT  getGatekeeperRegistrationMode;
+STRING_OUTPUT  getGatekeeperNetworkAddress;
+STRING_OUTPUT  getSystemH323ID;
+STRING_OUTPUT  getSystemE164Alias;
+STRING_OUTPUT  getSystemSIPURI;
+STRING_OUTPUT  getSystemSoftwareVersion;
+
+STRING_OUTPUT  From_Device_ConfigurationChanges;
+STRING_OUTPUT  From_Device_StatusChanges;
+STRING_OUTPUT  From_Device_OtherChanges;
+STRING_OUTPUT  Message_Alert_Text;
+DIGITAL_OUTPUT Message_Alert_IsActive;               
+DIGITAL_OUTPUT Message_Prompt_IsActive;               
+STRING_OUTPUT  Message_Prompt_Title;
+STRING_OUTPUT  Message_Prompt_Text;
+STRING_OUTPUT  Message_Prompt_Option1_Text;
+STRING_OUTPUT  Message_Prompt_Option2_Text;
+STRING_OUTPUT  Message_Prompt_Option3_Text;
+STRING_OUTPUT  Message_Prompt_Option4_Text;
+STRING_OUTPUT  Message_Prompt_Option5_Text;
+DIGITAL_OUTPUT Message_Prompt_Option1_IsActive;               
+DIGITAL_OUTPUT Message_Prompt_Option2_IsActive;               
+DIGITAL_OUTPUT Message_Prompt_Option3_IsActive;               
+DIGITAL_OUTPUT Message_Prompt_Option4_IsActive;               
+DIGITAL_OUTPUT Message_Prompt_Option5_IsActive;               
+
+DIGITAL_OUTPUT Message_Prompt_Option1_WasSelected;               
+DIGITAL_OUTPUT Message_Prompt_Option2_WasSelected;               
+DIGITAL_OUTPUT Message_Prompt_Option3_WasSelected;               
+DIGITAL_OUTPUT Message_Prompt_Option4_WasSelected;               
+DIGITAL_OUTPUT Message_Prompt_Option5_WasSelected;               
+
+DIGITAL_OUTPUT Phonebook_Searchresult_Is_From_Subfolder;
+ANALOG_OUTPUT  currentFirstPhonebookItemNumber;
+ANALOG_OUTPUT  currentLastPhonebookItemNumber;
+STRING_OUTPUT  Phonebook_Selected_Folder_Name;
+DIGITAL_OUTPUT SearchIsActive;
+ANALOG_OUTPUT TotalRowsForSearch;
+
+// These MUST be last as they are expandable:
+STRING_OUTPUT  Phonebook_Name[MAXENTRIES];
+DIGITAL_OUTPUT Phonebook_IsFolder[MAXENTRIES,MAXENTRIES];
+STRING_OUTPUT  Input_Source_Name[5,5];
+    
+
+// Internal variables:
+INTEGER Semaphore;
+INTEGER previousFoundContactItem;
+INTEGER nextAvailableDirEntry;
+INTEGER internalEntryOffSet;
+STRING  selectedFolderId[40]; // id of selected folder for corporate phonebook
+INTEGER Number, Paramater, Level;
+INTEGER internalPhonebookFirst_Id;
+INTEGER internalPhonebookLast_Id;
+INTEGER internalPhonebookCache_Id[MAXENTRIES];
+INTEGER	internalPhonebookCache_IsFolder[MAXENTRIES];
+STRING	internalPhonebookCache_FolderId[MAXENTRIES][40];
+STRING	internalPhonebookCache_Name[MAXENTRIES][100];
+STRING	internalPhonebookCache_Number[MAXENTRIES][100];
+STRING	internalPhonebookCache_CallRate[MAXENTRIES][20];
+STRING	internalPhonebookCache_ContactId[MAXENTRIES][40];
+STRING  Tempstring$[3000];
+INTEGER ContactItem, entityId;
+STRING  phonebookEntryType[30];
+INTEGER tmp;
+STRING	sSearchText[82];
+STRING  Message_Prompt_FeedbackId[255];
+         
+//FUNCTIONS
+STRING_FUNCTION searchReplace(STRING data, STRING search, STRING replace)
+{
+	INTEGER pos;
+	pos = find(search, data);
+	while(pos>0)
+	{
+		SETSTRING(replace, pos, data);
+		data = mid(data, 1, pos) + mid(data, pos + 2, len(data));
+		pos = find(search, data);
+	}
+	if(DEBUGMODE) print("searchReplace\n");
+	return(data);
+}
+
+STRING_FUNCTION utf8ToISO8859(STRING data)
+{
+	data = searchReplace(data, "\xC3\xA6","æ");
+	data = searchReplace(data, "\xC3\xB8","ø");
+	data = searchReplace(data, "\xC3\xA5","å");
+	data = searchReplace(data, "\xC3\x86","Æ");
+	data = searchReplace(data, "\xC3\x98","Ø");
+	data = searchReplace(data, "\xC3\x85","Å");
+	data = searchReplace(data, "\xC3\xA9","é");
+	return (data);
+}  
+
+// Gets whatever comes after ":" in input string. Does NOT change the data string.
+STRING_FUNCTION getTagValueRemoveAmpersands(ByRef STRING data)
+{
+	INTEGER marker1, marker2;
+	STRING value[500];
+	marker1 = find(": \x22", data) + 3; // after ': "'
+	marker2 = find("\x22", data, marker1); // before last '"'
+	value = mid(data, marker1, marker2 - marker1);
+	if(DEBUGMODE) print("getTagValueRemoveAmpersands:\n");
+	return(value);
+}
+
+/* Gets whatever comes after token in text string */
+STRING_FUNCTION getStringAfterToken(STRING text, STRING token)
+{
+	INTEGER marker1, marker2;
+	STRING retVal[255];
+	if(find("\x0D\x0A", text) > 0)
+	{
+		text = mid(text, 1, find("\x0D\x0A", text)-1);
+	}
+	marker1 = find(token, text) + len(token);
+	marker2 = len(text) - (marker1-1);
+	retVal = mid(text, marker1, marker2);
+	if(DEBUGMODE) print("getStringAfterToken:\n");    
+	return (retVal);
+}
+
+// Gets whatever is in between two ampersands (") after give token e.g. text = ' myvalue: "hello world"' will return 'hello world'. If it does not find myvalue and two '"' then returns ""
+STRING_FUNCTION getStringTokenValue(STRING text, STRING token){
+    INTEGER marker1, marker2;
+    STRING value[500];
+    	
+    INTEGER endOfToken, startOfText, endOfText;
+	STRING retVal[255];
+
+	endOfToken = find(token, text) + len(token);
+	startOfText = find("\"", text, endOfToken) + 1;
+	endOfText = find("\"", text, startOfText);
+
+	if(endOfText > startOfText){
+		retVal = mid(text, startOfText, endOfText - startOfText);
+	}
+	if(DEBUGMODE) print("getStringTokenValue:\n");    
+	return (retVal);
+}
+
+
+
+// Gets whatever comes after ":" in input string. Does NOT change the data string.
+STRING_FUNCTION getTagValue(ByRef STRING data)
+{
+	INTEGER marker1, marker2;
+	STRING value[500];
+	if(find(GHOSTTAG, data))
+	{
+		return(NOTAVAILABLETEXT);
+	}
+	marker1 = find(": ", data) + 2; // after ": "
+	marker2 = find("\x0D\x0A", data); // before "\x0D\x0A"
+	value = mid(data, marker1, marker2 - marker1);
+	if(DEBUGMODE) print("getTagValue:\n");    
+	return(value);
+}
+
+// Clears all internal caches and phonebook signals
+Function ResetPhonebookList()
+{
+	INTEGER i;
+
+	nextAvailableDirEntry =  0;
+	previousFoundContactItem = 0;
+	SearchIsActive = 0;
+	TotalRowsForSearch = 0;
+
+	for(i = 1 to MAXENTRIES)
+	{
+		if(isSignalDefined(Phonebook_Name[i]))
+		{
+			Phonebook_Name[i] = NOTAVAILABLETEXT;
+		}
+		if(isSignalDefined(Phonebook_IsFolder[i]))
+		{
+			Phonebook_IsFolder[i] = 0;
+		}
+		internalPhonebookCache_Id[i] = 0;
+		internalPhonebookCache_IsFolder[i] = 0;
+		clearbuffer(internalPhonebookCache_Name[i]);
+		clearbuffer(internalPhonebookCache_Number[i]);
+		clearbuffer(internalPhonebookCache_CallRate[i]);
+		clearbuffer(internalPhonebookCache_ContactId[i]);
+		clearbuffer(internalPhonebookCache_FolderId[i]);
+	}
+}
+
+// Reset the current selected phonebook item
+FUNCTION ResetSelectedPhonebookItem()
+{
+	SelectedPhonebook_Name = "";
+	SelectedPhonebook_Number = "";
+	SelectedPhonebook_CallRate = "";
+}
+ 
+
+FUNCTION setSelectedMessagePromptResponse(INTEGER optionId){
+
+	if(optionId = 1) Message_Prompt_Option1_WasSelected = 1; else Message_Prompt_Option1_WasSelected = 0;
+	if(optionId = 2) Message_Prompt_Option2_WasSelected = 1; else Message_Prompt_Option2_WasSelected = 0;
+	if(optionId = 3) Message_Prompt_Option3_WasSelected = 1; else Message_Prompt_Option3_WasSelected = 0;
+	if(optionId = 4) Message_Prompt_Option4_WasSelected = 1; else Message_Prompt_Option4_WasSelected = 0;
+	if(optionId = 5) Message_Prompt_Option5_WasSelected = 1; else Message_Prompt_Option5_WasSelected = 0;
+}
+
+FUNCTION ResetMessagePrompt()
+{
+	Message_Prompt_IsActive = 0;
+	Message_Prompt_FeedbackId = "";
+	Message_Prompt_Title = "";
+	Message_Prompt_Text = "";
+	Message_Prompt_Option1_Text = "";
+	Message_Prompt_Option2_Text = "";
+	Message_Prompt_Option3_Text = "";
+	Message_Prompt_Option4_Text = "";
+	Message_Prompt_Option5_Text = "";
+	Message_Prompt_Option1_IsActive = 0;               
+	Message_Prompt_Option2_IsActive = 0;               
+	Message_Prompt_Option3_IsActive = 0;               
+	Message_Prompt_Option4_IsActive = 0;               
+	Message_Prompt_Option5_IsActive = 0; 
+}
+
+FUNCTION ResetEverything()
+{
+	call ResetPhonebookList();
+	call ResetSelectedPhonebookItem();
+	SearchIsActive = 0;
+	TotalRowsForSearch = 0;
+	internalEntryOffSet = 0;
+	selectedFolderId = "";
+	Phonebook_Searchresult_Is_From_Subfolder = 0;	
+	nextAvailableDirEntry = 0;
+	previousFoundContactItem = 0;
+	internalPhonebookLast_Id = 0;
+	internalPhonebookFirst_Id = 0;
+ 	CurrentFirstPhonebookItemNumber = 0;
+	CurrentLastPhonebookItemNumber = 0;
+	Phonebook_Selected_Folder_Name = "";
+	ResetMessagePrompt();
+}
+
+// Run the command for getting phonebook (same for local or corporate)
+Function runSearchPhonebook()
+{
+	INTEGER i;
+	INTEGER nextEntryToDisplay;
+	STRING path[4];
+	STRING phoneBookType[9];
+	STRING searchString[81];
+	INTEGER firstEntryToDisplay, lastEntryToDisplay;
+
+	ResetSelectedPhonebookItem();
+	firstEntryToDisplay = (entriesPerPage * internalEntryOffSet);
+	lastEntryToDisplay = firstEntryToDisplay + entriesPerPage;
+	if(lastEntryToDisplay > MAXENTRIESINLOCALPHONEBOOK)
+	{
+		lastEntryToDisplay = MAXENTRIESINLOCALPHONEBOOK;
+	}
+	ResetPhonebookList();
+	if(selectedFolderId <> "")
+	{
+		Phonebook_Searchresult_Is_From_Subfolder = 1;
+		MakeString(path, " FolderId: \x22%s\x22 ", selectedFolderId);
+	}
+	else
+	{
+		Phonebook_Searchresult_Is_From_Subfolder = 0;
+		path = "";
+	}
+	if(phonebookSourceId = PHONEBOOKSOURCECORPORATEPHONEBOOK)
+	{
+		phoneBookType = "Corporate";
+	}
+	else
+	{
+		phoneBookType = "Local";
+	}
+	
+   	SearchIsActive = 1;
+	makeString(searchString, " SearchString: \"%s\" ", sSearchText);
+	makeString(device_tx$, "xcommand Phonebook Search PhonebookType: %s Limit:%d Offset: %d %s%s\n", phoneBookType, entriesPerPage, firstEntryToDisplay, path, searchString);
+}
+
+FUNCTION SetPhonebookOffset(INTEGER newOffset)
+{
+	if(internalEntryOffSet != newOffset){
+	 	internalEntryOffSet = newOffset;
+//		print("Entryoffsett changed to %d\n", newOffset);
+		
+		runSearchPhonebook();
+	}
+ 	CurrentFirstPhonebookItemNumber = newOffset * entriesPerPage;
+	CurrentLastPhonebookItemNumber = CurrentFirstPhonebookItemNumber;
+}
+/*******************************************************************************************
+  Event Handlers
+*******************************************************************************************/       
+/* Send volume command to device */
+CHANGE setVolumeLevel
+{
+	MakeString(device_tx$, "xConfiguration Audio Volume: %s\n", itoa(setVolumeLevel));
+}
+         
+
+//todo: remove all handling in a function and not in change signal!
+CHANGE device_rx$
+{
+	STRING Tempstring$[3000];
+	STRING RemoveTempstring[30];
+    INTEGER ContactItem, entityId, inputSourceItem;          
+    STRING phonebookEntryType[14], inputsourceresponsetype[20];
+    INTEGER tmp;        	
+
+	if(Semaphore = 0)
+	{
+		Semaphore = 1;
+		while(find("\x0D\x0A", device_rx$) > 0)
+		{
+			Tempstring$ = remove("\x0D\x0A", device_rx$);
+			
+			if(left(Tempstring$, 18) = "*c xConfiguration "){
+				if(find("*c xConfiguration Audio Volume:", Tempstring$) > 0)
+				{
+					getVolumeLevel = atoi(getStringAfterToken(Tempstring$, "Volume: "));
+				}
+			    else if(find("*c xConfiguration SystemUnit Name", Tempstring$) > 0){
+					getSystemName = getStringTokenValue(Tempstring$, "Name: ");
+				}
+				else if(find("*c xConfiguration H323 Profile 1 H323Alias ID", Tempstring$) > 0){
+					getSystemH323ID = getStringTokenValue(Tempstring$, "H323Alias ID: ");
+				}
+				else if(find("*c xConfiguration H323 Profile 1 H323Alias E164", Tempstring$) > 0){
+					getSystemE164Alias = getStringTokenValue(Tempstring$, "E164: ");
+				}
+				else if(find("*c xConfiguration H323 Profile 1 Gatekeeper Discovery", Tempstring$) > 0){
+					getGatekeeperRegistrationMode = getTagValue(Tempstring$);
+				}
+				else if(find("*c xConfiguration SIP Profile 1 URI", Tempstring$) > 0){
+					getSystemSIPURI = getStringTokenValue(Tempstring$, "URI: ");
+				}
+				else{
+					From_Device_ConfigurationChanges = Tempstring$;
+					if(find(" Video Input Source ", Tempstring$) > 0)
+					{
+							Tempstring$ = getStringAfterToken(Tempstring$, "*c xConfiguration Video Input Source ");
+							inputSourceItem = atoi(remove(" ", Tempstring$)); // get entry item, the X in: "*c xConfiguration Video Input Source X"
+							inputsourceresponsetype = remove(":", Tempstring$);
+							if(inputsourceresponsetype = "Name:"){
+								Input_Source_Name[inputSourceItem] = getTagValueRemoveAmpersands(Tempstring$);
+							}			
+					}
+					}
+			}
+			else if(left(Tempstring$, 3) = "*s "){
+				if(find("*s H323 Gatekeeper Status", Tempstring$) > 0){
+					getGatekeeperStatus = getTagValue(Tempstring$);
+				}
+				else if(find("*s H323 Gatekeeper Address", Tempstring$) > 0){
+					getGatekeeperNetworkAddress = getStringTokenValue(Tempstring$, "Address: ");
+				}
+				else if(find("*s Network 1 IPv4 Address", Tempstring$) > 0){
+					getSystemNetworkAddress = getStringTokenValue(Tempstring$, "Address: ");
+				}
+				else if(find("*s SystemUnit Software Version", Tempstring$) > 0){
+					getSystemSoftwareVersion = getStringTokenValue(Tempstring$, "Version: ");
+				}
+				else{
+					From_Device_StatusChanges = Tempstring$;
+				}
+			}
+			else if(left(Tempstring$, 13) = "*r ResultSet "){
+				SearchIsActive = 0; // we have got results so now stop any animations for answers...
+
+				if(left(Tempstring$, 21) = "*r ResultSet Contact "){
+					if(nextAvailableDirEntry = 0){
+						CurrentFirstPhonebookItemNumber = internalEntryOffSet * entriesPerPage + 1;
+					}
+	
+					Tempstring$ = getStringAfterToken(Tempstring$, "*r ResultSet Contact ");
+//					RemoveTempstring = remove("*r ResultSet Contact ", Tempstring$);
+					ContactItem = atoi(remove(" ", Tempstring$)); // get entry item, the X in: "*r ResultSet Contact X"
+	
+						//Lets see if this contact has already been found.		
+					if(previousFoundContactItem <> ContactItem)
+					{
+						nextAvailableDirEntry = nextAvailableDirEntry + 1;
+						CurrentLastPhonebookItemNumber = CurrentLastPhonebookItemNumber +1; // we found new item - increment last number of findings
+					}
+					internalPhonebookCache_Id[nextAvailableDirEntry] = ContactItem;
+					internalPhonebookCache_IsFolder[nextAvailableDirEntry] = 0;
+					phonebookEntryType = mid(Tempstring$, 1, find(": ", Tempstring$)-1);
+					if(phonebookEntryType = "Name")
+					{
+						if(isSignalDefined(Phonebook_Name[nextAvailableDirEntry]))
+						{
+							internalPhonebookCache_Name[nextAvailableDirEntry] = utf8ToISO8859(getTagValueRemoveAmpersands(Tempstring$));
+							Phonebook_Name[nextAvailableDirEntry] = internalPhonebookCache_Name[nextAvailableDirEntry];				
+						}
+					}
+
+					else if(phonebookEntryType = "ContactId")
+					{
+						internalPhonebookCache_ContactId[nextAvailableDirEntry] = getTagValueRemoveAmpersands(Tempstring$);
+					}
+					else if(find("ContactMethod 1 Number", Tempstring$)>0) // Currently only supports 1 contact method per entry!!!
+					{
+						internalPhonebookCache_Number[nextAvailableDirEntry] = getTagValueRemoveAmpersands(Tempstring$);
+					}
+					else if(find("ContactMethod 1 CallRate", Tempstring$)>0) // Currently only supports 1 contact method per entry!!!
+					{
+						internalPhonebookCache_CallRate[nextAvailableDirEntry] = getTagValue(Tempstring$);
+					}
+
+					previousFoundContactItem = ContactItem;
+				}
+				else if(left(Tempstring$, 20) = "*r ResultSet Folder "){
+
+					if(nextAvailableDirEntry = 0){
+						CurrentFirstPhonebookItemNumber = internalEntryOffSet * entriesPerPage + 1;
+					}
+	
+					Tempstring$ = getStringAfterToken(Tempstring$, "*r ResultSet Folder ");
+					ContactItem = atoi(remove(" ", Tempstring$)); // get entry item, the X in: "*r ResultSet Contact X"
+					if(previousFoundContactItem <> ContactItem)
+					{
+						nextAvailableDirEntry = nextAvailableDirEntry + 1;
+						CurrentLastPhonebookItemNumber = CurrentLastPhonebookItemNumber +1; // we found new item - increment last number of findings
+					}
+					internalPhonebookCache_Id[nextAvailableDirEntry] = ContactItem;
+					internalPhonebookCache_IsFolder[nextAvailableDirEntry] = 1;
+					Phonebook_IsFolder[nextAvailableDirEntry] = 1;
+					phonebookEntryType = mid(Tempstring$, 1, find(": ", Tempstring$)-1);
+					if(phonebookEntryType = "Name")
+					{
+						if(isSignalDefined(Phonebook_Name[nextAvailableDirEntry]))
+						{
+							internalPhonebookCache_Name[nextAvailableDirEntry] = utf8ToISO8859(getTagValueRemoveAmpersands(Tempstring$));
+							Phonebook_Name[nextAvailableDirEntry] = internalPhonebookCache_Name[nextAvailableDirEntry];
+						}
+					}
+					else if (phonebookEntryType = "FolderId")
+					{
+						internalPhonebookCache_FolderId[nextAvailableDirEntry] = getTagValueRemoveAmpersands(Tempstring$);
+					}	
+					previousFoundContactItem = ContactItem;
+				}
+				else if(left(Tempstring$, 33) = "*r ResultSet ResultInfo TotalRows"){
+					TotalRowsForSearch = atoi(getTagValue(Tempstring$));
+				}
+			}
+			else if(left(Tempstring$, 16) = "*e Message Alert"){
+				if(left(Tempstring$, 30) = "*e Message Alert Display Text:"){
+					Message_Alert_Text = getTagValueRemoveAmpersands(Tempstring$);
+					Message_Alert_IsActive = 1;
+				}
+				else if(left(Tempstring$, 24) = "*e Message Alert Cleared"){
+					Message_Alert_Text = "";
+					Message_Alert_IsActive = 0;
+				}
+			}
+			else if(left(Tempstring$, 17) = "*e Message Prompt"){
+				if(left(Tempstring$, 32) = "*e Message Prompt Display Title:"){
+					Message_Prompt_Title = getTagValueRemoveAmpersands(Tempstring$);
+				}
+				else if(left(Tempstring$, 31) = "*e Message Prompt Display Text:"){
+					Message_Prompt_Text = getTagValueRemoveAmpersands(Tempstring$);
+					Message_Prompt_IsActive = 1;
+				}
+				else if(left(Tempstring$, 37) = "*e Message Prompt Display FeedbackId:"){
+					Message_Prompt_FeedbackId = getTagValueRemoveAmpersands(Tempstring$);
+				}
+				else if(left(Tempstring$, 35) = "*e Message Prompt Display Option.1:"){
+					Message_Prompt_Option1_Text = getTagValueRemoveAmpersands(Tempstring$);
+					Message_Prompt_Option1_IsActive = 1;               
+				}
+				else if(left(Tempstring$, 35) = "*e Message Prompt Display Option.2:"){
+					Message_Prompt_Option2_Text = getTagValueRemoveAmpersands(Tempstring$);
+					Message_Prompt_Option2_IsActive = 1;               
+				}
+				else if(left(Tempstring$, 35) = "*e Message Prompt Display Option.3:"){
+					Message_Prompt_Option3_Text = getTagValueRemoveAmpersands(Tempstring$);
+					Message_Prompt_Option3_IsActive = 1;               
+				}
+				else if(left(Tempstring$, 35) = "*e Message Prompt Display Option.4:"){
+					Message_Prompt_Option4_Text = getTagValueRemoveAmpersands(Tempstring$);
+					Message_Prompt_Option4_IsActive = 1;               
+				}
+				else if(left(Tempstring$, 35) = "*e Message Prompt Display Option.5:"){
+					Message_Prompt_Option5_Text = getTagValueRemoveAmpersands(Tempstring$);
+					Message_Prompt_Option5_IsActive = 1;               
+				}
+				else if(left(Tempstring$, 36) = "*e Message Prompt Response OptionId:"){
+					setSelectedMessagePromptResponse(atoi(Tempstring$));
+				}
+				else if(left(Tempstring$, 25) = "*e Message Prompt Cleared"){
+					ResetMessagePrompt();
+				}
+			}
+			else{
+				From_Device_OtherChanges = Tempstring$;
+			}
+		}
+		
+		Semaphore = 0;
+	}
+}
+
+CHANGE selectedEntryNumber
+{
+	call ResetSelectedPhonebookItem(); // clear what was previously selected
+	// check that there exists an item on the selected entry
+	if(selectedEntryNumber > 0 && internalPhonebookCache_Id[selectedEntryNumber] > 0)
+	{
+		if(internalPhonebookCache_IsFolder[selectedEntryNumber] = 1)
+		{
+				// the user has selected a folder in the phonebook listing. We therefore need to get the content of this
+				// folder and repopulate the lists.
+			selectedFolderId = internalPhonebookCache_FolderId[selectedEntryNumber];
+			Phonebook_Selected_Folder_Name = internalPhonebookCache_Name[selectedEntryNumber];
+			runSearchPhonebook();
+		}
+		else
+		{
+			// copy values from the cache to the selected phonebook details signals
+			SelectedPhonebook_Name = internalPhonebookCache_Name[selectedEntryNumber];
+			SelectedPhonebook_Number = internalPhonebookCache_Number[selectedEntryNumber];
+			SelectedPhonebook_CallRate = internalPhonebookCache_CallRate[selectedEntryNumber];
+		}
+	}
+}
+
+PUSH clearSelectedEntryNumber
+{
+	call ResetSelectedPhonebookItem(); // clear what was previously selected
+}
+
+PUSH getLocalPhonebook
+{
+	ResetEverything();
+//	sSearchText = "";
+//	Phonebook_Search_Text = sSearchText;
+	runSearchPhonebook();
+}
+
+PUSH dialSelectedPhonebookEntryNumber
+{
+	/* 
+	   This is a modified copy of the dialCall command found in the CallControl module.
+	   It is needed here until the Cx API gets a "xCommand Phonebook Dial" function for
+	   dialling a phonebook entry directly
+	*/
+	STRING dialString[220];
+	if(len(internalPhonebookCache_Number[selectedEntryNumber])>0)
+	{
+		makeString(dialString, "xCommand Dial Number: \"%s\"", internalPhonebookCache_Number[selectedEntryNumber]);
+		if(len(internalPhonebookCache_CallRate[selectedEntryNumber]) > 0)
+		{
+			dialString = dialString + " CallRate: " + internalPhonebookCache_CallRate[selectedEntryNumber];
+		}
+		makeString(device_tx$, "%s\n", dialString);
+	}
+}
+
+PUSH searchPhonebook
+{
+	call SetPhonebookOffset(0);
+	runSearchPhonebook();
+}
+
+CHANGE entryOffset
+{
+	call SetPhonebookOffset(entryOffset);
+}
+
+CHANGE phonebookSearchString
+{
+	if(sSearchText <> phonebookSearchString)
+	{
+		sSearchText = phonebookSearchString;
+		Phonebook_Search_Text = sSearchText;
+	}
+}
+
+push upOneLevel
+{
+	ResetEverything();
+	runSearchPhonebook();
+}
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+	Semaphore = 0;
+	ResetEverything();
+}

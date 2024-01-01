@@ -1,0 +1,47 @@
+#symbol_name "nvilock"
+#hint "non-volatile interlock"
+#help_begin
+   Works just like the interlock symbol,
+but output state is restored at startup.
+#help_end
+
+#DIGITAL_EXPAND InputsWithOutputs
+
+//--------------------------------CONSTANTS
+
+//---------------------------------------IO
+digital_input	in[64];
+
+digital_output	out[64];
+
+//----------------------------------GLOBALS
+integer			output;
+
+//--------------------------------FUNCTIONS
+
+//-----------------------------------EVENTS
+push in {
+	
+    if (output = getLastModifiedArrayIndex())	// ignore multiple presses
+    	terminateEvent;
+    
+	else if (output > 0) out[output]	= 0;	// break previous output
+	
+	output = getLastModifiedArrayIndex();		// store new output
+	out[output]	= 1;							// set new output
+	
+}	// end push event
+
+//-------------------------------------MAIN
+Function Main() {
+integer	inputCount;
+	
+	for (inputCount = 64 to 1 step -1)				// count inputs
+		if (isSignalDefined(in[inputCount])) break;
+	
+	if (output = 0) output = 1;						// output underflow
+	if (output > inputCount) output = 1;			// output overflow protection
+	
+	out[output] = 1;								// assert active output
+	
+}	// end MAIN

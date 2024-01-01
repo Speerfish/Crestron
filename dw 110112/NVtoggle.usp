@@ -1,0 +1,52 @@
+#symbol_name "nvtoggle"
+#hint "non-volatile toggle"
+#help_begin
+   Works just like the toggle symbol,
+but output state is restored at startup.
+#help_end
+
+//#DIGITAL_EXPAND InputsWithOutputs
+
+//--------------------------------CONSTANTS
+
+//---------------------------------------IO
+digital_input	set, reset, clock;
+
+digital_output	out, out_not;
+
+//----------------------------------GLOBALS
+integer			state;
+
+//--------------------------------FUNCTIONS
+Function set_outputs (){
+	out = state;
+	out_not = !state;
+}
+
+
+//-----------------------------------EVENTS
+push set {
+    state = 1;
+	set_outputs();	
+}	// end push event
+
+push reset {
+	state = 0;
+	set_outputs();
+}	// end clear event
+
+push clock {
+    if (out = 0) {
+		state = 1;
+	}
+	else if (out = 1){
+		state = 0;	
+	}
+	set_outputs();
+}	// end push event
+
+//-------------------------------------MAIN
+Function Main() {
+	set_outputs();
+}
+

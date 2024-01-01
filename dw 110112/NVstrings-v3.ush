@@ -1,0 +1,100 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.13
+  InclDatVrs=1.69
+  CrossCplrVrs=1.3
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=Simply saves strings in non-volatile ram.  There is no need to recall||1
+  Cmn2=and store, \\as this happens automatically.  Both key_in and key_out||1
+  Cmn3=should both see the \\same keyboard output signal.
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,213,214,215,216,217,225,226,248,249,266,267,310,718,756,854,
+  Name=nvstrings v3
+  SmplCName=NVstrings-v3.usp
+  Code=1
+  SysRev5=3.090
+  InputCue1=recall
+  InputSigType1=Digital
+  InputCue2=reset_selected
+  InputSigType2=Digital
+  InputCue3=reset_all
+  InputSigType3=Digital
+  InputCue4=use_integer_default
+  InputSigType4=Digital
+  OutputCue1=saved
+  OutputSigType1=Digital
+  OutputCue2=recalled
+  OutputSigType2=Digital
+  InputList2Cue1=affect_string
+  InputList2SigType1=Analog
+  InputList2Cue2=key_in
+  InputList2SigType2=Serial
+  OutputList2Cue1=key_out
+  OutputList2SigType1=Serial
+  OutputList2Cue2=string_out_1
+  OutputList2SigType2=Serial
+  OutputList2Cue3=string_out_2
+  OutputList2SigType3=Serial
+  OutputList2Cue4=string_out_3
+  OutputList2SigType4=Serial
+  OutputList2Cue5=string_out_4
+  OutputList2SigType5=Serial
+  OutputList2Cue6=string_out_5
+  OutputList2SigType6=Serial
+  OutputList2Cue7=string_out_6
+  OutputList2SigType7=Serial
+  OutputList2Cue8=string_out_7
+  OutputList2SigType8=Serial
+  OutputList2Cue9=string_out_8
+  OutputList2SigType9=Serial
+  ParamCue1=[Reference Name]
+  MinVariableInputs=4
+  MaxVariableInputs=4
+  MinVariableInputsList2=2
+  MaxVariableInputsList2=2
+  MinVariableOutputs=2
+  MaxVariableOutputs=2
+  MinVariableOutputsList2=9
+  MaxVariableOutputsList2=9
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=non-volatile string memory
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_NVstrings_v3
+  SymJam=NonExclusive
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]
