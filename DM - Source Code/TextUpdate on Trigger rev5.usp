@@ -1,0 +1,80 @@
+/***********************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************/
+/*
+Dealer Name: 
+System Name: 
+System Number: 
+Programmer: 
+Comments: 
+*/
+
+//#SYMBOL_NAME "TextUpdate"
+
+#DEFINE_CONSTANT MAX_INPUT_OUTPUT	200
+
+#DEFAULT_VOLATILE
+
+DIGITAL_INPUT Enable, Output_On_Trigger_Only, Trigger ;
+STRING_INPUT Input$[MAX_INPUT_OUTPUT][255];
+
+STRING_OUTPUT Output$[MAX_INPUT_OUTPUT];
+               
+Integer iOutputCount;
+
+PUSH Enable
+{
+  integer x;
+  
+  if (!Output_On_Trigger_Only && iOutputCount > 0)
+  {
+    for (x = 1 to iOutputCount)
+    { 
+      Output$[x] = Input$[x];
+    }
+  }  
+}
+
+PUSH Trigger
+{
+   integer x;
+   
+   if (Enable)
+   { 
+   	if (iOutputCount > 0)
+   	{
+    	for (x = 1 to iOutputCount)
+    	{ 
+    		Output$[x] = Input$[x];
+    	}
+   	}
+   }
+}
+
+CHANGE Input$
+{
+	integer x;
+	
+	x = getlastmodifiedarrayindex();
+	
+	if (Enable && !Output_On_Trigger_Only)
+	 Output$[x] = Input$[x];
+}
+
+Function Main()
+{
+	Integer x;
+	
+	iOutputCount = 0;
+	
+	for (x = 1 to MAX_INPUT_OUTPUT)
+	{
+		if (issignaldefined(Output$[x]))
+		{
+			iOutputCount = iOutputCount + 1;
+		}
+		else
+		 break;
+	}
+}
