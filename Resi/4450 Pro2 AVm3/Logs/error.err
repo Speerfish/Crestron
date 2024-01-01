@@ -1,0 +1,205 @@
+
+System log:
+
+  1. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 14:19:54 11-09-10   UpTime: 0 days 19:50:44.62  Task: CRHostH
+  2. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:20:16 11-09-10   UpTime: 0 days 19:51:06.99  Task: SUrH-S09
+  3. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 14:20:16 11-09-10   UpTime: 0 days 19:51:07.01  Task: SUrH-S09
+  4. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:20:17 11-09-10   UpTime: 0 days 19:51:07.81  Task: SUrH-S09
+  5. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 14:20:17 11-09-10   UpTime: 0 days 19:51:07.94  Task: SUrH-S09
+  6. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 14:20:18 11-09-10   UpTime: 0 days 19:51:08.66  Task: SUrH-S09
+  7. Notice: **Restarting Program**
+     TimeStamp: 14:30:06 11-09-10   UpTime: 0 days 20:00:55.55  Task: ProgramR
+  8. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 14:30:06 11-09-10   UpTime: 0 days 20:00:58.06  Task: LogicPro
+  9. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 14:30:10 11-09-10   UpTime: 0 days 20:00:59.51  Task: CRHostH
+ 10. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 14:30:10 11-09-10   UpTime: 0 days 20:00:59.58  Task: CRHostH
+ 11. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 14:30:11 11-09-10   UpTime: 0 days 20:01:00.76  Task: CRHostH
+ 12. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:30:33 11-09-10   UpTime: 0 days 20:01:23.09  Task: SUrH-S09
+ 13. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 14:30:33 11-09-10   UpTime: 0 days 20:01:23.11  Task: SUrH-S09
+ 14. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:30:34 11-09-10   UpTime: 0 days 20:01:23.91  Task: SUrH-S09
+ 15. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 14:30:34 11-09-10   UpTime: 0 days 20:01:24.02  Task: SUrH-S09
+ 16. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 14:30:35 11-09-10   UpTime: 0 days 20:01:24.73  Task: SUrH-S09
+ 17. Notice: **Restarting Program**
+     TimeStamp: 14:35:03 11-09-10   UpTime: 0 days 20:05:54.25  Task: ProgramR
+ 18. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 14:35:03 11-09-10   UpTime: 0 days 20:05:56.84  Task: LogicPro
+ 19. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 14:35:07 11-09-10   UpTime: 0 days 20:05:58.18  Task: CRHostH
+ 20. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 14:35:07 11-09-10   UpTime: 0 days 20:05:58.31  Task: CRHostH
+ 21. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 14:35:08 11-09-10   UpTime: 0 days 20:05:59.37  Task: CRHostH
+ 22. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:35:31 11-09-10   UpTime: 0 days 20:06:21.88  Task: SUrH-S09
+ 23. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 14:35:31 11-09-10   UpTime: 0 days 20:06:21.91  Task: SUrH-S09
+ 24. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:35:32 11-09-10   UpTime: 0 days 20:06:22.71  Task: SUrH-S09
+ 25. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 14:35:32 11-09-10   UpTime: 0 days 20:06:22.85  Task: SUrH-S09
+ 26. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 14:35:33 11-09-10   UpTime: 0 days 20:06:23.56  Task: SUrH-S09
+ 27. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 14:40:52 11-09-10   UpTime: 0 days 20:11:41.81  Task: SUrH-S09
+ 28. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:40:52 11-09-10   UpTime: 0 days 20:11:42.57  Task: SUrH-S09
+ 29. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 14:43:57 11-09-10   UpTime: 0 days 20:14:47.78  Task: SUrH-S09
+ 30. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:43:58 11-09-10   UpTime: 0 days 20:14:48.56  Task: SUrH-S09
+ 31. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 14:50:42 11-09-10   UpTime: 0 days 20:21:31.72  Task: SUrH-S09
+ 32. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 14:50:42 11-09-10   UpTime: 0 days 20:21:32.54  Task: SUrH-S09
+ 33. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 15:02:55 11-09-10   UpTime: 0 days 20:33:45.80  Task: SUrH-S09
+ 34. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 15:02:56 11-09-10   UpTime: 0 days 20:33:46.63  Task: SUrH-S09
+ 35. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 15:05:44 11-09-10   UpTime: 0 days 20:36:34.01  Task: SUrH-S09
+ 36. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 15:05:45 11-09-10   UpTime: 0 days 20:36:34.80  Task: SUrH-S09
+ 37. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:11:31 11-09-10   UpTime: 0 days 20:42:20.86  Task: CRHostH
+ 38. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:11:31 11-09-10   UpTime: 0 days 20:42:20.95  Task: CRHostH
+ 39. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:11:40 11-09-10   UpTime: 0 days 20:42:29.81  Task: CRHostH
+ 40. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:11:40 11-09-10   UpTime: 0 days 20:42:29.93  Task: CRHostH
+ 41. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:13:26 11-09-10   UpTime: 0 days 20:44:15.85  Task: CRHostH
+ 42. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:13:26 11-09-10   UpTime: 0 days 20:44:15.94  Task: CRHostH
+ 43. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:35:49 11-09-10   UpTime: 0 days 21:06:39.00  Task: CRHostH
+ 44. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:35:49 11-09-10   UpTime: 0 days 21:06:39.10  Task: CRHostH
+ 45. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:35:51 11-09-10   UpTime: 0 days 21:06:41.30  Task: CRHostH
+ 46. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:35:53 11-09-10   UpTime: 0 days 21:06:42.38  Task: CRHostH
+ 47. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:36:56 11-09-10   UpTime: 0 days 21:07:45.74  Task: CRHostH
+ 48. Error: Message from device Slot-09.ID-26: Symbol Mismatch (0056:0000:0056)
+     TimeStamp: 15:36:56 11-09-10   UpTime: 0 days 21:07:45.89  Task: CRHostH
+ 49. Notice: **Restarting Program**
+     TimeStamp: 16:05:00 11-09-10   UpTime: 0 days 21:35:49.90  Task: ProgramR
+ 50. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 16:05:00 11-09-10   UpTime: 0 days 21:35:52.46  Task: LogicPro
+ 51. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 16:05:28 11-09-10   UpTime: 0 days 21:36:17.73  Task: SUrH-S09
+ 52. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 16:05:28 11-09-10   UpTime: 0 days 21:36:17.75  Task: SUrH-S09
+ 53. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 16:05:29 11-09-10   UpTime: 0 days 21:36:18.62  Task: SUrH-S09
+ 54. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 16:05:29 11-09-10   UpTime: 0 days 21:36:18.75  Task: SUrH-S09
+ 55. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 16:05:30 11-09-10   UpTime: 0 days 21:36:19.44  Task: SUrH-S09
+ 56. Notice: **Restarting Program**
+     TimeStamp: 17:25:00 11-09-10   UpTime: 0 days 22:55:49.84  Task: ProgramR
+ 57. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 17:25:00 11-09-10   UpTime: 0 days 22:55:52.40  Task: LogicPro
+ 58. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 17:25:27 11-09-10   UpTime: 0 days 22:56:17.62  Task: SUrH-S09
+ 59. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 17:25:27 11-09-10   UpTime: 0 days 22:56:17.63  Task: SUrH-S09
+ 60. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 17:25:28 11-09-10   UpTime: 0 days 22:56:18.45  Task: SUrH-S09
+ 61. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 17:25:28 11-09-10   UpTime: 0 days 22:56:18.58  Task: SUrH-S09
+ 62. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 17:25:29 11-09-10   UpTime: 0 days 22:56:19.28  Task: SUrH-S09
+ 63. Notice: **Restarting Program**
+     TimeStamp: 17:45:41 11-09-10   UpTime: 0 days 23:16:30.68  Task: ProgramR
+ 64. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 17:45:41 11-09-10   UpTime: 0 days 23:16:33.14  Task: LogicPro
+ 65. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 17:46:09 11-09-10   UpTime: 0 days 23:16:58.40  Task: SUrH-S09
+ 66. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 17:46:09 11-09-10   UpTime: 0 days 23:16:58.42  Task: SUrH-S09
+ 67. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 17:46:09 11-09-10   UpTime: 0 days 23:16:59.27  Task: SUrH-S09
+ 68. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 17:46:10 11-09-10   UpTime: 0 days 23:16:59.37  Task: SUrH-S09
+ 69. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 17:46:10 11-09-10   UpTime: 0 days 23:17:00.09  Task: SUrH-S09
+ 70. Error: TPS_FileOpen: NVRAM disk is not configured
+     TimeStamp: 17:47:20 11-09-10   UpTime: 0 days 23:18:09.70  Task: WAIT_SAV
+ 71. Error: TPS_FileOpen: NVRAM disk is not configured
+     TimeStamp: 17:47:58 11-09-10   UpTime: 0 days 23:18:48.38  Task: WAIT_SAV
+ 72. Notice: **Restarting Program**
+     TimeStamp: 18:38:02 11-09-10   UpTime: 1 days 00:08:52.09  Task: ProgramR
+ 73. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 18:38:02 11-09-10   UpTime: 1 days 00:08:55.38  Task: LogicPro
+ 74. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 18:38:31 11-09-10   UpTime: 1 days 00:09:21.02  Task: SUrH-S09
+ 75. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 18:38:31 11-09-10   UpTime: 1 days 00:09:21.04  Task: SUrH-S09
+ 76. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 18:38:32 11-09-10   UpTime: 1 days 00:09:21.84  Task: SUrH-S09
+ 77. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 18:38:32 11-09-10   UpTime: 1 days 00:09:21.96  Task: SUrH-S09
+ 78. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 18:38:33 11-09-10   UpTime: 1 days 00:09:22.82  Task: SUrH-S09
+ 79. Notice: **Restarting Program**
+     TimeStamp: 18:46:00 11-09-10   UpTime: 1 days 00:16:49.87  Task: ProgramR
+ 80. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 18:46:00 11-09-10   UpTime: 1 days 00:16:53.18  Task: LogicPro
+ 81. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 18:46:29 11-09-10   UpTime: 1 days 00:17:19.17  Task: SUrH-S09
+ 82. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 18:46:29 11-09-10   UpTime: 1 days 00:17:19.19  Task: SUrH-S09
+ 83. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 18:46:30 11-09-10   UpTime: 1 days 00:17:20.11  Task: SUrH-S09
+ 84. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 18:46:30 11-09-10   UpTime: 1 days 00:17:20.34  Task: SUrH-S09
+ 85. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 18:46:32 11-09-10   UpTime: 1 days 00:17:21.83  Task: SUrH-S09
+ 86. Error: TPS_FileOpen: NVRAM disk is not configured
+     TimeStamp: 18:50:34 11-09-10   UpTime: 1 days 00:21:23.91  Task: WAIT_SAV
+ 87. Notice: **Restarting Program**
+     TimeStamp: 19:22:08 11-09-10   UpTime: 1 days 00:52:58.23  Task: ProgramR
+ 88. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 19:22:08 11-09-10   UpTime: 1 days 00:53:01.66  Task: LogicPro
+ 89. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 19:22:38 11-09-10   UpTime: 1 days 00:53:27.73  Task: SUrH-S09
+ 90. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 19:22:38 11-09-10   UpTime: 1 days 00:53:27.76  Task: SUrH-S09
+ 91. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 19:22:39 11-09-10   UpTime: 1 days 00:53:29.07  Task: SUrH-S09
+ 92. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 19:22:40 11-09-10   UpTime: 1 days 00:53:29.79  Task: SUrH-S09
+ 93. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 19:22:41 11-09-10   UpTime: 1 days 00:53:30.57  Task: SUrH-S09
+ 94. Notice: **Restarting Program**
+     TimeStamp: 19:23:24 11-09-10   UpTime: 1 days 00:54:13.58  Task: ProgramR
+ 95. Error: Permanent String in symbol Slot-08.IP-ID-20 was declared as 0 characters; must be greater than 0 characters. (00B0:0000:00B0)
+     TimeStamp: 19:23:24 11-09-10   UpTime: 1 days 00:54:16.91  Task: LogicPro
+ 96. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 19:23:53 11-09-10   UpTime: 1 days 00:54:43.01  Task: SUrH-S09
+ 97. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2E.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 19:23:53 11-09-10   UpTime: 1 days 00:54:43.04  Task: SUrH-S09
+ 98. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-03. (00A9:0000:00A9)
+     TimeStamp: 19:23:54 11-09-10   UpTime: 1 days 00:54:44.08  Task: SUrH-S09
+ 99. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-04. (00A9:0000:00A9)
+     TimeStamp: 19:23:54 11-09-10   UpTime: 1 days 00:54:44.20  Task: SUrH-S09
+100. Error: Did not receive End Of Query Acknowledge from device at Slot-09.ID-2F.RF-ID-05. (00A9:0000:00A9)
+     TimeStamp: 19:23:56 11-09-10   UpTime: 1 days 00:54:45.70  Task: SUrH-S09
+Total Errors Logged = 187
+End of System log
