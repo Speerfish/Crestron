@@ -1,0 +1,345 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+#CATEGORY "46" "Ameristar Audio" // Custom
+// #DEFAULT_VOLATILE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional libraries as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT Bar_8024,Bar_Alt,Casino,Star,Fireside,Buffet,Grill,_SKIP_;
+DIGITAL_INPUT In[18];
+ANALOG_INPUT _SKIP_,Vol;
+// STRING_INPUT 
+// BUFFER_INPUT 
+
+DIGITAL_OUTPUT _SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_;
+DIGITAL_OUTPUT In_FB[18];
+ANALOG_OUTPUT _SKIP_,Vol_Out,_SKIP_;
+// STRING_OUTPUT Bar_8024$,Bar_Alt$,Casino$,Star$,Fireside$,Buffet$,Grill$,_SKIP_;
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+/*
+STRUCTURE MyStruct1
+{
+};
+
+MyStruct1 struct;
+*/
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER Dest,In_8024,In_Alt,In_Casino,In_Star,In_Fireside,In_Buffet,In_Grill;
+INTEGER Vol_8024,Vol_Alt,Vol_Casino,Vol_Star,Vol_Fireside,Vol_Buffet,Vol_Grill;
+// LONG_INTEGER
+// SIGNED_INTEGER
+// SIGNED_LONG_INTEGER
+// STRING
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+PUSH Bar_8024
+{
+	Integer i;
+	
+	Dest = 1;
+	
+	For(i = 1 to 18)
+	{
+		If(In_8024 = i)
+		{
+			In_FB[i] = 1;
+		}
+		Else
+		{
+			In_FB[i] = 0;
+		}
+	}
+	
+	Vol_Out = Vol_8024;
+}
+PUSH Bar_Alt
+{
+	Integer i;
+	
+	Dest = 2;
+	
+	For(i = 1 to 18)
+	{
+		If(In_Alt = i)
+		{
+			In_FB[i] = 1;
+		}
+		Else
+		{
+			In_FB[i] = 0;
+		}
+	}
+	
+	Vol_Out = Vol_Alt;
+}
+PUSH Casino
+{
+	Integer i;
+	
+	Dest = 3;
+	
+	For(i = 1 to 18)
+	{
+		If(In_Casino = i)
+		{
+			In_FB[i] = 1;
+		}
+		Else
+		{
+			In_FB[i] = 0;
+		}
+	}
+	
+	Vol_Out = Vol_Casino;
+}
+PUSH Star
+{
+	Integer i;
+	
+	Dest = 4;
+	
+	For(i = 1 to 18)
+	{
+		If(In_Star = i)
+		{
+			In_FB[i] = 1;
+		}
+		Else
+		{
+			In_FB[i] = 0;
+		}
+	}
+	
+	Vol_Out = Vol_Star;
+}
+PUSH Fireside
+{
+	Integer i;
+	
+	Dest = 5;
+	
+	For(i = 1 to 18)
+	{
+		If(In_Fireside = i)
+		{
+			In_FB[i] = 1;
+		}
+		Else
+		{
+			In_FB[i] = 0;
+		}
+	}
+	
+	Vol_Out = Vol_Fireside;
+}
+PUSH Buffet
+{
+	Integer i;
+	
+	Dest = 6;
+	
+	For(i = 1 to 18)
+	{
+		If(In_Buffet = i)
+		{
+			In_FB[i] = 1;
+		}
+		Else
+		{
+			In_FB[i] = 0;
+		}
+	}
+	
+	Vol_Out = Vol_Buffet;
+}
+PUSH Grill
+{
+	Integer i;
+	
+	Dest = 7;
+	
+	For(i = 1 to 18)
+	{
+		If(In_Grill = i)
+		{
+			In_FB[i] = 1;
+		}
+		Else
+		{
+			In_FB[i] = 0;
+		}
+	}
+	
+	Vol_Out = Vol_Grill;
+}
+PUSH In
+{
+	Integer i,j;
+	
+	i = getlastmodifiedarrayindex();
+	
+	If(Dest = 1)
+	{
+		In_8024 = i;
+	}
+	If(Dest = 2)
+	{
+		In_Alt = i;
+	}
+	If(Dest = 3)
+	{
+		In_Casino = i;
+	}
+	If(Dest = 4)
+	{
+		In_Star = i;
+	}
+	If(Dest = 5)
+	{
+		In_Fireside = i;
+	}
+	If(Dest = 6)
+	{
+		In_Buffet = i;
+	}
+	If(Dest = 7)
+	{
+		In_Grill = i;
+	}
+	
+	For(j = 1 to 18)
+	{
+		If(j = i)
+		{
+			In_FB[j] = 1;
+		}
+		Else
+		{
+			In_FB[j] = 0;
+		}
+	}
+}
+CHANGE Vol
+{
+	If(Dest = 1)
+	{
+		Vol_8024 = Vol;
+	}
+	If(Dest = 2)
+	{
+		Vol_Alt = Vol;
+	}
+	If(Dest = 3)
+	{
+		Vol_Casino = Vol;
+	}
+	If(Dest = 4)
+	{
+		Vol_Star = Vol;
+	}
+	If(Dest = 5)
+	{
+		Vol_Fireside = Vol;
+	}
+	If(Dest = 6)
+	{
+		Vol_Buffet = Vol;
+	}
+	If(Dest = 7)
+	{
+		Vol_Grill = Vol;
+	}
+}
+/*
+RELEASE input
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+CHANGE input
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+EVENT
+{
+    // TODO:  Add code here
+}
+*/
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+/*
+Function Main()
+{
+    // TODO:  Add code here
+    // Initialize declared global and local variables/arrays as needed.
+
+    // WaitForInitializationComplete();
+    // If you are reading any Input or Output variables, uncomment
+    //   the WaitForInitializationComplete statement above and read
+    //   them afterwards.  Input/Output variables will not have
+    //   their correct values set until after the logic processor
+    //   runs and propagates the values to them.
+}
+*/
+

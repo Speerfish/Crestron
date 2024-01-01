@@ -1,0 +1,379 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+#CATEGORY "43" // QM Modules
+// #DEFAULT_VOLATILE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+DIGITAL_INPUT PC,Laptop,DVD_1,DVD_2,Sat,_SKIP_;
+DIGITAL_INPUT Preview,Program,_SKIP_;
+DIGITAL_INPUT Power_Off,_SKIP_;
+DIGITAL_INPUT Change_17,Change_17_N,_SKIP_,RX_15out, ClearRX;
+
+// ANALOG_INPUT 
+// STRING_INPUT 
+// BUFFER_INPUT 
+
+DIGITAL_OUTPUT PC_FB,Laptop_FB,DVD_1_FB,DVD_2_FB,Sat_FB,_SKIP_,Program_FB,Preview_FB,_SKIP_;
+ANALOG_OUTPUT MPS_Program,MPS_Preview,_SKIP_;
+ANALOG_OUTPUT TPMC_17,TPMC_15,_SKIP_,QM_Rx,_SKIP_;
+ANALOG_OUTPUT QM_Out[8,8];
+
+// STRING_OUTPUT 
+
+INTEGER iProgram,iPreview,Change_17_On, TPMC15i,QM_RXi;
+// LONG_INTEGER
+// SIGNED_INTEGER
+PUSH Change_17
+{
+	Change_17_On = 1;
+}
+PUSH Change_17_N
+{
+	Change_17_On = 0;
+}
+PUSH Program
+{
+	iProgram = 1;
+	iPreview = 0;
+	
+	Program_FB = 1;
+	Preview_FB = 0;
+	
+	TPMC_17 = 9;
+	TPMC_15 = 9;
+	TPMC15i = 9;
+}
+PUSH Preview
+{
+	iProgram = 0;
+	iPreview = 1;
+	
+	Program_FB = 0;
+	Preview_FB = 1;
+	
+	TPMC_17 = 10;
+	TPMC_15 = 10;
+	TPMC15i = 10;
+}
+PUSH Power_Off
+{
+		MPS_Preview = 0;
+		//TPMC_17 = 10;
+		//TPMC_15 = 10;
+		
+		// Without Preview/Program
+		// Comment out when this is activated
+		QM_Out[2] = 0;
+		
+		If(Change_17_On = 1)
+		{
+			TPMC_17 = 9;
+			QM_Out[6] = 0;
+			QM_Out[8] = 0;
+		}
+		TPMC_15 = 9;
+		TPMC15i = 9;
+		QM_Out[5] = 0;
+		QM_Out[7] = 0;		
+		
+		QM_Rx = 0;
+		
+		PC_FB = 0;
+		Laptop_FB = 0;
+		DVD_1_FB = 0;
+		DVD_2_FB = 0;
+		Sat_FB = 0;
+}
+PUSH PC
+{
+	If(iPreview)
+	{
+		MPS_Preview = 3;
+		QM_Out[5] = 5;
+		QM_Out[7] = 5;
+		
+		//TPMC_17 = 10;
+		//TPMC_15 = 10;
+		
+		// Without Preview/Program
+		// Comment out when this is activated
+		QM_Out[2] = 5;
+		
+		If(Change_17_On = 1)
+		{
+			TPMC_17 = 1;
+			QM_Out[6] = 5;
+			QM_Out[8] = 5;
+		}
+		TPMC_15 = 1;
+		TPMC15i = 1;
+		
+		QM_Rx = 1;
+		
+		PC_FB = 1;
+		Laptop_FB = 0;
+		DVD_1_FB = 0;
+		DVD_2_FB = 0;
+		Sat_FB = 0;
+	}	
+	If(iProgram)
+	{
+		MPS_Program = 3;
+		QM_Out[2] = 1;
+		QM_Out[5] = 1;
+		QM_Out[6] = 1;
+		
+		TPMC_17 = 9;
+		TPMC_15 = 9;
+		TPMC15i = 9;
+		
+		QM_Rx = 1;
+		
+		PC_FB = 1;
+		Laptop_FB = 0;
+		DVD_1_FB = 0;
+		DVD_2_FB = 0;
+		Sat_FB = 0;
+	}
+}
+PUSH Laptop
+{
+	If(iPreview)
+	{
+		MPS_Preview = 4;
+		QM_Out[7] = 5;
+		QM_Out[5] = 5;
+		
+		//TPMC_17 = 10;
+		//TPMC_15 = 10;
+		
+		// Without Preview/Program
+		// Comment out when this is activated
+		QM_Out[2] = 5;
+		
+		If(Change_17_On = 1)
+		{
+			TPMC_17 = 1;
+			QM_Out[6] = 5;
+			QM_Out[8] = 5;
+		}
+		TPMC_15 = 1;
+		TPMC15i = 1;
+		
+		QM_Rx = 1;
+		
+		PC_FB = 0;
+		Laptop_FB = 1;
+		DVD_1_FB = 0;
+		DVD_2_FB = 0;
+		Sat_FB = 0;
+	}	
+	If(iProgram)
+	{
+		MPS_Program = 4;
+		QM_Out[2] = 1;
+		QM_Out[5] = 1;
+		QM_Out[6] = 1;
+		
+		TPMC_17 = 9;
+		TPMC_15 = 9;
+		TPMC15i = 9;
+		
+		QM_Rx = 1;
+		
+		PC_FB = 0;
+		Laptop_FB = 1;
+		DVD_1_FB = 0;
+		DVD_2_FB = 0;
+		Sat_FB = 0;
+	}
+}
+PUSH DVD_1
+{
+	If(iPreview)
+	{
+		QM_Out[7] = 3;
+		QM_Out[5] = 3;
+		
+		//TPMC_17 = 10;
+		//TPMC_15 = 10;
+		
+		// Without Preview/Program
+		// Comment out when this is activated
+		QM_Out[2] = 3;
+		
+		If(Change_17_On = 1)
+		{
+			TPMC_17 = 3;
+			QM_Out[6] = 3;
+			QM_Out[8] = 3;
+		}
+		TPMC_15 = 3;
+		TPMC15i = 3;
+		
+		QM_Rx = 3;
+		
+		PC_FB = 0;
+		Laptop_FB = 0;
+		DVD_1_FB = 1;
+		DVD_2_FB = 0;
+		Sat_FB = 0;
+	}	
+	If(iProgram)
+	{
+		QM_Out[2] = 3;
+		QM_Out[5] = 3;
+		QM_Out[6] = 3;
+		
+		TPMC_17 = 9;
+		TPMC_15 = 9;
+		TPMC15i = 9;
+		
+		QM_Rx = 3;
+		
+		PC_FB = 0;
+		Laptop_FB = 0;
+		DVD_1_FB = 1;
+		DVD_2_FB = 0;
+		Sat_FB = 0;
+	}
+}
+PUSH DVD_2
+{
+	If(iPreview)
+	{
+		MPS_Preview = 1;
+		QM_Out[7] = 5;
+		QM_Out[5] = 5;
+		
+		//TPMC_17 = 10;
+		//TPMC_15 = 10;
+
+		// Without Preview/Program
+		// Comment out when this is activated
+		QM_Out[2] = 5;
+		
+		If(Change_17_On = 1)
+		{
+			TPMC_17 = 3;
+			QM_Out[6] = 5;
+			QM_Out[8] = 5;
+		}
+		TPMC_15 = 3;
+		TPMC15i = 3;
+		
+		QM_Rx = 3;
+		
+		PC_FB = 0;
+		Laptop_FB = 0;
+		DVD_1_FB = 0;
+		DVD_2_FB = 1;
+		Sat_FB = 0;
+
+	}	
+	If(iProgram)
+	{
+		MPS_Program = 1;
+		QM_Out[2] = 1;
+		QM_Out[5] = 1;
+		QM_Out[6] = 1;
+		
+		TPMC_17 = 9;
+		TPMC_15 = 9;
+		TPMC15i = 9;
+		
+		QM_Rx = 3;
+		
+		PC_FB = 0;
+		Laptop_FB = 0;
+		DVD_1_FB = 0;
+		DVD_2_FB = 1;
+		Sat_FB = 0;
+	}
+}
+PUSH Sat
+{
+	If(iPreview)
+	{
+		QM_Out[7] = 4;
+		QM_Out[5] = 4;
+		
+		//TPMC_17 = 10;
+		//TPMC_15 = 10;
+
+		// Without Preview/Program
+		// Comment out when this is activated
+		QM_Out[2] = 4;
+		
+		If(Change_17_On = 1)
+		{
+			TPMC_17 = 3;
+			QM_Out[6] = 4;
+			QM_Out[8] = 4;
+		}
+		TPMC_15 = 3;
+		TPMC15i = 3;
+		
+		QM_Rx = 3;
+		
+		PC_FB = 0;
+		Laptop_FB = 0;
+		DVD_1_FB = 0;
+		DVD_2_FB = 0;
+		Sat_FB = 1;
+
+	}	
+	If(iProgram)
+	{
+		QM_Out[2] = 4;
+		QM_Out[5] = 4;
+		QM_Out[6] = 4;
+		
+		TPMC_17 = 9;
+		TPMC_15 = 9;
+		TPMC15i = 9;
+		
+		QM_Rx = 3;
+		
+		PC_FB = 0;
+		Laptop_FB = 0;
+		DVD_1_FB = 0;
+		DVD_2_FB = 0;
+		Sat_FB = 1;
+	}
+}
+
+Push RX_15out
+{
+  	QM_RXi = QM_Rx; 	//Stores the current QM_Rx value to an integer for later use.
+	QM_RX = TPMC15i;	// takes current TPMC-15 output value and pushes to the QM_Rx output.
+
+}
+
+Push ClearRX
+{
+  	//QM_RX = 0;	// clears the QM_Rx output, sets to 0.
+	QM_Rx = QM_RXi; //recalls previous QM_Rx value to output.
+}
