@@ -1,0 +1,294 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name: MediaLogix
+System Name:
+System Number:
+Programmer: Sean Klein
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+#CATEGORY "6" // Lighting
+// #DEFAULT_VOLATILE
+// #DIGITAL_EXPAND 
+// #ANALOG_SERIAL_EXPAND 
+// #OUTPUT_SHIFT 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional libraries as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT Store,Recall,_SKIP_,Save_Z_1,Save_Z_2,Save_Z_3,Save_Z_4,Save_Z_5,Save_Z_6,Save_Z_7,Save_Z_8,Save_Z_9,Save_Z_10,Save_Z_11;
+ANALOG_INPUT _SKIP_,Now_Z_11,_SKIP_,Now_Z_1,Now_Z_2,Now_Z_3,Now_Z_4,Now_Z_5,Now_Z_6,Now_Z_7,Now_Z_8,Now_Z_9,Now_Z_10,_SKIP_;
+ANALOG_INPUT DB_Z_1,DB_Z_2,DB_Z_3,DB_Z_4,DB_Z_5,DB_Z_6,DB_Z_7,DB_Z_8,DB_Z_9,DB_Z_10,DB_Z_11,_SKIP_;
+ANALOG_INPUT _SKIP_,_SKIP_,DB_Primary,_SKIP_;
+// STRING_INPUT 
+// BUFFER_INPUT 
+
+DIGITAL_OUTPUT _SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_,_SKIP_;
+ANALOG_OUTPUT Now_Z_11_Out,_SKIP_,Now_Z_1_Out,Now_Z_2_Out,Now_Z_3_Out,Now_Z_4_Out,Now_Z_5_Out,Now_Z_6_Out,Now_Z_7_Out,Now_Z_8_Out,Now_Z_9_Out,Now_Z_10_Out,_SKIP_;
+ANALOG_OUTPUT DB_Z_1_Out,DB_Z_2_Out,DB_Z_3_Out,DB_Z_4_Out,DB_Z_5_Out,DB_Z_6_Out,DB_Z_7_Out,DB_Z_8_Out,DB_Z_9_Out,DB_Z_10_Out,DB_Z_11_Out,_SKIP_;
+// ANALOG_OUTPUT 
+// STRING_OUTPUT 
+
+/*******************************************************************************************
+  Structure Definitions
+  (Uncomment and define structure definitions as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: struct.myString = "";
+*******************************************************************************************/
+/*
+STRUCTURE MyStruct1
+{
+};
+
+MyStruct1 struct;
+*/
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER Z_1,Z_2,Z_3,Z_4,Z_5,Z_6,Z_7,Z_8,Z_9,Z_10,Z_11;
+// LONG_INTEGER
+// SIGNED_INTEGER
+// SIGNED_LONG_INTEGER
+// STRING
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+/*
+Function MyFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+}
+*/
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+PUSH Store
+{
+	Z_1 = Now_Z_1;
+	Z_2 = Now_Z_2;
+	Z_3 = Now_Z_3;
+	Z_4 = Now_Z_4;
+	Z_5 = Now_Z_5;
+	Z_6 = Now_Z_6;
+	Z_7 = Now_Z_7;
+	Z_8 = Now_Z_8;
+	Z_9 = Now_Z_9;
+	Z_10 = Now_Z_10;
+	Z_11 = Now_Z_11;
+}
+PUSH Recall
+{
+	Now_Z_1_Out = Z_1;
+	Now_Z_2_Out = Z_2;
+	Now_Z_3_Out = Z_3;
+	Now_Z_4_Out = Z_4;
+	Now_Z_5_Out = Z_5;
+	Now_Z_6_Out = Z_6;
+	Now_Z_7_Out = Z_7;
+	Now_Z_8_Out = Z_8;
+	Now_Z_9_Out = Z_9;
+	Now_Z_10_Out = Z_10;
+	Now_Z_11_Out = Z_11;
+}
+PUSH Save_Z_1
+{
+	DB_Z_1_Out = Z_1;
+}
+PUSH Save_Z_2
+{
+	DB_Z_2_Out = Z_2;
+}
+PUSH Save_Z_3
+{
+	DB_Z_3_Out = Z_3;
+}
+PUSH Save_Z_4
+{
+	DB_Z_4_Out = Z_4;
+}
+PUSH Save_Z_5
+{
+	DB_Z_5_Out = Z_5;
+}
+PUSH Save_Z_6
+{
+	DB_Z_6_Out = Z_6;
+}
+PUSH Save_Z_7
+{
+	DB_Z_7_Out = Z_7;
+}
+PUSH Save_Z_8
+{
+	DB_Z_8_Out = Z_8;
+}
+PUSH Save_Z_9
+{
+	DB_Z_9_Out = Z_9;
+}
+PUSH Save_Z_10
+{
+	DB_Z_10_Out = Z_10;
+}
+PUSH Save_Z_11
+{
+	DB_Z_11_Out = Z_11;
+}
+
+/*
+RELEASE input
+{
+    // TODO:  Add code here
+}
+*/
+
+CHANGE DB_Primary
+{
+	If(DB_Primary = 1)
+	{
+		Now_Z_1_Out = Z_1;
+		Now_Z_2_Out = Z_2;
+		Now_Z_3_Out = Z_3;
+		Now_Z_4_Out = Z_4;
+		Now_Z_5_Out = Z_5;
+		Now_Z_6_Out = Z_6;
+		Now_Z_7_Out = Z_7;
+		Now_Z_8_Out = Z_8;
+		Now_Z_9_Out = Z_9;
+		Now_Z_10_Out = Z_10;
+		Now_Z_11_Out = Z_11;
+	}
+}
+CHANGE DB_Z_1
+{
+	Z_1 = DB_Z_1;
+}
+CHANGE DB_Z_2
+{
+	Z_2 = DB_Z_2;
+}
+CHANGE DB_Z_3
+{
+	Z_3 = DB_Z_3;
+}
+CHANGE DB_Z_4
+{
+	Z_4 = DB_Z_4;
+}
+CHANGE DB_Z_5
+{
+	Z_5 = DB_Z_5;
+}
+CHANGE DB_Z_6
+{
+	Z_6 = DB_Z_6;
+}
+CHANGE DB_Z_7
+{
+	Z_7 = DB_Z_7;
+}
+CHANGE DB_Z_8
+{
+	Z_8 = DB_Z_8;
+}
+CHANGE DB_Z_9
+{
+	Z_9 = DB_Z_9;
+}
+CHANGE DB_Z_10
+{
+	Z_10 = DB_Z_10;
+}
+CHANGE DB_Z_11
+{
+	Z_11 = DB_Z_11;
+}
+        
+        
+/*
+EVENT
+{
+    // TODO:  Add code here
+}
+*/
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+/*
+Function Main()
+{
+    // TODO:  Add code here
+    // Initialize declared global and local variables/arrays as needed.
+
+    // WaitForInitializationComplete();
+    // If you are reading any Input or Output variables, uncomment
+    //   the WaitForInitializationComplete statement above and read
+    //   them afterwards.  Input/Output variables will not have
+    //   their correct values set until after the logic processor
+    //   runs and propagates the values to them.
+}
+*/
+
