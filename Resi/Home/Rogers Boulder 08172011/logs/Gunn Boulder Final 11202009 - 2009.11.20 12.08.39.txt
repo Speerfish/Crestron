@@ -1,0 +1,350 @@
+11:58:43 - 11-20-2009: shade_kitchen_sub_A_INT -> 1
+11:58:43 - 11-20-2009: Utility_1_touch_on_tgl -> 1
+11:58:43 - 11-20-2009: MB_Ceiling_Fan_Light_off_OR_INT -> 1
+11:58:43 - 11-20-2009: MBATH_OH_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Master_Closet_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Wine_OH_Can_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Guest_Bath_OH_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Guest_Vanity_OFF_INT -> 1
+11:58:43 - 11-20-2009: Guest_BD_Fan_Light_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Guest_BD_win_outlet_off_FB -> 1
+11:58:43 - 11-20-2009: Shade_A_FB -> 1
+11:58:43 - 11-20-2009: Kitchen_OH_Cans_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Dining_Chandlier_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Study_Fan_OFF_FB -> 1
+11:58:43 - 11-20-2009: Art_Lights_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Patio_1_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Patio_2_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: [M_Bed][iPod]Advanced_Mode_Enabled -> 1
+11:58:43 - 11-20-2009: [M_Bed][iPod]Browse_1_Selected -> 1
+11:58:43 - 11-20-2009: [M_Bed][XPanel]fb28 -> 1
+11:58:43 - 11-20-2009: [M_Bed][XPanel]fb34 -> 1
+11:58:43 - 11-20-2009: [M_Bed][XPanel]fb56 -> 1
+11:58:43 - 11-20-2009: [M_Bed][XPanel]fb152 -> 1
+11:58:43 - 11-20-2009: [M_Bed][XPanel]fb158 -> 1
+11:58:43 - 11-20-2009: [M_Bed][XPanel]fb160 -> 1
+11:58:43 - 11-20-2009: [M_Bed][XPanel]fb174 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb336 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb372 -> 1
+11:58:43 - 11-20-2009: S-6.1_Away_fb -> 1
+11:58:43 - 11-20-2009: MB_Ceiling_Fan -> 65535d
+11:58:43 - 11-20-2009: MBATH_Toliet_Light -> 65535d
+11:58:43 - 11-20-2009: Utility_Closet_Light -> 65535d
+11:58:43 - 11-20-2009: Guest_Exhaust_OH -> 65535d
+11:58:43 - 11-20-2009: Guest_BD_Fan -> 65535d
+11:58:43 - 11-20-2009: S-6.1_{{HeatSetpoint>>TSTAT}} -> 630d
+11:58:43 - 11-20-2009: S-6.1_{{CoolSetpoint>>TSTAT}} -> 840d
+11:58:43 - 11-20-2009: CD_trk_num_FB -> NG
+11:58:43 - 11-20-2009: [M_Bed][iPod]Shuffle_Mode$ -> Off
+11:58:43 - 11-20-2009: [M_Bed][iPod]Repeat_Mode$ -> Off
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o25 -> M Bed
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o26 -> M Bath
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o27 -> Living
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o28 -> Dining
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o30 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o31 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o33 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o34 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o36 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o37 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o39 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o40 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o43 -> M Bed
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o44 -> CC-4000
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o45 -> iPod
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o46 -> AM-FM Tuner
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o47 -> XM Tuner
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o48 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o49 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o50 -> iPod Not Found
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o51 -> In Docking Station
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o53 -> Stereo
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o54 -> CHECK ANTENNA
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o55 ->  
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o60 ->  000 
+11:58:43 - 11-20-2009: [M_Bed][XPanel]text-o61 -> FM
+11:58:43 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 73
+11:58:43 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 78
+11:58:43 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekday Wake
+11:58:43 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+11:58:43 - 11-20-2009: S-6.1_Current_Schedule$ -> Next Schedule: None.
+11:58:43 - 11-20-2009: S-6.1_Current_Day_Of_Week$ -> Maintain Away Setpoint.
+11:58:43 - 11-20-2009: [M_Bed][Audio_Zone]Source_Gain -> 32768d
+11:58:43 - 11-20-2009: [M_Bed][Audio_Zone]Bass -> 49151d
+11:58:43 - 11-20-2009: [M_Bed][Audio_Zone]Treble -> 32767d
+11:58:43 - 11-20-2009: [M_Bed][Audio_Zone]Minimum_Volume -> 3277d
+11:58:43 - 11-20-2009: [M_Bed][Audio_Zone]Startup_Volume -> 19660d
+11:58:43 - 11-20-2009: [M_Bed][Audio_Zone]Maximum_Volume -> 65535d
+11:58:43 - 11-20-2009: [M_Bed][Audio_Zone]Balance -> 32767d
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb111 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb210 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb211 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb212 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb213 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb214 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb215 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb216 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb217 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb219 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb220 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb221 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb222 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb223 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb224 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb225 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb226 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb227 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb228 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb229 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb230 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb307 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb308 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb309 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb310 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb311 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb312 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb313 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb314 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb315 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb316 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb325 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb326 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb327 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb328 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb330 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb331 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb360 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]fb377 -> 1
+11:58:43 - 11-20-2009: //[M_Bed][XPanel]text-o232 -> CHECK ANTENNA
+11:58:43 - 11-20-2009: Master_Closet_Light_always_on -> 65535d
+11:58:43 - 11-20-2009: mas_bed_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: MBATH_Toliet_LS1 -> 1
+11:58:43 - 11-20-2009: mbath_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: mcloset_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: laundry_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: Hall_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: Wine_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: GBath_exhaust_on_tgl -> 1
+11:58:43 - 11-20-2009: GBath_1_touch_off_tgl -> 1
+11:58:43 - 11-20-2009: G_Bath_vanity_off_tgl -> 1
+11:58:43 - 11-20-2009: GBed_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: GB_Outlet_1_off_tgl -> 1
+11:58:43 - 11-20-2009: Kitchen_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: Dining_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: Living_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: Study_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: Art_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: //MBATH_Toliet_LS1_INT -> 1
+11:58:43 - 11-20-2009: //Utility_Closet_ON_OR_INT -> 1
+11:58:43 - 11-20-2009: //Hall_Light_OFF_OR_INT -> 1
+11:58:43 - 11-20-2009: Patio_2_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: Patio_1_1_touch_OFF_tgl -> 1
+11:58:43 - 11-20-2009: //dining_A_FB_FB -> 1
+11:58:43 - 11-20-2009: //living_A_FB_FB -> 1
+11:58:43 - 11-20-2009: //Guest_Bed_FB_FB -> 1
+11:58:43 - 11-20-2009: //Multi_zone_A_FB_FB -> 1
+11:58:43 - 11-20-2009: //Admin_A_FBB_FB -> 0
+11:58:43 - 11-20-2009: Set_Preset_1 -> 1
+11:58:43 - 11-20-2009: program_on_fb -> 0
+11:58:43 - 11-20-2009: program_off_fb -> 0
+11:58:43 - 11-20-2009: auto_fb_layer_2_fb_os -> 1
+11:58:43 - 11-20-2009: auto_fb_layer_3_fb_os -> 1
+11:58:43 - 11-20-2009: auto_fb_layer_3_fb* -> 1
+11:58:43 - 11-20-2009: TV_on/off_boff -> 1
+11:58:43 - 11-20-2009: SZ1_Down_a_P1_INT_LD -> 1
+11:58:43 - 11-20-2009: SZ8_UP_a_INT_P1_LD -> 1
+11:58:43 - 11-20-2009: SZ20_Down_a_INT_P1_LD -> 1
+11:58:43 - 11-20-2009: SZ22_UP_a_INT_P1_LD -> 1
+11:58:43 - 11-20-2009: SZ22_Down_a_INT_P1_LD -> 1
+11:58:44 - 11-20-2009: [Console Data] : 
+11:59:11 - 11-20-2009: [Console Data] : PRO2>Update request from Slot-08.IP-ID-09
+11:59:28 - 11-20-2009: Climate_1 -> 1
+11:59:28 - 11-20-2009: program_number_on -> 1d
+11:59:28 - 11-20-2009: shade_kitchen_sub_A_INT -> 0
+11:59:28 - 11-20-2009: normal_program_mode_il -> 1
+11:59:28 - 11-20-2009: auto_fb_layer_2_fb_os -> 0
+11:59:28 - 11-20-2009: auto_fb_layer_2_fb*_os -> 1
+11:59:28 - 11-20-2009: auto_fb_layer_3_fb_os -> 0
+11:59:28 - 11-20-2009: auto_fb_layer_3_fb*_os -> 1
+11:59:28 - 11-20-2009: Shade_A_FB -> 0
+11:59:28 - 11-20-2009: Climate_A_FB -> 1
+11:59:28 - 11-20-2009: auto_fb_layer_3_fb* -> 0
+11:59:28 - 11-20-2009: auto_fb_layer_4_fb* -> 1
+11:59:28 - 11-20-2009: SZ1_Down_a_P1_INT_LD -> 0
+11:59:28 - 11-20-2009: SZ2_UP_a_INT_P1_LD -> 1
+11:59:28 - 11-20-2009: TV_on/off_boff -> 0
+11:59:28 - 11-20-2009: //dvd_power_2 -> 1
+11:59:28 - 11-20-2009: Climate_1 -> 0
+11:59:28 - 11-20-2009: program_number_on -> 0d
+11:59:47 - 11-20-2009: S-6.1_Edit_Weekday_Leave_1 -> 1
+11:59:47 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekday Leave
+11:59:47 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+11:59:47 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 63
+11:59:47 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 84
+11:59:47 - 11-20-2009: //Climate_A_FBB_FB -> 0
+11:59:47 - 11-20-2009: S-6.1_Edit_Weekday_Leave_1 -> 0
+11:59:50 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:50 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 83
+11:59:50 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:50 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:50 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 82
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:51 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 81
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:51 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 80
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:51 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 79
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:51 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 78
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:51 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 77
+11:59:51 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:52 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 76
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:52 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 75
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:52 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 74
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:52 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 73
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:52 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 72
+11:59:52 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:53 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:53 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 71
+11:59:53 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:53 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:53 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 70
+11:59:53 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:53 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:53 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 69
+11:59:53 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:54 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:54 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 68
+11:59:54 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:54 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:54 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 67
+11:59:54 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:54 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:54 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 66
+11:59:55 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:55 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:55 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 65
+11:59:55 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:55 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 1
+11:59:55 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 64
+11:59:55 - 11-20-2009: S-6.1_Schedule_Cool_Setpoint_Down_1 -> 0
+11:59:58 - 11-20-2009: [Console Data] : ERROR: Unable to open file '\NVRAM\tstat_1.dat' for write. (Error code -3004)
+11:59:58 - 11-20-2009: [Console Data] : Error: TPS_FileOpen: NVRAM disk is not configured
+11:59:59 - 11-20-2009: S-6.1_Edit_Weekday_Return_1 -> 1
+11:59:59 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekday Return
+11:59:59 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+11:59:59 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 70
+11:59:59 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 77
+11:59:59 - 11-20-2009: //Climate_A_FBB_FB -> 0
+11:59:59 - 11-20-2009: S-6.1_Edit_Weekday_Return_1 -> 0
+12:00:01 - 11-20-2009: S-6.1_Edit_Weekday_Sleep_1 -> 1
+12:00:01 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekday Sleep
+12:00:01 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:01 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 66
+12:00:01 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 75
+12:00:01 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:01 - 11-20-2009: S-6.1_Edit_Weekday_Sleep_1 -> 0
+12:00:03 - 11-20-2009: S-6.1_Edit_Weekend_Sleep_1 -> 1
+12:00:03 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekend Sleep
+12:00:03 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:03 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 66
+12:00:03 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 75
+12:00:03 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:03 - 11-20-2009: S-6.1_Edit_Weekend_Sleep_1 -> 0
+12:00:03 - 11-20-2009: S-6.1_Edit_Weekend_Return_1 -> 1
+12:00:03 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekend Return
+12:00:03 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:03 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 70
+12:00:03 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 77
+12:00:03 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:04 - 11-20-2009: S-6.1_Edit_Weekend_Return_1 -> 0
+12:00:06 - 11-20-2009: S-6.1_Edit_Weekend_Leave_1 -> 1
+12:00:06 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekend Leave
+12:00:06 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:06 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 63
+12:00:06 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 84
+12:00:06 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:06 - 11-20-2009: S-6.1_Edit_Weekend_Leave_1 -> 0
+12:00:06 - 11-20-2009: S-6.1_Edit_Weekend_Wake_1 -> 1
+12:00:06 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekend Wake
+12:00:06 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:06 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 70
+12:00:06 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 77
+12:00:06 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:06 - 11-20-2009: S-6.1_Edit_Weekend_Wake_1 -> 0
+12:00:06 - 11-20-2009: S-6.1_Edit_Weekday_Wake_1 -> 1
+12:00:06 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekday Wake
+12:00:06 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:06 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 73
+12:00:06 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 78
+12:00:06 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:06 - 11-20-2009: S-6.1_Edit_Weekday_Wake_1 -> 0
+12:00:07 - 11-20-2009: S-6.1_Edit_Weekday_Leave_1 -> 1
+12:00:07 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekday Leave
+12:00:07 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:07 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 63
+12:00:07 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 64
+12:00:07 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:07 - 11-20-2009: S-6.1_Edit_Weekday_Leave_1 -> 0
+12:00:23 - 11-20-2009: S-6.1_Edit_Away_1 -> 1
+12:00:23 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Away
+12:00:23 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 63
+12:00:23 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 84
+12:00:23 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:23 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:23 - 11-20-2009: S-6.1_Edit_Away_1 -> 0
+12:00:25 - 11-20-2009: S-6.1_Edit_Weekday_Leave_1 -> 1
+12:00:25 - 11-20-2009: S-6.1_Edit_Schedule_Name$ -> Weekday Leave
+12:00:25 - 11-20-2009: S-6.1_Edit_Schedule_Time$ -> --:--
+12:00:25 - 11-20-2009: //S-6.1_Edit_Schedule_Heat_Setpoint$ -> 63
+12:00:25 - 11-20-2009: //S-6.1_Edit_Schedule_Cool_Setpoint$ -> 64
+12:00:25 - 11-20-2009: //Climate_A_FBB_FB -> 0
+12:00:25 - 11-20-2009: S-6.1_Edit_Weekday_Leave_1 -> 0
+12:00:34 - 11-20-2009: S-6.1_Run_Program_1 -> 1
+12:00:34 - 11-20-2009: [Console Data] : ERROR: Unable to open file '\NVRAM\tstat_1.dat' for write. (Error code -3004)
+12:00:34 - 11-20-2009: S-6.1_Away_fb -> 0
+12:00:34 - 11-20-2009: //Admin_A_FBB_FB -> 0
+12:00:34 - 11-20-2009: S-6.1_{{BtnLabel1>>TSTAT}} -> Hold Temp / Away
+12:00:34 - 11-20-2009: S-6.1_Current_Day_Of_Week$ -> Fri
+12:00:34 - 11-20-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:00:34 - 11-20-2009: [Console Data] : Error: TPS_FileOpen: NVRAM disk is not configured
+12:00:34 - 11-20-2009: [Console Data] : Error: Message from device Slot-09.ID-2A: Symbol Mismatch (0056:0000:0056)
+12:00:35 - 11-20-2009: S-6.1_Run_Program_1 -> 0
+12:00:42 - 11-20-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:00:52 - 11-20-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:00:53 - 11-20-2009: S-6.1_Schedule_Hour_Up_1 -> 1
+12:00:53 - 11-20-2009: S-6.1_Edit_Schedule_Time$ ->  8:00 AM
+12:00:53 - 11-20-2009: S-6.1_Schedule_Hour_Up_1 -> 0
+12:00:53 - 11-20-2009: S-6.1_Schedule_Hour_Up_1 -> 1
+12:00:53 - 11-20-2009: S-6.1_Edit_Schedule_Time$ ->  9:00 AM
+12:00:53 - 11-20-2009: S-6.1_Schedule_Hour_Up_1 -> 0
+12:00:53 - 11-20-2009: S-6.1_Schedule_Hour_Down_1 -> 1
+12:00:53 - 11-20-2009: S-6.1_Edit_Schedule_Time$ ->  8:00 AM
+12:00:54 - 11-20-2009: S-6.1_Schedule_Hour_Down_1 -> 0
+12:00:54 - 11-20-2009: S-6.1_Schedule_Hour_Down_1 -> 1
+12:00:54 - 11-20-2009: S-6.1_Edit_Schedule_Time$ ->  7:00 AM
+12:00:54 - 11-20-2009: S-6.1_Schedule_Hour_Down_1 -> 0
+12:00:57 - 11-20-2009: [Console Data] : ERROR: Unable to open file '\NVRAM\tstat_1.dat' for write. (Error code -3004)
+12:00:57 - 11-20-2009: [Console Data] : Error: TPS_FileOpen: NVRAM disk is not configured
+12:02:14 - 11-20-2009: [Console Data] : Update request from Slot-08.IP-ID-03
+12:02:14 - 11-20-2009: [Console Data] : Update request from Slot-08.IP-ID-09
+12:06:54 - 11-20-2009: [Console Data] : NVRAMDISK 128K
+12:06:54 - 11-20-2009: [Console Data] : WARNING: This command will erase all your files on the NVRAM.
+12:06:59 - 11-20-2009: [Console Data] : Do you want to continue (Y or N)? y
+12:06:59 - 11-20-2009: [Console Data] : NVRAM filesystem successfully initialized to 128K

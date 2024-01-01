@@ -1,0 +1,1391 @@
+12:12:50 - 11-19-2009: MB_Ceiling_Fan_Light_off_OR_INT -> 1
+12:12:50 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Master_Closet_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Wine_OH_Can_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Guest_Bath_OH_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Guest_Vanity_OFF_INT -> 1
+12:12:50 - 11-19-2009: Guest_BD_Fan_Light_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 1
+12:12:50 - 11-19-2009: Kitchen_OH_Cans_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Dining_Chandlier_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Study_Fan_OFF_FB -> 1
+12:12:50 - 11-19-2009: Art_Lights_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Patio_1_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Patio_2_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: [M_Bed][iPod]Advanced_Mode_Enabled -> 1
+12:12:50 - 11-19-2009: [M_Bed][iPod]IsOffline -> 1
+12:12:50 - 11-19-2009: [M_Bed][XPanel]fb28 -> 1
+12:12:50 - 11-19-2009: [M_Bed][XPanel]fb34 -> 1
+12:12:50 - 11-19-2009: [M_Bed][XPanel]fb56 -> 1
+12:12:50 - 11-19-2009: [M_Bed][XPanel]fb152 -> 1
+12:12:50 - 11-19-2009: [M_Bed][XPanel]fb160 -> 1
+12:12:50 - 11-19-2009: [M_Bed][XPanel]fb174 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb335 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb336 -> 1
+12:12:50 - 11-19-2009: S-6.1_Auto_Mode_fb_1 -> 1
+12:12:50 - 11-19-2009: S-6.1_Fan_Auto_fb_1 -> 1
+12:12:50 - 11-19-2009: S-6.1_Cool_1_fb_1 -> 1
+12:12:50 - 11-19-2009: S-6.1_Fan_fb_1 -> 1
+12:12:50 - 11-19-2009: S-6.1_Display_Dual_Setpoints_1 -> 1
+12:12:50 - 11-19-2009: MB_Ceiling_Fan -> 65535d
+12:12:50 - 11-19-2009: Guest_BD_Fan -> 65535d
+12:12:50 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 665d
+12:12:50 - 11-19-2009: S-6.1_{{HeatSetpoint>>TSTAT}} -> 660d
+12:12:50 - 11-19-2009: S-6.1_{{CoolSetpoint>>TSTAT}} -> 680d
+12:12:50 - 11-19-2009: CD_trk_num_FB -> NG
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o25 -> M Bed
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o26 -> M Bath
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o27 -> Living
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o28 -> Dining
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o30 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o31 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o33 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o34 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o36 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o37 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o39 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o40 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o43 -> M Bed
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o44 -> CC-4000
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o45 -> iPod
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o46 -> AM-FM Tuner
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o47 -> XM Tuner
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o48 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o49 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o50 -> Not Found
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o51 -> On Network
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o54 -> CHECK ANTENNA
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o55 ->  
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o60 ->  000 
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o61 -> FM
+12:12:50 - 11-19-2009: S-6.1_Current_Dual_Auto_Setpoint_1$ -> 66
+12:12:50 - 11-19-2009: S-6.1_Current_Dual_Auto_Setpoint_2$ -> 68
+12:12:50 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:12:50 - 11-19-2009: S-6.1_Current_Day_Of_Week$ -> Thu
+12:12:50 - 11-19-2009: [M_Bed][Audio_Zone]Source_Gain -> 32768d
+12:12:50 - 11-19-2009: [M_Bed][Audio_Zone]Bass -> 49151d
+12:12:50 - 11-19-2009: [M_Bed][Audio_Zone]Treble -> 32767d
+12:12:50 - 11-19-2009: [M_Bed][Audio_Zone]Minimum_Volume -> 3277d
+12:12:50 - 11-19-2009: [M_Bed][Audio_Zone]Startup_Volume -> 19660d
+12:12:50 - 11-19-2009: [M_Bed][Audio_Zone]Maximum_Volume -> 65535d
+12:12:50 - 11-19-2009: [M_Bed][Audio_Zone]Balance -> 32767d
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb111 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb210 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb211 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb212 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb213 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb214 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb215 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb216 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb217 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb219 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb220 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb221 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb222 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb223 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb224 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb225 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb226 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb227 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb228 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb229 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb230 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb307 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb308 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb309 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb310 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb311 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb312 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb313 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb314 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb315 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb316 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb325 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb326 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb327 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb328 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb330 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb331 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb360 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]fb377 -> 1
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]text-o230 -> RADIO ID:UM5KK0M9
+12:12:50 - 11-19-2009: //[M_Bed][XPanel]text-o232 -> CHECK ANTENNA
+12:12:50 - 11-19-2009: Master_Closet_Light_always_on -> 65535d
+12:12:50 - 11-19-2009: S-6.1_{{Auto(1pt)Setpoint>>TSTAT}} -> 730d
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>SysModeAuto_F}} -> 1
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>FanAuto_F}} -> 1
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>HeatSetpoint_F}} -> 660d
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>CoolSetpoint_F}} -> 680d
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>Auto(1pt)Setpoint_F} -> 730d
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 685d
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 683d
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 665d
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>Cool1Call}} -> 1
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>FanCall}} -> 1
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>HeatCoolType}} -> 1
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>DualSetpoints(AuotMo -> 1
+12:12:50 - 11-19-2009: S-6.1_{{TSTAT>>Temp(DegF)}} -> 1
+12:12:50 - 11-19-2009: mas_bed_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: MBATH_Toliet_LS2 -> 1
+12:12:50 - 11-19-2009: mbath_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: mcloset_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: laundry_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Utility_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Hall_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Wine_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: GBath_exhaust_off_tgl -> 1
+12:12:50 - 11-19-2009: GBath_1_touch_off_tgl -> 1
+12:12:50 - 11-19-2009: G_Bath_vanity_off_tgl -> 1
+12:12:50 - 11-19-2009: GBed_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: GB_Outlet_1_off_tgl -> 1
+12:12:50 - 11-19-2009: Kitchen_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Dining_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Living_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Study_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Art_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: //MBATH_Toliet_LS2_INT -> 1
+12:12:50 - 11-19-2009: //Utility_Closet_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: //Hall_Light_OFF_OR_INT -> 1
+12:12:50 - 11-19-2009: Patio_2_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: Patio_1_1_touch_OFF_tgl -> 1
+12:12:50 - 11-19-2009: S-6.1_Temp_Scale_F -> 1
+12:12:50 - 11-19-2009: S-6.1_Current_Slab_Setpoint$ -> 0
+12:12:50 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:12:50 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 683d
+12:12:50 - 11-19-2009: S-6.1_EnableSystemMode_Heat -> 1
+12:12:50 - 11-19-2009: S-6.1_EnableSysmteMode_Cool -> 1
+12:12:50 - 11-19-2009: S-6.1_EnableSystemMode_Auto -> 1
+12:12:50 - 11-19-2009: S-6.1_Current_Day_Of_Week -> 4d
+12:12:50 - 11-19-2009: S-6.1_PM_fb -> 1
+12:12:50 - 11-19-2009: normal_program_mode_il -> 1
+12:12:50 - 11-19-2009: auto_fb_layer_1_fb* -> 1
+12:12:50 - 11-19-2009: auto_fb_layer_2_fb* -> 1
+12:12:50 - 11-19-2009: auto_fb_layer_3_fb* -> 1
+12:12:50 - 11-19-2009: auto_fb_layer_4_fb* -> 1
+12:12:50 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:12:51 - 11-19-2009: [Console Data] : 
+12:12:51 - 11-19-2009: [Console Data] : PRO2>
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:12:50 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:12:51 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:12:51 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:12:51 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:12:54 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:12:54 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:12:54 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:12:55 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:12:55 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:12:55 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:12:56 - 11-19-2009: Lighting_1 -> 1
+12:12:56 - 11-19-2009: Lighting_A -> 1
+12:12:56 - 11-19-2009: //Lighting_A_INT -> 1
+12:12:56 - 11-19-2009: //Lighting_A_FB_P1 -> 1
+12:12:56 - 11-19-2009: Lighting_A_FB -> 1
+12:12:56 - 11-19-2009: Lighting_A_FBB -> 1
+12:12:56 - 11-19-2009: //Lighting_A_Preset_INT -> 1
+12:12:56 - 11-19-2009: //Lighting_A_FBB_FB -> 1
+12:12:56 - 11-19-2009: Lighting_1 -> 0
+12:12:56 - 11-19-2009: Lighting_A -> 0
+12:12:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:12:59 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:12:59 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:12:59 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:01 - 11-19-2009: Living_gui_on/off -> 1
+12:13:01 - 11-19-2009: Living_1_touch_OFF_tgl -> 0
+12:13:01 - 11-19-2009: Living_1_touch_on_tgl -> 1
+12:13:01 - 11-19-2009: Living_1_touch_on_OS -> 1
+12:13:01 - 11-19-2009: Living_Room_Wall_Wash -> 65535d
+12:13:01 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:01 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:01 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:01 - 11-19-2009: Living_gui_on/off -> 0
+12:13:01 - 11-19-2009: Living_1_touch_on_OS -> 0
+12:13:03 - 11-19-2009: Living_gui_on/off -> 1
+12:13:03 - 11-19-2009: Living_1_touch_on_tgl -> 0
+12:13:03 - 11-19-2009: Living_1_touch_OFF_tgl -> 1
+12:13:03 - 11-19-2009: Living_1_touch_OFF_OS -> 1
+12:13:03 - 11-19-2009: Living_Room_Wall_Wash -> 0d
+12:13:04 - 11-19-2009: Living_gui_on/off -> 0
+12:13:04 - 11-19-2009: Living_1_touch_OFF_OS -> 0
+12:13:05 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 686d
+12:13:05 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:13:05 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 666d
+12:13:05 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 666d
+12:13:07 - 11-19-2009: Living_gui_on/off -> 1
+12:13:07 - 11-19-2009: Living_1_touch_OFF_tgl -> 0
+12:13:07 - 11-19-2009: Living_1_touch_on_tgl -> 1
+12:13:07 - 11-19-2009: Living_1_touch_on_OS -> 1
+12:13:07 - 11-19-2009: Living_Room_Wall_Wash -> 65535d
+12:13:07 - 11-19-2009: Living_gui_on/off -> 0
+12:13:07 - 11-19-2009: Living_1_touch_on_OS -> 0
+12:13:08 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:08 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:08 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:09 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:09 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:09 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:10 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 685d
+12:13:10 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:13:10 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 665d
+12:13:10 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 665d
+12:13:10 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:10 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:10 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:11 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:14 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:14 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:14 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:15 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:15 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:15 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:16 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:16 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:16 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:18 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:18 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:18 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:26 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:26 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:26 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:27 - 11-19-2009: mbath_gui_on/off -> 1
+12:13:27 - 11-19-2009: mbath_1_touch_OFF_tgl -> 0
+12:13:27 - 11-19-2009: mbath_1_touch_on_tgl -> 1
+12:13:27 - 11-19-2009: mbath_1_touch_on_os -> 1
+12:13:27 - 11-19-2009: MBATH_OH_ON_OR -> 1
+12:13:27 - 11-19-2009: MBATH_Vanity_Light -> 65535d
+12:13:27 - 11-19-2009: MBATH_Toliet_Light -> 65535d
+12:13:27 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 0
+12:13:27 - 11-19-2009: MBATH_OH_ON_OR_INT -> 1
+12:13:27 - 11-19-2009: mbath_gui_on/off -> 0
+12:13:27 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:27 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:27 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:28 - 11-19-2009: mbath_1_touch_on_os -> 0
+12:13:28 - 11-19-2009: MBATH_OH_ON_OR -> 0
+12:13:29 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 686d
+12:13:29 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:13:29 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 666d
+12:13:29 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 666d
+12:13:31 - 11-19-2009: mbath_gui_on/off -> 1
+12:13:31 - 11-19-2009: mbath_1_touch_on_tgl -> 0
+12:13:31 - 11-19-2009: mbath_1_touch_OFF_tgl -> 1
+12:13:31 - 11-19-2009: mbath_1_touch_OFF_OS -> 1
+12:13:31 - 11-19-2009: MBATH_OH_OFF_OR -> 1
+12:13:31 - 11-19-2009: MBATH_Vanity_Light -> 0d
+12:13:31 - 11-19-2009: MBATH_Toliet_Light -> 0d
+12:13:31 - 11-19-2009: MBATH_OH_ON_OR_INT -> 0
+12:13:31 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 1
+12:13:31 - 11-19-2009: mbath_gui_on/off -> 0
+12:13:31 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:31 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:31 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:32 - 11-19-2009: mbath_gui_on/off -> 1
+12:13:32 - 11-19-2009: mbath_1_touch_OFF_tgl -> 0
+12:13:32 - 11-19-2009: mbath_1_touch_on_tgl -> 1
+12:13:32 - 11-19-2009: mbath_1_touch_on_os -> 1
+12:13:32 - 11-19-2009: MBATH_OH_ON_OR -> 1
+12:13:32 - 11-19-2009: MBATH_Vanity_Light -> 65535d
+12:13:32 - 11-19-2009: MBATH_Toliet_Light -> 65535d
+12:13:32 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 0
+12:13:32 - 11-19-2009: MBATH_OH_ON_OR_INT -> 1
+12:13:32 - 11-19-2009: mbath_1_touch_OFF_OS -> 0
+12:13:32 - 11-19-2009: MBATH_OH_OFF_OR -> 0
+12:13:32 - 11-19-2009: mbath_gui_on/off -> 0
+12:13:33 - 11-19-2009: mbath_gui_on/off -> 1
+12:13:33 - 11-19-2009: mbath_1_touch_on_tgl -> 0
+12:13:33 - 11-19-2009: mbath_1_touch_OFF_tgl -> 1
+12:13:33 - 11-19-2009: mbath_1_touch_OFF_OS -> 1
+12:13:33 - 11-19-2009: MBATH_OH_OFF_OR -> 1
+12:13:33 - 11-19-2009: MBATH_Vanity_Light -> 0d
+12:13:33 - 11-19-2009: MBATH_Toliet_Light -> 0d
+12:13:33 - 11-19-2009: MBATH_OH_ON_OR_INT -> 0
+12:13:33 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 1
+12:13:33 - 11-19-2009: mbath_1_touch_on_os -> 0
+12:13:33 - 11-19-2009: MBATH_OH_ON_OR -> 0
+12:13:33 - 11-19-2009: mbath_gui_on/off -> 0
+12:13:33 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:33 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:33 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:34 - 11-19-2009: mbath_1_touch_OFF_OS -> 0
+12:13:34 - 11-19-2009: MBATH_OH_OFF_OR -> 0
+12:13:35 - 11-19-2009: mbath_gui_on/off -> 1
+12:13:35 - 11-19-2009: mbath_1_touch_OFF_tgl -> 0
+12:13:35 - 11-19-2009: mbath_1_touch_on_tgl -> 1
+12:13:35 - 11-19-2009: mbath_1_touch_on_os -> 1
+12:13:35 - 11-19-2009: MBATH_OH_ON_OR -> 1
+12:13:35 - 11-19-2009: MBATH_Vanity_Light -> 65535d
+12:13:35 - 11-19-2009: MBATH_Toliet_Light -> 65535d
+12:13:35 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 0
+12:13:35 - 11-19-2009: MBATH_OH_ON_OR_INT -> 1
+12:13:35 - 11-19-2009: mbath_gui_on/off -> 0
+12:13:36 - 11-19-2009: mbath_gui_on/off -> 1
+12:13:36 - 11-19-2009: mbath_1_touch_on_tgl -> 0
+12:13:36 - 11-19-2009: mbath_1_touch_OFF_tgl -> 1
+12:13:36 - 11-19-2009: mbath_1_touch_OFF_OS -> 1
+12:13:36 - 11-19-2009: MBATH_OH_OFF_OR -> 1
+12:13:36 - 11-19-2009: MBATH_Vanity_Light -> 0d
+12:13:36 - 11-19-2009: MBATH_Toliet_Light -> 0d
+12:13:36 - 11-19-2009: MBATH_OH_ON_OR_INT -> 0
+12:13:36 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 1
+12:13:36 - 11-19-2009: mbath_1_touch_on_os -> 0
+12:13:36 - 11-19-2009: MBATH_OH_ON_OR -> 0
+12:13:36 - 11-19-2009: mbath_gui_on/off -> 0
+12:13:36 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:36 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:36 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:37 - 11-19-2009: mbath_1_touch_OFF_OS -> 0
+12:13:37 - 11-19-2009: MBATH_OH_OFF_OR -> 0
+12:13:37 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:37 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:37 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:44 - 11-19-2009: Living_gui_on/off -> 1
+12:13:44 - 11-19-2009: Living_1_touch_on_tgl -> 0
+12:13:44 - 11-19-2009: Living_1_touch_OFF_tgl -> 1
+12:13:44 - 11-19-2009: Living_1_touch_OFF_OS -> 1
+12:13:44 - 11-19-2009: Living_Room_Wall_Wash -> 0d
+12:13:44 - 11-19-2009: Living_gui_on/off -> 0
+12:13:44 - 11-19-2009: Living_1_touch_OFF_OS -> 0
+12:13:49 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 685d
+12:13:49 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:13:49 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 665d
+12:13:49 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 665d
+12:13:53 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:53 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:53 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:54 - 11-19-2009: Guest_exhaust_on/off_6 -> 1
+12:13:54 - 11-19-2009: Guest_exhaust_on/off -> 1
+12:13:54 - 11-19-2009: GBath_exhaust_off_tgl -> 0
+12:13:54 - 11-19-2009: GBath_exhaust_on_tgl -> 1
+12:13:54 - 11-19-2009: GBath_exhaust_on_OS -> 1
+12:13:54 - 11-19-2009: Guest_Exhaust_ON -> 1
+12:13:54 - 11-19-2009: Guest_Exhaust_OH -> 65535d
+12:13:54 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:54 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:54 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:13:55 - 11-19-2009: Guest_exhaust_on/off_6 -> 0
+12:13:55 - 11-19-2009: Guest_exhaust_on/off -> 0
+12:13:55 - 11-19-2009: GBath_exhaust_on_OS -> 0
+12:13:55 - 11-19-2009: Guest_Exhaust_ON -> 0
+12:13:56 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:13:56 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:56 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:13:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:13:57 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:13:57 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:13:58 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:02 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:03 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:03 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:04 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:04 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:04 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:04 - 11-19-2009: Guest_exhaust_on/off_6 -> 1
+12:14:04 - 11-19-2009: Guest_exhaust_on/off -> 1
+12:14:04 - 11-19-2009: GBath_exhaust_on_tgl -> 0
+12:14:04 - 11-19-2009: GBath_exhaust_off_tgl -> 1
+12:14:04 - 11-19-2009: GBath_exhaust_off_OS -> 1
+12:14:04 - 11-19-2009: Guest_Exhaust_OFF -> 1
+12:14:04 - 11-19-2009: Guest_Exhaust_OH -> 0d
+12:14:04 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 684d
+12:14:04 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 684d
+12:14:05 - 11-19-2009: Guest_exhaust_on/off_6 -> 0
+12:14:05 - 11-19-2009: Guest_exhaust_on/off -> 0
+12:14:09 - 11-19-2009: GBath_exhaust_off_OS -> 0
+12:14:09 - 11-19-2009: Guest_Exhaust_OFF -> 0
+12:14:11 - 11-19-2009: Guest_Bath_A -> 1
+12:14:11 - 11-19-2009: Guest_Bath_A_FB -> 1
+12:14:12 - 11-19-2009: Guest_Bath_A -> 0
+12:14:13 - 11-19-2009: Guest_Exhaust_OFF_1 -> 1
+12:14:13 - 11-19-2009: Guest_Exhaust_OFF -> 1
+12:14:13 - 11-19-2009: Guest_Exhaust_OH -> 0d
+12:14:14 - 11-19-2009: Guest_Exhaust_OFF_1 -> 0
+12:14:14 - 11-19-2009: Guest_Exhaust_OFF -> 0
+12:14:14 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:14 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:14 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:15 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:15 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:15 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:17 - 11-19-2009: Guest_Exhaust_OFF_1 -> 1
+12:14:17 - 11-19-2009: Guest_Exhaust_OFF -> 1
+12:14:17 - 11-19-2009: Guest_Exhaust_OH -> 0d
+12:14:18 - 11-19-2009: Guest_Exhaust_OFF_1 -> 0
+12:14:18 - 11-19-2009: Guest_Exhaust_OFF -> 0
+12:14:19 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:19 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:19 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:20 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:20 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:20 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:20 - 11-19-2009: Guest_Bath_OH_ON_2 -> 1
+12:14:20 - 11-19-2009: Guest_Bath_OH_ON_OR -> 1
+12:14:20 - 11-19-2009: Guest_Bath_OH -> 65535d
+12:14:20 - 11-19-2009: Guest_Bath_OH_OFF_OR_INT -> 0
+12:14:20 - 11-19-2009: Guest_Bath_OH_ON_OR_INT -> 1
+12:14:20 - 11-19-2009: Guest_Bath_OH_ON_2 -> 0
+12:14:20 - 11-19-2009: Guest_Bath_OH_ON_OR -> 0
+12:14:27 - 11-19-2009: Guest_Bath_OH_OFF_2 -> 1
+12:14:27 - 11-19-2009: Guest_Bath_OH_OFF_OR -> 1
+12:14:27 - 11-19-2009: Guest_Bath_OH -> 0d
+12:14:27 - 11-19-2009: Guest_Bath_OH_ON_OR_INT -> 0
+12:14:27 - 11-19-2009: Guest_Bath_OH_OFF_OR_INT -> 1
+12:14:27 - 11-19-2009: Guest_Bath_OH_OFF_2 -> 0
+12:14:27 - 11-19-2009: Guest_Bath_OH_OFF_OR -> 0
+12:14:28 - 11-19-2009: Guest_Vanity_ON_1 -> 1
+12:14:28 - 11-19-2009: Guest_Vanity_ON -> 1
+12:14:28 - 11-19-2009: Guest_Vanity -> 65535d
+12:14:28 - 11-19-2009: Guest_Vanity_OFF_INT -> 0
+12:14:28 - 11-19-2009: Guest_Vanity_ON_INT -> 1
+12:14:28 - 11-19-2009: Guest_Vanity_ON_1 -> 0
+12:14:28 - 11-19-2009: Guest_Vanity_ON -> 0
+12:14:29 - 11-19-2009: Guest_Vanity_OFF_1 -> 1
+12:14:29 - 11-19-2009: Guest_Vanity_OFF -> 1
+12:14:29 - 11-19-2009: Guest_Vanity -> 0d
+12:14:29 - 11-19-2009: Guest_Vanity_ON_INT -> 0
+12:14:29 - 11-19-2009: Guest_Vanity_OFF_INT -> 1
+12:14:29 - 11-19-2009: Guest_Vanity_OFF_1 -> 0
+12:14:29 - 11-19-2009: Guest_Vanity_OFF -> 0
+12:14:30 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:30 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:30 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:31 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:31 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:31 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:31 - 11-19-2009: Lighting_clear -> 1
+12:14:31 - 11-19-2009: Guest_Bath_A_FB -> 0
+12:14:31 - 11-19-2009: Lighting_clear -> 0
+12:14:34 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 685d
+12:14:34 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 685d
+12:14:35 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:35 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:35 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:36 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:36 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:36 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:36 - 11-19-2009: Bed2_Light_A -> 1
+12:14:36 - 11-19-2009: Bed2_Light_A_FB -> 1
+12:14:36 - 11-19-2009: Bed2_Light_A -> 0
+12:14:37 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:37 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:37 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:39 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:39 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:39 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_ON_OR_2 -> 1
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_ON_OR -> 1
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_OFF_OR_INT -> 0
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_ON_OR_INT -> 1
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_ON_OR_OS -> 1
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light -> 65535d
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_ON_OR_2 -> 0
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_ON_OR -> 0
+12:14:40 - 11-19-2009: Guest_BD_Fan_Light_ON_OR_OS -> 0
+12:14:44 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 684d
+12:14:44 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 684d
+12:14:45 - 11-19-2009: Guest_BD_Fan_ON -> 1
+12:14:45 - 11-19-2009: Guest_BD_Fan -> 65535d
+12:14:45 - 11-19-2009: Guest_BD_Fan_ON -> 0
+12:14:46 - 11-19-2009: Guest_BD_Fan_OFF -> 1
+12:14:46 - 11-19-2009: Guest_BD_Fan -> 0d
+12:14:47 - 11-19-2009: Guest_BD_Fan_OFF -> 0
+12:14:49 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:14:49 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:14:49 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:14:49 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:14:50 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 1
+12:14:50 - 11-19-2009: Guest_BD_win_outlet_on -> 1
+12:14:50 - 11-19-2009: Guest_Bed_W_outlet -> 65535d
+12:14:50 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 0
+12:14:50 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 1
+12:14:50 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 0
+12:14:50 - 11-19-2009: Guest_BD_win_outlet_on -> 0
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 1
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_on -> 1
+12:14:51 - 11-19-2009: Guest_Bed_W_outlet -> 65535d
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 0
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_on -> 0
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 1
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_off -> 1
+12:14:51 - 11-19-2009: Guest_Bed_W_outlet -> 0d
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 0
+12:14:51 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 1
+12:14:52 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 0
+12:14:52 - 11-19-2009: Guest_BD_win_outlet_off -> 0
+12:14:52 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:52 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:52 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:52 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:14:52 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:14:52 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:14:52 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:14:52 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:14:53 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:53 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:53 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:55 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:14:55 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:55 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:14:56 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:14:56 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:14:56 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:14:57 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:14:57 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:14:57 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:14:57 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:14:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:14:57 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:14:58 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:14:58 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:14:58 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:14:58 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:14:58 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:15:01 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:01 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:01 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:02 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:02 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:02 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:04 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 685d
+12:15:04 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 685d
+12:15:10 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:11 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:11 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:11 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:14 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 684d
+12:15:14 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 684d
+12:15:15 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:15 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:15 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:18 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:18 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:18 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:19 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:19 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:19 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:20 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:20 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:20 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:23 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:23 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:23 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:24 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:24 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:24 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:27 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:28 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:28 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:30 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:30 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:30 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:32 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:32 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:32 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:33 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:33 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:33 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:39 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 685d
+12:15:39 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 685d
+12:15:40 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:15:40 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:15:40 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:15:40 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:15:41 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:15:43 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 1
+12:15:43 - 11-19-2009: Guest_BD_win_outlet_on -> 1
+12:15:43 - 11-19-2009: Guest_Bed_W_outlet -> 65535d
+12:15:43 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 0
+12:15:43 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 1
+12:15:44 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 0
+12:15:44 - 11-19-2009: Guest_BD_win_outlet_on -> 0
+12:15:46 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 1
+12:15:46 - 11-19-2009: Guest_BD_win_outlet_off -> 1
+12:15:46 - 11-19-2009: Guest_Bed_W_outlet -> 0d
+12:15:46 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 0
+12:15:46 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 1
+12:15:46 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:46 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:46 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:46 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 0
+12:15:46 - 11-19-2009: Guest_BD_win_outlet_off -> 0
+12:15:48 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:48 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:48 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:48 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:15:48 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:15:48 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:15:48 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:15:48 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:15:48 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 686d
+12:15:48 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:15:48 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 666d
+12:15:48 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 666d
+12:15:49 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:49 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:49 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:51 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:51 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:51 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:51 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:15:51 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:15:51 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:15:51 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:15:52 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:15:55 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:55 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:55 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:56 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:56 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:56 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:15:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:15:58 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:15:58 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:58 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:15:59 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:15:59 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:15:59 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:16:04 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:16:04 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:04 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:16:05 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:16:05 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:05 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:16:17 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:16:17 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:17 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:16:18 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:16:18 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:18 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:16:21 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:16:21 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:21 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:16:22 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:16:22 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:22 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:16:28 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:16:28 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:28 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:16:30 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:16:30 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:30 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:16:35 - 11-19-2009: Lighting_clear -> 1
+12:16:35 - 11-19-2009: Bed2_Light_A_FB -> 0
+12:16:35 - 11-19-2009: Lighting_clear -> 0
+12:16:38 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:16:38 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:38 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:16:38 - 11-19-2009: Hall_gui_on/off_1 -> 1
+12:16:38 - 11-19-2009: Hall_gui_on/off -> 1
+12:16:38 - 11-19-2009: Hall_1_touch_OFF_tgl -> 0
+12:16:38 - 11-19-2009: Hall_1_touch_on_tgl -> 1
+12:16:38 - 11-19-2009: Hall_1_touch_on_OS -> 1
+12:16:38 - 11-19-2009: Hall_Light_ON_OR -> 1
+12:16:38 - 11-19-2009: Hall_Light -> 65535d
+12:16:38 - 11-19-2009: //Hall_Light_OFF_OR_INT -> 0
+12:16:38 - 11-19-2009: //Hall_Light_ON_OR_INT -> 1
+12:16:39 - 11-19-2009: Hall_gui_on/off_1 -> 0
+12:16:39 - 11-19-2009: Hall_gui_on/off -> 0
+12:16:39 - 11-19-2009: Hall_1_touch_on_OS -> 0
+12:16:39 - 11-19-2009: Hall_Light_ON_OR -> 0
+12:16:39 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:16:39 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:39 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:16:44 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:16:44 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:44 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:16:46 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:16:46 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:16:46 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:16:47 - 11-19-2009: Guest_Bath_A -> 1
+12:16:47 - 11-19-2009: Guest_Bath_A_FB -> 1
+12:16:48 - 11-19-2009: Guest_Bath_A -> 0
+12:16:51 - 11-19-2009: Lighting_clear -> 1
+12:16:51 - 11-19-2009: Guest_Bath_A_FB -> 0
+12:16:51 - 11-19-2009: Lighting_clear -> 0
+12:16:53 - 11-19-2009: laundry_gui_on/off_2 -> 1
+12:16:53 - 11-19-2009: laundry_gui_on/off -> 1
+12:16:53 - 11-19-2009: laundry_1_touch_OFF_tgl -> 0
+12:16:53 - 11-19-2009: laundry_1_touch_on_tgl -> 1
+12:16:53 - 11-19-2009: laundry_1_touch_on_OS -> 1
+12:16:53 - 11-19-2009: Laundry_Under_Cabinet_ON_OR -> 1
+12:16:53 - 11-19-2009: Laundry_Under_Cabinet_Light -> 65535d
+12:16:53 - 11-19-2009: laundry_gui_on/off_2 -> 0
+12:16:53 - 11-19-2009: laundry_gui_on/off -> 0
+12:16:53 - 11-19-2009: laundry_1_touch_on_OS -> 0
+12:16:53 - 11-19-2009: Laundry_Under_Cabinet_ON_OR -> 0
+12:16:55 - 11-19-2009: Utility_Light_A -> 1
+12:16:55 - 11-19-2009: Utility_Light_A_FB -> 1
+12:16:55 - 11-19-2009: Utility_Light_A -> 0
+12:16:56 - 11-19-2009: Lighting_clear -> 1
+12:16:56 - 11-19-2009: Utility_Light_A_FB -> 0
+12:16:56 - 11-19-2009: Lighting_clear -> 0
+12:16:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:16:58 - 11-19-2009: Utility_gui_on/off -> 1
+12:16:58 - 11-19-2009: Utility_1_touch_OFF_tgl -> 0
+12:16:58 - 11-19-2009: Utility_1_touch_on_tgl -> 1
+12:16:58 - 11-19-2009: Utility_1_touch_on_OS -> 1
+12:16:58 - 11-19-2009: Utility_Closet_ON_OR -> 1
+12:16:58 - 11-19-2009: Utility_Closet_Light -> 65535d
+12:16:58 - 11-19-2009: //Utility_Closet_OFF_OR_INT -> 0
+12:16:58 - 11-19-2009: //Utility_Closet_ON_OR_INT -> 1
+12:16:58 - 11-19-2009: Utility_gui_on/off -> 0
+12:16:58 - 11-19-2009: Utility_1_touch_on_OS -> 0
+12:16:58 - 11-19-2009: Utility_Closet_ON_OR -> 0
+12:17:07 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:07 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:07 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:07 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:07 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:07 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:07 - 11-19-2009: Bed2_Light_A -> 1
+12:17:07 - 11-19-2009: Bed2_Light_A_FB -> 1
+12:17:08 - 11-19-2009: Bed2_Light_A -> 0
+12:17:13 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:17:13 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:17:13 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:17:13 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:17:13 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:17:14 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:14 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:14 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:15 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:15 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:15 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:17 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:17:17 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:17:17 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:17:17 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:17:18 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:17:18 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:18 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:18 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:19 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:20 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:20 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:23 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 686d
+12:17:23 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 686d
+12:17:25 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:25 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:25 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:26 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:26 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:26 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:17:26 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:17:26 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:17:26 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:17:26 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:26 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:17:27 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:17:27 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:17:27 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:17:27 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:17:27 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:17:29 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:17:29 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:17:29 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:17:29 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:17:29 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:17:38 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:38 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:38 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:39 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:39 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:39 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:41 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:41 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:41 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:43 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 685d
+12:17:43 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 685d
+12:17:43 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:43 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:43 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:44 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:44 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:44 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:50 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:17:50 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:50 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:17:51 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:17:51 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:17:51 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:17:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:18:03 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:18:03 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:03 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:18:04 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:18:04 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:04 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:18:09 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 686d
+12:18:09 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 686d
+12:18:09 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:18:09 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:09 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:18:09 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:18:09 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:09 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:18:20 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:18:20 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:20 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:18:21 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:18:21 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:21 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:18:29 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:18:29 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:29 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:18:31 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:18:31 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:31 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:18:32 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 687d
+12:18:32 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:18:32 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 667d
+12:18:32 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 667d
+12:18:41 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:18:41 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:41 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:18:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:18:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:18:47 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:18:47 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:47 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:18:48 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:18:48 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:48 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:18:55 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:18:55 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:55 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:18:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:18:57 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:18:57 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:18:57 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:19:12 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 687d
+12:19:12 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 687d
+12:19:17 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:19:17 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:19:17 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:19:18 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:19:18 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:19:18 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:19:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:19:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:19:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:19:43 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:19:43 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:19:43 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:19:49 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:19:50 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:19:50 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:19:51 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:19:51 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:19:51 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:19:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:19:59 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:19:59 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:19:59 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:00 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:00 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:00 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:02 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 688d
+12:20:02 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:20:02 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 668d
+12:20:02 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 668d
+12:20:04 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:20:04 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:20:04 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:20:04 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:20:04 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:20:11 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:20:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:12 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:12 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:12 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:13 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:20:13 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:13 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:14 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:14 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:14 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:16 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:20:16 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:20:16 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:20:16 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:20:16 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:20:21 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:20:21 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:21 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:21 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:20:21 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:20:21 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:20:21 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:20:22 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:22 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:20:22 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:22 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:23 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:20:23 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:20:23 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:20:23 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:20:23 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:20:24 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:20:24 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:24 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:25 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:20:25 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:20:25 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:20:25 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:20:25 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:20:25 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:20:25 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:20:25 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:25 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:25 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:25 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:20:26 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:20:26 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:20:26 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:20:26 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:20:26 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:20:28 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:20:28 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:20:28 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:20:28 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:20:28 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:20:30 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:20:30 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:30 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:31 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:31 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:31 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:20:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:43 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:43 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:43 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:46 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:20:46 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:20:46 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:20:46 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:20:47 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:20:47 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:20:47 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:47 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:20:48 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 1
+12:20:48 - 11-19-2009: Guest_BD_win_outlet_on -> 1
+12:20:48 - 11-19-2009: Guest_Bed_W_outlet -> 65535d
+12:20:48 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 0
+12:20:48 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 1
+12:20:48 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:20:48 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:20:48 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:20:48 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 0
+12:20:48 - 11-19-2009: Guest_BD_win_outlet_on -> 0
+12:20:50 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 1
+12:20:50 - 11-19-2009: Guest_BD_win_outlet_off -> 1
+12:20:50 - 11-19-2009: Guest_Bed_W_outlet -> 0d
+12:20:50 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 0
+12:20:50 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 1
+12:20:50 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 0
+12:20:50 - 11-19-2009: Guest_BD_win_outlet_off -> 0
+12:20:52 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 1
+12:20:52 - 11-19-2009: Guest_BD_win_outlet_on -> 1
+12:20:52 - 11-19-2009: Guest_Bed_W_outlet -> 65535d
+12:20:52 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 0
+12:20:52 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 1
+12:20:52 - 11-19-2009: Guest_BD_win_outlet_on_1 -> 0
+12:20:52 - 11-19-2009: Guest_BD_win_outlet_on -> 0
+12:20:53 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 1
+12:20:53 - 11-19-2009: Guest_BD_win_outlet_off -> 1
+12:20:53 - 11-19-2009: Guest_Bed_W_outlet -> 0d
+12:20:53 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 0
+12:20:53 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 1
+12:20:53 - 11-19-2009: Guest_BD_win_outlet_off_1 -> 0
+12:20:53 - 11-19-2009: Guest_BD_win_outlet_off -> 0
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_on -> 1
+12:20:54 - 11-19-2009: Guest_Bed_E_outlet -> 65535d
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 0
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 1
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_on -> 0
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_off -> 1
+12:20:54 - 11-19-2009: Guest_Bed_E_outlet -> 0d
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_on_FB -> 0
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_off_FB -> 1
+12:20:54 - 11-19-2009: Guest_BD_wall_outlet_off -> 0
+12:20:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:21:00 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:00 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:00 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:01 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:01 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:01 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:13 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:13 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:13 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:14 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:14 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:14 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:16 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:16 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:16 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:18 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:18 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:18 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:19 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:19 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:19 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:20 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:20 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:20 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:26 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:26 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:26 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:27 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:27 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:27 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:35 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:35 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:35 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:36 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 690d
+12:21:36 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:21:36 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 669d
+12:21:36 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 669d
+12:21:36 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:36 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:36 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:39 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:40 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:40 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:53 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:21:53 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:53 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:21:55 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:21:55 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:21:55 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:21:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:22:04 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:22:04 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:04 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:22:05 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:22:05 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:05 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:22:08 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:22:08 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:08 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:22:09 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:22:09 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:09 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:22:21 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:22:21 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:21 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:22:22 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:22:22 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:22 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:22:24 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:22:24 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:24 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:22:26 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:22:26 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:26 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:22:33 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:22:33 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:33 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:22:35 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:22:35 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:35 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:22:36 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 688d
+12:22:36 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 688d
+12:22:40 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 687d
+12:22:40 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 687d
+12:22:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:22:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:22:44 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:22:44 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:22:44 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:22:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:23:19 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:23:19 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:19 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:23:20 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:23:20 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:20 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:23:26 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:23:26 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:26 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:23:27 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:23:27 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:27 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:23:40 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 688d
+12:23:40 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 688d
+12:23:50 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:23:50 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:50 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:23:52 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:23:52 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:52 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:23:54 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:23:54 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:54 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:23:55 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 691d
+12:23:55 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:23:55 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 670d
+12:23:55 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 670d
+12:23:57 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:23:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:23:57 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:57 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:23:58 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:23:58 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:58 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:23:59 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:23:59 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:23:59 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:05 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 690d
+12:24:05 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:24:05 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 669d
+12:24:05 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 669d
+12:24:10 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 690d
+12:24:10 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 690d
+12:24:14 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:14 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:14 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:15 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:15 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:15 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:16 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:16 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:16 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:17 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:17 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:17 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:20 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:21 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:21 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:22 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:22 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:22 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:23 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:23 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:23 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:24 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:24 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:24 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:25 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:25 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:25 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:25 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 691d
+12:24:25 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+12:24:25 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 670d
+12:24:25 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 670d
+12:24:26 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:26 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:26 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:31 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:31 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:31 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:32 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:32 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:32 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:34 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:34 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:34 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:36 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:36 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:36 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:38 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:24:38 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:38 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:24:39 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:24:39 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:24:39 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:24:50 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 688d
+12:24:50 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 688d
+12:24:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:25:02 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:02 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:02 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:03 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:03 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:03 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:11 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:12 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:12 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:12 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:22 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:22 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:22 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:23 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:23 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:23 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:24 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:24 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:24 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:27 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:27 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:27 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:28 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:28 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:28 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:29 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:29 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:29 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:33 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:33 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:33 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:34 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:34 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:34 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:43 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:43 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:43 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:44 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 690d
+12:25:44 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 690d
+12:25:44 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:44 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:44 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:45 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:45 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:45 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:47 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:47 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:47 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:49 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:50 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:50 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:53 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:54 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:54 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:25:55 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:25:55 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:55 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:25:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:25:59 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:25:59 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:25:59 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:00 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:00 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:00 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:07 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:07 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:07 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:08 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:08 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:08 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:09 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 691d
+12:26:09 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 691d
+12:26:10 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:10 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:10 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:11 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:11 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:11 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:14 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:14 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:14 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:14 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 690d
+12:26:14 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 690d
+12:26:15 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:15 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:15 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:29 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:29 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:29 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:31 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:31 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:31 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:32 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:32 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:32 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:33 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:33 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:33 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:40 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:40 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:40 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:42 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:42 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:42 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:43 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:43 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:43 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:44 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:44 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:44 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:45 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:45 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:45 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:46 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:46 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:46 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:26:57 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:26:57 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:57 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:26:57 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+12:26:58 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:26:58 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:26:58 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:27:01 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:27:01 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:01 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:27:02 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:27:02 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:02 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:27:05 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:27:05 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:05 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:27:10 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:27:10 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:10 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:27:10 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:27:10 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:10 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:27:10 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:27:10 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:10 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:27:12 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:27:12 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:13 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:27:15 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:27:15 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:15 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:27:19 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:27:19 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:19 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:27:20 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:27:20 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:20 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:27:23 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:27:23 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:23 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:27:24 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:27:24 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:24 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+12:27:28 - 11-19-2009: [M_Bed][XPanel]fb158 -> 1
+12:27:28 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:28 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Stereo
+12:27:29 - 11-19-2009: [M_Bed][XPanel]fb158 -> 0
+12:27:29 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+12:27:29 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono

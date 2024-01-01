@@ -1,0 +1,1314 @@
+10:54:06 - 12-01-2009: MB_Ceiling_Fan_Light_off_OR_INT -> 1
+10:54:06 - 12-01-2009: Master_Closet_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Laundry_Under_Cabinet_Low_INT -> 1
+10:54:06 - 12-01-2009: Wine_OH_Can_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Guest_Bath_OH_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Guest_Vanity_OFF_INT -> 1
+10:54:06 - 12-01-2009: Guest_BD_Fan_Light_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Guest_BD_win_outlet_off_FB -> 1
+10:54:06 - 12-01-2009: AV_A_FB -> 1
+10:54:06 - 12-01-2009: Kitchen_OH_Cans_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Dining_Chandlier_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Study_Fan_OFF_FB -> 1
+10:54:06 - 12-01-2009: Art_Lights_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Patio_1_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: Patio_2_OFF_OR_INT -> 1
+10:54:06 - 12-01-2009: [M_Bed][iPod]Advanced_Mode_Enabled -> 1
+10:54:06 - 12-01-2009: [M_Bed][iPod]Paused -> 1
+10:54:06 - 12-01-2009: [M_Bed][iPod]iPod_Present -> 1
+10:54:06 - 12-01-2009: [M_Bed][iPod]Show_Play_Page -> 1
+10:54:06 - 12-01-2009: [M_Bed][iPod]Show_Advanced_Play_Page -> 1
+10:54:06 - 12-01-2009: [M_Bed][iPod]Browse_1_Selected -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb28 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb34 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb56 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb120 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb124 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb133 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb153 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb158 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb160 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb174 -> 1
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]fb367 -> 1
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]fb372 -> 1
+10:54:06 - 12-01-2009: [M_Bed][XPanel]fb401 -> 1
+10:54:06 - 12-01-2009: S-6.1_Auto_Mode_fb_1 -> 1
+10:54:06 - 12-01-2009: S-6.1_Fan_Auto_fb_1 -> 1
+10:54:06 - 12-01-2009: S-6.1_Away_fb -> 1
+10:54:06 - 12-01-2009: S-6.1_Display_Dual_Setpoints_1 -> 1
+10:54:06 - 12-01-2009: MB_Ceiling_Fan -> 65535d
+10:54:06 - 12-01-2009: Laundry_Under_Cabinet_Light -> 16384d
+10:54:06 - 12-01-2009: Guest_BD_Fan -> 65535d
+10:54:06 - 12-01-2009: [M_Bed][iPod]Duration -> 267d
+10:54:06 - 12-01-2009: [M_Bed][iPod]Track_Number -> 89d
+10:54:06 - 12-01-2009: [M_Bed][iPod]Number_of_Tracks -> 193d
+10:54:06 - 12-01-2009: [M_Bed][iPod]Browse_Scrollbar_Feedback -> 65535d
+10:54:06 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 691d
+10:54:06 - 12-01-2009: [M_Bed][Audio_Zone]Minimum_Volume -> 620d
+10:54:06 - 12-01-2009: [M_Bed][Audio_Zone]Startup_Volume -> 850d
+10:54:06 - 12-01-2009: RS23[M_Bed][iPod]Set_Browse_Scrollbar -> 0d
+10:54:06 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+10:54:06 - 12-01-2009: [M_Bed][iPod]Current_Album -> \x1B!Marian McPartland - Bill Evans\x1B"While We're Young\x1B#B
+10:54:06 - 12-01-2009: [M_Bed][iPod]Current_Cover_URL -> Marian McPartland - Bill Evans
+10:54:06 - 12-01-2009: [M_Bed][iPod]Play_List_Name -> While We're Young
+10:54:06 - 12-01-2009: [M_Bed][iPod]Next_Track -> B
+10:54:06 - 12-01-2009: [M_Bed][iPod]Now_Playing_Transport$ -> M Bed
+10:54:06 - 12-01-2009: [M_Bed][iPod]Item_1_Text -> M Bath
+10:54:06 - 12-01-2009: [M_Bed][iPod]Item_2_Text -> Living
+10:54:06 - 12-01-2009: [M_Bed][iPod]Item_3_Text -> Dining
+10:54:06 - 12-01-2009: [M_Bed][iPod]Item_5_Text ->  
+10:54:06 - 12-01-2009: [M_Bed][iPod]Name ->  
+10:54:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]FM_RDS_Name$ ->  
+10:54:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]FM_RDS_Genre$ ->  
+10:54:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]FM_RDS_Message$ -> CC-4000
+10:54:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ ->  
+10:54:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ ->  
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o25 -> CC-4000
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o26 ->  
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o27 ->  
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o28 -> Living
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o29 -> CC-4000
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o30 -> iPod
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o31 -> AM-FM Tuner
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o32 -> XM Tuner
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o33 ->  
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o34 ->  
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o35 -> Marian McPartland - Bill Evans
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o36 -> While We're Young
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.30 FM
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o39 -> CHECK ANTENNA
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o40 ->  
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o43 -> 97CO
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o44 -> A\xC0   \xDF\x8Dx
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o45 ->  97.3 KB
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.3 
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o47 -> FM
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o48 -> \x0D
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o50 -> Preset 8
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o51 -> \x0D
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o53 -> Preset 9
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o54 -> \x0D
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o57 -> Preset 10
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o58 -> \x0D
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+10:54:06 - 12-01-2009: [M_Bed][XPanel]text-o61 -> Bill Gunn's iPod
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o217 -> Playlists
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o218 -> Artists
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o219 -> Albums
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o220 -> Songs
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o221 -> Genres
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o222 -> While We're Young
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o223 -> Marian McPartland's Piano Jazz With Guest Bill Evans
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o224 -> Marian McPartland - Bill Evans
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o225 -> 62
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o226 -> 85
+10:54:06 - 12-01-2009: //[M_Bed][XPanel]text-o251 -> Next Schedule: None.
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]text-o252 -> Maintain Away Setpoint.
+10:54:07 - 12-01-2009: Climate-audio_ipod -> 0
+10:54:07 - 12-01-2009: AV-audio_ipod -> 0
+10:54:07 - 12-01-2009: Admin-audio_ipod -> 0
+10:54:07 - 12-01-2009: internet_explorer_1 -> 0
+10:54:07 - 12-01-2009: //IP-ID-03_an_act1 -> 65535d
+10:54:07 - 12-01-2009: [M_Bed][iPod]Set_Shuffle_Mode -> 32767d
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb109 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb187 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb206 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb208 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb209 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb210 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb211 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb212 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb213 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb214 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb215 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb217 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb218 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb219 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb220 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb221 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb222 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb223 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb224 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb225 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb226 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb227 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb228 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb279 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb284 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb303 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb305 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb306 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb307 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb308 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb309 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb310 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb311 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb312 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb313 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb314 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb320 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb323 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb324 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb325 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb326 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb328 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb329 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb332 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb352 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb360 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb390 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]fb399 -> 1
+10:54:07 - 12-01-2009: //[M_Bed][XPanel]text-o235 -> CHECK ANTENNA
+10:54:07 - 12-01-2009: MBed_S_outlet -> 65535d
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>SysModeAuto_F}} -> 0
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>FanOn_F}} -> 1
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>Auto(1pt)Setpoint_F} -> 1d
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 620d
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 850d
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 740d
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 712d
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>Slab3Type}} -> 1
+10:54:07 - 12-01-2009: S-6.1_{{TSTAT>>0.5C_Steps}} -> 1
+10:54:07 - 12-01-2009: MB_Ceiling_Fan_Light_on_BP -> 1
+10:54:07 - 12-01-2009: //MBATH_OH_Sink_OFF -> 1
+10:54:07 - 12-01-2009: MBATH_OH_ON_BUF -> 1
+10:54:07 - 12-01-2009: always_on -> 1
+10:54:07 - 12-01-2009: M_Closet_always_on_os -> 1
+10:54:07 - 12-01-2009: laundry_1_touch_on_OS -> 1
+10:54:07 - 12-01-2009: Hall_Light_LS1 -> 1
+10:54:07 - 12-01-2009: Hall_Light_ON_BUF -> 1
+10:54:07 - 12-01-2009: Wine_1_touch_OFF_OS -> 1
+10:54:07 - 12-01-2009: Guest_Bath_gui_on/off -> 1
+10:54:07 - 12-01-2009: GBath_1_touch_OFF_OS -> 1
+10:54:07 - 12-01-2009: G_Bath_vanity_off_OS -> 1
+10:54:07 - 12-01-2009: Guest_BD_Fan_Light_ON_OR -> 1
+10:54:07 - 12-01-2009: GB_Outlet_1_off_OS -> 1
+10:54:07 - 12-01-2009: Kitchen_1_touch_OFF_OS -> 1
+10:54:07 - 12-01-2009: Dining_Chandlier_ON_OS -> 1
+10:54:07 - 12-01-2009: Study_OH_Hi_INT -> 1
+10:54:07 - 12-01-2009: Study_OH_ON_OR -> 1
+10:54:07 - 12-01-2009: Art_1_touch_OFF_OS -> 1
+10:54:07 - 12-01-2009: //Master_Closet_Hi_INT -> 1
+10:54:07 - 12-01-2009: //Hall_Light_Med_INT -> 1
+10:54:07 - 12-01-2009: //Wine_OH_LS1_INT -> 1
+10:54:07 - 12-01-2009: Patio_2_1_touch_OFF_OS -> 1
+10:54:07 - 12-01-2009: Patio_1_1_touch_OFF_OS -> 1
+10:54:07 - 12-01-2009: //S-6.1_FloorWarmSysModeHeat_F -> 0
+10:54:07 - 12-01-2009: S-6.1_Current_Temp$ -> 1
+10:54:07 - 12-01-2009: //S-6.1_Remote_Sensor_2_Temp -> 63d
+10:54:07 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+10:54:07 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+10:54:07 - 12-01-2009: //S-6.1_EnableSlabMode -> 0
+10:54:07 - 12-01-2009: //S-6.1_EnableSystemMode_Auto -> 1
+10:54:07 - 12-01-2009: //S-6.1_DisplaySlabTemp -> 1
+10:54:07 - 12-01-2009: //S-6.1_Temporary_fb_1 -> 1
+10:54:07 - 12-01-2009: //S-6.1_{{FloorWarmSysModeOff>>TSTAT} -> 0
+10:54:07 - 12-01-2009: Admin_A -> 0
+10:54:07 - 12-01-2009: Shade_A -> 1
+10:54:07 - 12-01-2009: //Climate_A_FB_FB_P1 -> 1
+10:54:07 - 12-01-2009: Watch_DVD_A_FB -> 1
+10:54:07 - 12-01-2009: auto_fb_layer_1_btn -> 1
+10:54:07 - 12-01-2009: auto_fb_layer_4_fb* -> 1
+10:54:07 - 12-01-2009: AV_power_on_sat -> 1
+10:54:07 - 12-01-2009: AV_power_on_DVD -> 1
+10:54:07 - 12-01-2009: AV_power_on -> 1
+10:54:07 - 12-01-2009: [Console Data] : 
+10:54:09 - 12-01-2009: [Console Data] : PRO2>
+10:54:09 - 12-01-2009: //[M_Bed][XPanel]press375 -> 1
+10:54:09 - 12-01-2009: [M_Bed][XPanel]fb409 -> 1
+10:54:10 - 12-01-2009: //[M_Bed][XPanel]press375 -> 0
+10:54:10 - 12-01-2009: [M_Bed][XPanel]fb409 -> 0
+10:54:14 - 12-01-2009: //[M_Bed][XPanel]press375 -> 1
+10:54:14 - 12-01-2009: [M_Bed][XPanel]fb409 -> 1
+10:54:17 - 12-01-2009: //[M_Bed][XPanel]press375 -> 0
+10:54:17 - 12-01-2009: [M_Bed][XPanel]fb409 -> 0
+10:54:55 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+10:54:55 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+10:57:04 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 746d
+10:57:04 - 12-01-2009: //S-6.1_SlabSetpoint -> 746d
+10:58:49 - 12-01-2009: [User Stimulus] : User set CD_Play to Press
+10:58:49 - 12-01-2009: CD_Play -> 1
+10:58:49 - 12-01-2009: S-9.3_To_Device$ -> @PMD:3\x0D
+10:58:49 - 12-01-2009: S-9.3_From_Device$ -> @P
+10:58:50 - 12-01-2009: S-9.3_From_Device$ -> MD:3\x0D
+10:59:28 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 747d
+10:59:28 - 12-01-2009: //S-6.1_SlabSetpoint -> 747d
+10:59:33 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 746d
+10:59:33 - 12-01-2009: //S-6.1_SlabSetpoint -> 746d
+11:00:52 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:00:52 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:02:12 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 713d
+11:02:12 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:02:12 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:02:12 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:02:12 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:02:12 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 693d
+11:03:16 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:03:16 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:04:21 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:04:21 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:05:30 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 714d
+11:05:30 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:05:30 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:05:30 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 694d
+11:05:45 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 713d
+11:05:45 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:05:45 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:05:45 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 693d
+11:05:55 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:05:55 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:06:05 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 714d
+11:06:05 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:06:05 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:06:05 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 694d
+11:06:15 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 713d
+11:06:15 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:06:15 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:06:15 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 693d
+11:06:45 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 714d
+11:06:45 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:06:45 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:06:45 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 694d
+11:06:50 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 713d
+11:06:50 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:06:50 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:06:50 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 693d
+11:07:54 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 714d
+11:07:54 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:07:54 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 746d
+11:07:54 - 12-01-2009: //S-6.1_SlabSetpoint -> 746d
+11:07:54 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:07:54 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 694d
+11:10:13 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 747d
+11:10:13 - 12-01-2009: //S-6.1_SlabSetpoint -> 747d
+11:11:03 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 715d
+11:11:03 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:11:03 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:11:03 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 695d
+11:11:48 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 746d
+11:11:48 - 12-01-2009: //S-6.1_SlabSetpoint -> 746d
+11:12:42 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:12:42 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:13:27 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 716d
+11:13:27 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:13:27 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:13:27 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 696d
+11:13:52 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:13:52 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:15:21 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:15:21 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:15:56 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:15:56 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:17:50 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 718d
+11:17:50 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:17:50 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:17:50 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:17:50 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:17:50 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 697d
+11:19:19 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 716d
+11:19:19 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:19:19 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:19:19 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 696d
+11:19:39 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 718d
+11:19:39 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:19:39 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:19:39 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 697d
+11:19:44 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 746d
+11:19:44 - 12-01-2009: //S-6.1_SlabSetpoint -> 746d
+11:19:49 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 716d
+11:19:49 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:19:49 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:19:49 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 696d
+11:21:43 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:21:43 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:21:53 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:21:53 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:21:58 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:21:58 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:22:03 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 741d
+11:22:03 - 12-01-2009: //S-6.1_SlabSetpoint -> 741d
+11:22:08 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 740d
+11:22:08 - 12-01-2009: //S-6.1_SlabSetpoint -> 740d
+11:22:23 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 741d
+11:22:23 - 12-01-2009: //S-6.1_SlabSetpoint -> 741d
+11:22:38 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:22:38 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:22:53 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:22:53 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:23:32 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:23:32 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:24:12 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:24:12 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:24:32 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 715d
+11:24:32 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:24:32 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:24:32 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:24:32 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:24:32 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 695d
+11:24:37 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:24:37 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:24:52 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 716d
+11:24:52 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:24:52 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:24:52 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 696d
+11:26:11 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:26:11 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:27:31 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 741d
+11:27:31 - 12-01-2009: //S-6.1_SlabSetpoint -> 741d
+11:27:42 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 740d
+11:27:42 - 12-01-2009: //S-6.1_SlabSetpoint -> 740d
+11:27:46 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 739d
+11:27:46 - 12-01-2009: //S-6.1_SlabSetpoint -> 739d
+11:27:50 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 738d
+11:27:50 - 12-01-2009: //S-6.1_SlabSetpoint -> 738d
+11:27:55 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 736d
+11:27:55 - 12-01-2009: //S-6.1_SlabSetpoint -> 736d
+11:28:05 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 738d
+11:28:05 - 12-01-2009: //S-6.1_SlabSetpoint -> 738d
+11:28:15 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 739d
+11:28:15 - 12-01-2009: //S-6.1_SlabSetpoint -> 739d
+11:28:30 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 740d
+11:28:30 - 12-01-2009: //S-6.1_SlabSetpoint -> 740d
+11:28:40 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 715d
+11:28:40 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:28:40 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:28:40 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 695d
+11:28:50 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 741d
+11:28:50 - 12-01-2009: //S-6.1_SlabSetpoint -> 741d
+11:29:00 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 716d
+11:29:00 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:29:00 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:29:00 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 696d
+11:29:15 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:29:15 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:30:00 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:30:00 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:30:19 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 715d
+11:30:19 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 72
+11:30:19 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:30:19 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 695d
+11:30:59 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:30:59 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:31:19 - 12-01-2009: [User Stimulus] : User set CD_Stop to Press
+11:31:19 - 12-01-2009: CD_Stop -> 1
+11:31:19 - 12-01-2009: S-9.3_To_Device$ -> @PMD:1\x0D
+11:31:19 - 12-01-2009: S-9.3_From_Device$ -> @
+11:31:19 - 12-01-2009: S-9.3_From_Device$ -> PMD:1
+11:31:19 - 12-01-2009: S-9.3_From_Device$ -> \x0D
+11:32:48 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 746d
+11:32:48 - 12-01-2009: //S-6.1_SlabSetpoint -> 746d
+11:36:02 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:36:02 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:37:11 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:37:11 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:37:26 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:37:26 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:37:31 - 12-01-2009: [Console Data] : Update request from Slot-08.IP-ID-03
+11:37:31 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 741d
+11:37:31 - 12-01-2009: //S-6.1_SlabSetpoint -> 741d
+11:37:36 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 740d
+11:37:36 - 12-01-2009: //S-6.1_SlabSetpoint -> 740d
+11:37:46 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 739d
+11:37:46 - 12-01-2009: //S-6.1_SlabSetpoint -> 739d
+11:37:48 - 12-01-2009: [M_Bed][XPanel]press79 -> 1
+11:37:48 - 12-01-2009: //[M_Bed][XPanel]fb87 -> 1
+11:37:48 - 12-01-2009: //[M_Bed][XPanel]fb109 -> 0
+11:37:48 - 12-01-2009: //[M_Bed][XPanel]fb399 -> 0
+11:37:48 - 12-01-2009: [M_Bed][XPanel]fb124 -> 0
+11:37:48 - 12-01-2009: //[M_Bed][XPanel]fb87 -> 0
+11:37:48 - 12-01-2009: //[M_Bed][XPanel]fb109 -> 1
+11:37:48 - 12-01-2009: //[M_Bed][XPanel]fb399 -> 1
+11:37:48 - 12-01-2009: [M_Bed][XPanel]fb124 -> 1
+11:37:49 - 12-01-2009: [M_Bed][XPanel]press79 -> 0
+11:37:50 - 12-01-2009: [M_Bed][XPanel]press115 -> 1
+11:37:50 - 12-01-2009: //[M_Bed][XPanel]fb149 -> 1
+11:37:50 - 12-01-2009: //[M_Bed][XPanel]fb149 -> 0
+11:37:50 - 12-01-2009: [M_Bed][XPanel]fb133 -> 0
+11:37:50 - 12-01-2009: [M_Bed][XPanel]fb135 -> 1
+11:37:50 - 12-01-2009: //[M_Bed][XPanel]fb399 -> 0
+11:37:50 - 12-01-2009: //[M_Bed][XPanel]fb441 -> 1
+11:37:50 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]FM_RDS_Message$ -> AM-FM Tuner
+11:37:50 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.30 FM
+11:37:50 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:37:50 - 12-01-2009: [M_Bed][XPanel]press115 -> 0
+11:37:53 - 12-01-2009: [M_Bed][XPanel]press160 -> 1
+11:37:53 - 12-01-2009: [M_Bed][XPanel]fb173 -> 1
+11:37:53 - 12-01-2009: //[M_Bed][Audio_Zone]Source_Select_Line_4_Now_Playing -> --
+11:37:53 - 12-01-2009: [M_Bed][XPanel]text-o43 -> --
+11:37:53 - 12-01-2009: //[M_Bed][Audio_Zone]Source_Select_Line_4_Now_Playing_(line_2) -> --
+11:37:53 - 12-01-2009: [M_Bed][XPanel]text-o44 -> --
+11:37:53 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist2 -> --
+11:37:53 - 12-01-2009: [M_Bed][XPanel]text-o45 -> --
+11:37:53 - 12-01-2009: [M_Bed][XPanel]fb153 -> 0
+11:37:53 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  97.4 
+11:37:53 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.4 
+11:37:53 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.40 FM
+11:37:53 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:37:53 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.40 FM
+11:37:53 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:37:53 - 12-01-2009: [M_Bed][XPanel]press160 -> 0
+11:37:53 - 12-01-2009: [M_Bed][XPanel]fb173 -> 0
+11:37:54 - 12-01-2009: [M_Bed][XPanel]fb158 -> 0
+11:37:54 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.40 FM
+11:37:54 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Mono
+11:37:54 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.40 FM
+11:37:54 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Mono
+11:37:56 - 12-01-2009: [M_Bed][XPanel]press159 -> 1
+11:37:56 - 12-01-2009: [M_Bed][XPanel]fb172 -> 1
+11:37:56 - 12-01-2009: [M_Bed][XPanel]fb153 -> 1
+11:37:56 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.3 
+11:37:56 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  97.3 
+11:37:56 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.30 FM
+11:37:56 - 12-01-2009: [M_Bed][XPanel]press159 -> 0
+11:37:56 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Mono
+11:37:56 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.30 FM
+11:37:56 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Mono
+11:37:56 - 12-01-2009: [M_Bed][XPanel]fb172 -> 0
+11:37:56 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 740d
+11:37:56 - 12-01-2009: //S-6.1_SlabSetpoint -> 740d
+11:37:56 - 12-01-2009: [M_Bed][XPanel]fb158 -> 1
+11:37:56 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.30 FM
+11:37:56 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:37:56 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.30 FM
+11:37:56 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:37:58 - 12-01-2009: [M_Bed][XPanel]press117 -> 1
+11:37:58 - 12-01-2009: [M_Bed][XPanel]press117 -> 0
+11:37:58 - 12-01-2009: [M_Bed][XPanel]fb152 -> 1
+11:37:58 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  88.5 
+11:37:59 - 12-01-2009: [M_Bed][XPanel]fb153 -> 0
+11:37:59 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  88.5 
+11:37:59 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 88.50 FM
+11:37:59 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:37:59 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 88.50 FM
+11:37:59 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:38:00 - 12-01-2009: [M_Bed][XPanel]press119 -> 1
+11:38:00 - 12-01-2009: [M_Bed][XPanel]press119 -> 0
+11:38:00 - 12-01-2009: [M_Bed][XPanel]fb152 -> 0
+11:38:00 - 12-01-2009: [M_Bed][XPanel]fb154 -> 1
+11:38:00 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  88.0 
+11:38:00 - 12-01-2009: [M_Bed][XPanel]fb155 -> 1
+11:38:00 - 12-01-2009: [M_Bed][XPanel]fb156 -> 1
+11:38:00 - 12-01-2009: [M_Bed][XPanel]fb157 -> 1
+11:38:00 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  88.0 
+11:38:00 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 88.00 FM
+11:38:00 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:38:00 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 88.00 FM
+11:38:00 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:38:01 - 12-01-2009: [M_Bed][XPanel]fb158 -> 0
+11:38:01 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 88.00 FM
+11:38:01 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Mono
+11:38:01 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 88.00 FM
+11:38:01 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Mono
+11:38:02 - 12-01-2009: [M_Bed][XPanel]press118 -> 1
+11:38:02 - 12-01-2009: [M_Bed][XPanel]press118 -> 0
+11:38:02 - 12-01-2009: [M_Bed][XPanel]fb153 -> 1
+11:38:02 - 12-01-2009: [M_Bed][XPanel]fb154 -> 0
+11:38:02 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.3 
+11:38:02 - 12-01-2009: [M_Bed][XPanel]fb155 -> 0
+11:38:02 - 12-01-2009: [M_Bed][XPanel]fb156 -> 0
+11:38:02 - 12-01-2009: [M_Bed][XPanel]fb157 -> 0
+11:38:02 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  97.3 
+11:38:02 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.30 FM
+11:38:02 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Mono
+11:38:02 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.30 FM
+11:38:02 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Mono
+11:38:03 - 12-01-2009: [M_Bed][XPanel]fb158 -> 1
+11:38:03 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.30 FM
+11:38:03 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:38:03 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.30 FM
+11:38:03 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:38:05 - 12-01-2009: [M_Bed][XPanel]press159 -> 1
+11:38:05 - 12-01-2009: [M_Bed][XPanel]fb172 -> 1
+11:38:05 - 12-01-2009: [M_Bed][XPanel]fb153 -> 0
+11:38:05 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  97.2 
+11:38:05 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.2 
+11:38:05 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.20 FM
+11:38:05 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:38:05 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.20 FM
+11:38:05 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:38:05 - 12-01-2009: [M_Bed][XPanel]press159 -> 0
+11:38:05 - 12-01-2009: [M_Bed][XPanel]fb172 -> 0
+11:38:05 - 12-01-2009: [M_Bed][XPanel]press159 -> 1
+11:38:05 - 12-01-2009: [M_Bed][XPanel]press159 -> 0
+11:38:05 - 12-01-2009: [M_Bed][XPanel]fb172 -> 1
+11:38:05 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  97.1 
+11:38:05 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.1 
+11:38:05 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.10 FM
+11:38:05 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:38:05 - 12-01-2009: [M_Bed][XPanel]fb172 -> 0
+11:38:05 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.10 FM
+11:38:05 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:38:06 - 12-01-2009: [M_Bed][XPanel]press160 -> 1
+11:38:06 - 12-01-2009: [M_Bed][XPanel]fb173 -> 1
+11:38:06 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  97.2 
+11:38:06 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.2 
+11:38:06 - 12-01-2009: [M_Bed][XPanel]press160 -> 0
+11:38:06 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.20 FM
+11:38:06 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:38:06 - 12-01-2009: [M_Bed][XPanel]fb173 -> 0
+11:38:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.20 FM
+11:38:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:38:06 - 12-01-2009: [M_Bed][XPanel]press160 -> 1
+11:38:06 - 12-01-2009: [M_Bed][XPanel]fb173 -> 1
+11:38:06 - 12-01-2009: [M_Bed][XPanel]press160 -> 0
+11:38:06 - 12-01-2009: [M_Bed][XPanel]fb153 -> 1
+11:38:06 - 12-01-2009: //[M_Bed][AADS-XM_-_XM_Tuner]Artist3 ->  97.3 
+11:38:06 - 12-01-2009: [M_Bed][XPanel]text-o46 ->  97.3 
+11:38:06 - 12-01-2009: [M_Bed][XPanel]text-o37 -> 97.30 FM
+11:38:06 - 12-01-2009: [M_Bed][XPanel]text-o38 -> Stereo
+11:38:06 - 12-01-2009: [M_Bed][XPanel]fb173 -> 0
+11:38:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> 97.30 FM
+11:38:06 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> Stereo
+11:38:07 - 12-01-2009: [M_Bed][XPanel]press72 -> 1
+11:38:07 - 12-01-2009: [M_Bed][XPanel]fb91 -> 1
+11:38:08 - 12-01-2009: [M_Bed][XPanel]press72 -> 0
+11:38:08 - 12-01-2009: [M_Bed][XPanel]fb91 -> 0
+11:38:08 - 12-01-2009: [M_Bed][XPanel]press72 -> 1
+11:38:08 - 12-01-2009: [M_Bed][XPanel]fb91 -> 1
+11:38:08 - 12-01-2009: [M_Bed][XPanel]press72 -> 0
+11:38:08 - 12-01-2009: [M_Bed][XPanel]fb91 -> 0
+11:38:08 - 12-01-2009: [M_Bed][XPanel]press72 -> 1
+11:38:08 - 12-01-2009: [M_Bed][XPanel]fb91 -> 1
+11:38:08 - 12-01-2009: [M_Bed][XPanel]press72 -> 0
+11:38:08 - 12-01-2009: [M_Bed][XPanel]fb91 -> 0
+11:38:08 - 12-01-2009: [M_Bed][XPanel]press72 -> 1
+11:38:08 - 12-01-2009: [M_Bed][XPanel]fb91 -> 1
+11:38:09 - 12-01-2009: [M_Bed][XPanel]press72 -> 0
+11:38:09 - 12-01-2009: [M_Bed][XPanel]fb91 -> 0
+11:38:09 - 12-01-2009: [M_Bed][XPanel]press72 -> 1
+11:38:09 - 12-01-2009: [M_Bed][XPanel]fb91 -> 1
+11:38:09 - 12-01-2009: [M_Bed][XPanel]press72 -> 0
+11:38:09 - 12-01-2009: [M_Bed][XPanel]fb91 -> 0
+11:38:21 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 739d
+11:38:21 - 12-01-2009: //S-6.1_SlabSetpoint -> 739d
+11:38:26 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 738d
+11:38:26 - 12-01-2009: //S-6.1_SlabSetpoint -> 738d
+11:38:37 - 12-01-2009: [M_Bed][XPanel]press71 -> 1
+11:38:37 - 12-01-2009: [M_Bed][XPanel]fb90 -> 1
+11:38:38 - 12-01-2009: [M_Bed][XPanel]press71 -> 0
+11:38:38 - 12-01-2009: [M_Bed][XPanel]fb90 -> 0
+11:38:38 - 12-01-2009: [M_Bed][XPanel]press71 -> 1
+11:38:38 - 12-01-2009: [M_Bed][XPanel]fb90 -> 1
+11:38:38 - 12-01-2009: [M_Bed][XPanel]press71 -> 0
+11:38:38 - 12-01-2009: [M_Bed][XPanel]fb90 -> 0
+11:38:38 - 12-01-2009: [M_Bed][XPanel]press71 -> 1
+11:38:38 - 12-01-2009: [M_Bed][XPanel]fb90 -> 1
+11:38:38 - 12-01-2009: [M_Bed][XPanel]press71 -> 0
+11:38:38 - 12-01-2009: [M_Bed][XPanel]fb90 -> 0
+11:38:38 - 12-01-2009: [M_Bed][XPanel]press71 -> 1
+11:38:38 - 12-01-2009: [M_Bed][XPanel]fb90 -> 1
+11:38:39 - 12-01-2009: [M_Bed][XPanel]press71 -> 0
+11:38:39 - 12-01-2009: [M_Bed][XPanel]fb90 -> 0
+11:38:39 - 12-01-2009: [M_Bed][XPanel]press72 -> 1
+11:38:39 - 12-01-2009: [M_Bed][XPanel]fb91 -> 1
+11:38:39 - 12-01-2009: [M_Bed][XPanel]press72 -> 0
+11:38:39 - 12-01-2009: [M_Bed][XPanel]fb91 -> 0
+11:38:40 - 12-01-2009: [M_Bed][XPanel]press72 -> 1
+11:38:40 - 12-01-2009: [M_Bed][XPanel]fb91 -> 1
+11:38:40 - 12-01-2009: [M_Bed][XPanel]press72 -> 0
+11:38:40 - 12-01-2009: [M_Bed][XPanel]fb91 -> 0
+11:38:46 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 739d
+11:38:46 - 12-01-2009: //S-6.1_SlabSetpoint -> 739d
+11:38:52 - 12-01-2009: [M_Bed][XPanel]press116 -> 1
+11:38:52 - 12-01-2009: //[M_Bed][XPanel]fb150 -> 1
+11:38:52 - 12-01-2009: //[M_Bed][XPanel]fb150 -> 0
+11:38:52 - 12-01-2009: [M_Bed][XPanel]fb135 -> 0
+11:38:52 - 12-01-2009: [M_Bed][XPanel]fb136 -> 1
+11:38:52 - 12-01-2009: //[M_Bed][XPanel]fb441 -> 0
+11:38:52 - 12-01-2009: //[M_Bed][XPanel]fb442 -> 1
+11:38:52 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]FM_RDS_Message$ -> XM Tuner
+11:38:52 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> CHECK ANTENNA
+11:38:52 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ ->  
+11:38:52 - 12-01-2009: [M_Bed][XPanel]press116 -> 0
+11:38:54 - 12-01-2009: [M_Bed][XPanel]press92 -> 1
+11:38:54 - 12-01-2009: //[M_Bed][XPanel]fb330 -> 1
+11:38:54 - 12-01-2009: //[M_Bed][XPanel]fb330 -> 0
+11:38:54 - 12-01-2009: [M_Bed][XPanel]fb134 -> 1
+11:38:54 - 12-01-2009: [M_Bed][XPanel]fb136 -> 0
+11:38:54 - 12-01-2009: //[M_Bed][XPanel]fb442 -> 0
+11:38:54 - 12-01-2009: //[M_Bed][XPanel]fb440 -> 1
+11:38:54 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]FM_RDS_Message$ -> iPod
+11:38:54 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> Marian McPartland - Bill Evans
+11:38:54 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> While We're Young
+11:38:54 - 12-01-2009: [M_Bed][XPanel]press92 -> 0
+11:38:54 - 12-01-2009: [M_Bed][iPod]Playing -> 1
+11:38:54 - 12-01-2009: [M_Bed][XPanel]fb397 -> 1
+11:38:54 - 12-01-2009: [M_Bed][iPod]Current_Cover_URL -> Marian McPartland - Bill Evans
+11:38:54 - 12-01-2009: [M_Bed][iPod]Play_List_Name -> While We're Young
+11:38:54 - 12-01-2009: [M_Bed][iPod]Next_Track -> H
+11:38:54 - 12-01-2009: [M_Bed][iPod]Current_Album -> \x1B!Marian McPartland - Bill Evans\x1B"While We're Young\x1B#H
+11:38:54 - 12-01-2009: [M_Bed][XPanel]text-o35 -> Marian McPartland - Bill Evans
+11:38:54 - 12-01-2009: [M_Bed][XPanel]text-o36 -> While We're Young
+11:38:54 - 12-01-2009: [M_Bed][iPod]Paused -> 0
+11:38:54 - 12-01-2009: //[M_Bed][XPanel]fb367 -> 0
+11:38:54 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> Marian McPartland - Bill Evans
+11:38:54 - 12-01-2009: [M_Bed][iPod]Play_Graphic -> 1
+11:38:54 - 12-01-2009: //[M_Bed][XPanel]fb390 -> 0
+11:38:54 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> While We're Young
+11:38:54 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:54 - 12-01-2009: [M_Bed][XPanel]fb401 -> 0
+11:38:55 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:55 - 12-01-2009: //[M_Bed][XPanel]fb353 -> 1
+11:38:55 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:38:55 - 12-01-2009: //[M_Bed][XPanel]fb389 -> 1
+11:38:55 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:55 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:55 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:55 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:56 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:56 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:38:56 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:56 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:56 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:38:56 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:56 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:38:57 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:57 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:57 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:57 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:38:57 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:57 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:38:57 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:38:58 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:58 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:58 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:58 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:38:58 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:58 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:38:58 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:38:58 - 12-01-2009: [M_Bed][XPanel]press175 -> 1
+11:38:59 - 12-01-2009: [M_Bed][iPod]Show_Play_Page -> 0
+11:38:59 - 12-01-2009: [M_Bed][iPod]Show_Advanced_Play_Page -> 0
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb332 -> 0
+11:38:59 - 12-01-2009: [M_Bed][iPod]Show_Advanced_Menu_Page -> 1
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb331 -> 1
+11:38:59 - 12-01-2009: [M_Bed][iPod]Menu_Fb -> 1
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb344 -> 1
+11:38:59 - 12-01-2009: [M_Bed][iPod]Menu_Fb -> 0
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb361 -> 1
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Music
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb384 -> 1
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Music
+11:38:59 - 12-01-2009: [M_Bed][XPanel]fb403 -> 1
+11:38:59 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Music
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb344 -> 0
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Music
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb361 -> 0
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb384 -> 0
+11:38:59 - 12-01-2009: [M_Bed][XPanel]fb403 -> 0
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Music
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Music
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Music
+11:38:59 - 12-01-2009: [M_Bed][XPanel]press175 -> 0
+11:38:59 - 12-01-2009: [M_Bed][iPod]Show_Play_Page -> 1
+11:38:59 - 12-01-2009: [M_Bed][iPod]Show_Advanced_Menu_Page -> 0
+11:38:59 - 12-01-2009: [M_Bed][iPod]Show_Advanced_Play_Page -> 1
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb331 -> 0
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]fb332 -> 1
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:59 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:38:59 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:38:59 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:01 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 740d
+11:39:01 - 12-01-2009: //S-6.1_SlabSetpoint -> 740d
+11:39:01 - 12-01-2009: [M_Bed][XPanel]press176 -> 1
+11:39:01 - 12-01-2009: [M_Bed][XPanel]press176 -> 0
+11:39:01 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 1
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 1
+11:39:01 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 0
+11:39:01 - 12-01-2009: [M_Bed][iPod]Paused -> 1
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 0
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb367 -> 1
+11:39:01 - 12-01-2009: [M_Bed][iPod]Current_Cover_URL -> Marian McPartland - Bill Evans
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb390 -> 1
+11:39:01 - 12-01-2009: [M_Bed][iPod]Play_List_Name -> While We're Young
+11:39:01 - 12-01-2009: [M_Bed][XPanel]fb401 -> 1
+11:39:01 - 12-01-2009: [M_Bed][iPod]Next_Track -> B
+11:39:01 - 12-01-2009: [M_Bed][iPod]Current_Album -> \x1B!Marian McPartland - Bill Evans\x1B"While We're Young\x1B#B
+11:39:01 - 12-01-2009: [M_Bed][iPod]Playing -> 0
+11:39:01 - 12-01-2009: [M_Bed][XPanel]text-o35 -> Marian McPartland - Bill Evans
+11:39:01 - 12-01-2009: [M_Bed][XPanel]fb397 -> 0
+11:39:01 - 12-01-2009: [M_Bed][iPod]Play_Graphic -> 0
+11:39:01 - 12-01-2009: [M_Bed][XPanel]text-o36 -> While We're Young
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb353 -> 0
+11:39:01 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> Marian McPartland - Bill Evans
+11:39:01 - 12-01-2009: //[M_Bed][XPanel]fb389 -> 0
+11:39:01 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> While We're Young
+11:39:02 - 12-01-2009: [M_Bed][XPanel]press176 -> 1
+11:39:02 - 12-01-2009: [M_Bed][XPanel]press176 -> 0
+11:39:02 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 1
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 1
+11:39:02 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 0
+11:39:02 - 12-01-2009: [M_Bed][iPod]Playing -> 1
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 0
+11:39:02 - 12-01-2009: [M_Bed][XPanel]fb397 -> 1
+11:39:02 - 12-01-2009: [M_Bed][iPod]Current_Cover_URL -> Marian McPartland - Bill Evans
+11:39:02 - 12-01-2009: [M_Bed][iPod]Play_List_Name -> While We're Young
+11:39:02 - 12-01-2009: [M_Bed][iPod]Next_Track -> H
+11:39:02 - 12-01-2009: [M_Bed][iPod]Current_Album -> \x1B!Marian McPartland - Bill Evans\x1B"While We're Young\x1B#H
+11:39:02 - 12-01-2009: [M_Bed][iPod]Paused -> 0
+11:39:02 - 12-01-2009: [M_Bed][XPanel]text-o35 -> Marian McPartland - Bill Evans
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb367 -> 0
+11:39:02 - 12-01-2009: [M_Bed][iPod]Play_Graphic -> 1
+11:39:02 - 12-01-2009: [M_Bed][XPanel]text-o36 -> While We're Young
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb390 -> 0
+11:39:02 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:02 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> Marian McPartland - Bill Evans
+11:39:02 - 12-01-2009: [M_Bed][XPanel]fb401 -> 0
+11:39:02 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> While We're Young
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb353 -> 1
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]fb389 -> 1
+11:39:02 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:02 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:02 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:02 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:02 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:19 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:19 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:19 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:19 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:19 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:19 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:19 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:20 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:20 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:20 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:20 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:20 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:20 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:20 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:20 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 741d
+11:39:20 - 12-01-2009: //S-6.1_SlabSetpoint -> 741d
+11:39:21 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:21 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:21 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:21 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:21 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:21 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:21 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:22 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:22 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:22 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:22 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:22 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:22 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:22 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:24 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:24 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:24 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:24 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:24 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:24 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:24 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:24 - 12-01-2009: [M_Bed][XPanel]press176 -> 1
+11:39:24 - 12-01-2009: [M_Bed][XPanel]press176 -> 0
+11:39:24 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+11:39:24 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 1
+11:39:24 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 1
+11:39:25 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+11:39:25 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 0
+11:39:25 - 12-01-2009: [M_Bed][iPod]Paused -> 1
+11:39:25 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 0
+11:39:25 - 12-01-2009: //[M_Bed][XPanel]fb367 -> 1
+11:39:25 - 12-01-2009: [M_Bed][iPod]Current_Cover_URL -> Marian McPartland - Bill Evans
+11:39:25 - 12-01-2009: //[M_Bed][XPanel]fb390 -> 1
+11:39:25 - 12-01-2009: [M_Bed][iPod]Play_List_Name -> While We're Young
+11:39:25 - 12-01-2009: [M_Bed][XPanel]fb401 -> 1
+11:39:25 - 12-01-2009: [M_Bed][iPod]Next_Track -> B
+11:39:25 - 12-01-2009: [M_Bed][iPod]Current_Album -> \x1B!Marian McPartland - Bill Evans\x1B"While We're Young\x1B#B
+11:39:25 - 12-01-2009: [M_Bed][iPod]Playing -> 0
+11:39:25 - 12-01-2009: [M_Bed][XPanel]text-o35 -> Marian McPartland - Bill Evans
+11:39:25 - 12-01-2009: [M_Bed][XPanel]fb397 -> 0
+11:39:25 - 12-01-2009: [M_Bed][iPod]Play_Graphic -> 0
+11:39:25 - 12-01-2009: [M_Bed][XPanel]text-o36 -> While We're Young
+11:39:25 - 12-01-2009: //[M_Bed][XPanel]fb353 -> 0
+11:39:25 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> Marian McPartland - Bill Evans
+11:39:25 - 12-01-2009: //[M_Bed][XPanel]fb389 -> 0
+11:39:25 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> While We're Young
+11:39:25 - 12-01-2009: [M_Bed][XPanel]press176 -> 1
+11:39:25 - 12-01-2009: [M_Bed][XPanel]press176 -> 0
+11:39:26 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 1
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 1
+11:39:26 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 0
+11:39:26 - 12-01-2009: [M_Bed][iPod]Playing -> 1
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 0
+11:39:26 - 12-01-2009: [M_Bed][XPanel]fb397 -> 1
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Cover_URL -> Marian McPartland - Bill Evans
+11:39:26 - 12-01-2009: [M_Bed][iPod]Play_List_Name -> While We're Young
+11:39:26 - 12-01-2009: [M_Bed][iPod]Next_Track -> H
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Album -> \x1B!Marian McPartland - Bill Evans\x1B"While We're Young\x1B#H
+11:39:26 - 12-01-2009: [M_Bed][iPod]Paused -> 0
+11:39:26 - 12-01-2009: [M_Bed][XPanel]text-o35 -> Marian McPartland - Bill Evans
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb367 -> 0
+11:39:26 - 12-01-2009: [M_Bed][iPod]Play_Graphic -> 1
+11:39:26 - 12-01-2009: [M_Bed][XPanel]text-o36 -> While We're Young
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb390 -> 0
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> Marian McPartland - Bill Evans
+11:39:26 - 12-01-2009: [M_Bed][XPanel]fb401 -> 0
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> While We're Young
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb353 -> 1
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]fb389 -> 1
+11:39:26 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:26 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:26 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:27 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:27 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:27 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:27 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:27 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:27 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:27 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:27 - 12-01-2009: [M_Bed][XPanel]press71 -> 1
+11:39:27 - 12-01-2009: [M_Bed][XPanel]fb90 -> 1
+11:39:28 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:28 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:28 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:28 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:28 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:28 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:28 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:28 - 12-01-2009: [M_Bed][XPanel]press71 -> 0
+11:39:29 - 12-01-2009: [M_Bed][XPanel]fb90 -> 0
+11:39:29 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:29 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:29 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]text-o244 -> Now Playing
+11:39:29 - 12-01-2009: [M_Bed][iPod]Current_Track -> Now Playing
+11:39:29 - 12-01-2009: [M_Bed][XPanel]text-o60 -> Now Playing
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]text-o261 -> Now Playing
+11:39:29 - 12-01-2009: [M_Bed][XPanel]press176 -> 1
+11:39:29 - 12-01-2009: [M_Bed][XPanel]press176 -> 0
+11:39:29 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 1
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 1
+11:39:29 - 12-01-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb362 -> 0
+11:39:29 - 12-01-2009: [M_Bed][iPod]Paused -> 1
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb385 -> 0
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb367 -> 1
+11:39:29 - 12-01-2009: [M_Bed][iPod]Current_Cover_URL -> Marian McPartland - Bill Evans
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb390 -> 1
+11:39:29 - 12-01-2009: [M_Bed][iPod]Play_List_Name -> While We're Young
+11:39:29 - 12-01-2009: [M_Bed][XPanel]fb401 -> 1
+11:39:29 - 12-01-2009: [M_Bed][iPod]Next_Track -> B
+11:39:29 - 12-01-2009: [M_Bed][XPanel]text-o35 -> Marian McPartland - Bill Evans
+11:39:29 - 12-01-2009: [M_Bed][XPanel]fb397 -> 0
+11:39:29 - 12-01-2009: [M_Bed][iPod]Current_Album -> \x1B!Marian McPartland - Bill Evans\x1B"While We're Young\x1B#B
+11:39:29 - 12-01-2009: [M_Bed][XPanel]text-o36 -> While We're Young
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb353 -> 0
+11:39:29 - 12-01-2009: [M_Bed][iPod]Playing -> 0
+11:39:29 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]station$ -> Marian McPartland - Bill Evans
+11:39:29 - 12-01-2009: //[M_Bed][XPanel]fb389 -> 0
+11:39:29 - 12-01-2009: [M_Bed][iPod]Play_Graphic -> 0
+11:39:29 - 12-01-2009: [M_Bed][AADS-XM_-_AM-FM_Tuner]band$ -> While We're Young
+11:39:34 - 12-01-2009: S-6.1_Away_1 -> 1
+11:39:34 - 12-01-2009: //Climate_A_INT -> 1
+11:39:34 - 12-01-2009: S-6.1_Away_1 -> 0
+11:39:34 - 12-01-2009: //Climate_A_INT -> 0
+11:39:35 - 12-01-2009: Living_OH_OFF_1 -> 1
+11:39:35 - 12-01-2009: study_A_FB -> 1
+11:39:35 - 12-01-2009: Living_OH_OFF_1 -> 0
+11:39:37 - 12-01-2009: Patio_1_OFF_1 -> 1
+11:39:37 - 12-01-2009: study_Watch_sat_FB -> 1
+11:39:37 - 12-01-2009: Patio_1_OFF_1 -> 0
+11:39:55 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 742d
+11:39:55 - 12-01-2009: //S-6.1_SlabSetpoint -> 742d
+11:39:59 - 12-01-2009: Patio_1_OFF_1 -> 1
+11:39:59 - 12-01-2009: Patio_1_OFF_1 -> 0
+11:40:01 - 12-01-2009: Art_Lights_OFF_1 -> 1
+11:40:01 - 12-01-2009: //Master_bed_A_FB_FB -> 1
+11:40:01 - 12-01-2009: study_Watch_sat_FB -> 0
+11:40:01 - 12-01-2009: Watch_Bluray_A_FB -> 1
+11:40:01 - 12-01-2009: study_A_FB -> 0
+11:40:01 - 12-01-2009: //AV_Rec_A_FB_FB -> 1
+11:40:01 - 12-01-2009: //study_Watch_sat_Busy -> 1
+11:40:01 - 12-01-2009: Art_Lights_OFF_1 -> 0
+11:40:01 - 12-01-2009: //Master_bed_A_FB_FB -> 0
+11:40:01 - 12-01-2009: Art_Lights_OFF_1 -> 1
+11:40:01 - 12-01-2009: //Master_bed_A_FB_FB -> 1
+11:40:01 - 12-01-2009: Art_Lights_OFF_1 -> 0
+11:40:01 - 12-01-2009: //Master_bed_A_FB_FB -> 0
+11:40:01 - 12-01-2009: //study_Watch_sat_Busy -> 0
+11:40:05 - 12-01-2009: Living_OH_OFF_1 -> 1
+11:40:05 - 12-01-2009: //AV_Rec_A_FB_FB -> 0
+11:40:05 - 12-01-2009: study_A_FB -> 1
+11:40:05 - 12-01-2009: Living_OH_OFF_1 -> 0
+11:40:06 - 12-01-2009: Patio_1_OFF_1 -> 1
+11:40:06 - 12-01-2009: Watch_Bluray_A_FB -> 0
+11:40:06 - 12-01-2009: study_Watch_sat_FB -> 1
+11:40:07 - 12-01-2009: Patio_1_OFF_1 -> 0
+11:40:12 - 12-01-2009: hd_info -> 1
+11:40:12 - 12-01-2009: hd_info -> 0
+11:40:22 - 12-01-2009: Start_up_sat_2 -> 1
+11:40:22 - 12-01-2009: TV_on/off_s_on -> 1
+11:40:22 - 12-01-2009: SZ1_UP_a_P1_INT_LD -> 1
+11:40:22 - 12-01-2009: AV_power_off_sat -> 1
+11:40:22 - 12-01-2009: AV_power_off -> 1
+11:40:22 - 12-01-2009: S-8.2.1_[tx$] -> @PWR:2,\x0D
+11:40:22 - 12-01-2009: Start_up_sat_2 -> 0
+11:40:22 - 12-01-2009: TV_on/off_s_on -> 0
+11:40:22 - 12-01-2009: S-8.2.1_[rx$] -> @PWR:2\x0D
+11:40:23 - 12-01-2009: AV_power_off_sat -> 0
+11:40:23 - 12-01-2009: AV_power_off -> 0
+11:40:23 - 12-01-2009: TV_on/off_bon -> 1
+11:40:23 - 12-01-2009: S-8.2.1_[tx$] -> @71C:1,\x0D
+11:40:23 - 12-01-2009: S-8.2.1_[rx$] -> @71C:1\x0D
+11:40:23 - 12-01-2009: S-8.2.1_[rx$] -> @ATT:0\x0D@SUR:0\x0D
+11:40:23 - 12-01-2009: S-8.2.1_[rx$] -> @OSD:2\x0D
+11:40:24 - 12-01-2009: S-8.2.1_[tx$] -> @SRC:1,\x0D
+11:40:24 - 12-01-2009: TV_on/off_bon -> 0
+11:40:24 - 12-01-2009: S-8.2.1_[rx$] -> @SRC:11\x0D@SFQ:0\x0D
+11:40:24 - 12-01-2009: S-8.2.1_[rx$] -> @SFQ:F\x0D@SFQ:0\x0D
+11:40:24 - 12-01-2009: SZ1_Down_a_P1_INT_LD -> 1
+11:40:24 - 12-01-2009: TV_on/off -> 1
+11:40:24 - 12-01-2009: S-8.2.1_[tx$] -> @AST:F,\x0D
+11:40:24 - 12-01-2009: S-8.2.1_[tx$] -> @PWR:?,\x0D
+11:40:24 - 12-01-2009: S-8.2.1_[rx$] -> @AST:F\x0D@PWR:2\x0D
+11:40:24 - 12-01-2009: S-8.2.1_[tx$] -> @VOL:?,\x0D
+11:40:24 - 12-01-2009: S-8.2.1_[rx$] -> @VOL:-22\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[tx$] -> @AMT:?,\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[rx$] -> @AMT:1\x0D
+11:40:25 - 12-01-2009: SZ1_Down_a_P1_INT_LD -> 0
+11:40:25 - 12-01-2009: TV_on/off -> 0
+11:40:25 - 12-01-2009: S-8.2.1_[tx$] -> @SRC:?,\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[rx$] -> @SRC:11\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[tx$] -> @71C:?,\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[rx$] -> @71C:1\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[tx$] -> @TOB:?,\x0D
+11:40:25 - 12-01-2009: //Watch_Bluray_A_OS -> 1
+11:40:25 - 12-01-2009: S-8.2.1_[rx$] -> @TOB: 00\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[tx$] -> @TOT:?,\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[rx$] -> @TOT: 00\x0D@ATT:1\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[rx$] -> @SUR:1\x0D@SFQ:F\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[tx$] -> @SPK:?,\x0D
+11:40:25 - 12-01-2009: S-8.2.1_[rx$] -> @SPK:21\x0D
+11:40:26 - 12-01-2009: //Watch_Bluray_A_OS -> 0
+11:40:26 - 12-01-2009: SZ1_UP_a_P1_INT_LD -> 0
+11:40:26 - 12-01-2009: S-8.2.1_[tx$] -> @SLP:?,\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[rx$] -> @SLP:00\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[tx$] -> @MNU:?,\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[rx$] -> @MNU:1\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[tx$] -> @NGT:?,\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[rx$] -> @NGT:1\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[tx$] -> @REQ:?,\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[rx$] -> @REQ:1\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[tx$] -> @AST:F,\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[rx$] -> @AST:F\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[tx$] -> @DCT:?,\x0D
+11:40:26 - 12-01-2009: S-8.2.1_[rx$] -> @DCT:1\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[tx$] -> @SUR:?,\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[rx$] -> @SUR:1\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[tx$] -> @TFQ:?,\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[rx$] -> @TFQ:65535\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[tx$] -> @TPR:?,\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[rx$] -> @TPR:00\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[tx$] -> @TMD:?,\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[rx$] -> @TMD:0\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?2,\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:2 00\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?3,\x0D
+11:40:27 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:3 00\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?4,\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:4 00\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?6,\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:6 00\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?7\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:7 00\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?8,\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:2 00\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?9,\x0D
+11:40:28 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:9 00\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?A,\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:A 00\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?B,\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:B 00\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[tx$] -> @OSD:?,\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[rx$] -> @OSD:2\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[rx$] -> @OSD:1\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[tx$] -> @LIP:?,\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[rx$] -> @LIP:000\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[tx$] -> @SSU:?,\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[rx$] -> @SSU:1\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[tx$] -> @TTO:?,\x0D
+11:40:29 - 12-01-2009: S-8.2.1_[rx$] -> @TTO:100\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[tx$] -> @ATT:?,\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[rx$] -> @ATT:1\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[tx$] -> @VMT:?,\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[rx$] -> @VMT:1\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[tx$] -> @INP:?,\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[rx$] -> @INP:5\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[tx$] -> @DIP:?,\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[rx$] -> @DIP:1\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[tx$] -> @SIG:?,\x0D
+11:40:30 - 12-01-2009: S-8.2.1_[rx$] -> @SIG:0\x0D
+11:40:31 - 12-01-2009: S-8.2.1_[tx$] -> @SFQ:?,\x0D
+11:40:31 - 12-01-2009: S-8.2.1_[rx$] -> @SFQ:F\x0D
+11:40:31 - 12-01-2009: S-8.2.1_[tx$] -> @CHS:?,\x0D
+11:40:31 - 12-01-2009: S-8.2.1_[rx$] -> @CHS:80\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[tx$] -> @MPW:?,\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[rx$] -> @MPW:2\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[tx$] -> @MAM:?,\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[rx$] -> @MAM:1\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[tx$] -> @MVM:?,\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[rx$] -> @\x15\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[tx$] -> @MVL:?,\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[rx$] -> @MVL:-90\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[tx$] -> @MVS:?,\x0D
+11:40:33 - 12-01-2009: S-8.2.1_[rx$] -> @MVS:1\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[tx$] -> @MSP:?,\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[rx$] -> @MSP:1\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[tx$] -> @MSS:?,\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[rx$] -> @MSS:0\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[tx$] -> @MSV:?,\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[rx$] -> @MSV:-90\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[tx$] -> @MSM:?,\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[rx$] -> @MSM:1\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[tx$] -> @MSC:?,\x0D
+11:40:34 - 12-01-2009: S-8.2.1_[rx$] -> @MSC:22\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[tx$] -> @MOS:?,\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[rx$] -> @\x15\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[tx$] -> @MSL:?,\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[rx$] -> @MSL:00\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[tx$] -> @MTF:?,\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[rx$] -> @MTF:65535\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[tx$] -> @MTP:?,\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[rx$] -> @MTP:00\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[tx$] -> @MTM:?,\x0D
+11:40:35 - 12-01-2009: S-8.2.1_[rx$] -> @MTM:0\x0D
+11:40:54 - 12-01-2009: hd_pause -> 1
+11:40:55 - 12-01-2009: hd_pause -> 0
+11:40:56 - 12-01-2009: hd_pause -> 1
+11:40:56 - 12-01-2009: hd_pause -> 0
+11:40:58 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 743d
+11:40:58 - 12-01-2009: //S-6.1_SlabSetpoint -> 743d
+11:40:58 - 12-01-2009: hd_select -> 1
+11:40:58 - 12-01-2009: hd_select -> 0
+11:40:58 - 12-01-2009: hd_pause -> 1
+11:40:58 - 12-01-2009: hd_pause -> 0
+11:40:58 - 12-01-2009: hd_play -> 1
+11:40:58 - 12-01-2009: hd_play -> 0
+11:41:02 - 12-01-2009: hd_guide -> 1
+11:41:02 - 12-01-2009: hd_guide -> 0
+11:41:05 - 12-01-2009: hd_guide -> 1
+11:41:05 - 12-01-2009: hd_guide -> 0
+11:41:07 - 12-01-2009: hd_menu -> 1
+11:41:07 - 12-01-2009: hd_menu -> 0
+11:41:09 - 12-01-2009: hd_cancel -> 1
+11:41:10 - 12-01-2009: hd_cancel -> 0
+11:41:10 - 12-01-2009: hd_cancel -> 1
+11:41:11 - 12-01-2009: hd_cancel -> 0
+11:41:17 - 12-01-2009: Shut_down_sat -> 1
+11:41:17 - 12-01-2009: SZ1_UP_a_P1_INT_LD -> 1
+11:41:17 - 12-01-2009: Shut_down_sat -> 0
+11:41:17 - 12-01-2009: AV_Rec_Vol_up -> 1
+11:41:17 - 12-01-2009: S-8.4_source_tv -> 1
+11:41:17 - 12-01-2009: S-8.2.1_[tx$] -> @PWR:1,\x0D
+11:41:17 - 12-01-2009: S-8.2.1_[rx$] -> @PWR:1\x0D
+11:41:18 - 12-01-2009: AV_Rec_Vol_up -> 0
+11:41:18 - 12-01-2009: S-8.4_source_tv -> 0
+11:41:18 - 12-01-2009: SZ2_UP_a_INT_P1_LD -> 1
+11:41:18 - 12-01-2009: TV_on/off -> 1
+11:41:19 - 12-01-2009: SZ2_UP_a_INT_P1_LD -> 0
+11:41:19 - 12-01-2009: TV_on/off -> 0
+11:41:19 - 12-01-2009: SZ1_UP_a_P1_INT_LD -> 0
+11:41:29 - 12-01-2009: Art_Lights_OFF_1 -> 1
+11:41:29 - 12-01-2009: //Master_bed_A_FB_FB -> 1
+11:41:29 - 12-01-2009: study_Watch_sat_FB -> 0
+11:41:29 - 12-01-2009: Watch_Bluray_A_FB -> 1
+11:41:30 - 12-01-2009: study_A_FB -> 0
+11:41:30 - 12-01-2009: //AV_Rec_A_FB_FB -> 1
+11:41:30 - 12-01-2009: //study_Watch_sat_Busy -> 1
+11:41:30 - 12-01-2009: Art_Lights_OFF_1 -> 0
+11:41:30 - 12-01-2009: //Master_bed_A_FB_FB -> 0
+11:41:30 - 12-01-2009: //study_Watch_sat_Busy -> 0
+11:41:31 - 12-01-2009: Start_up_bluray_1 -> 1
+11:41:31 - 12-01-2009: TV_on/off_boff -> 1
+11:41:32 - 12-01-2009: Start_up_bluray_1 -> 0
+11:41:32 - 12-01-2009: TV_on/off_boff -> 0
+11:41:32 - 12-01-2009: AV_power_off_DVD -> 1
+11:41:32 - 12-01-2009: AV_power_off -> 1
+11:41:32 - 12-01-2009: S-8.2.1_[tx$] -> @PWR:2,\x0D
+11:41:32 - 12-01-2009: S-8.2.1_[rx$] -> @PWR:2\x0D
+11:41:32 - 12-01-2009: AV_power_off_DVD -> 0
+11:41:32 - 12-01-2009: AV_power_off -> 0
+11:41:33 - 12-01-2009: //S-8.6_Input_HD_RGB -> 1
+11:41:33 - 12-01-2009: S-8.2.1_[tx$] -> @71C:1,\x0D
+11:41:33 - 12-01-2009: S-8.2.1_[rx$] -> @71C:1\x0D
+11:41:33 - 12-01-2009: S-8.2.1_[rx$] -> @ATT:0\x0D@SUR:0\x0D
+11:41:33 - 12-01-2009: S-8.2.1_[rx$] -> @OSD:2\x0D
+11:41:33 - 12-01-2009: S-8.2.1_[tx$] -> @SRC:2,\x0D
+11:41:33 - 12-01-2009: //S-8.6_Input_HD_RGB -> 0
+11:41:33 - 12-01-2009: S-8.2.1_[rx$] -> @SRC:22\x0D
+11:41:33 - 12-01-2009: S-8.2.1_[rx$] -> @SFQ:0\x0D
+11:41:33 - 12-01-2009: S-8.2.1_[rx$] -> @INP:6\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[rx$] -> @SFQ:F\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[rx$] -> @SFQ:0\x0D
+11:41:34 - 12-01-2009: //dvd_power_2 -> 1
+11:41:34 - 12-01-2009: TV_on/off -> 1
+11:41:34 - 12-01-2009: S-8.2.1_[tx$] -> @AST:F,\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[tx$] -> @PWR:?,\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[rx$] -> @PWR:2\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[tx$] -> @VOL:?,\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[rx$] -> @VOL:-22\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[tx$] -> @AMT:?,\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[rx$] -> @AMT:1\x0D
+11:41:34 - 12-01-2009: //dvd_power_2 -> 0
+11:41:34 - 12-01-2009: TV_on/off -> 0
+11:41:34 - 12-01-2009: S-8.2.1_[tx$] -> @SRC:?,\x0D
+11:41:34 - 12-01-2009: S-8.2.1_[rx$] -> @SRC:22\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[tx$] -> @71C:?,\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[rx$] -> @71C:1\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[tx$] -> @TOB:?,\x0D
+11:41:35 - 12-01-2009: //Watch_Bluray_A_OS -> 1
+11:41:35 - 12-01-2009: S-8.2.1_[rx$] -> @TOB: 00\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[tx$] -> @TOT:?,\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[rx$] -> @TOT: 00\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[tx$] -> @SPK:?,\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[rx$] -> @SPK:21\x0D
+11:41:35 - 12-01-2009: //Watch_Bluray_A_OS -> 0
+11:41:35 - 12-01-2009: S-8.2.1_[tx$] -> @SLP:?,\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[rx$] -> @SLP:00\x0D
+11:41:35 - 12-01-2009: S-8.2.1_[tx$] -> @MNU:?,\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[rx$] -> @MNU:1\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[tx$] -> @NGT:?,\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[rx$] -> @NGT:1\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[tx$] -> @REQ:?,\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[rx$] -> @REQ:1\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[tx$] -> @AST:F,\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[rx$] -> @AST:F\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[tx$] -> @DCT:?,\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[rx$] -> @DCT:1\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[tx$] -> @SUR:?,\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[rx$] -> @SUR:0\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[tx$] -> @TFQ:?,\x0D
+11:41:36 - 12-01-2009: S-8.2.1_[rx$] -> @TFQ:65535\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[tx$] -> @TPR:?,\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[rx$] -> @TPR:00\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[rx$] -> @SFQ:F\x0D@SFQ:0\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[tx$] -> @TMD:?,\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[rx$] -> @TMD:0\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?2,\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:2 00\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?3,\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:3 00\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?4,\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:4 00\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?6,\x0D
+11:41:37 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:6 00\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?7\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:7 00\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?8,\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:2 00\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?9,\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:9 00\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?A,\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[rx$] -> @ATT:1\x0D@SUR:1\x0D@S
+11:41:38 - 12-01-2009: S-8.2.1_[rx$] -> FQ:F\x0D@CHL:A 00\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[tx$] -> @CHL:?B,\x0D
+11:41:38 - 12-01-2009: S-8.2.1_[rx$] -> @CHL:B 00\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[tx$] -> @OSD:?,\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[rx$] -> @OSD:2\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[tx$] -> @LIP:?,\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[rx$] -> @LIP:000\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[rx$] -> @OSD:1\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[tx$] -> @SSU:?,\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[rx$] -> @SSU:1\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[tx$] -> @TTO:?,\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[rx$] -> @TTO:100\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[tx$] -> @ATT:?,\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[rx$] -> @ATT:1\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[tx$] -> @VMT:?,\x0D
+11:41:39 - 12-01-2009: S-8.2.1_[rx$] -> @VMT:1\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[tx$] -> @INP:?,\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[rx$] -> @INP:6\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[tx$] -> @DIP:?,\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[rx$] -> @DIP:1\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[tx$] -> @SIG:?,\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[rx$] -> @SIG:0\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[tx$] -> @SFQ:?,\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[rx$] -> @SFQ:F\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[tx$] -> @CHS:?,\x0D
+11:41:40 - 12-01-2009: S-8.2.1_[rx$] -> @CHS:80\x0D
+11:41:42 - 12-01-2009: S-8.2.1_[tx$] -> @MPW:?,\x0D
+11:41:42 - 12-01-2009: S-8.2.1_[rx$] -> @MPW:2\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[tx$] -> @MAM:?,\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[rx$] -> @MAM:1\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[tx$] -> @MVM:?,\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[rx$] -> @\x15\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[tx$] -> @MVL:?,\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[rx$] -> @MVL:-90\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[tx$] -> @MVS:?,\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[rx$] -> @MVS:1\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[tx$] -> @MSP:?,\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[rx$] -> @MSP:1\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[tx$] -> @MSS:?,\x0D
+11:41:43 - 12-01-2009: S-8.2.1_[rx$] -> @MSS:0\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[tx$] -> @MSV:?,\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[rx$] -> @MSV:-90\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[tx$] -> @MSM:?,\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[rx$] -> @MSM:1\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[tx$] -> @MSC:?,\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[rx$] -> @MSC:22\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[tx$] -> @MOS:?,\x0D
+11:41:44 - 12-01-2009: S-8.2.1_[rx$] -> @\x15\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[tx$] -> @MSL:?,\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[rx$] -> @MSL:00\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[tx$] -> @MTF:?,\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[rx$] -> @MTF:65535\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[tx$] -> @MTP:?,\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[rx$] -> @MTP:00\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[tx$] -> @MTM:?,\x0D
+11:41:45 - 12-01-2009: S-8.2.1_[rx$] -> @MTM:0\x0D
+11:41:48 - 12-01-2009: dvd_tray_open_close -> 1
+11:41:48 - 12-01-2009: dvd_tray_open_close -> 0
+11:41:49 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 745d
+11:41:49 - 12-01-2009: //S-6.1_SlabSetpoint -> 745d
+11:42:12 - 12-01-2009: dvd_power_3 -> 1
+11:42:12 - 12-01-2009: dvd_power -> 1
+11:42:13 - 12-01-2009: dvd_power_3 -> 0
+11:42:13 - 12-01-2009: dvd_power -> 0
+11:42:28 - 12-01-2009: dvd_power_3 -> 1
+11:42:28 - 12-01-2009: dvd_power -> 1
+11:42:28 - 12-01-2009: dvd_power_3 -> 0
+11:42:28 - 12-01-2009: dvd_power -> 0
+11:42:36 - 12-01-2009: dvd_tray_open_close -> 1
+11:42:37 - 12-01-2009: dvd_tray_open_close -> 0
+11:43:04 - 12-01-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 714d
+11:43:04 - 12-01-2009: //S-6.1_Current_Slab_Temp$ -> 71
+11:43:04 - 12-01-2009: S-6.1_{{TSTAT>>Heat1Call}} -> 0
+11:43:04 - 12-01-2009: [M_Bed][Audio_Zone]Treble -> 694d
+11:43:24 - 12-01-2009: dvd_tray_open_close -> 1
+11:43:25 - 12-01-2009: dvd_tray_open_close -> 0
+11:43:34 - 12-01-2009: S-6.1_{{TSTAT>>OutdoorTemp}} -> 746d
+11:43:34 - 12-01-2009: //S-6.1_SlabSetpoint -> 746d

@@ -1,0 +1,2296 @@
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:40:44 - 12-22-2009: Utility_1_touch_on_tgl -> 1
+15:40:44 - 12-22-2009: MB_Ceiling_Fan_Light_off_OR_INT -> 1
+15:40:44 - 12-22-2009: Master_Closet_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Wine_OH_Can_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Guest_Bath_OH_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Guest_Vanity_OFF_INT -> 1
+15:40:44 - 12-22-2009: Guest_BD_Fan_Light_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Guest_BD_win_outlet_off_FB -> 1
+15:40:44 - 12-22-2009: AV_A_FB -> 1
+15:40:44 - 12-22-2009: Kitchen_OH_Cans_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Dining_Chandlier_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Study_Fan_OFF_FB -> 1
+15:40:44 - 12-22-2009: Art_Lights_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Patio_1_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Patio_2_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: study_A_FB -> 1
+15:40:44 - 12-22-2009: study_Watch_sat_FB -> 1
+15:40:44 - 12-22-2009: [M_Bed][iPod]Advanced_Mode_Enabled -> 1
+15:40:44 - 12-22-2009: [M_Bed][iPod]Paused -> 1
+15:40:44 - 12-22-2009: [M_Bed][iPod]iPod_Present -> 1
+15:40:44 - 12-22-2009: [M_Bed][iPod]Show_Play_Page -> 1
+15:40:44 - 12-22-2009: [M_Bed][iPod]Show_Advanced_Play_Page -> 1
+15:40:44 - 12-22-2009: [M_Bed][iPod]Browse_1_Selected -> 1
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb28 -> 1
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb34 -> 1
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb56 -> 1
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb119 -> 1
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb160 -> 1
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb174 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb372 -> 1
+15:40:44 - 12-22-2009: [M_Bed][XPanel]fb401 -> 1
+15:40:44 - 12-22-2009: S-6.1_Auto_Mode_fb_1 -> 1
+15:40:44 - 12-22-2009: S-6.1_Fan_Auto_fb_1 -> 1
+15:40:44 - 12-22-2009: S-6.1_Display_Dual_Setpoints_1 -> 1
+15:40:44 - 12-22-2009: MB_Ceiling_Fan -> 65535d
+15:40:44 - 12-22-2009: Utility_Closet_Light -> 65535d
+15:40:44 - 12-22-2009: Guest_BD_Fan -> 65535d
+15:40:44 - 12-22-2009: [M_Bed][iPod]Duration -> 149d
+15:40:44 - 12-22-2009: [M_Bed][iPod]Track_Number -> 1d
+15:40:44 - 12-22-2009: [M_Bed][iPod]Number_of_Tracks -> 1142d
+15:40:44 - 12-22-2009: [M_Bed][iPod]Browse_Scrollbar_Feedback -> 65535d
+15:40:44 - 12-22-2009: [M_Bed][Audio_Zone]Bass -> 49151d
+15:40:44 - 12-22-2009: [M_Bed][Audio_Zone]Treble -> 32767d
+15:40:44 - 12-22-2009: [M_Bed][Audio_Zone]Minimum_Volume -> 3277d
+15:40:44 - 12-22-2009: [M_Bed][Audio_Zone]Startup_Volume -> 19660d
+15:40:44 - 12-22-2009: [M_Bed][Audio_Zone]Maximum_Volume -> 65535d
+15:40:44 - 12-22-2009: [M_Bed][Audio_Zone]Balance -> 32767d
+15:40:44 - 12-22-2009: //S-6.1_Remote_Sensor_1_Temp -> 702d
+15:40:44 - 12-22-2009: S-6.1_{{HeatSetpoint>>TSTAT}} -> 680d
+15:40:44 - 12-22-2009: S-6.1_{{CoolSetpoint>>TSTAT}} -> 740d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 747d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 702d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 759d
+15:40:44 - 12-22-2009: CD_trk_num_FB -> NG
+15:40:44 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#B
+15:40:44 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:40:44 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:40:44 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o25 -> Den
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o26 -> G Bed
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o30 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o31 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o33 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o34 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o43 -> G Bed
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o44 -> CC-4000
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o45 -> iPod
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o46 -> AM-FM Tuner
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o47 -> XM Tuner
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o48 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o49 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o54 -> CHECK ANTENNA
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o55 ->  
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o57 -> --
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o58 -> --
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o59 -> --
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o60 ->  88.8 
+15:40:44 - 12-22-2009: [M_Bed][XPanel]text-o61 -> FM
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o217 -> \x0D
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o219 -> Preset 8
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o220 -> \x0D
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o222 -> Preset 9
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o223 -> \x0D
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o225 -> Preset 10
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o226 -> \x0D
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o248 -> Bill Gunn's iPod
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o249 -> The Last Rose Of Summer
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o250 -> Damara Blue
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o251 -> Someday Soon Sweet Samba
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o252 -> Cape Town To Congo Square - 1st Movement: African Street Parade
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o253 -> Cape Town To Congo Square - 2nd Movement: District Six Carnival
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o254 -> The Last Rose Of Summer
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o255 -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o256 -> (trad., arr. Keene)
+15:40:44 - 12-22-2009: S-6.1_Current_Dual_Auto_Setpoint_1$ -> 68
+15:40:44 - 12-22-2009: S-6.1_Current_Dual_Auto_Setpoint_2$ -> 74
+15:40:44 - 12-22-2009: S-6.1_Current_Schedule$ -> Weekday Leave
+15:40:44 - 12-22-2009: S-6.1_Current_Day_Of_Week$ -> Tue
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb189 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb208 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb210 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb211 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb212 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb213 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb214 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb215 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb216 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb217 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb219 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb220 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb221 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb222 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb223 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb224 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb225 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb226 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb227 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb228 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb229 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb230 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb281 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb286 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb305 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb307 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb308 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb309 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb310 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb311 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb312 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb313 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb314 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb315 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb316 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb322 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb325 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb326 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb327 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb328 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb330 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb331 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb334 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb360 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb377 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 1
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o230 -> RADIO ID:UM5KK0M9
+15:40:44 - 12-22-2009: //[M_Bed][XPanel]text-o232 -> CHECK ANTENNA
+15:40:44 - 12-22-2009: Master_Closet_Light_always_on -> 65535d
+15:40:44 - 12-22-2009: S-6.1_{{Auto(1pt)Setpoint>>TSTAT}} -> 700d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>SysModeAuto_F}} -> 1
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>FanAuto_F}} -> 1
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>HeatSetpoint_F}} -> 680d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>CoolSetpoint_F}} -> 740d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>Auto(1pt)Setpoint_F} -> 700d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 722d
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>HeatCoolType}} -> 1
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>DualSetpoints(AuotMo -> 1
+15:40:44 - 12-22-2009: S-6.1_{{TSTAT>>Temp(DegF)}} -> 1
+15:40:44 - 12-22-2009: mas_bed_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: MBATH_Toliet_LS2 -> 1
+15:40:44 - 12-22-2009: mbath_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: mcloset_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: laundry_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: Hall_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: Wine_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: GBath_exhaust_off_tgl -> 1
+15:40:44 - 12-22-2009: GBath_1_touch_off_tgl -> 1
+15:40:44 - 12-22-2009: G_Bath_vanity_off_tgl -> 1
+15:40:44 - 12-22-2009: GBed_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: GB_Outlet_1_off_tgl -> 1
+15:40:44 - 12-22-2009: Kitchen_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: Dining_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: Living_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: Study_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: Art_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: //MBATH_Toliet_LS2_INT -> 1
+15:40:44 - 12-22-2009: //Utility_Closet_ON_OR_INT -> 1
+15:40:44 - 12-22-2009: //Hall_Light_OFF_OR_INT -> 1
+15:40:44 - 12-22-2009: Patio_2_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: Patio_1_1_touch_OFF_tgl -> 1
+15:40:44 - 12-22-2009: //S-6.1_Temp_Scale_F -> 1
+15:40:44 - 12-22-2009: S-6.1_Current_Slab_Setpoint$ -> 0
+15:40:44 - 12-22-2009: S-6.1_Current_Temp$ -> 72
+15:40:44 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 747d
+15:40:44 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 759d
+15:40:44 - 12-22-2009: //S-6.1_EnableSystemMode_Heat -> 1
+15:40:44 - 12-22-2009: //S-6.1_EnableSysmteMode_Cool -> 1
+15:40:44 - 12-22-2009: //S-6.1_EnableSystemMode_Auto -> 1
+15:40:44 - 12-22-2009: S-6.1_Current_Day_Of_Week -> 2d
+15:40:44 - 12-22-2009: //S-6.1_PM_fb -> 1
+15:40:44 - 12-22-2009: //AV_A_INT -> 1
+15:40:44 - 12-22-2009: //AV_A_FB_FB -> 1
+15:40:44 - 12-22-2009: //AV_A_FB_FB_P1 -> 1
+15:40:44 - 12-22-2009: auto_fb_layer_1_fb* -> 1
+15:40:44 - 12-22-2009: auto_fb_layer_2_fb* -> 1
+15:40:44 - 12-22-2009: auto_fb_layer_3_fb* -> 1
+15:40:44 - 12-22-2009: auto_fb_layer_4_fb* -> 1
+15:40:44 - 12-22-2009: [Console Data] : 
+15:40:47 - 12-22-2009: [Console Data] : PRO2>
+15:40:47 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:40:47 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:47 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:40:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:40:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:40:51 - 12-22-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 721d
+15:40:51 - 12-22-2009: S-6.1_Current_Temp$ -> 72
+15:40:51 - 12-22-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 701d
+15:40:51 - 12-22-2009: //S-6.1_Remote_Sensor_1_Temp -> 701d
+15:40:52 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:40:52 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:52 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:40:53 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:40:53 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:53 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:40:53 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:40:53 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:40:53 - 12-22-2009: [M_Bed][XPanel]fb119 -> 0
+15:40:53 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:40:53 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:40:53 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:40:53 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:40:53 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Den
+15:40:53 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:40:53 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:40:53 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:40:54 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:40:54 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:54 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:40:57 - 12-22-2009: [M_Bed][XPanel]press130 -> 1
+15:40:57 - 12-22-2009: [M_Bed][XPanel]fb130 -> 1
+15:40:58 - 12-22-2009: [M_Bed][XPanel]press130 -> 0
+15:40:58 - 12-22-2009: [M_Bed][XPanel]fb130 -> 0
+15:40:59 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:40:59 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:40:59 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:00 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:00 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:00 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:06 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:06 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:06 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:07 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:07 - 12-22-2009: [M_Bed][XPanel]press119 -> 1
+15:41:07 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:07 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:07 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:41:07 - 12-22-2009: [M_Bed][XPanel]fb119 -> 1
+15:41:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:41:07 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:41:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:41:07 - 12-22-2009: [M_Bed][XPanel]text-o43 -> G Bed
+15:41:07 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:41:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:41:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:41:07 - 12-22-2009: [M_Bed][XPanel]press119 -> 0
+15:41:10 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:10 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:10 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:11 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:11 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:11 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:24 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 746d
+15:41:25 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 746d
+15:41:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:35 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:35 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:35 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:39 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:39 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:39 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:39 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 760d
+15:41:39 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 760d
+15:41:44 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 759d
+15:41:44 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 759d
+15:41:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:46 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:46 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:46 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:47 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:47 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:47 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:48 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:49 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:49 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:52 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:52 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:52 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:52 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:53 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:53 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:53 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:55 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:55 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:55 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:41:57 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:41:57 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:57 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:41:58 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:41:58 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:41:58 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:01 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:01 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:01 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:02 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:02 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:02 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:04 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:04 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:04 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:04 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 760d
+15:42:04 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 760d
+15:42:06 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:06 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:06 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:13 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:13 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:13 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:16 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:16 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:16 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:17 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:17 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:17 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:20 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:20 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:20 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:21 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:21 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:21 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:22 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:22 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:22 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:30 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:30 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:30 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:31 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:31 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:31 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:38 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:38 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:38 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:39 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:39 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:39 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:41 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:41 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:41 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:42 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:43 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:43 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:45 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:45 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:45 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:47 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:47 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:47 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:48 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:48 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:48 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:49 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:49 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:49 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:53 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:53 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:53 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:54 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:54 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:54 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:55 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:42:55 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:55 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:42:56 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:42:56 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:42:56 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:42:59 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 745d
+15:42:59 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 745d
+15:43:00 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:00 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:00 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:02 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:02 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:02 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:04 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:04 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:04 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:05 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:05 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:05 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:06 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:06 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:06 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:08 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:08 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:08 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:09 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:09 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:09 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:12 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:12 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:12 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:13 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:13 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:13 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:14 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:14 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:14 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:15 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:15 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:15 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:22 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:22 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:22 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:29 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:29 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:29 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:30 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:30 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:30 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:34 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:35 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:35 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:40 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:40 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:40 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:41 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:41 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:41 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:43 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 761d
+15:43:43 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 761d
+15:43:45 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:45 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:45 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:46 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:46 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:46 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:53 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:53 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:53 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:43:56 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:43:56 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:56 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:43:58 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:43:58 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:43:58 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:00 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:00 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:00 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:01 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:01 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:01 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:02 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:02 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:02 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:03 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:03 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:03 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:06 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:06 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:06 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:07 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:07 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:07 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:08 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:08 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:08 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:09 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:09 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:09 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:10 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:10 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:10 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:16 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:16 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:16 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:17 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:17 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:17 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:19 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:19 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:19 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:21 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:21 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:21 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:24 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:24 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:24 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:27 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:27 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:27 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:28 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 746d
+15:44:28 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 746d
+15:44:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:29 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:29 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:30 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:33 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:33 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:33 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:35 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:35 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:35 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:36 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:36 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:36 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:39 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:39 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:39 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:40 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:40 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:40 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:41 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:41 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:41 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:42 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:42 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:42 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:43 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:43 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:43 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:46 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:46 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:46 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:51 - 12-22-2009: NBC -> 1
+15:44:51 - 12-22-2009: //BUSY -> 1
+15:44:51 - 12-22-2009: hd_0 -> 1
+15:44:52 - 12-22-2009: hd_0 -> 0
+15:44:52 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:52 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:52 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:52 - 12-22-2009: hd_9 -> 1
+15:44:53 - 12-22-2009: hd_9 -> 0
+15:44:53 - 12-22-2009: hd_select -> 1
+15:44:53 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 747d
+15:44:53 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 747d
+15:44:53 - 12-22-2009: hd_select -> 0
+15:44:54 - 12-22-2009: //BUSY -> 0
+15:44:54 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:54 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:54 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:55 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:44:55 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:55 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:44:56 - 12-22-2009: NBC -> 0
+15:44:56 - 12-22-2009: CBS -> 1
+15:44:56 - 12-22-2009: //BUSY -> 1
+15:44:56 - 12-22-2009: hd_0 -> 1
+15:44:56 - 12-22-2009: CBS -> 0
+15:44:56 - 12-22-2009: ABC -> 1
+15:44:56 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:44:56 - 12-22-2009: hd_0 -> 0
+15:44:56 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:44:56 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:44:56 - 12-22-2009: hd_4 -> 1
+15:44:56 - 12-22-2009: ABC -> 0
+15:44:56 - 12-22-2009: FOX -> 1
+15:44:56 - 12-22-2009: hd_0 -> 1
+15:44:57 - 12-22-2009: hd_0 -> 0
+15:44:57 - 12-22-2009: hd_7 -> 1
+15:44:57 - 12-22-2009: FOX -> 0
+15:44:57 - 12-22-2009: hd_4 -> 0
+15:44:57 - 12-22-2009: NBC -> 1
+15:44:57 - 12-22-2009: hd_0 -> 1
+15:44:57 - 12-22-2009: hd_0 -> 0
+15:44:57 - 12-22-2009: hd_select -> 1
+15:44:57 - 12-22-2009: hd_7 -> 0
+15:44:57 - 12-22-2009: NBC -> 0
+15:44:57 - 12-22-2009: hd_3 -> 1
+15:44:57 - 12-22-2009: CBS -> 1
+15:44:57 - 12-22-2009: hd_select -> 0
+15:44:57 - 12-22-2009: //BUSY -> 0
+15:44:58 - 12-22-2009: hd_9 -> 1
+15:44:58 - 12-22-2009: CBS -> 0
+15:44:58 - 12-22-2009: hd_3 -> 0
+15:44:58 - 12-22-2009: hd_1 -> 1
+15:44:58 - 12-22-2009: hd_9 -> 0
+15:44:58 - 12-22-2009: ABC -> 1
+15:44:58 - 12-22-2009: //BUSY -> 1
+15:44:58 - 12-22-2009: hd_0 -> 1
+15:44:58 - 12-22-2009: ABC -> 0
+15:44:58 - 12-22-2009: hd_select -> 1
+15:44:58 - 12-22-2009: hd_1 -> 0
+15:44:59 - 12-22-2009: hd_0 -> 0
+15:44:59 - 12-22-2009: hd_7 -> 1
+15:44:59 - 12-22-2009: hd_select -> 0
+15:44:59 - 12-22-2009: //BUSY -> 0
+15:44:59 - 12-22-2009: hd_7 -> 0
+15:44:59 - 12-22-2009: hd_select -> 1
+15:45:00 - 12-22-2009: hd_select -> 0
+15:45:02 - 12-22-2009: [Console Data] : Update request from Slot-08.IP-ID-03
+15:45:02 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:02 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:02 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:03 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:03 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:03 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:04 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:04 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:04 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:05 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:05 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:05 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:07 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:07 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:07 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:08 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:08 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:08 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:10 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:10 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:10 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:11 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:11 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:11 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:19 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:19 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:20 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:20 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:21 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:21 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:26 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:26 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:26 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:27 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:27 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:27 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:31 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:31 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:31 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:32 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:32 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:32 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:33 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 748d
+15:45:33 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 748d
+15:45:33 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:33 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:33 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:34 - 12-22-2009: [Console Data] : Update request from Slot-08.IP-ID-03
+15:45:35 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:35 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:35 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:38 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:38 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:38 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:40 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:40 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:40 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:41 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:45:41 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:45:42 - 12-22-2009: [M_Bed][XPanel]press120 -> 1
+15:45:42 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:42 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:42 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:42 - 12-22-2009: [M_Bed][XPanel]press120 -> 0
+15:45:43 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:45:43 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:45:43 - 12-22-2009: [M_Bed][XPanel]fb119 -> 0
+15:45:43 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:43 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:45:43 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Den
+15:45:43 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:43 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:45:43 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:43 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:43 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:45:43 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:43 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:43 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:46 - 12-22-2009: [M_Bed][XPanel]press119 -> 1
+15:45:46 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:45:46 - 12-22-2009: [M_Bed][XPanel]fb119 -> 1
+15:45:46 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:46 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:45:46 - 12-22-2009: [M_Bed][XPanel]text-o43 -> G Bed
+15:45:46 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:46 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:45:46 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:46 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:46 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:46 - 12-22-2009: [M_Bed][XPanel]press119 -> 0
+15:45:46 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:46 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:47 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:47 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:47 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:48 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:45:48 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:45:48 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:48 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:48 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:49 - 12-22-2009: [M_Bed][XPanel]press120 -> 1
+15:45:49 - 12-22-2009: [M_Bed][XPanel]press120 -> 0
+15:45:51 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:45:51 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:45:51 - 12-22-2009: [M_Bed][XPanel]fb119 -> 0
+15:45:51 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:51 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:45:51 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:51 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Den
+15:45:51 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:45:51 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:51 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:51 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:45:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:51 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:45:51 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:45:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:52 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:52 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:52 - 12-22-2009: [M_Bed][XPanel]press120 -> 1
+15:45:53 - 12-22-2009: [M_Bed][XPanel]press120 -> 0
+15:45:54 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:54 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:54 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:54 - 12-22-2009: [M_Bed][XPanel]press119 -> 1
+15:45:54 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:45:54 - 12-22-2009: [M_Bed][XPanel]fb119 -> 1
+15:45:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:54 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:45:54 - 12-22-2009: [M_Bed][XPanel]text-o43 -> G Bed
+15:45:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:54 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:45:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:54 - 12-22-2009: [M_Bed][XPanel]press119 -> 0
+15:45:55 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:55 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:45:55 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:55 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:55 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:45:55 - 12-22-2009: [M_Bed][XPanel]fb119 -> 0
+15:45:55 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:55 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:45:55 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:55 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Den
+15:45:55 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:45:55 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:55 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:55 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:45:56 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:56 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:56 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:45:57 - 12-22-2009: [M_Bed][XPanel]press119 -> 1
+15:45:57 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:45:57 - 12-22-2009: [M_Bed][XPanel]fb119 -> 1
+15:45:57 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:57 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:45:57 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:57 - 12-22-2009: [M_Bed][XPanel]text-o43 -> G Bed
+15:45:57 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:45:57 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:45:57 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:45:57 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:45:57 - 12-22-2009: [M_Bed][XPanel]press119 -> 0
+15:45:57 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:57 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:45:58 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:45:58 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:45:59 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:45:59 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:45:59 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:00 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:00 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:00 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:02 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:02 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:02 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:03 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:03 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:03 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:04 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:04 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:04 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:05 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:05 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:05 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:06 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:46:06 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:46:06 - 12-22-2009: [M_Bed][iPod]Playing -> 1
+15:46:06 - 12-22-2009: [M_Bed][XPanel]fb397 -> 1
+15:46:06 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:46:06 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:46:06 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:46:06 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#H
+15:46:06 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 0
+15:46:06 - 12-22-2009: [M_Bed][iPod]Paused -> 0
+15:46:06 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 0
+15:46:06 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:46:06 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 1
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Now Playing
+15:46:06 - 12-22-2009: [M_Bed][XPanel]fb401 -> 0
+15:46:06 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 1
+15:46:06 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Now Playing
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 1
+15:46:06 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:06 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:06 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:46:06 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:46:07 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:46:07 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:46:07 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:46:07 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:46:07 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:46:07 - 12-22-2009: [M_Bed][iPod]Paused -> 1
+15:46:07 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 1
+15:46:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:46:07 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 1
+15:46:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:46:07 - 12-22-2009: [M_Bed][XPanel]fb401 -> 1
+15:46:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:46:07 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:46:07 - 12-22-2009: [M_Bed][XPanel]fb397 -> 0
+15:46:07 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#B
+15:46:07 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:46:08 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 0
+15:46:08 - 12-22-2009: [M_Bed][iPod]Playing -> 0
+15:46:08 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:08 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 0
+15:46:08 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 0
+15:46:08 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:08 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:46:08 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:46:08 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:46:08 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:09 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:09 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:09 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:10 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:10 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:10 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:11 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:11 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:11 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:12 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:12 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:12 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:12 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 749d
+15:46:12 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 749d
+15:46:13 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:13 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:13 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:15 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:15 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:15 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:17 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:17 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:17 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:18 - 12-22-2009: Shut_down_sat -> 1
+15:46:18 - 12-22-2009: //study_Watch_sat_Busy -> 1
+15:46:18 - 12-22-2009: Shut_down_sat -> 0
+15:46:18 - 12-22-2009: AV_power_off_sat -> 1
+15:46:18 - 12-22-2009: AV_power_off -> 1
+15:46:18 - 12-22-2009: S-8.2.1_[tx$] -> @PWR:1,\x0D
+15:46:18 - 12-22-2009: S-8.2.1_[rx$] -> @PWR:1\x0D
+15:46:19 - 12-22-2009: AV_power_off_sat -> 0
+15:46:19 - 12-22-2009: AV_power_off -> 0
+15:46:19 - 12-22-2009: TV_on/off_s_on -> 1
+15:46:19 - 12-22-2009: TV_on/off -> 1
+15:46:20 - 12-22-2009: TV_on/off_s_on -> 0
+15:46:20 - 12-22-2009: TV_on/off -> 0
+15:46:20 - 12-22-2009: //study_Watch_sat_Busy -> 0
+15:46:21 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:21 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:21 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:22 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:22 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:22 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:22 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 760d
+15:46:22 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 760d
+15:46:23 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:23 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:23 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:24 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:24 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:24 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:25 - 12-22-2009: [M_Bed][XPanel]press90 -> 1
+15:46:25 - 12-22-2009: [M_Bed][XPanel]fb90 -> 1
+15:46:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:26 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:26 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:26 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:27 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:27 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:27 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:28 - 12-22-2009: [M_Bed][XPanel]press90 -> 0
+15:46:28 - 12-22-2009: [M_Bed][XPanel]fb90 -> 0
+15:46:29 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:46:29 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:46:29 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:29 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:29 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:29 - 12-22-2009: [M_Bed][iPod]Playing -> 1
+15:46:29 - 12-22-2009: [M_Bed][XPanel]fb397 -> 1
+15:46:29 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:46:29 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:46:29 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:46:29 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#H
+15:46:29 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 0
+15:46:29 - 12-22-2009: [M_Bed][iPod]Paused -> 0
+15:46:29 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 0
+15:46:29 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 1
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Now Playing
+15:46:29 - 12-22-2009: [M_Bed][XPanel]fb401 -> 0
+15:46:29 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:46:29 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 1
+15:46:29 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Now Playing
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 1
+15:46:29 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:29 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:29 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:46:29 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:46:30 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:46:30 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:30 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:30 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:30 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:46:30 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:46:30 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:46:31 - 12-22-2009: [M_Bed][iPod]Paused -> 1
+15:46:31 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 1
+15:46:31 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:46:31 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:46:31 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 1
+15:46:31 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:46:31 - 12-22-2009: [M_Bed][XPanel]fb401 -> 1
+15:46:31 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:46:31 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:46:31 - 12-22-2009: [M_Bed][XPanel]fb397 -> 0
+15:46:31 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#B
+15:46:31 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:46:31 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 0
+15:46:31 - 12-22-2009: [M_Bed][iPod]Playing -> 0
+15:46:31 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 0
+15:46:31 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 0
+15:46:31 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:46:31 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:46:31 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:46:32 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:32 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:32 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:34 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:34 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:34 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:36 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:36 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:36 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:37 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:37 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:37 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:38 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:38 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:38 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:40 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:40 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:40 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:41 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:41 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:41 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:42 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:42 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:42 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:43 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:43 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:43 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:45 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:45 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:45 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:48 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:48 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:48 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:49 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:54 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:54 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:54 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:55 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:55 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:55 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:57 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 750d
+15:46:57 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 750d
+15:46:57 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:57 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:57 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:46:58 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:46:58 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:58 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:46:59 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:46:59 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:46:59 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:04 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:04 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:04 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:05 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:47:05 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:47:05 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:47:05 - 12-22-2009: [M_Bed][iPod]Playing -> 1
+15:47:05 - 12-22-2009: [M_Bed][XPanel]fb397 -> 1
+15:47:05 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:47:05 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:47:05 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:47:05 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:47:05 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#H
+15:47:05 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 0
+15:47:05 - 12-22-2009: [M_Bed][iPod]Paused -> 0
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Now Playing
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 0
+15:47:05 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 1
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:47:05 - 12-22-2009: [M_Bed][XPanel]fb401 -> 0
+15:47:05 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Now Playing
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 1
+15:47:05 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:47:05 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 1
+15:47:05 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:05 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:05 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:06 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:47:06 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:47:06 - 12-22-2009: [M_Bed][iPod]iPod_Present -> 0
+15:47:06 - 12-22-2009: //[M_Bed][XPanel]fb336 -> 1
+15:47:06 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!iPod Not Found\x1B"In Docking Station\x1B# 
+15:47:06 - 12-22-2009: //[M_Bed][XPanel]fb334 -> 0
+15:47:06 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> iPod Not Found
+15:47:06 - 12-22-2009: [M_Bed][XPanel]text-o50 -> iPod Not Found
+15:47:06 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> In Docking Station
+15:47:06 - 12-22-2009: [M_Bed][XPanel]text-o51 -> In Docking Station
+15:47:06 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ ->  
+15:47:06 - 12-22-2009: [M_Bed][iPod]Show_Advanced_Play_Page -> 0
+15:47:06 - 12-22-2009: [M_Bed][iPod]IPod_Name -> <empty>
+15:47:06 - 12-22-2009: [M_Bed][iPod]IPod_Name -> <empty>
+15:47:06 - 12-22-2009: [M_Bed][iPod]Page_Header -> <empty>
+15:47:06 - 12-22-2009: [M_Bed][iPod]IPod_Name -> <empty>
+15:47:06 - 12-22-2009: //[M_Bed][XPanel]text-o242 -> <empty>
+15:47:06 - 12-22-2009: [M_Bed][iPod]IPod_Name -> <empty>
+15:47:06 - 12-22-2009: //[M_Bed][XPanel]text-o248 -> <empty>
+15:47:06 - 12-22-2009: [M_Bed][iPod]IPod_Name -> <empty>
+15:47:06 - 12-22-2009: //[M_Bed][XPanel]text-o257 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> iPod removed
+15:47:07 - 12-22-2009: [M_Bed][iPod]Page_Header -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o261 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Page_Header -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Page_Header -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> iPod removed
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> iPod removed
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o236 -> iPod removed
+15:47:07 - 12-22-2009: [M_Bed][iPod]Playing -> 0
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o249 -> iPod removed
+15:47:07 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 0
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o237 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Next_Track -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o250 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Next_Artist -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o238 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Next_Album -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o251 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Duration -> 0d
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Track -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o239 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!iPod Not Found\x1B"In Docking Station\x1B# 
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o252 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> iPod Not Found
+15:47:07 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o240 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> In Docking Station
+15:47:07 - 12-22-2009: [M_Bed][XPanel]fb397 -> 0
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o253 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ ->  
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 0
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o265 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Artist -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 0
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o267 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!iPod Not Found\x1B"In Docking Station\x1B# 
+15:47:07 - 12-22-2009: [M_Bed][iPod]Next_Track -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o266 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> iPod Not Found
+15:47:07 - 12-22-2009: [M_Bed][iPod]Next_Artist -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o243 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> In Docking Station
+15:47:07 - 12-22-2009: [M_Bed][iPod]Next_Album -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o254 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ ->  
+15:47:07 - 12-22-2009: [M_Bed][iPod]Duration -> 0d
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Track -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o262 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Album -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Track -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][XPanel]text-o50 -> iPod Not Found
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Track -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][XPanel]text-o51 -> In Docking Station
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Artist -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o245 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Artist -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o256 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Artist -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o264 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Album -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][XPanel]text-o50 -> iPod Not Found
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Album -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][XPanel]text-o51 -> In Docking Station
+15:47:07 - 12-22-2009: [M_Bed][iPod]Current_Album -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o244 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o255 -> <empty>
+15:47:07 - 12-22-2009: //[M_Bed][XPanel]text-o263 -> <empty>
+15:47:07 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:07 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:08 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:08 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:08 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:09 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:09 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:09 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:10 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:10 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:10 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:11 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:11 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:11 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:13 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:13 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:13 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:14 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:14 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:14 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> iPod inserted
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o236 -> iPod inserted
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> iPod inserted
+15:47:16 - 12-22-2009: [M_Bed][iPod]iPod_Present -> 1
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> iPod inserted
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o249 -> iPod inserted
+15:47:16 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ ->  
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]fb336 -> 0
+15:47:16 - 12-22-2009: [M_Bed][XPanel]text-o50 ->  
+15:47:16 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ ->  
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]fb334 -> 1
+15:47:16 - 12-22-2009: [M_Bed][XPanel]text-o51 ->  
+15:47:16 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:47:16 - 12-22-2009: [M_Bed][iPod]IPod_Name -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o242 -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B! \x1B" \x1B#H
+15:47:16 - 12-22-2009: [M_Bed][iPod]IPod_Name -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o248 -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: [M_Bed][iPod]Show_Advanced_Play_Page -> 1
+15:47:16 - 12-22-2009: [M_Bed][iPod]IPod_Name -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o257 -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: [M_Bed][iPod]IPod_Name -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o261 -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: [M_Bed][iPod]IPod_Name -> Bill Gunn's iPod
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> Playlists
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o236 -> Playlists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> Playlists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> Artists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> Playlists
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o249 -> Playlists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> Albums
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> Artists
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o237 -> Artists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> Songs
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> Artists
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o250 -> Artists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> Genres
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> Albums
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o238 -> Albums
+15:47:16 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> Albums
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o251 -> Albums
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> Playlists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> Songs
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o239 -> Songs
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> Artists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> Songs
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o252 -> Songs
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> Albums
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> Genres
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o240 -> Genres
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> Songs
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> Genres
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o253 -> Genres
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> Genres
+15:47:16 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Music
+15:47:16 - 12-22-2009: [M_Bed][iPod]Number_of_Tracks -> 0d
+15:47:16 - 12-22-2009: [M_Bed][iPod]Track_Number -> 0d
+15:47:16 - 12-22-2009: [M_Bed][iPod]Next_Track -> Damara Blue
+15:47:16 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Music
+15:47:16 - 12-22-2009: [M_Bed][iPod]Next_Artist -> Abdullah Ibrahim Trio
+15:47:16 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Music
+15:47:16 - 12-22-2009: [M_Bed][iPod]Next_Album -> Cape Town Revisited
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> Playlists
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o236 -> Playlists
+15:47:16 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:16 - 12-22-2009: [M_Bed][iPod]Item_1_Text -> Playlists
+15:47:16 - 12-22-2009: //[M_Bed][XPanel]text-o249 -> Playlists
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> Artists
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o237 -> Artists
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_2_Text -> Artists
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o250 -> Artists
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> Albums
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o238 -> Albums
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_3_Text -> Albums
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o251 -> Albums
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> Songs
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o239 -> Songs
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_4_Text -> Songs
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o252 -> Songs
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> Genres
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o240 -> Genres
+15:47:17 - 12-22-2009: [M_Bed][iPod]Item_5_Text -> Genres
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o253 -> Genres
+15:47:17 - 12-22-2009: [M_Bed][iPod]Paused -> 1
+15:47:17 - 12-22-2009: [M_Bed][iPod]Number_of_Tracks -> 0d
+15:47:17 - 12-22-2009: [M_Bed][iPod]Track_Number -> 0d
+15:47:17 - 12-22-2009: [M_Bed][iPod]Next_Track -> Damara Blue
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o265 -> Damara Blue
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ ->  
+15:47:17 - 12-22-2009: [M_Bed][iPod]Next_Artist -> Abdullah Ibrahim Trio
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o267 -> Abdullah Ibrahim Trio
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ ->  
+15:47:17 - 12-22-2009: [M_Bed][iPod]Next_Album -> Cape Town Revisited
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o266 -> Cape Town Revisited
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:47:17 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Music
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B! \x1B" \x1B#B
+15:47:17 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Music
+15:47:17 - 12-22-2009: [M_Bed][iPod]Number_of_Tracks -> 1142d
+15:47:17 - 12-22-2009: [M_Bed][iPod]Track_Number -> 1d
+15:47:17 - 12-22-2009: [M_Bed][iPod]Page_Header -> Music
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Music
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 1
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o50 ->  
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 1
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o51 ->  
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Track -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][XPanel]fb401 -> 1
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o243 -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ ->  
+15:47:17 - 12-22-2009: [M_Bed][iPod]Number_of_Tracks -> 1142d
+15:47:17 - 12-22-2009: [M_Bed][iPod]Track_Number -> 1d
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Track -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o254 -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Track -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o262 -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Track -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o50 ->  
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B! \x1B"The Last Rose Of Summer\x1B#B
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Artist -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Artist -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Artist -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o245 -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Artist -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o256 -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Album -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o264 -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Album -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:47:17 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#B
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Album -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:47:17 - 12-22-2009: [M_Bed][iPod]Current_Album -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o244 -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o255 -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:47:17 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:17 - 12-22-2009: //[M_Bed][XPanel]text-o263 -> New York, Music From The Soundtrack, A Documentary Film By Ric Burns
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:17 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:19 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:47:19 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:47:19 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:47:19 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:47:19 - 12-22-2009: [M_Bed][iPod]Playing -> 1
+15:47:19 - 12-22-2009: [M_Bed][XPanel]fb397 -> 1
+15:47:19 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:47:19 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:47:19 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:47:20 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 0
+15:47:20 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#H
+15:47:20 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 0
+15:47:20 - 12-22-2009: [M_Bed][iPod]Paused -> 0
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Now Playing
+15:47:20 - 12-22-2009: [M_Bed][XPanel]fb401 -> 0
+15:47:20 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 1
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 1
+15:47:20 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Now Playing
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 1
+15:47:20 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:20 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:20 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:20 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:47:20 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:47:20 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:47:21 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:21 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:21 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:22 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:22 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:22 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:23 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:23 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:23 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:24 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:24 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:24 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:30 - 12-22-2009: [M_Bed][XPanel]press119 -> 1
+15:47:30 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:47:30 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:47:30 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:47:30 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:47:30 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:47:30 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:47:31 - 12-22-2009: [M_Bed][XPanel]press119 -> 0
+15:47:32 - 12-22-2009: [M_Bed][XPanel]press134 -> 1
+15:47:32 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 1
+15:47:32 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 0
+15:47:32 - 12-22-2009: [M_Bed][XPanel]fb134 -> 1
+15:47:32 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 1
+15:47:32 - 12-22-2009: [M_Bed][XPanel]fb124 -> 1
+15:47:32 - 12-22-2009: [M_Bed][XPanel]press134 -> 0
+15:47:32 - 12-22-2009: [M_Bed][XPanel]text-o32 -> iPod
+15:47:32 - 12-22-2009: [M_Bed][XPanel]text-o33 -> (trad., arr. Keene)
+15:47:32 - 12-22-2009: [M_Bed][XPanel]text-o34 -> The Last Rose Of Summer
+15:47:34 - 12-22-2009: [M_Bed][XPanel]press90 -> 1
+15:47:34 - 12-22-2009: [M_Bed][XPanel]fb90 -> 1
+15:47:34 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:34 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:34 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:34 - 12-22-2009: [M_Bed][XPanel]press90 -> 0
+15:47:34 - 12-22-2009: [M_Bed][XPanel]fb90 -> 0
+15:47:35 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:35 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:35 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:38 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:38 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:38 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]press362 -> 1
+15:47:42 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]press362 -> 0
+15:47:42 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:47:42 - 12-22-2009: [M_Bed][iPod]Paused -> 1
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 1
+15:47:42 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 1
+15:47:42 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:47:42 - 12-22-2009: [M_Bed][XPanel]fb401 -> 1
+15:47:42 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:47:42 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#B
+15:47:42 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:47:42 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:47:42 - 12-22-2009: [M_Bed][iPod]Playing -> 0
+15:47:42 - 12-22-2009: [M_Bed][XPanel]fb397 -> 0
+15:47:42 - 12-22-2009: [M_Bed][XPanel]text-o33 -> (trad., arr. Keene)
+15:47:42 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 0
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 0
+15:47:42 - 12-22-2009: [M_Bed][XPanel]text-o34 -> The Last Rose Of Summer
+15:47:42 - 12-22-2009: [M_Bed][iPod]Duration -> 149d
+15:47:42 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 0
+15:47:42 - 12-22-2009: [M_Bed][iPod]Duration -> 149d
+15:47:43 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:43 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:43 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:45 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:45 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:46 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:47 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:47 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:47 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:54 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:47:54 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:47:54 - 12-22-2009: [M_Bed][XPanel]fb119 -> 0
+15:47:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:47:54 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:47:54 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 0
+15:47:54 - 12-22-2009: [M_Bed][XPanel]fb124 -> 0
+15:47:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:47:54 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Den
+15:47:54 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:47:54 - 12-22-2009: [M_Bed][XPanel]fb134 -> 0
+15:47:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:47:54 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:47:55 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:47:55 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:55 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:55 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:56 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:56 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:56 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:47:57 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:47:57 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:57 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:47:57 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:47:57 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:47:57 - 12-22-2009: [M_Bed][iPod]Playing -> 1
+15:47:57 - 12-22-2009: [M_Bed][XPanel]fb397 -> 1
+15:47:57 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:47:57 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:47:57 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:47:57 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#H
+15:47:57 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:47:57 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:47:57 - 12-22-2009: [M_Bed][XPanel]text-o33 -> (trad., arr. Keene)
+15:47:57 - 12-22-2009: [M_Bed][iPod]Paused -> 0
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 0
+15:47:57 - 12-22-2009: [M_Bed][XPanel]text-o34 -> The Last Rose Of Summer
+15:47:57 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 1
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 0
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Now Playing
+15:47:57 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:57 - 12-22-2009: [M_Bed][XPanel]fb401 -> 0
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 1
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Now Playing
+15:47:57 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 1
+15:47:57 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:57 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:57 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:47:58 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:47:58 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:47:58 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:47:58 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:47:58 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:47:58 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:47:58 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:01 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:01 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:01 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:02 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 751d
+15:48:02 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 751d
+15:48:02 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:02 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:02 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:02 - 12-22-2009: [M_Bed][XPanel]press119 -> 1
+15:48:02 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:48:02 - 12-22-2009: [M_Bed][XPanel]fb119 -> 1
+15:48:02 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:48:02 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:48:02 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:48:02 - 12-22-2009: [M_Bed][XPanel]text-o43 -> G Bed
+15:48:02 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:48:03 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 1
+15:48:03 - 12-22-2009: [M_Bed][XPanel]fb124 -> 1
+15:48:03 - 12-22-2009: [M_Bed][XPanel]fb134 -> 1
+15:48:03 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:48:03 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:48:03 - 12-22-2009: [M_Bed][XPanel]press119 -> 0
+15:48:04 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:04 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:04 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:05 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:05 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:05 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:05 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:48:06 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:48:06 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:06 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:06 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:07 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:48:07 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:48:07 - 12-22-2009: [M_Bed][XPanel]fb119 -> 0
+15:48:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:48:07 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:48:07 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 0
+15:48:07 - 12-22-2009: [M_Bed][XPanel]fb124 -> 0
+15:48:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:48:07 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Den
+15:48:07 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:48:07 - 12-22-2009: [M_Bed][XPanel]fb134 -> 0
+15:48:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:48:07 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:48:07 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:48:07 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:07 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:07 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:09 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:09 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:09 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:11 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:11 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:11 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:12 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:12 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:12 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:16 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:16 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:16 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:16 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 759d
+15:48:16 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 759d
+15:48:18 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:18 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:18 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:19 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:48:19 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:48:19 - 12-22-2009: [M_Bed][iPod]Paused -> 1
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 1
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 1
+15:48:19 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:48:19 - 12-22-2009: [M_Bed][XPanel]fb401 -> 1
+15:48:19 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:48:19 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> B
+15:48:19 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:48:19 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#B
+15:48:19 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:48:19 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:48:19 - 12-22-2009: [M_Bed][iPod]Playing -> 0
+15:48:19 - 12-22-2009: [M_Bed][XPanel]fb397 -> 0
+15:48:19 - 12-22-2009: [M_Bed][XPanel]text-o33 -> (trad., arr. Keene)
+15:48:19 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 0
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 0
+15:48:19 - 12-22-2009: [M_Bed][XPanel]text-o34 -> The Last Rose Of Summer
+15:48:19 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 0
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:48:19 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:48:20 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:20 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:20 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:20 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 1
+15:48:20 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 1
+15:48:20 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 1
+15:48:20 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 1
+15:48:20 - 12-22-2009: [M_Bed][iPod]Playing -> 1
+15:48:20 - 12-22-2009: [M_Bed][XPanel]fb397 -> 1
+15:48:20 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:48:20 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> The Last Rose Of Summer
+15:48:20 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:48:20 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"The Last Rose Of Summer\x1B#H
+15:48:20 - 12-22-2009: [M_Bed][iPod]Play/Pause -> 0
+15:48:20 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:48:20 - 12-22-2009: [M_Bed][XPanel]text-o51 -> The Last Rose Of Summer
+15:48:20 - 12-22-2009: [M_Bed][iPod]Paused -> 0
+15:48:20 - 12-22-2009: //[M_Bed][XPanel]fb367 -> 0
+15:48:20 - 12-22-2009: [M_Bed][XPanel]text-o33 -> (trad., arr. Keene)
+15:48:20 - 12-22-2009: [M_Bed][iPod]Play_Graphic -> 1
+15:48:20 - 12-22-2009: //[M_Bed][XPanel]fb392 -> 0
+15:48:20 - 12-22-2009: [M_Bed][XPanel]text-o34 -> The Last Rose Of Summer
+15:48:20 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:20 - 12-22-2009: [M_Bed][XPanel]fb401 -> 0
+15:48:21 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Now Playing
+15:48:21 - 12-22-2009: [M_Bed][iPod]Play/Pause_Fb -> 0
+15:48:21 - 12-22-2009: //[M_Bed][XPanel]fb366 -> 1
+15:48:21 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:48:21 - 12-22-2009: //[M_Bed][XPanel]fb391 -> 1
+15:48:21 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Now Playing
+15:48:21 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:21 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:21 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:21 - 12-22-2009: //[M_Bed][XPanel]fb362 -> 0
+15:48:21 - 12-22-2009: //[M_Bed][XPanel]fb387 -> 0
+15:48:22 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:22 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:22 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:22 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:48:23 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:48:24 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:48:24 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:48:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:26 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:26 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:26 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:27 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:27 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:27 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:29 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:29 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:29 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:30 - 12-22-2009: [M_Bed][XPanel]press134 -> 1
+15:48:30 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 1
+15:48:30 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 0
+15:48:30 - 12-22-2009: [M_Bed][XPanel]fb134 -> 1
+15:48:30 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 1
+15:48:30 - 12-22-2009: [M_Bed][XPanel]fb124 -> 1
+15:48:30 - 12-22-2009: [M_Bed][XPanel]text-o29 -> iPod
+15:48:30 - 12-22-2009: [M_Bed][XPanel]text-o30 -> (trad., arr. Keene)
+15:48:30 - 12-22-2009: [M_Bed][XPanel]text-o31 -> The Last Rose Of Summer
+15:48:30 - 12-22-2009: [M_Bed][XPanel]press134 -> 0
+15:48:30 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:30 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:30 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:32 - 12-22-2009: AV-audio_ipod -> 1
+15:48:32 - 12-22-2009: AV_A -> 1
+15:48:33 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:33 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:33 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:33 - 12-22-2009: AV-audio_ipod -> 0
+15:48:33 - 12-22-2009: AV_A -> 0
+15:48:37 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:37 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:37 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:38 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:38 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:38 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:43 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:43 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:43 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:46 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:46 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:46 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:47 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:47 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:47 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:53 - 12-22-2009: [M_Bed][XPanel]press117 -> 1
+15:48:53 - 12-22-2009: [M_Bed][XPanel]fb117 -> 1
+15:48:53 - 12-22-2009: [M_Bed][XPanel]press117 -> 0
+15:48:53 - 12-22-2009: [M_Bed][XPanel]fb117 -> 0
+15:48:53 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:53 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:53 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:53 - 12-22-2009: [M_Bed][XPanel]press117 -> 1
+15:48:53 - 12-22-2009: [M_Bed][XPanel]press117 -> 0
+15:48:53 - 12-22-2009: [M_Bed][XPanel]fb117 -> 1
+15:48:53 - 12-22-2009: [M_Bed][XPanel]fb117 -> 0
+15:48:54 - 12-22-2009: [M_Bed][XPanel]press116 -> 1
+15:48:54 - 12-22-2009: [M_Bed][XPanel]fb116 -> 1
+15:48:54 - 12-22-2009: [M_Bed][XPanel]press116 -> 0
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o25 -> M Bed
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o29 -> <empty>
+15:48:54 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o26 -> M Bath
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o32 -> <empty>
+15:48:54 - 12-22-2009: [M_Bed][XPanel]fb116 -> 0
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o27 -> Living
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o28 -> Dining
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o30 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o31 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o33 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o34 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:48:54 - 12-22-2009: [M_Bed][XPanel]press116 -> 1
+15:48:54 - 12-22-2009: [M_Bed][XPanel]press116 -> 0
+15:48:54 - 12-22-2009: [M_Bed][XPanel]fb116 -> 1
+15:48:54 - 12-22-2009: [M_Bed][XPanel]fb116 -> 0
+15:48:54 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:54 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:54 - 12-22-2009: [M_Bed][iPod]Duration -> 245d
+15:48:54 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:54 - 12-22-2009: //[M_Bed][XPanel]text-o241 -> Now Playing
+15:48:54 - 12-22-2009: [M_Bed][iPod]Page_Header -> Now Playing
+15:48:54 - 12-22-2009: //[M_Bed][XPanel]text-o247 -> Now Playing
+15:48:54 - 12-22-2009: [M_Bed][iPod]Current_Track -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Duration -> 245d
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Track -> Damara Blue
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o258 -> Now Playing
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> (trad., arr. Keene)
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Track -> Damara Blue
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o243 -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Track -> Damara Blue
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o254 -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Artist -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o262 -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!(trad., arr. Keene)\x1B"Damara Blue\x1B#H
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Artist -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o50 -> (trad., arr. Keene)
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Artist -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Artist -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o51 -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_1$ -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Album -> Cape Town Revisited
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o245 -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing_Line_2$ -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Album -> Cape Town Revisited
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o256 -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing_Transport$ -> H
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Album -> Cape Town Revisited
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o264 -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][iPod]Now_Playing$ -> \x1B!Abdullah Ibrahim Trio\x1B"Damara Blue\x1B#H
+15:48:55 - 12-22-2009: [M_Bed][iPod]Track_Number -> 2d
+15:48:55 - 12-22-2009: [M_Bed][iPod]Next_Track -> Someday Soon Sweet Samba
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o50 -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][iPod]Current_Album -> Cape Town Revisited
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o51 -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][iPod]Track_Number -> 2d
+15:48:55 - 12-22-2009: [M_Bed][iPod]Next_Track -> Someday Soon Sweet Samba
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o244 -> Cape Town Revisited
+15:48:55 - 12-22-2009: [M_Bed][XPanel]press117 -> 1
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o255 -> Cape Town Revisited
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o263 -> Cape Town Revisited
+15:48:55 - 12-22-2009: [M_Bed][XPanel]fb117 -> 1
+15:48:55 - 12-22-2009: //[M_Bed][XPanel]text-o265 -> Someday Soon Sweet Samba
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o25 -> Den
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o29 -> iPod
+15:48:55 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:48:55 - 12-22-2009: [M_Bed][XPanel]press117 -> 0
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o26 -> G Bed
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o32 -> iPod
+15:48:55 - 12-22-2009: [M_Bed][XPanel]fb117 -> 0
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o27 -> <empty>
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o28 -> <empty>
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o30 -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o31 -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o33 -> Abdullah Ibrahim Trio
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o34 -> Damara Blue
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:48:55 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:48:55 - 12-22-2009: [M_Bed][XPanel]press117 -> 1
+15:48:55 - 12-22-2009: [M_Bed][XPanel]fb117 -> 1
+15:48:55 - 12-22-2009: [M_Bed][XPanel]press117 -> 0
+15:48:55 - 12-22-2009: [M_Bed][XPanel]fb117 -> 0
+15:48:56 - 12-22-2009: [M_Bed][XPanel]press116 -> 1
+15:48:56 - 12-22-2009: [M_Bed][XPanel]fb116 -> 1
+15:48:56 - 12-22-2009: [M_Bed][XPanel]press116 -> 0
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o25 -> M Bed
+15:48:56 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o29 -> <empty>
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o26 -> M Bath
+15:48:56 - 12-22-2009: [M_Bed][XPanel]fb116 -> 0
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o32 -> <empty>
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o27 -> Living
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o28 -> Dining
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o30 ->  
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o31 ->  
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o33 ->  
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o34 ->  
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:48:56 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:48:57 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:48:57 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:57 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:48:58 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:48:58 - 12-22-2009: [M_Bed][XPanel]press117 -> 1
+15:48:58 - 12-22-2009: [M_Bed][XPanel]fb117 -> 1
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o25 -> Den
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o29 -> iPod
+15:48:58 - 12-22-2009: [M_Bed][XPanel]press117 -> 0
+15:48:58 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o26 -> G Bed
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o32 -> iPod
+15:48:58 - 12-22-2009: [M_Bed][XPanel]fb117 -> 0
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o27 -> <empty>
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o28 -> <empty>
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o30 -> Abdullah Ibrahim Trio
+15:48:58 - 12-22-2009: [M_Bed][XPanel]text-o31 -> Damara Blue
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o33 -> Abdullah Ibrahim Trio
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o34 -> Damara Blue
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]press116 -> 1
+15:48:59 - 12-22-2009: [M_Bed][XPanel]fb116 -> 1
+15:48:59 - 12-22-2009: [M_Bed][XPanel]press116 -> 0
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o25 -> M Bed
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o29 -> <empty>
+15:48:59 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o26 -> M Bath
+15:48:59 - 12-22-2009: [M_Bed][XPanel]fb116 -> 0
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o32 -> <empty>
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o27 -> Living
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o28 -> Dining
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o30 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o31 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o33 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o34 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:48:59 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:49:00 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:49:00 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:00 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:00 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:01 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:01 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:01 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:02 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:49:02 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:49:02 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:02 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:49:02 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 0
+15:49:02 - 12-22-2009: [M_Bed][XPanel]fb124 -> 0
+15:49:02 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:02 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:49:02 - 12-22-2009: [M_Bed][XPanel]text-o43 -> M Bed
+15:49:02 - 12-22-2009: [M_Bed][XPanel]fb134 -> 0
+15:49:02 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:02 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:02 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:49:05 - 12-22-2009: [M_Bed][XPanel]press131 -> 1
+15:49:05 - 12-22-2009: [M_Bed][XPanel]fb131 -> 1
+15:49:05 - 12-22-2009: [M_Bed][XPanel]press131 -> 0
+15:49:05 - 12-22-2009: [M_Bed][XPanel]fb131 -> 0
+15:49:06 - 12-22-2009: [M_Bed][XPanel]press134 -> 1
+15:49:06 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 1
+15:49:07 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 0
+15:49:07 - 12-22-2009: [M_Bed][XPanel]fb134 -> 1
+15:49:07 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 1
+15:49:07 - 12-22-2009: [M_Bed][XPanel]fb124 -> 1
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 0d
+15:49:07 - 12-22-2009: [M_Bed][XPanel]text-o29 -> iPod
+15:49:07 - 12-22-2009: [M_Bed][XPanel]text-o30 -> Abdullah Ibrahim Trio
+15:49:07 - 12-22-2009: [M_Bed][XPanel]text-o31 -> Damara Blue
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 1546d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 1988d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 3092d
+15:49:07 - 12-22-2009: [M_Bed][XPanel]press134 -> 0
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 4197d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 5301d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 6406d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 7510d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 8615d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 9719d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 10824d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 11928d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 13033d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 14137d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 15242d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 16346d
+15:49:07 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:07 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:07 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 17451d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 18555d
+15:49:07 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 19660d
+15:49:08 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:08 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:08 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:09 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:09 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:09 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:10 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:10 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:10 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:11 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:12 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:12 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:14 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:14 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:14 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:15 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:15 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:15 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:16 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:16 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:16 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:16 - 12-22-2009: [M_Bed][XPanel]press120 -> 1
+15:49:16 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:49:16 - 12-22-2009: [M_Bed][XPanel]fb120 -> 1
+15:49:16 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:16 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:49:16 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 0
+15:49:16 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Living
+15:49:16 - 12-22-2009: [M_Bed][XPanel]fb124 -> 0
+15:49:16 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:16 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:49:16 - 12-22-2009: [M_Bed][XPanel]fb92 -> 1
+15:49:16 - 12-22-2009: [M_Bed][XPanel]fb134 -> 0
+15:49:16 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:16 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:16 - 12-22-2009: [M_Bed][XPanel]press120 -> 0
+15:49:18 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:18 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:18 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:19 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:19 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:19 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:20 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:20 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:20 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:21 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:21 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:21 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:24 - 12-22-2009: [M_Bed][XPanel]press120 -> 1
+15:49:24 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:24 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:49:24 - 12-22-2009: [M_Bed][XPanel]fb92 -> 0
+15:49:24 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:24 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:49:24 - 12-22-2009: [M_Bed][XPanel]fb92 -> 1
+15:49:24 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:24 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:24 - 12-22-2009: [M_Bed][XPanel]press120 -> 0
+15:49:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:25 - 12-22-2009: [M_Bed][XPanel]press134 -> 1
+15:49:25 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 1
+15:49:25 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 0
+15:49:25 - 12-22-2009: [M_Bed][XPanel]fb134 -> 1
+15:49:25 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 1
+15:49:25 - 12-22-2009: [M_Bed][XPanel]fb124 -> 1
+15:49:25 - 12-22-2009: [M_Bed][XPanel]fb92 -> 0
+15:49:25 - 12-22-2009: [M_Bed][XPanel]text-o35 -> iPod
+15:49:25 - 12-22-2009: [M_Bed][XPanel]text-o36 -> Abdullah Ibrahim Trio
+15:49:25 - 12-22-2009: [M_Bed][XPanel]text-o37 -> Damara Blue
+15:49:25 - 12-22-2009: [M_Bed][XPanel]press134 -> 0
+15:49:27 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:27 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:27 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:28 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:28 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:35 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:35 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:35 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:37 - 12-22-2009: [M_Bed][XPanel]press121 -> 1
+15:49:37 - 12-22-2009: [M_Bed][XPanel]fb120 -> 0
+15:49:37 - 12-22-2009: [M_Bed][XPanel]fb121 -> 1
+15:49:37 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:37 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:49:37 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 0
+15:49:37 - 12-22-2009: [M_Bed][XPanel]text-o43 -> Dining
+15:49:37 - 12-22-2009: [M_Bed][XPanel]fb124 -> 0
+15:49:37 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:37 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:49:37 - 12-22-2009: [M_Bed][XPanel]fb134 -> 0
+15:49:37 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:49:37 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:49:37 - 12-22-2009: [M_Bed][XPanel]press121 -> 0
+15:49:38 - 12-22-2009: [M_Bed][XPanel]press134 -> 1
+15:49:38 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 1
+15:49:38 - 12-22-2009: //[M_Bed][XPanel]fb332 -> 0
+15:49:38 - 12-22-2009: [M_Bed][XPanel]fb134 -> 1
+15:49:38 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 1
+15:49:38 - 12-22-2009: [M_Bed][XPanel]fb124 -> 1
+15:49:38 - 12-22-2009: [M_Bed][XPanel]text-o38 -> iPod
+15:49:38 - 12-22-2009: [M_Bed][XPanel]text-o39 -> Abdullah Ibrahim Trio
+15:49:38 - 12-22-2009: [M_Bed][XPanel]text-o40 -> Damara Blue
+15:49:38 - 12-22-2009: [M_Bed][XPanel]press134 -> 0
+15:49:41 - 12-22-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 753d
+15:49:41 - 12-22-2009: //S-6.1_Built-in_Sensor_Temp -> 753d
+15:49:42 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:42 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:42 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:44 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:44 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:44 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:45 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:45 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:45 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:47 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:47 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:47 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:49 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:49 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:49 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:51 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:51 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:51 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:49:54 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:49:54 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:54 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:49:57 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:49:57 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:49:57 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:00 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:00 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:00 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:01 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:01 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:01 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:03 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:03 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:03 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:03 - 12-22-2009: AV-audio_ipod -> 1
+15:50:03 - 12-22-2009: AV_A -> 1
+15:50:04 - 12-22-2009: AV-audio_ipod -> 0
+15:50:04 - 12-22-2009: AV_A -> 0
+15:50:04 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:04 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:04 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:06 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:06 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:06 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:07 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:07 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:07 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:08 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:08 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:08 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:11 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 758d
+15:50:11 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 758d
+15:50:11 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:11 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:11 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:12 - 12-22-2009: [M_Bed][XPanel]press118 -> 1
+15:50:12 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:50:12 - 12-22-2009: [M_Bed][XPanel]fb121 -> 0
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:50:12 - 12-22-2009: [M_Bed][XPanel]text-o43 -> M Bed
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 0
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 0
+15:50:12 - 12-22-2009: [M_Bed][XPanel]fb124 -> 0
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb111 -> 1
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 1
+15:50:12 - 12-22-2009: [M_Bed][XPanel]fb124 -> 1
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:50:12 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:50:12 - 12-22-2009: [M_Bed][XPanel]press118 -> 0
+15:50:16 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:16 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:16 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:17 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:17 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:17 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:18 - 12-22-2009: [M_Bed][XPanel]press132 -> 1
+15:50:18 - 12-22-2009: [M_Bed][XPanel]fb132 -> 1
+15:50:18 - 12-22-2009: [M_Bed][XPanel]press132 -> 0
+15:50:18 - 12-22-2009: [M_Bed][XPanel]fb132 -> 0
+15:50:19 - 12-22-2009: [M_Bed][XPanel]press132 -> 1
+15:50:19 - 12-22-2009: [M_Bed][XPanel]fb132 -> 1
+15:50:19 - 12-22-2009: [M_Bed][XPanel]press132 -> 0
+15:50:19 - 12-22-2009: [M_Bed][XPanel]fb132 -> 0
+15:50:19 - 12-22-2009: [M_Bed][XPanel]press131 -> 1
+15:50:19 - 12-22-2009: [M_Bed][XPanel]fb131 -> 1
+15:50:19 - 12-22-2009: [M_Bed][XPanel]press131 -> 0
+15:50:19 - 12-22-2009: [M_Bed][XPanel]fb131 -> 0
+15:50:20 - 12-22-2009: [M_Bed][XPanel]press130 -> 1
+15:50:20 - 12-22-2009: [M_Bed][XPanel]fb130 -> 1
+15:50:20 - 12-22-2009: [M_Bed][XPanel]press130 -> 0
+15:50:20 - 12-22-2009: [M_Bed][XPanel]fb134 -> 0
+15:50:20 - 12-22-2009: //[M_Bed][XPanel]fb442 -> 0
+15:50:20 - 12-22-2009: [M_Bed][XPanel]fb124 -> 0
+15:50:20 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 1
+15:50:20 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 19660d
+15:50:20 - 12-22-2009: //[M_Bed][XPanel]fb89 -> 0
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o29 -> <empty>
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o30 ->  
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o31 ->  
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:50:20 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 17231d
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:50:20 - 12-22-2009: [M_Bed][XPanel]fb130 -> 0
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:50:20 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 14138d
+15:50:20 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:50:20 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 13696d
+15:50:20 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 12813d
+15:50:20 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 12371d
+15:50:20 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 11266d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 10162d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 9057d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 7953d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 6848d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 5744d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 4639d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 3535d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 2430d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 1326d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 221d
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 0d
+15:50:21 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:21 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:21 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:21 - 12-22-2009: [M_Bed][Audio_Zone]Volume -> 0d
+15:50:23 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:23 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:23 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:25 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:25 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:25 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:26 - 12-22-2009: [M_Bed][XPanel]press117 -> 1
+15:50:26 - 12-22-2009: [M_Bed][XPanel]fb117 -> 1
+15:50:26 - 12-22-2009: [M_Bed][XPanel]press117 -> 0
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o25 -> Den
+15:50:26 - 12-22-2009: [M_Bed][XPanel]fb118 -> 0
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o29 -> <empty>
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o26 -> G Bed
+15:50:26 - 12-22-2009: [M_Bed][XPanel]fb117 -> 0
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o32 -> <empty>
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o27 -> <empty>
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o28 -> <empty>
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o30 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o31 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o33 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o34 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:50:26 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:26 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:27 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:27 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:27 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:28 - 12-22-2009: [M_Bed][XPanel]press116 -> 1
+15:50:28 - 12-22-2009: [M_Bed][XPanel]fb116 -> 1
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o25 -> M Bed
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o29 -> <empty>
+15:50:28 - 12-22-2009: [M_Bed][XPanel]press116 -> 0
+15:50:28 - 12-22-2009: [M_Bed][XPanel]fb118 -> 1
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o26 -> M Bath
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o32 -> <empty>
+15:50:28 - 12-22-2009: [M_Bed][XPanel]fb116 -> 0
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o27 -> Living
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o35 -> <empty>
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o28 -> Dining
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o38 -> <empty>
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o30 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o31 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o33 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o34 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o36 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o37 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o39 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]text-o40 ->  
+15:50:28 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:29 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:29 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:30 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 759d
+15:50:30 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 759d
+15:50:33 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:33 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:33 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:34 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:34 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:34 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:35 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:35 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:35 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono
+15:50:35 - 12-22-2009: AV-audio_rs -> 1
+15:50:35 - 12-22-2009: AV_A -> 1
+15:50:35 - 12-22-2009: S-6.1_{{TSTAT>>Remote2Temp}} -> 758d
+15:50:36 - 12-22-2009: //S-6.1_Remote_Sensor_2_Temp -> 758d
+15:50:36 - 12-22-2009: [M_Bed][XPanel]fb158 -> 1
+15:50:36 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:36 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Stereo
+15:50:36 - 12-22-2009: AV-audio_rs -> 0
+15:50:36 - 12-22-2009: AV_A -> 0
+15:50:38 - 12-22-2009: [M_Bed][XPanel]fb158 -> 0
+15:50:38 - 12-22-2009: [M_Bed][XPanel]text-o52 -> 88.80 FM
+15:50:38 - 12-22-2009: [M_Bed][XPanel]text-o53 -> Mono

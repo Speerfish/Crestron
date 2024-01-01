@@ -1,0 +1,1341 @@
+07:36:33 - 11-19-2009: Hall_1_touch_on_tgl -> 1
+07:36:33 - 11-19-2009: GBath_1_touch_on_tgl -> 1
+07:36:33 - 11-19-2009: Kitchen_1_touch_on_tgl -> 1
+07:36:33 - 11-19-2009: MB_Ceiling_Fan_Light_off_OR_INT -> 1
+07:36:33 - 11-19-2009: MBATH_toe_kick_OFF_FB -> 1
+07:36:33 - 11-19-2009: MBATH_toliet_fan_off_FB -> 1
+07:36:33 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: MBATH_Vanity_OFF_INT -> 1
+07:36:33 - 11-19-2009: MBATH_Tub_OFF_INT -> 1
+07:36:33 - 11-19-2009: MBATH_Shower_OFF_INT -> 1
+07:36:33 - 11-19-2009: MBATH_Toliet_OFF_INT -> 1
+07:36:33 - 11-19-2009: Master_Closet_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: Wine_OH_Can_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: Wine_SP1_OFF_INT -> 1
+07:36:33 - 11-19-2009: Guest_Bath_OH_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: Guest_Tub_OFF_INT -> 1
+07:36:33 - 11-19-2009: Guest_Vanity_OFF_INT -> 1
+07:36:33 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 1
+07:36:33 - 11-19-2009: Lighting_A_FB -> 1
+07:36:33 - 11-19-2009: Kitchen_OH_Cans_ON_OR_INT -> 1
+07:36:33 - 11-19-2009: Kitchen_Island_Pendant_OFF_INT -> 1
+07:36:33 - 11-19-2009: Kitchen_Counter_OFF_INT -> 1
+07:36:33 - 11-19-2009: Kitchen_In_Cabinet_OFF_INT -> 1
+07:36:33 - 11-19-2009: Living_Wall_Wash_OFF_INT -> 1
+07:36:33 - 11-19-2009: Living_OH_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: Study_OH_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: Study_Fan_OFF_FB -> 1
+07:36:33 - 11-19-2009: Art_Lights_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: Art_Lights_Low_INT_p1 -> 1
+07:36:33 - 11-19-2009: Presets_INT -> 1
+07:36:33 - 11-19-2009: [M_Bed][iPod]Advanced_Mode_Enabled -> 1
+07:36:33 - 11-19-2009: [M_Bed][iPod]IsOffline -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb28 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb34 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb56 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb152 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb160 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb174 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb335 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb336 -> 1
+07:36:33 - 11-19-2009: S-6.1_Auto_Mode_fb_1 -> 1
+07:36:33 - 11-19-2009: S-6.1_Fan_Auto_fb_1 -> 1
+07:36:33 - 11-19-2009: S-6.1_Display_Dual_Setpoints_1 -> 1
+07:36:33 - 11-19-2009: internet_explorer_tgl_1 -> 1
+07:36:33 - 11-19-2009: Hall_Light -> 65535d
+07:36:33 - 11-19-2009: Guest_Exhaust_OH -> 65535d
+07:36:33 - 11-19-2009: Kitchen_OH_Cans -> 65535d
+07:36:33 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 646d
+07:36:33 - 11-19-2009: S-6.1_{{HeatSetpoint>>TSTAT}} -> 660d
+07:36:33 - 11-19-2009: S-6.1_{{CoolSetpoint>>TSTAT}} -> 680d
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o25 -> M Bed
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o26 -> M Bath
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o27 -> Living
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o28 -> Dining
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o30 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o31 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o33 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o34 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o36 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o37 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o39 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o40 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o43 -> M Bed
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o44 -> CC-4000
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o45 -> iPod
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o46 -> AM-FM Tuner
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o47 -> XM Tuner
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o48 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o49 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o50 -> Not Found
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o51 -> On Network
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o52 -> 88.50 FM
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o53 -> Mono
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o54 -> CHECK ANTENNA
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o55 ->  
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o60 ->  000 
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o61 -> FM
+07:36:33 - 11-19-2009: S-6.1_Current_Dual_Auto_Setpoint_1$ -> 66
+07:36:33 - 11-19-2009: S-6.1_Current_Dual_Auto_Setpoint_2$ -> 68
+07:36:33 - 11-19-2009: S-6.1_Current_Setpoint$ -> 75
+07:36:33 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:36:33 - 11-19-2009: S-6.1_Current_Day_Of_Week$ -> Thu
+07:36:33 - 11-19-2009: [M_Bed][Audio_Zone]Source_Gain -> 32768d
+07:36:33 - 11-19-2009: [M_Bed][Audio_Zone]Bass -> 49151d
+07:36:33 - 11-19-2009: [M_Bed][Audio_Zone]Treble -> 32767d
+07:36:33 - 11-19-2009: [M_Bed][Audio_Zone]Minimum_Volume -> 3277d
+07:36:33 - 11-19-2009: [M_Bed][Audio_Zone]Startup_Volume -> 19660d
+07:36:33 - 11-19-2009: [M_Bed][Audio_Zone]Maximum_Volume -> 65535d
+07:36:33 - 11-19-2009: [M_Bed][Audio_Zone]Balance -> 32767d
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb111 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb210 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb211 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb212 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb213 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb214 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb215 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb216 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb217 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb219 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb220 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb221 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb222 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb223 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb224 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb225 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb226 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb227 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb228 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb229 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb230 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb307 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb308 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb309 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb310 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb311 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb312 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb313 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb314 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb315 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb316 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb325 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb326 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb327 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb328 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb330 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb331 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb360 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]fb377 -> 1
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o230 -> RADIO ID:UM5KK0M9
+07:36:33 - 11-19-2009: [M_Bed][XPanel]text-o232 -> CHECK ANTENNA
+07:36:33 - 11-19-2009: Show_Internet_09 -> 1
+07:36:33 - 11-19-2009: Master_Closet_Light_always_on -> 65535d
+07:36:33 - 11-19-2009: S-6.1_{{Auto(1pt)Setpoint>>TSTAT}} -> 730d
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>SysModeAuto_F}} -> 1
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>FanAuto_F}} -> 1
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>HeatSetpoint_F}} -> 660d
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>CoolSetpoint_F}} -> 680d
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>Auto(1pt)Setpoint_F} -> 730d
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 666d
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 722d
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 646d
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>HeatCoolType}} -> 1
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>DualSetpoints(AuotMo -> 1
+07:36:33 - 11-19-2009: S-6.1_{{TSTAT>>Temp(DegF)}} -> 1
+07:36:33 - 11-19-2009: mas_bed_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: MBATH_Toliet_LS1 -> 1
+07:36:33 - 11-19-2009: mbath_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: mcloset_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: laundry_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: Utility_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: Wine_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: GBath_exhaust_off_tgl -> 1
+07:36:33 - 11-19-2009: G_Bath_vanity_on_tgl -> 1
+07:36:33 - 11-19-2009: GBed_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: GB_Outlet_1_off_tgl -> 1
+07:36:33 - 11-19-2009: Dining_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: Living_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: Study_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: Art_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: MB_Fire_Scene_2_INT -> 1
+07:36:33 - 11-19-2009: MB_Read_1_scene_2_INT -> 1
+07:36:33 - 11-19-2009: MB_Read_2_scene_2_INT -> 1
+07:36:33 - 11-19-2009: MB_Hall_scene_2_INT -> 1
+07:36:33 - 11-19-2009: Laundry_Under_Cabinet_S2_INT -> 1
+07:36:33 - 11-19-2009: Utility_Closet_OFF_OR_INT -> 1
+07:36:33 - 11-19-2009: Hall_Light_ON_OR_INT -> 1
+07:36:33 - 11-19-2009: Wine_OH_S2_INT -> 1
+07:36:33 - 11-19-2009: Dining_Chandlier_S2_INT -> 1
+07:36:33 - 11-19-2009: Patio_1_S2_INT -> 1
+07:36:33 - 11-19-2009: Patio_2_S2_INT -> 1
+07:36:33 - 11-19-2009: Patio_2_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: Patio_1_1_touch_OFF_tgl -> 1
+07:36:33 - 11-19-2009: S-6.1_Temp_Scale_F -> 1
+07:36:33 - 11-19-2009: S-6.1_Current_Slab_Setpoint$ -> 0
+07:36:33 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:36:33 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 722d
+07:36:33 - 11-19-2009: S-6.1_EnableSystemMode_Heat -> 1
+07:36:33 - 11-19-2009: S-6.1_EnableSysmteMode_Cool -> 1
+07:36:33 - 11-19-2009: S-6.1_EnableSystemMode_Auto -> 1
+07:36:33 - 11-19-2009: S-6.1_Current_Day_Of_Week -> 4d
+07:36:33 - 11-19-2009: Lighting_A_INT -> 1
+07:36:33 - 11-19-2009: Lighting_A_FB_P1 -> 1
+07:36:33 - 11-19-2009: Lighting_A_FBB -> 1
+07:36:33 - 11-19-2009: Lighting_A_FBB_FB -> 1
+07:36:33 - 11-19-2009: Lighting_A_Preset_INT -> 1
+07:36:33 - 11-19-2009: normal_program_mode_il -> 1
+07:36:33 - 11-19-2009: auto_fb_layer_1_fb* -> 1
+07:36:33 - 11-19-2009: auto_fb_layer_2_fb* -> 1
+07:36:33 - 11-19-2009: auto_fb_layer_3_fb* -> 1
+07:36:33 - 11-19-2009: auto_fb_layer_4_fb* -> 1
+07:36:34 - 11-19-2009: [Console Data] : 
+07:36:49 - 11-19-2009: [Console Data] : PRO2>
+07:36:49 - 11-19-2009: mbath_gui_on/off -> 1
+07:36:49 - 11-19-2009: mbath_1_touch_OFF_tgl -> 0
+07:36:49 - 11-19-2009: mbath_1_touch_on_tgl -> 1
+07:36:49 - 11-19-2009: mbath_1_touch_on_os -> 1
+07:36:49 - 11-19-2009: MBATH_OH_ON_OR -> 1
+07:36:49 - 11-19-2009: MBATH_OH_Light -> 65535d
+07:36:49 - 11-19-2009: MBATH_OH_OFF_OR_INT -> 0
+07:36:49 - 11-19-2009: MBATH_OH_ON_OR_INT -> 1
+07:36:49 - 11-19-2009: mbath_gui_on/off -> 0
+07:36:50 - 11-19-2009: mbath_1_touch_on_os -> 0
+07:36:50 - 11-19-2009: MBATH_OH_ON_OR -> 0
+07:36:53 - 11-19-2009: Shade_1 -> 1
+07:36:53 - 11-19-2009: Shade_A -> 1
+07:36:53 - 11-19-2009: Shade_A_FB_FB -> 1
+07:36:53 - 11-19-2009: Lighting_A_FB_P1 -> 0
+07:36:53 - 11-19-2009: Shade_A_FB_FB_P1 -> 1
+07:36:53 - 11-19-2009: Lighting_A_FB -> 0
+07:36:53 - 11-19-2009: Shade_A_FB -> 1
+07:36:53 - 11-19-2009: Lighting_A_FBB -> 0
+07:36:53 - 11-19-2009: Shade_A_FBB -> 1
+07:36:53 - 11-19-2009: Lighting_A_Preset_INT -> 0
+07:36:53 - 11-19-2009: Shade_A_Preset_INT -> 1
+07:36:53 - 11-19-2009: Lighting_A_FBB_FB -> 0
+07:36:53 - 11-19-2009: Shade_A_FBB_FB -> 1
+07:36:53 - 11-19-2009: Shade_1 -> 0
+07:36:53 - 11-19-2009: Shade_A -> 0
+07:36:56 - 11-19-2009: shade_study_sub_A -> 1
+07:36:56 - 11-19-2009: Lighting_A_INT -> 0
+07:36:56 - 11-19-2009: shade_study_sub_A_INT -> 1
+07:36:56 - 11-19-2009: shade_study_sub_A -> 0
+07:36:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:37:05 - 11-19-2009: SZ9_UP_a -> 1
+07:37:05 - 11-19-2009: SZ9_UP -> 1
+07:37:05 - 11-19-2009: Port-B_[tx$] -> U4\x0D
+07:37:05 - 11-19-2009: SZ9_UP_a -> 0
+07:37:05 - 11-19-2009: SZ9_UP -> 0
+07:37:09 - 11-19-2009: SZ9_UP_a -> 1
+07:37:09 - 11-19-2009: SZ9_UP -> 1
+07:37:09 - 11-19-2009: Port-B_[tx$] -> U4\x0D
+07:37:09 - 11-19-2009: SZ9_UP_a -> 0
+07:37:09 - 11-19-2009: SZ9_UP -> 0
+07:37:23 - 11-19-2009: SZ10_UP_a -> 1
+07:37:23 - 11-19-2009: SZ10_UP -> 1
+07:37:23 - 11-19-2009: Port-B_[tx$] -> U5\x0D
+07:37:23 - 11-19-2009: SZ10_UP_a -> 0
+07:37:23 - 11-19-2009: SZ10_UP -> 0
+07:37:27 - 11-19-2009: SZ9_UP_a -> 1
+07:37:27 - 11-19-2009: SZ9_UP -> 1
+07:37:27 - 11-19-2009: Port-B_[tx$] -> U4\x0D
+07:37:27 - 11-19-2009: SZ9_UP_a -> 0
+07:37:27 - 11-19-2009: SZ9_UP -> 0
+07:37:28 - 11-19-2009: SZ11_UP_a -> 1
+07:37:28 - 11-19-2009: SZ11_UP -> 1
+07:37:28 - 11-19-2009: Mod_3_TX$ -> U1\x0D U1\x0D
+07:37:29 - 11-19-2009: SZ11_UP_a -> 0
+07:37:29 - 11-19-2009: SZ11_UP -> 0
+07:37:29 - 11-19-2009: SZ11_UP_a -> 1
+07:37:29 - 11-19-2009: SZ11_UP -> 1
+07:37:29 - 11-19-2009: Mod_3_TX$ -> U1\x0D U1\x0D
+07:37:29 - 11-19-2009: SZ11_UP_a -> 0
+07:37:29 - 11-19-2009: SZ11_UP -> 0
+07:37:30 - 11-19-2009: SZ11_Down_a -> 1
+07:37:30 - 11-19-2009: SZ11_Down -> 1
+07:37:30 - 11-19-2009: Mod_3_TX$ -> D1\x0D D1\x0D
+07:37:30 - 11-19-2009: SZ11_Down_a -> 0
+07:37:30 - 11-19-2009: SZ11_Down -> 0
+07:37:30 - 11-19-2009: SZ13_UP_a -> 1
+07:37:30 - 11-19-2009: SZ13_UP -> 1
+07:37:30 - 11-19-2009: Mod_3_TX$ -> U3\x0D U3\x0D
+07:37:31 - 11-19-2009: SZ13_UP_a -> 0
+07:37:31 - 11-19-2009: SZ13_UP -> 0
+07:37:31 - 11-19-2009: SZ13_Down_a -> 1
+07:37:31 - 11-19-2009: SZ13_Down -> 1
+07:37:31 - 11-19-2009: Mod_3_TX$ -> D3\x0D D3\x0D
+07:37:31 - 11-19-2009: SZ13_Down_a -> 0
+07:37:31 - 11-19-2009: SZ13_Down -> 0
+07:37:31 - 11-19-2009: SZ15_UP_a -> 1
+07:37:31 - 11-19-2009: SZ15_UP -> 1
+07:37:31 - 11-19-2009: Mod_3_TX$ -> U5\x0D U5\x0D
+07:37:31 - 11-19-2009: SZ15_UP_a -> 0
+07:37:31 - 11-19-2009: SZ15_UP -> 0
+07:37:31 - 11-19-2009: SZ15_Stop_a -> 1
+07:37:31 - 11-19-2009: SZ15_Stop -> 1
+07:37:31 - 11-19-2009: Mod_3_TX$ -> S5\x0D S5\x0D
+07:37:32 - 11-19-2009: SZ15_Stop_a -> 0
+07:37:32 - 11-19-2009: SZ15_Stop -> 0
+07:37:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:38:10 - 11-19-2009: SZ9_UP_a -> 1
+07:38:10 - 11-19-2009: SZ9_UP -> 1
+07:38:10 - 11-19-2009: Port-B_[tx$] -> U4\x0D
+07:38:10 - 11-19-2009: SZ9_UP_a -> 0
+07:38:10 - 11-19-2009: SZ9_UP -> 0
+07:38:13 - 11-19-2009: SZ9_UP_a -> 1
+07:38:13 - 11-19-2009: SZ9_UP -> 1
+07:38:13 - 11-19-2009: Port-B_[tx$] -> U4\x0D
+07:38:13 - 11-19-2009: SZ9_UP_a -> 0
+07:38:13 - 11-19-2009: SZ9_UP -> 0
+07:38:14 - 11-19-2009: SZ11_UP_a -> 1
+07:38:14 - 11-19-2009: SZ11_UP -> 1
+07:38:14 - 11-19-2009: Mod_3_TX$ -> U1\x0D U1\x0D
+07:38:15 - 11-19-2009: SZ11_UP_a -> 0
+07:38:15 - 11-19-2009: SZ11_UP -> 0
+07:38:44 - 11-19-2009: S-2.1_[rx$] -> \xFF
+07:38:44 - 11-19-2009: Port-B_[rx$] -> \xFF
+07:38:44 - 11-19-2009: Mod_3_RX$ -> \xFF
+07:38:44 - 11-19-2009: Port-A_[rx$] -> \xFF
+07:38:44 - 11-19-2009: Port-B_[rx$]_1 -> \xFF
+07:38:50 - 11-19-2009: SZ9_UP_a -> 1
+07:38:50 - 11-19-2009: SZ9_UP -> 1
+07:38:50 - 11-19-2009: Port-B_[tx$] -> U4\x0D
+07:38:50 - 11-19-2009: SZ9_UP_a -> 0
+07:38:51 - 11-19-2009: SZ9_UP -> 0
+07:38:51 - 11-19-2009: Port-B_[rx$] -> U4\x0D
+07:38:51 - 11-19-2009: SZ9_UP_a -> 1
+07:38:51 - 11-19-2009: SZ9_UP -> 1
+07:38:51 - 11-19-2009: Port-B_[tx$] -> U4\x0D
+07:38:51 - 11-19-2009: Port-B_[rx$] -> U4\x0D
+07:38:51 - 11-19-2009: SZ9_UP_a -> 0
+07:38:51 - 11-19-2009: SZ9_UP -> 0
+07:38:52 - 11-19-2009: Port-B_[rx$] -> OK\x0D\x0A
+07:38:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:38:58 - 11-19-2009: SZ9_Down_a -> 1
+07:38:58 - 11-19-2009: SZ9_Down -> 1
+07:38:58 - 11-19-2009: Port-B_[tx$] -> D4\x0D
+07:38:58 - 11-19-2009: Port-B_[rx$] -> D4\x0D
+07:38:58 - 11-19-2009: SZ9_Down_a -> 0
+07:38:58 - 11-19-2009: SZ9_Down -> 0
+07:38:58 - 11-19-2009: SZ9_Stop_a -> 1
+07:38:58 - 11-19-2009: SZ9_Stop -> 1
+07:38:58 - 11-19-2009: Port-B_[tx$] -> S4\x0D
+07:38:58 - 11-19-2009: Port-B_[rx$] -> S4\x0D
+07:38:58 - 11-19-2009: Port-B_[rx$] -> OK\x0D\x0A
+07:38:58 - 11-19-2009: SZ9_Stop_a -> 0
+07:38:58 - 11-19-2009: SZ9_Stop -> 0
+07:38:59 - 11-19-2009: SZ9_Stop_a -> 1
+07:38:59 - 11-19-2009: SZ9_Stop -> 1
+07:38:59 - 11-19-2009: Port-B_[tx$] -> S4\x0D
+07:38:59 - 11-19-2009: Port-B_[rx$] -> S4\x0D
+07:39:00 - 11-19-2009: SZ9_Stop_a -> 0
+07:39:00 - 11-19-2009: SZ9_Stop -> 0
+07:39:00 - 11-19-2009: Port-B_[rx$] -> OK\x0D\x0A
+07:39:04 - 11-19-2009: SZ11_UP_a -> 1
+07:39:04 - 11-19-2009: SZ11_UP -> 1
+07:39:04 - 11-19-2009: Mod_3_TX$ -> U1\x0D U1\x0D
+07:39:04 - 11-19-2009: SZ11_UP_a -> 0
+07:39:04 - 11-19-2009: SZ11_UP -> 0
+07:39:04 - 11-19-2009: Mod_3_RX$ -> U1\x0D U1\x0D
+07:39:04 - 11-19-2009: SZ11_UP_a -> 1
+07:39:05 - 11-19-2009: SZ11_UP -> 1
+07:39:05 - 11-19-2009: Mod_3_TX$ -> U1\x0D U1\x0D
+07:39:05 - 11-19-2009: Mod_3_RX$ -> U1\x0D U1\x0D
+07:39:05 - 11-19-2009: SZ11_UP_a -> 0
+07:39:05 - 11-19-2009: SZ11_UP -> 0
+07:39:05 - 11-19-2009: Mod_3_RX$ -> OK\x0D\x0A
+07:39:09 - 11-19-2009: SZ11_Stop_a -> 1
+07:39:09 - 11-19-2009: SZ11_Stop -> 1
+07:39:09 - 11-19-2009: Mod_3_TX$ -> S1\x0D S1\x0D
+07:39:09 - 11-19-2009: Mod_3_RX$ -> S1\x0D S1\x0D
+07:39:09 - 11-19-2009: SZ11_Stop_a -> 0
+07:39:09 - 11-19-2009: SZ11_Stop -> 0
+07:39:10 - 11-19-2009: Mod_3_RX$ -> OK\x0D\x0A
+07:39:12 - 11-19-2009: SZ12_UP_a -> 1
+07:39:12 - 11-19-2009: SZ12_UP -> 1
+07:39:12 - 11-19-2009: Mod_3_TX$ -> U2\x0D U2\x0D
+07:39:12 - 11-19-2009: Mod_3_RX$ -> U2\x0D U2\x0D
+07:39:12 - 11-19-2009: SZ12_UP_a -> 0
+07:39:12 - 11-19-2009: SZ12_UP -> 0
+07:39:13 - 11-19-2009: Mod_3_RX$ -> OK\x0D\x0A
+07:39:19 - 11-19-2009: SZ12_Stop_a -> 1
+07:39:19 - 11-19-2009: SZ12_Stop -> 1
+07:39:19 - 11-19-2009: Mod_3_TX$ -> S2\x0D S2\x0D
+07:39:19 - 11-19-2009: Mod_3_RX$ -> S2\x0D S2\x0D
+07:39:19 - 11-19-2009: SZ12_Stop_a -> 0
+07:39:19 - 11-19-2009: SZ12_Stop -> 0
+07:39:19 - 11-19-2009: Mod_3_RX$ -> OK\x0D\x0A
+07:39:28 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 667d
+07:39:28 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:39:28 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 646d
+07:39:43 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+07:39:43 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+07:39:53 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 666d
+07:39:53 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:39:53 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 646d
+07:39:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:40:13 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 667d
+07:40:13 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:40:13 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 646d
+07:40:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:41:02 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+07:41:02 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+07:41:57 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 668d
+07:41:57 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:41:57 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 648d
+07:41:57 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 648d
+07:41:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:42:02 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+07:42:02 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+07:42:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:43:31 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+07:43:31 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+07:43:56 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+07:43:56 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+07:43:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:44:16 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+07:44:16 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+07:44:41 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 667d
+07:44:41 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:44:41 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 646d
+07:44:41 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 646d
+07:44:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:45:26 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 668d
+07:45:26 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:45:26 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 648d
+07:45:26 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 648d
+07:45:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:46:10 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+07:46:10 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+07:46:24 - 11-19-2009: Lighting_1 -> 1
+07:46:24 - 11-19-2009: Lighting_A -> 1
+07:46:24 - 11-19-2009: shade_study_sub_A_INT -> 0
+07:46:24 - 11-19-2009: Lighting_A_INT -> 1
+07:46:24 - 11-19-2009: Shade_A_FB_FB_P1 -> 0
+07:46:24 - 11-19-2009: Lighting_A_FB_P1 -> 1
+07:46:24 - 11-19-2009: Shade_A_FB -> 0
+07:46:24 - 11-19-2009: Lighting_A_FB -> 1
+07:46:24 - 11-19-2009: Shade_A_FBB -> 0
+07:46:24 - 11-19-2009: Lighting_A_FBB -> 1
+07:46:24 - 11-19-2009: Shade_A_Preset_INT -> 0
+07:46:24 - 11-19-2009: Lighting_A_Preset_INT -> 1
+07:46:24 - 11-19-2009: Shade_A_FBB_FB -> 0
+07:46:24 - 11-19-2009: Lighting_A_FBB_FB -> 1
+07:46:26 - 11-19-2009: Lighting_1 -> 0
+07:46:26 - 11-19-2009: Lighting_A -> 0
+07:46:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:47:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:48:58 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:50:01 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:50:33 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 722d
+07:50:33 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 722d
+07:51:01 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:51:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:52:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:53:12 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+07:53:12 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+07:53:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:54:41 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 669d
+07:54:41 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+07:54:41 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+07:54:41 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+07:54:41 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 649d
+07:54:41 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 649d
+07:54:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:55:46 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+07:55:46 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+07:55:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:55:58 - 11-19-2009: Shade_1 -> 1
+07:55:58 - 11-19-2009: Shade_A -> 1
+07:55:58 - 11-19-2009: Lighting_A_FB_P1 -> 0
+07:55:58 - 11-19-2009: Shade_A_FB_FB_P1 -> 1
+07:55:58 - 11-19-2009: Lighting_A_FB -> 0
+07:55:58 - 11-19-2009: Shade_A_FB -> 1
+07:55:58 - 11-19-2009: Lighting_A_FBB -> 0
+07:55:58 - 11-19-2009: Shade_A_FBB -> 1
+07:55:58 - 11-19-2009: Lighting_A_Preset_INT -> 0
+07:55:58 - 11-19-2009: Shade_A_Preset_INT -> 1
+07:55:58 - 11-19-2009: Lighting_A_FBB_FB -> 0
+07:55:58 - 11-19-2009: Shade_A_FBB_FB -> 1
+07:55:58 - 11-19-2009: Shade_1 -> 0
+07:55:58 - 11-19-2009: Shade_A -> 0
+07:56:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:57:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:58:30 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+07:58:30 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+07:58:35 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+07:58:35 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+07:58:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+07:59:09 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+07:59:09 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+07:59:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:00:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:01:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:02:28 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+08:02:28 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+08:02:33 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+08:02:33 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+08:02:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:02:53 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+08:02:53 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+08:03:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:04:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:05:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:06:31 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 670d
+08:06:31 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+08:06:31 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 650d
+08:06:31 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 650d
+08:06:41 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+08:06:41 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+08:06:51 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:07:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:08:50 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+08:08:50 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+08:08:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:09:20 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 671d
+08:09:20 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+08:09:20 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 651d
+08:09:20 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 651d
+08:09:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:10:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:10:54 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+08:10:54 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+08:10:59 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+08:10:59 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+08:11:29 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+08:11:29 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+08:11:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:12:26 - 11-19-2009: G_bath_keypad_on/off_3 -> 1
+08:12:26 - 11-19-2009: Guest_Bath_gui_on/off -> 1
+08:12:26 - 11-19-2009: GBath_1_touch_on_tgl -> 0
+08:12:26 - 11-19-2009: GBath_1_touch_off_tgl -> 1
+08:12:26 - 11-19-2009: GBath_1_touch_OFF_OS -> 1
+08:12:26 - 11-19-2009: Guest_Bath_OH_OFF_OR -> 1
+08:12:26 - 11-19-2009: Guest_Bath_OH -> 0d
+08:12:26 - 11-19-2009: G_bath_keypad_on/off_3 -> 0
+08:12:26 - 11-19-2009: Guest_Bath_gui_on/off -> 0
+08:12:28 - 11-19-2009: G_Bath_vanity_on/off_6 -> 1
+08:12:28 - 11-19-2009: G_Bath_vanity_on/off -> 1
+08:12:28 - 11-19-2009: G_Bath_vanity_on_tgl -> 0
+08:12:28 - 11-19-2009: G_Bath_vanity_off_tgl -> 1
+08:12:28 - 11-19-2009: G_Bath_vanity_off_OS -> 1
+08:12:28 - 11-19-2009: Guest_Vanity_OFF -> 1
+08:12:28 - 11-19-2009: Guest_Vanity -> 0d
+08:12:29 - 11-19-2009: G_Bath_vanity_on/off_6 -> 0
+08:12:29 - 11-19-2009: G_Bath_vanity_on/off -> 0
+08:12:30 - 11-19-2009: G_Bath_vanity_on/off_6 -> 1
+08:12:30 - 11-19-2009: G_Bath_vanity_on/off -> 1
+08:12:30 - 11-19-2009: G_Bath_vanity_off_tgl -> 0
+08:12:30 - 11-19-2009: G_Bath_vanity_on_tgl -> 1
+08:12:30 - 11-19-2009: G_Bath_vanity_on_OS -> 1
+08:12:30 - 11-19-2009: Guest_Vanity_ON -> 1
+08:12:30 - 11-19-2009: Guest_Vanity -> 65535d
+08:12:30 - 11-19-2009: Guest_Vanity_OFF_INT -> 0
+08:12:30 - 11-19-2009: Guest_Vanity_ON_INT -> 1
+08:12:30 - 11-19-2009: G_Bath_vanity_on/off_6 -> 0
+08:12:30 - 11-19-2009: G_Bath_vanity_on/off -> 0
+08:12:31 - 11-19-2009: G_Bath_vanity_on_OS -> 0
+08:12:31 - 11-19-2009: Guest_Vanity_ON -> 0
+08:12:31 - 11-19-2009: GBath_1_touch_OFF_OS -> 0
+08:12:31 - 11-19-2009: Guest_Bath_OH_OFF_OR -> 0
+08:12:33 - 11-19-2009: G_Bath_vanity_off_OS -> 0
+08:12:33 - 11-19-2009: Guest_Vanity_OFF -> 0
+08:12:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:13:38 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+08:13:38 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+08:13:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:14:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:14:52 - 11-19-2009: G_Bath_vanity_on/off_6 -> 1
+08:14:52 - 11-19-2009: G_Bath_vanity_on/off -> 1
+08:14:52 - 11-19-2009: G_Bath_vanity_on_tgl -> 0
+08:14:52 - 11-19-2009: G_Bath_vanity_off_tgl -> 1
+08:14:52 - 11-19-2009: G_Bath_vanity_off_OS -> 1
+08:14:52 - 11-19-2009: Guest_Vanity_OFF -> 1
+08:14:52 - 11-19-2009: Guest_Vanity -> 0d
+08:14:52 - 11-19-2009: Guest_Vanity_ON_INT -> 0
+08:14:52 - 11-19-2009: Guest_Vanity_OFF_INT -> 1
+08:14:53 - 11-19-2009: G_Bath_vanity_on/off_6 -> 0
+08:14:53 - 11-19-2009: G_Bath_vanity_on/off -> 0
+08:14:56 - 11-19-2009: G_bath_keypad_on/off_3 -> 1
+08:14:56 - 11-19-2009: Guest_Bath_gui_on/off -> 1
+08:14:56 - 11-19-2009: GBath_1_touch_off_tgl -> 0
+08:14:56 - 11-19-2009: GBath_1_touch_on_tgl -> 1
+08:14:56 - 11-19-2009: GBath_1_touch_on_OS -> 1
+08:14:56 - 11-19-2009: Guest_Bath_OH_ON_OR -> 1
+08:14:56 - 11-19-2009: Guest_Bath_OH -> 65535d
+08:14:56 - 11-19-2009: Guest_Bath_OH_OFF_OR_INT -> 0
+08:14:56 - 11-19-2009: Guest_Bath_OH_ON_OR_INT -> 1
+08:14:56 - 11-19-2009: G_bath_keypad_on/off_3 -> 0
+08:14:56 - 11-19-2009: Guest_Bath_gui_on/off -> 0
+08:14:57 - 11-19-2009: G_bath_keypad_on/off_3 -> 1
+08:14:57 - 11-19-2009: Guest_Bath_gui_on/off -> 1
+08:14:57 - 11-19-2009: GBath_1_touch_on_tgl -> 0
+08:14:57 - 11-19-2009: GBath_1_touch_off_tgl -> 1
+08:14:57 - 11-19-2009: GBath_1_touch_OFF_OS -> 1
+08:14:57 - 11-19-2009: Guest_Bath_OH_OFF_OR -> 1
+08:14:57 - 11-19-2009: Guest_Bath_OH -> 0d
+08:14:57 - 11-19-2009: Guest_Bath_OH_ON_OR_INT -> 0
+08:14:57 - 11-19-2009: Guest_Bath_OH_OFF_OR_INT -> 1
+08:14:57 - 11-19-2009: GBath_1_touch_on_OS -> 0
+08:14:57 - 11-19-2009: Guest_Bath_OH_ON_OR -> 0
+08:14:57 - 11-19-2009: G_bath_keypad_on/off_3 -> 0
+08:14:57 - 11-19-2009: Guest_Bath_gui_on/off -> 0
+08:14:57 - 11-19-2009: G_Bath_vanity_off_OS -> 0
+08:14:57 - 11-19-2009: Guest_Vanity_OFF -> 0
+08:14:58 - 11-19-2009: G_Bath_vanity_on/off_6 -> 1
+08:14:58 - 11-19-2009: G_Bath_vanity_on/off -> 1
+08:14:58 - 11-19-2009: G_Bath_vanity_off_tgl -> 0
+08:14:58 - 11-19-2009: G_Bath_vanity_on_tgl -> 1
+08:14:58 - 11-19-2009: G_Bath_vanity_on_OS -> 1
+08:14:58 - 11-19-2009: Guest_Vanity_ON -> 1
+08:14:58 - 11-19-2009: Guest_Vanity -> 65535d
+08:14:58 - 11-19-2009: Guest_Vanity_OFF_INT -> 0
+08:14:58 - 11-19-2009: Guest_Vanity_ON_INT -> 1
+08:14:58 - 11-19-2009: G_Bath_vanity_on/off_6 -> 0
+08:14:58 - 11-19-2009: G_Bath_vanity_on/off -> 0
+08:14:59 - 11-19-2009: G_Bath_vanity_on/off_6 -> 1
+08:14:59 - 11-19-2009: G_Bath_vanity_on/off -> 1
+08:14:59 - 11-19-2009: G_Bath_vanity_on_tgl -> 0
+08:14:59 - 11-19-2009: G_Bath_vanity_off_tgl -> 1
+08:14:59 - 11-19-2009: G_Bath_vanity_off_OS -> 1
+08:14:59 - 11-19-2009: Guest_Vanity_OFF -> 1
+08:14:59 - 11-19-2009: Guest_Vanity -> 0d
+08:14:59 - 11-19-2009: Guest_Vanity_ON_INT -> 0
+08:14:59 - 11-19-2009: Guest_Vanity_OFF_INT -> 1
+08:14:59 - 11-19-2009: G_Bath_vanity_on_OS -> 0
+08:14:59 - 11-19-2009: Guest_Vanity_ON -> 0
+08:14:59 - 11-19-2009: G_Bath_vanity_on/off_6 -> 0
+08:14:59 - 11-19-2009: G_Bath_vanity_on/off -> 0
+08:14:59 - 11-19-2009: Guest_exhaust_on/off_3 -> 1
+08:14:59 - 11-19-2009: Guest_exhaust_on/off -> 1
+08:14:59 - 11-19-2009: GBath_exhaust_off_tgl -> 0
+08:14:59 - 11-19-2009: GBath_exhaust_on_tgl -> 1
+08:14:59 - 11-19-2009: Guest_Exhaust_ON -> 1
+08:15:00 - 11-19-2009: GBath_exhaust_on_OS -> 1
+08:15:00 - 11-19-2009: Guest_Exhaust_OH -> 65535d
+08:15:00 - 11-19-2009: Guest_exhaust_on/off_3 -> 0
+08:15:00 - 11-19-2009: Guest_exhaust_on/off -> 0
+08:15:00 - 11-19-2009: GBath_exhaust_on_OS -> 0
+08:15:00 - 11-19-2009: Guest_Exhaust_ON -> 0
+08:15:01 - 11-19-2009: Guest_exhaust_on/off_6 -> 1
+08:15:01 - 11-19-2009: Guest_exhaust_on/off -> 1
+08:15:01 - 11-19-2009: GB_Outlet_1_on/off -> 1
+08:15:01 - 11-19-2009: GBath_exhaust_on_tgl -> 0
+08:15:01 - 11-19-2009: GBath_exhaust_off_tgl -> 1
+08:15:01 - 11-19-2009: Guest_Exhaust_ON -> 1
+08:15:01 - 11-19-2009: GB_Outlet_1_off_tgl -> 0
+08:15:01 - 11-19-2009: GB_Outlet_1_on_tgl -> 1
+08:15:01 - 11-19-2009: GBath_exhaust_off_OS -> 1
+08:15:01 - 11-19-2009: Guest_Exhaust_OH -> 65535d
+08:15:01 - 11-19-2009: GB_Outlet_1_on_OS -> 1
+08:15:01 - 11-19-2009: Guest_Exhaust_OFF -> 1
+08:15:01 - 11-19-2009: Guest_BD_win_outlet_on -> 1
+08:15:01 - 11-19-2009: Guest_Exhaust_OH -> 0d
+08:15:01 - 11-19-2009: Guest_Bed_W_outlet -> 65535d
+08:15:01 - 11-19-2009: Guest_BD_win_outlet_off_FB -> 0
+08:15:01 - 11-19-2009: Guest_BD_win_outlet_on_FB -> 1
+08:15:01 - 11-19-2009: Guest_exhaust_on/off_6 -> 0
+08:15:01 - 11-19-2009: Guest_exhaust_on/off -> 0
+08:15:01 - 11-19-2009: GB_Outlet_1_on/off -> 0
+08:15:01 - 11-19-2009: Guest_Exhaust_ON -> 0
+08:15:02 - 11-19-2009: GB_Outlet_1_on_OS -> 0
+08:15:02 - 11-19-2009: Guest_BD_win_outlet_on -> 0
+08:15:02 - 11-19-2009: GBath_1_touch_OFF_OS -> 0
+08:15:02 - 11-19-2009: Guest_Bath_OH_OFF_OR -> 0
+08:15:04 - 11-19-2009: G_Bath_vanity_off_OS -> 0
+08:15:04 - 11-19-2009: Guest_Vanity_OFF -> 0
+08:15:06 - 11-19-2009: GBath_exhaust_off_OS -> 0
+08:15:06 - 11-19-2009: Guest_Exhaust_OFF -> 0
+08:15:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:15:57 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 673d
+08:15:57 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+08:15:57 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 722d
+08:15:57 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 722d
+08:15:57 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 652d
+08:15:57 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 652d
+08:16:42 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 671d
+08:16:42 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+08:16:42 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 651d
+08:16:42 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 651d
+08:16:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:17:02 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 673d
+08:17:02 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+08:17:02 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 652d
+08:17:02 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 652d
+08:17:12 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 723d
+08:17:12 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 723d
+08:17:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:18:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:19:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:20:30 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 722d
+08:20:30 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 722d
+08:20:44 - 11-19-2009: Lighting_1 -> 1
+08:20:44 - 11-19-2009: Lighting_A -> 1
+08:20:44 - 11-19-2009: Shade_A_FB_FB_P1 -> 0
+08:20:44 - 11-19-2009: Lighting_A_FB_P1 -> 1
+08:20:44 - 11-19-2009: Shade_A_FB -> 0
+08:20:44 - 11-19-2009: Lighting_A_FB -> 1
+08:20:44 - 11-19-2009: Shade_A_FBB -> 0
+08:20:44 - 11-19-2009: Lighting_A_FBB -> 1
+08:20:44 - 11-19-2009: Shade_A_Preset_INT -> 0
+08:20:44 - 11-19-2009: Lighting_A_Preset_INT -> 1
+08:20:44 - 11-19-2009: Shade_A_FBB_FB -> 0
+08:20:44 - 11-19-2009: Lighting_A_FBB_FB -> 1
+08:20:44 - 11-19-2009: Lighting_1 -> 0
+08:20:44 - 11-19-2009: Lighting_A -> 0
+08:20:46 - 11-19-2009: Mas_Bed_Light_A -> 1
+08:20:46 - 11-19-2009: Shade_A_FB_FB -> 0
+08:20:46 - 11-19-2009: Mas_Bed_Light_A_FB -> 1
+08:20:46 - 11-19-2009: Mas_Bed_Light_A -> 0
+08:20:49 - 11-19-2009: Lighting_clear -> 1
+08:20:49 - 11-19-2009: Mas_Bed_Light_A_FB -> 0
+08:20:49 - 11-19-2009: Lighting_clear -> 0
+08:20:49 - 11-19-2009: mbed_gui_on/off -> 1
+08:20:49 - 11-19-2009: mas_bed_1_touch_OFF_tgl -> 0
+08:20:49 - 11-19-2009: mas_bed_1_touch_on_tgl -> 1
+08:20:49 - 11-19-2009: mas_bed_1_touch_on_os -> 1
+08:20:49 - 11-19-2009: MB_Ceiling_Fan_Light_on_OR -> 1
+08:20:49 - 11-19-2009: MB_Fan_Light -> 65535d
+08:20:49 - 11-19-2009: MB_Ceiling_Fan_Light_off_OR_INT -> 0
+08:20:49 - 11-19-2009: MB_Ceiling_Fan_Light_on_OR_INT -> 1
+08:20:50 - 11-19-2009: mbed_gui_on/off -> 0
+08:20:50 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 674d
+08:20:50 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+08:20:50 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 653d
+08:20:50 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 653d
+08:20:50 - 11-19-2009: mas_bed_1_touch_on_os -> 0
+08:20:50 - 11-19-2009: MB_Ceiling_Fan_Light_on_OR -> 0
+08:20:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:21:01 - 11-19-2009: Mas_Bed_Light_A -> 1
+08:21:01 - 11-19-2009: Mas_Bed_Light_A_FB -> 1
+08:21:01 - 11-19-2009: Mas_Bed_Light_A -> 0
+08:21:08 - 11-19-2009: MB_Read_2_ON -> 1
+08:21:08 - 11-19-2009: MB_Read_Light_2 -> 65535d
+08:21:08 - 11-19-2009: MB_Read_2_scene_2_INT -> 0
+08:21:08 - 11-19-2009: MB_Read_2_ON_INT -> 1
+08:21:09 - 11-19-2009: MB_Read_2_ON -> 0
+08:21:09 - 11-19-2009: MB_Read_1_ON -> 1
+08:21:09 - 11-19-2009: MB_Read_Light_1 -> 65535d
+08:21:09 - 11-19-2009: MB_Read_1_scene_2_INT -> 0
+08:21:09 - 11-19-2009: MB_Read_1_ON_INT -> 1
+08:21:09 - 11-19-2009: MB_Read_1_ON -> 0
+08:21:10 - 11-19-2009: MB_Hall_ON -> 1
+08:21:10 - 11-19-2009: MB_Hall_Light -> 65535d
+08:21:10 - 11-19-2009: MB_Hall_scene_2_INT -> 0
+08:21:10 - 11-19-2009: MB_Hall_ON_INT -> 1
+08:21:10 - 11-19-2009: MB_Hall_ON -> 0
+08:21:11 - 11-19-2009: MB_Fire_ON -> 1
+08:21:11 - 11-19-2009: MD_Fire_Light -> 65535d
+08:21:11 - 11-19-2009: MB_Fire_Scene_2_INT -> 0
+08:21:11 - 11-19-2009: MB_Fire_ON_INT -> 1
+08:21:11 - 11-19-2009: MB_Fire_ON -> 0
+08:21:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:22:29 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+08:22:29 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+08:22:49 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 722d
+08:22:49 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 722d
+08:22:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:23:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:24:13 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 723d
+08:24:13 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 723d
+08:24:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:25:18 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:25:18 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+08:25:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:26:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:27:07 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:27:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:28:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:29:51 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+08:29:51 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+08:29:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:30:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:31:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:32:35 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:32:35 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+08:32:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:33:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:33:54 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:33:54 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:33:54 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:33:54 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:33:59 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 674d
+08:33:59 - 11-19-2009: S-6.1_Current_Temp$ -> 67
+08:33:59 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 653d
+08:33:59 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 653d
+08:34:09 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:34:19 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:34:19 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:34:19 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:34:19 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:34:49 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 723d
+08:34:49 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 723d
+08:34:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:35:09 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:35:09 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+08:35:18 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 723d
+08:35:18 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 723d
+08:35:43 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:35:43 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+08:35:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:36:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:37:28 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:37:28 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:37:28 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:37:28 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:37:28 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:37:33 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:37:33 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:37:33 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:37:33 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:37:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:38:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:39:32 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+08:39:32 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+08:39:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:40:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:41:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:42:06 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+08:42:06 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+08:42:35 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+08:42:35 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+08:42:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:42:55 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+08:42:55 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+08:43:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:44:20 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+08:44:20 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+08:44:30 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:44:30 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+08:44:39 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:44:44 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 723d
+08:44:44 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 723d
+08:44:49 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 722d
+08:44:49 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 722d
+08:44:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:44:59 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+08:44:59 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+08:45:14 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+08:45:14 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+08:45:26 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+08:45:26 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+08:45:39 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 718d
+08:45:39 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 718d
+08:45:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:45:54 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 716d
+08:45:54 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 716d
+08:46:14 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 715d
+08:46:14 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 715d
+08:46:19 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:46:19 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:46:19 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:46:19 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:46:34 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:46:34 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:46:34 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:46:34 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:46:49 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 714d
+08:46:49 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 714d
+08:46:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:47:18 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 713d
+08:47:18 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 713d
+08:47:33 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 712d
+08:47:33 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 712d
+08:47:48 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 711d
+08:47:48 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 711d
+08:47:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:48:03 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 710d
+08:48:03 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 710d
+08:48:08 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:48:08 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:48:08 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:48:08 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:48:28 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:48:28 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:48:28 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:48:28 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:48:33 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 708d
+08:48:33 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 708d
+08:48:48 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:48:48 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:48:48 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:48:48 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:48:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:48:53 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 708d
+08:49:42 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:49:42 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:49:42 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 706d
+08:49:42 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 706d
+08:49:42 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:49:42 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:49:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:50:02 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:50:02 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:50:02 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:50:02 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:50:07 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:50:07 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:50:07 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:50:07 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:50:22 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 705d
+08:50:22 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 705d
+08:50:27 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:50:27 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:50:27 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:50:27 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:50:42 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:50:42 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:50:42 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:50:42 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:50:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:51:12 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:51:12 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:51:12 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:51:12 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:51:46 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 704d
+08:51:46 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 704d
+08:51:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:52:06 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:52:06 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:52:06 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:52:06 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:52:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:52:56 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:52:56 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:52:56 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:52:56 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:53:21 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 703d
+08:53:21 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 703d
+08:53:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:54:00 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 705d
+08:54:00 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 705d
+08:54:05 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 706d
+08:54:05 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 706d
+08:54:10 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 708d
+08:54:10 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 708d
+08:54:15 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:54:15 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:54:15 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 708d
+08:54:15 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:54:15 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:54:20 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 710d
+08:54:20 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 710d
+08:54:30 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 711d
+08:54:30 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 711d
+08:54:35 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 712d
+08:54:35 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 712d
+08:54:40 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 713d
+08:54:40 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 713d
+08:54:50 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 714d
+08:54:50 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 714d
+08:54:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:55:00 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 715d
+08:55:00 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 715d
+08:55:10 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 716d
+08:55:10 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 716d
+08:55:26 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 718d
+08:55:26 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 718d
+08:55:35 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:55:35 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:55:35 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:55:35 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:55:40 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 719d
+08:55:40 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 719d
+08:55:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:55:55 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 720d
+08:55:55 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 720d
+08:56:09 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 675d
+08:56:09 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:56:09 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 721d
+08:56:10 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 721d
+08:56:10 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 655d
+08:56:10 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 655d
+08:56:34 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 722d
+08:56:34 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 722d
+08:56:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:56:54 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 676d
+08:56:54 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+08:56:54 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 656d
+08:56:54 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 656d
+08:56:59 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 723d
+08:56:59 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 723d
+08:57:29 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+08:57:29 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+08:57:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:58:05 - 11-19-2009: [Console Data] : Update request from Slot-08.IP-ID-03
+08:58:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+08:59:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:00:13 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 677d
+09:00:13 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:00:13 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 657d
+09:00:13 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 657d
+09:00:52 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 723d
+09:00:52 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 723d
+09:00:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:01:47 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+09:01:47 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+09:01:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:02:07 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 678d
+09:02:07 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:02:07 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 658d
+09:02:07 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 658d
+09:02:27 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 677d
+09:02:27 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:02:27 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 657d
+09:02:27 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 657d
+09:02:52 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:03:26 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 678d
+09:03:26 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:03:26 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+09:03:26 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 658d
+09:03:26 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 658d
+09:03:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:04:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:05:06 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+09:05:06 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+09:05:10 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 677d
+09:05:10 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:05:11 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 657d
+09:05:11 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 657d
+09:05:30 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 678d
+09:05:30 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:05:30 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 658d
+09:05:30 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 658d
+09:05:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:06:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:07:15 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+09:07:15 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+09:07:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:08:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:09:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:10:08 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 729d
+09:10:08 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 729d
+09:10:43 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+09:10:43 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+09:10:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:11:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:12:07 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+09:12:07 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+09:12:22 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:12:22 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:12:22 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 659d
+09:12:22 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 659d
+09:12:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:13:47 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+09:13:47 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+09:13:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:14:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:15:26 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:15:26 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:15:26 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 660d
+09:15:26 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 660d
+09:15:36 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:15:36 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:15:36 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 659d
+09:15:36 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 659d
+09:15:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:15:56 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:15:56 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:15:56 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 660d
+09:15:56 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 660d
+09:16:21 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+09:16:21 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+09:16:26 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:16:26 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:16:26 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 659d
+09:16:26 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 659d
+09:16:45 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:16:45 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:16:45 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 660d
+09:16:45 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 660d
+09:16:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:17:05 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+09:17:05 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 725d
+09:17:15 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+09:17:35 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 725d
+09:17:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:18:10 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+09:18:10 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+09:18:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:18:59 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+09:18:59 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+09:19:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:20:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:21:38 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 729d
+09:21:38 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 729d
+09:21:48 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 681d
+09:21:48 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:21:48 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 661d
+09:21:48 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 661d
+09:21:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:22:08 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:22:08 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:22:08 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 660d
+09:22:08 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 660d
+09:22:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:23:03 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 681d
+09:23:03 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:23:03 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 661d
+09:23:03 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 661d
+09:23:13 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 680d
+09:23:13 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:23:13 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 660d
+09:23:13 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 660d
+09:23:37 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 681d
+09:23:37 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:23:37 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 661d
+09:23:37 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 661d
+09:23:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:24:27 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+09:24:27 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+09:24:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:25:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:26:11 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 683d
+09:26:11 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:26:11 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 663d
+09:26:11 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 663d
+09:26:21 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 726d
+09:26:21 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 726d
+09:26:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:27:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:28:50 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 684d
+09:28:50 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:28:50 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 663d
+09:28:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:29:00 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 683d
+09:29:00 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:29:00 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 663d
+09:29:20 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 684d
+09:29:20 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:29:20 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+09:29:20 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+09:29:20 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 663d
+09:29:30 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 683d
+09:29:30 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:29:30 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 663d
+09:29:50 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 684d
+09:29:50 - 11-19-2009: S-6.1_Current_Temp$ -> 68
+09:29:50 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 663d
+09:29:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:30:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:31:29 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 729d
+09:31:29 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 729d
+09:31:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:32:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:33:30 - 11-19-2009: [Console Data] : Update request from Slot-08.IP-ID-03
+09:33:31 - 11-19-2009: Shade_1 -> 1
+09:33:31 - 11-19-2009: Shade_A -> 1
+09:33:31 - 11-19-2009: Mas_Bed_Light_A_FB -> 0
+09:33:31 - 11-19-2009: Shade_A_FB_FB -> 1
+09:33:31 - 11-19-2009: Lighting_A_FB_P1 -> 0
+09:33:31 - 11-19-2009: Shade_A_FB_FB_P1 -> 1
+09:33:31 - 11-19-2009: Lighting_A_FB -> 0
+09:33:31 - 11-19-2009: Shade_A_FB -> 1
+09:33:31 - 11-19-2009: Lighting_A_FBB -> 0
+09:33:31 - 11-19-2009: Shade_A_FBB -> 1
+09:33:31 - 11-19-2009: Lighting_A_Preset_INT -> 0
+09:33:31 - 11-19-2009: Shade_A_Preset_INT -> 1
+09:33:31 - 11-19-2009: Lighting_A_FBB_FB -> 0
+09:33:31 - 11-19-2009: Shade_A_FBB_FB -> 1
+09:33:32 - 11-19-2009: Shade_1 -> 0
+09:33:32 - 11-19-2009: Shade_A -> 0
+09:33:34 - 11-19-2009: shade_dining_sub_A -> 1
+09:33:34 - 11-19-2009: Lighting_A_INT -> 0
+09:33:34 - 11-19-2009: shade_dining_sub_A_INT -> 1
+09:33:34 - 11-19-2009: shade_dining_sub_A -> 0
+09:33:37 - 11-19-2009: SZ17_UP_a -> 1
+09:33:37 - 11-19-2009: SZ17_UP -> 1
+09:33:37 - 11-19-2009: Port-A_[tx$] -> U2\x0D
+09:33:37 - 11-19-2009: Port-A_[rx$] -> U2\x0D
+09:33:37 - 11-19-2009: SZ17_UP_a -> 0
+09:33:37 - 11-19-2009: SZ17_UP -> 0
+09:33:38 - 11-19-2009: Port-A_[rx$] -> OK\x0D\x0A
+09:33:39 - 11-19-2009: SZ17_Stop_a -> 1
+09:33:39 - 11-19-2009: SZ17_Stop -> 1
+09:33:39 - 11-19-2009: Port-A_[tx$] -> S2\x0D
+09:33:39 - 11-19-2009: Port-A_[rx$] -> S2\x0D
+09:33:40 - 11-19-2009: SZ17_Stop_a -> 0
+09:33:40 - 11-19-2009: SZ17_Stop -> 0
+09:33:40 - 11-19-2009: Port-A_[rx$] -> OK\x0D\x0A
+09:33:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:34:23 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 730d
+09:34:23 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 730d
+09:34:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:35:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:36:32 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 685d
+09:36:32 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:36:32 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 665d
+09:36:32 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 665d
+09:36:37 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 729d
+09:36:37 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 729d
+09:36:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:37:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:37:56 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+09:37:56 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+09:38:06 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 686d
+09:38:06 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:38:06 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 666d
+09:38:06 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 666d
+09:38:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:39:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:40:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:41:15 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 687d
+09:41:15 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:41:15 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 667d
+09:41:15 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 667d
+09:41:34 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 686d
+09:41:34 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:41:35 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 666d
+09:41:35 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 666d
+09:41:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:41:54 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 687d
+09:41:54 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:41:54 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 667d
+09:41:54 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 667d
+09:42:09 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 729d
+09:42:09 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 729d
+09:42:14 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 686d
+09:42:14 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:42:14 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 728d
+09:42:14 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 728d
+09:42:14 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 666d
+09:42:14 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 666d
+09:42:34 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 687d
+09:42:34 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:42:34 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 729d
+09:42:34 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 729d
+09:42:34 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 667d
+09:42:34 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 667d
+09:42:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:43:03 - 11-19-2009: SZ17_UP_a -> 1
+09:43:03 - 11-19-2009: SZ17_UP -> 1
+09:43:03 - 11-19-2009: Port-A_[tx$] -> U2\x0D
+09:43:03 - 11-19-2009: Port-A_[rx$] -> U2\x0D
+09:43:03 - 11-19-2009: SZ17_UP_a -> 0
+09:43:03 - 11-19-2009: SZ17_UP -> 0
+09:43:04 - 11-19-2009: Port-A_[rx$] -> OK\x0D\x0A
+09:43:05 - 11-19-2009: SZ17_Stop_a -> 1
+09:43:05 - 11-19-2009: SZ17_Stop -> 1
+09:43:05 - 11-19-2009: Port-A_[tx$] -> S2\x0D
+09:43:05 - 11-19-2009: Port-A_[rx$] -> S2\x0D
+09:43:06 - 11-19-2009: SZ17_Stop_a -> 0
+09:43:06 - 11-19-2009: SZ17_Stop -> 0
+09:43:06 - 11-19-2009: Port-A_[rx$] -> OK\x0D\x0A
+09:43:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:44:08 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 686d
+09:44:08 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:44:08 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 666d
+09:44:08 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 666d
+09:44:48 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 730d
+09:44:48 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 730d
+09:44:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:45:18 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 687d
+09:45:18 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:45:18 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 667d
+09:45:18 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 667d
+09:45:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:46:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:47:27 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 731d
+09:47:27 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 731d
+09:47:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:48:12 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 730d
+09:48:12 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 730d
+09:48:31 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 731d
+09:48:31 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 731d
+09:48:41 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 730d
+09:48:41 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 730d
+09:48:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:48:57 - 11-19-2009: [Console Data] : Update request from Slot-08.IP-ID-09
+09:48:58 - 11-19-2009: Internet_09 -> 1
+09:48:58 - 11-19-2009: Show_Internet_09 -> 0
+09:48:58 - 11-19-2009: Internet_09 -> 0
+09:49:14 - 11-19-2009: shade_kitchen_sub_A -> 1
+09:49:14 - 11-19-2009: shade_dining_sub_A_INT -> 0
+09:49:14 - 11-19-2009: shade_kitchen_sub_A_INT -> 1
+09:49:14 - 11-19-2009: shade_kitchen_sub_A -> 0
+09:49:15 - 11-19-2009: Shade_clear_A -> 1
+09:49:15 - 11-19-2009: shade_kitchen_sub_A_INT -> 0
+09:49:15 - 11-19-2009: Shade_clear_A -> 0
+09:49:16 - 11-19-2009: shade_living_sub_A -> 1
+09:49:16 - 11-19-2009: shade_living_sub_A_INT -> 1
+09:49:16 - 11-19-2009: shade_living_sub_A -> 0
+09:49:17 - 11-19-2009: Shade_clear_A -> 1
+09:49:17 - 11-19-2009: shade_living_sub_A_INT -> 0
+09:49:17 - 11-19-2009: Shade_clear_A -> 0
+09:49:22 - 11-19-2009: Internet_09 -> 1
+09:49:22 - 11-19-2009: Show_Internet_09 -> 1
+09:49:23 - 11-19-2009: Internet_09 -> 0
+09:49:23 - 11-19-2009: hard_buttono_toilet -> 1
+09:49:23 - 11-19-2009: MBATH_Toliet_LS1 -> 0
+09:49:23 - 11-19-2009: MBATH_Toliet_LS2 -> 1
+09:49:23 - 11-19-2009: MBATH_Toliet_Light -> 0d
+09:49:23 - 11-19-2009: MBATH_Toliet_OFF_INT -> 0
+09:49:23 - 11-19-2009: MBATH_Toliet_LS2_INT -> 1
+09:49:23 - 11-19-2009: hard_buttono_toilet -> 0
+09:49:23 - 11-19-2009: Internet_09 -> 1
+09:49:23 - 11-19-2009: Show_Internet_09 -> 0
+09:49:23 - 11-19-2009: Internet_09 -> 0
+09:49:27 - 11-19-2009: [Console Data] : Update request from Slot-08.IP-ID-09
+09:49:51 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 688d
+09:49:51 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:49:51 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 668d
+09:49:51 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 668d
+09:49:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:50:11 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 729d
+09:50:11 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 729d
+09:50:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:51:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:52:10 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 690d
+09:52:10 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:52:10 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 669d
+09:52:10 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 669d
+09:52:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:53:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:54:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:55:43 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 730d
+09:55:43 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 730d
+09:55:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:56:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:57:42 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 731d
+09:57:42 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 731d
+09:57:47 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 730d
+09:57:47 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 730d
+09:57:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:58:07 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 731d
+09:58:07 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 731d
+09:58:17 - 11-19-2009: S-6.1_{{TSTAT>>Cool1Call}} -> 1
+09:58:17 - 11-19-2009: S-6.1_Cool_1_fb_1 -> 1
+09:58:17 - 11-19-2009: S-6.1_{{TSTAT>>FanCall}} -> 1
+09:58:17 - 11-19-2009: S-6.1_Fan_fb_1 -> 1
+09:58:17 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 691d
+09:58:17 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:58:17 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 670d
+09:58:17 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 670d
+09:58:22 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 690d
+09:58:22 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:58:22 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 730d
+09:58:22 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 730d
+09:58:22 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 669d
+09:58:22 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 669d
+09:58:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+09:59:12 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 691d
+09:59:12 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:59:12 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 670d
+09:59:12 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 670d
+09:59:37 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 690d
+09:59:37 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+09:59:37 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 669d
+09:59:37 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 669d
+09:59:42 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 731d
+09:59:42 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 731d
+09:59:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+10:00:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules
+10:00:56 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 732d
+10:00:56 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 732d
+10:01:31 - 11-19-2009: S-6.1_{{TSTAT>>LocalTemp}} -> 733d
+10:01:31 - 11-19-2009: S-6.1_Built-in_Sensor_Temp -> 733d
+10:01:46 - 11-19-2009: S-6.1_{{TSTAT>>RegulationTemp}} -> 691d
+10:01:46 - 11-19-2009: S-6.1_Current_Temp$ -> 69
+10:01:46 - 11-19-2009: S-6.1_{{TSTAT>>Remote1Temp}} -> 670d
+10:01:46 - 11-19-2009: S-6.1_Remote_Sensor_1_Temp -> 670d
+10:01:53 - 11-19-2009: S-6.1_Current_Schedule$ -> No Schedules

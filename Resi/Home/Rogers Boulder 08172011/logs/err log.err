@@ -1,0 +1,205 @@
+
+System log:
+
+  1. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 20:55:15  5-01-10   UpTime: 38 days 21:31:55.17  Task: TCP_Read
+  2. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 20:56:26  5-01-10   UpTime: 38 days 21:33:06.44  Task: TCP_Read
+  3. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 20:56:26  5-01-10   UpTime: 38 days 21:33:06.48  Task: RxID03
+  4. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 21:31:32  5-01-10   UpTime: 38 days 22:08:11.18  Task: TCP_Read
+  5. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 22:15:32  5-01-10   UpTime: 38 days 22:52:11.97  Task: TCP_Read
+  6. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 22:15:32  5-01-10   UpTime: 38 days 22:52:12.02  Task: RxID03
+  7. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 07:23:40  5-02-10   UpTime: 39 days 08:00:16.34  Task: TCP_Read
+  8. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 07:35:42  5-02-10   UpTime: 39 days 08:12:18.22  Task: TCP_Read
+  9. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 07:35:42  5-02-10   UpTime: 39 days 08:12:18.48  Task: RxID03
+ 10. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 08:18:21  5-02-10   UpTime: 39 days 08:54:56.92  Task: TCP_Read
+ 11. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 09:02:58  5-02-10   UpTime: 39 days 09:39:34.48  Task: TCP_Read
+ 12. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 09:02:58  5-02-10   UpTime: 39 days 09:39:34.52  Task: RxID03
+ 13. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 09:28:10  5-02-10   UpTime: 39 days 10:04:45.65  Task: TCP_Read
+ 14. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 09:32:56  5-02-10   UpTime: 39 days 10:09:31.90  Task: TCP_Read
+ 15. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 09:32:56  5-02-10   UpTime: 39 days 10:09:31.94  Task: RxID03
+ 16. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 09:57:57  5-02-10   UpTime: 39 days 10:34:33.41  Task: TCP_Read
+ 17. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 10:40:44  5-02-10   UpTime: 39 days 11:17:19.80  Task: TCP_Read
+ 18. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 10:40:44  5-02-10   UpTime: 39 days 11:17:19.84  Task: RxID03
+ 19. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 18:32:42  5-02-10   UpTime: 39 days 19:09:15.43  Task: TCP_Read
+ 20. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 18:39:10  5-02-10   UpTime: 39 days 19:15:42.58  Task: TCP_Read
+ 21. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 18:39:10  5-02-10   UpTime: 39 days 19:15:42.63  Task: RxID03
+ 22. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 07:58:40  5-03-10   UpTime: 40 days 08:35:09.15  Task: TCP_Read
+ 23. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 08:43:50  5-03-10   UpTime: 40 days 09:20:18.97  Task: TCP_Read
+ 24. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 08:43:50  5-03-10   UpTime: 40 days 09:20:19.01  Task: RxID03
+ 25. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 15:08:52  5-03-10   UpTime: 40 days 15:45:18.70  Task: TCP_Read
+ 26. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 15:38:24  5-03-10   UpTime: 40 days 16:14:50.02  Task: TCP_Read
+ 27. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 15:38:24  5-03-10   UpTime: 40 days 16:14:50.06  Task: RxID03
+ 28. Notice: Gateway Disconnect from 192.168.1.216
+     TimeStamp: 16:51:46  5-03-10   UpTime: 40 days 17:28:12.75  Task: TCP_Read
+ 29. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 17:56:22  5-03-10   UpTime: 40 days 18:32:47.95  Task: TCP_Read
+ 30. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 18:22:30  5-03-10   UpTime: 40 days 18:58:56.05  Task: TCP_Read
+ 31. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 18:22:30  5-03-10   UpTime: 40 days 18:58:56.10  Task: RxID03
+ 32. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 20:51:38  5-03-10   UpTime: 40 days 21:28:02.95  Task: TCP_Read
+ 33. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 21:10:54  5-03-10   UpTime: 40 days 21:47:17.55  Task: TCP_Read
+ 34. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 21:10:54  5-03-10   UpTime: 40 days 21:47:17.84  Task: RxID03
+ 35. Notice: Gateway Connection (ID: 9) from 192.168.1.216
+     TimeStamp: 21:16:38  5-03-10   UpTime: 40 days 21:53:03.33  Task: TCP_Read
+ 36. Notice: Update request from Slot-08.IP-ID-09
+     TimeStamp: 21:16:38  5-03-10   UpTime: 40 days 21:53:03.37  Task: RxID09
+ 37. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 00:53:32  5-04-10   UpTime: 41 days 01:29:55.21  Task: TCP_Read
+ 38. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 00:59:02  5-04-10   UpTime: 41 days 01:35:25.60  Task: TCP_Read
+ 39. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 00:59:02  5-04-10   UpTime: 41 days 01:35:25.65  Task: RxID03
+ 40. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 05:53:21  5-04-10   UpTime: 41 days 06:29:43.97  Task: TCP_Read
+ 41. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 05:53:21  5-04-10   UpTime: 41 days 06:29:44.05  Task: TCP_Read
+ 42. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 05:53:22  5-04-10   UpTime: 41 days 06:29:44.12  Task: RxID03
+ 43. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 07:42:49  5-04-10   UpTime: 41 days 08:19:10.40  Task: TCP_Read
+ 44. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 07:42:49  5-04-10   UpTime: 41 days 08:19:10.49  Task: TCP_Read
+ 45. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 07:42:49  5-04-10   UpTime: 41 days 08:19:10.54  Task: RxID03
+ 46. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 13:37:40  5-04-10   UpTime: 41 days 14:13:59.39  Task: TCP_Read
+ 47. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 15:05:14  5-04-10   UpTime: 41 days 15:41:32.99  Task: TCP_Read
+ 48. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 15:05:14  5-04-10   UpTime: 41 days 15:41:33.03  Task: RxID03
+ 49. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 15:45:11  5-04-10   UpTime: 41 days 16:21:29.79  Task: TCP_Read
+ 50. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 16:29:19  5-04-10   UpTime: 41 days 17:05:37.79  Task: TCP_Read
+ 51. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 16:29:19  5-04-10   UpTime: 41 days 17:05:37.84  Task: RxID03
+ 52. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 17:12:05  5-04-10   UpTime: 41 days 17:48:24.33  Task: TCP_Read
+ 53. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 17:15:17  5-04-10   UpTime: 41 days 17:51:36.09  Task: TCP_Read
+ 54. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 17:15:17  5-04-10   UpTime: 41 days 17:51:36.13  Task: RxID03
+ 55. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 17:48:52  5-04-10   UpTime: 41 days 18:25:09.99  Task: TCP_Read
+ 56. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 17:53:30  5-04-10   UpTime: 41 days 18:29:48.38  Task: TCP_Read
+ 57. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 17:53:30  5-04-10   UpTime: 41 days 18:29:48.43  Task: RxID03
+ 58. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 19:03:04  5-04-10   UpTime: 41 days 19:39:21.37  Task: TCP_Read
+ 59. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 19:03:04  5-04-10   UpTime: 41 days 19:39:21.43  Task: TCP_Read
+ 60. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 19:03:04  5-04-10   UpTime: 41 days 19:39:21.48  Task: RxID03
+ 61. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 22:21:15  5-04-10   UpTime: 41 days 22:57:31.39  Task: TCP_Read
+ 62. Notice: Gateway Disconnect from 192.168.1.216
+     TimeStamp: 04:53:59  5-05-10   UpTime: 42 days 05:30:13.89  Task: TCP_Read
+ 63. Notice: Gateway Connection (ID: 9) from 192.168.1.216
+     TimeStamp: 04:53:59  5-05-10   UpTime: 42 days 05:30:13.96  Task: TCP_Read
+ 64. Notice: Update request from Slot-08.IP-ID-09
+     TimeStamp: 04:53:59  5-05-10   UpTime: 42 days 05:30:14.01  Task: RxID09
+ 65. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 06:23:07  5-05-10   UpTime: 42 days 06:59:22.19  Task: TCP_Read
+ 66. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 06:23:07  5-05-10   UpTime: 42 days 06:59:22.24  Task: RxID03
+ 67. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 07:24:42  5-05-10   UpTime: 42 days 08:00:55.70  Task: TCP_Read
+ 68. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 08:28:01  5-05-10   UpTime: 42 days 09:04:14.82  Task: TCP_Read
+ 69. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 08:28:01  5-05-10   UpTime: 42 days 09:04:14.87  Task: RxID03
+ 70. Notice: Gateway Disconnect from 192.168.1.216
+     TimeStamp: 23:37:50  5-05-10   UpTime: 43 days 00:13:59.48  Task: TCP_Read
+ 71. Notice: Gateway Connection (ID: 9) from 192.168.1.216
+     TimeStamp: 23:37:50  5-05-10   UpTime: 43 days 00:13:59.56  Task: TCP_Read
+ 72. Notice: Update request from Slot-08.IP-ID-09
+     TimeStamp: 23:37:51  5-05-10   UpTime: 43 days 00:13:59.83  Task: RxID09
+ 73. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 20:53:38  5-07-10   UpTime: 44 days 21:29:33.70  Task: TCP_Read
+ 74. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 21:14:24  5-07-10   UpTime: 44 days 21:50:19.39  Task: TCP_Read
+ 75. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 21:14:24  5-07-10   UpTime: 44 days 21:50:19.44  Task: RxID03
+ 76. Notice: Gateway Disconnect from 192.168.1.216
+     TimeStamp: 23:44:50  5-10-10   UpTime: 48 days 00:20:23.26  Task: TCP_Read
+ 77. Notice: Gateway Connection (ID: 9) from 192.168.1.216
+     TimeStamp: 23:44:50  5-10-10   UpTime: 48 days 00:20:23.34  Task: TCP_Read
+ 78. Notice: Update request from Slot-08.IP-ID-09
+     TimeStamp: 23:44:50  5-10-10   UpTime: 48 days 00:20:23.38  Task: RxID09
+ 79. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 12:03:00  5-11-10   UpTime: 48 days 12:38:28.26  Task: TCP_Read
+ 80. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 12:03:00  5-11-10   UpTime: 48 days 12:38:28.31  Task: TCP_Read
+ 81. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 12:03:00  5-11-10   UpTime: 48 days 12:38:28.36  Task: RxID03
+ 82. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 13:53:54  5-11-10   UpTime: 48 days 14:29:21.70  Task: TCP_Read
+ 83. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 14:21:14  5-11-10   UpTime: 48 days 14:56:41.22  Task: TCP_Read
+ 84. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 14:21:14  5-11-10   UpTime: 48 days 14:56:41.26  Task: RxID03
+ 85. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 19:43:37  5-11-10   UpTime: 48 days 20:19:02.81  Task: TCP_Read
+ 86. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 20:07:45  5-11-10   UpTime: 48 days 20:43:10.46  Task: TCP_Read
+ 87. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 20:07:45  5-11-10   UpTime: 48 days 20:43:10.51  Task: RxID03
+ 88. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 20:13:16  5-11-10   UpTime: 48 days 20:48:41.85  Task: TCP_Read
+ 89. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 20:13:16  5-11-10   UpTime: 48 days 20:48:41.91  Task: TCP_Read
+ 90. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 20:13:16  5-11-10   UpTime: 48 days 20:48:41.96  Task: RxID03
+ 91. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 21:29:36  5-11-10   UpTime: 48 days 22:05:01.25  Task: TCP_Read
+ 92. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 22:16:24  5-11-10   UpTime: 48 days 22:51:49.48  Task: TCP_Read
+ 93. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 22:16:24  5-11-10   UpTime: 48 days 22:51:49.53  Task: RxID03
+ 94. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 02:10:24  5-12-10   UpTime: 49 days 02:45:48.01  Task: TCP_Read
+ 95. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 02:10:24  5-12-10   UpTime: 49 days 02:45:48.07  Task: TCP_Read
+ 96. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 02:10:24  5-12-10   UpTime: 49 days 02:45:48.13  Task: RxID03
+ 97. Notice: Gateway Disconnect from 192.168.1.101
+     TimeStamp: 19:03:38  5-12-10   UpTime: 49 days 19:38:57.22  Task: TCP_Read
+ 98. Notice: Gateway Connection (ID: 3) from 192.168.1.101
+     TimeStamp: 19:17:51  5-12-10   UpTime: 49 days 19:53:10.04  Task: TCP_Read
+ 99. Notice: Update request from Slot-08.IP-ID-03
+     TimeStamp: 19:17:51  5-12-10   UpTime: 49 days 19:53:10.33  Task: RxID03
+100. Notice: CTP Connection from 192.168.1.5
+     TimeStamp: 09:36:00  5-13-10   UpTime: 50 days 10:11:14.69  Task: TCP_Task
+Total Errors Logged = 2112
+End of System log

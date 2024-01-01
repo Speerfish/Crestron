@@ -1,0 +1,1122 @@
+10:44:58 - 05-13-2010: laundry_1_touch_on_tgl -> 1
+10:44:58 - 05-13-2010: Utility_1_touch_on_tgl -> 1
+10:44:58 - 05-13-2010: Hall_1_touch_on_tgl -> 1
+10:44:58 - 05-13-2010: GBath_1_touch_on_tgl -> 1
+10:44:58 - 05-13-2010: Kitchen_1_touch_on_tgl -> 1
+10:44:58 - 05-13-2010: Dining_1_touch_on_tgl -> 1
+10:44:58 - 05-13-2010: MB_Ceiling_Fan_Light_off_OR_INT -> 1
+10:44:58 - 05-13-2010: Master_Closet_OFF_OR_INT -> 1
+10:44:58 - 05-13-2010: Wine_OH_Can_OFF_OR_INT -> 1
+10:44:58 - 05-13-2010: Guest_Bath_OH_ON_OR_INT -> 1
+10:44:58 - 05-13-2010: Guest_Vanity_OFF_INT -> 1
+10:44:58 - 05-13-2010: Guest_BD_Fan_Light_OFF_OR_INT -> 1
+10:44:58 - 05-13-2010: Guest_BD_win_outlet_off_FB -> 1
+10:44:58 - 05-13-2010: Kitchen_OH_Cans_ON_OR_INT -> 1
+10:44:58 - 05-13-2010: Dining_Chandlier_ON_OR_INT -> 1
+10:44:58 - 05-13-2010: Study_Fan_OFF_FB -> 1
+10:44:58 - 05-13-2010: Art_Lights_OFF_OR_INT -> 1
+10:44:58 - 05-13-2010: Patio_1_OFF_OR_INT -> 1
+10:44:58 - 05-13-2010: Patio_2_OFF_OR_INT -> 1
+10:44:58 - 05-13-2010: S-6.1_Cool_Mode_fb_1 -> 1
+10:44:58 - 05-13-2010: S-6.1_Fan_Auto_fb_1 -> 1
+10:44:58 - 05-13-2010: S-6.1_Cool_1_fb_1 -> 1
+10:44:58 - 05-13-2010: S-6.1_Fan_fb_1 -> 1
+10:44:58 - 05-13-2010: S-6.1_Display_Single_Setpoint_1 -> 1
+10:44:58 - 05-13-2010: Room_1_Select_Stereo_Fb -> 1
+10:44:58 - 05-13-2010: Room_1_Set_Loudness_On_Fb -> 1
+10:44:58 - 05-13-2010: Room_2_Select_Stereo_Fb -> 1
+10:44:58 - 05-13-2010: Room_2_Set_Loudness_On_Fb -> 1
+10:44:58 - 05-13-2010: Room_3_Select_Stereo_Fb -> 1
+10:44:58 - 05-13-2010: Room_3_Set_Loudness_On_Fb -> 1
+10:44:58 - 05-13-2010: Room_4_Select_Stereo_Fb -> 1
+10:44:58 - 05-13-2010: Room_4_Set_Loudness_On_Fb -> 1
+10:44:58 - 05-13-2010: Room_5_Select_Stereo_Fb -> 1
+10:44:58 - 05-13-2010: Room_5_Set_Loudness_On_Fb -> 1
+10:44:58 - 05-13-2010: Room_6_Select_Stereo_Fb -> 1
+10:44:58 - 05-13-2010: Room_6_Set_Loudness_On_Fb -> 1
+10:44:58 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 1
+10:44:58 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Preset_2_Fb -> 1
+10:44:58 - 05-13-2010: Slot_1_AM/FM_Tuner_1_FM_Fb -> 1
+10:44:58 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Manual_FB -> 1
+10:44:58 - 05-13-2010: Slot_1_XM_Tuner_Tuning_Busy_TP -> 1
+10:44:58 - 05-13-2010: Slot_1_XM_Tuner_Power_Fb_TP -> 1
+10:44:58 - 05-13-2010: Slot_1_XM_Tuner_No_Signal_TP -> 1
+10:44:58 - 05-13-2010: Slot_1_XM_Tuner_No_Antenna_TP -> 1
+10:44:58 - 05-13-2010: Slot_1_XM_Tuner_Activation_Required_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_1_Fb_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_2_Fb_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_3_Fb_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_4_Fb_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_5_Fb_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_6_Fb_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_7_Fb_TP -> 1
+10:44:58 - 05-13-2010: Xlot_1_XM_Tuner_Preset_8_Fb_TP -> 1
+10:44:58 - 05-13-2010: Room_1_iPod_Select_1_Fb_TP -> 1
+10:44:58 - 05-13-2010: Room_2_iPod_Select_1_Fb_TP -> 1
+10:44:58 - 05-13-2010: Room_3_iPod_Select_1_Fb_TP -> 1
+10:44:58 - 05-13-2010: Room_4_iPod_Select_1_Fb_TP -> 1
+10:44:58 - 05-13-2010: Room_5_iPod_Select_1_Fb_TP -> 1
+10:44:58 - 05-13-2010: Room_6_iPod_Select_1_Fb_TP -> 1
+10:44:58 - 05-13-2010: iPod_Pause_Fb -> 1
+10:44:58 - 05-13-2010: Room_1_iPod_Show_Play_Page -> 1
+10:44:58 - 05-13-2010: Room_2_iPod_Show_Play_Page -> 1
+10:44:58 - 05-13-2010: Room_3_iPod_Show_Play_Page -> 1
+10:44:58 - 05-13-2010: Room_4_iPod_Show_Play_Page -> 1
+10:44:58 - 05-13-2010: Room_5_iPod_Show_Play_Page -> 1
+10:44:58 - 05-13-2010: Room_6_iPod_Show_Play_Page -> 1
+10:44:58 - 05-13-2010: Room_1_Loudness_On -> 1
+10:44:58 - 05-13-2010: Room_2_Loudness_On -> 1
+10:44:58 - 05-13-2010: Room_3_Loudness_On -> 1
+10:44:58 - 05-13-2010: Room_4_Loudness_On -> 1
+10:44:58 - 05-13-2010: Room_5_Loudness_On -> 1
+10:44:58 - 05-13-2010: Room_6_Loudness_On -> 1
+10:44:58 - 05-13-2010: iPod_Advanced_Mode_FB -> 1
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>Line1_F}} -> 1
+10:44:58 - 05-13-2010: MB_Ceiling_Fan -> 65535d
+10:44:58 - 05-13-2010: Utility_Closet_Light -> 65535d
+10:44:58 - 05-13-2010: Laundry_Under_Cabinet_Light -> 65535d
+10:44:58 - 05-13-2010: Hall_Light -> 65535d
+10:44:58 - 05-13-2010: Guest_Bath_OH -> 65535d
+10:44:58 - 05-13-2010: Guest_BD_Fan -> 65535d
+10:44:58 - 05-13-2010: Kitchen_OH_Cans -> 65535d
+10:44:58 - 05-13-2010: Dinning_Room_Chandlier -> 65535d
+10:44:58 - 05-13-2010: //S-6.1_Remote_Sensor_1_Temp -> 681d
+10:44:58 - 05-13-2010: S-6.1_{{HeatSetpoint>>TSTAT}} -> 720d
+10:44:58 - 05-13-2010: S-6.1_{{CoolSetpoint>>TSTAT}} -> 700d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>LocalTemp}} -> 742d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>Remote1Temp}} -> 681d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>Remote2Temp}} -> 738d
+10:44:58 - 05-13-2010: Room_1_Bass_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_2_Bass_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_3_Bass_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_4_Bass_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_5_Bass_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_6_Bass_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_1_Treble_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_2_Treble_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_3_Treble_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_4_Treble_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_5_Treble_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_6_Treble_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_1_Balance_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_2_Balance_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_3_Balance_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_4_Balance_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_5_Balance_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_6_Balance_Bar -> 32767d
+10:44:58 - 05-13-2010: Room_1_Max_Volume -> 65535d
+10:44:58 - 05-13-2010: Room_2_Max_Volume -> 65535d
+10:44:58 - 05-13-2010: Room_3_Max_Volume -> 65535d
+10:44:58 - 05-13-2010: Room_4_Max_Volume -> 65535d
+10:44:58 - 05-13-2010: Room_5_Max_Volume -> 65535d
+10:44:58 - 05-13-2010: Room_6_Max_Volume -> 65535d
+10:44:58 - 05-13-2010: Room_1_Min_Volume -> 3277d
+10:44:58 - 05-13-2010: Room_2_Min_Volume -> 3277d
+10:44:58 - 05-13-2010: Room_3_Min_Volume -> 3277d
+10:44:58 - 05-13-2010: Room_4_Min_Volume -> 3277d
+10:44:58 - 05-13-2010: Room_5_Min_Volume -> 3277d
+10:44:58 - 05-13-2010: Room_6_Min_Volume -> 3277d
+10:44:58 - 05-13-2010: Room_1_Start_Volume_Bar -> 19660d
+10:44:58 - 05-13-2010: Room_2_Start_Volume_Bar -> 19660d
+10:44:58 - 05-13-2010: Room_3_Start_Volume_Bar -> 19660d
+10:44:58 - 05-13-2010: Room_4_Start_Volume_Bar -> 19660d
+10:44:58 - 05-13-2010: Room_5_Start_Volume_Bar -> 19660d
+10:44:58 - 05-13-2010: Room_6_Start_Volume_Bar -> 19660d
+10:44:58 - 05-13-2010: Source_1_Gain_Bar -> 32767d
+10:44:58 - 05-13-2010: Source_2_Gain_Bar -> 32767d
+10:44:58 - 05-13-2010: Source_3_Gain_Bar -> 32767d
+10:44:58 - 05-13-2010: Source_4_Gain_Bar -> 32767d
+10:44:58 - 05-13-2010: Source_5_Gain_Bar -> 32767d
+10:44:58 - 05-13-2010: Source_6_Gain_Bar -> 32767d
+10:44:58 - 05-13-2010: iPod_Duration -> 251d
+10:44:58 - 05-13-2010: iPod_Current_Track -> 7d
+10:44:58 - 05-13-2010: iPod_Total_Tracks -> 38d
+10:44:58 - 05-13-2010: iPod_Position -> 7308d
+10:44:58 - 05-13-2010: Room_1_Min_Volume_Fb -> 3277d
+10:44:58 - 05-13-2010: Room_1_Bass_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_1_Treble_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_1_Balance_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_1_Max_Volume_Fb -> 65535d
+10:44:58 - 05-13-2010: Room_1_Startup_Volume_Fb -> 19660d
+10:44:58 - 05-13-2010: Room_2_Bass_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_2_Treble_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_2_Balance_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_2_Min_Volume_Fb -> 3277d
+10:44:58 - 05-13-2010: Room_2_Max_Volume_Fb -> 65535d
+10:44:58 - 05-13-2010: Room_2_Startup_Volume_Fb -> 19660d
+10:44:58 - 05-13-2010: Room_3_Bass_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_3_Treble_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_3_Balance_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_3_Min_Volume_Fb -> 3277d
+10:44:58 - 05-13-2010: Room_3_Max_Volume_Fb -> 65535d
+10:44:58 - 05-13-2010: Room_3_Startup_Volume_Fb -> 19660d
+10:44:58 - 05-13-2010: Room_4_Bass_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_4_Treble_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_4_Balance_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_4_Min_Volume_Fb -> 3277d
+10:44:58 - 05-13-2010: Room_4_Max_Volume_Fb -> 65535d
+10:44:58 - 05-13-2010: Room_4_Startup_Volume_Fb -> 19660d
+10:44:58 - 05-13-2010: Room_5_Bass_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_5_Treble_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_5_Balance_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_5_Min_Volume_Fb -> 3277d
+10:44:58 - 05-13-2010: Room_5_Max_Volume_Fb -> 65535d
+10:44:58 - 05-13-2010: Room_5_Startup_Volume_Fb -> 19660d
+10:44:58 - 05-13-2010: Room_6_Bass_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_6_Treble_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_6_Balance_Fb -> 32767d
+10:44:58 - 05-13-2010: Room_6_Min_Volume_Fb -> 3277d
+10:44:58 - 05-13-2010: Room_6_Max_Volume_Fb -> 65535d
+10:44:58 - 05-13-2010: Room_6_Startup_Volume_Fb -> 19660d
+10:44:58 - 05-13-2010: {{IPODLines>>CEN-IPOD_1}} -> 5d
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>LenSeconds_F}} -> 251d
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 7308d
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 28d
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65313d
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>SongNumber_F}} -> 7d
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>SongCount_F}} -> 38d
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>PlaylistCount_F}} -> 11d
+10:44:58 - 05-13-2010: CD_trk_num_FB -> NG
+10:44:58 - 05-13-2010: S-6.1_Current_Setpoint$ -> 70
+10:44:58 - 05-13-2010: S-6.1_Current_Schedule$ -> Weekday Leave
+10:44:58 - 05-13-2010: S-6.1_Current_Day_Of_Week$ -> Thu
+10:44:58 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:44:58 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:44:58 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:44:58 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:44:58 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:44:58 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:44:58 - 05-13-2010: Slot_1_XM_Tuner_Activation_Number_TP$ -> UM5KK0M9
+10:44:58 - 05-13-2010: Room_1_iPod_Select_5_Fb_TP$ -> The Snowman's Music Box Dance
+10:44:58 - 05-13-2010: Room_1_iPod_Select_1_Fb_TP$ -> At Last
+10:44:58 - 05-13-2010: Room_1_iPod_Select_2_Fb_TP$ -> Maria
+10:44:58 - 05-13-2010: Room_1_iPod_Select_3_Fb_TP$ -> The Song Is You
+10:44:58 - 05-13-2010: Room_1_iPod_Select_4_Fb_TP$ -> Longing/Love
+10:44:58 - 05-13-2010: Room_2_iPod_Select_5_Fb_TP$ -> The Snowman's Music Box Dance
+10:44:58 - 05-13-2010: Room_2_iPod_Select_1_Fb_TP$ -> At Last
+10:44:58 - 05-13-2010: Room_2_iPod_Select_2_Fb_TP$ -> Maria
+10:44:58 - 05-13-2010: Room_2_iPod_Select_3_Fb_TP$ -> The Song Is You
+10:44:58 - 05-13-2010: Room_2_iPod_Select_4_Fb_TP$ -> Longing/Love
+10:44:58 - 05-13-2010: Room_3_iPod_Select_5_Fb_TP$ -> The Snowman's Music Box Dance
+10:44:58 - 05-13-2010: Room_3_iPod_Select_1_Fb_TP$ -> At Last
+10:44:58 - 05-13-2010: Room_3_iPod_Select_2_Fb_TP$ -> Maria
+10:44:58 - 05-13-2010: Room_3_iPod_Select_3_Fb_TP$ -> The Song Is You
+10:44:58 - 05-13-2010: Room_3_iPod_Select_4_Fb_TP$ -> Longing/Love
+10:44:58 - 05-13-2010: Room_4_iPod_Select_5_Fb_TP$ -> The Snowman's Music Box Dance
+10:44:58 - 05-13-2010: Room_4_iPod_Select_1_Fb_TP$ -> At Last
+10:44:58 - 05-13-2010: Room_4_iPod_Select_2_Fb_TP$ -> Maria
+10:44:58 - 05-13-2010: Room_4_iPod_Select_3_Fb_TP$ -> The Song Is You
+10:44:58 - 05-13-2010: Room_4_iPod_Select_4_Fb_TP$ -> Longing/Love
+10:44:58 - 05-13-2010: Room_5_iPod_Select_5_Fb_TP$ -> The Snowman's Music Box Dance
+10:44:58 - 05-13-2010: Room_5_iPod_Select_1_Fb_TP$ -> At Last
+10:44:58 - 05-13-2010: Room_5_iPod_Select_2_Fb_TP$ -> Maria
+10:44:58 - 05-13-2010: Room_5_iPod_Select_3_Fb_TP$ -> The Song Is You
+10:44:58 - 05-13-2010: Room_5_iPod_Select_4_Fb_TP$ -> Longing/Love
+10:44:58 - 05-13-2010: Room_6_iPod_Select_5_Fb_TP$ -> The Snowman's Music Box Dance
+10:44:58 - 05-13-2010: Room_6_iPod_Select_1_Fb_TP$ -> At Last
+10:44:58 - 05-13-2010: Room_6_iPod_Select_2_Fb_TP$ -> Maria
+10:44:58 - 05-13-2010: Room_6_iPod_Select_3_Fb_TP$ -> The Song Is You
+10:44:58 - 05-13-2010: Room_6_iPod_Select_4_Fb_TP$ -> Longing/Love
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>Line1$_F}} -> At Last
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>Line2$_F}} -> Maria
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>Line3$_F}} -> The Song Is You
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>Line4$_F}} -> Longing/Love
+10:44:58 - 05-13-2010: {{CEN-IPOD_1>>Line5$_F}} -> The Snowman's Music Box Dance
+10:44:58 - 05-13-2010: Room_1_Off -> 1
+10:44:58 - 05-13-2010: Room_2_Off -> 1
+10:44:58 - 05-13-2010: Room_3_Off -> 1
+10:44:58 - 05-13-2010: Room_4_Off -> 1
+10:44:58 - 05-13-2010: Room_5_Off -> 1
+10:44:58 - 05-13-2010: Room_6_Off -> 1
+10:44:58 - 05-13-2010: Master_Closet_Light_always_on -> 65535d
+10:44:58 - 05-13-2010: S-6.1_{{Auto(1pt)Setpoint>>TSTAT}} -> 700d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>SysModeCool_F}} -> 1
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>FanAuto_F}} -> 1
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>HeatSetpoint_F}} -> 720d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>CoolSetpoint_F}} -> 700d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>Auto(1pt)Setpoint_F} -> 700d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>RegulationTemp}} -> 702d
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>Cool1Call}} -> 1
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>FanCall}} -> 1
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>HeatCoolType}} -> 1
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>DualSetpoints(AuotMo -> 1
+10:44:58 - 05-13-2010: S-6.1_{{TSTAT>>Temp(DegF)}} -> 1
+10:44:58 - 05-13-2010: mas_bed_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: MBATH_Toliet_LS2 -> 1
+10:44:58 - 05-13-2010: mbath_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: mcloset_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: Wine_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: GBath_exhaust_off_tgl -> 1
+10:44:58 - 05-13-2010: G_Bath_vanity_off_tgl -> 1
+10:44:58 - 05-13-2010: GBed_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: GB_Outlet_1_off_tgl -> 1
+10:44:58 - 05-13-2010: Living_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: Study_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: Art_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: //MBATH_Toliet_LS2_INT -> 1
+10:44:58 - 05-13-2010: //Utility_Closet_ON_OR_INT -> 1
+10:44:58 - 05-13-2010: //Hall_Light_ON_OR_INT -> 1
+10:44:58 - 05-13-2010: Patio_2_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: Patio_1_1_touch_OFF_tgl -> 1
+10:44:58 - 05-13-2010: //S-6.1_Temp_Scale_F -> 1
+10:44:58 - 05-13-2010: S-6.1_Current_Slab_Setpoint$ -> 0
+10:44:58 - 05-13-2010: S-6.1_Current_Temp$ -> 70
+10:44:58 - 05-13-2010: //S-6.1_Built-in_Sensor_Temp -> 742d
+10:44:58 - 05-13-2010: //S-6.1_Remote_Sensor_2_Temp -> 738d
+10:44:58 - 05-13-2010: //S-6.1_EnableSystemMode_Heat -> 1
+10:44:58 - 05-13-2010: //S-6.1_EnableSysmteMode_Cool -> 1
+10:44:58 - 05-13-2010: //S-6.1_EnableSystemMode_Auto -> 1
+10:44:58 - 05-13-2010: //S-6.1_Temporary_fb_1 -> 1
+10:44:58 - 05-13-2010: S-6.1_Current_Day_Of_Week -> 4d
+10:44:58 - 05-13-2010: auto_fb_layer_1_fb* -> 1
+10:44:58 - 05-13-2010: auto_fb_layer_2_fb* -> 1
+10:44:58 - 05-13-2010: auto_fb_layer_3_fb* -> 1
+10:44:58 - 05-13-2010: auto_fb_layer_4_fb* -> 1
+10:44:58 - 05-13-2010: Room_5_Off_1 -> 1
+10:44:58 - 05-13-2010: Room_3_Off_1 -> 1
+10:44:58 - 05-13-2010: Room_4_Off_1 -> 1
+10:44:58 - 05-13-2010: Room_6_Off_1 -> 1
+10:44:58 - 05-13-2010: Room_1_Off_1 -> 1
+10:44:58 - 05-13-2010: Room_2_Off_1 -> 1
+10:44:58 - 05-13-2010: mute_off -> 1
+10:44:58 - 05-13-2010: Room_5_Off_2 -> 1
+10:44:58 - 05-13-2010: Room_3_Off_2 -> 1
+10:44:58 - 05-13-2010: Room_4_Off_2 -> 1
+10:44:58 - 05-13-2010: Room_6_Off_2 -> 1
+10:44:58 - 05-13-2010: Room_1_Off_2 -> 1
+10:44:58 - 05-13-2010: Room_2_Off_2 -> 1
+10:44:58 - 05-13-2010: Room_5_Off_3 -> 1
+10:44:58 - 05-13-2010: Room_3_Off_3 -> 1
+10:44:58 - 05-13-2010: Room_4_Off_3 -> 1
+10:44:58 - 05-13-2010: Room_6_Off_3 -> 1
+10:44:58 - 05-13-2010: Room_1_Off_3 -> 1
+10:44:58 - 05-13-2010: Room_2_Off_3 -> 1
+10:44:59 - 05-13-2010: [Console Data] : 
+10:45:02 - 05-13-2010: [Console Data] : PRO2>
+10:45:02 - 05-13-2010: S-6.1_{{TSTAT>>RegulationTemp}} -> 703d
+10:45:02 - 05-13-2010: S-6.1_Current_Temp$ -> 70
+10:45:02 - 05-13-2010: S-6.1_{{TSTAT>>Remote1Temp}} -> 683d
+10:45:02 - 05-13-2010: //S-6.1_Remote_Sensor_1_Temp -> 683d
+10:45:08 - 05-13-2010: Start_up_sat_2 -> 1
+10:45:08 - 05-13-2010: Start_up_sat -> 1
+10:45:08 - 05-13-2010: //study_Watch_sat_Busy -> 1
+10:45:10 - 05-13-2010: Start_up_sat_2 -> 0
+10:45:10 - 05-13-2010: Start_up_sat -> 0
+10:45:10 - 05-13-2010: AV_power_on_sat -> 1
+10:45:10 - 05-13-2010: AV_power_on -> 1
+10:45:10 - 05-13-2010: S-8.2.1_[tx$] -> @PWR:2,\x0D
+10:45:10 - 05-13-2010: S-8.2.1_[rx$] -> @PWR:2\x0D
+10:45:10 - 05-13-2010: AV_power_on_sat -> 0
+10:45:10 - 05-13-2010: AV_power_on -> 0
+10:45:10 - 05-13-2010: S-8.4_source_tv -> 1
+10:45:10 - 05-13-2010: S-8.2.1_[tx$] -> @71C:1,\x0D
+10:45:10 - 05-13-2010: S-8.2.1_[rx$] -> @71C:1\x0D
+10:45:10 - 05-13-2010: S-8.2.1_[rx$] -> @ATT:0\x0D@SUR:0\x0D@OSD:2\x0D
+10:45:10 - 05-13-2010: S-8.2.1_[tx$] -> @SRC:1,\x0D
+10:45:10 - 05-13-2010: S-8.4_source_tv -> 0
+10:45:10 - 05-13-2010: S-8.2.1_[rx$] -> @SFQ:0\x0D@SRC:11\x0D
+10:45:10 - 05-13-2010: S-8.2.1_[rx$] -> @SFQ:F\x0D@SFQ:0\x0D
+10:45:10 - 05-13-2010: TV_on/off_soff -> 1
+10:45:10 - 05-13-2010: TV_on/off -> 1
+10:45:10 - 05-13-2010: S-8.2.1_[tx$] -> @AST:F,\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[tx$] -> @PWR:?,\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[rx$] -> @AST:F\x0D@PWR:2\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[tx$] -> @VOL:?,\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[rx$] -> @VOL:-41\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[tx$] -> @AMT:?,\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[rx$] -> @AMT:1\x0D
+10:45:11 - 05-13-2010: TV_on/off_soff -> 0
+10:45:11 - 05-13-2010: TV_on/off -> 0
+10:45:11 - 05-13-2010: S-8.2.1_[tx$] -> @SRC:?,\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[rx$] -> @SRC:11\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[tx$] -> @71C:?,\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[rx$] -> @71C:1\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[tx$] -> @TOB:?,\x0D
+10:45:11 - 05-13-2010: S-8.2.1_[rx$] -> @TOB: 00\x0D
+10:45:11 - 05-13-2010: //S-8.6_Input_HD_RGB -> 1
+10:45:12 - 05-13-2010: S-8.2.1_[tx$] -> @TOT:?,\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[rx$] -> @TOT: 00\x0D@ATT:1\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[rx$] -> @SUR:1\x0D@SFQ:F\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[tx$] -> @SPK:?,\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[rx$] -> @SPK:21\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[tx$] -> @SLP:?,\x0D
+10:45:12 - 05-13-2010: //S-8.6_Input_HD_RGB -> 0
+10:45:12 - 05-13-2010: //study_Watch_sat_Busy -> 0
+10:45:12 - 05-13-2010: S-8.2.1_[rx$] -> @SLP:00\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[tx$] -> @MNU:?,\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[rx$] -> @MNU:1\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[tx$] -> @NGT:?,\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[rx$] -> @NGT:1\x0D
+10:45:12 - 05-13-2010: S-8.2.1_[tx$] -> @REQ:?,\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[rx$] -> @REQ:1\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[tx$] -> @AST:F,\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[rx$] -> @AST:F\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[tx$] -> @DCT:?,\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[rx$] -> @DCT:1\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[tx$] -> @SUR:?,\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[rx$] -> @SUR:1\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[tx$] -> @TFQ:?,\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[rx$] -> @TFQ:65535\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[tx$] -> @TPR:?,\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[rx$] -> @TPR:00\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[tx$] -> @TMD:?,\x0D
+10:45:13 - 05-13-2010: S-8.2.1_[rx$] -> @TMD:0\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?2,\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:2 00\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?3,\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:3 00\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?4,\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:4 00\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?6,\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:6 00\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?7\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:7 00\x0D
+10:45:14 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?8,\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:2 00\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?9,\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:9 00\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?A,\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:A 00\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[tx$] -> @CHL:?B,\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[rx$] -> @CHL:B 00\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[rx$] -> @OSD:1\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[tx$] -> @OSD:?,\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[rx$] -> @OSD:1\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[tx$] -> @LIP:?,\x0D
+10:45:15 - 05-13-2010: S-8.2.1_[rx$] -> @LIP:000\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[tx$] -> @SSU:?,\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[rx$] -> @SSU:1\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[tx$] -> @TTO:?,\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[rx$] -> @TTO:110\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[tx$] -> @ATT:?,\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[rx$] -> @ATT:1\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[tx$] -> @VMT:?,\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[rx$] -> @VMT:1\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[tx$] -> @INP:?,\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[rx$] -> @INP:5\x0D
+10:45:16 - 05-13-2010: S-8.2.1_[tx$] -> @DIP:?,\x0D
+10:45:17 - 05-13-2010: S-8.2.1_[rx$] -> @DIP:1\x0D
+10:45:17 - 05-13-2010: S-8.2.1_[tx$] -> @SIG:?,\x0D
+10:45:17 - 05-13-2010: S-6.1_{{TSTAT>>RegulationTemp}} -> 702d
+10:45:17 - 05-13-2010: S-6.1_Current_Temp$ -> 70
+10:45:17 - 05-13-2010: S-8.2.1_[rx$] -> @SIG:0\x0D
+10:45:17 - 05-13-2010: S-6.1_{{TSTAT>>LocalTemp}} -> 743d
+10:45:17 - 05-13-2010: //S-6.1_Built-in_Sensor_Temp -> 743d
+10:45:17 - 05-13-2010: S-6.1_{{TSTAT>>Remote1Temp}} -> 681d
+10:45:17 - 05-13-2010: //S-6.1_Remote_Sensor_1_Temp -> 681d
+10:45:17 - 05-13-2010: S-8.2.1_[tx$] -> @SFQ:?,\x0D
+10:45:17 - 05-13-2010: S-8.2.1_[rx$] -> @SFQ:F\x0D
+10:45:17 - 05-13-2010: S-8.2.1_[tx$] -> @CHS:?,\x0D
+10:45:17 - 05-13-2010: S-8.2.1_[rx$] -> @CHS:80\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MPW:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MPW:2\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MAM:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MAM:1\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MVM:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @\x15\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MVL:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MVL:-90\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MVS:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MVS:1\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MSP:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MSP:1\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MSS:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MSS:0\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MSV:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MSV:-90\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[tx$] -> @MSM:?,\x0D
+10:45:20 - 05-13-2010: S-8.2.1_[rx$] -> @MSM:1\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[tx$] -> @MSC:?,\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[rx$] -> @MSC:22\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[tx$] -> @MOS:?,\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[rx$] -> @\x15\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[tx$] -> @MSL:?,\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[rx$] -> @MSL:00\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[tx$] -> @MTF:?,\x0D
+10:45:21 - 05-13-2010: S-8.2.1_[rx$] -> @MTF:65535\x0D
+10:45:22 - 05-13-2010: S-8.2.1_[tx$] -> @MTP:?,\x0D
+10:45:22 - 05-13-2010: S-8.2.1_[rx$] -> @MTP:00\x0D
+10:45:22 - 05-13-2010: S-8.2.1_[tx$] -> @MTM:?,\x0D
+10:45:22 - 05-13-2010: S-8.2.1_[rx$] -> @MTM:0\x0D
+10:45:25 - 05-13-2010: Shut_down_sat -> 1
+10:45:25 - 05-13-2010: //study_Watch_sat_Busy -> 1
+10:45:25 - 05-13-2010: Shut_down_sat -> 0
+10:45:25 - 05-13-2010: AV_power_off_sat -> 1
+10:45:25 - 05-13-2010: AV_power_off -> 1
+10:45:25 - 05-13-2010: S-8.2.1_[tx$] -> @PWR:1,\x0D
+10:45:25 - 05-13-2010: S-8.2.1_[rx$] -> @PWR:1\x0D
+10:45:25 - 05-13-2010: AV_power_off_sat -> 0
+10:45:25 - 05-13-2010: AV_power_off -> 0
+10:45:27 - 05-13-2010: TV_on/off_s_on -> 1
+10:45:27 - 05-13-2010: TV_on/off -> 1
+10:45:27 - 05-13-2010: TV_on/off_s_on -> 0
+10:45:27 - 05-13-2010: TV_on/off -> 0
+10:45:27 - 05-13-2010: //study_Watch_sat_Busy -> 0
+10:45:37 - 05-13-2010: iPod_Play -> 1
+10:45:37 - 05-13-2010: iPod_Play -> 0
+10:45:37 - 05-13-2010: iPod_Play_Fb -> 1
+10:45:37 - 05-13-2010: Room_1_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:37 - 05-13-2010: Room_2_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:37 - 05-13-2010: Room_3_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:37 - 05-13-2010: Room_4_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:37 - 05-13-2010: Room_5_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:37 - 05-13-2010: Room_6_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:37 - 05-13-2010: iPod_Pause_Fb -> 0
+10:45:37 - 05-13-2010: iPod_Play_Graphic -> 1
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:37 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>LenSeconds_F}} -> 251d
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>SongCount_F}} -> 38d
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>SongNumber_F}} -> 7d
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 29d
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65314d
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 7569d
+10:45:37 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:37 - 05-13-2010: iPod_Position -> 7569d
+10:45:37 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 30d
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65315d
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 7830d
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:39 - 05-13-2010: iPod_Position -> 7830d
+10:45:39 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 31d
+10:45:39 - 05-13-2010: Den_iPod -> 1
+10:45:39 - 05-13-2010: Room_5_Off_1 -> 0
+10:45:39 - 05-13-2010: Den_iPod_tog -> 1
+10:45:39 - 05-13-2010: Room_5_Off -> 0
+10:45:39 - 05-13-2010: //BUSY -> 1
+10:45:39 - 05-13-2010: Den_iPod_FB -> 1
+10:45:39 - 05-13-2010: Room_5_Volume_Mute_off -> 1
+10:45:39 - 05-13-2010: Room_5_Volume -> 26214d
+10:45:39 - 05-13-2010: Room_5_On -> 1
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65316d
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 8091d
+10:45:39 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:39 - 05-13-2010: iPod_Position -> 8091d
+10:45:39 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:39 - 05-13-2010: Den_iPod -> 0
+10:45:39 - 05-13-2010: Room_5_Switcher_Input -> 4d
+10:45:39 - 05-13-2010: Room_5_Source_Select_Line_2_Fb -> 1
+10:45:39 - 05-13-2010: Room_5_Room_On/Off_Fb -> 1
+10:45:39 - 05-13-2010: Room_5_On_Fb -> 1
+10:45:39 - 05-13-2010: Room_5_Volume -> 0d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 883d
+10:45:41 - 05-13-2010: Room_5_Volume -> 883d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 1546d
+10:45:41 - 05-13-2010: Room_5_Volume -> 1546d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 1767d
+10:45:41 - 05-13-2010: Room_5_Volume -> 1767d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 2429d
+10:45:41 - 05-13-2010: Room_5_Volume -> 2429d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 3534d
+10:45:41 - 05-13-2010: Room_5_Volume -> 3534d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 4638d
+10:45:41 - 05-13-2010: Room_5_Volume -> 4638d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 5743d
+10:45:41 - 05-13-2010: Room_5_Volume -> 5743d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 6847d
+10:45:41 - 05-13-2010: Room_5_Volume -> 6847d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 7952d
+10:45:41 - 05-13-2010: Room_5_Volume -> 7952d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 9056d
+10:45:41 - 05-13-2010: Room_5_Volume -> 9056d
+10:45:41 - 05-13-2010: Room_5_On -> 0
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 10161d
+10:45:41 - 05-13-2010: Room_5_Volume -> 10161d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 11265d
+10:45:41 - 05-13-2010: Room_5_Volume -> 11265d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 12370d
+10:45:41 - 05-13-2010: Room_5_Volume -> 12370d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 13474d
+10:45:41 - 05-13-2010: Room_5_Volume -> 13474d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 14579d
+10:45:41 - 05-13-2010: Room_5_Volume -> 14579d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 15683d
+10:45:41 - 05-13-2010: Room_5_Volume -> 15683d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 16788d
+10:45:41 - 05-13-2010: Room_5_Volume -> 16788d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 18113d
+10:45:41 - 05-13-2010: Room_5_Volume -> 18113d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 19218d
+10:45:41 - 05-13-2010: Room_5_Volume -> 19218d
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 32d
+10:45:41 - 05-13-2010: Room_5_Volume_Bar -> 19660d
+10:45:41 - 05-13-2010: Room_5_Volume -> 19660d
+10:45:41 - 05-13-2010: Room_5_Select_Source_4 -> 1
+10:45:41 - 05-13-2010: Room_5_Goto_iPod_Page -> 1
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65317d
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 8352d
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:41 - 05-13-2010: iPod_Position -> 8352d
+10:45:41 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:41 - 05-13-2010: Room_5_Select_Source_4 -> 0
+10:45:41 - 05-13-2010: //BUSY -> 0
+10:45:41 - 05-13-2010: Room_5_Goto_iPod_Page -> 0
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 33d
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65318d
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 8613d
+10:45:41 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:41 - 05-13-2010: iPod_Position -> 8613d
+10:45:41 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:42 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 34d
+10:45:44 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65319d
+10:45:44 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 8874d
+10:45:44 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:44 - 05-13-2010: iPod_Position -> 8874d
+10:45:44 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:44 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 35d
+10:45:44 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65320d
+10:45:44 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9135d
+10:45:44 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:44 - 05-13-2010: iPod_Position -> 9135d
+10:45:44 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 36d
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65321d
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9396d
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:46 - 05-13-2010: iPod_Position -> 9396d
+10:45:46 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 37d
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65322d
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9657d
+10:45:46 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:46 - 05-13-2010: iPod_Position -> 9657d
+10:45:46 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:48 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 38d
+10:45:48 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65323d
+10:45:50 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9918d
+10:45:50 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:50 - 05-13-2010: iPod_Position -> 9918d
+10:45:50 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:51 - 05-13-2010: iPod_Track+ -> 1
+10:45:51 - 05-13-2010: iPod_Track+ -> 0
+10:45:51 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 0
+10:45:53 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 0d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65245d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 0d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:53 - 05-13-2010: iPod_Position -> 0d
+10:45:53 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:53 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 1
+10:45:53 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 1d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65246d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 225d
+10:45:53 - 05-13-2010: iPod_Position -> 225d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:45:53 - 05-13-2010: iPod_Header$ -> Now Playing
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>LenSeconds_F}} -> 291d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>Title$_F}} -> Killing Me Softly with His Song
+10:45:53 - 05-13-2010: iPod_Duration -> 291d
+10:45:53 - 05-13-2010: iPod_Current_Track$ -> Killing Me Softly with His Song
+10:45:53 - 05-13-2010: Room_1_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:53 - 05-13-2010: Room_2_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:53 - 05-13-2010: Room_3_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:53 - 05-13-2010: Room_4_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:53 - 05-13-2010: Room_5_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:53 - 05-13-2010: Room_6_Source_Select_2_Now_Playing$ -> Lou Reed
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>Artist$_F}} -> Fugees
+10:45:53 - 05-13-2010: iPod_Current_Artist$ -> Fugees
+10:45:53 - 05-13-2010: Room_1_Source_Select_2_Now_Playing$ -> Fugees
+10:45:53 - 05-13-2010: Room_2_Source_Select_2_Now_Playing$ -> Fugees
+10:45:53 - 05-13-2010: Room_3_Source_Select_2_Now_Playing$ -> Fugees
+10:45:53 - 05-13-2010: Room_4_Source_Select_2_Now_Playing$ -> Fugees
+10:45:53 - 05-13-2010: Room_5_Source_Select_2_Now_Playing$ -> Fugees
+10:45:53 - 05-13-2010: Room_6_Source_Select_2_Now_Playing$ -> Fugees
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>Album$_F}} -> Fugees: Greatest Hits
+10:45:53 - 05-13-2010: iPod_Current_Album$ -> Fugees: Greatest Hits
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>SongCount_F}} -> 38d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>SongNumber_F}} -> 8d
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>NextTitle$_F}} -> Numb (Mike Hedges Mix)
+10:45:53 - 05-13-2010: iPod_Current_Track -> 8d
+10:45:53 - 05-13-2010: iPod_Next_Track$ -> Numb (Mike Hedges Mix)
+10:45:53 - 05-13-2010: {{CEN-IPOD_1>>NextArtist$_F}} -> U2
+10:45:55 - 05-13-2010: iPod_Next_Artist$ -> U2
+10:45:57 - 05-13-2010: {{CEN-IPOD_1>>NextAlbum$_F}} -> The Complete U2 - The Best Of 1990-2000
+10:45:59 - 05-13-2010: iPod_Next_Album$ -> The Complete U2 - The Best Of 1990-2000
+10:46:01 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:03 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:05 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 2d
+10:46:05 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65247d
+10:46:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 450d
+10:46:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:09 - 05-13-2010: iPod_Position -> 450d
+10:46:09 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:11 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 3d
+10:46:11 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65248d
+10:46:15 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 675d
+10:46:15 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:17 - 05-13-2010: iPod_Position -> 675d
+10:46:19 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 4d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65249d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 900d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:19 - 05-13-2010: iPod_Position -> 900d
+10:46:19 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 5d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65250d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 1125d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:19 - 05-13-2010: iPod_Position -> 1125d
+10:46:19 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 6d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65251d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 1350d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:19 - 05-13-2010: iPod_Position -> 1350d
+10:46:19 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:19 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 0
+10:46:19 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 7d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65252d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 1575d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:19 - 05-13-2010: iPod_Position -> 1575d
+10:46:19 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:19 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 1
+10:46:19 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 8d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65253d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 1800d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:19 - 05-13-2010: iPod_Position -> 1800d
+10:46:19 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 9d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65254d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 2025d
+10:46:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:21 - 05-13-2010: iPod_Position -> 2025d
+10:46:23 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:25 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 10d
+10:46:27 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65255d
+10:46:29 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 2250d
+10:46:31 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:31 - 05-13-2010: iPod_Position -> 2250d
+10:46:33 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:35 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 11d
+10:46:35 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65256d
+10:46:37 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 2475d
+10:46:37 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:39 - 05-13-2010: iPod_Position -> 2475d
+10:46:39 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:41 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 13d
+10:46:41 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65258d
+10:46:43 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 2925d
+10:46:45 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:45 - 05-13-2010: iPod_Position -> 2925d
+10:46:45 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:45 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 14d
+10:46:46 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65259d
+10:46:46 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 3150d
+10:46:48 - 05-13-2010: iPod_Position -> 3150d
+10:46:50 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:46:52 - 05-13-2010: iPod_Header$ -> Now Playing
+10:46:54 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 15d
+10:46:56 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65260d
+10:46:58 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 3375d
+10:46:58 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:00 - 05-13-2010: iPod_Position -> 3375d
+10:47:00 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:02 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 16d
+10:47:02 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65261d
+10:47:04 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 3600d
+10:47:04 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:08 - 05-13-2010: iPod_Position -> 3600d
+10:47:10 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:12 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 17d
+10:47:13 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65262d
+10:47:15 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 3825d
+10:47:17 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:19 - 05-13-2010: iPod_Position -> 3825d
+10:47:19 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:19 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 18d
+10:47:21 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65263d
+10:47:21 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 4050d
+10:47:23 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:23 - 05-13-2010: iPod_Position -> 4050d
+10:47:25 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:25 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 19d
+10:47:27 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65264d
+10:47:27 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 4275d
+10:47:29 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:29 - 05-13-2010: iPod_Position -> 4275d
+10:47:29 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:31 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 20d
+10:47:31 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65265d
+10:47:33 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 4500d
+10:47:33 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:33 - 05-13-2010: iPod_Position -> 4500d
+10:47:35 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:37 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 21d
+10:47:39 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65266d
+10:47:41 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 4725d
+10:47:43 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:45 - 05-13-2010: iPod_Position -> 4725d
+10:47:47 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:49 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 22d
+10:47:50 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65267d
+10:47:53 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 4950d
+10:47:53 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:47:55 - 05-13-2010: iPod_Position -> 4950d
+10:47:55 - 05-13-2010: iPod_Header$ -> Now Playing
+10:47:57 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 23d
+10:47:57 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65268d
+10:47:59 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 5175d
+10:47:59 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:48:01 - 05-13-2010: iPod_Position -> 5175d
+10:48:02 - 05-13-2010: iPod_Header$ -> Now Playing
+10:48:03 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 24d
+10:48:05 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65269d
+10:48:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 5400d
+10:48:08 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:48:09 - 05-13-2010: iPod_Position -> 5400d
+10:48:11 - 05-13-2010: iPod_Header$ -> Now Playing
+10:48:13 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 25d
+10:48:15 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65270d
+10:48:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 5625d
+10:48:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:48:21 - 05-13-2010: iPod_Position -> 5625d
+10:48:21 - 05-13-2010: iPod_Header$ -> Now Playing
+10:48:23 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 26d
+10:48:25 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65271d
+10:48:27 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 5850d
+10:48:29 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:48:29 - 05-13-2010: iPod_Position -> 5850d
+10:48:31 - 05-13-2010: iPod_Header$ -> Now Playing
+10:48:33 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 27d
+10:48:35 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65272d
+10:48:37 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 6075d
+10:48:39 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:48:41 - 05-13-2010: iPod_Position -> 6075d
+10:48:43 - 05-13-2010: iPod_Header$ -> Now Playing
+10:48:43 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 28d
+10:48:45 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65273d
+10:48:45 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 6300d
+10:48:47 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:48:47 - 05-13-2010: iPod_Position -> 6300d
+10:48:49 - 05-13-2010: iPod_Header$ -> Now Playing
+10:48:50 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 29d
+10:48:51 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65274d
+10:48:52 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 6525d
+10:48:53 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:48:55 - 05-13-2010: iPod_Position -> 6525d
+10:48:57 - 05-13-2010: iPod_Header$ -> Now Playing
+10:48:59 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 30d
+10:49:01 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65275d
+10:49:03 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 6750d
+10:49:04 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:05 - 05-13-2010: iPod_Position -> 6750d
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 31d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65276d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 6975d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:07 - 05-13-2010: iPod_Position -> 6975d
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 32d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65277d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 7200d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:07 - 05-13-2010: iPod_Position -> 7200d
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: S-6.1_{{TSTAT>>Remote2Temp}} -> 736d
+10:49:07 - 05-13-2010: //S-6.1_Remote_Sensor_2_Temp -> 736d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 33d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65278d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 7425d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:07 - 05-13-2010: iPod_Position -> 7425d
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 34d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65279d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 7650d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:07 - 05-13-2010: iPod_Position -> 7650d
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 35d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65280d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 7875d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:07 - 05-13-2010: iPod_Position -> 7875d
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 36d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65281d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 8100d
+10:49:07 - 05-13-2010: iPod_Position -> 8100d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 37d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65282d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 8325d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:07 - 05-13-2010: iPod_Position -> 8325d
+10:49:07 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 39d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65284d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 8775d
+10:49:07 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:09 - 05-13-2010: iPod_Position -> 8775d
+10:49:09 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:11 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 40d
+10:49:11 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65285d
+10:49:13 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9000d
+10:49:14 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:15 - 05-13-2010: iPod_Position -> 9000d
+10:49:16 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:17 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 41d
+10:49:18 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65286d
+10:49:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9225d
+10:49:21 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:23 - 05-13-2010: iPod_Position -> 9225d
+10:49:25 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:27 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 42d
+10:49:30 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65287d
+10:49:32 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9450d
+10:49:32 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:34 - 05-13-2010: iPod_Position -> 9450d
+10:49:36 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:36 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 43d
+10:49:38 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65288d
+10:49:40 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9675d
+10:49:40 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:42 - 05-13-2010: iPod_Position -> 9675d
+10:49:42 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:44 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 44d
+10:49:44 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65289d
+10:49:46 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 9900d
+10:49:46 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:48 - 05-13-2010: iPod_Position -> 9900d
+10:49:48 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:50 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 45d
+10:49:50 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65290d
+10:49:52 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 10125d
+10:49:52 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:49:54 - 05-13-2010: iPod_Position -> 10125d
+10:49:54 - 05-13-2010: iPod_Header$ -> Now Playing
+10:49:56 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 46d
+10:49:56 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65291d
+10:49:58 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 10350d
+10:50:00 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:02 - 05-13-2010: iPod_Position -> 10350d
+10:50:04 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:06 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 47d
+10:50:06 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65292d
+10:50:08 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 10575d
+10:50:08 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:10 - 05-13-2010: iPod_Position -> 10575d
+10:50:10 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:12 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 48d
+10:50:12 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65293d
+10:50:14 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 10800d
+10:50:14 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:16 - 05-13-2010: iPod_Position -> 10800d
+10:50:16 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 49d
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65294d
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 11025d
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:38 - 05-13-2010: iPod_Position -> 11025d
+10:50:38 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 50d
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65295d
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 11250d
+10:50:38 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:38 - 05-13-2010: iPod_Position -> 11250d
+10:50:38 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 51d
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65296d
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 11475d
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:40 - 05-13-2010: iPod_Position -> 11475d
+10:50:40 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 52d
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65297d
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 11700d
+10:50:40 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:40 - 05-13-2010: iPod_Position -> 11700d
+10:50:40 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 53d
+10:50:42 - 05-13-2010: S-6.1_{{TSTAT>>Remote2Temp}} -> 738d
+10:50:42 - 05-13-2010: //S-6.1_Remote_Sensor_2_Temp -> 738d
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65298d
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 11925d
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:42 - 05-13-2010: iPod_Position -> 11925d
+10:50:42 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 54d
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65299d
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 12150d
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:42 - 05-13-2010: iPod_Position -> 12150d
+10:50:42 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 55d
+10:50:42 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65300d
+10:50:44 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 12375d
+10:50:44 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:44 - 05-13-2010: iPod_Position -> 12375d
+10:50:44 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:44 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 0
+10:50:44 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:44 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:44 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:44 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:44 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:44 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:44 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 56d
+10:50:44 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65301d
+10:50:44 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 12600d
+10:50:44 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:44 - 05-13-2010: iPod_Position -> 12600d
+10:50:44 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:46 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 1
+10:50:46 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 57d
+10:50:46 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65302d
+10:50:46 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 12825d
+10:50:46 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:46 - 05-13-2010: iPod_Position -> 12825d
+10:50:46 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:46 - 05-13-2010: S-6.1_{{TSTAT>>Remote2Temp}} -> 736d
+10:50:46 - 05-13-2010: //S-6.1_Remote_Sensor_2_Temp -> 736d
+10:50:46 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 0
+10:50:46 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:46 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 58d
+10:50:46 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65303d
+10:50:46 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 13050d
+10:50:48 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:50:50 - 05-13-2010: iPod_Position -> 13050d
+10:50:52 - 05-13-2010: iPod_Header$ -> Now Playing
+10:50:54 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 1
+10:50:56 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:50:58 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:00 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:00 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:02 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:02 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:04 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 59d
+10:51:04 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65304d
+10:51:06 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 13275d
+10:51:06 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:51:06 - 05-13-2010: iPod_Position -> 13275d
+10:51:08 - 05-13-2010: iPod_Header$ -> Now Playing
+10:51:08 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 0
+10:51:08 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:10 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:12 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:14 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:16 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:18 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:18 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 60d
+10:51:20 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65305d
+10:51:22 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 13500d
+10:51:24 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:51:24 - 05-13-2010: iPod_Position -> 13500d
+10:51:26 - 05-13-2010: iPod_Header$ -> Now Playing
+10:51:26 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 62d
+10:51:28 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65307d
+10:51:28 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 13950d
+10:51:30 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:51:30 - 05-13-2010: iPod_Position -> 13950d
+10:51:30 - 05-13-2010: iPod_Header$ -> Now Playing
+10:51:30 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 63d
+10:51:30 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65308d
+10:51:30 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 14175d
+10:51:30 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:51:32 - 05-13-2010: iPod_Position -> 14175d
+10:51:32 - 05-13-2010: iPod_Header$ -> Now Playing
+10:51:34 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 64d
+10:51:34 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65309d
+10:51:34 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 14400d
+10:51:35 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:51:36 - 05-13-2010: iPod_Position -> 14400d
+10:51:37 - 05-13-2010: iPod_Header$ -> Now Playing
+10:51:38 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 1
+10:51:40 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:42 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:44 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:44 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:46 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:46 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:51:48 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 65d
+10:51:50 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65310d
+10:51:52 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 14625d
+10:51:52 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:51:54 - 05-13-2010: iPod_Position -> 14625d
+10:51:54 - 05-13-2010: iPod_Header$ -> Now Playing
+10:51:56 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 66d
+10:51:56 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65311d
+10:51:58 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 14850d
+10:51:58 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:51:58 - 05-13-2010: iPod_Position -> 14850d
+10:52:00 - 05-13-2010: iPod_Header$ -> Now Playing
+10:52:01 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 67d
+10:52:02 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 0
+10:52:03 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:04 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:06 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:10 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:12 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:14 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:16 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65312d
+10:52:16 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 15075d
+10:52:18 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:52:18 - 05-13-2010: iPod_Position -> 15075d
+10:52:18 - 05-13-2010: iPod_Header$ -> Now Playing
+10:52:18 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 68d
+10:52:18 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65313d
+10:52:19 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 15300d
+10:52:19 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:52:20 - 05-13-2010: iPod_Position -> 15300d
+10:52:20 - 05-13-2010: iPod_Header$ -> Now Playing
+10:52:22 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 69d
+10:52:23 - 05-13-2010: Slot_1_AM/FM_Tuner_1_Stereo_Fb -> 1
+10:52:23 - 05-13-2010: Room_1_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:24 - 05-13-2010: Room_2_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:25 - 05-13-2010: Room_3_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:28 - 05-13-2010: Room_4_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:30 - 05-13-2010: Room_5_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:32 - 05-13-2010: Room_6_Source_Select_3_Now_Playing$ -> 97.30 FM
+10:52:34 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65314d
+10:52:36 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 15525d
+10:52:38 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:52:40 - 05-13-2010: iPod_Position -> 15525d
+10:52:42 - 05-13-2010: iPod_Header$ -> Now Playing
+10:52:44 - 05-13-2010: {{CEN-IPOD_1>>ElapsedSec_F}} -> 70d
+10:52:44 - 05-13-2010: {{CEN-IPOD_1>>RemainingSec_F}} -> 65315d
+10:52:46 - 05-13-2010: {{CEN-IPOD_1>>PlayProgress%_F}} -> 15750d
+10:52:46 - 05-13-2010: {{CEN-IPOD_1>>PageHeader$_F}} -> Now Playing
+10:52:48 - 05-13-2010: iPod_Position -> 15750d
+10:52:49 - 05-13-2010: iPod_Header$ -> Now Playing
