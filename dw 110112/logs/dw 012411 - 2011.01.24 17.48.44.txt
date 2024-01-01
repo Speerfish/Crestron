@@ -1,0 +1,2100 @@
+17:39:21 - 01-24-2011: [Console Data] : 
+17:39:21 - 01-24-2011: page_entry_fb -> 1
+17:39:21 - 01-24-2011: tp1_airwall_closed_fb -> 1
+17:39:21 - 01-24-2011: tp1_vtc2_select_near_camera_fb -> 1
+17:39:21 - 01-24-2011: tp1_vtc_autostart_enabled -> 1
+17:39:21 - 01-24-2011: nightly_shutdown_9pm_enabled -> 1
+17:39:21 - 01-24-2011: tp1_no_source_subpage_fb -> 1
+17:39:21 - 01-24-2011: tp1_send_to_rm_vtc_active -> 1
+17:39:21 - 01-24-2011: tp1_show_items_specific_to_video_conference -> 1
+17:39:21 - 01-24-2011: tp1_show_send_to_checkbox -> 1
+17:39:21 - 01-24-2011: tp1_show_mic_mute_button -> 1
+17:39:21 - 01-24-2011: tp1_show_normal_sources -> 1
+17:39:21 - 01-24-2011: tp1_vtc1_select_cam1_fb -> 1
+17:39:21 - 01-24-2011: tp1_vtc1_near_fb -> 1
+17:39:21 - 01-24-2011: tp1_vtc1_auto_answer_on_fb -> 1
+17:39:21 - 01-24-2011: tp1_vtc1_auto_answer_on+mic_off_fb -> 1
+17:39:21 - 01-24-2011: tp1_codec_vol_bar -> 42597d
+17:39:21 - 01-24-2011: dsp1_vol% -> 62338d
+17:39:21 - 01-24-2011: button_mode_lighting -> 1d
+17:39:21 - 01-24-2011: mode_is_off -> 1
+17:39:21 - 01-24-2011: !page_settings_fb -> 1
+17:39:21 - 01-24-2011: allow_please_wait -> 1
+17:39:21 - 01-24-2011: allow_switching_popup -> 1
+17:39:21 - 01-24-2011: popup_phone_not_active -> 1
+17:39:21 - 01-24-2011: password_change_cancel -> 1
+17:39:21 - 01-24-2011: tandberg_selected -> 1
+17:39:21 - 01-24-2011: no_source_is_selected -> 1
+17:39:21 - 01-24-2011: allow_src_subpages -> 1
+17:39:21 - 01-24-2011: system_state_is_off -> 1
+17:39:21 - 01-24-2011: vtc1_active -> 1
+17:39:21 - 01-24-2011: room_is_video_conference -> 1
+17:39:21 - 01-24-2011: tand_remote_tab1_selected -> 1
+17:39:21 - 01-24-2011: send_to_show_subpage -> 1
+17:39:21 - 01-24-2011: send_to_disabled -> 1
+17:39:21 - 01-24-2011: sw2_breakaway_is_out_8 -> 8d
+17:39:21 - 01-24-2011: enable_prj1 -> 1
+17:39:21 - 01-24-2011: prj1_off_fb -> 1
+17:39:21 - 01-24-2011: proj1_pic_mute_off -> 1
+17:39:21 - 01-24-2011: vtc_autostart_enabled -> 1
+17:39:21 - 01-24-2011: vtc_external_in_request_system_state_is_off -> 1
+17:39:21 - 01-24-2011: vtc_allow_autostart -> 1
+17:39:21 - 01-24-2011: vtc1_near_fb -> 1
+17:39:21 - 01-24-2011: vtc1_input_1_fb -> 1
+17:39:21 - 01-24-2011: vtc1_auto_answer_on_fb -> 1
+17:39:21 - 01-24-2011: vtc1_auto_answer_on+mic_off_fb -> 1
+17:39:21 - 01-24-2011: vtc1_vol% -> 42597d
+17:39:21 - 01-24-2011: vtc1_tx_busy_fb -> 1
+17:39:21 - 01-24-2011: vtc2_select_near_camera_fb -> 1
+17:39:21 - 01-24-2011: vtc2_atc_on_hook_fb -> 1
+17:39:21 - 01-24-2011: vtc2_atc_call_inactive -> 1
+17:39:21 - 01-24-2011: vtc2_camera_preset_save_fb_not -> 1
+17:39:21 - 01-24-2011: dsp2_macro -> 8d
+17:39:21 - 01-24-2011: enable_hybrid_in_dsp -> 1
+17:39:21 - 01-24-2011: atc_dtmf_dialer_go -> 1
+17:39:21 - 01-24-2011: airwall_closed_fb -> 1
+17:39:21 - 01-24-2011: prj3_off_fb -> 1
+17:39:21 - 01-24-2011: plasma1_power_off_fb -> 1
+17:39:21 - 01-24-2011: plasma2_power_off_fb -> 1
+17:39:21 - 01-24-2011: prj2_off_fb -> 1
+17:39:21 - 01-24-2011: dsp1_vol_0_to_92 -> 87d
+17:39:21 - 01-24-2011: pwr_seq_turn_on -> 1
+17:39:21 - 01-24-2011: //pwr_seq_off -> 1
+17:39:21 - 01-24-2011: //room_has_two_cameras -> 1
+17:39:21 - 01-24-2011: room_doesnt_have_shades -> 1
+17:39:21 - 01-24-2011: !tp1_dim_rear_cam_button_for_near_cam_ctrl -> 1
+17:39:21 - 01-24-2011: using_prj1_fb -> 1
+17:39:21 - 01-24-2011: using_prj2_fb -> 1
+17:39:21 - 01-24-2011: using_audio_fb -> 1
+17:39:21 - 01-24-2011: clock$ -> 012420111939510000
+17:39:22 - 01-24-2011: [Console Data] : PRO2>
+17:39:22 - 01-24-2011: clock$ -> 012420111939520000
+17:39:23 - 01-24-2011: clock$ -> 012420111939530000
+17:39:24 - 01-24-2011: clock$ -> 012420111939540000
+17:39:25 - 01-24-2011: clock$ -> 012420111939550000
+17:39:26 - 01-24-2011: clock$ -> 012420111939560000
+17:39:27 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:39:27 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:39:27 - 01-24-2011: clock$ -> 012420111939570000
+17:39:27 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:39:27 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:39:27 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21570\x0D\x0A** 
+17:39:27 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21570\x0D\x0A** 
+17:39:27 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:39:27 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:39:28 - 01-24-2011: clock$ -> 012420111939580000
+17:39:29 - 01-24-2011: clock$ -> 012420111939590000
+17:39:30 - 01-24-2011: clock$ -> 012420111940000000
+17:39:31 - 01-24-2011: clock$ -> 012420111940020000
+17:39:32 - 01-24-2011: clock$ -> 012420111940030000
+17:39:33 - 01-24-2011: clock$ -> 012420111940040000
+17:39:34 - 01-24-2011: clock$ -> 012420111940050000
+17:39:35 - 01-24-2011: clock$ -> 012420111940060000
+17:39:36 - 01-24-2011: clock$ -> 012420111940070000
+17:39:37 - 01-24-2011: clock$ -> 012420111940080000
+17:39:38 - 01-24-2011: clock$ -> 012420111940090000
+17:39:39 - 01-24-2011: clock$ -> 012420111940100000
+17:39:40 - 01-24-2011: clock$ -> 012420111940110000
+17:39:41 - 01-24-2011: clock$ -> 012420111940120000
+17:39:42 - 01-24-2011: clock$ -> 012420111940130000
+17:39:43 - 01-24-2011: clock$ -> 012420111940140000
+17:39:44 - 01-24-2011: clock$ -> 012420111940150000
+17:39:45 - 01-24-2011: clock$ -> 012420111940160000
+17:39:46 - 01-24-2011: clock$ -> 012420111940170000
+17:39:47 - 01-24-2011: clock$ -> 012420111940180000
+17:39:48 - 01-24-2011: clock$ -> 012420111940190000
+17:39:49 - 01-24-2011: clock$ -> 012420111940200000
+17:39:50 - 01-24-2011: clock$ -> 012420111940210000
+17:39:51 - 01-24-2011: clock$ -> 012420111940220000
+17:39:52 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:39:52 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:39:52 - 01-24-2011: clock$ -> 012420111940230000
+17:39:52 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:39:52 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:39:52 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21595\x0D\x0A** 
+17:39:52 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21595\x0D\x0A** 
+17:39:52 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:39:52 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:39:53 - 01-24-2011: clock$ -> 012420111940240000
+17:39:54 - 01-24-2011: clock$ -> 012420111940260000
+17:39:55 - 01-24-2011: clock$ -> 012420111940270000
+17:39:56 - 01-24-2011: clock$ -> 012420111940280000
+17:39:57 - 01-24-2011: clock$ -> 012420111940290000
+17:39:58 - 01-24-2011: clock$ -> 012420111940300000
+17:39:59 - 01-24-2011: clock$ -> 012420111940310000
+17:40:00 - 01-24-2011: clock$ -> 012420111940320000
+17:40:01 - 01-24-2011: clock$ -> 012420111940330000
+17:40:02 - 01-24-2011: clock$ -> 012420111940340000
+17:40:03 - 01-24-2011: clock$ -> 012420111940350000
+17:40:04 - 01-24-2011: clock$ -> 012420111940360000
+17:40:05 - 01-24-2011: clock$ -> 012420111940370000
+17:40:06 - 01-24-2011: clock$ -> 012420111940380000
+17:40:07 - 01-24-2011: clock$ -> 012420111940390000
+17:40:08 - 01-24-2011: tp1_mode -> 1
+17:40:08 - 01-24-2011: popup_mode_open -> 1
+17:40:08 - 01-24-2011: popup_mode_active -> 1
+17:40:08 - 01-24-2011: tp1_popup_mode_active -> 1
+17:40:08 - 01-24-2011: tp1_popup_mode(video_conference) -> 1
+17:40:08 - 01-24-2011: tp1_mode -> 0
+17:40:08 - 01-24-2011: popup_mode_open -> 0
+17:40:08 - 01-24-2011: clock$ -> 012420111940400000
+17:40:09 - 01-24-2011: clock$ -> 012420111940410000
+17:40:10 - 01-24-2011: clock$ -> 012420111940420000
+17:40:11 - 01-24-2011: clock$ -> 012420111940430000
+17:40:12 - 01-24-2011: clock$ -> 012420111940440000
+17:40:12 - 01-24-2011: tp1_mode_presentation -> 1
+17:40:12 - 01-24-2011: popup_shutdown_close -> 1
+17:40:12 - 01-24-2011: popup_mode_close -> 1
+17:40:12 - 01-24-2011: popup_mode2_close -> 1
+17:40:12 - 01-24-2011: mode_change_to_presentation_os -> 1
+17:40:12 - 01-24-2011: mode_is_off -> 0
+17:40:12 - 01-24-2011: mode_is_presentation -> 1
+17:40:12 - 01-24-2011: mode_change_to_presentation_from_off -> 1
+17:40:12 - 01-24-2011: mode_is_phone_OR_presentation_OR_sys_off_AND_autostart_disabled -> 1
+17:40:13 - 01-24-2011: page_flip_presentation -> 1
+17:40:13 - 01-24-2011: displays_turn_on -> 1
+17:40:13 - 01-24-2011: clear_presentation_ilk -> 1
+17:40:13 - 01-24-2011: sw_clear_all_routes -> 1
+17:40:13 - 01-24-2011: send_to_enable -> 1
+17:40:13 - 01-24-2011: dsp2_room_mute_off -> 1
+17:40:13 - 01-24-2011: busy_presentation_commands -> 1
+17:40:13 - 01-24-2011: popup_mode_active -> 0
+17:40:13 - 01-24-2011: allow_call_connect_warning -> 1
+17:40:13 - 01-24-2011: page_entry_fb -> 0
+17:40:13 - 01-24-2011: page_presentation_fb -> 1
+17:40:13 - 01-24-2011: prj1_turn_on -> 1
+17:40:13 - 01-24-2011: clear_pulser_ilk -> 1
+17:40:13 - 01-24-2011: sw2_clear_all_routes -> 1
+17:40:13 - 01-24-2011: send_to_disabled -> 0
+17:40:13 - 01-24-2011: send_to_enabled -> 1
+17:40:13 - 01-24-2011: dsp2_tx$ -> #H0 MUTE A P 0\x0D
+17:40:13 - 01-24-2011: popup_please_wait_activate -> 1
+17:40:13 - 01-24-2011: tp1_popup_mode_active -> 0
+17:40:13 - 01-24-2011: prj1_power_on -> 1
+17:40:13 - 01-24-2011: prj1_trigger_warmup -> 1
+17:40:13 - 01-24-2011: prj1_screen_dn -> 1
+17:40:13 - 01-24-2011: sw2_tx$ -> 0*1!0*2!0*3!0*4!0*5!0*6!0*7!0*8!
+17:40:13 - 01-24-2011: send_to_show_subpage -> 0
+17:40:13 - 01-24-2011: tp1_send_to_enabled -> 1
+17:40:13 - 01-24-2011: send_to_enabled_os -> 1
+17:40:13 - 01-24-2011: com_d_tx$ -> #H0 MUTE A P 0\x0D
+17:40:13 - 01-24-2011: popup_please_wait_activate_delayed -> 1
+17:40:13 - 01-24-2011: allow_src_subpages -> 0
+17:40:13 - 01-24-2011: tp1_popup_mode(video_conference) -> 0
+17:40:13 - 01-24-2011: prj1_screen_dn_os -> 1
+17:40:13 - 01-24-2011: com_c_tx$ -> 0*1!0*2!0*3!0*4!0*5!0*6!0*7!0*8!
+17:40:13 - 01-24-2011: tp1_send_to_rm_vtc_active -> 0
+17:40:13 - 01-24-2011: sw_re-fire_currently_selected_audio_and_video_source -> 1
+17:40:13 - 01-24-2011: tp1_no_source_subpage_fb -> 0
+17:40:13 - 01-24-2011: relay_3 -> 1
+17:40:13 - 01-24-2011: prj1_warming -> 1
+17:40:13 - 01-24-2011: display_warming -> 1
+17:40:13 - 01-24-2011: allow_please_wait -> 0
+17:40:13 - 01-24-2011: allow_switching_popup -> 0
+17:40:13 - 01-24-2011: tp1_prj_warming -> 1
+17:40:13 - 01-24-2011: popup_please_wait_activate_delayed -> 0
+17:40:13 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:13 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:13 - 01-24-2011: tp1_mode_presentation -> 0
+17:40:13 - 01-24-2011: popup_shutdown_close -> 0
+17:40:13 - 01-24-2011: popup_mode_close -> 0
+17:40:13 - 01-24-2011: popup_mode2_close -> 0
+17:40:13 - 01-24-2011: com_c_rx$ -> Out01 In00 All\x0D\x0AOut02 In00 All\x0D\x0AOut03 In00 All\x0D\x0AOut04 In00 All\x0D\x0AE12\x0D\x0AE12\x0D\x0AE12\x0D\x0AE
+17:40:13 - 01-24-2011: com_d_rx$ -> \x0D\x0A> 
+17:40:13 - 01-24-2011: sw2_rx$ -> Out01 In00 All\x0D\x0AOut02 In00 All\x0D\x0AOut03 In00 All\x0D\x0AOut04 In00 All\x0D\x0AE12\x0D\x0AE12\x0D\x0AE12\x0D\x0AE
+17:40:13 - 01-24-2011: dsp2_rx$ -> \x0D\x0A> 
+17:40:13 - 01-24-2011: send_to_enabled_os -> 0
+17:40:13 - 01-24-2011: sw_re-fire_currently_selected_audio_and_video_source -> 0
+17:40:13 - 01-24-2011: popup_please_wait_active -> 1
+17:40:13 - 01-24-2011: popup_please_wait_active -> 0
+17:40:13 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:13 - 01-24-2011: com_c_rx$ -> 12\x0D\x0A
+17:40:13 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:13 - 01-24-2011: sw2_rx$ -> 12\x0D\x0A
+17:40:13 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:13 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:13 - 01-24-2011: mode_change_to_presentation_os -> 0
+17:40:13 - 01-24-2011: mode_change_to_presentation_from_off -> 0
+17:40:13 - 01-24-2011: page_flip_presentation -> 0
+17:40:13 - 01-24-2011: displays_turn_on -> 0
+17:40:13 - 01-24-2011: clear_presentation_ilk -> 0
+17:40:13 - 01-24-2011: sw_clear_all_routes -> 0
+17:40:13 - 01-24-2011: send_to_enable -> 0
+17:40:13 - 01-24-2011: dsp2_room_mute_off -> 0
+17:40:13 - 01-24-2011: pwr_seq_turn_on -> 0
+17:40:13 - 01-24-2011: prj1_turn_on -> 0
+17:40:13 - 01-24-2011: clear_pulser_ilk -> 0
+17:40:13 - 01-24-2011: sw2_clear_all_routes -> 0
+17:40:13 - 01-24-2011: prj1_power_on -> 0
+17:40:13 - 01-24-2011: prj1_trigger_warmup -> 0
+17:40:13 - 01-24-2011: prj1_screen_dn -> 0
+17:40:13 - 01-24-2011: clock$ -> 012420111940450000
+17:40:13 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:13 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:13 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:13 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:13 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:13 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:13 - 01-24-2011: prj1_screen_dn_os -> 0
+17:40:13 - 01-24-2011: relay_3 -> 0
+17:40:13 - 01-24-2011: prj1_percent_complete -> 1310d
+17:40:13 - 01-24-2011: tp1_prj1_percent_complete -> 1310d
+17:40:13 - 01-24-2011: tp1_prj_percent_complete -> 1310d
+17:40:14 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:14 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:14 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:14 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:14 - 01-24-2011: clock$ -> 012420111940460000
+17:40:14 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:14 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:14 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:14 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:14 - 01-24-2011: prj1_percent_complete -> 2621d
+17:40:14 - 01-24-2011: tp1_prj1_percent_complete -> 2621d
+17:40:14 - 01-24-2011: tp1_prj_percent_complete -> 2621d
+17:40:14 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:14 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:14 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:14 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:15 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:15 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:15 - 01-24-2011: clock$ -> 012420111940470000
+17:40:15 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:15 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:15 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:15 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:15 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:15 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:15 - 01-24-2011: prj1_percent_complete -> 3932d
+17:40:15 - 01-24-2011: tp1_prj1_percent_complete -> 3932d
+17:40:15 - 01-24-2011: tp1_prj_percent_complete -> 3932d
+17:40:16 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:16 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:16 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:16 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:16 - 01-24-2011: clock$ -> 012420111940480000
+17:40:16 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:16 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:16 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:16 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:16 - 01-24-2011: prj1_percent_complete -> 5242d
+17:40:16 - 01-24-2011: tp1_prj1_percent_complete -> 5242d
+17:40:16 - 01-24-2011: tp1_prj_percent_complete -> 5242d
+17:40:16 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:16 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:17 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:17 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:17 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:40:17 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:40:17 - 01-24-2011: clock$ -> 012420111940490000
+17:40:17 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:40:17 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:40:17 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21620\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:40:17 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21620\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:40:17 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:17 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:17 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:17 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:17 - 01-24-2011: dsp2_init -> 1
+17:40:17 - 01-24-2011: dsp2_poll -> 1
+17:40:17 - 01-24-2011: //dsp2_busy_poll -> 1
+17:40:17 - 01-24-2011: dsp2_codec_vol_poll -> 1
+17:40:17 - 01-24-2011: dsp2_tx$ -> #H0 MUTE B P\x0D
+17:40:17 - 01-24-2011: com_d_tx$ -> #H0 MUTE B P\x0D
+17:40:17 - 01-24-2011: dsp2_tx$ -> #H0 GAIN B P\x0D
+17:40:17 - 01-24-2011: com_d_tx$ -> #H0 GAIN B P\x0D
+17:40:17 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:17 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> \x0D\x0AOK> 
+17:40:17 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:17 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> \x0D\x0AOK> 
+17:40:17 - 01-24-2011: prj1_percent_complete -> 6553d
+17:40:17 - 01-24-2011: tp1_prj1_percent_complete -> 6553d
+17:40:17 - 01-24-2011: tp1_prj_percent_complete -> 6553d
+17:40:17 - 01-24-2011: dsp2_init -> 0
+17:40:17 - 01-24-2011: dsp2_poll -> 0
+17:40:17 - 01-24-2011: dsp2_codec_vol_poll -> 0
+17:40:18 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:18 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:18 - 01-24-2011: dsp2_wireless_vol_poll -> 1
+17:40:18 - 01-24-2011: dsp2_tx$ -> #D0 MUTE C P\x0D
+17:40:18 - 01-24-2011: com_d_tx$ -> #D0 MUTE C P\x0D
+17:40:18 - 01-24-2011: dsp2_tx$ -> #D0 GAIN C P\x0D
+17:40:18 - 01-24-2011: com_d_tx$ -> #D0 GAIN C P\x0D
+17:40:18 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:40:18 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:40:18 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:40:18 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:40:18 - 01-24-2011: clock$ -> 012420111940500000
+17:40:18 - 01-24-2011: dsp2_wireless_vol_poll -> 0
+17:40:18 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:18 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:18 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:18 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:18 - 01-24-2011: dsp2_room_vol_poll -> 1
+17:40:18 - 01-24-2011: dsp2_tx$ -> #H0 MUTE A P\x0D
+17:40:18 - 01-24-2011: com_d_tx$ -> #H0 MUTE A P\x0D
+17:40:18 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P\x0D
+17:40:18 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P\x0D
+17:40:18 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> \x0D\x0AOK> 
+17:40:18 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> \x0D\x0AOK> 
+17:40:18 - 01-24-2011: dsp2_room_vol_poll -> 0
+17:40:18 - 01-24-2011: //dsp2_busy_poll -> 0
+17:40:18 - 01-24-2011: prj1_percent_complete -> 7864d
+17:40:18 - 01-24-2011: tp1_prj1_percent_complete -> 7864d
+17:40:18 - 01-24-2011: tp1_prj_percent_complete -> 7864d
+17:40:19 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:19 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:19 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:19 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:19 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:19 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:19 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:19 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:19 - 01-24-2011: clock$ -> 012420111940510000
+17:40:19 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:19 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:19 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:19 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:19 - 01-24-2011: prj1_percent_complete -> 9174d
+17:40:19 - 01-24-2011: tp1_prj1_percent_complete -> 9174d
+17:40:19 - 01-24-2011: tp1_prj_percent_complete -> 9174d
+17:40:20 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:20 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:20 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:20 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:20 - 01-24-2011: clock$ -> 012420111940520000
+17:40:20 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:20 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:20 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:20 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:21 - 01-24-2011: prj1_percent_complete -> 10485d
+17:40:21 - 01-24-2011: tp1_prj1_percent_complete -> 10485d
+17:40:21 - 01-24-2011: tp1_prj_percent_complete -> 10485d
+17:40:21 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:21 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:21 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:21 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:21 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:21 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:21 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:21 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:21 - 01-24-2011: clock$ -> 012420111940530000
+17:40:21 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:21 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:21 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:21 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:21 - 01-24-2011: prj1_percent_complete -> 11796d
+17:40:21 - 01-24-2011: tp1_prj1_percent_complete -> 11796d
+17:40:21 - 01-24-2011: tp1_prj_percent_complete -> 11796d
+17:40:22 - 01-24-2011: dsp2_macro_presentation -> 1
+17:40:22 - 01-24-2011: dsp2_macro -> 2d
+17:40:22 - 01-24-2011: dsp2_fire_macro -> 1
+17:40:22 - 01-24-2011: dsp2_fire_macro_os -> 1
+17:40:22 - 01-24-2011: dsp2_tx$ -> #H0 MACRO 002\x0D
+17:40:22 - 01-24-2011: com_d_tx$ -> #H0 MACRO 002\x0D
+17:40:22 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:40:22 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:40:22 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:22 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:22 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:22 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:22 - 01-24-2011: dsp2_macro_presentation -> 0
+17:40:22 - 01-24-2011: dsp2_fire_macro -> 0
+17:40:22 - 01-24-2011: dsp2_fire_macro_os -> 0
+17:40:22 - 01-24-2011: clock$ -> 012420111940540000
+17:40:22 - 01-24-2011: vtc2_privacy_off -> 1
+17:40:22 - 01-24-2011: vtc2_tx$ -> mute near off\x0D\x0A
+17:40:22 - 01-24-2011: //com_e_tx$ -> mute near off\x0D\x0A
+17:40:22 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:22 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:22 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:22 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:22 - 01-24-2011: vtc2_privacy_off -> 0
+17:40:22 - 01-24-2011: prj1_percent_complete -> 13107d
+17:40:23 - 01-24-2011: tp1_prj1_percent_complete -> 13107d
+17:40:23 - 01-24-2011: tp1_prj_percent_complete -> 13107d
+17:40:23 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:23 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:23 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:23 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:23 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:23 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:23 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:23 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:23 - 01-24-2011: clock$ -> 012420111940550000
+17:40:23 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:23 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:23 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01\x803
+17:40:23 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01\x803
+17:40:23 - 01-24-2011: prj1_percent_complete -> 14417d
+17:40:23 - 01-24-2011: tp1_prj1_percent_complete -> 14417d
+17:40:23 - 01-24-2011: tp1_prj_percent_complete -> 14417d
+17:40:24 - 01-24-2011: prj1_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:24 - 01-24-2011: com_a_tx$ -> \x02\x00\x00\x00\x00\x02
+17:40:24 - 01-24-2011: com_a_rx$ -> "\x00\x01\x10\x003
+17:40:24 - 01-24-2011: prj1_rx$ -> "\x00\x01\x10\x003
+17:40:24 - 01-24-2011: clock$ -> 012420111940560000
+17:40:24 - 01-24-2011: prj1_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:24 - 01-24-2011: com_a_tx$ -> \x00\x81\x00\x00\x00\x81
+17:40:24 - 01-24-2011: com_a_rx$ ->  \x81\x01\x10\x01J\xFD
+17:40:24 - 01-24-2011: prj1_rx$ ->  \x81\x01\x10\x01J\xFD
+17:40:24 - 01-24-2011: prj1_on_fb -> 1
+17:40:24 - 01-24-2011: prj1_on_fb_pulse -> 1
+17:40:24 - 01-24-2011: prj1_off_fb -> 0
+17:40:24 - 01-24-2011: prj1_trigger_warmup -> 1
+17:40:24 - 01-24-2011: prj1_screen_dn -> 1
+17:40:24 - 01-24-2011: prj1_screen_dn_os -> 1
+17:40:24 - 01-24-2011: relay_3 -> 1
+17:40:24 - 01-24-2011: airwall_fire_macro -> 1
+17:40:24 - 01-24-2011: dsp2_macro_uncombine -> 1
+17:40:24 - 01-24-2011: dsp2_macro -> 8d
+17:40:24 - 01-24-2011: dsp2_fire_macro -> 1
+17:40:24 - 01-24-2011: dsp2_fire_macro_os -> 1
+17:40:24 - 01-24-2011: dsp2_tx$ -> #H0 MACRO 008\x0D
+17:40:24 - 01-24-2011: com_d_tx$ -> #H0 MACRO 008\x0D
+17:40:24 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:40:24 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:40:24 - 01-24-2011: prj1_on_fb_pulse -> 0
+17:40:24 - 01-24-2011: prj1_trigger_warmup -> 0
+17:40:24 - 01-24-2011: prj1_screen_dn -> 0
+17:40:24 - 01-24-2011: airwall_fire_macro -> 0
+17:40:24 - 01-24-2011: dsp2_macro_uncombine -> 0
+17:40:24 - 01-24-2011: dsp2_fire_macro -> 0
+17:40:24 - 01-24-2011: dsp2_fire_macro_os -> 0
+17:40:24 - 01-24-2011: prj1_percent_complete -> 15728d
+17:40:24 - 01-24-2011: tp1_prj1_percent_complete -> 15728d
+17:40:24 - 01-24-2011: tp1_prj_percent_complete -> 15728d
+17:40:25 - 01-24-2011: system_state_change_to_on -> 1
+17:40:25 - 01-24-2011: system_state_is_off -> 0
+17:40:25 - 01-24-2011: system_state_is_on -> 1
+17:40:25 - 01-24-2011: vtc_external_in_request_system_state_is_off -> 0
+17:40:25 - 01-24-2011: allow_9pm_shutdown -> 1
+17:40:25 - 01-24-2011: vtc_allow_autostart -> 0
+17:40:25 - 01-24-2011: system_state_change_to_on -> 0
+17:40:25 - 01-24-2011: busy_presentation_commands -> 0
+17:40:25 - 01-24-2011: popup_please_wait_activate -> 0
+17:40:25 - 01-24-2011: clock$ -> 012420111940570000
+17:40:25 - 01-24-2011: prj1_screen_dn_os -> 0
+17:40:25 - 01-24-2011: relay_3 -> 0
+17:40:25 - 01-24-2011: prj1_percent_complete -> 17039d
+17:40:25 - 01-24-2011: tp1_prj1_percent_complete -> 17039d
+17:40:25 - 01-24-2011: tp1_prj_percent_complete -> 17039d
+17:40:26 - 01-24-2011: clock$ -> 012420111940580000
+17:40:26 - 01-24-2011: prj1_percent_complete -> 18349d
+17:40:26 - 01-24-2011: tp1_prj1_percent_complete -> 18349d
+17:40:26 - 01-24-2011: tp1_prj_percent_complete -> 18349d
+17:40:27 - 01-24-2011: clock$ -> 012420111940590000
+17:40:27 - 01-24-2011: prj1_percent_complete -> 19660d
+17:40:27 - 01-24-2011: tp1_prj1_percent_complete -> 19660d
+17:40:27 - 01-24-2011: tp1_prj_percent_complete -> 19660d
+17:40:28 - 01-24-2011: clock$ -> 012420111941000000
+17:40:28 - 01-24-2011: prj1_percent_complete -> 20971d
+17:40:28 - 01-24-2011: tp1_prj1_percent_complete -> 20971d
+17:40:28 - 01-24-2011: tp1_prj_percent_complete -> 20971d
+17:40:29 - 01-24-2011: clock$ -> 012420111941010000
+17:40:29 - 01-24-2011: prj1_percent_complete -> 22281d
+17:40:29 - 01-24-2011: tp1_prj1_percent_complete -> 22281d
+17:40:29 - 01-24-2011: tp1_prj_percent_complete -> 22281d
+17:40:30 - 01-24-2011: clock$ -> 012420111941020000
+17:40:30 - 01-24-2011: prj1_percent_complete -> 23592d
+17:40:30 - 01-24-2011: tp1_prj1_percent_complete -> 23592d
+17:40:30 - 01-24-2011: tp1_prj_percent_complete -> 23592d
+17:40:31 - 01-24-2011: clock$ -> 012420111941020000
+17:40:31 - 01-24-2011: prj1_percent_complete -> 24903d
+17:40:31 - 01-24-2011: tp1_prj1_percent_complete -> 24903d
+17:40:31 - 01-24-2011: tp1_prj_percent_complete -> 24903d
+17:40:32 - 01-24-2011: clock$ -> 012420111941030000
+17:40:32 - 01-24-2011: prj1_percent_complete -> 26214d
+17:40:32 - 01-24-2011: tp1_prj1_percent_complete -> 26214d
+17:40:32 - 01-24-2011: tp1_prj_percent_complete -> 26214d
+17:40:33 - 01-24-2011: clock$ -> 012420111941040000
+17:40:33 - 01-24-2011: prj1_percent_complete -> 27524d
+17:40:33 - 01-24-2011: tp1_prj1_percent_complete -> 27524d
+17:40:33 - 01-24-2011: tp1_prj_percent_complete -> 27524d
+17:40:34 - 01-24-2011: clock$ -> 012420111941050000
+17:40:34 - 01-24-2011: prj1_percent_complete -> 28835d
+17:40:34 - 01-24-2011: tp1_prj1_percent_complete -> 28835d
+17:40:34 - 01-24-2011: tp1_prj_percent_complete -> 28835d
+17:40:35 - 01-24-2011: clock$ -> 012420111941060000
+17:40:35 - 01-24-2011: prj1_percent_complete -> 30146d
+17:40:35 - 01-24-2011: tp1_prj1_percent_complete -> 30146d
+17:40:35 - 01-24-2011: tp1_prj_percent_complete -> 30146d
+17:40:36 - 01-24-2011: clock$ -> 012420111941070000
+17:40:36 - 01-24-2011: prj1_percent_complete -> 31456d
+17:40:36 - 01-24-2011: tp1_prj1_percent_complete -> 31456d
+17:40:36 - 01-24-2011: tp1_prj_percent_complete -> 31456d
+17:40:37 - 01-24-2011: clock$ -> 012420111941080000
+17:40:37 - 01-24-2011: prj1_percent_complete -> 32767d
+17:40:37 - 01-24-2011: tp1_prj1_percent_complete -> 32767d
+17:40:37 - 01-24-2011: tp1_prj_percent_complete -> 32767d
+17:40:38 - 01-24-2011: clock$ -> 012420111941090000
+17:40:38 - 01-24-2011: prj1_percent_complete -> 34078d
+17:40:38 - 01-24-2011: tp1_prj1_percent_complete -> 34078d
+17:40:38 - 01-24-2011: tp1_prj_percent_complete -> 34078d
+17:40:39 - 01-24-2011: clock$ -> 012420111941100000
+17:40:39 - 01-24-2011: prj1_percent_complete -> 35388d
+17:40:39 - 01-24-2011: tp1_prj1_percent_complete -> 35388d
+17:40:39 - 01-24-2011: tp1_prj_percent_complete -> 35388d
+17:40:40 - 01-24-2011: clock$ -> 012420111941110000
+17:40:40 - 01-24-2011: prj1_percent_complete -> 36699d
+17:40:40 - 01-24-2011: tp1_prj1_percent_complete -> 36699d
+17:40:40 - 01-24-2011: tp1_prj_percent_complete -> 36699d
+17:40:41 - 01-24-2011: clock$ -> 012420111941120000
+17:40:41 - 01-24-2011: prj1_percent_complete -> 38010d
+17:40:41 - 01-24-2011: tp1_prj1_percent_complete -> 38010d
+17:40:41 - 01-24-2011: tp1_prj_percent_complete -> 38010d
+17:40:42 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:40:42 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:40:42 - 01-24-2011: clock$ -> 012420111941130000
+17:40:42 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:40:42 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:40:42 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Up
+17:40:42 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Up
+17:40:42 - 01-24-2011: com_e_rx$ -> time: 21645\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:40:42 - 01-24-2011: vtc1_rx$ -> time: 21645\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:40:42 - 01-24-2011: prj1_percent_complete -> 39321d
+17:40:42 - 01-24-2011: tp1_prj1_percent_complete -> 39321d
+17:40:42 - 01-24-2011: tp1_prj_percent_complete -> 39321d
+17:40:43 - 01-24-2011: clock$ -> 012420111941140000
+17:40:43 - 01-24-2011: prj1_percent_complete -> 40631d
+17:40:43 - 01-24-2011: tp1_prj1_percent_complete -> 40631d
+17:40:43 - 01-24-2011: tp1_prj_percent_complete -> 40631d
+17:40:44 - 01-24-2011: clock$ -> 012420111941150000
+17:40:44 - 01-24-2011: prj1_percent_complete -> 41942d
+17:40:44 - 01-24-2011: tp1_prj1_percent_complete -> 41942d
+17:40:44 - 01-24-2011: tp1_prj_percent_complete -> 41942d
+17:40:45 - 01-24-2011: clock$ -> 012420111941160000
+17:40:45 - 01-24-2011: prj1_percent_complete -> 43253d
+17:40:45 - 01-24-2011: tp1_prj1_percent_complete -> 43253d
+17:40:45 - 01-24-2011: tp1_prj_percent_complete -> 43253d
+17:40:46 - 01-24-2011: clock$ -> 012420111941170000
+17:40:46 - 01-24-2011: prj1_percent_complete -> 44563d
+17:40:46 - 01-24-2011: tp1_prj1_percent_complete -> 44563d
+17:40:46 - 01-24-2011: tp1_prj_percent_complete -> 44563d
+17:40:47 - 01-24-2011: clock$ -> 012420111941180000
+17:40:47 - 01-24-2011: prj1_percent_complete -> 45874d
+17:40:47 - 01-24-2011: tp1_prj1_percent_complete -> 45874d
+17:40:47 - 01-24-2011: tp1_prj_percent_complete -> 45874d
+17:40:48 - 01-24-2011: clock$ -> 012420111941190000
+17:40:48 - 01-24-2011: prj1_percent_complete -> 47185d
+17:40:48 - 01-24-2011: tp1_prj1_percent_complete -> 47185d
+17:40:48 - 01-24-2011: tp1_prj_percent_complete -> 47185d
+17:40:49 - 01-24-2011: clock$ -> 012420111941200000
+17:40:49 - 01-24-2011: prj1_percent_complete -> 48495d
+17:40:49 - 01-24-2011: tp1_prj1_percent_complete -> 48495d
+17:40:49 - 01-24-2011: tp1_prj_percent_complete -> 48495d
+17:40:50 - 01-24-2011: clock$ -> 012420111941210000
+17:40:50 - 01-24-2011: prj1_percent_complete -> 49806d
+17:40:50 - 01-24-2011: tp1_prj1_percent_complete -> 49806d
+17:40:50 - 01-24-2011: tp1_prj_percent_complete -> 49806d
+17:40:51 - 01-24-2011: clock$ -> 012420111941220000
+17:40:51 - 01-24-2011: prj1_percent_complete -> 51117d
+17:40:51 - 01-24-2011: tp1_prj1_percent_complete -> 51117d
+17:40:51 - 01-24-2011: tp1_prj_percent_complete -> 51117d
+17:40:52 - 01-24-2011: clock$ -> 012420111941230000
+17:40:52 - 01-24-2011: prj1_percent_complete -> 52428d
+17:40:52 - 01-24-2011: tp1_prj1_percent_complete -> 52428d
+17:40:52 - 01-24-2011: tp1_prj_percent_complete -> 52428d
+17:40:53 - 01-24-2011: clock$ -> 012420111941240000
+17:40:53 - 01-24-2011: prj1_percent_complete -> 53738d
+17:40:53 - 01-24-2011: tp1_prj1_percent_complete -> 53738d
+17:40:53 - 01-24-2011: tp1_prj_percent_complete -> 53738d
+17:40:54 - 01-24-2011: clock$ -> 012420111941250000
+17:40:54 - 01-24-2011: prj1_percent_complete -> 55049d
+17:40:54 - 01-24-2011: tp1_prj1_percent_complete -> 55049d
+17:40:54 - 01-24-2011: tp1_prj_percent_complete -> 55049d
+17:40:55 - 01-24-2011: clock$ -> 012420111941260000
+17:40:55 - 01-24-2011: prj1_percent_complete -> 56360d
+17:40:55 - 01-24-2011: tp1_prj1_percent_complete -> 56360d
+17:40:55 - 01-24-2011: tp1_prj_percent_complete -> 56360d
+17:40:56 - 01-24-2011: clock$ -> 012420111941270000
+17:40:56 - 01-24-2011: prj1_percent_complete -> 57670d
+17:40:56 - 01-24-2011: tp1_prj1_percent_complete -> 57670d
+17:40:56 - 01-24-2011: tp1_prj_percent_complete -> 57670d
+17:40:57 - 01-24-2011: clock$ -> 012420111941280000
+17:40:57 - 01-24-2011: prj1_percent_complete -> 58981d
+17:40:57 - 01-24-2011: tp1_prj1_percent_complete -> 58981d
+17:40:57 - 01-24-2011: tp1_prj_percent_complete -> 58981d
+17:40:58 - 01-24-2011: clock$ -> 012420111941290000
+17:40:58 - 01-24-2011: prj1_percent_complete -> 60292d
+17:40:58 - 01-24-2011: tp1_prj1_percent_complete -> 60292d
+17:40:58 - 01-24-2011: tp1_prj_percent_complete -> 60292d
+17:40:59 - 01-24-2011: clock$ -> 012420111941300000
+17:40:59 - 01-24-2011: prj1_percent_complete -> 61602d
+17:40:59 - 01-24-2011: tp1_prj1_percent_complete -> 61602d
+17:40:59 - 01-24-2011: tp1_prj_percent_complete -> 61602d
+17:41:00 - 01-24-2011: clock$ -> 012420111941310000
+17:41:00 - 01-24-2011: prj1_percent_complete -> 62913d
+17:41:00 - 01-24-2011: tp1_prj1_percent_complete -> 62913d
+17:41:00 - 01-24-2011: tp1_prj_percent_complete -> 62913d
+17:41:01 - 01-24-2011: clock$ -> 012420111941320000
+17:41:01 - 01-24-2011: prj1_percent_complete -> 64224d
+17:41:01 - 01-24-2011: tp1_prj1_percent_complete -> 64224d
+17:41:01 - 01-24-2011: tp1_prj_percent_complete -> 64224d
+17:41:02 - 01-24-2011: clock$ -> 012420111941330000
+17:41:03 - 01-24-2011: prj1_percent_complete -> 65535d
+17:41:03 - 01-24-2011: prj1_warming -> 0
+17:41:03 - 01-24-2011: tp1_prj1_percent_complete -> 65535d
+17:41:03 - 01-24-2011: display_warming -> 0
+17:41:03 - 01-24-2011: tp1_prj_percent_complete -> 65535d
+17:41:03 - 01-24-2011: allow_please_wait -> 1
+17:41:03 - 01-24-2011: allow_switching_popup -> 1
+17:41:03 - 01-24-2011: allow_src_subpages -> 1
+17:41:03 - 01-24-2011: allow_call_control_subpages -> 1
+17:41:03 - 01-24-2011: tp1_prj_warming -> 0
+17:41:03 - 01-24-2011: tp1_no_source_subpage_fb -> 1
+17:41:03 - 01-24-2011: tand_remote_subpage_fb -> 1
+17:41:03 - 01-24-2011: prj1_percent_complete -> 0d
+17:41:03 - 01-24-2011: tp1_tand_remote_subpage_fb -> 1
+17:41:03 - 01-24-2011: tand_remote_tab1_subpage_fb -> 1
+17:41:03 - 01-24-2011: tp1_prj1_percent_complete -> 0d
+17:41:03 - 01-24-2011: tp1_tand_remote_tab1_subpage_fb -> 1
+17:41:03 - 01-24-2011: tp1_prj_percent_complete -> 0d
+17:41:03 - 01-24-2011: clock$ -> 012420111941340000
+17:41:04 - 01-24-2011: clock$ -> 012420111941350000
+17:41:05 - 01-24-2011: clock$ -> 012420111941360000
+17:41:06 - 01-24-2011: clock$ -> 012420111941370000
+17:41:07 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:07 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:07 - 01-24-2011: clock$ -> 012420111941380000
+17:41:07 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:41:07 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:41:07 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21670\x0D\x0A** 
+17:41:07 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21670\x0D\x0A** 
+17:41:07 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:41:07 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:41:08 - 01-24-2011: clock$ -> 012420111941390000
+17:41:09 - 01-24-2011: clock$ -> 012420111941400000
+17:41:10 - 01-24-2011: clock$ -> 012420111941410000
+17:41:11 - 01-24-2011: clock$ -> 012420111941420000
+17:41:12 - 01-24-2011: clock$ -> 012420111941430000
+17:41:13 - 01-24-2011: clock$ -> 012420111941440000
+17:41:14 - 01-24-2011: clock$ -> 012420111941450000
+17:41:15 - 01-24-2011: clock$ -> 012420111941460000
+17:41:16 - 01-24-2011: clock$ -> 012420111941470000
+17:41:16 - 01-24-2011: tp1_sat1 -> 1
+17:41:16 - 01-24-2011: clear_pulser_ilk -> 1
+17:41:17 - 01-24-2011: sat1_selected -> 1
+17:41:17 - 01-24-2011: tp1_sat1_os -> 1
+17:41:17 - 01-24-2011: tp1_sat1_is_selected -> 1
+17:41:17 - 01-24-2011: no_source_is_selected -> 0
+17:41:17 - 01-24-2011: tp1_sat1_subpage_fb -> 1
+17:41:17 - 01-24-2011: sw_sat1_send_to_all_displays? -> 1
+17:41:17 - 01-24-2011: tp1_no_source_subpage_fb -> 0
+17:41:17 - 01-24-2011: tp1_hard_btns_ctrl_sat1 -> 1
+17:41:17 - 01-24-2011: sw_sat1_to_display(s) -> 1
+17:41:17 - 01-24-2011: busy_sw_sat1_to_display(s) -> 1
+17:41:17 - 01-24-2011: switching_busy_bar -> 0d
+17:41:17 - 01-24-2011: popup_switching_activate -> 1
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 0d
+17:41:17 - 01-24-2011: popup_switching_activate_stretched -> 1
+17:41:17 - 01-24-2011: popup_switching_active -> 1
+17:41:17 - 01-24-2011: switching_busy_bar -> 1638d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 1638d
+17:41:17 - 01-24-2011: switching_busy_bar -> 6553d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 6553d
+17:41:17 - 01-24-2011: tp1_sat1 -> 0
+17:41:17 - 01-24-2011: clear_pulser_ilk -> 0
+17:41:17 - 01-24-2011: switching_busy_bar -> 11468d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 11468d
+17:41:17 - 01-24-2011: tp1_sat1_os -> 0
+17:41:17 - 01-24-2011: sw_sat1_send_to_all_displays? -> 0
+17:41:17 - 01-24-2011: sw_sat1_to_display(s) -> 0
+17:41:17 - 01-24-2011: switching_busy_bar -> 15564d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 15564d
+17:41:17 - 01-24-2011: switching_busy_bar -> 19660d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 19660d
+17:41:17 - 01-24-2011: switching_busy_bar -> 23756d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 23756d
+17:41:17 - 01-24-2011: sw_cmd_sat1_to_display(s)_vga -> 1
+17:41:17 - 01-24-2011: sw2_cmd_sat1_to_display(s)_vga -> 1
+17:41:17 - 01-24-2011: sw2_tx$ -> 3*1!
+17:41:17 - 01-24-2011: com_c_tx$ -> 3*1!
+17:41:17 - 01-24-2011: switching_busy_bar -> 27852d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 27852d
+17:41:17 - 01-24-2011: com_c_rx$ -> Out01 In03 All\x0D\x0A
+17:41:17 - 01-24-2011: sw2_rx$ -> Out01 In03 All\x0D\x0A
+17:41:17 - 01-24-2011: switching_busy_bar -> 31948d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 31948d
+17:41:17 - 01-24-2011: clock$ -> 012420111941480000
+17:41:17 - 01-24-2011: switching_busy_bar -> 36863d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 36863d
+17:41:17 - 01-24-2011: switching_busy_bar -> 41778d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 41778d
+17:41:17 - 01-24-2011: sw_cmd_sat1_to_display(s)_vga -> 0
+17:41:17 - 01-24-2011: sw2_cmd_sat1_to_display(s)_vga -> 0
+17:41:17 - 01-24-2011: switching_busy_bar -> 46693d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 46693d
+17:41:17 - 01-24-2011: switching_busy_bar -> 51608d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 51608d
+17:41:17 - 01-24-2011: prj1_input_vga -> 1
+17:41:17 - 01-24-2011: prj1_tx$ -> \x02\x03\x00\x00\x02\x01\x01\x09
+17:41:17 - 01-24-2011: com_a_tx$ -> \x02\x03\x00\x00\x02\x01\x01\x09
+17:41:17 - 01-24-2011: switching_busy_bar -> 58981d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 58981d
+17:41:17 - 01-24-2011: switching_busy_bar -> 59800d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 59800d
+17:41:17 - 01-24-2011: com_a_rx$ -> "\x03\x01\x10\x01\x007
+17:41:17 - 01-24-2011: prj1_rx$ -> "\x03\x01\x10\x01\x007
+17:41:17 - 01-24-2011: switching_busy_bar -> 65535d
+17:41:17 - 01-24-2011: tp1_switching_busy_bar -> 65535d
+17:41:17 - 01-24-2011: prj1_input_vga -> 0
+17:41:17 - 01-24-2011: busy_sw_sat1_to_display(s) -> 0
+17:41:17 - 01-24-2011: popup_switching_activate -> 0
+17:41:18 - 01-24-2011: prj1_tx$ -> \x00\x85\x00\x00\x01\x02\x88
+17:41:18 - 01-24-2011: com_a_tx$ -> \x00\x85\x00\x00\x01\x02\x88
+17:41:18 - 01-24-2011: com_a_rx$ ->  \x85\x01\x10\x10\x01\xFF\x01
+17:41:18 - 01-24-2011: prj1_rx$ ->  \x85\x01\x10\x10\x01\xFF\x01
+17:41:18 - 01-24-2011: com_a_rx$ -> \x01\xFF\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\xC9
+17:41:18 - 01-24-2011: prj1_rx$ -> \x01\xFF\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\xC9
+17:41:18 - 01-24-2011: clock$ -> 012420111941490000
+17:41:18 - 01-24-2011: popup_switching_activate_stretched -> 0
+17:41:18 - 01-24-2011: popup_switching_active -> 0
+17:41:19 - 01-24-2011: clock$ -> 012420111941500000
+17:41:20 - 01-24-2011: clock$ -> 012420111941510000
+17:41:20 - 01-24-2011: tp1_room_vol_dn -> 1
+17:41:20 - 01-24-2011: popup_volume_activity -> 1
+17:41:20 - 01-24-2011: dsp2_room_vol_dn -> 1
+17:41:20 - 01-24-2011: dsp2_room_vol_bar -> 0d
+17:41:20 - 01-24-2011: tp1_room_vol_bar -> 0d
+17:41:20 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:20 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:20 - 01-24-2011: dsp2_room_vol_bar -> 0d
+17:41:20 - 01-24-2011: tp1_room_vol_bar -> 0d
+17:41:20 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:20 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:21 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:21 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:21 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:21 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:21 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:21 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:21 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:21 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:21 - 01-24-2011: tp1_room_vol_dn -> 0
+17:41:21 - 01-24-2011: popup_volume_activity -> 0
+17:41:21 - 01-24-2011: dsp2_room_vol_dn -> 0
+17:41:21 - 01-24-2011: clock$ -> 012420111941520000
+17:41:21 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:21 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:21 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:21 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: tp1_room_vol_up -> 1
+17:41:22 - 01-24-2011: popup_volume_activity -> 1
+17:41:22 - 01-24-2011: dsp2_room_vol_up -> 1
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 0d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 0d
+17:41:22 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:22 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 234d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 234d
+17:41:22 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 280d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 280d
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 514d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 514d
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 748d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 748d
+17:41:22 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:22 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -65 A\x0D
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 1029d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 1029d
+17:41:22 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 1263d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 1263d
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 1497d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 1497d
+17:41:22 - 01-24-2011: clock$ -> 012420111941530000
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 1825d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 1825d
+17:41:22 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -63 A\x0D
+17:41:22 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -63 A\x0D
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 2059d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 2059d
+17:41:22 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 2293d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 2293d
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 2527d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 2527d
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 2761d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 2761d
+17:41:22 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -62 A\x0D
+17:41:22 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -62 A\x0D
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 3042d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 3042d
+17:41:22 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 3276d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 3276d
+17:41:22 - 01-24-2011: dsp2_room_vol_bar -> 3510d
+17:41:22 - 01-24-2011: tp1_room_vol_bar -> 3510d
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 3744d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 3744d
+17:41:23 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -61 A\x0D
+17:41:23 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -61 A\x0D
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 4072d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 4072d
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 4212d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 4212d
+17:41:23 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 4447d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 4447d
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 4727d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 4727d
+17:41:23 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -59 A\x0D
+17:41:23 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -59 A\x0D
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 4961d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 4961d
+17:41:23 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 5242d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 5242d
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 5476d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 5476d
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 5710d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 5710d
+17:41:23 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -58 A\x0D
+17:41:23 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -58 A\x0D
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 5944d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 5944d
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 6179d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 6179d
+17:41:23 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 6413d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 6413d
+17:41:23 - 01-24-2011: clock$ -> 012420111941540000
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 6693d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 6693d
+17:41:23 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -57 A\x0D
+17:41:23 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -57 A\x0D
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 6974d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 6974d
+17:41:23 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 7208d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 7208d
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 7442d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 7442d
+17:41:23 - 01-24-2011: tp1_room_vol_up -> 0
+17:41:23 - 01-24-2011: popup_volume_activity -> 0
+17:41:23 - 01-24-2011: dsp2_room_vol_up -> 0
+17:41:23 - 01-24-2011: dsp2_room_vol_bar -> 7630d
+17:41:23 - 01-24-2011: tp1_room_vol_bar -> 7630d
+17:41:23 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -55 A\x0D
+17:41:23 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -55 A\x0D
+17:41:23 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:23 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:24 - 01-24-2011: clock$ -> 012420111941550000
+17:41:24 - 01-24-2011: tp1_room_vol_up -> 1
+17:41:24 - 01-24-2011: popup_volume_activity -> 1
+17:41:24 - 01-24-2011: dsp2_room_vol_up -> 1
+17:41:24 - 01-24-2011: dsp2_room_vol_bar -> 7630d
+17:41:24 - 01-24-2011: tp1_room_vol_bar -> 7630d
+17:41:24 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -55 A\x0D
+17:41:24 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -55 A\x0D
+17:41:24 - 01-24-2011: dsp2_room_vol_bar -> 7676d
+17:41:24 - 01-24-2011: tp1_room_vol_bar -> 7676d
+17:41:24 - 01-24-2011: dsp2_room_vol_bar -> 7910d
+17:41:24 - 01-24-2011: tp1_room_vol_bar -> 7910d
+17:41:24 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:24 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:24 - 01-24-2011: dsp2_room_vol_bar -> 8098d
+17:41:24 - 01-24-2011: tp1_room_vol_bar -> 8098d
+17:41:24 - 01-24-2011: dsp2_room_vol_bar -> 8378d
+17:41:24 - 01-24-2011: tp1_room_vol_bar -> 8378d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 8659d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 8659d
+17:41:25 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -54 A\x0D
+17:41:25 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -54 A\x0D
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 8893d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 8893d
+17:41:25 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 9127d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 9127d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 9408d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 9408d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 9642d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 9642d
+17:41:25 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -53 A\x0D
+17:41:25 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -53 A\x0D
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 9876d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 9876d
+17:41:25 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 10204d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 10204d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 10345d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 10345d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 10579d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 10579d
+17:41:25 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -52 A\x0D
+17:41:25 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -52 A\x0D
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 10859d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 10859d
+17:41:25 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 11094d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 11094d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 11328d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 11328d
+17:41:25 - 01-24-2011: clock$ -> 012420111941560000
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 11562d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 11562d
+17:41:25 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -50 A\x0D
+17:41:25 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -50 A\x0D
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 11842d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 11842d
+17:41:25 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 12030d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 12030d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 12264d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 12264d
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 12498d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 12498d
+17:41:25 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:25 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:25 - 01-24-2011: tp1_room_vol_up -> 0
+17:41:25 - 01-24-2011: popup_volume_activity -> 0
+17:41:25 - 01-24-2011: dsp2_room_vol_up -> 0
+17:41:25 - 01-24-2011: dsp2_room_vol_bar -> 12685d
+17:41:25 - 01-24-2011: tp1_room_vol_bar -> 12685d
+17:41:25 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:25 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:26 - 01-24-2011: clock$ -> 012420111941570000
+17:41:26 - 01-24-2011: tp1_room_vol_up -> 1
+17:41:26 - 01-24-2011: popup_volume_activity -> 1
+17:41:26 - 01-24-2011: dsp2_room_vol_up -> 1
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 12685d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 12685d
+17:41:26 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:26 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 12731d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 12731d
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 12965d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 12965d
+17:41:26 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:26 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 13199d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 13199d
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 13433d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 13433d
+17:41:26 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -48 A\x0D
+17:41:26 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -48 A\x0D
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 13761d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 13761d
+17:41:26 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:26 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 13948d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 13948d
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 14136d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 14136d
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 14370d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 14370d
+17:41:26 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -47 A\x0D
+17:41:26 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -47 A\x0D
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 14697d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 14697d
+17:41:26 - 01-24-2011: dsp2_room_vol_bar -> 14838d
+17:41:26 - 01-24-2011: tp1_room_vol_bar -> 14838d
+17:41:27 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: dsp2_room_vol_bar -> 15166d
+17:41:27 - 01-24-2011: tp1_room_vol_bar -> 15166d
+17:41:27 - 01-24-2011: dsp2_room_vol_bar -> 15306d
+17:41:27 - 01-24-2011: tp1_room_vol_bar -> 15306d
+17:41:27 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:27 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:27 - 01-24-2011: dsp2_room_vol_bar -> 15680d
+17:41:27 - 01-24-2011: tp1_room_vol_bar -> 15680d
+17:41:27 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: tp1_room_vol_up -> 0
+17:41:27 - 01-24-2011: popup_volume_activity -> 0
+17:41:27 - 01-24-2011: dsp2_room_vol_up -> 0
+17:41:27 - 01-24-2011: dsp2_room_vol_bar -> 15868d
+17:41:27 - 01-24-2011: tp1_room_vol_bar -> 15868d
+17:41:27 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:27 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:27 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: clock$ -> 012420111941580000
+17:41:27 - 01-24-2011: tp1_room_mute_toggle -> 1
+17:41:27 - 01-24-2011: popup_volume_activity -> 1
+17:41:27 - 01-24-2011: dsp2_room_mute_toggle -> 1
+17:41:27 - 01-24-2011: dsp2_tx$ -> #H0 MUTE A P 2\x0D
+17:41:27 - 01-24-2011: dsp2_room_mute_fb -> 1
+17:41:27 - 01-24-2011: com_d_tx$ -> #H0 MUTE A P 2\x0D
+17:41:27 - 01-24-2011: tp1_dsp2_room_mute_fb -> 1
+17:41:27 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:27 - 01-24-2011: tp1_room_mute_toggle -> 0
+17:41:27 - 01-24-2011: popup_volume_activity -> 0
+17:41:27 - 01-24-2011: dsp2_room_mute_toggle -> 0
+17:41:28 - 01-24-2011: tp1_room_mute_toggle -> 1
+17:41:28 - 01-24-2011: popup_volume_activity -> 1
+17:41:28 - 01-24-2011: dsp2_room_mute_toggle -> 1
+17:41:28 - 01-24-2011: dsp2_tx$ -> #H0 MUTE A P 2\x0D
+17:41:28 - 01-24-2011: dsp2_room_mute_fb -> 0
+17:41:28 - 01-24-2011: com_d_tx$ -> #H0 MUTE A P 2\x0D
+17:41:28 - 01-24-2011: tp1_dsp2_room_mute_fb -> 0
+17:41:28 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:28 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:28 - 01-24-2011: tp1_room_mute_toggle -> 0
+17:41:28 - 01-24-2011: popup_volume_activity -> 0
+17:41:28 - 01-24-2011: dsp2_room_mute_toggle -> 0
+17:41:28 - 01-24-2011: clock$ -> 012420111941590000
+17:41:29 - 01-24-2011: tp1_room_vol_dn -> 1
+17:41:29 - 01-24-2011: popup_volume_activity -> 1
+17:41:29 - 01-24-2011: dsp2_room_vol_dn -> 1
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 15868d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 15868d
+17:41:29 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:29 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 15634d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 15634d
+17:41:29 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 15493d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 15493d
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 15258d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 15258d
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 15023d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 15023d
+17:41:29 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -46 A\x0D
+17:41:29 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -46 A\x0D
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 14789d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 14789d
+17:41:29 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 14554d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 14554d
+17:41:29 - 01-24-2011: clock$ -> 012420111942000000
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 14319d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 14319d
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 14085d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 14085d
+17:41:29 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -47 A\x0D
+17:41:29 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -47 A\x0D
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 13850d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 13850d
+17:41:29 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 13615d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 13615d
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 13380d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 13380d
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 13146d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 13146d
+17:41:29 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -48 A\x0D
+17:41:29 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -48 A\x0D
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 12864d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 12864d
+17:41:29 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 12629d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 12629d
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 12441d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 12441d
+17:41:29 - 01-24-2011: dsp2_room_vol_bar -> 12207d
+17:41:29 - 01-24-2011: tp1_room_vol_bar -> 12207d
+17:41:29 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:29 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:30 - 01-24-2011: dsp2_room_vol_bar -> 11925d
+17:41:30 - 01-24-2011: tp1_room_vol_bar -> 11925d
+17:41:30 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:30 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:30 - 01-24-2011: dsp2_room_vol_bar -> 11690d
+17:41:30 - 01-24-2011: tp1_room_vol_bar -> 11690d
+17:41:30 - 01-24-2011: tp1_room_vol_dn -> 0
+17:41:30 - 01-24-2011: popup_volume_activity -> 0
+17:41:30 - 01-24-2011: dsp2_room_vol_dn -> 0
+17:41:30 - 01-24-2011: dsp2_room_vol_bar -> 11596d
+17:41:30 - 01-24-2011: tp1_room_vol_bar -> 11596d
+17:41:30 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -50 A\x0D
+17:41:30 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -50 A\x0D
+17:41:30 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:30 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:30 - 01-24-2011: clock$ -> 012420111942010000
+17:41:31 - 01-24-2011: clock$ -> 012420111942020000
+17:41:32 - 01-24-2011: clock$ -> 012420111942030000
+17:41:32 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:32 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:32 - 01-24-2011: com_e_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:32 - 01-24-2011: vtc1_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:32 - 01-24-2011: com_e_rx$ -> *s SystemUnit Uptime: 21695\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:41:32 - 01-24-2011: vtc1_rx$ -> *s SystemUnit Uptime: 21695\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:41:33 - 01-24-2011: tp1_room_vol_up -> 1
+17:41:33 - 01-24-2011: popup_volume_activity -> 1
+17:41:33 - 01-24-2011: dsp2_room_vol_up -> 1
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 11596d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 11596d
+17:41:33 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -50 A\x0D
+17:41:33 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -50 A\x0D
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 11642d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 11642d
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 11876d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 11876d
+17:41:33 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:33 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 12064d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 12064d
+17:41:33 - 01-24-2011: clock$ -> 012420111942040000
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 12345d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 12345d
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 12579d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 12579d
+17:41:33 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:33 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -49 A\x0D
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 12813d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 12813d
+17:41:33 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:33 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 13047d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 13047d
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 13328d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 13328d
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 13562d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 13562d
+17:41:33 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -48 A\x0D
+17:41:33 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -48 A\x0D
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 13796d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 13796d
+17:41:33 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:33 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 14124d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 14124d
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 14311d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 14311d
+17:41:33 - 01-24-2011: dsp2_room_vol_bar -> 14592d
+17:41:33 - 01-24-2011: tp1_room_vol_bar -> 14592d
+17:41:34 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -46 A\x0D
+17:41:34 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -46 A\x0D
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 14826d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 14826d
+17:41:34 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 15060d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 15060d
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 15341d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 15341d
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 15575d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 15575d
+17:41:34 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:34 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -45 A\x0D
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 15809d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 15809d
+17:41:34 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 16044d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 16044d
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 16278d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 16278d
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 16512d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 16512d
+17:41:34 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -44 A\x0D
+17:41:34 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -44 A\x0D
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 16793d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 16793d
+17:41:34 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: clock$ -> 012420111942050000
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 17027d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 17027d
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 17261d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 17261d
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 17495d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 17495d
+17:41:34 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -43 A\x0D
+17:41:34 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -43 A\x0D
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 17729d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 17729d
+17:41:34 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 17963d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 17963d
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 18197d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 18197d
+17:41:34 - 01-24-2011: tp1_room_vol_up -> 0
+17:41:34 - 01-24-2011: popup_volume_activity -> 0
+17:41:34 - 01-24-2011: dsp2_room_vol_up -> 0
+17:41:34 - 01-24-2011: dsp2_room_vol_bar -> 18385d
+17:41:34 - 01-24-2011: tp1_room_vol_bar -> 18385d
+17:41:34 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -41 A\x0D
+17:41:34 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -41 A\x0D
+17:41:34 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:34 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:35 - 01-24-2011: clock$ -> 012420111942060000
+17:41:36 - 01-24-2011: tp1_pc1 -> 1
+17:41:36 - 01-24-2011: clear_pulser_ilk -> 1
+17:41:36 - 01-24-2011: sat1_selected -> 0
+17:41:36 - 01-24-2011: pc1_is_selected -> 1
+17:41:36 - 01-24-2011: tp1_pc1_os -> 1
+17:41:36 - 01-24-2011: sw2_select_input_pc1 -> 1
+17:41:36 - 01-24-2011: tp1_sat1_is_selected -> 0
+17:41:36 - 01-24-2011: tp1_pc1_is_selected -> 1
+17:41:36 - 01-24-2011: tp1_sat1_subpage_fb -> 0
+17:41:36 - 01-24-2011: tp1_pc1_subpage_fb -> 1
+17:41:36 - 01-24-2011: sw_pc1_send_to_all_displays? -> 1
+17:41:36 - 01-24-2011: sw2_tx$ -> 3*8$
+17:41:36 - 01-24-2011: sw_pc1_to_display(s)_os -> 1
+17:41:36 - 01-24-2011: com_c_tx$ -> 3*8$
+17:41:36 - 01-24-2011: busy_sw_pc1_to_display(s) -> 1
+17:41:36 - 01-24-2011: switching_busy_bar -> 0d
+17:41:36 - 01-24-2011: source$ -> PC
+17:41:36 - 01-24-2011: popup_switching_activate -> 1
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 0d
+17:41:36 - 01-24-2011: tp1_sw1_plasma1_source$ -> PC
+17:41:36 - 01-24-2011: tp1_sw1_plasma2_source$ -> PC
+17:41:36 - 01-24-2011: tp1_sw1_prj1_source$ -> PC
+17:41:36 - 01-24-2011: tp1_sw1_prj2_source$ -> PC
+17:41:36 - 01-24-2011: popup_switching_activate_stretched -> 1
+17:41:36 - 01-24-2011: popup_switching_active -> 1
+17:41:36 - 01-24-2011: switching_busy_bar -> 3692d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 3692d
+17:41:36 - 01-24-2011: tp1_pc1 -> 0
+17:41:36 - 01-24-2011: com_c_rx$ -> E12\x0D\x0A
+17:41:36 - 01-24-2011: clear_pulser_ilk -> 0
+17:41:36 - 01-24-2011: sw2_select_input_pc1 -> 0
+17:41:36 - 01-24-2011: sw2_rx$ -> E12\x0D\x0A
+17:41:36 - 01-24-2011: clock$ -> 012420111942070000
+17:41:36 - 01-24-2011: switching_busy_bar -> 8307d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 8307d
+17:41:36 - 01-24-2011: tp1_pc1_os -> 0
+17:41:36 - 01-24-2011: sw_pc1_send_to_all_displays? -> 0
+17:41:36 - 01-24-2011: sw_pc1_to_display(s)_os -> 0
+17:41:36 - 01-24-2011: switching_busy_bar -> 11076d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 11076d
+17:41:36 - 01-24-2011: switching_busy_bar -> 15691d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 15691d
+17:41:36 - 01-24-2011: sw_cmd_pc1_to_display(s)_vga -> 1
+17:41:36 - 01-24-2011: sw2_cmd_pc1_to_display(s)_vga -> 1
+17:41:36 - 01-24-2011: sw2_tx$ -> 1*1!
+17:41:36 - 01-24-2011: com_c_tx$ -> 1*1!
+17:41:36 - 01-24-2011: com_c_rx$ -> Out01 In01 All\x0D\x0A
+17:41:36 - 01-24-2011: sw2_rx$ -> Out01 In01 All\x0D\x0A
+17:41:36 - 01-24-2011: switching_busy_bar -> 20306d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 20306d
+17:41:36 - 01-24-2011: switching_busy_bar -> 24921d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 24921d
+17:41:36 - 01-24-2011: switching_busy_bar -> 30459d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 30459d
+17:41:36 - 01-24-2011: switching_busy_bar -> 35998d
+17:41:36 - 01-24-2011: tp1_switching_busy_bar -> 35998d
+17:41:36 - 01-24-2011: sw_cmd_pc1_to_display(s)_vga -> 0
+17:41:36 - 01-24-2011: sw2_cmd_pc1_to_display(s)_vga -> 0
+17:41:36 - 01-24-2011: prj1_input_vga -> 1
+17:41:36 - 01-24-2011: prj1_tx$ -> \x02\x03\x00\x00\x02\x01\x01\x09
+17:41:36 - 01-24-2011: com_a_tx$ -> \x02\x03\x00\x00\x02\x01\x01\x09
+17:41:37 - 01-24-2011: switching_busy_bar -> 44305d
+17:41:37 - 01-24-2011: tp1_switching_busy_bar -> 44305d
+17:41:37 - 01-24-2011: switching_busy_bar -> 46151d
+17:41:37 - 01-24-2011: tp1_switching_busy_bar -> 46151d
+17:41:37 - 01-24-2011: com_a_rx$ -> "\x03\x01\x10\x01\x007
+17:41:37 - 01-24-2011: prj1_rx$ -> "\x03\x01\x10\x01\x007
+17:41:37 - 01-24-2011: switching_busy_bar -> 50766d
+17:41:37 - 01-24-2011: tp1_switching_busy_bar -> 50766d
+17:41:37 - 01-24-2011: switching_busy_bar -> 56304d
+17:41:37 - 01-24-2011: tp1_switching_busy_bar -> 56304d
+17:41:37 - 01-24-2011: prj1_input_vga -> 0
+17:41:37 - 01-24-2011: busy_sw_pc1_to_display(s) -> 0
+17:41:37 - 01-24-2011: popup_switching_activate -> 0
+17:41:37 - 01-24-2011: switching_busy_bar -> 61842d
+17:41:37 - 01-24-2011: tp1_switching_busy_bar -> 61842d
+17:41:37 - 01-24-2011: switching_busy_bar -> 65535d
+17:41:37 - 01-24-2011: tp1_switching_busy_bar -> 65535d
+17:41:37 - 01-24-2011: prj1_tx$ -> \x00\x85\x00\x00\x01\x02\x88
+17:41:37 - 01-24-2011: com_a_tx$ -> \x00\x85\x00\x00\x01\x02\x88
+17:41:37 - 01-24-2011: com_a_rx$ ->  \x85\x01\x10\x10\x01\x00\x01\x01\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xCB
+17:41:37 - 01-24-2011: prj1_rx$ ->  \x85\x01\x10\x10\x01\x00\x01\x01\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xCB
+17:41:37 - 01-24-2011: clock$ -> 012420111942080000
+17:41:38 - 01-24-2011: popup_switching_activate_stretched -> 0
+17:41:38 - 01-24-2011: popup_switching_active -> 0
+17:41:38 - 01-24-2011: clock$ -> 012420111942090000
+17:41:39 - 01-24-2011: clock$ -> 012420111942100000
+17:41:39 - 01-24-2011: tp1_sat1 -> 1
+17:41:39 - 01-24-2011: clear_pulser_ilk -> 1
+17:41:39 - 01-24-2011: pc1_is_selected -> 0
+17:41:39 - 01-24-2011: sat1_selected -> 1
+17:41:39 - 01-24-2011: tp1_sat1_os -> 1
+17:41:39 - 01-24-2011: tp1_pc1_is_selected -> 0
+17:41:39 - 01-24-2011: tp1_sat1_is_selected -> 1
+17:41:39 - 01-24-2011: tp1_pc1_subpage_fb -> 0
+17:41:39 - 01-24-2011: tp1_sat1_subpage_fb -> 1
+17:41:39 - 01-24-2011: sw_sat1_send_to_all_displays? -> 1
+17:41:39 - 01-24-2011: sw_sat1_to_display(s) -> 1
+17:41:39 - 01-24-2011: busy_sw_sat1_to_display(s) -> 1
+17:41:39 - 01-24-2011: switching_busy_bar -> 0d
+17:41:39 - 01-24-2011: popup_switching_activate -> 1
+17:41:39 - 01-24-2011: tp1_switching_busy_bar -> 0d
+17:41:39 - 01-24-2011: popup_switching_activate_stretched -> 1
+17:41:39 - 01-24-2011: popup_switching_active -> 1
+17:41:39 - 01-24-2011: switching_busy_bar -> 1638d
+17:41:39 - 01-24-2011: tp1_switching_busy_bar -> 1638d
+17:41:39 - 01-24-2011: switching_busy_bar -> 5734d
+17:41:39 - 01-24-2011: tp1_switching_busy_bar -> 5734d
+17:41:39 - 01-24-2011: switching_busy_bar -> 9830d
+17:41:39 - 01-24-2011: tp1_switching_busy_bar -> 9830d
+17:41:40 - 01-24-2011: tp1_sat1_os -> 0
+17:41:40 - 01-24-2011: sw_sat1_send_to_all_displays? -> 0
+17:41:40 - 01-24-2011: sw_sat1_to_display(s) -> 0
+17:41:40 - 01-24-2011: switching_busy_bar -> 14745d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 14745d
+17:41:40 - 01-24-2011: switching_busy_bar -> 18841d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 18841d
+17:41:40 - 01-24-2011: switching_busy_bar -> 22937d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 22937d
+17:41:40 - 01-24-2011: sw_cmd_sat1_to_display(s)_vga -> 1
+17:41:40 - 01-24-2011: sw2_cmd_sat1_to_display(s)_vga -> 1
+17:41:40 - 01-24-2011: sw2_tx$ -> 3*1!
+17:41:40 - 01-24-2011: com_c_tx$ -> 3*1!
+17:41:40 - 01-24-2011: tp1_sat1 -> 0
+17:41:40 - 01-24-2011: clear_pulser_ilk -> 0
+17:41:40 - 01-24-2011: switching_busy_bar -> 27033d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 27033d
+17:41:40 - 01-24-2011: com_c_rx$ -> Out01 In03 All\x0D\x0A
+17:41:40 - 01-24-2011: sw2_rx$ -> Out01 In03 All\x0D\x0A
+17:41:40 - 01-24-2011: switching_busy_bar -> 31129d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 31129d
+17:41:40 - 01-24-2011: switching_busy_bar -> 35225d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 35225d
+17:41:40 - 01-24-2011: switching_busy_bar -> 40140d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 40140d
+17:41:40 - 01-24-2011: sw_cmd_sat1_to_display(s)_vga -> 0
+17:41:40 - 01-24-2011: sw2_cmd_sat1_to_display(s)_vga -> 0
+17:41:40 - 01-24-2011: switching_busy_bar -> 45055d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 45055d
+17:41:40 - 01-24-2011: switching_busy_bar -> 49970d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 49970d
+17:41:40 - 01-24-2011: prj1_input_vga -> 1
+17:41:40 - 01-24-2011: prj1_tx$ -> \x02\x03\x00\x00\x02\x01\x01\x09
+17:41:40 - 01-24-2011: com_a_tx$ -> \x02\x03\x00\x00\x02\x01\x01\x09
+17:41:40 - 01-24-2011: switching_busy_bar -> 56523d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 56523d
+17:41:40 - 01-24-2011: switching_busy_bar -> 58162d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 58162d
+17:41:40 - 01-24-2011: clock$ -> 012420111942110000
+17:41:40 - 01-24-2011: switching_busy_bar -> 62258d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 62258d
+17:41:40 - 01-24-2011: switching_busy_bar -> 65535d
+17:41:40 - 01-24-2011: tp1_switching_busy_bar -> 65535d
+17:41:40 - 01-24-2011: prj1_input_vga -> 0
+17:41:40 - 01-24-2011: busy_sw_sat1_to_display(s) -> 0
+17:41:40 - 01-24-2011: popup_switching_activate -> 0
+17:41:40 - 01-24-2011: com_a_rx$ -> "\x03\x01\x10\x01\x007
+17:41:40 - 01-24-2011: prj1_rx$ -> "\x03\x01\x10\x01\x007
+17:41:40 - 01-24-2011: prj1_tx$ -> \x00\x85\x00\x00\x01\x02\x88
+17:41:40 - 01-24-2011: com_a_tx$ -> \x00\x85\x00\x00\x01\x02\x88
+17:41:41 - 01-24-2011: com_a_rx$ ->  \x85\x01\x10\x10\x01\xFF\x01\x01\xFF\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\xC9
+17:41:41 - 01-24-2011: prj1_rx$ ->  \x85\x01\x10\x10\x01\xFF\x01\x01\xFF\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00\xC9
+17:41:41 - 01-24-2011: clock$ -> 012420111942120000
+17:41:41 - 01-24-2011: popup_switching_activate_stretched -> 0
+17:41:41 - 01-24-2011: popup_switching_active -> 0
+17:41:42 - 01-24-2011: clock$ -> 012420111942130000
+17:41:43 - 01-24-2011: clock$ -> 012420111942140000
+17:41:44 - 01-24-2011: clock$ -> 012420111942150000
+17:41:45 - 01-24-2011: clock$ -> 012420111942160000
+17:41:46 - 01-24-2011: clock$ -> 012420111942170000
+17:41:47 - 01-24-2011: clock$ -> 012420111942180000
+17:41:48 - 01-24-2011: clock$ -> 012420111942190000
+17:41:49 - 01-24-2011: clock$ -> 012420111942200000
+17:41:49 - 01-24-2011: tp1_room_vol_up -> 1
+17:41:49 - 01-24-2011: popup_volume_activity -> 1
+17:41:49 - 01-24-2011: dsp2_room_vol_up -> 1
+17:41:49 - 01-24-2011: dsp2_room_vol_bar -> 18385d
+17:41:49 - 01-24-2011: tp1_room_vol_bar -> 18385d
+17:41:49 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -41 A\x0D
+17:41:49 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -41 A\x0D
+17:41:49 - 01-24-2011: dsp2_room_vol_bar -> 18619d
+17:41:49 - 01-24-2011: tp1_room_vol_bar -> 18619d
+17:41:49 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:49 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:49 - 01-24-2011: dsp2_room_vol_bar -> 18853d
+17:41:49 - 01-24-2011: tp1_room_vol_bar -> 18853d
+17:41:49 - 01-24-2011: dsp2_room_vol_bar -> 19087d
+17:41:49 - 01-24-2011: tp1_room_vol_bar -> 19087d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 19321d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 19321d
+17:41:50 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -40 A\x0D
+17:41:50 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -40 A\x0D
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 19602d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 19602d
+17:41:50 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 19836d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 19836d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 20070d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 20070d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 20351d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 20351d
+17:41:50 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -39 A\x0D
+17:41:50 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -39 A\x0D
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 20632d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 20632d
+17:41:50 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 20866d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 20866d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 21100d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 21100d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 21334d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 21334d
+17:41:50 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -38 A\x0D
+17:41:50 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -38 A\x0D
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 21568d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 21568d
+17:41:50 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 21803d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 21803d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 22037d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 22037d
+17:41:50 - 01-24-2011: clock$ -> 012420111942210000
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 22364d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 22364d
+17:41:50 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -36 A\x0D
+17:41:50 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -36 A\x0D
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 22645d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 22645d
+17:41:50 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 22833d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 22833d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 23067d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 23067d
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 23301d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 23301d
+17:41:50 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -35 A\x0D
+17:41:50 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -35 A\x0D
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 23535d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 23535d
+17:41:50 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:50 - 01-24-2011: tp1_room_vol_up -> 0
+17:41:50 - 01-24-2011: popup_volume_activity -> 0
+17:41:50 - 01-24-2011: dsp2_room_vol_up -> 0
+17:41:50 - 01-24-2011: dsp2_room_vol_bar -> 23675d
+17:41:50 - 01-24-2011: tp1_room_vol_bar -> 23675d
+17:41:51 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -34 A\x0D
+17:41:51 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -34 A\x0D
+17:41:51 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:51 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:51 - 01-24-2011: clock$ -> 012420111942220000
+17:41:52 - 01-24-2011: tp1_room_mute_toggle -> 1
+17:41:52 - 01-24-2011: popup_volume_activity -> 1
+17:41:52 - 01-24-2011: dsp2_room_mute_toggle -> 1
+17:41:52 - 01-24-2011: dsp2_tx$ -> #H0 MUTE A P 2\x0D
+17:41:52 - 01-24-2011: dsp2_room_mute_fb -> 1
+17:41:52 - 01-24-2011: com_d_tx$ -> #H0 MUTE A P 2\x0D
+17:41:52 - 01-24-2011: tp1_dsp2_room_mute_fb -> 1
+17:41:52 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:52 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:52 - 01-24-2011: clock$ -> 012420111942230000
+17:41:52 - 01-24-2011: tp1_room_mute_toggle -> 0
+17:41:52 - 01-24-2011: popup_volume_activity -> 0
+17:41:52 - 01-24-2011: dsp2_room_mute_toggle -> 0
+17:41:53 - 01-24-2011: tp1_room_mute_toggle -> 1
+17:41:53 - 01-24-2011: popup_volume_activity -> 1
+17:41:53 - 01-24-2011: dsp2_room_mute_toggle -> 1
+17:41:53 - 01-24-2011: dsp2_tx$ -> #H0 MUTE A P 2\x0D
+17:41:53 - 01-24-2011: dsp2_room_mute_fb -> 0
+17:41:53 - 01-24-2011: com_d_tx$ -> #H0 MUTE A P 2\x0D
+17:41:53 - 01-24-2011: tp1_dsp2_room_mute_fb -> 0
+17:41:53 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:41:53 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:41:53 - 01-24-2011: tp1_room_mute_toggle -> 0
+17:41:53 - 01-24-2011: popup_volume_activity -> 0
+17:41:53 - 01-24-2011: dsp2_room_mute_toggle -> 0
+17:41:53 - 01-24-2011: clock$ -> 012420111942240000
+17:41:54 - 01-24-2011: clock$ -> 012420111942250000
+17:41:55 - 01-24-2011: clock$ -> 012420111942260000
+17:41:56 - 01-24-2011: clock$ -> 012420111942270000
+17:41:57 - 01-24-2011: tp1_sat1_ch+ -> 1
+17:41:57 - 01-24-2011: sat1_ch+ -> 1
+17:41:57 - 01-24-2011: sat1_activity -> 1
+17:41:57 - 01-24-2011: popup_vtc_sat1_activity -> 1
+17:41:57 - 01-24-2011: tp1_sat1_ch+ -> 0
+17:41:57 - 01-24-2011: sat1_ch+ -> 0
+17:41:57 - 01-24-2011: sat1_activity -> 0
+17:41:57 - 01-24-2011: popup_vtc_sat1_activity -> 0
+17:41:57 - 01-24-2011: clock$ -> 012420111942280000
+17:41:57 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:57 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:58 - 01-24-2011: com_e_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:58 - 01-24-2011: vtc1_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:41:58 - 01-24-2011: com_e_rx$ -> *s SystemUnit Uptime: 21721\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:41:58 - 01-24-2011: vtc1_rx$ -> *s SystemUnit Uptime: 21721\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:41:58 - 01-24-2011: clock$ -> 012420111942290000
+17:41:59 - 01-24-2011: clock$ -> 012420111942300000
+17:41:59 - 01-24-2011: tp1_sat1_keypad_up -> 1
+17:41:59 - 01-24-2011: sat1_keypad_up -> 1
+17:41:59 - 01-24-2011: sat1_activity -> 1
+17:41:59 - 01-24-2011: popup_vtc_sat1_activity -> 1
+17:42:00 - 01-24-2011: tp1_sat1_keypad_up -> 0
+17:42:00 - 01-24-2011: sat1_keypad_up -> 0
+17:42:00 - 01-24-2011: sat1_activity -> 0
+17:42:00 - 01-24-2011: popup_vtc_sat1_activity -> 0
+17:42:00 - 01-24-2011: clock$ -> 012420111942310000
+17:42:01 - 01-24-2011: clock$ -> 012420111942320000
+17:42:01 - 01-24-2011: tp1_sat1_keypad_down -> 1
+17:42:01 - 01-24-2011: sat1_keypad_down -> 1
+17:42:01 - 01-24-2011: sat1_activity -> 1
+17:42:01 - 01-24-2011: popup_vtc_sat1_activity -> 1
+17:42:01 - 01-24-2011: tp1_sat1_keypad_down -> 0
+17:42:01 - 01-24-2011: sat1_keypad_down -> 0
+17:42:01 - 01-24-2011: sat1_activity -> 0
+17:42:01 - 01-24-2011: popup_vtc_sat1_activity -> 0
+17:42:02 - 01-24-2011: clock$ -> 012420111942330000
+17:42:03 - 01-24-2011: clock$ -> 012420111942340000
+17:42:04 - 01-24-2011: clock$ -> 012420111942350000
+17:42:05 - 01-24-2011: clock$ -> 012420111942360000
+17:42:06 - 01-24-2011: clock$ -> 012420111942370000
+17:42:07 - 01-24-2011: clock$ -> 012420111942380000
+17:42:08 - 01-24-2011: clock$ -> 012420111942390000
+17:42:09 - 01-24-2011: clock$ -> 012420111942400000
+17:42:10 - 01-24-2011: clock$ -> 012420111942410000
+17:42:10 - 01-24-2011: tp1_room_vol_dn -> 1
+17:42:10 - 01-24-2011: popup_volume_activity -> 1
+17:42:10 - 01-24-2011: dsp2_room_vol_dn -> 1
+17:42:10 - 01-24-2011: dsp2_room_vol_bar -> 23675d
+17:42:10 - 01-24-2011: tp1_room_vol_bar -> 23675d
+17:42:10 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -34 A\x0D
+17:42:10 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -34 A\x0D
+17:42:10 - 01-24-2011: dsp2_room_vol_bar -> 23629d
+17:42:10 - 01-24-2011: tp1_room_vol_bar -> 23629d
+17:42:10 - 01-24-2011: dsp2_room_vol_bar -> 23394d
+17:42:10 - 01-24-2011: tp1_room_vol_bar -> 23394d
+17:42:10 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:10 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:10 - 01-24-2011: dsp2_room_vol_bar -> 23160d
+17:42:10 - 01-24-2011: tp1_room_vol_bar -> 23160d
+17:42:10 - 01-24-2011: dsp2_room_vol_bar -> 22925d
+17:42:10 - 01-24-2011: tp1_room_vol_bar -> 22925d
+17:42:11 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -35 A\x0D
+17:42:11 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -35 A\x0D
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 22597d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 22597d
+17:42:11 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 22363d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 22363d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 22222d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 22222d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 21988d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 21988d
+17:42:11 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -37 A\x0D
+17:42:11 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -37 A\x0D
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 21660d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 21660d
+17:42:11 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 21425d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 21425d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 21238d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 21238d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 21003d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 21003d
+17:42:11 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -38 A\x0D
+17:42:11 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -38 A\x0D
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 20628d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 20628d
+17:42:11 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 20394d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 20394d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 20253d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 20253d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 20019d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 20019d
+17:42:11 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -39 A\x0D
+17:42:11 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -39 A\x0D
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 19644d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 19644d
+17:42:11 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 19456d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 19456d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 19316d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 19316d
+17:42:11 - 01-24-2011: clock$ -> 012420111942420000
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 19034d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 19034d
+17:42:11 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -41 A\x0D
+17:42:11 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -41 A\x0D
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 18706d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 18706d
+17:42:11 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 18565d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 18565d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 18331d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 18331d
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 18097d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 18097d
+17:42:11 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -42 A\x0D
+17:42:11 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -42 A\x0D
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 17768d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 17768d
+17:42:11 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:11 - 01-24-2011: dsp2_room_vol_bar -> 17534d
+17:42:11 - 01-24-2011: tp1_room_vol_bar -> 17534d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 17393d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 17393d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 17112d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 17112d
+17:42:12 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -43 A\x0D
+17:42:12 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -43 A\x0D
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 16690d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 16690d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 16596d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 16596d
+17:42:12 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 16362d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 16362d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 16128d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 16128d
+17:42:12 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -44 A\x0D
+17:42:12 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -44 A\x0D
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 15753d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 15753d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 15612d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 15612d
+17:42:12 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 15378d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 15378d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 15190d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 15190d
+17:42:12 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -46 A\x0D
+17:42:12 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -46 A\x0D
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 14862d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 14862d
+17:42:12 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 14627d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 14627d
+17:42:12 - 01-24-2011: clock$ -> 012420111942430000
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 14487d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 14487d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 14252d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 14252d
+17:42:12 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -47 A\x0D
+17:42:12 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -47 A\x0D
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 13924d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 13924d
+17:42:12 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 13690d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 13690d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 13502d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 13502d
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 13268d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 13268d
+17:42:12 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -48 A\x0D
+17:42:12 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -48 A\x0D
+17:42:12 - 01-24-2011: dsp2_room_vol_bar -> 12940d
+17:42:12 - 01-24-2011: tp1_room_vol_bar -> 12940d
+17:42:13 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:13 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:13 - 01-24-2011: dsp2_room_vol_bar -> 12752d
+17:42:13 - 01-24-2011: tp1_room_vol_bar -> 12752d
+17:42:13 - 01-24-2011: dsp2_room_vol_bar -> 12565d
+17:42:13 - 01-24-2011: tp1_room_vol_bar -> 12565d
+17:42:13 - 01-24-2011: dsp2_room_vol_bar -> 12330d
+17:42:13 - 01-24-2011: tp1_room_vol_bar -> 12330d
+17:42:13 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -49 A\x0D
+17:42:13 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -49 A\x0D
+17:42:13 - 01-24-2011: dsp2_room_vol_bar -> 12002d
+17:42:13 - 01-24-2011: tp1_room_vol_bar -> 12002d
+17:42:13 - 01-24-2011: dsp2_room_vol_bar -> 11815d
+17:42:13 - 01-24-2011: tp1_room_vol_bar -> 11815d
+17:42:13 - 01-24-2011: tp1_room_vol_dn -> 0
+17:42:13 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:13 - 01-24-2011: popup_volume_activity -> 0
+17:42:13 - 01-24-2011: dsp2_room_vol_dn -> 0
+17:42:13 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:13 - 01-24-2011: dsp2_room_vol_bar -> 11768d
+17:42:13 - 01-24-2011: tp1_room_vol_bar -> 11768d
+17:42:13 - 01-24-2011: dsp2_tx$ -> #H0 GAIN A P -50 A\x0D
+17:42:13 - 01-24-2011: com_d_tx$ -> #H0 GAIN A P -50 A\x0D
+17:42:13 - 01-24-2011: com_d_rx$ -> \x0D\x0AOK> 
+17:42:13 - 01-24-2011: dsp2_rx$ -> \x0D\x0AOK> 
+17:42:13 - 01-24-2011: clock$ -> 012420111942440000
+17:42:14 - 01-24-2011: clock$ -> 012420111942450000
+17:42:15 - 01-24-2011: clock$ -> 012420111942460000
+17:42:16 - 01-24-2011: clock$ -> 012420111942470000
+17:42:17 - 01-24-2011: clock$ -> 012420111942480000
+17:42:18 - 01-24-2011: clock$ -> 012420111942490000
+17:42:19 - 01-24-2011: clock$ -> 012420111942500000
+17:42:20 - 01-24-2011: clock$ -> 012420111942510000
+17:42:21 - 01-24-2011: clock$ -> 012420111942520000
+17:42:22 - 01-24-2011: clock$ -> 012420111942530000
+17:42:23 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:42:23 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:42:23 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:42:23 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:42:23 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21746\x0D\x0A** 
+17:42:23 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21746\x0D\x0A** 
+17:42:23 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:42:23 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:42:23 - 01-24-2011: clock$ -> 012420111942540000
+17:42:24 - 01-24-2011: clock$ -> 012420111942550000
+17:42:25 - 01-24-2011: clock$ -> 012420111942560000
+17:42:26 - 01-24-2011: clock$ -> 012420111942570000
+17:42:27 - 01-24-2011: clock$ -> 012420111942580000
+17:42:28 - 01-24-2011: clock$ -> 012420111942590000
+17:42:29 - 01-24-2011: clock$ -> 012420111943000000
+17:42:30 - 01-24-2011: clock$ -> 012420111943010000
+17:42:31 - 01-24-2011: clock$ -> 012420111943020000
+17:42:32 - 01-24-2011: clock$ -> 012420111943030000
+17:42:33 - 01-24-2011: clock$ -> 012420111943040000
+17:42:34 - 01-24-2011: clock$ -> 012420111943050000
+17:42:35 - 01-24-2011: clock$ -> 012420111943060000
+17:42:36 - 01-24-2011: clock$ -> 012420111943070000
+17:42:37 - 01-24-2011: clock$ -> 012420111943080000
+17:42:38 - 01-24-2011: clock$ -> 012420111943090000
+17:42:39 - 01-24-2011: clock$ -> 012420111943100000
+17:42:40 - 01-24-2011: clock$ -> 012420111943110000
+17:42:41 - 01-24-2011: clock$ -> 012420111943120000
+17:42:42 - 01-24-2011: clock$ -> 012420111943130000
+17:42:43 - 01-24-2011: clock$ -> 012420111943140000
+17:42:44 - 01-24-2011: clock$ -> 012420111943150000
+17:42:45 - 01-24-2011: clock$ -> 012420111943160000
+17:42:46 - 01-24-2011: clock$ -> 012420111943170000
+17:42:47 - 01-24-2011: clock$ -> 012420111943180000
+17:42:48 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:42:48 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:42:48 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:42:48 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:42:48 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21771\x0D\x0A** 
+17:42:48 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21771\x0D\x0A** 
+17:42:48 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:42:48 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:42:48 - 01-24-2011: clock$ -> 012420111943190000
+17:42:49 - 01-24-2011: clock$ -> 012420111943200000
+17:42:50 - 01-24-2011: clock$ -> 012420111943210000
+17:42:51 - 01-24-2011: clock$ -> 012420111943220000
+17:42:52 - 01-24-2011: clock$ -> 012420111943230000
+17:42:53 - 01-24-2011: clock$ -> 012420111943240000
+17:42:54 - 01-24-2011: clock$ -> 012420111943250000
+17:42:55 - 01-24-2011: clock$ -> 012420111943260000
+17:42:56 - 01-24-2011: clock$ -> 012420111943270000
+17:42:57 - 01-24-2011: clock$ -> 012420111943280000
+17:42:58 - 01-24-2011: clock$ -> 012420111943290000
+17:42:59 - 01-24-2011: clock$ -> 012420111943300000
+17:43:00 - 01-24-2011: clock$ -> 012420111943310000
+17:43:01 - 01-24-2011: clock$ -> 012420111943320000
+17:43:02 - 01-24-2011: clock$ -> 012420111943330000
+17:43:03 - 01-24-2011: clock$ -> 012420111943340000
+17:43:04 - 01-24-2011: clock$ -> 012420111943350000
+17:43:05 - 01-24-2011: clock$ -> 012420111943360000
+17:43:06 - 01-24-2011: clock$ -> 012420111943370000
+17:43:07 - 01-24-2011: clock$ -> 012420111943380000
+17:43:08 - 01-24-2011: clock$ -> 012420111943390000
+17:43:09 - 01-24-2011: clock$ -> 012420111943400000
+17:43:10 - 01-24-2011: clock$ -> 012420111943410000
+17:43:11 - 01-24-2011: clock$ -> 012420111943420000
+17:43:12 - 01-24-2011: clock$ -> 012420111943430000
+17:43:13 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:13 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:13 - 01-24-2011: com_e_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:13 - 01-24-2011: vtc1_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:13 - 01-24-2011: com_e_rx$ -> *s SystemUnit Uptime: 21796\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:43:13 - 01-24-2011: vtc1_rx$ -> *s SystemUnit Uptime: 21796\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:43:13 - 01-24-2011: clock$ -> 012420111943440000
+17:43:14 - 01-24-2011: clock$ -> 012420111943450000
+17:43:15 - 01-24-2011: clock$ -> 012420111943460000
+17:43:16 - 01-24-2011: clock$ -> 012420111943470000
+17:43:17 - 01-24-2011: clock$ -> 012420111943480000
+17:43:18 - 01-24-2011: clock$ -> 012420111943490000
+17:43:19 - 01-24-2011: clock$ -> 012420111943500000
+17:43:20 - 01-24-2011: clock$ -> 012420111943510000
+17:43:21 - 01-24-2011: clock$ -> 012420111943520000
+17:43:22 - 01-24-2011: clock$ -> 012420111943530000
+17:43:23 - 01-24-2011: clock$ -> 012420111943540000
+17:43:24 - 01-24-2011: clock$ -> 012420111943550000
+17:43:25 - 01-24-2011: clock$ -> 012420111943560000
+17:43:26 - 01-24-2011: clock$ -> 012420111943570000
+17:43:27 - 01-24-2011: clock$ -> 012420111943580000
+17:43:28 - 01-24-2011: clock$ -> 012420111943590000
+17:43:29 - 01-24-2011: clock$ -> 012420111944000000
+17:43:30 - 01-24-2011: clock$ -> 012420111944010000
+17:43:31 - 01-24-2011: clock$ -> 012420111944020000
+17:43:32 - 01-24-2011: clock$ -> 012420111944030000
+17:43:33 - 01-24-2011: clock$ -> 012420111944040000
+17:43:34 - 01-24-2011: clock$ -> 012420111944050000
+17:43:35 - 01-24-2011: clock$ -> 012420111944060000
+17:43:36 - 01-24-2011: clock$ -> 012420111944070000
+17:43:37 - 01-24-2011: clock$ -> 012420111944080000
+17:43:38 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:38 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:38 - 01-24-2011: com_e_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:38 - 01-24-2011: vtc1_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:43:38 - 01-24-2011: com_e_rx$ -> *s SystemUnit Uptime: 21821\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:43:38 - 01-24-2011: vtc1_rx$ -> *s SystemUnit Uptime: 21821\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:43:38 - 01-24-2011: clock$ -> 012420111944090000
+17:43:39 - 01-24-2011: clock$ -> 012420111944100000
+17:43:40 - 01-24-2011: clock$ -> 012420111944110000
+17:43:41 - 01-24-2011: clock$ -> 012420111944120000
+17:43:42 - 01-24-2011: clock$ -> 012420111944130000
+17:43:43 - 01-24-2011: clock$ -> 012420111944140000
+17:43:44 - 01-24-2011: clock$ -> 012420111944150000
+17:43:45 - 01-24-2011: clock$ -> 012420111944160000
+17:43:46 - 01-24-2011: clock$ -> 012420111944170000
+17:43:47 - 01-24-2011: clock$ -> 012420111944180000
+17:43:48 - 01-24-2011: clock$ -> 012420111944190000
+17:43:49 - 01-24-2011: clock$ -> 012420111944200000
+17:43:50 - 01-24-2011: clock$ -> 012420111944210000
+17:43:51 - 01-24-2011: clock$ -> 012420111944220000
+17:43:52 - 01-24-2011: clock$ -> 012420111944230000
+17:43:53 - 01-24-2011: clock$ -> 012420111944240000
+17:43:54 - 01-24-2011: clock$ -> 012420111944250000
+17:43:55 - 01-24-2011: clock$ -> 012420111944260000
+17:43:56 - 01-24-2011: clock$ -> 012420111944270000
+17:43:57 - 01-24-2011: clock$ -> 012420111944280000
+17:43:58 - 01-24-2011: clock$ -> 012420111944290000
+17:43:59 - 01-24-2011: clock$ -> 012420111944300000
+17:44:00 - 01-24-2011: clock$ -> 012420111944310000
+17:44:01 - 01-24-2011: clock$ -> 012420111944320000
+17:44:02 - 01-24-2011: clock$ -> 012420111944330000
+17:44:03 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:03 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:03 - 01-24-2011: com_e_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:03 - 01-24-2011: vtc1_rx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:03 - 01-24-2011: vtc1_tx$ -> xstatus H323 Gatekeeper\x0D\x0A
+17:44:03 - 01-24-2011: com_e_tx$ -> xstatus H323 Gatekeeper\x0D\x0A
+17:44:03 - 01-24-2011: com_e_rx$ -> *s SystemUnit Uptime: 21846\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:03 - 01-24-2011: vtc1_rx$ -> *s SystemUnit Uptime: 21846\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:03 - 01-24-2011: com_e_rx$ -> xstatus H323 Gatekeeper\x0D\x0A*s H323 Gatekeeper Status: Registered\x0D\x0A*s H323 Gatekeeper Addres
+17:44:03 - 01-24-2011: vtc1_rx$ -> xstatus H323 Gatekeeper\x0D\x0A*s H323 Gatekeeper Status: Registered\x0D\x0A*s H323 Gatekeeper Addres
+17:44:03 - 01-24-2011: com_e_rx$ -> s: "216.157.166.100"\x0D\x0A*s H323 Gatekeeper Port: 1719\x0D\x0A*s H323 Gatekeeper Reason: ""\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:03 - 01-24-2011: vtc1_rx$ -> s: "216.157.166.100"\x0D\x0A*s H323 Gatekeeper Port: 1719\x0D\x0A*s H323 Gatekeeper Reason: ""\x0D\x0A** end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:03 - 01-24-2011: clock$ -> 012420111944340000
+17:44:04 - 01-24-2011: clock$ -> 012420111944350000
+17:44:05 - 01-24-2011: clock$ -> 012420111944360000
+17:44:06 - 01-24-2011: clock$ -> 012420111944370000
+17:44:07 - 01-24-2011: clock$ -> 012420111944380000
+17:44:08 - 01-24-2011: clock$ -> 012420111944390000
+17:44:09 - 01-24-2011: clock$ -> 012420111944400000
+17:44:10 - 01-24-2011: clock$ -> 012420111944410000
+17:44:11 - 01-24-2011: clock$ -> 012420111944420000
+17:44:12 - 01-24-2011: clock$ -> 012420111944430000
+17:44:13 - 01-24-2011: clock$ -> 012420111944440000
+17:44:14 - 01-24-2011: clock$ -> 012420111944450000
+17:44:15 - 01-24-2011: clock$ -> 012420111944460000
+17:44:16 - 01-24-2011: clock$ -> 012420111944470000
+17:44:17 - 01-24-2011: clock$ -> 012420111944480000
+17:44:18 - 01-24-2011: clock$ -> 012420111944490000
+17:44:19 - 01-24-2011: clock$ -> 012420111944500000
+17:44:20 - 01-24-2011: clock$ -> 012420111944510000
+17:44:21 - 01-24-2011: clock$ -> 012420111944520000
+17:44:22 - 01-24-2011: clock$ -> 012420111944530000
+17:44:23 - 01-24-2011: clock$ -> 012420111944540000
+17:44:24 - 01-24-2011: clock$ -> 012420111944550000
+17:44:25 - 01-24-2011: clock$ -> 012420111944560000
+17:44:26 - 01-24-2011: clock$ -> 012420111944570000
+17:44:27 - 01-24-2011: clock$ -> 012420111944580000
+17:44:28 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:28 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:28 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:44:28 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:44:28 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21871\x0D\x0A** 
+17:44:28 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21871\x0D\x0A** 
+17:44:28 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:28 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:28 - 01-24-2011: clock$ -> 012420111944590000
+17:44:29 - 01-24-2011: clock$ -> 012420111945000000
+17:44:30 - 01-24-2011: clock$ -> 012420111945010000
+17:44:31 - 01-24-2011: clock$ -> 012420111945020000
+17:44:32 - 01-24-2011: clock$ -> 012420111945030000
+17:44:33 - 01-24-2011: clock$ -> 012420111945040000
+17:44:34 - 01-24-2011: clock$ -> 012420111945050000
+17:44:35 - 01-24-2011: clock$ -> 012420111945060000
+17:44:36 - 01-24-2011: clock$ -> 012420111945070000
+17:44:37 - 01-24-2011: clock$ -> 012420111945080000
+17:44:38 - 01-24-2011: clock$ -> 012420111945090000
+17:44:39 - 01-24-2011: clock$ -> 012420111945100000
+17:44:40 - 01-24-2011: clock$ -> 012420111945110000
+17:44:41 - 01-24-2011: clock$ -> 012420111945120000
+17:44:42 - 01-24-2011: clock$ -> 012420111945130000
+17:44:43 - 01-24-2011: clock$ -> 012420111945140000
+17:44:44 - 01-24-2011: clock$ -> 012420111945150000
+17:44:45 - 01-24-2011: clock$ -> 012420111945160000
+17:44:46 - 01-24-2011: clock$ -> 012420111945170000
+17:44:47 - 01-24-2011: clock$ -> 012420111945180000
+17:44:48 - 01-24-2011: clock$ -> 012420111945190000
+17:44:49 - 01-24-2011: clock$ -> 012420111945200000
+17:44:50 - 01-24-2011: clock$ -> 012420111945210000
+17:44:51 - 01-24-2011: clock$ -> 012420111945220000
+17:44:52 - 01-24-2011: clock$ -> 012420111945230000
+17:44:53 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:53 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:44:53 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:44:53 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:44:53 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21896\x0D\x0A** 
+17:44:53 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21896\x0D\x0A** 
+17:44:53 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:53 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:44:53 - 01-24-2011: clock$ -> 012420111945240000
+17:44:54 - 01-24-2011: clock$ -> 012420111945250000
+17:44:55 - 01-24-2011: clock$ -> 012420111945260000
+17:44:56 - 01-24-2011: clock$ -> 012420111945270000
+17:44:57 - 01-24-2011: clock$ -> 012420111945280000
+17:44:58 - 01-24-2011: clock$ -> 012420111945290000
+17:44:59 - 01-24-2011: clock$ -> 012420111945300000
+17:45:00 - 01-24-2011: clock$ -> 012420111945310000
+17:45:01 - 01-24-2011: clock$ -> 012420111945320000
+17:45:02 - 01-24-2011: clock$ -> 012420111945330000
+17:45:03 - 01-24-2011: clock$ -> 012420111945340000
+17:45:04 - 01-24-2011: clock$ -> 012420111945350000
+17:45:05 - 01-24-2011: clock$ -> 012420111945360000
+17:45:06 - 01-24-2011: clock$ -> 012420111945370000
+17:45:07 - 01-24-2011: clock$ -> 012420111945380000
+17:45:08 - 01-24-2011: clock$ -> 012420111945390000
+17:45:09 - 01-24-2011: clock$ -> 012420111945400000
+17:45:10 - 01-24-2011: clock$ -> 012420111945410000
+17:45:11 - 01-24-2011: clock$ -> 012420111945420000
+17:45:12 - 01-24-2011: clock$ -> 012420111945430000
+17:45:13 - 01-24-2011: clock$ -> 012420111945440000
+17:45:14 - 01-24-2011: clock$ -> 012420111945450000
+17:45:15 - 01-24-2011: clock$ -> 012420111945460000
+17:45:16 - 01-24-2011: clock$ -> 012420111945470000
+17:45:17 - 01-24-2011: clock$ -> 012420111945480000
+17:45:18 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:45:18 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:45:18 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:45:18 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:45:18 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21921\x0D\x0A** 
+17:45:18 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21921\x0D\x0A** 
+17:45:18 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:45:18 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:45:18 - 01-24-2011: clock$ -> 012420111945490000
+17:45:19 - 01-24-2011: clock$ -> 012420111945500000
+17:45:20 - 01-24-2011: clock$ -> 012420111945510000
+17:45:21 - 01-24-2011: clock$ -> 012420111945520000
+17:45:22 - 01-24-2011: clock$ -> 012420111945530000
+17:45:23 - 01-24-2011: clock$ -> 012420111945540000
+17:45:24 - 01-24-2011: clock$ -> 012420111945550000
+17:45:25 - 01-24-2011: clock$ -> 012420111945560000
+17:45:26 - 01-24-2011: clock$ -> 012420111945570000
+17:45:27 - 01-24-2011: clock$ -> 012420111945580000
+17:45:28 - 01-24-2011: clock$ -> 012420111945590000
+17:45:29 - 01-24-2011: clock$ -> 012420111946000000
+17:45:30 - 01-24-2011: clock$ -> 012420111946010000
+17:45:31 - 01-24-2011: clock$ -> 012420111946020000
+17:45:32 - 01-24-2011: clock$ -> 012420111946030000
+17:45:33 - 01-24-2011: clock$ -> 012420111946040000
+17:45:34 - 01-24-2011: clock$ -> 012420111946050000
+17:45:35 - 01-24-2011: clock$ -> 012420111946060000
+17:45:36 - 01-24-2011: clock$ -> 012420111946070000
+17:45:37 - 01-24-2011: clock$ -> 012420111946080000
+17:45:38 - 01-24-2011: clock$ -> 012420111946090000
+17:45:39 - 01-24-2011: clock$ -> 012420111946100000
+17:45:40 - 01-24-2011: clock$ -> 012420111946110000
+17:45:41 - 01-24-2011: clock$ -> 012420111946120000
+17:45:42 - 01-24-2011: clock$ -> 012420111946130000
+17:45:43 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:45:43 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:45:43 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:45:43 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:45:43 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21946\x0D\x0A** 
+17:45:43 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21946\x0D\x0A** 
+17:45:43 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:45:43 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:45:43 - 01-24-2011: clock$ -> 012420111946140000
+17:45:44 - 01-24-2011: clock$ -> 012420111946150000
+17:45:45 - 01-24-2011: clock$ -> 012420111946160000
+17:45:46 - 01-24-2011: clock$ -> 012420111946170000
+17:45:47 - 01-24-2011: clock$ -> 012420111946180000
+17:45:48 - 01-24-2011: clock$ -> 012420111946190000
+17:45:49 - 01-24-2011: clock$ -> 012420111946200000
+17:45:50 - 01-24-2011: clock$ -> 012420111946210000
+17:45:51 - 01-24-2011: clock$ -> 012420111946220000
+17:45:52 - 01-24-2011: clock$ -> 012420111946230000
+17:45:53 - 01-24-2011: clock$ -> 012420111946240000
+17:45:54 - 01-24-2011: clock$ -> 012420111946250000
+17:45:55 - 01-24-2011: clock$ -> 012420111946260000
+17:45:56 - 01-24-2011: clock$ -> 012420111946270000
+17:45:57 - 01-24-2011: clock$ -> 012420111946280000
+17:45:58 - 01-24-2011: clock$ -> 012420111946290000
+17:45:59 - 01-24-2011: clock$ -> 012420111946300000
+17:46:00 - 01-24-2011: clock$ -> 012420111946310000
+17:46:01 - 01-24-2011: clock$ -> 012420111946320000
+17:46:02 - 01-24-2011: clock$ -> 012420111946330000
+17:46:03 - 01-24-2011: clock$ -> 012420111946340000
+17:46:04 - 01-24-2011: clock$ -> 012420111946350000
+17:46:05 - 01-24-2011: clock$ -> 012420111946360000
+17:46:06 - 01-24-2011: clock$ -> 012420111946370000
+17:46:07 - 01-24-2011: clock$ -> 012420111946380000
+17:46:07 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:46:07 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:46:07 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:46:07 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:46:08 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21971\x0D\x0A** 
+17:46:08 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21971\x0D\x0A** 
+17:46:08 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:46:08 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:46:08 - 01-24-2011: clock$ -> 012420111946390000
+17:46:09 - 01-24-2011: clock$ -> 012420111946400000
+17:46:10 - 01-24-2011: clock$ -> 012420111946410000
+17:46:11 - 01-24-2011: clock$ -> 012420111946420000
+17:46:12 - 01-24-2011: clock$ -> 012420111946430000
+17:46:13 - 01-24-2011: clock$ -> 012420111946440000
+17:46:14 - 01-24-2011: clock$ -> 012420111946450000
+17:46:15 - 01-24-2011: clock$ -> 012420111946460000
+17:46:16 - 01-24-2011: clock$ -> 012420111946470000
+17:46:17 - 01-24-2011: clock$ -> 012420111946480000
+17:46:18 - 01-24-2011: clock$ -> 012420111946490000
+17:46:19 - 01-24-2011: clock$ -> 012420111946500000
+17:46:20 - 01-24-2011: clock$ -> 012420111946510000
+17:46:21 - 01-24-2011: clock$ -> 012420111946520000
+17:46:22 - 01-24-2011: clock$ -> 012420111946530000
+17:46:23 - 01-24-2011: clock$ -> 012420111946540000
+17:46:24 - 01-24-2011: clock$ -> 012420111946550000
+17:46:25 - 01-24-2011: clock$ -> 012420111946560000
+17:46:26 - 01-24-2011: clock$ -> 012420111946570000
+17:46:27 - 01-24-2011: clock$ -> 012420111946580000
+17:46:28 - 01-24-2011: clock$ -> 012420111946590000
+17:46:29 - 01-24-2011: clock$ -> 012420111947000000
+17:46:30 - 01-24-2011: clock$ -> 012420111947010000
+17:46:31 - 01-24-2011: clock$ -> 012420111947020000
+17:46:32 - 01-24-2011: clock$ -> 012420111947030000
+17:46:32 - 01-24-2011: vtc1_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:46:32 - 01-24-2011: com_e_tx$ -> xStatus SystemUnit Uptime\x0D\x0A
+17:46:32 - 01-24-2011: com_e_rx$ -> xStatus SystemUn
+17:46:32 - 01-24-2011: vtc1_rx$ -> xStatus SystemUn
+17:46:32 - 01-24-2011: com_e_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21996\x0D\x0A** 
+17:46:32 - 01-24-2011: vtc1_rx$ -> it Uptime\x0D\x0A*s SystemUnit Uptime: 21996\x0D\x0A** 
+17:46:33 - 01-24-2011: com_e_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:46:33 - 01-24-2011: vtc1_rx$ -> end\x0D\x0A\x0D\x0AOK\x0D\x0A\x0D\x0A
+17:46:33 - 01-24-2011: clock$ -> 012420111947040000
+17:46:34 - 01-24-2011: clock$ -> 012420111947050000
+17:46:35 - 01-24-2011: clock$ -> 012420111947060000
+17:46:36 - 01-24-2011: clock$ -> 012420111947070000
+17:46:37 - 01-24-2011: clock$ -> 012420111947080000
+17:46:38 - 01-24-2011: clock$ -> 012420111947090000
+17:46:39 - 01-24-2011: clock$ -> 012420111947100000
+17:46:40 - 01-24-2011: clock$ -> 012420111947110000
+17:46:41 - 01-24-2011: clock$ -> 012420111947120000
+17:46:42 - 01-24-2011: clock$ -> 012420111947130000
+17:46:43 - 01-24-2011: clock$ -> 012420111947140000
+17:46:44 - 01-24-2011: clock$ -> 012420111947150000
+17:46:45 - 01-24-2011: clock$ -> 012420111947160000
+17:46:46 - 01-24-2011: clock$ -> 012420111947170000
+17:46:47 - 01-24-2011: clock$ -> 012420111947180000
+17:46:48 - 01-24-2011: clock$ -> 012420111947190000
+17:46:49 - 01-24-2011: clock$ -> 012420111947200000
+17:46:50 - 01-24-2011: clock$ -> 012420111947210000
+17:46:51 - 01-24-2011: clock$ -> 012420111947220000
+17:46:52 - 01-24-2011: clock$ -> 012420111947230000
+17:46:53 - 01-24-2011: clock$ -> 012420111947240000
+17:46:54 - 01-24-2011: clock$ -> 012420111947250000
+17:46:55 - 01-24-2011: clock$ -> 012420111947260000
