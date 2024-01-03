@@ -1,0 +1,118 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.08.38
+IntStrVrs=2
+MinSMWVrs=2.05.04
+
+MinTIOVrs=0
+SavedBy=SMW2.08.38
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=Lehman Privacy Interface v2b-lk.umc
+CmVr=2.07.22
+DbVr=18.8.7
+PgmNm=Steve Swartzentruber
+DlrNm=Crestron Electronics, Inc.
+CltNm=Privacy Control
+JpNo=v2b
+Incl=362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,767,830,883,1032,1062,1079,1134,
+McNm=CMS Privacy_v2a
+SmVr=478
+DvVr=478
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+PdfHelp=CMS Privacy Interface v2b.pdf
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Bw
+H=1
+Lx=994
+Ly=0
+Rx=1491
+Ry=1051
+Xm=-1
+Ym=-1
+SH=6
+Z=75
+Ht=4
+Hi=3
+]
+[
+ObjTp=Symbol
+Name=Lehman Privacy Interface v2b-lk
+Code=1
+SmplCName=Lehman Privacy Interface v2b-lk.umc
+Smpl-C=3
+CompilerTimePrecision=Single_Or_Double_Precision
+Hint=Privacy Control
+SMWRev=2.05.22
+TIORev=0
+HelpID=1055
+PdfHelp=CMS Privacy Interface v2b.pdf
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+NumFixedInputs=7
+NumFixedOutputs=7
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=46
+UserSymTreeName=CMS
+InputSigType1=Digital
+InputSigType2=Digital|Analog|Serial|String
+InputSigType3=Digital
+InputSigType4=Digital
+InputSigType5=Digital
+InputSigType6=Digital|Analog|Serial|String
+InputSigType7=Digital
+OutputSigType1=Analog
+OutputSigType2=Digital|Analog|Serial|String
+OutputSigType3=Digital|Analog|Serial|String
+OutputSigType4=Digital
+ParamSigType1=List
+InputCue1=Enable{Sys-Pwr}
+InputCue2=[~UNUSED~]
+InputCue3=Force-Privacy-On
+InputCue4=Force-Privacy-Off
+InputCue5=Privacy-Btn
+InputCue6=[~UNUSED~]
+InputCue7=Codec-Privacy-On-FB
+OutputCue1=Privacy-Animation
+OutputCue2=[~UNUSED~]
+OutputCue3=[~UNUSED~]
+OutputCue4=Privacy-On-Fb
+OutputCue5=Privacy-Off-Fb
+OutputCue6=Privacy-On-Pulse
+OutputCue7=Privacy-Off-Pulse
+FileName=Lehman Privacy Interface v2b-lk.umc
+]
+FeSchVr=001
+¶¬ÊäæÒÞÜzbº¶žÄÔ¨àzŒ¦ÎÜèä¦ÎÜèäzªæÊäšÂÆäÞ¤ÊØ¬äæzd\`p\fp’Üè¦èä¬äæzdšÒÜ¦š®¬äæzd\`j\<d:d>šÒÜ¨’ž¬äæz`¦ÂìÊÈ„òz¦š®d\`p\fpº¶žÄÔ¨àzÈ¦`œÈzb¦bœÈzd¦˜œÈzf äœÚz˜ÊÐÚÂÜ@ äÒìÂÆò@’ÜèÊäÌÂÆÊ@ìdÄZØÖ\êÚÆ†Ú¬äzd\`n\<d:d>ˆÄ¬äzbp\p\n ÎÚœÚz¦èÊìÊ@¦îÂäèôÊÜèäêÄÊäˆØäœÚz†äÊæèäÞÜ@ŠØÊÆèäÞÜÒÆæX@’ÜÆ\†ØèœÚz äÒìÂÆò@†ÞÜèäÞØ”àœÞzìdÄ’ÜÆØzfldXfnpXfp`Xh`jXh`nXh`pXh`rXhnpXj<d:d>XjfnX<d:j>hXjplXjr`Xl<d:b>XldhXnlnXpf`X<d:p>fXb`fdXb`ldXb`nrX<d:b>fhXšÆœÚz†š¦@ äÒìÂÆò¾ìdÂ¦Ú¬äzhnpˆì¬äzhnp¨àœbzb¨àœdzd¨àœfzf¨àœhzh¨àœjzj ÈÌÊØàz†š¦@ äÒìÂÆò@’ÜèÊäÌÂÆÊ@ìdÄ\àÈÌ‚ Îzb¦èÈ†ÚÈz`ŒØè¨ÚàzbŒà†¦z`º¶žÄÔ¨àz„ÖœÚbz¸¦ðbz`¦òbz`šðbz`º¶žÄÔ¨àz„îzb˜ðz<d:r>h˜òz`¤ðzbhrb¤òzb`jb°ÚzZb²ÚzZb¦zl´znjèzhÒzfº¶žÄÔ¨àz¦òÚÄÞØœÂÚÊz˜ÊÐÚÂÜ@ äÒìÂÆò@’ÜèÊäÌÂÆÊ@ìdÄZØÖ†ÞÈÊzb¦ÚàØ†œÂÚÊz˜ÊÐÚÂÜ@ äÒìÂÆò@’ÜèÊäÌÂÆÊ@ìdÄZØÖ\êÚÆ¦ÚàØZ†zf†ÞÚàÒØÊä¨ÒÚÊ äÊÆÒæÒÞÜz¦ÒÜÎØÊ¾žä¾ˆÞêÄØÊ¾ äÊÆÒæÒÞÜÒÜèz äÒìÂÆò@†ÞÜèäÞØ¦š®¤Êìzd\`j\<d:d>¨’ž¤Êìz`ÊØà’ˆzb`<d:j> ÈÌÊØàz†š¦@ äÒìT  TÖÆÞØÈÞÚ`lTŠ  TÂÆò@’ÜèÊäÌÂÆÊ@ìdÄ\àÈÌ‚ Îzb¦èÈ†ÚÈz`ŒØè¨ÚàzbŒà†¦z`œêÚŒÒðÊÈ’ÜàêèæznœêÚŒÒðÊÈžêèàêèæznšÒÜ¬ÂäÒÂÄØÊ’Üàêèæz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊ ÂäÂÚæz`¦òÚÄÞØ¨ä<d:Ê>zhlªæÊä¦òÚ¨ä<d:Ê>œÂÚÊz†š¦’Üàêè¦ÒÎ¨òàÊbzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊdzˆÒÎÒèÂØø‚ÜÂØÞÎø¦ÊäÒÂØø¦èäÒÜÎ’Üàêè¦ÒÎ¨òàÊfzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊhzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊjzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊlzˆÒÎÒèÂØø‚ÜÂØÞÎø¦ÊäÒÂØø¦èäÒÜÎ’Üàêè¦ÒÎ¨òàÊnzˆÒÎÒèÂØžêèàêè¦ÒÎ¨òàÊbz‚ÜÂØÞÎžêèàêè¦ÒÎ¨òàÊdzˆÒÎÒèÂØø‚ÜÂØÞÎø¦ÊäÒÂØø¦èäÒÜÎžêèàêè¦ÒÎ¨òàÊfzˆÒÎÒèÂØø‚ÜÂØÞÎø¦ÊäÒÂØø¦èäÒÜÎžêèàêè¦ÒÎ¨òàÊhzˆÒÎÒèÂØ ÂäÂÚ¦ÒÎ¨òàÊbz˜Òæè’Üàêè†êÊbzŠÜÂÄØÊö¦òæZ îäú’Üàêè†êÊdz¶üªœª¦Šˆüº’Üàêè†êÊfzŒÞäÆÊZ äÒìÂÆòZžÜ’Üàêè†êÊhzŒÞäÆÊZ äÒìÂÆòZž<d:Ì>’Üàêè†êÊjz äÒìÂÆòZ„èÜ’Üàêè†êÊlz¶üªœª¦Šˆüº’Üàêè†êÊnz†ÞÈÊÆZ äÒìÂÆòZžÜZŒ„žêèàêè†êÊbz äÒìÂÆòZ‚ÜÒÚÂèÒÞÜžêèàêè†êÊdz¶üªœª¦Šˆüºžêèàêè†êÊfz¶üªœª¦Šˆüºžêèàêè†êÊhz äÒìÂÆòZžÜZŒÄžêèàêè†êÊjz äÒìÂÆòZž<d:Ì>ZŒÄžêèàêè†êÊlz äÒìÂÆòZžÜZ êØæÊžêèàêè†êÊnz äÒìÂÆòZž<d:Ì>Z êØæÊŒÒØÊœÂÚÊz˜ÊÐÚÂÜ@ äÒìÂÆò@’ÜèÊäÌÂÆÊ@ìdÄZØÖ\êÚÆº¶žÄÔ¨àz¦Úzb¦Ú†zbjnœÚz†ÊÜèäÂØ@†ÞÜèäÞØ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzd¦Ú†zbjnœÚzœÊèîÞäÖ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzf¦Ú†zbjnœÚzŠèÐÊäÜÊè†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzh¦Ú†zbjlœÚz˜ÞÎÒÆ†ŒzdÚ†zb†bznº¶žÄÔ¨àz¦Úzj¦Ú†zbjnœÚzˆÊÌÒÜÊ‚äÎêÚÊÜèæ†ŒzdÜb’zbÜbžzbÚ†zb†bzlÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzl¦Ú†z<d:j> äzj†ŒzdÜb’znÜbžznÚ’zn’bzn’dzh’fzp’hzbl’jzfb’lzh’nzbhÚžznèžznžbzdhždzhžfzhžhzbnžjzbpžlzbržnzd`Ú zb bzº¶žÄÔ¨àz¦Úzn¦Ú†zbjl äzh†Œzd†ÚÜbz äÒìÂÆòÚ†zbj†bzp†dzr†fzb`†hz<d:b>†jzbd†lzbf†nzbh†pzbl†rzbr†b`zbn†<d:b>zd`†bdzbp†bfz<d:d>†bhzdf†bjzdhº¶žÄÔ¨àz¦Úzp¦Ú†zf äzn†ŒzdÜb’zfÜbžzb†ÚÜbzŠðÒè@òÊæ@Þä@ÊÜèÊä@¬†@èÞ@äÊæÊè@‚¬@ äÒìÂÆòÚ’zf’bzj’dzdj’fzblÚžzbèžzbžbzrº¶žÄÔ¨àz¦Úzr¦Ú†zf äzn†ŒzdÜb’zfÜbžzb†ÚÜbz¦Êè@‚¬@ äÒìÂÆò<d:¸>Ú’zf’bzdn’dzdp’fzpÚžzbèžzbžbzdrº¶žÄÔ¨àz¦Úzb`¦Ú†zbf äzn†ŒzdÜb’zfÜbžzd†ÚÜbz äÒìÂÆò@„ê<d:è>ÞÜ@¨ÒÆ<d:¸>Ú’zf’dzf`’fzfbÚžzdèžzdžbzf`º¶žÄÔ¨àz¦Úz<d:b>¦Ú†zbf äzn†ŒzdÜb’zfÜbžzd†ÚÜbz<d:ø>b‚¬@ äÒìÂÆò@žÜ^ž<d:Ì>Ú’zf’bzdr’dzr’fzbÚžzdèžzdžbzb`ždzbfº¶žÄÔ¨àz¦Úzbd¦Ú†zd` äzn†ŒzdÜb’zfÜbžzd†ÚÜbz äÒìÂÆò@ÞÜ@Z@êÜÚêèÊ<d:¸>Ú’zf’bzb`’dzf`’fzbjÚžzdèžzdžbzdjždzjº¶žÄÔ¨àz¦Úzbf¦Ú†zd` äzn†ŒzdÜb’zfÜbžzd†ÚÜbz äÒìÂÆò@Þ<d:Ì>@Z@ÚêèÊ<d:¸>Ú’zf’bzbf’dzf`’fzlÚžzdèžzdžbzdnždzdpº¶žÄÔ¨àz¦Úzbh¦Ú†zb äzn†ŒzdÜb’zdÜbžzb†ÚÜbz<d:ø>b äÒìÂÆò@ÞÜ@‚¬@ÂÜÈ@ ÞîÊä@žÜÚ’zd’bzn’dzb`Úžzbèžzbžbz<d:b>º¶žÄÔ¨àz¦Úzbl¦Ú†zr äzn†ŒzdÜb’zfÜbžzd†ÚÜbz†ÞÈÊÆ@ äÒìÂÆò@ž<d:Ì><d:¸>Ú’zf’bzb’dzbhÚžzdèžzdžbz<d:d>Ú zb bz\bæº¶žÄÔ¨àz¦Úzbn¦Ú†zr äzn†ŒzdÜb’zfÜbžzd†ÚÜbz†ÞÈÊÆ@ äÒìÂÆò@žÜ<d:¸>Ú’zf’bzbhÚžzdèžzdžbzdfÚ zb bz\bæº¶žÄÔ¨àz¦Úzbp¦Ú†zd` äzn†ŒzdÜb’zjÜbžzh†ÚÜbzÄê<d:Ì>Êä@Þêèàêèæ<d:¸>Ú’zj’bzd’dz<d:b>’fzbf’hzdr’jzrÚžzhèžzhžbzbnždzbpžfzbržhzd`º¶žÄÔ¨àz¦Úzbr¦Ú†zbf äzn†ŒzdÜb’zfÜbžzd†ÚÜbz†ÞÈÊÆ@ äÒìÂÆò@ž<d:Ì>@èÒÆ<d:¸>Ú’zf’dzbj’fz<d:d>Úžzdèžzdžbzbjº¶žÄÔ¨àz¦Úzd`¦Ú†zbf äzn†ŒzdÜb’zfÜbžzd†ÚÜbz†ÞÈÊÆ@ äÒìÂÆò@žÜ@èÒÆ<d:¸>Ú’zf’dzl’fzdfÚžzdèžzdžbzlº¶žÄÔ¨àz¦Úz<d:d>¦Ú†zdb äzn†ŒzdÜb’zfÜbžzdÚ’zf’dzbn’fzbpÚžzdèžzdžbz<d:f>ždzfhÚ zb bz\bæº¶žÄÔ¨àz¦Úzdf¦Ú†zdf äzn†ŒzdÜb’zbÜbžzb†ÚÜbzÌÞäîÂäÈ<d:¸>Ú’zb’bz<d:f>ÚžzbèžzbžbzdhÚ zd bz`\pæ dzf`Èº¶žÄÔ¨àz¦Úzdh¦Ú†zdf äzn†ŒzdÜb’zbÜbžzb†ÚÜbzäÊìÊäæÊ<d:¸>Ú’zb’bzfhÚžzbèžzbžbzdhÚ zd bz`\pæ dz`Èº¶žÄÔ¨àz¦ÎzhœÚz¶üªœª¦Šˆüº¦Î¨àzfbº¶žÄÔ¨àz¦ÎzjœÚz†ÞÈÊÆZ äÒìÂÆòZž<d:Ì>¾žÖº¶žÄÔ¨àz¦ÎzlœÚz†ÞÈÊÆZ äÒìÂÆòZžÜ¾èº¶žÄÔ¨àz¦ÎznœÚzŠÜÂÄØÊö¦òæZ îäúº¶žÄÔ¨àz¦ÎzpœÚzŒÞäÆÊZ äÒìÂÆòZžÜº¶žÄÔ¨àz¦ÎzrœÚzšÂæèÊäZ äÒìÂÆòZž<d:Ì>º¶žÄÔ¨àz¦Îzb`œÚzšÂæèÊäZ äÒìÂÆòZžÜ¾ŒÄº¶žÄÔ¨àz¦Îz<d:b>œÚz äÒìÂÆòZžÜº¶žÄÔ¨àz¦ÎzbfœÚzšÂæèÊäZ äÒìÂÆòZž<d:Ì>¾ŒÄº¶žÄÔ¨àz¦ÎzbhœÚz†ÞÈÊÆZ äÒìÂÆòZžÜZŒ„º¶žÄÔ¨àz¦ÎzbjœÚz†ÞÈÊÆZ äÒìÂÆòZž<d:Ì>¾èº¶žÄÔ¨àz¦ÎzblœÚzŒÞäÆÊZ äÒìÂÆòZž<d:Ì>º¶žÄÔ¨àz¦ÎzbnœÚz äÒìÂÆòZžÜZŒÄº¶žÄÔ¨àz¦ÎzbpœÚz äÒìÂÆòZž<d:Ì>ZŒÄº¶žÄÔ¨àz¦ÎzbrœÚz äÒìÂÆòZžÜZ êØæÊº¶žÄÔ¨àz¦Îzd`œÚz äÒìÂÆòZž<d:Ì>Z êØæÊº¶žÄÔ¨àz¦Îz<d:d>œÚz†ÞÈÊÆZ äÒìÂÆòZž<d:Ì>¾Úº¶žÄÔ¨àz¦ÎzdfœÚz†ÞÈÊÆZ äÒìÂÆòZžÜ¾Úº¶žÄÔ¨àz¦ÎzdhœÚz äÒìÂÆòZ‚ÜÒÚÂèÒÞÜ¦Î¨àzdº¶žÄÔ¨àz¦ÎzdjœÚz äÒìÂÆòZ„èÜ¾ªÜÚêèÊº¶žÄÔ¨àz¦ÎzdnœÚz äÒìÂÆòZ„èÜ¾šêèÊº¶žÄÔ¨àz¦ÎzdpœÚz†ÞÈÊÆZ äÒìÂÆòZžÜ¾žÖº¶žÄÔ¨àz¦ÎzdrœÚzšÂæèÊäZ äÒìÂÆòZžÜº¶žÄÔ¨àz¦Îzf`œÚz äÒìÂÆòZ„èÜZèº¶žÄÔ¨àz¦ÎzfbœÚz äÒìÂÆòZ„èÜº¶žÄÔ¨àz¦Îz<d:f>œÚz äÒìÂÆòZžÜZŒÄ¾àº¶žÄÔ¨àz¦ÎzfhœÚz äÒìÂÆòZž<d:Ì>ZŒÄ¾àº

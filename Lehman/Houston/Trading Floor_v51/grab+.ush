@@ -1,0 +1,67 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.02.13
+  InclDatVrs=1.46
+  CrossCplrVrs=1.2
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=Extracts Program File name & Ops loaded in Control Processor(2 Series)\\
+  Cmn2=\\Tested on Pro2\\
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+  Name=grab+
+  SmplCName=grab+.usp
+  Code=1
+  SysRev5=3.137
+  SMWRev=2.02.05
+  InputCue1=info
+  InputSigType1=Digital
+  InputList2Cue1=Rx$
+  InputList2SigType1=Serial
+  OutputList2Cue1=Tx$
+  OutputList2SigType1=Serial
+  OutputList2Cue2=Program_File$
+  OutputList2SigType2=Serial
+  OutputList2Cue3=Ops$
+  OutputList2SigType3=Serial
+  ParamCue1=[Reference Name]
+  MinVariableInputs=1
+  MaxVariableInputs=1
+  MinVariableInputsList2=1
+  MaxVariableInputsList2=1
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=3
+  MaxVariableOutputsList2=3
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_grab_
+  SymJam=NonExclusive
+[END]

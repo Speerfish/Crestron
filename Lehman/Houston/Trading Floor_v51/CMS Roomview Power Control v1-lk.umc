@@ -1,0 +1,43 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.07.32
+IntStrVrs=2
+MinSMWVrs=2.05.04
+
+MinTIOVrs=0
+SavedBy=SMW2.07.32
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=CMS Roomview Power Control v1-lk.umc
+DbVr=18.1.5
+PgmNm=SJS
+DlrNm=Crestron Electronics
+CltNm=Roomview System/Display Power Control
+Incl=362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,767,830,883,1032,1062,1079,
+SmVr=404
+DvVr=404
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+APg=1
+FpCS=0
+Cmn1=CMS Roomview Power Control v1\\\\Used to interface with Roomview||1
+Cmn2=and projects\\System Power and Display Power state.\\\\INPUTS:\\
+Cmn3=Roomview>>Power_Trigger    D    Ties to signal used for power on/off||1
+Cmn4=pulse from Roomview\\Device>>Power_On/Off_Fb    D    Ties to device||1
+Cmn5=power on/off feedback\\\\\\OUTPUTS:\\Power_On_FB>>Roomview||6
+Cmn6=D    Ties to Roomview signal for device feedback\\Power_On/Off>>Device||1
+Cmn7=||6D    Ties to device power on/off triggers\\\\
+]
+FeSchVr=001
+¶¬ÊäæÒÞÜzbº¶žÄÔ¨àzŒ¦ÎÜèä¦ÎÜèäzªæÊäšÂÆäÞ¤ÊØ¬äæzd\`n\fd’Üè¦èä¬äæzdšÒÜ¦š®¬äæzd\`j\<d:d>šÒÜ¨’ž¬äæz`¦ÂìÊÈ„òz¦š®d\`n\fdº¶žÄÔ¨àzÈ¦`œÈzb¦bœÈzd¦˜œÈzf äœÚz†š¦@¤<d:Þ>ÚìÒÊî@ ÞîÊä@†ÞÜèäÞØ@ìbZØÖ\êÚÆˆÄ¬äzbp\b\j ÎÚœÚz¦”¦ˆØäœÚz†äÊæèäÞÜ@ŠØÊÆèäÞÜÒÆæ†ØèœÚz¤<d:Þ>ÚìÒÊî@¦òæèÊÚ^ˆÒæàØÂò@ ÞîÊä@†ÞÜèäÞØ’ÜÆØzfldXfnpXfp`Xh`jXh`nXh`pXh`rXhnpXj<d:d>XjfnX<d:j>hXjplXjr`Xl<d:b>XldhXnlnXpf`X<d:p>fXb`fdXb`ldXb`nrX¦Ú¬äzh`hˆì¬äzh`h¨àœbzb¨àœdzd¨àœfzf¨àœhzh¨àœjzj‚ ÎzbŒà†¦z`†ÚÜbz†š¦@¤<d:Þ>ÚìÒÊî@ ÞîÊä@†ÞÜèäÞØ@ìb<h:¸>ªæÊÈ@èÞ@ÒÜèÊäÌÂÆÊ@îÒèÐ@¤<d:Þ>ÚìÒÊî<d:ø>b†ÚÜdzÂÜÈ@àäÞÔÊÆèæ<d:¸>¦òæèÊÚ@ ÞîÊä@ÂÜÈ@ˆÒæàØÂò@ ÞîÊä@æèÂèÊ\<h:¸>’œ ª¨¦t<d:¸>†ÚÜfz¤<d:Þ>ÚìÒÊî<d:|> ÞîÊä¾¨äÒ<d:Î>Êä<h:@>ˆ<h:@>¨ÒÊæ@èÞ@æÒÎÜÂØ@êæÊÈ@ÌÞä@àÞîÊä@ÞÜ^Þ<d:Ì><d:ø>b†ÚÜhzàêØæÊ@ÌäÞÚ@¤<d:Þ>ÚìÒÊî<d:¸>ˆÊìÒÆÊ<d:|> ÞîÊä¾žÜ^ž<d:Ì>¾ŒÄ<h:@>ˆ<h:@>¨ÒÊæ@èÞ@ÈÊìÒÆÊ<d:ø>b†ÚÜjzàÞîÊä@ÞÜ^Þ<d:Ì>@Ì<d:Ê>ÈÄÂÆÖ<l:¸>žª¨ ª¨¦t<d:¸> ÞîÊä¾žÜ¾Œ„<d:|>¤<d:Þ>ÚìÒÊî<d:ø>l†ÚÜlzˆ<h:@>¨ÒÊæ@èÞ@¤<d:Þ>ÚìÒÊî@æÒÎÜÂØ@ÌÞä@ÈÊìÒÆÊ@Ì<d:Ê>ÈÄÂÆÖ<d:¸> ÞîT  TÖÆÞØÈÞÚ`lTŠ  TÊä¾žÜ^ž<d:Ì><d:|>ˆÊìÒÆÊ<d:ø>b†ÚÜnz<d:ø>lˆ<h:@>¨ÒÊæ@èÞ@ÈÊìÒÆÊ@àÞîÊä@ÞÜ^Þ<d:Ì>@èäÒ<d:Î>Êäæ<h:¸>º¶žÄÔ¨àz„ÖœÚbz¸¦ðbz`¦òbz`šðbz`º¶žÄÔ¨àz„îzb˜ðz`˜òz`¤ðzlfr¤òzhjf°ÚzZb²ÚzZb¦zn´znjèzhÒzbº¶žÄÔ¨àz„îzb˜ðz`˜òzhjf¤ðzlfr¤òzr`l°ÚzZb²ÚzZb¦zl´znjèzhÒzbº¶žÄÔ¨àz„îzb˜ðzlfr˜òz`¤ðzbdnp¤òzf`d°ÚzZb²ÚzZb¦zb`´znjèzbÒzbº¶žÄÔ¨àz„îzb˜ðzlfr˜òzf`d¤ðzbdnp¤òzl`h°ÚzZb²ÚzZb¦z<d:b>´znjèzhÒzbº¶žÄÔ¨àz„îzb˜ðzlfr˜òzl`h¤ðzbdnp¤òzr`l°ÚzZb²ÚzZb¦zr´znjèzhÒzbº¶žÄÔ¨àz¦òÚÄÞØœÂÚÊz†š¦@¤<d:Þ>ÚìÒÊî@ ÞîÊä@†ÞÜèäÞØ@ìbZØÖ†ÞÈÊzb¦ÚàØ†œÂÚÊz†š¦@¤<d:Þ>ÚìÒÊî@ ÞîÊä@†ÞÜèäÞØ@ìbZØÖ\êÚÆ¦ÚàØZ†zf†ÞÜìÊäèÂÄØÊz¨äêÊ†ÞÚàÒØÊä¨ÒÚÊ äÊÆÒæÒÞÜz¦ÒÜÎØÊ¾žä¾ˆÞêÄØÊ¾ äÊÆÒæÒÞÜÒÜèz¤<d:Þ>ÚìÒÊî@¦òæèÊÚ^ˆÒæàØÂò@ ÞîÊä@†ÞÜèäÞØ¦š®¤Êìzd\`j\<d:d>¨’ž¤Êìz`ÊØà’ˆzb`<d:j>‚ ÎzbœêÚŒÒðÊÈ’ÜàêèæzhœêÚŒÒðÊÈžêèàêèæzhšÒÜ¬ÂäÒÂÄØÊ’Üàêèæz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊ ÂäÂÚæz`¦òÚÄÞØ¨ä<d:Ê>zfd’Üàêè¦ÒÎ¨òàÊbzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊdzˆÒÎÒèÂØø‚ÜÂØÞÎø¦ÊäÒÂØø¦èäÒÜÎ’Üàêè¦ÒÎ¨òàÊfzˆÒÎÒèÂØžêèàêè¦ÒÎ¨òàÊbzˆÒÎÒèÂØžêèàêè¦ÒÎ¨òàÊdzˆÒÎÒèÂØø‚ÜÂØÞÎø¦ÊäÒÂØø¦èäÒÜÎžêèàêè¦ÒÎ¨òàÊfzˆÒÎÒèÂØ ÂäÂÚ¦ÒÎ¨òàÊbz¨ÒÚÊø ÊäÆÊÜèø†ÞÜæèÂÜèø¦èäÒÜÎøŒÒØÊœÂÚÊøÊð‚<d:È>äÊ<d:æ>ø‚Üò’Üàêè†êÊbz¤<d:Þ>ÚìÒÊî<d:|> ÞîÊä¾¨äÒ<d:Î>Êä’Üàêè†êÊdz¶üªœª¦Šˆüº’Üàêè†êÊfzˆÊìÒÆÊ<d:|> ÞîÊä¾žÜ¾ŒÄ’Üàêè†êÊhzˆÊìÒÆÊ<d:|> ÞîÊä¾ž<d:Ì>¾ŒÄžêèàêè†êÊbz ÞîÊä¾žÜ¾Œ„<d:|>¤<d:Þ>ÚìÒÊîžêèàêè†êÊdz¶üªœª¦Šˆüºžêèàêè†êÊfz ÞîÊä¾žÜ<d:|>ˆÊìÒÆÊžêèàêè†êÊhz ÞîÊä¾ž<d:Ì><d:|>ˆÊìÒÆÊŒÒØÊœÂÚÊz†š¦@¤<d:Þ>ÚìÒÊî@ ÞîÊä@†ÞÜèäÞØ@ìbZØÖ\êÚÆº¶žÄÔ¨àz¦Úzb¦Ú†zbjnœÚz†ÊÜèäÂØ@†ÞÜèäÞØ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzd¦Ú†zbjnœÚzœÊèîÞäÖ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzf¦Ú†zbjnœÚzŠèÐÊäÜÊè†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzh¦Ú†zbjlœÚz˜ÞÎÒÆ†ŒzdÚ†zh†bzn†dzr†fzb`†hz<d:b>º¶žÄÔ¨àz¦Úzj¦Ú†zbjnœÚzˆÊÌÒÜÊ‚äÎêÚÊÜèæ†ŒzdÜb’zbÜbžzbÚ†zb†bzlÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzl¦Ú†z<d:j> äzj†ŒzdÜb’zhÜbžzhÚ’zh’bzh’dzl’fzj’hznÚžzhèžzhžbzpždzlžfzržhzb`Ú zb bzº¶žÄÔ¨àz¦Úzn¦Ú†zd` äzh†ŒzdÜb’zdÜbžzb†ÚÜbzàÂ<d:æ>@àÞîÊä@Ì<d:Ê>ÈÄÂÆÖ@èÞ@ä<d:Þ>ÚìÒÊî<d:¸>Ú’zd’bzd’dzjÚžzbèžzbžbzpº¶žÄÔ¨àz¦Úzr¦Ú†zbf äzh†ŒzdÜb’zfÜbžzd†ÚÜbzàÞîÊä@èÒÆ<d:¸>Ú’zf’dz<d:b>’fzhÚžzdèžzdžbz<d:b>º¶žÄÔ¨àz¦Úzb`¦Ú†zd` äzh†ŒzdÜb’zdÜbžzb†ÚÜbzàÞîÊä@ÞÜ<d:¸>Ú’zd’bzj’dz<d:b>Úžzbèžzbžbzb`º¶žÄÔ¨àz¦Úz<d:b>¦Ú†zd` äzh†ŒzdÜb’zdÜbžzb†ÚÜbzàÞîÊä@Þ<d:Ì><d:¸>Ú’zd’bzn’dz<d:b>Úžzbèžzbžbzrº¶žÄÔ¨àz¦ÎzhœÚz¤<d:Þ>ÚìÒÊî<d:|> ÞîÊä¾¨äÒ<d:Î>Êäº¶žÄÔ¨àz¦ÎzjœÚzˆÊìÒÆÊ<d:|> ÞîÊä¾žÜ¾ŒÄº¶žÄÔ¨àz¦ÎzlœÚz¶üªœª¦Šˆüº¦Î¨àzfbº¶žÄÔ¨àz¦ÎznœÚzˆÊìÒÆÊ<d:|> ÞîÊä¾ž<d:Ì>¾ŒÄº¶žÄÔ¨àz¦ÎzpœÚz ÞîÊä¾žÜ¾Œ„<d:|>¤<d:Þ>ÚìÒÊîº¶žÄÔ¨àz¦ÎzrœÚz ÞîÊä¾žÜ<d:|>ˆÊìÒÆÊº¶žÄÔ¨àz¦Îzb`œÚz ÞîÊä¾ž<d:Ì><d:|>ˆÊìÒÆÊº¶žÄÔ¨àz¦Îz<d:b>œÚz¤<d:Þ>ÚìÒÊî<d:|> ÞîÊä¾¨äÒ<d:Î>Êä¾èº

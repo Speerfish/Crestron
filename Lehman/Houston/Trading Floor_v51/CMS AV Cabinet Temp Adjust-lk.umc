@@ -1,0 +1,43 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.07.32
+IntStrVrs=2
+MinSMWVrs=2.05.04
+
+MinTIOVrs=0
+SavedBy=SMW2.07.32
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=CMS AV Cabinet Temp Adjust-lk.umc
+CmVr=2.07.22
+DbVr=18.1.5
+OpVr=PRO2   Cntrl Eng {{**{{v3.137 (Release)}}**}}
+PgmNm=SJS
+DlrNm=Crestron Electronics
+CltNm=CMS AV Cabinet Temp Adjust
+Incl=362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,767,830,883,1032,1062,1079,
+SmVr=404
+DvVr=404
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+APg=1
+FpCS=0
+Cmn1=CMS AV Cabinet Temperature Adjust\\\\This module adjusts temperature||1
+Cmn2=by rounding\\up or down the value so temperature displayed\\is only||1
+Cmn3=a two digit whole value.\\\\Example:\\\\Temperature value from RTHS||1
+Cmn4== 755d (75.5 degrees)\\New value = 76d (76 degrees)\\\\v1 - Initial||1
+Cmn5=Release
+]
+FeSchVr=001
+¶¬ÊäæÒÞÜzbº¶žÄÔ¨àzŒ¦ÎÜèä¦ÎÜèäzªæÊäšÂÆäÞ¤ÊØ¬äæzd\`n\fd’Üè¦èä¬äæzdšÒÜ¦š®¬äæzd\`j\<d:d>šÒÜ¨’ž¬äæz`¦ÂìÊÈ„òz¦š®d\`n\fdº¶žÄÔ¨àzÈ¦`œÈzb¦bœÈzd¦˜œÈzf äœÚz†š¦@‚¬@†ÂÄÒÜÊè@¨ÊÚà@‚ÈÔêæèZØÖ\êÚÆ†Ú¬äzd\`n\<d:d>ˆÄ¬äzbp\b\jžà¬äz ¤žd<f:@>†ÜèäØ@ŠÜÎ@<d:ö><d:T><d:ö>ìf\bfn@P¤ÊØÊÂæÊR<d:ú><d:T><d:ú> ÎÚœÚz¦”¦ˆØäœÚz†äÊæèäÞÜ@ŠØÊÆèäÞÜÒÆæ†ØèœÚz†š¦@‚¬@†ÂÄÒÜÊè@¨ÊÚà@‚ÈÔêæè’ÜÆØzfldXfnpXfp`Xh`jXh`nXh`pXh`rXhnpXj<d:d>XjfnX<d:j>hXjplXjr`Xl<d:b>XldhXnlnXpf`X<d:p>fXb`fdXb`ldXb`nrX¦Ú¬äzh`hˆì¬äzh`h¨àœbzb¨àœdzd¨àœfzf¨àœhzh¨àœjzj‚ ÎzbŒà†¦z`†ÚÜbz†š¦@‚¬@†ÂÄÒÜÊè@¨ÊÚàÊäÂèêäÊ@‚ÈÔêæè<h:¸>¨ÐÒæ@ÚÞÈêØÊ@ÂÈÔêæèæ@èÊÚàÊäÂèêäÊ<d:ø>b†ÚÜdzÄò@äÞêÜÈÒÜÎ<d:¸>êà@Þä@ÈÞîÜ@èÐÊ@ìÂØêÊ@æÞ@èÊÚàÊäÂèêäÊ@ÈÒæàØÂòÊÈ<d:¸>Òæ@ÞÜØò<d:ø>b†ÚÜfzÂ@èîÞ@ÈÒÎÒè@îÐÞØÊ@ìÂØêÊ\<h:¸>ŠðÂÚàØÊt<h:¸>¨ÊÚàÊäÂèêäÊ@ìÂØêÊ@ÌäÞÚ@¤¨¦<d:ø>b†ÚÜh<d:z>@n<d:j>È@Pnj\j@ÈÊÎä<d:Ê>æR<d:¸>œÊî@ìÂØêÊ@z@nlÈ@Pnl@ÈÊÎä<d:Ê>æR<h:¸>ìb@Z@’ÜÒèÒÂØ<d:ø>b†ÚÜjz¤ÊØÊÂæÊº¶žÄÔ¨àz„ÖœÚbz¸¦ðbz`¦òbz`šðbz`º¶žÄÔ¨àz„îzb˜ðz`˜òz`T  TÖÆÞØÈÞÚ`lTŠ  T¤ðz<d:b>rp¤òzb`pl°ÚzZb²ÚzZb¦zl´znjèzhÒzbº¶žÄÔ¨àz¦òÚÄÞØœÂÚÊz†š¦@‚¬@†ÂÄÒÜÊè@¨ÊÚà@‚ÈÔêæèZØÖ†ÞÈÊzb¦ÚàØ†œÂÚÊz†š¦@‚¬@†ÂÄÒÜÊè@¨ÊÚà@‚ÈÔêæèZØÖ\êÚÆ¦ÚàØZ†zf†ÞÜìÊäèÂÄØÊz¨äêÊ†ÞÚàÒØÊä¨ÒÚÊ äÊÆÒæÒÞÜz¦ÒÜÎØÊ¾žä¾ˆÞêÄØÊ¾ äÊÆÒæÒÞÜŠðÆØêæÒÞÜæzbXbrXd`XdbX<d:p>XprXblnXblpXbnrXdblX<d:d>jXdhpXdhrXd<d:l>Xf`dXf`jXÒÜèz†š¦@‚¬@†ÂÄÒÜÊè@¨ÊÚà@‚ÈÔêæè¦š®¤Êìzd\`j\<d:d>¨’ž¤Êìz`ÊØà’ˆzb`<d:j>‚ ÎzbœêÚŒÒðÊÈ’ÜàêèæzbœêÚŒÒðÊÈžêèàêèæzbšÒÜ¬ÂäÒÂÄØÊ’Üàêèæz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊ ÂäÂÚæz`¦òÚÄÞØ¨ä<d:Ê>zbh’Üàêè¦ÒÎ¨òàÊbz‚ÜÂØÞÎžêèàêè¦ÒÎ¨òàÊbz‚ÜÂØÞÎ ÂäÂÚ¦ÒÎ¨òàÊbz¨ÒÚÊø ÊäÆÊÜèø†ÞÜæèÂÜèø¦èäÒÜÎøŒÒØÊœÂÚÊøÊð‚<d:È>äÊ<d:æ>ø‚Üò’Üàêè†êÊbzÌäÞÚ¾†dœZ¤¨¦žêèàêè†êÊbzèÞ¾¨ÞêÆÐàÂÜÊØŒÒØÊœÂÚÊz†š¦@‚¬@†ÂÄÒÜÊè@¨ÊÚà@‚ÈÔêæèZØÖ\êÚÆº¶žÄÔ¨àz¦Úzb¦Ú†zbjnœÚz†ÊÜèäÂØ@†ÞÜèäÞØ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzd¦Ú†zbjnœÚzœÊèîÞäÖ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzf¦Ú†zbjnœÚzŠèÐÊäÜÊè†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzh¦Ú†zbjlœÚz˜ÞÎÒÆ†ŒzdÚ†zb†bznº¶žÄÔ¨àz¦Úzj¦Ú†zbjnœÚzˆÊÌÒÜÊ‚äÎêÚÊÜèæ†ŒzdÜb’zbÜbžzbÚ†zb†bzlÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzl¦Ú†z<d:j> äzj†ŒzdÜb’zbÜbžzbÚ’zb’bzbfÚžzbèžzbžbzbdÚ zb bzº¶žÄÔ¨àz¦Úzn¦Ú†zbjl äzh†Œzd†ÚÜbzÂì@ÆÂÄÒÜÊè@èÊÚà<d:¸>Ú†zj†bzp†dzr†fzb`†hz<d:b>†jzbdº¶žÄÔ¨àz¦Úzp¦Ú†z<d:b>h äzn†ŒzdÜb’zbÜbžzd†ÚÜbz¤<d:Þ>Ú@¨ÊÚà<d:¸>Ú’zb’bzbfÚžzdèžzdžbzjždzlÚ zb bzb`Èº¶žÄÔ¨àz¦Úzr¦Ú†zfd äzn†ŒzdÜb’zbÜbžzb†ÚÜbzäÂÆÖ@èÊÚà@ÆÞÚàÂäÊ@ìÂØêÊ<d:¸>Ú’zb’bzdÚžzbèžzbžbznÚ zb bzhÈº¶žÄÔ¨àz¦Úzb`¦Ú†zhrd äzn†ŒzdÜb’zdÜbžzlÚ’zd’bzl’dznÚžzlèžzlžhzpžjzrº¶žÄÔ¨àz¦Úz<d:b>¦Ú†zfd äzn†ŒzdÜb’zdÜbžzb†ÚÜbzäÞêÜÈ@êà^ÈÞîÜ<d:¸>Ú’zd’bzp’dzrÚžzbèžzbžbzb`Ú zd bz`È dzbÈº¶žÄÔ¨àz¦Úzbd¦Ú†zjn äzn†ŒzdÜb’zdÜbžzb†ÚÜbzÄêÒØÈ@ÌÒÜÂØ@ìÂØêÊ<d:¸>Ú’zd’bzj’dzb`Úžzbèžzbžbzbdº¶žÄÔ¨àz¦ÎzjœÚzäÚìî¾äÂÆÖ¾èÊÚà¾ÈÒìÒÈÊÈ¦Î¨àzdº¶žÄÔ¨àz¦ÎzlœÚzäÚìî¾äÂÆÖ¾èÊÚà¾äÊÚÂÒÜÈÊä¦Î¨àzdº¶žÄÔ¨àz¦ÎznœÚzäÚìî¾äÂÆÖ¾èÊÚà¾ÆÞÚàÂäÊ¾ìÂØ¦Î¨àzdº¶žÄÔ¨àz¦ÎzpœÚzäÚìî¾äÂÆÖ¾èÊÚà¾Òæ¾ØÊ<d:æ>¾Þä¾ÊâêÂØº¶žÄÔ¨àz¦ÎzrœÚzäÚìî¾äÂÆÖ¾èÊÚà¾Òæ¾ÎäÊÂèÊäº¶žÄÔ¨àz¦Îzb`œÚzäÚìî¾äÂÆÖ¾èÊÚà¾äÞêÜÈ¾êàZÈÞîÜ¾ìÂØ¦Î¨àzdº¶žÄÔ¨àz¦ÎzbdœÚzèÞ¾¨ÞêÆÐàÂÜÊØ¦Î¨àzdº¶žÄÔ¨àz¦ÎzbfœÚzÌäÞÚ¾†dœZ¤¨¦¦Î¨àzdº

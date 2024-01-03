@@ -1,0 +1,130 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.08.38
+IntStrVrs=2
+MinSMWVrs=2.05.04
+
+MinTIOVrs=0
+SavedBy=SMW2.08.38
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=Lehman Shade Relay.umc
+DbVr=18.8.7
+McNm=Up/Down/Stop Relays (Moment
+SmVr=478
+DvVr=478
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+DT=Screen
+DST=Screen
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+Cmn1=MODULE NAME: Up/Down/Stop Relays (Momentary) (cm)\\\\VERSION: 1.
+Cmn2=01 (05/20/2005)\\\\#BEGIN_TOOL_TIPS\\#I,Up,Closes the 'Up' relay||1
+Cmn3=for the time specified by the 'time' property\\#I,Down,Closes the||1
+Cmn4='Down' relay for the time specified by the 'time' property\\#I,Stop,Closes||1
+Cmn5=the 'Stop' relay for the time specified by the 'time' property\\
+Cmn6=#I,Single_Button_Control,Performs Up/Stop/Down/Stop behavior from||1
+Cmn7=a single button\\#P,time==15s,Determines how long the relays will||1
+Cmn8=be pulsed for\\#END_TOOL_TIPS\\\\VERSION HISTORY:\\v1.01 - Modified||1
+Cmn9=cue properties for standard command compatibility.\\
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Bw
+H=1
+Lx=0
+Ly=0
+Rx=1487
+Ry=1054
+Xm=-1
+Ym=-1
+SH=18
+Z=75
+Ht=4
+Hi=5
+]
+[
+ObjTp=Symbol
+Name=Lehman Shade Relay
+Code=1
+SmplCName=Lehman Shade Relay.umc
+Smpl-C=3
+Convertable=True
+CompilerTimePrecision=Single_Or_Double_Precision
+Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+SMWRev=2.07.04
+TIORev=0
+S+=1
+HelpID=1055
+DT=Screen
+DST=Screen
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+NumFixedInputs=6
+NumFixedOutputs=6
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=29
+InputSigType1=Digital
+InputSigType2=Digital
+InputSigType3=Digital
+InputSigType4=Digital
+InputSigType5=Digital|Analog|Serial|String
+InputSigType6=Analog
+ParamSigType1=Time|Percent|Constant|String|FileName|HexAddress|Any
+InputCue1=Up
+InputCue2=Down
+InputCue3=Stop
+InputCue4=Single_Button_Control
+InputCue5=[~UNUSED~]
+InputCue6=Relay_Time
+OutputCue1=Up_Relay
+OutputCue2=Down_Relay
+OutputCue3=Stop_Relay
+OutputCue4=Up_fb
+OutputCue5=Down_fb
+OutputCue6=Stop_fb
+MPi=4
+Pi1=1
+Pi2=2
+Pi3=3
+Pi4=4
+CnxLogic1=C O 0001 I Q:RELAY#
+CnxLogic2=S SER/Suffix:Up
+CnxLogic3=+
+CnxLogic4=C O 0002 I Q:RELAY#
+CnxLogic5=S SER/Suffix:Down
+CnxLogic6=+
+CnxLogic7=C O 0003 I Q:RELAY#
+CnxLogic8=S SER/Suffix:Stop
+FileName=Lehman Shade Relay.umc
+]
+FeSchVr=001
+¶¬ÊäæÒÞÜzbº¶žÄÔ¨àzŒ¦ÎÜèä¦ÎÜèäzªæÊäšÂÆäÞ¤ÊØ¬äæzd\`p\fp’Üè¦èä¬äæzdšÒÜ¦š®¬äæzd\`n\`hšÒÜ¨’ž¬äæz`¦ÂìÊÈ„òz¦š®d\`p\fpº¶žÄÔ¨àzÈ¦`œÈzb¦bœÈzd¦˜œÈzf äœÚz˜ÊÐÚÂÜ@¦ÐÂÈÊ@¤ÊØÂò\êÚÆˆÄ¬äzbp\p\nšÆœÚzªà^ˆÞîÜ^¦èÞà@¤ÊØÂòæ@PšÞÚÊÜè¦Ú¬äzhnpˆì¬äzhnp¨àœbzb¨àœdzd¨àœfzf¨àœhzh¨àœjzjˆ¨z¦Æä<d:Ê>Üˆ¦¨z¦Æä<d:Ê>Ü‚ Îzb¦èÈ†ÚÈz`ŒØè¨ÚàzbŒà†¦z`†ÚÜbzšžˆª˜Š@œ‚šŠt@ªà^ˆÞîÜ^¦èÞà@¤ÊØÂòæ@PšÞÚÊÜèÂäòR@PÆÚR<h:¸>¬Š¤¦’žœt@b\†ÚÜdz`b@P`j^d`^d<d:`>jR<h:¸>F„ŠŽ’œ¾¨<d:ž>˜¾¨’ ¦<d:¸>F’XªàX†ØÞæÊæ@èÐÊ@NªàN@äÊØÂò<d:ø>b†ÚÜfzÌÞä@èÐÊ@èÒÚÊ@æàÊÆÒÌÒÊÈ@Äò@èÐÊ@NèÒÚÊN@àäÞàÊäèò<d:¸>F’XˆÞîÜX†ØÞæÊæ@èÐÊ<d:ø>b†ÚÜhzNˆÞîÜN@äÊØÂò@ÌÞä@èÐÊ@èÒÚÊ@æàÊÆÒÌÒÊÈ@Äò@èÐÊ@NèÒÚÊN@àäÞàÊäèò<d:¸>F’X¦èÞàX†ØÞæÊæ<d:ø>b†ÚÜjzèÐÊ@N¦èÞàN@äÊØÂò@ÌÞä@èÐÊ@èÒÚÊ@æàÊÆÒÌÒÊÈ@Äò@èÐÊ@NèÒÚÊN@àäÞàÊäèò<d:¸>†ÚÜlzF’X¦ÒÜÎØÊ¾„ê<d:è>ÞÜ¾†ÞÜèäÞØX ÊäÌÞäÚæ@ªà^¦èÞà^ˆÞîÜ^¦èÞà@ÄÊÐÂìÒÞä@ÌäÞÚ<d:ø>b†ÚÜnzÂ@æÒÜÎØÊ@Äê<d:è>ÞÜ<d:¸>F XèÒÚÊ<d:z>bjæXˆÊèÊäÚÒÜÊæ@ÐÞî@ØÞÜÎ@èÐÊ@äÊØÂòæ@îÒ<d:Ø><d:ø>b†ÚÜpzÄÊ@àêØæÊÈ@ÌÞä<d:¸>FŠœˆ¾¨<d:ž>˜¾¨’ ¦<h:¸>¬Š¤¦’žœ@’¦¨ž¤T  TÖÆÞØÈÞÚ`lTŠ  T²t<d:¸>ìb\`b@Z@šÞÈÒÌÒÊÈ<d:ø>b†ÚÜrzÆêÊ@àäÞàÊäèÒÊæ@ÌÞä@æèÂÜÈÂäÈ@ÆÞ<d:Ú>ÂÜÈ@ÆÞÚàÂèÒÄÒØÒèò\<d:¸>º¶žÄÔ¨àz„ÖœÚbz¸¦ðbz`¦òbz`šðbz`º¶žÄÔ¨àz„îzb˜ðz`˜òz`¤ðzbhpn¤òzb`jh°ÚzZb²ÚzZb¦zbp´znjèzhÒzjº¶žÄÔ¨àz¦òÚÄÞØœÂÚÊz˜ÊÐÚÂÜ@¦ÐÂÈÊ@¤ÊØÂò†ÞÈÊzb¦ÚàØ†œÂÚÊz˜ÊÐÚÂÜ@¦ÐÂÈÊ@¤ÊØÂò\êÚÆ¦ÚàØZ†zf†ÞÜìÊäèÂÄØÊz¨äêÊ†ÞÚàÒØÊä¨ÒÚÊ äÊÆÒæÒÞÜz¦ÒÜÎØÊ¾žä¾ˆÞêÄØÊ¾ äÊÆÒæÒÞÜŠðÆØêæÒÞÜæzbXbrXd`XdbX<d:p>XprXblnXblpXbnrXdblX<d:d>jXdhpXdhrXd<d:l>Xfb`XnbpXnjlXpjhX¦š®¤Êìzd\`n\`h¨’ž¤Êìz`¦VzbÊØà’ˆzb`<d:j>ˆ¨z¦Æä<d:Ê>Üˆ¦¨z¦Æä<d:Ê>Ü‚ Îzb¦èÈ†ÚÈz`ŒØè¨ÚàzbŒà†¦z`œêÚŒÒðÊÈ’ÜàêèæzlœêÚŒÒðÊÈžêèàêèæzlšÒÜ¬ÂäÒÂÄØÊ’Üàêèæz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊ’Üàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèdz`šÒÜ¬ÂäÒÂÄØÊžêèàêèæ˜Òæèfz`šÒÜ¬ÂäÒÂÄØÊ ÂäÂÚæz`¦òÚÄÞØ¨ä<d:Ê>zdr’Üàêè¦ÒÎ¨òàÊbzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊdzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊfzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊhzˆÒÎÒèÂØ’Üàêè¦ÒÎ¨òàÊjzˆÒÎÒèÂØø‚ÜÂØÞÎø¦ÊäÒÂØø¦èäÒÜÎ’Üàêè¦ÒÎ¨òàÊlz‚ÜÂØÞÎ ÂäÂÚ¦ÒÎ¨òàÊbz¨ÒÚÊø ÊäÆÊÜèø†ÞÜæèÂÜèø¦èäÒÜÎøŒÒØÊœÂÚÊøÊð‚<d:È>äÊ<d:æ>ø‚Üò’Üàêè†êÊbzªà’Üàêè†êÊdzˆÞîÜ’Üàêè†êÊfz¦èÞà’Üàêè†êÊhz¦ÒÜÎØÊ¾„ê<d:è>ÞÜ¾†ÞÜèäÞØ’Üàêè†êÊjz¶üªœª¦Šˆüº’Üàêè†êÊlz¤ÊØÂò¾¨ÒÚÊžêèàêè†êÊbzªà¾¤ÊØÂòžêèàêè†êÊdzˆÞîÜ¾¤ÊØÂòžêèàêè†êÊfz¦èÞà¾¤ÊØÂòžêèàêè†êÊhzªà¾ÌÄžêèàêè†êÊjzˆÞîÜ¾ÌÄžêèàêè†êÊlz¦èÞà¾ÌÄš Òzh Òbzb Òdzd Òfzf Òhzh†Üð˜ÞÎÒÆbz†@ž@<f:`>b@’@¢t¤Š˜‚²F†Üð˜ÞÎÒÆdz¦@¦Š¤^¦ê<d:Ì>Òðtªà†Üð˜ÞÎÒÆfzV†Üð˜ÞÎÒÆhz†@ž@<f:`>d@’@¢t¤Š˜‚²F†Üð˜ÞÎÒÆjz¦@¦Š¤^¦ê<d:Ì>ÒðtˆÞîÜ†Üð˜ÞÎÒÆlzV†Üð˜ÞÎÒÆnz†@ž@<f:`>f@’@¢t¤Š˜‚²F†Üð˜ÞÎÒÆpz¦@¦Š¤^¦ê<d:Ì>Òðt¦èÞàŒÒØÊœÂÚÊz˜ÊÐÚÂÜ@¦ÐÂÈÊ@¤ÊØÂò\êÚÆº¶žÄÔ¨àz¦Úzb¦Ú†zbjnœÚz†ÊÜèäÂØ@†ÞÜèäÞØ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzd¦Ú†zbjnœÚzœÊèîÞäÖ@šÞÈêØÊæ†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzf¦Ú†zbjnœÚzŠèÐÊäÜÊè†ŒzdÜb’zbÜbžzbÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzh¦Ú†zbjlœÚz˜ÞÎÒÆ†ŒzdÚ†zn†bzbp†dzn†fzbd†hzr†jzbl†lzbn†nzbjº¶žÄÔ¨àz¦Úzj¦Ú†zbjnœÚzˆÊÌÒÜÊ‚äÎêÚÊÜèæ†ŒzdÜb’zbÜbžzbÚ†zb†bzlÚ’zbÚžzbèžzbÚ zb bzº¶žÄÔ¨àz¦Úzl¦Ú†z<d:j> äzj†ŒzdÜb’zlÜbžzlÚ’zl’bzh’dzj’fzl’hzn’jzdj’lzdlÚžzlèžzlžbzpždzržfzbfžhzb`žjz<d:b>žlzbdÚ zb bzš Òzh Òbzb Òdzd Òfzf Òhzhº¶žÄÔ¨àz¦Úzn¦Ú†zbr äzh†ŒzdÜb’zjÜbžzf†ÚÜbzÆê<d:ä>ÊÜè@æÆä<d:Ê>Ü@æèÂèÊ<d:¸>Ú’zj’fzbh’hzbj’jz<d:d>Úžzfèžzfžbzb`ždz<d:b>žfzbdº¶žÄÔ¨àz¦Úzr¦Ú†zbjl äzh†Œzd†ÚÜbzæÒÜÎØÊ@Äê<d:è>ÞÜ@ØÞÎÒÆ<d:¸>Ú†zh†bzb`†dzbh†fz<d:b>†hzbfº¶žÄÔ¨àz¦Úzb`¦Ú†zd` äzr†ŒzdÜb’zjÜbžzhÚ’zj’bzdh’dzdb’fzd`’hzbp’jzbrÚžzhèžzhžbzblždzbnžfzbjžhzbhº¶žÄÔ¨àz¦Úz<d:b>¦Ú†zbr äzr†ŒzdÜb’zlÜbžzhÚ’zl’fzbl’hzbn’jzbj’lzbhÚžzhèžzhžbzbpždzbržfzd`žhzdbº¶žÄÔ¨àz¦Úzbd¦Ú†zd` äzh†ŒzdÜb’zpÜbžznÚ’zp’bzd’dzh’fzj’hzl’jzbl’lzbn’nzdf’pzlÚžznèžznžbzbhždzbjžfz<d:d>žhz<d:d>žjz<d:d>žlzblžnzblº¶žÄÔ¨àz¦Úzbf¦Ú†zr äzr†ŒzdÜb’zfÜbžzd†ÚÜbzæÊè@ÒÜèÊäØÞÆÖ@Âè@æèÂäèêà<d:¸>Ú’zf’bzdÚžzdèžzdžbzdfÚ zb bz\bæº¶žÄÔ¨àz¦Úzbh¦Ú†zbf äzr†ŒzdÜb’zfÜbžzd†ÚÜbzæÒÜÎØÊZîÂìÊ@àêØæÊ@ÞÜ@àäÊ<d:æ>@ÞÌ@ˆ¦ª¦@Äê<d:è>ÞÜ<d:¸>Ú’zf’dzdh’fznÚžzdèžzdžbzdhº¶žÄÔ¨àz¦Úzbj¦Ú†zdpl äzh†ŒzdÜb’zbÜbžzb†ÚÜbzæèÞà@äÊØÂò<d:¸>Ú’zb’bzbfÚžzbèžzbÚ zf bz¦èÞà dz¤Š˜‚²F fzº¶žÄÔ¨àz¦Úzbl¦Ú†zdpl äzh†ŒzdÜb’zbÜbžzb†ÚÜbzêà@äÊØÂò<d:¸>Ú’zb’bzpÚžzbèžzbÚ zf bzªà dz¤Š˜‚²F fzº¶žÄÔ¨àz¦Úzbn¦Ú†zdpl äzh†ŒzdÜb’zbÜbžzb†ÚÜbzÈÞîÜ@äÊØÂò<d:¸>Ú’zb’bzrÚžzbèžzbÚ zf bzˆÞîÜ dz¤Š˜‚²F fzº¶žÄÔ¨àz¦Úzbp¦Ú†zb`fœÚz˜ÊÐÚÂÜ@‚ÈÔêæè@š¦¬@ìbZØÖ\êæà äzh†ŒzdÜb’zb`Üd’zbÜbžzb`Ú’z<d:b>’bzbh’dzbj’fz<d:d>’hzdn’jzdn’lzdn’nzdn’pzdn’rzdn’b`zdn’<d:b>zdlÚžzb`èžzb`žbzpždzržfzbfžhzdnžjzdnžlzdnžnzdnžpzdnžrzdnžb`zdnÚ zb bzº¶žÄÔ¨àz¦ÎzhœÚzªàº¶žÄÔ¨àz¦ÎzjœÚzˆÞîÜº¶žÄÔ¨àz¦ÎzlœÚz¦èÞàº¶žÄÔ¨àz¦ÎznœÚz¦ÒÜÎØÊ¾„ê<d:è>ÞÜ¾†ÞÜèäÞØº¶žÄÔ¨àz¦ÎzpœÚzªà¾¤ÊØÂòº¶žÄÔ¨àz¦ÎzrœÚzˆÞîÜ¾¤ÊØÂòº¶žÄÔ¨àz¦Îzb`œÚzªà¾ÌÄº¶žÄÔ¨àz¦Îz<d:b>œÚzˆÞîÜ¾ÌÄº¶žÄÔ¨àz¦ÎzbdœÚz¦èÞà¾ÌÄº¶žÄÔ¨àz¦ÎzbfœÚz¦èÞà¾¤ÊØÂòº¶žÄÔ¨àz¦ÎzbhœÚzêà¾Äº¶žÄÔ¨àz¦ÎzbjœÚzÈÞîÜ¾Äº¶žÄÔ¨àz¦ÎzblœÚz¦èÞà¾‚ÌèÊä¾ªàº¶žÄÔ¨àz¦ÎzbnœÚz¦èÞà¾‚ÌèÊä¾ˆÞîÜº¶žÄÔ¨àz¦ÎzbpœÚz¦èÞà¾‚ÌèÊä¾ªà¾Òº¶žÄÔ¨àz¦ÎzbrœÚz¦èÞà¾‚ÌèÊä¾ˆÞîÜ¾Òº¶žÄÔ¨àz¦Îzd`œÚzˆÞîÜ¾Òº¶žÄÔ¨àz¦ÎzdbœÚzªà¾Òº¶žÄÔ¨àz¦Îz<d:d>œÚzæèÞà¾Äº¶žÄÔ¨àz¦ÎzdfœÚzæèÂäèêà¾àêØæÊº¶žÄÔ¨àz¦ÎzdhœÚz¦ÒÜÎØÊ¾„ê<d:è>ÞÜ¾†ÞÜèäÞØ¾æîàº¶žÄÔ¨àz¦ÎzdjœÚz¶üªœª¦Šˆüº¦Î¨àzfbº¶žÄÔ¨àz¦ÎzdlœÚz¤ÊØÂò¾¨ÒÚÊ¦Î¨àzdº¶žÄÔ¨àz¦ÎzdnœÚz<d:^><d:¾>ÈÒÎÒèÂØ¾äÊæÊäìÊÈ<d:¾>º¶žÄÔ¨àzˆàzb¨àzdˆ¨zbŒˆbz†ØÞæÊæ@èÐÊ@NªàN@äÊØÂò@ÌÞä@èÐÊ@èÒÚÊ@æàÊÆÒÌÒÊÈ@Äò@èÐÊ@NèÒÚÊN@àäÞàÊäèò¨äÎzb†ÚÈzhdº¶žÄÔ¨àzˆàzd¨àzdˆ¨zbŒˆbz†ØÞæÊæ@èÐÊ@NˆÞîÜN@äÊØÂò@ÌÞä@èÐÊ@èÒÚÊ@æàÊÆÒÌÒÊÈ@Äò@èÐÊ@NèÒÚÊN@àäÞàÊäèò¨äÎzb†ÚÈzhfº¶žÄÔ¨àzˆàzf¨àzdˆ¨zbŒˆbzF„ŠŽ’œ¾¨<d:ž>˜¾¨’ ¦<d:¸>F’XªàX†ØÞæÊæ@èÐÊ@NªàN@äÊØÂò@ÌÞä@èÐÊ@èÒÚÊ@æàÊÆÒÌÒÊÈ<d:ø>bŒˆdzÄò@èÐÊ@NèÒÚÊN@àäÞàÊäèò<d:¸>F’XˆÞîÜX†ØÞæÊæ@èÐÊ@NˆÞîÜN@äÊØÂò@ÌÞä@èÐÊ<d:ø>bŒˆfzèÒÚÊ@æàÊÆÒÌÒÊÈ@Äò@èÐÊ@NèÒÚÊN@àäÞàÊäè¨äÎzb†ÚÈz<d:h>º¶žÄÔ¨àzˆàzh¨àzdˆ¨zbŒˆbz ÊäÌÞäÚæ@ªà^¦èÞà^ˆÞîÜ^¦èÞà@ÄÊÐÂìÒÞä@ÌäÞÚ@Â@æÒÜÎØÊ@Äê<d:è>ÞÜ¨äÎzbº
