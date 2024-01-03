@@ -1,0 +1,162 @@
+/*
+Steve Swartzentruber
+Crestron Electronics, Inc.
+*/
+
+
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+ 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+// DIGITAL_INPUT 
+// ANALOG_INPUT Macro_Offset_Val;
+STRING_INPUT Device_Type$[5], Device_ID$[5], Command_In$[20], RX$[200];
+// BUFFER_INPUT 
+
+// DIGITAL_OUTPUT 
+// ANALOG_OUTPUT Device_Type_Val;
+STRING_OUTPUT Device_TX$, Feedback$;
+
+
+
+/*******************************************************************************************
+  Structure Definitions
+*******************************************************************************************/
+// STRUCTURE MyStruct1
+// {
+// };
+
+// MyStruct1 struct;
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+integer iType;
+string sID[5], sType[5], sClearoneHeader[20], sVortexHeader[20];
+
+
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+function clearone_header(string Type, string ID)
+{
+	iType = 1;
+	makestring(sClearoneHeader,"#%s%s\x20", Type, ID);
+}
+
+function clearone_command(string Cmd)
+{
+	makestring(Device_TX$, "%s%s", sClearoneHeader, Cmd);
+}
+
+
+function vortex_header(string Type, string ID)
+{
+  iType = 2;
+  makestring(sVortexHeader, "%s0%s", Type, ID);
+}
+
+function vortex_command(string Cmd)
+{
+	makestring(Device_TX$, "%s%s", sVortexHeader, Cmd);
+}
+
+
+/*******************************************************************************************
+  Events
+*******************************************************************************************/
+change Device_Type$
+{
+	sType = Device_Type$;
+	
+	switch(byte(sType, 1))
+	{
+		case(49): clearone_header(sType, sID);		//AP800			1
+		case(50): clearone_header(sType, sID);		//AP10			2
+		case(51): clearone_header(sType, sID);		//AP400			3
+		case(52): clearone_header(sType, sID);		//PSR1212		4
+		case(53): clearone_header(sType, sID);		//XAP800		5
+		case(54): clearone_header(sType, sID);		//XAPTH2		6
+		case(55): clearone_header(sType, sID);		//XAP400		7
+		case(65): vortex_header(sType, sID);			//EF2200		A
+		case(66): vortex_header(sType, sID);			//EF2241		B
+		case(67): vortex_header(sType, sID);			//EF1210		C
+		case(70): vortex_header(sType, sID);			//EF2280		F
+		case(81): vortex_header(sType, sID);			//EF2210		Q
+		case(83): vortex_header(sType, sID);			//EF2211		S
+		case(84): vortex_header(sType, sID);			//EF2201		T
+	}
+}
+
+
+change device_id$
+{
+	sID = device_id$;
+}
+
+
+change Command_In$
+{
+	string sCmd[20];
+	
+	sCmd = Command_In$;
+	
+	switch(iType)
+	{
+		case(1):	//Clearone
+		{
+			clearone_command(sCmd);
+		}
+		
+		case(2):	//vortex
+		{	
+			vortex_command(sCmd);
+		}
+	}
+}
+
+
+change rx$
+{
+	string sTemp[200], sDump[200];
+	
+	sTemp = rx$;
+	
+	if(find(sclearoneheader, sTemp))
+	{
+		sDump = remove(sclearoneheader, sTemp);
+		feedback$ = sTemp;
+	}
+	else if(find(svortexheader, sTemp))
+	{
+		sDump = remove(svortexheader, sTemp);
+		feedback$ = sTemp;
+	}
+	sTemp = "";
+	sDump = "";
+}
+
+
+/*******************************************************************************************
+  Main()
+*******************************************************************************************/
+function main()
+{
+	iType = 0;
+}
