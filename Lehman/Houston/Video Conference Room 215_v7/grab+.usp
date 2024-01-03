@@ -1,0 +1,120 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+#DEFINE_CONSTANT Filename 1
+#DEFINE_CONSTANT Ops      2
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+//#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+#HELP_BEGIN
+
+Extracts Program File name & Ops loaded in Control Processor(2 Series)
+
+Tested on Pro2
+
+#HELP_END
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT info;
+// ANALOG_INPUT 
+// STRING_INPUT
+BUFFER_INPUT Rx$[1000]; 
+
+// DIGITAL_OUTPUT 
+// ANALOG_OUTPUT 
+STRING_OUTPUT Tx$, Program_File$, Ops$; 
+
+
+INTEGER Marker1, Marker2, Semaphore, Counter, iBusy;
+STRING Tempstring$[200], form$[40]; 
+
+Push info
+{
+	iBusy = 1;
+	Counter = Ops;
+	Tx$ = "ver\n";
+	wait(200)
+		{
+		iBusy = 0;
+        
+		       
+		}
+
+}
+
+CHANGE Rx$
+	{
+	if((Semaphore = 0) && (iBusy = 1))
+		{
+		Semaphore = 1;
+		While(find("\x0D\x0A", Rx$) > 0)
+			{
+			TempString$ = remove("\x0D\x0A", Rx$);
+			
+			Switch(Counter)
+				{
+				Case(Ops):
+					{
+					marker1 = find("Cntrl Eng [", Tempstring$);
+					marker2 = find("]", Tempstring$, Marker1 + 11);
+					
+					if((marker1 > 0) && (marker2 > 0))
+						{
+						form$ = mid(Tempstring$, marker1 + 11, Marker2 - Marker1 - 11);
+						makestring(Ops$,"CRESTRON Cntrl Eng [%s]",form$); 
+						Counter = Filename;
+						Tx$ = "progcomments\n";
+						}
+					}
+				Case(Filename):
+					{
+					marker1 = find("Program File: ", Tempstring$);
+					marker2 = find("\x0D\x0A", Tempstring$, marker1 + 14);
+					
+					if((Marker1 > 0) && (Marker2 > 0))
+						{
+						Program_File$ = mid(Tempstring$, marker1 + 14, Marker2 - Marker1 - 14);
+						cancelallwait();
+						iBusy = 0;
+						
+						}
+					}
+				}
+			}
+		Semaphore = 0;
+		}
+	}
+	
+Function Main()
+	{
+	Semaphore = 0;
+	iBusy = 0;
+	}
+

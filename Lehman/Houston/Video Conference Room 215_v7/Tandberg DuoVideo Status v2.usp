@@ -1,0 +1,140 @@
+/*
+Steve Swartzentruber
+Crestron Electronics, Inc.
+*/
+
+
+#SYMBOL_NAME "Tandberg DuoVideo Status v2"
+// #HINT ""
+#DEFINE_CONSTANT Debug 0
+#DEFINE_CONSTANT VMReset4 0
+ 
+#DEFAULT_NONVOLATILE
+// #ENABLE_STACK_CHECKING
+
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+
+BUFFER_INPUT Tandberg_RX$[100];
+
+
+
+DIGITAL_OUTPUT DuoVid_Ready, DuoVid_NotReady, DuoLocal, DuoRemote;
+// ANALOG_OUTPUT 
+STRING_OUTPUT Tandberg_TX$;
+
+
+
+/*******************************************************************************************
+  Structure Definitions
+*******************************************************************************************/
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+integer iStart, iCnt, busy, iStatus, iVal;
+string sGathered[1000], sData[1000], sDuoStatus[20], sTemp[20];
+
+
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+
+
+/*******************************************************************************************
+  Events
+*******************************************************************************************/
+change Tandberg_RX$
+{	
+	if(busy = 0)
+	{
+		busy = 1;
+		while(find("\x0D\x0A", Tandberg_Rx$) > 0)
+		{
+			sGathered = remove("\x0D\x0A", Tandberg_RX$, 1);
+			
+			if(find("DuoVideo (status=Ready)", sGathered))
+			{
+				DuoVid_Ready = 1;
+				DuoVid_NotReady = 0;
+				DuoLocal = 0;
+				DuoRemote = 0;
+				iStatus = 0;
+			}
+			
+			else if(find("DuoVideo (status=None)", sGathered))
+			{
+				DuoVid_Ready = 0;
+				DuoVid_NotReady = 1;
+				DuoLocal = 0;
+				DuoRemote = 0;
+				iStatus = 0;
+			}
+
+			else if(find("Conference (type=Idle)", sGathered))
+			{
+				DuoVid_Ready = 0;
+				DuoVid_NotReady = 1;
+				DuoLocal = 0;
+				DuoRemote = 0;
+				iStatus = 0;
+			}
+			
+			else if(find("DuoVideo (status=On)", sGathered))
+			{
+				iStatus = 1;
+			}
+			
+			else if(find("CallRef:", sGathered) && iStatus = 1)
+			{
+				sTemp = remove(":", sGathered);
+				iVal = atoi(sGathered);
+				
+				if(iVal > 0)
+				{
+					DuoRemote = 1;
+					DuoLocal = 0;
+				}
+				else
+				{
+					DuoRemote = 0;
+					DuoLocal = 1;
+				}
+				iStatus = 0;
+			}
+            sGathered = "";
+			processlogic();
+		}
+		busy = 0;
+	}
+}
+
+
+
+/*******************************************************************************************
+  Main()
+*******************************************************************************************/
+function Main()
+{
+	
+	sGathered = "";
+	sData = "";
+	sDuoStatus = "";
+	iStatus = 0;
+	DuoLocal = 0;
+	DuoRemote = 0;
+	DuoVid_Ready = 0;
+	DuoVid_NotReady = 1;
+	busy = 0;
+}
