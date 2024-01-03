@@ -1,0 +1,141 @@
+/*
+Steve Swartzentruber
+Crestron Electronics, Inc.
+*/
+
+
+#SYMBOL_NAME "Lehman PhoneSave v1.0"
+// #HINT ""
+// #DEFINE_CONSTANT
+ 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+DIGITAL_INPUT Save, Recall, Dial; //Add9, Add1;
+// ANALOG_INPUT
+// STRING_INPUT 
+STRING_INPUT Phone#[50];
+
+// DIGITAL_OUTPUT _SKIP_, _SKIP_, _SKIP_, Add9_Fb, Add1_Fb;
+// ANALOG_OUTPUT 
+STRING_OUTPUT DialNum_Main$, NumDisplay$;
+
+
+
+/*******************************************************************************************
+  Structure Definitions
+*******************************************************************************************/
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+integer g_iAdd9, g_iAdd1;
+string g_sPhone[50], g_sNumDisplay[50], g_sHold[5];
+
+
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+function FormatNum()
+{
+	integer iChk1, iChk2;
+	string sTemp[50];
+	
+	g_sPhone = "";
+	sTemp = g_sNumDisplay;
+	
+	do
+	{
+		iChk1 = getc(sTemp);
+		
+		switch(iChk1)
+		{
+			case(40): iChk1 = 0;		//"("
+			case(41): iChk1 = 0;		//")"
+			case(45): iChk1 = 0;		//"-"
+			//case(44): iChk1 = 0;		//","
+			case(32): iChk1 = 0;		//" "
+			default:
+			{
+				g_sPhone = g_sPhone + chr(iChk1);
+			}
+		}
+	}
+	until(len(sTemp) = 0);
+	
+	//if((g_iAdd9 = 1) && (g_iAdd1 = 1)) {g_sPhone = "91" + g_sPhone;}
+	//else if((g_iAdd9 = 1) && (g_iAdd1 = 0)) {g_sPhone = "9" + g_sPhone;}
+	//else if((g_iAdd9 = 0) && (g_iAdd1 = 1))	{g_sPhone = "1" + g_sPhone;}
+}
+
+
+/*******************************************************************************************
+  Events
+*******************************************************************************************/
+
+push Save					//saves number to memory
+{	
+	if(len(Phone#) > 0)
+	{
+		g_sNumDisplay = Phone#;
+		call FormatNum();
+		NumDisplay$ = g_sNumDisplay;
+		g_sHold = "RAZAR";
+	}
+}
+
+
+push Recall
+{
+	NumDisplay$ = g_sNumDisplay;
+}
+
+push Dial
+{
+	DialNum_Main$ = g_sPhone;	
+}
+
+/*
+push Add9
+{
+	g_iAdd9 = !g_iAdd9;
+	Add9_Fb = g_iAdd9;
+}
+
+push Add1
+{
+	g_iAdd1 = !g_iAdd1;
+	Add1_Fb = g_iAdd1;
+}
+*/
+
+
+/*******************************************************************************************
+  Main()
+*******************************************************************************************/
+function main()
+{
+	if(g_sHold <> "RAZAR")
+	{
+		g_sNumDisplay = "(212)526-5727";
+		g_sPhone = "2125265727";
+		g_iAdd9 = 0;
+		g_iAdd1 = 1;
+	}
+	NumDisplay$ = g_sNumDisplay;
+	//Add9_Fb = g_iAdd9;
+	//Add1_Fb = g_iAdd1;
+}
