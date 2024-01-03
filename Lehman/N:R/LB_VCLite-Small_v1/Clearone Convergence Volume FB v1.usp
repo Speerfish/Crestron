@@ -1,0 +1,159 @@
+/*
+Steve Swartzentruber
+Crestron Electronics, Inc.
+*/
+
+
+#SYMBOL_NAME "Clearone Convergence Volume Control v1.1"
+// #HINT ""
+// #DEFINE_CONSTANT
+ 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+DIGITAL_INPUT Vol_Mute, Poll;
+ANALOG_INPUT Vol_Lvl_In;
+STRING_INPUT Unit_Type[5], Unit_ID[5], Channel[5], Channel_Type[5];
+BUFFER_INPUT RX$[100];
+
+DIGITAL_OUTPUT Mute_FB;
+ANALOG_OUTPUT Vol_Bar;
+STRING_OUTPUT TX$;
+
+
+
+/*******************************************************************************************
+  Structure Definitions
+*******************************************************************************************/
+// STRUCTURE MyStruct1
+// {
+// };
+
+// MyStruct1 struct;
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+integer iHold, iMute, busy;
+string sGathered[50], sVolPrefix[25], sMutePrefix[25];
+
+
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+
+
+
+/*******************************************************************************************
+  Events
+*******************************************************************************************/
+change RX$
+{
+	integer iCnt, iVol;
+	string sTemp[20];
+	
+	if(!busy)
+	{
+		busy = 1;
+		
+		while(find("\x0A", RX$))
+		{
+			sGathered = remove("\x0A", RX$);
+			
+			if(find(sMutePrefix, sGathered))
+			{
+				sTemp = remove(sMutePrefix, sGathered);
+				
+				if(find("1", sGathered))
+				{
+					Mute_FB = 1;
+					iMute = 1;
+				}
+				else
+				{
+					Mute_FB = 0;
+					iMute = 0;
+				}			
+			}
+			
+			else if(find(sVolPrefix, sGathered))
+			{
+				sTemp = remove(sVolPrefix, sGathered);
+				
+				if(find("-", sGathered))
+				{
+					iVol = 65535 - atoi(sGathered);  //number negative
+				}
+				else
+				{
+					iVol = atoi(sGathered);	//number positive
+				}
+				
+				Vol_Bar = iVol;
+			}
+		}
+		busy = 0;
+	}
+}
+
+
+change Vol_Lvl_In
+{
+	integer i;
+	
+	i = Vol_Lvl_In;
+	
+	if(iMute = 1)
+	{
+		makestring(TX$, "%s 0\n", sMutePrefix);
+	}
+	else
+	{
+		if(iHold <> i)
+		{
+			iHold = i;
+			makestring(TX$, "%s %d A\n", sVolPrefix, i);
+		}
+	}
+}
+
+
+push Vol_Mute
+{
+	makestring(TX$, "%s 2\n", sMutePrefix);
+}
+
+change Channel_Type
+{
+	makestring(sVolPrefix, "#%s%s GAIN %s %s", Unit_Type, Unit_ID, Channel, Channel_Type);
+	makestring(sMutePrefix, "#%s%s MUTE %s %s", Unit_Type, Unit_ID, Channel, Channel_Type);	
+}
+
+push Poll
+{
+	TX$ = sVolPrefix + "\n" + sMutePrefix + "\n";
+}
+
+/*******************************************************************************************
+  Main()
+*******************************************************************************************/
+function main()
+{
+	Mute_Fb = 0;
+	iHold = 0;
+	busy = 0;
+	iMute = 0;
+}

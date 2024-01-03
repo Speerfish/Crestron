@@ -1,0 +1,630 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.03.18
+IntStrVrs=2
+MinSMWVrs=0
+MinTIOVrs=0
+SavedBy=SMW2.03.18
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=Polycom (PictureTel) iPower Infra-Red Remote Functions.umc
+DbVr=15.9.0
+PgmNm=PAC
+DlrNm=Crestron Electronics
+CltNm=Emulates the functions available on the iPower infra-red remote control
+Incl=167,168,216,225,248,249,266,302,305,362,378,380,405,407,408,409,478,522,537,554,586,590,
+McNm=Polycom (PictureTel) iPower Infra-Red Remote Functions
+SmVr=207.001
+DvVr=207.001
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+Cmn1=SIMPLWINDOWS NAME: Polycom (PictureTel) iPower Infra-Red Remote||1
+Cmn2=Functions\\\\MANUFACTURER: Polycom (PictureTel)\\MODEL: iPower 900||1
+Cmn3=Series, iPower 9000 Series\\\\CATEGORY: Conferencing\\\\VERSION:
+Cmn4=||11.0\\\\SUMMARY: Provides the same functions as the IR remote control\\\\GENERAL||1
+Cmn5=NOTES: This module is used to emmulate the IR remote of\\a Polycom||1
+Cmn6=iPower 900/9000 series codec. Most of the inputs on \\this module||1
+Cmn7=directly correspond to buttons on the Polycom IR remote.\\\\\\\\CRESTRON||1
+Cmn8=HARDWARE REQUIRED: CNXCOM-2, ST-COM\\\\\\SETUP OF CRESTRON HARDWARE:
+Cmn9=||1\\Baud Rate - 9600\\Parity    - Odd\\Data Bits - 8\\Stop Bits -
+Cmn10=||11\\\\\\VENDOR FIRMWARE: iPower 900 Series - 4.0.2.520\\||8
+Cmn11=||9iPower 9000 Series - 4.2.0.1009\\\\\\VENDOR SETUP: The||1
+Cmn12=Polycom system has 2 DB-9 serial ports. YOU MUST USE\\PORT 1 TO||1
+Cmn13=COMMUNICATE FROM CRESTRON TO POLYCOM.\\\\Also, you must enable external||1
+Cmn14=control as follows:\\1. Using the Start Menu, select Programs >||1
+Cmn15=Polycom iPower > Administrator Information > Admin Tools\\2. Select||1
+Cmn16="Utilities" from the Category list\\3. Select the Custom Control||1
+Cmn17=tab\\4. Check the box to enable control from an external control||1
+Cmn18=system\\5. Press OK, and restart the Collaboration software\\\\\\CABLE||1
+Cmn19=NUMBER: CNSP-124\\\\\\INPUT DESCRIPTIONS: \\\\Name||>
+Cmn20=||3Type Description\\REMOTE-HELP            D  Toggles the help||1
+Cmn21=menu on/off\\REMOTE-STANDBY         D  Toggles the PictureTel standby||1
+Cmn22=mode\\REMOTE-OPTIONS         D  Toggles the options menu on/off\\REMOTE-
+Cmn23=CALL/ANSWER     D  Brings up the dialing menu\\REMOTE-0-9,*,#||3
+Cmn24=||6D  Send numeric digit 0-9, * AND # of keypad\\REMOTE-SET||2
+Cmn25=||;D  Used to set a camera preset need to press a number||1
+Cmn26=after\\REMOTE-CANCEL          D  Send keypad cancel (X)\\REMOTE-
+Cmn27=PRESET          D  Used to recall a camera preset need to press||1
+Cmn28=a number after\\REMOTE-UP              D  Send keypad up arrow\\REMOTE-
+Cmn29=LEFT            D  Send keypad left arrow\\REMOTE-ENTER||9
+Cmn30=||2D  Send keypad enter\\REMOTE-RIGHT           D  Send keypad right||1
+Cmn31=arrow\\REMOTE-DOWN            D  Send keypad down arrow\\REMOTE-
+Cmn32=PEOPLE          D  Used to access the people source menu\\REMOTE-
+Cmn33=CONTENT         D  Used to access the content source menu\\REMOTE-
+Cmn34=PIP             D  Toggles the picture_in_picture feature\\REMOTE-
+Cmn35=VOL-UP          D  Increases the volume\\REMOTE-VOL-DOWN||8
+Cmn36=D  Decreases the volume\\REMOTE-MIC-MUTE        D  Toggles the mute||1
+Cmn37=state of the local microphones\\REMOTE-ZOOM-IN         D  Zooms||1
+Cmn38=in for the currently selected camera\\REMOTE-ZOOM-OUT        D||2
+Cmn39=Zooms out for the currently selected camera\\REMOTE-AUTO-CAM-POINT||1
+Cmn40=||1D  Toggles the state of the auto camera point\\\\\\OUTPUT DESCRIPTIONS:
+Cmn41=||1\\\\Name             Type Description\\\\To_Device$         S||2
+Cmn42=Serial data string to be routed to a 2-way RS232 port\\\\\\OPS USED||1
+Cmn43=FOR TESTING: v3.029.cuz\\                      5.12.63x.upz\\\\COMPILER||1
+Cmn44=USED FOR TESTING: SimplWindows Ver 2.03.18\\\\SAMPLE PROGRAM: Polycom||1
+Cmn45=iPower Demo\\\\REVISION HISTORY: \\8/24/2001   -- version 2.0 fixed||1
+Cmn46=a timing issue for version 2.0 of the PTel\\               iPower||1
+Cmn47=protocol.\\2/11/2002   -- version 3.0 completed testing with version||1
+Cmn48=3.0 of the PTel\\               iPower protocol.\\8/16/2002   --
+Cmn49=||1version 4.0 completed testing with version 4.0 of the Ptel\\||3
+Cmn50=||<iPower protocol, and added Virtual Serial symbol\\3/13/2003||1
+Cmn51=||2-- Tested with iPower 9000. Renamed series to "iPower"
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Symbol
+Name=Polycom (PictureTel) iPower Infra-Red Remote Functions
+Code=1
+SmplCName=Polycom (PictureTel) iPower Infra-Red Remote Functions.umc
+Smpl-C=3
+Convertable=True
+CompilerTimePrecision=Single_Or_Double_Precision
+Hint=Emulates the functions available on the iPower infra-red remote control
+SMWRev=0
+TIORev=0
+HelpID=1055
+NumFixedInputs=34
+NumFixedOutputs=1
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=20
+OutputSigType1=Serial
+ParamSigType1=Time|Percent|Constant|String|FileName|HexAddress|Any
+InputCue1=HELP
+InputCue2=STANDBY
+InputCue3=OPTIONS
+InputCue4=CALL/ANSWER
+InputCue5=HANGUP
+InputCue6=Key_1
+InputCue7=Key_2_ABC
+InputCue8=Key_3_DEF
+InputCue9=Key_4_GHI
+InputCue10=Key_5_JKL
+InputCue11=Key_6_MNO
+InputCue12=Key_7_PQRS
+InputCue13=Key_8_TUV
+InputCue14=Key_9_WXYZ
+InputCue15=Key_0
+InputCue16=Key_*
+InputCue17=Key_/#
+InputCue18=SET
+InputCue19=CANCEL
+InputCue20=PRESET
+InputCue21=UP
+InputCue22=LEFT
+InputCue23=ENTER
+InputCue24=RIGHT
+InputCue25=DOWN
+InputCue26=PEOPLE
+InputCue27=CONTENT
+InputCue28=PIP
+InputCue29=VOL-UP
+InputCue30=VOL-DOWN
+InputCue31=MIC-MUTE
+InputCue32=ZOOM-IN
+InputCue33=ZOOM-OUT
+InputCue34=AUTO-CAM-POINT
+OutputCue1=To_Device$
+CnxLogic1=S SER/Model:134
+CnxLogic2=C O 0001 I Q:tx$
+FileName=Polycom (PictureTel) iPower Infra-Red Remote Functions.umc
+]
+[
+ObjTp=Sm
+H=1
+SmC=157
+Nm=Central Control Modules
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=2
+SmC=157
+Nm=Network Modules
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=3
+SmC=157
+Nm=Ethernet
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=4
+SmC=156
+Nm=Logic
+CF=2
+mC=4
+C1=7
+C2=9
+C3=10
+C4=8
+]
+[
+ObjTp=Sm
+H=5
+SmC=157
+Nm=DefineArguments
+CF=2
+n1I=1
+n1O=1
+mC=1
+C1=6
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=6
+SmC=55
+PrH=5
+CF=2
+n1I=34
+n1O=1
+mI=34
+I1=6
+I2=7
+I3=8
+I4=9
+I5=10
+I6=64
+I7=73
+I8=65
+I9=66
+I10=67
+I11=68
+I12=69
+I13=70
+I14=71
+I15=11
+I16=12
+I17=74
+I18=13
+I19=14
+I20=15
+I21=16
+I22=17
+I23=18
+I24=19
+I25=20
+I26=21
+I27=22
+I28=23
+I29=24
+I30=25
+I31=26
+I32=61
+I33=62
+I34=63
+mO=1
+tO=1
+O1=4
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=7
+SmC=101
+PrH=4
+CF=2
+n1I=37
+n1O=2
+mI=37
+I3=6
+I4=7
+I5=8
+I6=9
+I7=10
+I8=64
+I9=73
+I10=65
+I11=66
+I12=67
+I13=68
+I14=69
+I15=70
+I16=71
+I17=12
+I18=11
+I19=74
+I20=13
+I21=14
+I22=15
+I23=16
+I24=17
+I25=18
+I26=19
+I27=20
+I28=21
+I29=22
+I30=23
+I31=24
+I32=25
+I33=26
+I34=61
+I35=62
+I36=63
+I37=27
+mO=2
+tO=2
+O1=4
+mP=36
+P1=
+P2=\x02lkai\x04
+P3=\x02lkap\x04
+P4=\x02lkam\x04
+P5=\x02lkac\x04
+P6=\x02lkah\x04
+P7=\x02lka1\x04
+P8=\x02lka2\x04
+P9=\x02lka3\x04
+P10=\x02lka4\x04
+P11=\x02lka5\x04
+P12=\x02lka6\x04
+P13=\x02lka7\x04
+P14=\x02lka8\x04
+P15=\x02lka9\x04
+P16=\x02lka*\x04
+P17=\x02lka0\x04
+P18=\x02lka#\x04
+P19=\x02lkas\x04
+P20=\x02lkax\x04
+P21=\x02lkag\x04
+P22=\x02lka^\x04
+P23=\x02lka<\x04
+P24=\x02lkae\x04
+P25=\x02lka>\x04
+P26=\x02lkaq\x04
+P27=\x02lkal\x04
+P28=\x02lkaM\x04
+P29=\x02lkaP\x04
+P30=\x02lkau\x04
+P31=\x02lkad\x04
+P32=\x02lkat\x04
+P33=\x02lkaz\x04
+P34=\x02lkao\x04
+P35=\x02lkaG\x04
+P36=\x02lka%\x04
+]
+[
+ObjTp=Sm
+H=8
+SmC=285
+PrH=4
+CF=2
+n1I=4
+n1O=2
+mI=4
+I1=4
+mO=2
+tO=2
+O1=1
+mP=8
+P1=
+P2=
+P3=
+P4=
+P5=
+P6=
+P7=
+P8=
+]
+[
+ObjTp=Sm
+H=9
+SmC=3
+PrH=4
+CF=2
+n1I=34
+n1O=1
+mI=34
+I1=6
+I2=7
+I3=8
+I4=9
+I5=10
+I6=64
+I7=73
+I8=65
+I9=66
+I10=67
+I11=68
+I12=69
+I13=70
+I14=71
+I15=12
+I16=11
+I17=74
+I18=13
+I19=14
+I20=15
+I21=16
+I22=17
+I23=18
+I24=19
+I25=20
+I26=21
+I27=22
+I28=23
+I29=24
+I30=25
+I31=26
+I32=61
+I33=62
+I34=63
+mO=1
+tO=1
+O1=5
+]
+[
+ObjTp=Sm
+H=10
+SmC=9
+PrH=4
+CF=2
+n1I=3
+n1O=2
+mI=3
+I1=1
+I2=5
+mO=2
+tO=2
+O1=27
+mP=1
+P1=1t
+]
+[
+ObjTp=Sg
+H=4
+Nm=To_Device$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=5
+Nm=REMOTE-STOP
+]
+[
+ObjTp=Sg
+H=6
+Nm=HELP
+]
+[
+ObjTp=Sg
+H=7
+Nm=STANDBY
+]
+[
+ObjTp=Sg
+H=8
+Nm=OPTIONS
+]
+[
+ObjTp=Sg
+H=9
+Nm=CALL/ANSWER
+]
+[
+ObjTp=Sg
+H=10
+Nm=HANGUP
+]
+[
+ObjTp=Sg
+H=11
+Nm=Key_0
+]
+[
+ObjTp=Sg
+H=12
+Nm=Key_*
+]
+[
+ObjTp=Sg
+H=13
+Nm=SET
+]
+[
+ObjTp=Sg
+H=14
+Nm=CANCEL
+]
+[
+ObjTp=Sg
+H=15
+Nm=PRESET
+]
+[
+ObjTp=Sg
+H=16
+Nm=UP
+]
+[
+ObjTp=Sg
+H=17
+Nm=LEFT
+]
+[
+ObjTp=Sg
+H=18
+Nm=ENTER
+]
+[
+ObjTp=Sg
+H=19
+Nm=RIGHT
+]
+[
+ObjTp=Sg
+H=20
+Nm=DOWN
+]
+[
+ObjTp=Sg
+H=21
+Nm=PEOPLE
+]
+[
+ObjTp=Sg
+H=22
+Nm=CONTENT
+]
+[
+ObjTp=Sg
+H=23
+Nm=PIP
+]
+[
+ObjTp=Sg
+H=24
+Nm=VOL-UP
+]
+[
+ObjTp=Sg
+H=25
+Nm=VOL-DOWN
+]
+[
+ObjTp=Sg
+H=26
+Nm=MIC-MUTE
+]
+[
+ObjTp=Sg
+H=27
+Nm=REMOTE_STOP_OR
+]
+[
+ObjTp=Sg
+H=61
+Nm=ZOOM-IN
+]
+[
+ObjTp=Sg
+H=62
+Nm=ZOOM-OUT
+]
+[
+ObjTp=Sg
+H=63
+Nm=AUTO-CAM-POINT
+]
+[
+ObjTp=Sg
+H=64
+Nm=Key_1
+]
+[
+ObjTp=Sg
+H=65
+Nm=Key_3_DEF
+]
+[
+ObjTp=Sg
+H=66
+Nm=Key_4_GHI
+]
+[
+ObjTp=Sg
+H=67
+Nm=Key_5_JKL
+]
+[
+ObjTp=Sg
+H=68
+Nm=Key_6_MNO
+]
+[
+ObjTp=Sg
+H=69
+Nm=Key_7_PQRS
+]
+[
+ObjTp=Sg
+H=70
+Nm=Key_8_TUV
+]
+[
+ObjTp=Sg
+H=71
+Nm=Key_9_WXYZ
+]
+[
+ObjTp=Sg
+H=73
+Nm=Key_2_ABC
+]
+[
+ObjTp=Sg
+H=74
+Nm=Key_#
+]

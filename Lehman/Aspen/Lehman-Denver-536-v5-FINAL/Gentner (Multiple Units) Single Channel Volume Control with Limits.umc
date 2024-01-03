@@ -1,0 +1,1118 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.02.11
+IntStrVrs=2
+MinSMWVrs=0
+MinTIOVrs=0
+SavedBy=SMW2.02.11
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=Gentner (Multiple Units) Single Channel Volume Control with Limits.umc
+DbVr=15.8.3
+PgmNm=CRR
+DlrNm=Crestron Electronics
+CltNm=Allows control of a single channel of volume for input/output/processor with Limits
+Incl=167,168,216,225,248,249,266,362,405,407,408,409,478,
+McNm=Gentner (Multiple Units) Single Channel Volume Control with Limits
+SmVr=167
+DvVr=167
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+Cmn1=SIMPLWINDOWS NAME: Gentner (Multiple Units) Single Channel Volume||1
+Cmn2=Control with Limits\\\\MANUFACTURER: Gentner\\MODEL: Multiple Units\\\\CATEGORY:
+Cmn3=||1CONFERENCING\\\\VERSION: 1.0\\\\SUMMARY: Allows control of a single||1
+Cmn4=channel of volume for \\input/output/processor with definable upper/lower||1
+Cmn5=volume limits\\\\\\GENERAL NOTES: The commands used for the XAP800/XAP400/PSR1212||1
+Cmn6=mixer are similar to the \\commands used for the Gentner AP800/AP400.
+Cmn7=||1Therefore the same modules \\developed for the XAP800/XAP400/PSR1212||1
+Cmn8=may work on other (past and future) Gentner \\products. To allow||1
+Cmn9=for this flexibility of use, you must specify which \\Gentner model||1
+Cmn10=is being controlled using the TYPE-ID-ASCII parameter \\field. Currently||1
+Cmn11=valid entries are a single digit from 1 to 7 with no \\suffix as||1
+Cmn12=shown below:\\\\For XAP400, use 7\\For XAP800, use 5\\For PSR1212,||1
+Cmn13=use 4\\For AP400, use 3\\For AP10, use 2\\For AP800, use 1\\\\Multiple||1
+Cmn14=devices can be connected to the Gentner bus and controlled from||1
+Cmn15=\\a single RS232 port. Therefore, it is also necessary to enter||1
+Cmn16=the Unit ID \\of the device being controlled. This should be entered||1
+Cmn17=in the \\UNIT-ID-ASCII parameter field as a single digit number||1
+Cmn18=from 0-8 with no suffix.\\\\This module will allow you to control||1
+Cmn19=any gain function on the mixer. \\Gain functions are categorized||1
+Cmn20=into Groups designated by a single letter \\entered as a 2 digit||1
+Cmn21=hex number with no suffix into the \\PARAMETER-FIELD-HEX parameter||1
+Cmn22=field. The groups are as follows:\\\\Inputs - I, use 49\\Outputs||1
+Cmn23=- O, use 4F\\Mic Input - M, use 4D\\Processing - P, use 50\\Line||1
+Cmn24=Inputs - L, use 4C\\Telco Receive - R, use 52\\Telco Transmit -||1
+Cmn25=T, use 54\\\\Within each group, there are a range of channels that||1
+Cmn26=can be adjusted. \\You must specify which channel you want the module||1
+Cmn27=to control using the \\CHANNEL-ID-ASCII and CHANNEL-ID-HEX parameters.
+Cmn28=||1Valid channel ranges are:\\\\For Inputs - 1-12\\For Outputs - 1-
+Cmn29=12\\For Mic inputs - 1-8\\For Processing - A-H\\For Line Inputs||1
+Cmn30=- 9-12\\\\For the CHANNEL-ID-ASCII parameter, enter the ASCII representation||1
+Cmn31=of the \\ channel. So for channel 1, enter 1. For channel 12, enter||1
+Cmn32=12. For \\channel B, enter B.\\\\For the CHANNEL-ID-HEX input, you||1
+Cmn33=must enter a 2-digit hex representation \\of the channel with no||1
+Cmn34=suffix. So for channel 1, enter 01. For channel \\12, enter 0C.||1
+Cmn35=for channel B, enter 42.\\\\This module allows a single gain channel||1
+Cmn36=to be adjusted/monitored on the \\XAP800/XAP400/PSR1212. The channel||1
+Cmn37=can be ramped up/down with buttons, or with a slider \\object. Mute||1
+Cmn38=can also be controlled.\\\\This module allows the upper and lower||1
+Cmn39=limits of the gain range to be defined. So\\instead of using the||1
+Cmn40=standard Gentner range of -65dB - +20dB, you can specify the\\range||1
+Cmn41=you would like to use. This is done with the following parameters:
+Cmn42=\\\\SPAN - The total number of steps you would like the adjustment||1
+Cmn43=to include. So if\\you would like a range from -40dB to +10dB, the||1
+Cmn44=SPAN would be 51d.\\\\SPAN-1 -  The SPAN as defined above, minus||1
+Cmn45=1. So for the example above, the \\SPAN-1 would be 50d\\\\OFFSET||1
+Cmn46=- The offset from the lower limit of the Gentner range (which is||1
+Cmn47=-65dB).\\So for the example above, the offset from -65 to -40 is||1
+Cmn48=25d.\\\\LOWER LIMIT - The lower limit of the range. SO for the example||1
+Cmn49=above, the LOWER\\LIMIT would be -40d\\\\RAMP TIME - The time you||1
+Cmn50=would like to take to ramp between the lower and upper\\limits you||1
+Cmn51=have defined. SO to take 8 seconds to cover the range, enter 8S.
+Cmn52=\\\\This module can also be used in conjunction with the Gentner||1
+Cmn53=XAP800/XAP400/PSR1212 \\Feedback Processor Module to monitor the||1
+Cmn54=state of the gain channel. A \\properly constructed program would||1
+Cmn55=consist of a single Gentner XAP800/XAP400/PSR1212 \\Feedback Processor||1
+Cmn56=Module receiving information from the com port. The \\output of||1
+Cmn57=this module would be connected to the FROM-GENTNER-PROCESSOR$ \\inputs||1
+Cmn58=of as many other XAP800/XAP400/PSR1212 modules are in the program.
+Cmn59=||1The \\Processor module will reformat the data into the format that||1
+Cmn60=the \\remaining Gentner modules are programmed for.\\\\Upon startup||1
+Cmn61=of the Crestron system, it may be desired to pulse the POLL \\input.
+Cmn62=||1This will request the current settings for the selected channel,||1
+Cmn63=\\so the feedback can be properly displayed. After this point, the||1
+Cmn64=POLL \\input should not need to be used.\\\\Note that if it is desired||1
+Cmn65=to control multiple channels of volume \\simultaneously, it is recommended||1
+Cmn66=to set up Macros on the Gentner system. \\A macro can be set up||1
+Cmn67=to adjust multiple channels simultaneously. By \\repeatadly triggering||1
+Cmn68=the Macro from the Crestron system, we can control \\multiple channels.
+Cmn69=||1See the demo program for an example of how this is \\programmed.
+Cmn70=\\\\\\CRESTRON HARDWARE REQUIRED: CNXCOM, ST-COM\\\\\\SETUP OF CRESTRON||1
+Cmn71=HARDWARE: \\Baud Rate - 38400\\Parity - None\\Data Bits - 8\\Stop||1
+Cmn72=Bits - 1\\RTS/CTS Handshaking should be enabled to insure no data||1
+Cmn73=is lost.\\\\\\VENDOR FIRMWARE: PSR1212 - 1.0.3\\||@
+Cmn74=||1XAP800 - 1.1.0\\                 XAP400 - 1.0.1\\\\VENDOR SETUP:
+Cmn75=||1Flow control should be set to "on".\\The baud rate should be set||1
+Cmn76=to 38400.\\\\\\\\CABLE NUMBER: CNSP-141\\\\\\INPUT DESCRIPTIONS:
+Cmn77=||1\\\\Name             Type Description\\VOLUME-UP/DOWN     D  Press||1
+Cmn78=and hold to ramp the level up/down\\VOLUME-MUTE-ON/OFF/TOG  D  Pulse||1
+Cmn79=to discretely mute or unmute, or to \\                      toggle||1
+Cmn80=the state of mute\\VOLUME-SLIDER      A  Can be routed from the||1
+Cmn81=analog portion of a touch \\                      panel definition,||1
+Cmn82=to allow a slider to control the \\                      level\\POLL||1
+Cmn83=||>D  Pulse on startup of the Crestron system to request||1
+Cmn84=\\                      the current settings\\FROM-GENTNER-PROCESSOR$||1
+Cmn85=||1S  Must be routed from the output of the Gentner \\||<
+Cmn86=||:PSR1212 Feedback Processor module\\TYPE-ID-ASCII||6
+Cmn87=P  Enter 4 for PSR1212, 5 for XAP800, 7 for XAP400\\UNIT-ID-ASCII||1
+Cmn88=||5P  Enter the unit number of the XAP800/XAP400/PSR1212. Should||1
+Cmn89=be a \\                      number from 0-8\\CHANNEL-ID-ASCII||2
+Cmn90=||1P  Enter the channel to be controlled. For channel 1, \\||7
+Cmn91=||?enter 1. For channel 12, enter 12. For channel B,||1
+Cmn92=\\                      enter B.\\CHANNEL-ID-HEX     P  Enter the||1
+Cmn93=2-digit hex version of the channel to be \\||E
+Cmn94=||1controlled. For channel 1, enter 01. For channel \\||<
+Cmn95=||:12, enter 0C. For channel B, enter 42.\\PARAMETER-ID-HEX||1
+Cmn96=||2P  Enter the 2 digit hex version of the parameter \\||:
+Cmn97=||<(group) to be controlled. For Outputs, enter 4f. \\||1
+Cmn98=||EFor Mic Inputs, enter 4D.\\\\\\OUTPUT DESCRIPTIONS:
+Cmn99=||1\\\\Name             Type Description\\VOLUME-BAR         A  Indicates||1
+Cmn100=the relative volume level. Should be \\                      routed||1
+Cmn101=to a bargraph on a touch panel\\VOLUME-TEXT$       S  Text indicating||1
+Cmn102=the level in dB format. Should be \\                      routed||1
+Cmn103=to an indirect text field on a touch panel\\VOLUME-MUTE-ON/OFF-FB||1
+Cmn104=||1D  True feedback indicating the state of mute\\To_Device$||6
+Cmn105=||2S  Serial signal to be routed to a 2-way RS232 port\\\\\\OPS USED||1
+Cmn106=FOR TESTING: 5.12.26x, 1.014.cuz\\\\COMPILER USED FOR TESTING: SimplWindows||1
+Cmn107=Ver 2.02.11\\\\SAMPLE PROGRAM: Gentner XAP400 Demo Program\\\\REVISION||1
+Cmn108=HISTORY: None
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Bw
+H=1
+Lx=499
+Ly=260
+Rx=998
+Ry=520
+Xm=-1
+Ym=-1
+SH=32
+Z=100
+Ht=4
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=0
+Ly=0
+Rx=499
+Ry=347
+Xm=-1
+Ym=-1
+SH=10
+Z=100
+Ht=1
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=0
+Ly=347
+Rx=499
+Ry=694
+Xm=-1
+Ym=-1
+SH=7
+Z=100
+Ht=4
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=0
+Ly=694
+Rx=499
+Ry=1041
+Xm=-1
+Ym=-1
+SH=43
+Z=100
+Ht=4
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=499
+Ly=0
+Rx=998
+Ry=260
+Xm=-1
+Ym=-1
+SH=31
+Z=100
+Ht=1
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=499
+Ly=520
+Rx=998
+Ry=780
+Xm=-1
+Ym=-1
+SH=17
+Z=100
+Ht=4
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=499
+Ly=780
+Rx=998
+Ry=1040
+Xm=-1
+Ym=-1
+SH=6
+Z=100
+Ht=1
+Hi=6
+]
+[
+ObjTp=Symbol
+Name=Gentner (Multiple Units) Single Channel Volume Control with Limits
+Code=1
+SmplCName=Gentner (Multiple Units) Single Channel Volume Control with Limits.umc
+Smpl-C=3
+Convertable=True
+CompilerTimePrecision=Single_Or_Double_Precision
+Exclusions=1,19,20,21,88,89,310,
+Hint=Allows control of a single channel of volume for input/output/processor with Limits
+SMWRev=0
+TIORev=0
+S+=1
+HelpID=1055
+NumFixedInputs=8
+NumFixedOutputs=5
+NumFixedParams=10
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=20
+InputSigType1=Digital
+InputSigType2=Digital
+InputSigType3=Digital
+InputSigType4=Digital
+InputSigType5=Digital
+InputSigType6=Analog
+InputSigType7=Digital
+InputSigType8=Serial
+OutputSigType1=Analog
+OutputSigType2=Serial
+OutputSigType3=Digital
+OutputSigType4=Digital
+OutputSigType5=Serial
+ParamSigType1=Time|Percent|Constant|String|FileName|HexAddress|Any
+ParamSigType2=Time|Percent|Constant|String|FileName|HexAddress|Any
+ParamSigType3=Time|Percent|Constant|String|FileName|HexAddress|Any
+ParamSigType4=Time|Percent|Constant|String|FileName|HexAddress|Any
+ParamSigType5=Time|Percent|Constant|String|FileName|HexAddress|Any
+ParamSigType6=Constant
+ParamSigType7=Percent
+ParamSigType8=Constant
+ParamSigType9=Percent
+ParamSigType10=Time
+InputCue1=VOLUME-UP
+InputCue2=VOLUME-DOWN
+InputCue3=VOLUME-MUTE-ON
+InputCue4=VOLUME-MUTE-OFF
+InputCue5=VOLUME-MUTE-TOGGLE
+InputCue6=VOLUME-SLIDER
+InputCue7=POLL
+InputCue8=FROM-GENTNER-PROCESSOR$
+OutputCue1=VOLUME-BAR
+OutputCue2=VOLUME-TEXT$
+OutputCue3=VOLUME-MUTE-ON-FB
+OutputCue4=VOLUME-MUTE-OFF-FB
+OutputCue5=To_Device$
+ParamCue1=TYPE-ID-ASCII
+ParamCue2=UNIT-ID-ASCII
+ParamCue3=CHANNEL-ID-ASCII
+ParamCue4=CHANNEL-ID-HEX
+ParamCue5=PARAMETER-ID-HEX
+ParamCue6=SPAN ==51d
+ParamCue7=SPAN - 1 ==50d
+ParamCue8=OFFSET ==25d
+ParamCue9=LOWER LIMIT ==-40d
+ParamCue10=RAMP-TIME ==8s
+CnxLogic1=S SER/Model:134
+CnxLogic2=C O 0005 I Q:tx$
+CnxLogic3=C I 0008 O Q:rx$
+FileName=Gentner (Multiple Units) Single Channel Volume Control with Limits.umc
+]
+[
+ObjTp=Sm
+H=1
+SmC=157
+Nm=Central Control Modules
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=2
+SmC=157
+Nm=Network Modules
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=3
+SmC=157
+Nm=Ethernet
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=4
+SmC=156
+Nm=Logic
+CF=2
+mC=26
+C1=7
+C2=10
+C3=11
+C4=20
+C5=28
+C6=17
+C7=18
+C8=19
+C9=21
+C10=13
+C11=9
+C12=22
+C13=23
+C14=25
+C15=16
+C16=8
+C17=43
+C18=40
+C19=35
+C20=31
+C21=32
+C22=26
+C23=27
+C24=14
+C25=12
+C26=15
+]
+[
+ObjTp=Sm
+H=5
+SmC=157
+Nm=DefineArguments
+CF=2
+n1I=1
+n1O=1
+mC=1
+C1=6
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=6
+SmC=55
+PrH=5
+CF=2
+n1I=8
+n1O=5
+mI=8
+I1=4
+I2=5
+I3=6
+I4=7
+I5=8
+I6=24
+I7=15
+I8=9
+mO=5
+tO=5
+O1=10
+O2=22
+O3=11
+O4=12
+O5=13
+mP=10
+P1=TYPE-ID-ASCII
+P2=UNIT-ID-ASCII
+P3=CHANNEL-ID-ASCII
+P4=CHANNEL-ID-HEX
+P5=PARAMETER-ID-HEX
+P6=SPAN ==51d
+P7=SPAN - 1 ==50d
+P8=OFFSET ==25d
+P9=LOWER LIMIT ==-40d
+P10=RAMP-TIME ==8s
+]
+[
+ObjTp=Sm
+H=7
+SmC=22
+PrH=4
+CF=2
+n1I=3
+n1O=1
+mI=3
+I1=4
+I2=5
+mO=1
+tO=1
+O1=10
+mP=1
+P1=#RAMP-TIME ==8s
+]
+[
+ObjTp=Sm
+H=8
+SmC=96
+PrH=4
+CF=2
+n1I=1
+n1O=1
+mI=1
+I1=23
+mO=1
+tO=1
+O1=20
+mP=8
+P1=01FDH
+P2=010\[#TYPE-ID-ASCII\]H
+P3=010\[#UNIT-ID-ASCII\]H
+P4=0101H
+P5=01\[#CHANNEL-ID-HEX\]H
+P6=01\[#PARAMETER-ID-HEX\]H
+P7=0200H
+P8=01FEH
+]
+[
+ObjTp=Sm
+H=9
+SmC=103
+Nm=Gent-VB.usp
+PrH=4
+CF=2
+n2I=9
+mI=9
+I1=14
+I2=29
+I3=1
+I4=1
+I5=1
+I6=1
+I7=34
+I8=1
+I9=1
+mO=4
+tO=4
+O1=13
+O2=22
+O3=16
+O4=19
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=10
+SmC=65
+PrH=4
+CF=2
+n1I=1
+n1O=1
+mI=1
+I1=10
+mO=1
+tO=1
+O1=14
+mP=3
+P1=#SPAN ==51d
+P2=
+P3=#LOWER LIMIT ==-40d
+]
+[
+ObjTp=Sm
+H=11
+SmC=3
+PrH=4
+CF=2
+n1I=2
+n1O=1
+mI=2
+I1=4
+I2=5
+mO=1
+tO=1
+O1=21
+]
+[
+ObjTp=Sm
+H=12
+SmC=56
+PrH=4
+CF=2
+n1I=3
+n1O=2
+mI=3
+I1=1
+I2=16
+I3=19
+mO=2
+tO=2
+O1=16
+O2=19
+]
+[
+ObjTp=Sm
+H=13
+SmC=89
+PrH=4
+CF=2
+n1I=1
+n1O=1
+mI=1
+I1=28
+mO=1
+tO=1
+O1=34
+mP=1
+P1="#\[#TYPE-ID-ASCII\]\[#UNIT-ID-ASCII\] GAIN \[#CHANNEL-ID-ASCII\] \x\[#PARAMETER-ID-HEX\]\x20"
+]
+[
+ObjTp=Sm
+H=14
+SmC=101
+PrH=4
+CF=2
+n1I=7
+n1O=2
+mI=7
+I3=6
+I4=7
+I5=8
+I6=15
+I7=15
+mO=2
+tO=2
+O1=13
+mP=7
+P1=
+P2="#\[#TYPE-ID-ASCII\]\[#UNIT-ID-ASCII\]\x20MUTE \[#CHANNEL-ID-ASCII\] \x\[#PARAMETER-ID-HEX\] 1\r"
+P3="#\[#TYPE-ID-ASCII\]\[#UNIT-ID-ASCII\]\x20MUTE \[#CHANNEL-ID-ASCII\] \x\[#PARAMETER-ID-HEX\] 0\r"
+P4="#\[#TYPE-ID-ASCII\]\[#UNIT-ID-ASCII\]\x20MUTE \[#CHANNEL-ID-ASCII\] \x\[#PARAMETER-ID-HEX\] 2\r"
+P5="#\[#TYPE-ID-ASCII\]\[#UNIT-ID-ASCII\]\x20MUTE \[#CHANNEL-ID-ASCII\] \x\[#PARAMETER-ID-HEX\]\r"
+P6="#\[#TYPE-ID-ASCII\]\[#UNIT-ID-ASCII\]\x20GAIN \[#CHANNEL-ID-ASCII\] \x\[#PARAMETER-ID-HEX\]\r"
+P7=
+]
+[
+ObjTp=Sm
+H=15
+SmC=285
+PrH=4
+CF=2
+n1I=4
+n1O=2
+mI=4
+I1=13
+mO=2
+tO=2
+O1=9
+mP=8
+P1=
+P2=
+P3=
+P4=
+P5=
+P6=
+P7=
+P8=
+]
+[
+ObjTp=Sm
+H=16
+SmC=56
+PrH=4
+CF=2
+n1I=2
+n1O=1
+mI=2
+I1=31
+I2=9
+mO=1
+tO=1
+O1=23
+]
+[
+ObjTp=Sm
+H=17
+SmC=46
+PrH=4
+CF=2
+n1I=2
+n1O=1
+mI=2
+I1=2
+I2=24
+mO=1
+tO=1
+O1=10
+]
+[
+ObjTp=Sm
+H=18
+SmC=72
+PrH=4
+CF=2
+n1I=1
+n1O=2
+mI=1
+I1=24
+mO=2
+tO=2
+O1=25
+O2=30
+mP=1
+P1=.3S
+]
+[
+ObjTp=Sm
+H=19
+SmC=3
+PrH=4
+CF=2
+n1I=2
+n1O=1
+mI=2
+I1=26
+I2=25
+mO=1
+tO=1
+O1=27
+]
+[
+ObjTp=Sm
+H=20
+SmC=11
+PrH=4
+CF=2
+n1I=1
+n1O=2
+mI=1
+I1=21
+mO=2
+tO=2
+O1=26
+mP=1
+P1=.2S
+]
+[
+ObjTp=Sm
+H=21
+SmC=8
+PrH=4
+CF=2
+n1I=1
+n1O=1
+mI=1
+I1=27
+mO=1
+tO=1
+O1=28
+mP=2
+P1=.05s
+P2=.05s
+]
+[
+ObjTp=Sm
+H=22
+SmC=46
+PrH=4
+CF=2
+n1I=2
+n1O=1
+mI=2
+I1=30
+I2=14
+mO=1
+tO=1
+O1=29
+]
+[
+ObjTp=Sm
+H=23
+SmC=4
+PrH=4
+CF=2
+n1I=3
+n1O=1
+mI=3
+I1=4
+I2=5
+I3=25
+mO=1
+tO=1
+O1=33
+]
+[
+ObjTp=Sm
+H=25
+SmC=11
+PrH=4
+CF=2
+n1I=1
+n1O=2
+mI=1
+I1=33
+mO=2
+tO=2
+O1=31
+mP=1
+P1=.3S
+]
+[
+ObjTp=Sm
+H=26
+SmC=96
+PrH=4
+CF=2
+n1I=1
+n1O=1
+mI=1
+I1=9
+mO=1
+tO=1
+O1=18
+mP=8
+P1=01FDH
+P2=010\[#TYPE-ID-ASCII\]H
+P3=010\[#UNIT-ID-ASCII\]H
+P4=0102H
+P5=01\[#CHANNEL-ID-HEX\]H
+P6=01\[#PARAMETER-ID-HEX\]H
+P7=0200H
+P8=01FEH
+]
+[
+ObjTp=Sm
+H=27
+SmC=38
+PrH=4
+CF=2
+n1I=2
+n1O=2
+mI=2
+I1=18
+mO=2
+tO=2
+O1=11
+O2=12
+mP=2
+P1=49d
+P2=48d
+]
+[
+ObjTp=Sm
+H=28
+SmC=32
+PrH=4
+CF=2
+n1I=1
+n1O=1
+mI=1
+I1=1
+mO=1
+tO=1
+O1=24
+mP=1
+P1=0d
+]
+[
+ObjTp=Sm
+H=31
+SmC=57
+PrH=4
+CF=2
+n1I=2
+n1O=1
+Cmn1=Subtract offset\\
+mI=2
+I1=17
+I2=35
+mO=1
+tO=1
+O1=36
+]
+[
+ObjTp=Sm
+H=32
+SmC=24
+PrH=4
+CF=2
+n1I=1
+n1O=1
+Cmn1=Scale back to new bargraph range\\
+mI=1
+I1=36
+mO=1
+tO=1
+O1=32
+mP=3
+P1=65535d
+P2=#SPAN - 1 ==50d
+P3=0d
+]
+[
+ObjTp=Sm
+H=35
+SmC=57
+PrH=4
+CF=2
+n1I=2
+n1O=1
+mI=2
+I1=37
+I2=38
+mO=1
+tO=1
+O1=39
+]
+[
+ObjTp=Sm
+H=40
+SmC=32
+PrH=4
+CF=2
+n1I=1
+n1O=3
+mI=1
+I1=2
+mO=3
+tO=3
+O1=37
+O2=38
+O3=35
+mP=3
+P1=#OFFSET ==25d
+P2=#SPAN ==51d
+P3=-\[#OFFSET ==25d\]
+]
+[
+ObjTp=Sm
+H=43
+SmC=103
+Nm=Gentlimt.usp
+PrH=4
+CF=2
+n2I=3
+mI=3
+I1=39
+I2=37
+I3=20
+mO=1
+tO=1
+O1=17
+mP=1
+P1=
+]
+[
+ObjTp=Sg
+H=4
+Nm=VOLUME-UP
+]
+[
+ObjTp=Sg
+H=5
+Nm=VOLUME-DOWN
+]
+[
+ObjTp=Sg
+H=6
+Nm=VOLUME-MUTE-ON
+]
+[
+ObjTp=Sg
+H=7
+Nm=VOLUME-MUTE-OFF
+]
+[
+ObjTp=Sg
+H=8
+Nm=VOLUME-MUTE-TOGGLE
+]
+[
+ObjTp=Sg
+H=9
+Nm=FROM-GENTNER-PROCESSOR$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=10
+Nm=VOLUME-BAR
+SgTp=2
+]
+[
+ObjTp=Sg
+H=11
+Nm=VOLUME-MUTE-ON-FB
+]
+[
+ObjTp=Sg
+H=12
+Nm=VOLUME-MUTE-OFF-FB
+]
+[
+ObjTp=Sg
+H=13
+Nm=To_Device$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=14
+Nm=VOLUME-MXB
+SgTp=2
+]
+[
+ObjTp=Sg
+H=15
+Nm=POLL
+]
+[
+ObjTp=Sg
+H=16
+Nm=X-TEXT$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=17
+Nm=LEVEL-IN
+SgTp=2
+]
+[
+ObjTp=Sg
+H=18
+Nm=MUTE-IN
+SgTp=2
+]
+[
+ObjTp=Sg
+H=19
+Nm=Y-TEXT$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=20
+Nm=LEVEL-IN-B
+SgTp=2
+]
+[
+ObjTp=Sg
+H=21
+Nm=CHANGE-OR
+]
+[
+ObjTp=Sg
+H=22
+Nm=VOLUME-TEXT$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=23
+Nm=GENTNER-RX$-B
+SgTp=4
+]
+[
+ObjTp=Sg
+H=24
+Nm=VOLUME-SLIDER
+SgTp=2
+]
+[
+ObjTp=Sg
+H=25
+Nm=VOLUME-SLIDING
+]
+[
+ObjTp=Sg
+H=26
+Nm=CHANGING
+]
+[
+ObjTp=Sg
+H=27
+Nm=VOLUME-GO
+]
+[
+ObjTp=Sg
+H=28
+Nm=VOLUME-OSC
+]
+[
+ObjTp=Sg
+H=29
+Nm=VOLUME-MXB-BB
+SgTp=2
+]
+[
+ObjTp=Sg
+H=30
+Nm=VOLUME-NOT-SLIDING
+]
+[
+ObjTp=Sg
+H=31
+Nm=NOT-ADJUSTING-M
+]
+[
+ObjTp=Sg
+H=32
+Nm=VOLUME-BARx
+SgTp=2
+]
+[
+ObjTp=Sg
+H=33
+Nm=NOT-ADJUSTING
+]
+[
+ObjTp=Sg
+H=34
+Nm=START-OF-COMMAND$
+SgTp=4
+]
+[
+ObjTp=Sg
+H=35
+Nm=Neg_Offset
+SgTp=2
+]
+[
+ObjTp=Sg
+H=36
+Nm=Volume_Bar_With_Offset
+SgTp=2
+]
+[
+ObjTp=Sg
+H=37
+Nm=OFFSET
+SgTp=2
+]
+[
+ObjTp=Sg
+H=38
+Nm=SPAN
+SgTp=2
+]
+[
+ObjTp=Sg
+H=39
+Nm=OFFSET+SPAN
+SgTp=2
+]

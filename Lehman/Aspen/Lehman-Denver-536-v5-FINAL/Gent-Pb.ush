@@ -1,0 +1,83 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.01.15
+  InclDatVrs=1.12
+  CrossCplrVrs=1.1
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=SIMPLWINDOWS NAME: Gentner XAP800/XAP400/PSR1212 Feedback Processor\\
+  Cmn2=\\MANUFACTURER: Gentner\\MODEL: XAP800/XAP400/PSR1212\\\\CATEGORY:
+  Cmn3=||1CONFERENCING\\\\VERSION: 1.0\\\\SUMMARY: Processes all feedback||1
+  Cmn4=received from the XAP800/XAP400/PSR1212\\\\\\GENERAL NOTES: This||1
+  Cmn5=module will process all feedback received from the \\Gentner XAP800/XAP400/PSR121
+  Cmn6=2. It will reformat the information and then send it out to \\as||1
+  Cmn7=many other Gentner XAP800/XAP400/PSR1212 modules are in the program.
+  Cmn8=||1In a properly \\constructed program, there will be one copy of||1
+  Cmn9=this module receiving all \\of the information from the Gentner||1
+  Cmn10=system. The output of this module \\will be connected to the FROM-
+  Cmn11=GENTNER-PROCESSOR$ input of all other \\XAP800/XAP400/PSR1212 modules||1
+  Cmn12=in the program.\\\\\\CRESTRON HARDWARE REQUIRED: CNXCOM, ST-COM\\
+  Cmn13=\\\\SETUP OF CRESTRON HARDWARE: \\Baud Rate - 38400\\Parity - None\\
+  Cmn14=Data Bits - 8\\Stop Bits - 1\\RTS/CTS Handshaking should be enabled||1
+  Cmn15=to insure no data is lost.\\\\\\VENDOR FIRMWARE: PSR1212 - 1.0.3||1
+  Cmn16=||1\\                 XAP800 - 1.1.0\\\\\\VENDOR SETUP: Flow control||1
+  Cmn17=should be set to "on".\\The baud rate should be set to 38400.\\\\
+  Cmn18=\\\\CABLE NUMBER: CNSP-141\\\\\\INPUT DESCRIPTIONS: \\\\Name||4
+  Cmn19=||9Type Description\\From_Device$       S  Connect to the||1
+  Cmn20=com port to process all information \\                      received||1
+  Cmn21=from the Gentner system\\\\\\OUTPUT DESCRIPTIONS: \\\\Name||6
+  Cmn22=||7Type Description\\TOPROGRAM$         S  Connect to all FROM-
+  Cmn23=GENTNER-PROCESSOR$ inputs on all \\                      other XAP800/400||1
+  Cmn24=or PSR1212 modules in the program\\\\\\OPS USED FOR TESTING: 5.12.
+  Cmn25=26x\\\\COMPILER USED FOR TESTING: SimplWindows Ver 1.61.12\\\\SAMPLE||1
+  Cmn26=PROGRAM: Gentner XAP800/XAP400/PSR1212 Demo Program\\\\REVISION||1
+  Cmn27=HISTORY: None\\
+[END]
+[BEGIN]
+  InputList2Cue1=From_Device$
+  InputList2SigType1=Serial
+  OutputList2Cue1=ToProgram$
+  OutputList2SigType1=Serial
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,310,
+  Name=Gentner XAP800/XAP400/PSR1212 Feedback Processor
+  SmplCName=Gent-Pb.usp
+  Code=1
+  MinVariableInputs=0
+  MaxVariableInputs=0
+  MinVariableInputsList2=1
+  MaxVariableInputsList2=1
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=1
+  MaxVariableOutputsList2=1
+  Expand=expand_randomly
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=Processes all feedback received from the XAP800/XAP400/PSR1212
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  NVStorage=10
+  ParamSigType1=String
+  ParamCue1=[Reference Name]
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlusShortSaveName=Gent-Pb.uf
+  SPlusLongSaveName=GENT-PB.UF
+  SPlus2CompiledName=S2_Gent_Pb
+  SymJam=NonExclusive
+[END]

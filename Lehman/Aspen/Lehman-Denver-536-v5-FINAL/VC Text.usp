@@ -1,0 +1,283 @@
+/***********************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/***********************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************/
+// #SYMBOL_NAME ""
+// #HINT ""
+// #DEFINE_CONSTANT
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/***********************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+***********************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/***********************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************/
+DIGITAL_INPUT Initialize_Macro,Reload_Text,Store_Text,Debug; 
+ANALOG_INPUT Preset_Group_Selected,Preset_Selected; 
+STRING_INPUT Edited_Text$[50];
+BUFFER_INPUT Input_Text$[50]; 
+
+DIGITAL_OUTPUT Macro_Busy; 
+// ANALOG_OUTPUT 
+STRING_OUTPUT Preset_Text1$,Preset_Text2$,Preset_Text3$,Preset_Text4$,Preset_Text5$,Preset_Text6$,Preset_Text7$,Edit_Text$; 
+
+/***********************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+***********************************************************************/
+INTEGER Count,Loading_Text,Offset,Length;
+STRING Temp$[50],Preset_Text$[150][50];
+
+/***********************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+***********************************************************************/
+/*
+Function MyFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+}
+*/
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+
+/***********************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************/
+ 
+PUSH Initialize_Macro
+{
+	If (!Macro_Busy)
+	{
+		Count = 0;
+		Preset_Text$[0] = "";
+		Macro_Busy = 1;
+		Do
+		{
+			Count = Count + 1;
+			Preset_Text$[Count] = "";
+		} Until (Count = 150);
+		Macro_Busy = 0;
+	}
+}
+
+PUSH Reload_Text
+{
+	if (debug)
+		Print ("Group %u \n",Preset_Group_Selected);
+	Switch (Preset_Group_Selected)
+	{
+		Case (0):
+		{
+			Offset = 0;
+		}
+		Case (1):
+		{
+			Offset = 7;
+		}
+		Case (2):
+		{
+			Offset = 14; 
+		}
+		Case (3):
+		{
+			Offset = 21; 
+		}
+		Case (4):
+		{
+			Offset = 28;
+		}
+		Case (5):
+		{
+			Offset = 35;
+		}
+		Case (6):
+		{
+			Offset = 42;
+		}
+		Case (7):
+		{
+			Offset = 49;
+		}
+		Case (8):
+		{
+			Offset = 56;
+		}
+		Case (9):
+		{
+			Offset = 63;
+		}
+		Case (10):
+		{
+			Offset = 70;
+		}
+		Case (11):
+		{
+			Offset = 77;
+		}
+		Case (12):
+		{
+			Offset = 84;
+		}
+		Case (13):
+		{
+			Offset = 91;
+		}
+		Case (14):
+		{
+			Offset = 98;
+		}
+		Case (15):
+		{
+			Offset = 105;
+		}
+		Case (16):
+		{
+			Offset = 112;
+		}
+		Case (17):
+		{
+			Offset = 119;
+		}
+		Case (18):
+		{
+			Offset = 126;
+		}
+		Case (19):
+		{
+			Offset = 133;
+		}
+		Case (20):
+		{
+			Offset = 140;
+		}
+		Case (21):
+		{
+			Offset = 147;
+		}
+		
+	}
+	if (Debug)
+		Print ("Offset %u = \n",Offset);
+	Preset_Text1$ = Preset_Text$[Offset + 1];
+	Preset_Text2$ = Preset_Text$[Offset + 2];
+	Preset_Text3$ = Preset_Text$[Offset + 3];
+	Preset_Text4$ = Preset_Text$[Offset + 4];
+	Preset_Text5$ = Preset_Text$[Offset + 5];
+	Preset_Text6$ = Preset_Text$[Offset + 6];
+	Preset_Text7$ = Preset_Text$[Offset + 7];    
+}
+
+
+/*
+RELEASE input
+{
+    // TODO:  Add code here
+}
+*/
+
+
+CHANGE Input_Text$
+{
+    If (Input_Text$ = "STX,")
+    {
+    	Loading_Text = 1;
+    	Count = 0;
+    }
+    If (Input_Text$ = "ETX,")
+    {
+    	Loading_Text = 0;
+    	ClearBuffer(Input_Text$);
+    }
+    If (Loading_Text = 1)
+    {
+    	Temp$ = Remove(",",Input_Text$);
+		if (Debug)
+		  	Print ("Temp$ = %s \n",Temp$);
+    	Preset_Text$[Count] = Left(Temp$,Len(Temp$)-1);
+		if (Debug)
+	    	Print ("Preset Text %u = %s \n",Count,Preset_Text$[Count]);
+    	Count = Count + 1;
+    }
+}
+
+CHANGE Preset_Selected
+{
+	Edit_Text$ = Preset_Text$[Preset_Selected];
+}
+
+PUSH Store_Text
+{
+	Preset_Text$[Preset_Selected] = Edited_Text$;
+	Edited_Text$ = "";
+}
+
+/*
+CHANGE Preset_Group_Selected
+*/
+
+/*
+EVENT
+{
+    // TODO:  Add code here
+}
+*/
+
+/***********************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************/
+/*
+Function Main()
+{
+    
+}
+*/

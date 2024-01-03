@@ -1,0 +1,55 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.01.06
+  InclDatVrs=1.07
+  CrossCplrVrs=1.1
+[END]
+[BEGIN]
+  InputCue1=dial_mode
+  InputSigType1=Digital
+  InputCue2=pre_selected
+  InputSigType2=Digital
+  InputList2Cue1=preset
+  InputList2SigType1=Analog
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,310,
+  Name=VC-Status-Temp
+  SmplCName=VC-Status-Temp.usp
+  Code=1
+  MinVariableInputs=2
+  MaxVariableInputs=2
+  MinVariableInputsList2=1
+  MaxVariableInputsList2=1
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=0
+  MaxVariableOutputsList2=0
+  Expand=expand_randomly
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  NVStorage=10
+  ParamSigType1=String
+  ParamCue1=[Reference Name]
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlusShortSaveName=VC-STA~1.UF
+  SPlusLongSaveName=VC-STATUS-TEMP.UF
+  SPlus2CompiledName=S2_VC_Status_Temp
+  SymJam=NonExclusive
+[END]
