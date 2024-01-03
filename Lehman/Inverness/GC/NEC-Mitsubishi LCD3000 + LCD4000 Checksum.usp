@@ -1,0 +1,176 @@
+/***********************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+
+/***********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************************/
+#SYMBOL_NAME "NEC-Mitsubishi LCD3000 + LCD4000 Checksum"
+// #HINT ""
+#DEFINE_CONSTANT	ciVOLUMEMAX	100
+#DEFINE_CONSTANT	ciVOLUMEMIN	0
+// #CATEGORY "" 
+// #DEFAULT_VOLATILE
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/***********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************************/
+DIGITAL_INPUT	Volume_Up, Volume_Down;
+ANALOG_INPUT	Volume_Counter_In;
+BUFFER_INPUT	From_Module$[250], From_Device$[150];
+
+ANALOG_OUTPUT	Volume_Counter;
+STRING_OUTPUT	To_Device$, To_Module$;
+
+/***********************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+***********************************************************************************/
+INTEGER	iTemp, iFlag1, a, i, iFlag2, iVolume, iVolCount;
+STRING	sTemp[30];
+
+/***********************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************************/
+PUSH Volume_Up
+{
+	while((Volume_Up = 1) && (iVolume < ciVOLUMEMAX))
+	{
+		iVolCount = iVolCount + 1;
+		if(iVolCount > 5)
+		{
+			iVolume = iVolume + 5;
+			if(iVolume > ciVOLUMEMAX)
+			{
+				iVolume = ciVOLUMEMAX;
+			}
+		}
+		else
+		{
+			iVolume = iVolume + 1;
+		}
+		Volume_Counter = iVolume;
+		makestring(sTemp, "\x010A0E0A\x02006200%02X\x03", iVolume);
+		iTemp = 0;
+		for(a = 2 to (len(sTemp)))
+		{
+			iTemp = iTemp ^ byte(sTemp, a);
+		}
+		makestring(To_Device$, "%s%s\x0D", sTemp, chr(iTemp));
+		delay(50);
+	}
+}
+
+PUSH Volume_Down
+{
+	while((Volume_Down = 1) && (iVolume > ciVOLUMEMIN))
+	{
+		iVolCount = iVolCount + 1;
+		if(iVolCount > 5)
+		{
+			if(iVolume < 5)
+			{
+				iVolume = ciVOLUMEMIN;
+			}
+			else
+			{
+				iVolume = iVolume - 5;
+			}
+		}
+		else
+		{
+			iVolume = iVolume - 1;
+		}
+		Volume_Counter = iVolume;
+		makestring(sTemp, "\x010A0E0A\x02006200%02X\x03", iVolume);
+		iTemp = 0;
+		for(a = 2 to (len(sTemp)))
+		{
+			iTemp = iTemp ^ byte(sTemp, a);
+		}
+		makestring(To_Device$, "%s%s\x0D", sTemp, chr(iTemp));
+		delay(50);
+	}
+}
+
+RELEASE Volume_Up, Volume_Down
+{
+	iVolCount = 0;
+}
+
+CHANGE Volume_Counter_In
+{
+	if((Volume_Up = 0) && (Volume_Down = 0))
+	{
+		iVolume = Volume_Counter_In;
+	}
+}
+
+CHANGE From_Module$
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(find("\x03", From_Module$) > 0)
+		{
+			sTemp = remove("\x03", From_Module$);
+			iTemp = 0;
+			for(a = 2 to (len(sTemp)))
+			{
+				iTemp = iTemp ^ byte(sTemp, a);
+			}
+			makestring(To_Device$, "%s%s\x0D", sTemp, chr(iTemp));
+			if(len(From_Module$) > 0)
+			{
+				delay(40);
+			}
+		}
+		iFlag1 = 0;
+	}
+}
+
+CHANGE From_Device$
+{
+	if(iFlag2 = 0)
+	{
+		iFlag2 = 1;
+		while(find("\x0D", From_Device$) > 0)
+		{
+			To_Module$ = remove("\x0D", From_Device$);
+		}
+		iFlag2 = 0;
+	}
+}
+/***********************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************************/
+Function Main()
+{
+	iTemp = 0;
+	iFlag1 = 0;
+	iFlag2 = 0;
+	iVolCount = 0;
+	iVolume = 0;
+}
