@@ -1,0 +1,44 @@
+#SYMBOL_NAME "iPod String Truncater ver .01"
+#DEFAULT_NONVOLATILE
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+ANALOG_INPUT 	char_limit;
+STRING_INPUT	string_in$[36][50];
+
+STRING_OUTPUT	string_out$[36]; 
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+
+CHANGE string_in$
+{
+	integer space_loc;
+	string temp$[50];
+	
+
+	if (len(string_in$[getlastmodifiedarrayindex()])>char_limit)
+	{
+		space_loc = find(" ",string_in$[ getlastmodifiedarrayindex()],char_limit) ;
+		
+		if (space_loc = char_limit)
+		{
+			string_out$[getlastmodifiedarrayindex()] = left(string_in$[getlastmodifiedarrayindex()],char_limit-1)+"..";					
+		}
+		
+		else
+		{
+			string_out$[getlastmodifiedarrayindex()] = left(string_in$[getlastmodifiedarrayindex()],char_limit)+"..";									
+		}
+		
+		
+	}
+	else
+	{
+		string_out$[getlastmodifiedarrayindex()] = string_in$[getlastmodifiedarrayindex()];
+	}    
+}

@@ -1,0 +1,405 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.05.22
+IntStrVrs=2
+MinSMWVrs=0
+MinTIOVrs=0
+SavedBy=SMW2.05.22
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=CMS Press And Hold.umc
+DbVr=16.4.4
+CltNm=Provides 2 distinct functions from a single button press
+McNm=Press and Hold
+SmVr=331
+DvVr=331
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+Cmn1=Press and Hold v1.1\\\\The Press And Hold module provides functionality||1
+Cmn2=useful in many\\applications. It allows a single button press to||1
+Cmn3=perform two\\distinct actions based on how long the button is pressed||1
+Cmn4=for.\\If the button is pressed and released before the "hold time"\\
+Cmn5=parameter expires, the "not_held" output will pulse for "output\\
+Cmn6=pulse time". If "hold time" expires and the button is still held,\\
+Cmn7=the "held" ouput will go high and remain high until the button is\\
+Cmn8=released.\\\\Sample applications where this module might be useful||1
+Cmn9=include:\\\\  -a channel preset button, where pressing the button||1
+Cmn10=recalls the\\   preset but holding the button down stores the current||1
+Cmn11=channel\\   to that preset (identical to most car radios)\\\\  -
+Cmn12=a button on a keypad (where the number of available buttons are\\
+Cmn13=||3limited) that sends the "next track" command if the button is\\
+Cmn14=||3pressed and released, but sends the "next disc" command if the\\
+Cmn15=||3button is held down.\\\\  -A button which brings the user to||1
+Cmn16=another screen if the button\\   is pressed and released, but which||1
+Cmn17=brings a system administrator\\   to a special screen if the button||1
+Cmn18=is pressed and held.\\\\Revision History:\\\\v1.0:	initial release\\
+Cmn19=\\v1.1:	added code to support "output pulse time" which was previously\\
+Cmn20=	ineffectual.
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Bw
+H=1
+Lx=0
+Ly=0
+Rx=634
+Ry=453
+Xm=-1
+Ym=-1
+SH=13
+Z=75
+Ht=1
+Hi=2
+]
+[
+ObjTp=Bw
+H=1
+Lx=634
+Ly=453
+Rx=1268
+Ry=906
+Xm=-1
+Ym=-1
+SH=9
+Z=75
+Ht=4
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=0
+Ly=453
+Rx=634
+Ry=906
+Xm=-1
+Ym=-1
+SH=11
+Z=75
+Ht=4
+Hi=1
+]
+[
+ObjTp=Bw
+H=1
+Lx=634
+Ly=0
+Rx=1268
+Ry=453
+Xm=-1
+Ym=-1
+SH=6
+Z=75
+Ht=4
+Hi=1
+]
+[
+ObjTp=Symbol
+Name=CMS Press And Hold
+Code=1
+SmplCName=CMS Press And Hold.umc
+Smpl-C=3
+CompilerTimePrecision=Single_Or_Double_Precision
+Hint=Provides 2 distinct functions from a single button press
+SMWRev=0
+TIORev=0
+HelpID=1055
+APg=0
+NumFixedInputs=1
+NumFixedOutputs=2
+NumFixedParams=2
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=32
+ParamSigType1=Time|Percent|Constant|String|FileName|HexAddress|Any
+ParamSigType2=Time
+InputCue1=in
+OutputCue1=held
+OutputCue2=not_held
+ParamCue1=hold time
+ParamCue2=output pulse time
+FileName=CMS Press And Hold.umc
+]
+[
+ObjTp=Sm
+H=1
+SmC=157
+Nm=Central Control Modules
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=2
+SmC=157
+Nm=Network Modules
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=3
+SmC=157
+Nm=Ethernet
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=4
+SmC=156
+Nm=Logic
+CF=2
+mC=7
+C1=7
+C2=9
+C3=10
+C4=8
+C5=11
+C6=12
+C7=13
+]
+[
+ObjTp=Sm
+H=5
+SmC=157
+Nm=DefineArguments
+CF=2
+n1I=1
+n1O=1
+mC=1
+C1=6
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=6
+SmC=55
+PrH=5
+CF=2
+n1I=1
+n1O=2
+mI=1
+I1=4
+mO=2
+tO=2
+O1=6
+O2=9
+mP=2
+P1=hold time
+P2=output pulse time
+]
+[
+ObjTp=Sm
+H=7
+SmC=9
+PrH=4
+CF=2
+n1I=3
+n1O=2
+Cmn1=pulse input for <hold time>
+mI=3
+I1=4
+I3=10
+mO=2
+tO=2
+O1=8
+O2=7
+mP=1
+P1=#hold time
+]
+[
+ObjTp=Sm
+H=8
+SmC=1
+PrH=4
+CF=2
+n1I=2
+n1O=1
+Cmn1=<hold time> passed and button still held?
+mI=2
+I1=10
+I2=8
+mO=1
+tO=1
+O1=5
+]
+[
+ObjTp=Sm
+H=9
+SmC=1
+PrH=4
+CF=2
+n1I=2
+n1O=1
+Cmn1=<hold time> passed and button still held?
+mI=2
+I1=12
+I2=7
+mO=1
+tO=1
+O1=13
+]
+[
+ObjTp=Sm
+H=10
+SmC=9
+PrH=4
+CF=2
+n1I=3
+n1O=2
+Cmn1=pulse on release of <in>
+mI=3
+I1=1
+I2=4
+I3=4
+mO=2
+tO=2
+O1=10
+mP=1
+P1=.01s
+]
+[
+ObjTp=Sm
+H=11
+SmC=9
+PrH=4
+CF=2
+n1I=3
+n1O=2
+Cmn1=output pulse for "not held"\\
+mI=3
+I1=5
+mO=2
+tO=2
+O1=11
+mP=1
+P1=#output pulse time
+]
+[
+ObjTp=Sm
+H=12
+SmC=3
+PrH=4
+CF=2
+n1I=1
+n1O=1
+Cmn1=single-wave delay of input signal
+mI=1
+I1=4
+mO=1
+tO=1
+O1=12
+]
+[
+ObjTp=Sm
+H=13
+SmC=20
+PrH=4
+CF=2
+n1I=3
+n1O=2
+Cmn1=jam\\
+mI=3
+I1=2
+I2=13
+I3=11
+mO=2
+tO=2
+O1=6
+O2=9
+]
+[
+ObjTp=Sg
+H=4
+Nm=in
+]
+[
+ObjTp=Sg
+H=5
+Nm=not_held_pre_pulse
+]
+[
+ObjTp=Sg
+H=6
+Nm=held
+]
+[
+ObjTp=Sg
+H=7
+Nm=in_hold_time*
+]
+[
+ObjTp=Sg
+H=8
+Nm=in_hold_time
+]
+[
+ObjTp=Sg
+H=9
+Nm=not_held
+]
+[
+ObjTp=Sg
+H=10
+Nm=in_released
+]
+[
+ObjTp=Sg
+H=11
+Nm=not_held_mv
+]
+[
+ObjTp=Sg
+H=12
+Nm=in_swd
+]
+[
+ObjTp=Sg
+H=13
+Nm=held_and
+]

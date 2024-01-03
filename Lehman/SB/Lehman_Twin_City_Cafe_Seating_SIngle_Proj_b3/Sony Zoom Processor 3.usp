@@ -1,0 +1,456 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "Sony EVI-D Camera Processor"
+// #HINT ""
+#DEFINE_CONSTANT	EVID30		1
+#DEFINE_CONSTANT	EVID70		2
+#DEFINE_CONSTANT	EVID100		3
+#DEFINE_CONSTANT	PANSPEEDS	3
+#DEFINE_CONSTANT	CAMERAS		3
+#DEFINE_CONSTANT	TZSPEEDS	2
+// #CATEGORY "" 
+#CATEGORY "19" // Camera
+// #DEFAULT_VOLATILE
+#DEFAULT_NONVOLATILE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT CheckZoom, evi_d30, evi_d70, evi_d100;
+ANALOG_INPUT Address;
+STRING_INPUT	pan_speed_1[2], pan_speed_2[2], pan_speed_3[2], tilt_speed_1[2], tilt_speed_2[2],
+							zoom_speed_1[2], zoom_speed_2[2];
+BUFFER_INPUT FromDevice$[250]; 
+
+DIGITAL_OUTPUT ZoomIn; 
+ANALOG_OUTPUT ZoomScale, pan_speed_1_out, pan_speed_2_out, pan_speed_3_out, tilt_speed_1_out,
+							tilt_speed_2_out, zoom_in_speed_1_out, zoom_in_speed_2_out,
+							zoom_out_speed_1_out, zoom_out_speed_2_out;
+STRING_OUTPUT ToDevice$; 
+
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+*******************************************************************************************/
+INTEGER ZoomWaiting, Semaphore, OutHeader, InHeader, iCamera, iPanSpeed[PANSPEEDS][CAMERAS],
+				iTiltSpeed[TZSPEEDS][CAMERAS], iZoomInSpeed[TZSPEEDS][CAMERAS],
+				iZoomOutSpeed[TZSPEEDS][CAMERAS];
+STRING TempString$[100];
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+/*
+Function MyFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+}
+*/
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+
+PUSH CheckZoom
+	{
+	ZoomWaiting = 1;
+    ToDevice$ = chr(OutHeader) + "\x09\x04\x47\xFF";
+	}
+
+PUSH evi_d30
+{
+	if(iCamera <> EVID30)
+	{
+		iCamera = EVID30;
+		pan_speed_1_out = iPanSpeed[1][EVID30];	
+		pan_speed_2_out = iPanSpeed[2][EVID30];
+		pan_speed_3_out = iPanSpeed[3][EVID30];
+		tilt_speed_1_out = iTiltSpeed[1][EVID30];
+		tilt_speed_2_out = iTiltSpeed[2][EVID30];
+		zoom_in_speed_1_out = iZoomInSpeed[1][EVID30];
+		zoom_in_speed_2_out = iZoomInSpeed[2][EVID30];
+		zoom_out_speed_1_out = iZoomOutSpeed[1][EVID30];
+		zoom_out_speed_2_out = iZoomOutSpeed[2][EVID30];
+	}
+}
+
+PUSH evi_d70
+{
+	if(iCamera <> EVID70)
+	{
+		iCamera = EVID70;
+		pan_speed_1_out = iPanSpeed[1][EVID70];	
+		pan_speed_2_out = iPanSpeed[2][EVID70];
+		pan_speed_3_out = iPanSpeed[3][EVID70];
+		tilt_speed_1_out = iTiltSpeed[1][EVID70];
+		tilt_speed_2_out = iTiltSpeed[2][EVID70];
+		zoom_in_speed_1_out = iZoomInSpeed[1][EVID70];
+		zoom_in_speed_2_out = iZoomInSpeed[2][EVID70];
+		zoom_out_speed_1_out = iZoomOutSpeed[1][EVID70];
+		zoom_out_speed_2_out = iZoomOutSpeed[2][EVID70];
+	}
+}
+
+PUSH evi_d100
+{
+	if(iCamera <> EVID100)
+	{
+		iCamera = EVID100;
+		pan_speed_1_out = iPanSpeed[1][EVID100];	
+		pan_speed_2_out = iPanSpeed[2][EVID100];
+		pan_speed_3_out = iPanSpeed[3][EVID100];
+		tilt_speed_1_out = iTiltSpeed[1][EVID100];
+		tilt_speed_2_out = iTiltSpeed[2][EVID100];
+		zoom_in_speed_1_out = iZoomInSpeed[1][EVID100];
+		zoom_in_speed_2_out = iZoomInSpeed[2][EVID100];
+		zoom_out_speed_1_out = iZoomOutSpeed[1][EVID100];
+		zoom_out_speed_2_out = iZoomOutSpeed[2][EVID100];
+	}
+}
+
+CHANGE FromDevice$
+	{
+    if(Semaphore = 0)
+    	{
+    	Semaphore = 1;
+    	While(find("\xFF", FromDevice$) > 0)
+    		{
+    		TempString$ = Remove("\xFF", FromDevice$, 1);
+    		if((ZoomWaiting = 1) && (byte(Tempstring$, 1) = InHeader))
+    			{
+    			if(Byte(Tempstring$, 2) = 80)
+    			//if(left(TempString$, 2) = "\x90\x50")
+    				{
+    				ZoomWaiting = 0;
+    				ZoomScale = Byte(TempString$, 3) * 4096 + Byte(TempString$, 4) * 256 + Byte(TempString$, 5) * 16 + Byte(TempString$, 6);
+    				ZoomIn = 1;
+    				processlogic();
+    				ZoomIn = 0;
+    				}
+    			}
+    		}
+    	Semaphore = 0;
+    	}
+	}
+
+CHANGE Address
+	{
+	OutHeader = Address + 128;
+	InHeader = Address * 16 + 128;
+	}
+
+CHANGE pan_speed_1
+{
+	if((atoi(pan_speed_1) >= 0x01) && (atoi(pan_speed_1) <= 0x18))
+	{
+		iPanSpeed[1][EVID30] = atoi(pan_speed_1);
+		iPanSpeed[1][EVID70] = atoi(pan_speed_1);
+		iPanSpeed[1][EVID100] = atoi(pan_speed_1);
+	}
+	else
+	{
+		iPanSpeed[1][EVID30] = 0x5;
+		iPanSpeed[1][EVID70] = 0x5;
+		iPanSpeed[1][EVID100] = 0x0C;
+	}
+	if(iCamera = EVID30)
+	{
+		pan_speed_1_out = iPanSpeed[1][EVID30];
+	}
+	else if(iCamera = EVID70)
+	{
+		pan_speed_1_out = iPanSpeed[1][EVID70];
+	}
+	else if(iCamera = EVID100)
+	{
+		pan_speed_1_out = iPanSpeed[1][EVID100];
+	}
+}
+
+CHANGE pan_speed_2
+{
+	if((atoi(pan_speed_2) >= 0x01) && (atoi(pan_speed_2) <= 0x18))
+	{
+		iPanSpeed[2][EVID30] = atoi(pan_speed_2);
+		iPanSpeed[2][EVID70] = atoi(pan_speed_2);
+		iPanSpeed[2][EVID100] = atoi(pan_speed_2);
+	}
+	else
+	{
+		iPanSpeed[2][EVID30] = 0x0A;
+		iPanSpeed[2][EVID70] = 0x0A;
+		iPanSpeed[2][EVID100] = 0x0F;
+	}
+	if(iCamera = EVID30)
+	{
+		pan_speed_2_out = iPanSpeed[2][EVID30];
+	}
+	else if(iCamera = EVID70)
+	{
+		pan_speed_2_out = iPanSpeed[2][EVID70];
+	}
+	else if(iCamera = EVID100)
+	{
+		pan_speed_2_out = iPanSpeed[2][EVID100];
+	}
+}
+
+CHANGE pan_speed_3
+{
+	if((atoi(pan_speed_3) >= 0x01) && (atoi(pan_speed_3) <= 0x18))
+	{
+		iPanSpeed[3][EVID30] = atoi(pan_speed_3);
+		iPanSpeed[3][EVID70] = atoi(pan_speed_3);
+		iPanSpeed[3][EVID100] = atoi(pan_speed_3);
+	}
+	else
+	{
+		iPanSpeed[3][EVID30] = 0x12;
+		iPanSpeed[3][EVID70] = 0x12;
+		iPanSpeed[3][EVID100] = 0x12;
+	}
+	if(iCamera = EVID30)
+	{
+		pan_speed_3_out = iPanSpeed[3][EVID30];
+	}
+	else if(iCamera = EVID70)
+	{
+		pan_speed_3_out = iPanSpeed[3][EVID70];
+	}
+	else if(iCamera = EVID100)
+	{
+		pan_speed_3_out = iPanSpeed[3][EVID100];
+	}
+}
+
+CHANGE tilt_speed_1
+{
+	if((atoi(tilt_speed_1) >= 0x01) && (atoi(tilt_speed_1) <= 0x17))
+	{
+		if(atoi(tilt_speed_1) > 0x14)
+		{
+			iTiltSpeed[1][EVID30] = 0x0E;
+			iTiltSpeed[1][EVID100] = 0x0E;
+		}
+		else
+		{
+			iTiltSpeed[1][EVID30] = atoi(tilt_speed_1);
+			iTiltSpeed[1][EVID100] = atoi(tilt_speed_1);
+		}
+		iTiltSpeed[1][EVID70] = atoi(tilt_speed_1);
+	}
+	else
+	{
+		iTiltSpeed[1][EVID30] = 0x03;
+		iTiltSpeed[1][EVID70] = 0x03;
+		iTiltSpeed[1][EVID100] = 0x07;
+	}
+	if(iCamera = EVID30)
+	{
+		tilt_speed_1_out = iTiltSpeed[1][EVID30];
+	}
+	else if(iCamera = EVID70)
+	{
+		tilt_speed_1_out = iTiltSpeed[1][EVID70];
+	}
+	else if(iCamera = EVID100)
+	{
+		tilt_speed_1_out = iTiltSpeed[1][EVID100];
+	}
+}
+
+CHANGE tilt_speed_2
+{
+	if((atoi(tilt_speed_2) >= 0x1) && (atoi(tilt_speed_2) <= 0x17))
+	{
+		if(atoi(tilt_speed_2) > 0x14)
+		{
+			iTiltSpeed[2][EVID30] = 0x0E;
+			iTiltSpeed[2][EVID100] = 0x0E;
+		}
+		else
+		{
+			iTiltSpeed[2][EVID30] = atoi(tilt_speed_2);
+			iTiltSpeed[2][EVID100] = atoi(tilt_speed_2);
+		}
+		iTiltSpeed[2][EVID70] = atoi(tilt_speed_2);
+	}
+	else
+	{
+		iTiltSpeed[2][EVID30] = 0x09;
+		iTiltSpeed[2][EVID70] = 0x09;
+		iTiltSpeed[2][EVID100] = 0x10;
+	}
+	if(iCamera = EVID30)
+	{
+		tilt_speed_2_out = iTiltSpeed[2][EVID30];
+	}
+	else if(iCamera = EVID70)
+	{
+		tilt_speed_2_out = iTiltSpeed[2][EVID70];
+	}
+	else if(iCamera = EVID100)
+	{
+		tilt_speed_2_out = iTiltSpeed[2][EVID100];
+	}
+}
+
+CHANGE zoom_speed_1
+{
+	if((atoi(zoom_speed_1) >= 0x00) && (atoi(zoom_speed_1) <= 0x07))
+	{
+		if(atoi(zoom_speed_1) > 0x02)
+		{
+			iZoomInSpeed[1][EVID30] = 0x02 + 0x20;
+			iZoomOutSpeed[1][EVID30] = 0x02 + 0x30;
+		}
+		else
+		{
+			iZoomInSpeed[1][EVID30] = atoi(zoom_speed_1) + 0x20;
+			iZoomOutSpeed[1][EVID30] = atoi(zoom_speed_1) + 0x30;
+		}
+		iZoomInSpeed[1][EVID70] = atoi(zoom_speed_1) + 0x20;
+		iZoomInSpeed[1][EVID100] = atoi(zoom_speed_1) + 0x20;
+		iZoomOutSpeed[1][EVID70] = atoi(zoom_speed_1) + 0x30;
+		iZoomOutSpeed[1][EVID100] = atoi(zoom_speed_1) + 0x30;
+	}
+	else
+	{
+		iZoomInSpeed[1][EVID30] = 0x02 + 0x20;
+		iZoomInSpeed[1][EVID70] = 0x02 + 0x20;
+		iZoomInSpeed[1][EVID100] = 0x04 + 0x20;
+		iZoomOutSpeed[1][EVID30] = 0x02 + 0x30;
+		iZoomOutSpeed[1][EVID70] = 0x02 + 0x30;
+		iZoomOutSpeed[1][EVID100] = 0x04 + 0x30;
+	}
+	if(iCamera = EVID30)
+	{
+		zoom_in_speed_1_out = iZoomInSpeed[1][EVID30];
+		zoom_out_speed_1_out = iZoomOutSpeed[1][EVID30];
+	}
+	else if(iCamera = EVID70)
+	{
+		zoom_in_speed_1_out = iZoomInSpeed[1][EVID70];
+		zoom_out_speed_1_out = iZoomOutSpeed[1][EVID70];
+	}
+	else if(iCamera = EVID100)
+	{
+		zoom_in_speed_1_out = iZoomInSpeed[1][EVID100];
+		zoom_out_speed_1_out = iZoomOutSpeed[1][EVID100];
+	}
+}
+
+CHANGE zoom_speed_2
+{
+	if((atoi(zoom_speed_2) >= 0x00) && (atoi(zoom_speed_2) <= 0x07))
+	{
+		if(atoi(zoom_speed_1) > 0x02)
+		{
+			iZoomInSpeed[2][EVID30] = 0x02 + 0x20;
+			iZoomOutSpeed[2][EVID30] = 0x02 + 0x30;
+		}
+		else
+		{
+			iZoomInSpeed[2][EVID30] = atoi(zoom_speed_2) + 0x20;
+			iZoomOutSpeed[2][EVID30] = atoi(zoom_speed_2) + 0x30;
+		}
+		iZoomInSpeed[2][EVID70] = atoi(zoom_speed_2) + 0x20;
+		iZoomInSpeed[2][EVID100] = atoi(zoom_speed_2) + 0x20;
+		iZoomOutSpeed[2][EVID70] = atoi(zoom_speed_2) + 0x30;
+		iZoomOutSpeed[2][EVID100] = atoi(zoom_speed_2) + 0x30;
+	}
+	else
+	{
+		iZoomInSpeed[2][EVID30] = 0x07 + 0x20;
+		iZoomInSpeed[2][EVID70] = 0x07 + 0x20;
+		iZoomInSpeed[2][EVID100] = 0x07 + 0x20;
+		iZoomOutSpeed[2][EVID30] = 0x07 + 0x30;
+		iZoomOutSpeed[2][EVID70] = 0x07 + 0x30;
+		iZoomOutSpeed[2][EVID100] = 0x07 + 0x30;
+	}
+	if(iCamera = EVID30)
+	{
+		zoom_in_speed_2_out = iZoomInSpeed[2][EVID30];
+		zoom_out_speed_2_out = iZoomOutSpeed[2][EVID30];
+	}
+	else if(iCamera = EVID70)
+	{
+		zoom_in_speed_2_out = iZoomInSpeed[2][EVID70];
+		zoom_out_speed_2_out = iZoomOutSpeed[2][EVID70];
+	}
+	else if(iCamera = EVID100)
+	{
+		zoom_in_speed_2_out = iZoomInSpeed[2][EVID100];
+		zoom_out_speed_2_out = iZoomOutSpeed[2][EVID100];
+	}
+}
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+	{
+    ZoomWaiting = 0;
+    Semaphore = 0;
+    ZoomScale = 32767;
+    iCamera = EVID30;
+	}
+
