@@ -1,0 +1,77 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.02.05
+  InclDatVrs=1.45
+  CrossCplrVrs=1.1
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+  Name=Lehman3D_TandbergCallTrack_v2
+  SmplCName=Lehman3D_TandbergCallTrack_v2.usp
+  Code=1
+  SysRev5=3.137
+  SMWRev=2.02.05
+  InputCue1=DualSet
+  InputSigType1=Digital
+  InputCue2=CP_On
+  InputSigType2=Digital
+  InputCue3=CP_Off
+  InputSigType3=Digital
+  InputCue4=Selfview
+  InputSigType4=Digital
+  InputCue5=Connected_Call[#]
+  InputSigType5=Digital
+  OutputList2Cue1=HowManyCalls
+  OutputList2SigType1=Analog
+  OutputList2Cue2=Codec_TX$
+  OutputList2SigType2=Serial
+  OutputList2Cue3=MonSet_TX$
+  OutputList2SigType3=Serial
+  ParamCue1=[Reference Name]
+  MinVariableInputs=5
+  MaxVariableInputs=9
+  MinVariableInputsList2=0
+  MaxVariableInputsList2=0
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=3
+  MaxVariableOutputsList2=3
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  OffsetOutputs=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlus2CompiledName=S2_Lehman3D_TandbergCallTrack_v2
+  SymJam=NonExclusive
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]

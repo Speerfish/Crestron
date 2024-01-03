@@ -1,0 +1,522 @@
+/*
+Steve Swartzentruber
+Crestron Electronics, Inc.
+*/
+
+
+// #SYMBOL_NAME ""
+// #HINT ""
+#DEFINE_CONSTANT DLY 5
+ 
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+*******************************************************************************************/
+DIGITAL_INPUT DualSet, CP_On, CP_Off, Selfview, Connected_Call[5];
+// ANALOG_INPUT 
+// STRING_INPUT 
+// BUFFER_INPUT 
+
+// DIGITAL_OUTPUT 
+ANALOG_OUTPUT HowManyCalls;
+STRING_OUTPUT Codec_TX$, MonSet_TX$;
+
+
+
+/*******************************************************************************************
+  Structure Definitions
+*******************************************************************************************/
+// STRUCTURE MyStruct1
+// {
+// };
+
+// MyStruct1 struct;
+
+
+
+/*******************************************************************************************
+  Global Variables
+*******************************************************************************************/
+integer Cnt[5], RemVM1, RemVM2, RemVM3, RemVM4, RemVM5, TotalCnt, SelfState, DualState, CP_State;
+
+
+/*******************************************************************************************
+  Functions
+*******************************************************************************************/
+function SetVM()
+{
+	integer y, VM;
+	
+	VM = 1;
+	
+	if(totalcnt = 1)
+	{
+		makestring(Codec_TX$, "xCom VirtualMonitorReset VirtualMonitor: 1\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorReset VirtualMonitor: 2\n");
+	}
+	
+	else if(totalcnt = 2)
+	{
+		for(y = 1 to 5)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorReset VirtualMonitor: 2\n");
+			//delay(DLY);
+			
+			if(VM = 1 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 1 Window 1 picture:remotemain call:%u\n", y);
+				RemVM1 = y;
+				VM = 2;
+			}
+			else if(VM = 2 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 1 Window 2 picture:remotemain call:%u\n", y);
+				//delay(DLY);
+				makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture:pictureprogram1\n");
+				VM = 1;
+				RemVM2 = y;
+				break;
+			}
+		processlogic();
+		//delay(DLY);
+		}
+	}
+	
+	else if(totalcnt = 3)
+	{
+		for(y = 1 to 5)
+		{
+			if(VM = 1 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 1 Window 1 picture:remotemain call:%u\n", y);
+				VM = 2;
+				RemVM1 = y;
+			}
+			else if(VM = 2 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 1 Window 2 picture:remotemain call:%u\n", y);
+				//delay(DLY);
+				makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture:pictureprogram1\n");
+				RemVM2 = y;
+				VM = 3;
+			}
+			else if(VM = 3 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 2 Window 1 picture:remotemain call:%u\n", y);
+				//delay(DLY);
+				makestring(Codec_TX$, "xConf PictureProgram 2 Window 2 picture:localmain\n");
+				RemVM3 = y;
+				VM = 1;
+				break;
+			}
+			processlogic();
+			//delay(DLY);
+		}
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: PictureProgram2\n");
+	}
+	
+	else if(totalcnt = 4)
+	{
+		for(y = 1 to 5)
+		{
+			if(VM = 1 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 1 picture:remotemain call:%u\n", y);
+				VM = 2;
+				RemVM1 = y;
+			}
+			else if(VM = 2 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 2 picture:remotemain call:%u\n", y);
+				RemVM2 = y;
+				VM = 3;
+			}
+			else if(VM = 3 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 3 picture:remotemain call:%u\n", y);
+				RemVM3 = y;
+				VM = 4;
+			}
+			else if(VM = 4 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 4 Picture: RemoteMain call:%u\n", y);
+				RemVM4 = y;
+				VM = 1;
+				break;
+			}
+			processlogic();
+			//delay(DLY);
+		}
+		
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: PictureProgram3\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: LocalMain\n");
+	}	
+	else if(totalcnt > 4)
+	{
+		for(y = 1 to 5)
+		{
+			if(VM = 1 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 1 picture:remotemain call:%u\n", y);
+				VM = 2;
+				RemVM1 = y;
+			}
+			else if(VM = 2 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 2 picture:remotemain call:%u\n", y);
+				VM = 3;
+				RemVM2 = y;
+			}
+			else if(VM = 3 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 3 picture:remotemain call:%u\n", y);
+				RemVM3= y;
+				VM = 4;
+			}
+			else if(VM = 4 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 3 Window 4 picture:remotemain call:%u\n", y);
+				RemVM4 = y;
+				VM = 5;
+			}
+			else if(VM = 5 && cnt[y] = 1)
+			{
+				makestring(Codec_TX$, "xConf PictureProgram 2 Window 1 Picture: RemoteMain call:%u\n", y);
+				RemVM5 = y;
+				makestring(Codec_TX$, "xConf PictureProgram 2 Window 2 Picture: LocalMain\n");
+				VM = 1;
+			}
+			processlogic();
+			//delay(20);
+		}
+		
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: PictureProgram2\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture:pictureprogram3\n");
+	}
+}
+
+
+function SetDual()
+{
+	if(totalcnt = 1)
+	{
+		makestring(Codec_TX$, "xConf PictureProgram 1 Window 1 Picture: RemoteMain call:%u\n", RemVM1);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 1 Window 2 Picture: LocalMain\n");
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: PictureProgram1\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: TandbergMonitor2\n");
+	}
+	
+	else if(totalcnt = 2)
+	{
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 1 Picture: RemoteMain call:%u\n", RemVM1);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 2 Picture: RemoteMain call:%u\n", RemVM2);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 3 Picture: LocalMain\n");
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 4 Picture: None\n");
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "selfview off\nxCom piphide virtualmonitor:1\n");
+		//delay(DLY);
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: TandbergMonitor2\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: PictureProgram3\n");		
+	}
+	
+	else if(totalcnt = 3)
+	{
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 1 Picture: RemoteMain Call:%u\n", RemVM1);
+		//delay(DLY);
+
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 2 Picture: RemoteMain Call:%u\n", RemVM2);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 3 Picture: RemoteMain Call:%u\n", RemVM3);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 3 Window 4 Picture: LocalMain\n");
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "selfview off\nxCom piphide virtualmonitor:1\n");
+		//delay(DLY);
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: TandbergMonitor2\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: PictureProgram3\n");
+	}
+	
+	else if(totalcnt = 4)
+	{
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 1 Picture: RemoteMain Call:%u\n", RemVM1);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 2 Picture: RemoteMain Call:%u\n", RemVM2);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 3 Picture: RemoteMain Call:%u\n", RemVM3);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 4 Picture: RemoteMain Call:%u\n", RemVM4);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 5 Picture: LocalMain\n");
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 6 Picture: None\n");
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "selfview off\nxCom piphide virtualmonitor:1\n");
+		//delay(DLY);
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: TandbergMonitor2\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: PictureProgram4\n");
+		
+	}
+	
+	else if(totalcnt > 4)
+	{
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 1 Picture: RemoteMain Call:%u\n", RemVM1);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 2 Picture: RemoteMain Call:%u\n", RemVM2);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 3 Picture: RemoteMain Call:%u\n", RemVM3);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 4 Picture: RemoteMain Call:%u\n", RemVM4);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 5 Picture: RemoteMain Call:%u\n", RemVM5);
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "xConf PictureProgram 4 Window 6 Picture: LocalMain\n");
+		//delay(DLY);
+		
+		makestring(Codec_TX$, "selfview off\nxCom piphide virtualmonitor:1\n");
+		//delay(DLY);
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: TandbergMonitor2\n");
+		makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: PictureProgram4\n");
+		
+	}
+}
+
+
+/*******************************************************************************************
+  Events
+*******************************************************************************************/
+change Connected_Call
+{
+	integer i, x;
+	
+	i = getlastmodifiedarrayindex();
+	TotalCnt = 0;
+	
+	if(Connected_Call[i] = 1)
+	{
+		cnt[i] = 1;
+	}
+	else
+	{
+		cnt[i] = 0;
+	}
+	
+	for(x = 1 to 5)
+	{
+		totalcnt = totalcnt + cnt[x];
+	}
+	
+	if(DualState = 0) SetVM();
+	else if(DualState = 1) SetDual();
+	
+	howmanycalls = totalcnt;
+}
+
+
+push Selfview
+{
+	selfstate = !selfstate;
+	
+	if(selfstate = 1 && DualState = 0)
+	{	
+		if(totalcnt = 1)
+		{
+			makestring(Codec_TX$, "selfview on\n");
+		}
+		else if(totalcnt = 2)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: RemoteMain Call:%u\n", RemVM2);
+		}
+		else if(totalcnt = 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: RemoteMain Call:%u\n", RemVM2);
+		}
+		else if(totalcnt > 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: TandbergMonitor1\n");
+			//delay(DLY);
+			//makestring(Codec_TX$, "multisite cp off\n");
+		}
+	}
+	
+	else if(selfstate = 1 && DualState = 1)
+	{	
+		if(totalcnt = 1)
+		{
+			makestring(MonSet_TX$, "4*6!");
+			makestring(Codec_TX$, "selfview on\n");
+		}
+		else if(totalcnt = 2)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: TandbergMonitor2\n");
+		}
+		else if(totalcnt = 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: TandbergMonitor2\n");
+		}
+		else if(totalcnt > 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: TandbergMonitor2\n");
+			//delay(DLY);
+			//makestring(Codec_TX$, "multisite cp off\n");
+		}
+	}
+	
+	else if(selfstate = 0 && DualState = 0)
+	{	
+		if(totalcnt = 1)
+		{
+			makestring(MonSet_TX$, "0*6!");
+			makestring(Codec_TX$, "selfview off\n");
+		}
+		else if(totalcnt = 2)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: RemoteMain Call:%u\n", RemVM2);
+		}
+		else if(totalcnt = 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: RemoteMain Call:%u\n", RemVM2);
+		}
+		else if(totalcnt > 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: LocalMain\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: TandbergMonitor1\n");
+			//makestring(Codec_TX$, "multisite cp off\n");
+		}
+	}
+	
+	else if(selfstate = 0 && DualState = 1)
+	{	
+		if(totalcnt = 1)
+		{
+			makestring(Codec_TX$, "selfview on\n");
+		}
+		else if(totalcnt = 2)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 2 Picture: TandbergMonitor2\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: RemoteMain Call:%u\n", RemVM2);
+		}
+		else if(totalcnt = 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: TandbergMonitor2\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: RemoteMain Call:%u\n", RemVM2);
+		}
+		else if(totalcnt > 3)
+		{
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 1 Picture: TandbergMonitor2\n");
+			//delay(DLY);
+			makestring(Codec_TX$, "xCom VirtualMonitorSet VirtualMonitor: 3 Picture: TandbergMonitor1\n");
+			//makestring(Codec_TX$, "multisite cp off\n");
+		}
+	}
+}
+
+
+push DualSet
+{
+	DualState = 1;
+	
+	SetDual();
+}
+
+
+Release DualSet
+{
+	DualState = 0;
+	
+	SetVM();
+}
+
+
+push CP_On
+{
+	CP_State = 1;
+	
+	makestring(Codec_TX$, "multisite cp on\n");
+	
+	if(DualState = 0) SetVM();
+	else SetDual();
+}
+
+push CP_Off
+{
+	CP_State = 0;
+	
+	makestring(Codec_TX$, "multisite cp off\n");
+	
+	if(DualState = 0) SetVM();
+	else SetDual();
+}
+
+
+/*******************************************************************************************
+  Main()
+*******************************************************************************************/
+function main()
+{
+	integer y;
+	
+	for(y = 0 to 5)
+	{
+		cnt[y] = 0;
+	}
+	
+	dualstate = 0;
+	selfstate = 0;	
+	howmanycalls = 0;
+	totalcnt = 0;
+	CP_State = 1;
+}
