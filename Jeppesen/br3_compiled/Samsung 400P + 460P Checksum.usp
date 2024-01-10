@@ -1,0 +1,119 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name: CRESTRON
+System Name:
+System Number:
+Programmer: snp
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "Samsung 400P + 460P Checksum"
+// #HINT ""
+// #DEFINE_CONSTANT
+ #CATEGORY "24" 
+// #DEFAULT_VOLATILE
+#DEFAULT_NONVOLATILE
+
+#HELP_BEGIN
+This SMPL+ module is only to be used in conjuction
+with the Samsung PPM50H3 Plasma module.
+#HELP_END
+
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional librarys as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+//DIGITAL_INPUT 
+//ANALOG_INPUT 
+STRING_INPUT From_Smpl$[10];
+//BUFFER_INPUT 
+//DIGITAL_OUTPUT
+STRING_OUTPUT To_Device$;
+//ANALOG_OUTPUT
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+*******************************************************************************************/
+INTEGER SEMAPHORE, I, iLength, Checksum; 
+STRING TEMP$[10];
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+CHANGE From_Smpl$
+{
+	
+	IF (SEMAPHORE=0)
+    	{    
+     	SEMAPHORE=1;
+     		
+      			IF(FIND("\xAA", From_Smpl$) > 0)
+     			{
+        			iLength=Len(From_Smpl$);
+					TEMP$ = MID(From_Smpl$,2,(iLength - 1));
+        			Checksum=0;
+					For(I=1 TO LEN(Temp$))
+					{
+						Checksum=(Checksum + BYTE(TEMP$,I));
+					}
+					To_Device$=From_Smpl$ + CHR(Checksum);
+					  			
+          		}
+		SEMAPHORE=0;
+		}
+			
+}		
+         				
+         				
+
+                     
+
+
+// TODO:  Add code herE
+
+
+/*
+EVENT
+{
+    // TODO:  Add code here
+}
+*/
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+{
+    SEMAPHORE=0;
+    CLEARBUFFER(From_Smpl$);
+    CLEARBUFFER(TEMP$);		
+}
+
+
+ 
