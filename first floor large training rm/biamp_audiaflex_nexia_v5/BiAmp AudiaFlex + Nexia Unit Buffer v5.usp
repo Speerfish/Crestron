@@ -1,0 +1,225 @@
+/***********************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+/***********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************************/
+#SYMBOL_NAME "BiAmp AudiaFlex + Nexia Unit Buffer v5"
+// #HINT ""
+#DEFINE_CONSTANT	ciMAXINSTANCES	255
+// #CATEGORY "" 
+#CATEGORY "34" // Mixer
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+
+#HELP_BEGIN
+SIMPLWINDOWS NAME:  BiAmp AudiaFlex + Nexia Unit Buffer v5
+
+CATEGORY:           Mixer
+
+VERSION:            V5
+
+SUMMARY:            This module will buffer the responses from the BiAmp so that
+                    only the necessry modules will process the response.
+
+GENERAL NOTES:      This module will control any mute point in the Biamp AudiaFlex
+                    and Nexia.
+
+                    This module MUST be used in conjunction with the Biamp AudiaFlex +
+                    Nexia Command Processor v5.umc module. This module processes all
+                    transmitted and received serial strings and reformats device
+                    feedback so that this data can be sent to the proper module for
+                    final processing.
+
+                    When polling the BiAmp for current status, you should poll for
+                    only the information you really need at the time. The more data
+                    points you poll for at one time, the longer it will take to get
+                    an update for any one data point. It should not normally be
+                    necessary to poll for all data points all the time.
+
+                    The outputs on this module should be expanded so that the last
+                    instance output is the same as the highest instance being
+                    controlled or monitored. Please see the demo program for an
+                    an example.
+
+                    This information is all contained in the Block properties field
+                    when developing the .dap file within the Biamp AudiaFlex
+                    Windows software. A .dap file (Crestron Test v5.dap) was created
+                    by Crestron for testing purposes and MUST be used for proper
+                    operation of the Pro2 DEMO v5 program.
+
+                    All responses from the BiAmp must be routed through the BiAmp
+                    AudiaFlex + Nexia Unit Buffer v5 module. This module will send the
+                    response string to only modules that are controlling the
+                    particular instance in the BiAmp. If there are more than 20
+                    modules controlling a single instance object in the BiAmp, you
+                    must add buffering outside this module to send the response to
+                    no more than 20 modules at a time. Please the demo program for
+                    an example of this.
+CRESTRON HARDWARE REQUIRED: ST-COM, C2-COM
+
+SETUP OF CRESTRON HARDWARE: RS232
+                            Baud: 38400
+                            Parity: N
+                            Data Bits: 8
+                            Stop Bits: 1
+
+VENDOR FIRMWARE:    4.380
+
+CRESTRON CABLE NUMBER:  CNSP-121
+
+CONTROL:
+NAME              TYPE  Desscription
+From_Processor$    S    Serial signal to be routed from the BiAmp AudiaFlex + Nexia
+                        Command Processor v5.
+
+FEEDBACK:
+NAME              TYPE  Desscription
+To_Instance$       S    Serial signal to be routed to the From_Processor$ inputs on
+                        modules that are control that instance.
+
+OPS USED FOR TESTING: 3.1555.1143
+
+SIMPL WINDOWS USED FOR TESTING: 2.08.26
+
+CRESDB USED FOR TESTING: 18.4.3
+
+SYMBOL LIBRARY USED FOR TESTING: 444
+
+SAMPLE PROGRAM: BiAmp Audia + Nexia Demo Pro 2 v5
+
+REVISION HISTORY: V3 - 2-Series Only, corrected dialer timing, text display, speed
+                       of dialing and over all operation (firmware)
+                  V4 - Changed timing of dialer strings sent when off hook
+                  V5 - Made changes for the new responses from the BiAmp. These new
+                       responses have the command details and status in them. This
+                       eliminates the need to poll for status when making changes.
+                       Added new commands. Added buffering for the responses to
+                       improve system response.
+#HELP_END
+/***********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************************/
+// DIGITAL_INPUT 
+// ANALOG_INPUT 
+// STRING_INPUT 
+BUFFER_INPUT	From_Processor$[1000];
+
+// DIGITAL_OUTPUT 
+// ANALOG_OUTPUT 
+STRING_OUTPUT	To_Instance$[ciMAXINSTANCES];
+/***********************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+***********************************************************************************/
+INTEGER	iTemp, iFlag1, iMark1, iMark2, iMaxInstanceUsed, a;
+STRING	sTemp[100];
+/***********************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+***********************************************************************************/
+/*
+Function MyFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+}
+*/
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+/***********************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************************/
+/*
+PUSH input
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+RELEASE input
+{
+    // TODO:  Add code here
+}
+*/
+
+CHANGE From_Processor$
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(1)
+		{
+			sTemp = gather("\x0D\x0A", From_Processor$);
+			iMark1 = find("\x20", sTemp);
+			iMark2 = find("\x20", sTemp, iMark1 + 1);
+			if((iMark1 > 0) && (iMark2 > 0))
+			{
+				iTemp = atoi(mid(sTemp, iMark2 + 1, 20));
+			}
+			if(iTemp <= iMaxInstanceUsed)
+			{
+				To_Instance$[iTemp] = sTemp;
+			}
+			sTemp = "";
+		}
+		iFlag1 = 0;
+	}
+}
+/***********************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************************/
+Function Main()
+{
+	iMark1 = 0;
+	iMark2 = 0;
+	iFlag1 = 0;
+	sTemp = "";
+	for(a = ciMAXINSTANCES to 1 step -1)
+	{
+		if(issignaldefined(To_Instance$[a]) > 0)
+		{
+			iMaxInstanceUsed = a;
+			break;
+		}
+	}
+}
