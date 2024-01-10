@@ -1,0 +1,423 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x80000000         0x00500000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                __DYNAMIC=0x0
+                0x00400000                PROVIDE (__stack, 0x400000)
+                0x00000000                PROVIDE (hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (_hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (software_init_hook, 0x0)
+                0x00000000                PROVIDE (_software_init_hook, 0x0)
+
+.text           0x80000000    0x23820
+ *(.text)
+ .text          0x80000000     0x16d0 S2_Biamp_Level_Processor_v5_1.o
+                0x80000ddc                S2_Biamp_Level_Processor_v5_1EventHandler00005
+                0x8000167e                S2_Biamp_Level_Processor_v5_1EventHandler00002
+                0x80000c72                S2_Biamp_Level_Processor_v5_1EventHandler00004
+                0x80000f46                S2_Biamp_Level_Processor_v5_1EventHandler00006
+                0x8000130e                S2_Biamp_Level_Processor_v5_1_EventHandler
+                0x8000162c                S2_Biamp_Level_Processor_v5_1EventHandler00001
+                0x8000096a                S2_Biamp_Level_Processor_v5_1EventHandler00003
+                0x8000111c                S2_Biamp_Level_Processor_v5_1EventHandler00007
+                0x800006a8                S2_Biamp_Level_Processor_v5_1EventHandler00000
+                0x80001424                S2_Biamp_Level_Processor_v5_1_main
+ .text          0x800016d0     0x10c6 S2_Biamp_On_Off_Processor_v5_1.o
+                0x800024d0                S2_Biamp_On_Off_Processor_v5_1_main
+                0x80001c86                S2_Biamp_On_Off_Processor_v5_1EventHandler00003
+                0x80001f8e                S2_Biamp_On_Off_Processor_v5_1EventHandler00004
+                0x80001a24                S2_Biamp_On_Off_Processor_v5_1EventHandler00000
+                0x8000235a                S2_Biamp_On_Off_Processor_v5_1_EventHandler
+                0x800026f2                S2_Biamp_On_Off_Processor_v5_1EventHandler00001
+                0x800020d2                S2_Biamp_On_Off_Processor_v5_1EventHandler00005
+                0x80002216                S2_Biamp_On_Off_Processor_v5_1EventHandler00006
+                0x80002744                S2_Biamp_On_Off_Processor_v5_1EventHandler00002
+ *fill*         0x80002796        0x2
+ .text          0x80002798      0xcda S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1.o
+                0x80002c68                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1_EventHandler
+                0x80002d22                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1_main
+                0x80002798                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1EventHandler00000
+ *fill*         0x80003472        0x2
+ .text          0x80003474     0x1570 S2_BiAmp_AudiaFlex_Command_Processor_v5_1.o
+                0x80003db4                S2_BiAmp_AudiaFlex_Command_Processor_v5_1EventHandler00002
+                0x80003474                S2_BiAmp_AudiaFlex_Command_Processor_v5_1EventHandler00000
+                0x800045aa                S2_BiAmp_AudiaFlex_Command_Processor_v5_1_EventHandler
+                0x80004698                S2_BiAmp_AudiaFlex_Command_Processor_v5_1_main
+                0x80004998                S2_BiAmp_AudiaFlex_Command_Processor_v5_1WTIMEOUT
+                0x800037aa                S2_BiAmp_AudiaFlex_Command_Processor_v5_1EventHandler00001
+ .text          0x800049e4      0x596 S2_KeyProA.o
+                0x80004b1c                S2_KeyProAEventHandler00002
+                0x80004d30                S2_KeyProA_main
+                0x80004c48                S2_KeyProA_EventHandler
+                0x800049e4                S2_KeyProAEventHandler00000
+                0x80004e7e                S2_KeyProAEventHandler00001
+ *fill*         0x80004f7a        0x2
+ .text          0x80004f7c     0x1588 S2_MXP_Parser___Director__Rev0_00_0_.o
+                0x800063c8                S2_MXP_Parser___Director__Rev0_00_0__main
+                0x8000630e                S2_MXP_Parser___Director__Rev0_00_0__EventHandler
+                0x800061c8                S2_MXP_Parser___Director__Rev0_00_0_EventHandler00000
+ .text          0x80006504     0xed6e S2_Tandberg_MXP_Processor_v1.o
+                0x80014342                S2_Tandberg_MXP_Processor_v1EventHandler00003
+                0x80007e98                S2_Tandberg_MXP_Processor_v1EventHandler0000A
+                0x80014eda                S2_Tandberg_MXP_Processor_v1EventHandler00020
+                0x80015196                S2_Tandberg_MXP_Processor_v1EventHandler00027
+                0x80014f6e                S2_Tandberg_MXP_Processor_v1EventHandler00021
+                0x8001482e                S2_Tandberg_MXP_Processor_v1EventHandler0000C
+                0x80014e46                S2_Tandberg_MXP_Processor_v1EventHandler0001F
+                0x800144ca                S2_Tandberg_MXP_Processor_v1EventHandler00005
+                0x8000bc9a                S2_Tandberg_MXP_Processor_v1EventHandler00028
+                0x80015002                S2_Tandberg_MXP_Processor_v1EventHandler00023
+                0x80013736                S2_Tandberg_MXP_Processor_v1_main
+                0x8000a926                S2_Tandberg_MXP_Processor_v1EventHandler0001D
+                0x80014e0a                S2_Tandberg_MXP_Processor_v1EventHandler0001E
+                0x8000b6ee                S2_Tandberg_MXP_Processor_v1EventHandler00025
+                0x8000c83e                S2_Tandberg_MXP_Processor_v1EventHandler0002A
+                0x800148aa                S2_Tandberg_MXP_Processor_v1EventHandler0000D
+                0x80014cfe                S2_Tandberg_MXP_Processor_v1EventHandler00017
+                0x80014bd6                S2_Tandberg_MXP_Processor_v1EventHandler00015
+                0x80014652                S2_Tandberg_MXP_Processor_v1EventHandler00007
+                0x80013566                S2_Tandberg_MXP_Processor_v1_EventHandler
+                0x8001458e                S2_Tandberg_MXP_Processor_v1EventHandler00006
+                0x800149fc                S2_Tandberg_MXP_Processor_v1EventHandler00012
+                0x8000d206                S2_Tandberg_MXP_Processor_v1EventHandler0002B
+                0x8000968a                S2_Tandberg_MXP_Processor_v1EventHandler0001A
+                0x80014406                S2_Tandberg_MXP_Processor_v1EventHandler00004
+                0x8000b15c                S2_Tandberg_MXP_Processor_v1EventHandler00022
+                0x80014978                S2_Tandberg_MXP_Processor_v1EventHandler00011
+                0x80014b50                S2_Tandberg_MXP_Processor_v1EventHandler00014
+                0x80014d92                S2_Tandberg_MXP_Processor_v1EventHandler00018
+                0x80008c98                S2_Tandberg_MXP_Processor_v1EventHandler0000F
+                0x800078f4                S2_Tandberg_MXP_Processor_v1EventHandler00009
+                0x80009910                S2_Tandberg_MXP_Processor_v1EventHandler0001B
+                0x8000b9c4                S2_Tandberg_MXP_Processor_v1EventHandler00026
+                0x80014dce                S2_Tandberg_MXP_Processor_v1EventHandler00019
+                0x80014922                S2_Tandberg_MXP_Processor_v1EventHandler0000E
+                0x8001427e                S2_Tandberg_MXP_Processor_v1EventHandler00002
+                0x8000d3e2                S2_Tandberg_MXP_Processor_v1EventHandler0002C
+                0x800140f8                S2_Tandberg_MXP_Processor_v1EventHandler00000
+                0x80014c6a                S2_Tandberg_MXP_Processor_v1EventHandler00016
+                0x800150cc                S2_Tandberg_MXP_Processor_v1EventHandler00024
+                0x8000c662                S2_Tandberg_MXP_Processor_v1EventHandler00029
+                0x8000a3a6                S2_Tandberg_MXP_Processor_v1EventHandler0001C
+                0x800141ba                S2_Tandberg_MXP_Processor_v1EventHandler00001
+                0x800091d0                S2_Tandberg_MXP_Processor_v1EventHandler00010
+                0x800147da                S2_Tandberg_MXP_Processor_v1EventHandler0000B
+                0x80014aa4                S2_Tandberg_MXP_Processor_v1EventHandler00013
+                0x80014716                S2_Tandberg_MXP_Processor_v1EventHandler00008
+ *fill*         0x80015272        0x2
+ .text          0x80015274     0x524a S2_xacli_Control__Rev_0_00_2_.o
+                0x8001a4b4                S2_xacli_Control__Rev_0_00_2__SMCUSITELIST_Destructor
+                0x800154f2                S2_xacli_Control__Rev_0_00_2_EventHandler00001
+                0x80015274                S2_xacli_Control__Rev_0_00_2_EventHandler00000
+                0x8001a0fe                S2_xacli_Control__Rev_0_00_2__EventHandler
+                0x8001a1da                S2_xacli_Control__Rev_0_00_2__main
+                0x8001a494                S2_xacli_Control__Rev_0_00_2__SMCUSITELIST_Constructor
+ *fill*         0x8001a4be        0x2
+ .text          0x8001a4c0      0x502 S2_Samsung_400P___460P_Checksum.o
+                0x8001a4c0                S2_Samsung_400P___460P_ChecksumEventHandler00000
+                0x8001a8e8                S2_Samsung_400P___460P_Checksum_main
+                0x8001a82e                S2_Samsung_400P___460P_Checksum_EventHandler
+ *fill*         0x8001a9c2        0x2
+ .text          0x8001a9c4     0x56fa library.o
+                0x8001eb12                RotateRightLong
+                0x8001f0f6                IsSystem
+                0x8001ea76                Seed
+                0x8001c3ac                Remove
+                0x8001e6f2                Ltoa
+                0x8001e41e                Atoi
+                0x8001d786                InitRampInfoArray
+                0x8001eecc                Right
+                0x8001e9a0                Mod
+                0x8001eb88                Getc
+                0x8001e8d4                SMuldiv
+                0x8001f0d8                IsHidden
+                0x8001e7b8                Min
+                0x8001fce6                hextosi
+                0x8001f27c                WriteIntegerArray
+                0x8001f7f2                GetSignedIntArrayElementPtr
+                0x8001e140                CheckStructArray
+                0x8001fcfa                hextosl
+                0x8001f402                WriteSignedIntegerArray
+                0x8001de08                InitStringParamArray
+                0x8001d0d6                ReadSignedLongIntegerArray
+                0x8001c090                GatherToDelimiter
+                0x8001dc2c                InitStringArray
+                0x8001e792                Max
+                0x8001f132                IsReadOnly
+                0x8001e89c                SMax
+                0x8001c208                GatherByLength
+                0x8001e62c                Chr
+                0x8001f254                ReadSignedLongInteger
+                0x8001e6aa                Itohex
+                0x8001e0b2                GetStructArrayElement
+                0x8001e3a6                UNS_SetByte
+                0x8001eea0                ReverseFindi
+                0x8001d582                ReadStringArray
+                0x8001f602                GetIntArrayElementPtr
+                0x8001ecdc                Lower
+                0x8001ea92                RotateLeft
+                0x8001fe1a                ResizeIfAutogrow
+                0x8001d8b2                CheckInputArray
+                0x8001af32                ResizeStringArray
+                0x8001e5be                Atosl
+                0x8001e3e6                High
+                0x8001ea42                Rnd
+                0x8001e964                UMod
+                0x8001eae8                RotateLeftLong
+                0x8001fed2                FindNumericChar
+                0x8001fa4a                CheckIOArrayBounds2
+                0x8001e8b8                SMin
+                0x8001ec10                Left
+                0x8001eb52                CheckBufferThreshold
+                0x8001f20c                ReadSignedInteger
+                0x8001e410                LowWord
+                0x8001a9c4                Bit
+                0x8001f1bc                ReadLongInteger
+                0x8001e224                Byte
+                0x8001f6fa                GetLongArrayElementPtr
+                0x8001ee72                ReverseFind
+                0x8001ff9e                InitTcpServer
+                0x8001ecc4                Len
+                0x8001fb1a                InitializeRampInfoInternal
+                0x8001e7de                Divide
+                0x8001e52a                Atol
+                0x8001f9e2                CheckIOArrayBounds
+                0x8001d90c                CheckStringInputArray
+                0x8001f4c4                WriteSignedLongIntegerArray
+                0x8001dffc                GetStringArrayElement
+                0x8001e736                Ltohex
+                0x8001e662                Itoa
+                0x8001eabc                RotateRight
+                0x8001c658                InternalReverseFind
+                0x8001f19c                WriteLongInteger
+                0x8001db30                InitDynamicStringStruct
+                0x8001da22                SetStringArray
+                0x8001ceb4                ReadSignedIntegerArray
+                0x8001d966                SetOutputArray
+                0x8001f14c                WriteInteger
+                0x8001df90                InitStructDynamicArray
+                0x8001c8e2                SetString
+                0x8001e9dc                Random
+                0x8001f1e4                WriteSignedInteger
+                0x8001ac28                Find
+                0x8001edb0                Mid
+                0x8001ff10                InitTcpClient
+                0x8001bb16                ResizeStructArray
+                0x8001f8ea                GetSignedLongArrayElementPtr
+                0x8001fd0c                hextol
+                0x8001d2f8                ReadString
+                0x8001dcc2                InitDynamicStringArray
+                0x8001fdf2                UpperChar
+                0x8001e4ba                Atosi
+                0x8001f174                ReadInteger
+                0x8001e850                Muldiv
+                0x8001d9d4                SetStringOutputArray
+                0x8001f588                WriteString
+                0x8001b58a                ResizeIntegerArray
+                0x8001d87a                InitInOutArray
+                0x8001ded0                InitNvramStringArray
+                0x8001e77a                Abs
+                0x8001e920                SDivide
+                0x8001ca72                ReadIntegerArray
+                0x8001aad4                CompareStrings
+                0x8001fdca                LowerChar
+                0x8002002e                InitUdpSocket
+                0x8001eb3a                ClearBuffer
+                0x8001ef88                Upper
+                0x8001df6c                InitStructArray
+                0x8001f05e                MakeLower
+                0x8001f114                IsVolume
+                0x8001c4de                RemoveByLength
+                0x8001e1bc                CheckStringOutputArrayIndex
+                0x8001f33e                WriteLongIntegerArray
+                0x8001fbc6                InitRampInfoStructArray
+                0x8001e402                HighWord
+                0x8001ad9c                ResizeString
+                0x8001f0ba                IsDirectory
+                0x8001cc92                ReadLongIntegerArray
+                0x8001e3f4                Low
+                0x8001bf40                Gather
+                0x8001f08c                MakeUpper
+                0x8001daf2                InitStringStruct
+                0x8001fab2                CheckStringArrayBounds
+                0x8001e822                CheckDenominator
+                0x8001fcce                hextoi
+                0x8001d416                WriteStringArray
+                0x8001e2e4                SetByte
+                0x8001fb70                InitializeRampInfo
+                0x8001f234                WriteSignedLongInteger
+                0x8001dbe4                InitNvramStringStruct
+ *fill*         0x800200be        0x2
+                0x800200c0                .=ALIGN(0x10)
+ *(.eh_frame)
+                0x800200c0                .=ALIGN(0x10)
+ *(.gnu.linkonce.t.*)
+                0x800200c0                .=ALIGN(0x4)
+                0x800200c0                __CTOR_LIST__=.
+                0x800200c0                ___CTOR_LIST__=.
+                0x800200c0        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
+ *(.ctors)
+                0x800200c4        0x4 LONG 0x0
+                0x800200c8                __CTOR_END__=.
+                0x800200c8                __DTOR_LIST__=.
+                0x800200c8                ___DTOR_LIST__=.
+                0x800200c8        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
+ *(.dtors)
+                0x800200cc        0x4 LONG 0x0
+                0x800200d0                __DTOR_END__=.
+ *(.rodata)
+ .rodata        0x800200d0      0x3dd S2_Biamp_Level_Processor_v5_1.o
+ .rodata        0x800204ad      0x39b S2_Biamp_On_Off_Processor_v5_1.o
+ .rodata        0x80020848      0x326 S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1.o
+ .rodata        0x80020b6e      0x37b S2_BiAmp_AudiaFlex_Command_Processor_v5_1.o
+ .rodata        0x80020ee9      0x29c S2_KeyProA.o
+ .rodata        0x80021185      0x3a8 S2_MXP_Parser___Director__Rev0_00_0_.o
+ .rodata        0x8002152d      0xb9b S2_Tandberg_MXP_Processor_v1.o
+ .rodata        0x800220c8      0x834 S2_xacli_Control__Rev_0_00_2_.o
+ .rodata        0x800228fc      0x2b8 S2_Samsung_400P___460P_Checksum.o
+ .rodata        0x80022bb4      0xc54 library.o
+ *(.gcc_except_table)
+                0x80023808                .=ALIGN(0x2)
+                0x80023808                __INIT_SECTION__=.
+                0x80023808        0x4 LONG 0x4e560000
+ *(.init)
+                0x8002380c        0x2 SHORT 0x4e5e
+                0x8002380e        0x2 SHORT 0x4e75
+                0x80023810                __FINI_SECTION__=.
+                0x80023810        0x4 LONG 0x4e560000
+ *(.fini)
+                0x80023814        0x2 SHORT 0x4e5e
+                0x80023816        0x2 SHORT 0x4e75
+ *(.lit)
+ *fill*         0x80023818        0x8
+                0x80023820                .=ALIGN(0x10)
+                0x80023820                _etext=.
+                0x80023820                etext=.
+
+.data           0x80023820        0x0
+                0x80023820                copy_start=.
+ *(.shdata)
+ *(.data)
+ *(.gnu.linkonce.d.*)
+                0x80023820                .=ALIGN(0x10)
+                0x80023820                _edata=.
+                0x80023820                copy_end=.
+
+.got
+ *(.got.plt)
+ *(.got)
+
+EntryList       0x80023820      0x990
+ *(EntryList)
+ EntryList      0x80023820      0x110 S2_Biamp_Level_Processor_v5_1.o
+                0x80023820                S2_Biamp_Level_Processor_v5_1_Entry
+ EntryList      0x80023930      0x110 S2_Biamp_On_Off_Processor_v5_1.o
+                0x80023930                S2_Biamp_On_Off_Processor_v5_1_Entry
+ EntryList      0x80023a40      0x110 S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1.o
+                0x80023a40                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1_Entry
+ EntryList      0x80023b50      0x110 S2_BiAmp_AudiaFlex_Command_Processor_v5_1.o
+                0x80023b50                S2_BiAmp_AudiaFlex_Command_Processor_v5_1_Entry
+ EntryList      0x80023c60      0x110 S2_KeyProA.o
+                0x80023c60                S2_KeyProA_Entry
+ EntryList      0x80023d70      0x110 S2_MXP_Parser___Director__Rev0_00_0_.o
+                0x80023d70                S2_MXP_Parser___Director__Rev0_00_0__Entry
+ EntryList      0x80023e80      0x110 S2_Tandberg_MXP_Processor_v1.o
+                0x80023e80                S2_Tandberg_MXP_Processor_v1_Entry
+ EntryList      0x80023f90      0x110 S2_xacli_Control__Rev_0_00_2_.o
+                0x80023f90                S2_xacli_Control__Rev_0_00_2__Entry
+ EntryList      0x800240a0      0x110 S2_Samsung_400P___460P_Checksum.o
+                0x800240a0                S2_Samsung_400P___460P_Checksum_Entry
+                0x800241b0                .=ALIGN(0x4)
+
+FunctionList    0x800241b0        0x4
+ *(FunctionList)
+ FunctionList   0x800241b0        0x4 globals.o
+                0x800241b0                g_pFunctions
+                0x800241b4                .=ALIGN(0x4)
+
+.bss            0x800241b4        0x0
+                0x800241b4                .=ALIGN(0x4)
+                0x800241b4                __bss_start=.
+ *(.shbss)
+ *(.bss)
+ *(COMMON)
+                0x800241b8                _end=ALIGN(0x8)
+                0x800241b8                __end=_end
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+LOAD S2_Biamp_Level_Processor_v5_1.o
+LOAD S2_Biamp_On_Off_Processor_v5_1.o
+LOAD S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1.o
+LOAD S2_BiAmp_AudiaFlex_Command_Processor_v5_1.o
+LOAD S2_KeyProA.o
+LOAD S2_MXP_Parser___Director__Rev0_00_0_.o
+LOAD S2_Tandberg_MXP_Processor_v1.o
+LOAD S2_xacli_Control__Rev_0_00_2_.o
+LOAD S2_Samsung_400P___460P_Checksum.o
+LOAD globals.o
+LOAD library.o
+OUTPUT(_S2_LDVR.spl elf32-m68k)
+
+.comment        0x800241b4      0x1a2
+ .comment       0x800241b4       0x26 S2_Biamp_Level_Processor_v5_1.o
+ .comment 

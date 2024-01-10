@@ -1,0 +1,313 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x80000000         0x00500000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                __DYNAMIC=0x0
+                0x00400000                PROVIDE (__stack, 0x400000)
+                0x00000000                PROVIDE (hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (_hardware_init_hook, 0x0)
+                0x00000000                PROVIDE (software_init_hook, 0x0)
+                0x00000000                PROVIDE (_software_init_hook, 0x0)
+
+.text           0x80000000     0xc340
+ *(.text)
+ .text          0x80000000     0x16d0 S2_Biamp_Level_Processor_v5_1.o
+                0x80000ddc                S2_Biamp_Level_Processor_v5_1EventHandler00005
+                0x8000167e                S2_Biamp_Level_Processor_v5_1EventHandler00002
+                0x80000c72                S2_Biamp_Level_Processor_v5_1EventHandler00004
+                0x80000f46                S2_Biamp_Level_Processor_v5_1EventHandler00006
+                0x8000130e                S2_Biamp_Level_Processor_v5_1_EventHandler
+                0x8000162c                S2_Biamp_Level_Processor_v5_1EventHandler00001
+                0x8000096a                S2_Biamp_Level_Processor_v5_1EventHandler00003
+                0x8000111c                S2_Biamp_Level_Processor_v5_1EventHandler00007
+                0x800006a8                S2_Biamp_Level_Processor_v5_1EventHandler00000
+                0x80001424                S2_Biamp_Level_Processor_v5_1_main
+ .text          0x800016d0     0x10c6 S2_Biamp_On_Off_Processor_v5_1.o
+                0x800024d0                S2_Biamp_On_Off_Processor_v5_1_main
+                0x80001c86                S2_Biamp_On_Off_Processor_v5_1EventHandler00003
+                0x80001f8e                S2_Biamp_On_Off_Processor_v5_1EventHandler00004
+                0x80001a24                S2_Biamp_On_Off_Processor_v5_1EventHandler00000
+                0x8000235a                S2_Biamp_On_Off_Processor_v5_1_EventHandler
+                0x800026f2                S2_Biamp_On_Off_Processor_v5_1EventHandler00001
+                0x800020d2                S2_Biamp_On_Off_Processor_v5_1EventHandler00005
+                0x80002216                S2_Biamp_On_Off_Processor_v5_1EventHandler00006
+                0x80002744                S2_Biamp_On_Off_Processor_v5_1EventHandler00002
+ *fill*         0x80002796        0x2
+ .text          0x80002798      0xcda S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1.o
+                0x80002c68                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1_EventHandler
+                0x80002d22                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1_main
+                0x80002798                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1EventHandler00000
+ *fill*         0x80003472        0x2
+ .text          0x80003474     0x1570 S2_BiAmp_AudiaFlex_Command_Processor_v5_1.o
+                0x80003db4                S2_BiAmp_AudiaFlex_Command_Processor_v5_1EventHandler00002
+                0x80003474                S2_BiAmp_AudiaFlex_Command_Processor_v5_1EventHandler00000
+                0x800045aa                S2_BiAmp_AudiaFlex_Command_Processor_v5_1_EventHandler
+                0x80004698                S2_BiAmp_AudiaFlex_Command_Processor_v5_1_main
+                0x80004998                S2_BiAmp_AudiaFlex_Command_Processor_v5_1WTIMEOUT
+                0x800037aa                S2_BiAmp_AudiaFlex_Command_Processor_v5_1EventHandler00001
+ .text          0x800049e4      0x502 S2_Samsung_400P___460P_Checksum.o
+                0x800049e4                S2_Samsung_400P___460P_ChecksumEventHandler00000
+                0x80004e0c                S2_Samsung_400P___460P_Checksum_main
+                0x80004d52                S2_Samsung_400P___460P_Checksum_EventHandler
+ *fill*         0x80004ee6        0x2
+ .text          0x80004ee8     0x56fa library.o
+                0x80009036                RotateRightLong
+                0x8000961a                IsSystem
+                0x80008f9a                Seed
+                0x800068d0                Remove
+                0x80008c16                Ltoa
+                0x80008942                Atoi
+                0x80007caa                InitRampInfoArray
+                0x800093f0                Right
+                0x80008ec4                Mod
+                0x800090ac                Getc
+                0x80008df8                SMuldiv
+                0x800095fc                IsHidden
+                0x80008cdc                Min
+                0x8000a20a                hextosi
+                0x800097a0                WriteIntegerArray
+                0x80009d16                GetSignedIntArrayElementPtr
+                0x80008664                CheckStructArray
+                0x8000a21e                hextosl
+                0x80009926                WriteSignedIntegerArray
+                0x8000832c                InitStringParamArray
+                0x800075fa                ReadSignedLongIntegerArray
+                0x800065b4                GatherToDelimiter
+                0x80008150                InitStringArray
+                0x80008cb6                Max
+                0x80009656                IsReadOnly
+                0x80008dc0                SMax
+                0x8000672c                GatherByLength
+                0x80008b50                Chr
+                0x80009778                ReadSignedLongInteger
+                0x80008bce                Itohex
+                0x800085d6                GetStructArrayElement
+                0x800088ca                UNS_SetByte
+                0x800093c4                ReverseFindi
+                0x80007aa6                ReadStringArray
+                0x80009b26                GetIntArrayElementPtr
+                0x80009200                Lower
+                0x80008fb6                RotateLeft
+                0x8000a33e                ResizeIfAutogrow
+                0x80007dd6                CheckInputArray
+                0x80005456                ResizeStringArray
+                0x80008ae2                Atosl
+                0x8000890a                High
+                0x80008f66                Rnd
+                0x80008e88                UMod
+                0x8000900c                RotateLeftLong
+                0x8000a3f6                FindNumericChar
+                0x80009f6e                CheckIOArrayBounds2
+                0x80008ddc                SMin
+                0x80009134                Left
+                0x80009076                CheckBufferThreshold
+                0x80009730                ReadSignedInteger
+                0x80008934                LowWord
+                0x80004ee8                Bit
+                0x800096e0                ReadLongInteger
+                0x80008748                Byte
+                0x80009c1e                GetLongArrayElementPtr
+                0x80009396                ReverseFind
+                0x8000a4c2                InitTcpServer
+                0x800091e8                Len
+                0x8000a03e                InitializeRampInfoInternal
+                0x80008d02                Divide
+                0x80008a4e                Atol
+                0x80009f06                CheckIOArrayBounds
+                0x80007e30                CheckStringInputArray
+                0x800099e8                WriteSignedLongIntegerArray
+                0x80008520                GetStringArrayElement
+                0x80008c5a                Ltohex
+                0x80008b86                Itoa
+                0x80008fe0                RotateRight
+                0x80006b7c                InternalReverseFind
+                0x800096c0                WriteLongInteger
+                0x80008054                InitDynamicStringStruct
+                0x80007f46                SetStringArray
+                0x800073d8                ReadSignedIntegerArray
+                0x80007e8a                SetOutputArray
+                0x80009670                WriteInteger
+                0x800084b4                InitStructDynamicArray
+                0x80006e06                SetString
+                0x80008f00                Random
+                0x80009708                WriteSignedInteger
+                0x8000514c                Find
+                0x800092d4                Mid
+                0x8000a434                InitTcpClient
+                0x8000603a                ResizeStructArray
+                0x80009e0e                GetSignedLongArrayElementPtr
+                0x8000a230                hextol
+                0x8000781c                ReadString
+                0x800081e6                InitDynamicStringArray
+                0x8000a316                UpperChar
+                0x800089de                Atosi
+                0x80009698                ReadInteger
+                0x80008d74                Muldiv
+                0x80007ef8                SetStringOutputArray
+                0x80009aac                WriteString
+                0x80005aae                ResizeIntegerArray
+                0x80007d9e                InitInOutArray
+                0x800083f4                InitNvramStringArray
+                0x80008c9e                Abs
+                0x80008e44                SDivide
+                0x80006f96                ReadIntegerArray
+                0x80004ff8                CompareStrings
+                0x8000a2ee                LowerChar
+                0x8000a552                InitUdpSocket
+                0x8000905e                ClearBuffer
+                0x800094ac                Upper
+                0x80008490                InitStructArray
+                0x80009582                MakeLower
+                0x80009638                IsVolume
+                0x80006a02                RemoveByLength
+                0x800086e0                CheckStringOutputArrayIndex
+                0x80009862                WriteLongIntegerArray
+                0x8000a0ea                InitRampInfoStructArray
+                0x80008926                HighWord
+                0x800052c0                ResizeString
+                0x800095de                IsDirectory
+                0x800071b6                ReadLongIntegerArray
+                0x80008918                Low
+                0x80006464                Gather
+                0x800095b0                MakeUpper
+                0x80008016                InitStringStruct
+                0x80009fd6                CheckStringArrayBounds
+                0x80008d46                CheckDenominator
+                0x8000a1f2                hextoi
+                0x8000793a                WriteStringArray
+                0x80008808                SetByte
+                0x8000a094                InitializeRampInfo
+                0x80009758                WriteSignedLongInteger
+                0x80008108                InitNvramStringStruct
+ *fill*         0x8000a5e2        0xe
+                0x8000a5f0                .=ALIGN(0x10)
+ *(.eh_frame)
+                0x8000a5f0                .=ALIGN(0x10)
+ *(.gnu.linkonce.t.*)
+                0x8000a5f0                .=ALIGN(0x4)
+                0x8000a5f0                __CTOR_LIST__=.
+                0x8000a5f0                ___CTOR_LIST__=.
+                0x8000a5f0        0x4 LONG 0x0 (((__CTOR_END__-__CTOR_LIST__)/0x4)-0x2)
+ *(.ctors)
+                0x8000a5f4        0x4 LONG 0x0
+                0x8000a5f8                __CTOR_END__=.
+                0x8000a5f8                __DTOR_LIST__=.
+                0x8000a5f8                ___DTOR_LIST__=.
+                0x8000a5f8        0x4 LONG 0x0 (((__DTOR_END__-__DTOR_LIST__)/0x4)-0x2)
+ *(.dtors)
+                0x8000a5fc        0x4 LONG 0x0
+                0x8000a600                __DTOR_END__=.
+ *(.rodata)
+ .rodata        0x8000a600      0x3dd S2_Biamp_Level_Processor_v5_1.o
+ .rodata        0x8000a9dd      0x39b S2_Biamp_On_Off_Processor_v5_1.o
+ .rodata        0x8000ad78      0x326 S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1.o
+ .rodata        0x8000b09e      0x37b S2_BiAmp_AudiaFlex_Command_Processor_v5_1.o
+ .rodata        0x8000b419      0x2b8 S2_Samsung_400P___460P_Checksum.o
+ .rodata        0x8000b6d1      0xc54 library.o
+ *(.gcc_except_table)
+ *fill*         0x8000c325        0x1
+                0x8000c326                .=ALIGN(0x2)
+                0x8000c326                __INIT_SECTION__=.
+                0x8000c326        0x4 LONG 0x4e560000
+ *(.init)
+                0x8000c32a        0x2 SHORT 0x4e5e
+                0x8000c32c        0x2 SHORT 0x4e75
+                0x8000c32e                __FINI_SECTION__=.
+                0x8000c32e        0x4 LONG 0x4e560000
+ *(.fini)
+                0x8000c332        0x2 SHORT 0x4e5e
+                0x8000c334        0x2 SHORT 0x4e75
+ *(.lit)
+ *fill*         0x8000c336        0xa
+                0x8000c340                .=ALIGN(0x10)
+                0x8000c340                _etext=.
+                0x8000c340                etext=.
+
+.data           0x8000c340        0x0
+                0x8000c340                copy_start=.
+ *(.shdata)
+ *(.data)
+ *(.gnu.linkonce.d.*)
+                0x8000c340                .=ALIGN(0x10)
+                0x8000c340                _edata=.
+                0x8000c340                copy_end=.
+
+.got
+ *(.got.plt)
+ *(.got)
+
+EntryList       0x8000c340      0x550
+ *(EntryList)
+ EntryList      0x8000c340      0x110 S2_Biamp_Level_Processor_v5_1.o
+                0x8000c340                S2_Biamp_Level_Processor_v5_1_Entry
+ EntryList      0x8000c450      0x110 S2_Biamp_On_Off_Processor_v5_1.o
+                0x8000c450                S2_Biamp_On_Off_Processor_v5_1_Entry
+ EntryList      0x8000c560      0x110 S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1.o
+                0x8000c560                S2_BiAmp_AudiaFlex___Nexia_Unit_Buffer_v5_1_Entry
+ EntryList      0x8000c670      0x110 S2_BiAmp_AudiaFlex_Command_Processor_v5_1.o
+                0x8000c670                S2_BiAmp_AudiaFlex_Command_Processor_v5_1_Entry
+ EntryList      0x8000c780      0x110 S2_Samsung_400P___460P_Checksum.o
+                0x8000c780                S2_Samsung_400P___460P_Checksum_Entry
+                0x8000c890                .=ALIGN(0x4)
+
+FunctionList    0x8000c890        0x4
+ *(FunctionList)
+ FunctionList   0x8000c890        0x4 globals.o
+                0x8000c890                g_pFunctions
+                0x8000c894                .=ALIGN(0x4)
+
+.bss            0x8000c894        0x0
+                0x8000c894                .=ALIGN(0x4)
+                0x8000c894                __bss_start=.
+ *(.shbss)
+ *(.bss)
+ *(COMMON)
+                0x8000c898                _end=ALIGN(0x8)
+                0x8000c898                __end=_end
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ 
