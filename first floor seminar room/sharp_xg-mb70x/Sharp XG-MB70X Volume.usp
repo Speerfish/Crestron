@@ -1,0 +1,283 @@
+/***********************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+***********************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+
+/***********************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+***********************************************************************************/
+#SYMBOL_NAME "Sharp XG-MB70X Volume Drive"
+// #HINT ""
+#DEFINE_CONSTANT	ciMAXVOL	60
+
+#DEFINE_CONSTANT	ciPOWER			1
+#DEFINE_CONSTANT	ciINPUT12		2
+#DEFINE_CONSTANT	ciINPUT34		3
+#DEFINE_CONSTANT	ciSIGNAL		4
+#DEFINE_CONSTANT	ciVIDMUTE		5
+#DEFINE_CONSTANT	ciFREEZE		6
+#DEFINE_CONSTANT	ciASPECT1		7
+#DEFINE_CONSTANT	ciASPECT2		8
+#DEFINE_CONSTANT	ciASPECT3		9
+#DEFINE_CONSTANT	ciASPECT4		10
+#DEFINE_CONSTANT	ciPICMODE1	11
+#DEFINE_CONSTANT	ciPICMODE2	12
+#DEFINE_CONSTANT	ciPICMODE3	13
+#DEFINE_CONSTANT	ciPICMODE4	14
+#DEFINE_CONSTANT	ciAUTOPOWER	15
+#DEFINE_CONSTANT	ciECONOMY		16
+#DEFINE_CONSTANT	ciLAMPHOURS	17
+#DEFINE_CONSTANT	ciVOLUME		18
+#DEFINE_CONSTANT	ciSPEAKER		19
+#DEFINE_CONSTANT	ciPOLLMAX		19
+
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+/***********************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+***********************************************************************************/
+DIGITAL_INPUT	Volume_Up, Volume_Down, Volume_Done,
+							Volume_Mute_On, Volume_Mute_Off,
+							Volume_Poll_Sent, Lamp_Hours_Sent,
+							Poll_Next_All, No_Signal;
+ANALOG_INPUT	Poll_Seed;
+STRING_INPUT	From_Device$[50];
+
+DIGITAL_OUTPUT	Volume_Mute_On_Fb, Volume_Mute_Off_Fb;
+ANALOG_OUTPUT		Volume_Level, Lamp_Hours, Poll_Send;
+STRING_OUTPUT		To_Device$;
+/***********************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+***********************************************************************************/
+INTEGER	iVol, iMute, iFlag1, iTemp, iMuteSent, iVolCount, iPollNext, iNoSignal;
+STRING	sTemp[10];
+/***********************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+***********************************************************************************/
+PUSH Volume_Up
+{
+	if(iVol < ciMAXVOL)
+	{
+		if(iVolCount < 5)
+		{
+			iVol = iVol + 1;
+			makestring(To_Device$, "VOLA\x20\x20%02d\x0D", iVol);
+			iVolCount = iVolCount + 1;
+			if(iMute = 1)
+			{
+				iMute = 0;
+				Volume_Mute_On_Fb = 0;
+				Volume_Mute_Off_Fb = 1;
+			}
+		}
+		else
+		{
+			iVol = iVol + 5;
+			if(iVol > ciMAXVOL)
+			{
+				iVol = ciMAXVOL;
+			}
+			makestring(To_Device$, "VOLA\x20\x20%02d\x0D", iVol);
+			if(iMute = 1)
+			{
+				iMute = 0;
+				Volume_Mute_On_Fb = 0;
+				Volume_Mute_Off_Fb = 1;
+			}
+		}
+		Volume_Level = iVol;
+	}
+}
+
+PUSH Volume_Down
+{
+	if(iVol > 0)
+	{
+		if(iVolCount < 5)
+		{
+			iVol = iVol - 1;
+			makestring(To_Device$, "VOLA\x20\x20%02d\x0D", iVol);
+			iVolCount = iVolCount + 1;
+			if(iMute = 1)
+			{
+				iMute = 0;
+				Volume_Mute_On_Fb = 0;
+				Volume_Mute_Off_Fb = 1;
+			}
+		}
+		else
+		{
+			if(iVol > 4)
+			{
+				iVol = iVol - 5;
+			}
+			else
+			{
+				iVol = 0;
+			}
+			makestring(To_Device$, "VOLA\x20\x20%02d\x0D", iVol);
+			if(iMute = 1)
+			{
+				iMute = 0;
+				Volume_Mute_On_Fb = 0;
+				Volume_Mute_Off_Fb = 1;
+			}
+		}
+		Volume_Level = iVol;
+	}
+}
+
+PUSH Volume_Done
+{
+	iVolCount = 0;
+}
+
+PUSH Volume_Mute_On
+{
+	if(iMute = 0)
+	{
+		iMute = 1;
+		Volume_Mute_Off_Fb = 0;
+		Volume_Mute_On_Fb = 1;
+		To_Device$ = "VOLA\x20\x20\x200";
+	}
+}
+
+PUSH Volume_Mute_Off
+{
+	if(iMute = 1)
+	{
+		iMute = 0;
+		Volume_Mute_On_Fb = 0;
+		Volume_Mute_Off_Fb = 1;
+		makestring(To_Device$, "VOLA\x20\x20%02d", iVol);
+	}
+}
+
+PUSH No_Signal
+{
+	iNoSignal = 1;
+	wait(9000, wNoSignal)
+	{
+		iNoSignal = 0;
+	}
+}
+
+RELEASE No_Signal
+{
+	iNoSignal = 0;
+	cancelwait(wNoSignal);
+}
+
+PUSH Poll_Next_All
+{
+	if(iNoSignal = 1)
+	{
+		Poll_Send = 1;
+		delay(10);
+		Poll_Send = 0;
+	}
+	else
+	{
+		Poll_Send = iPollNext;
+		iPollNext = iPollNext + 1;
+		if(iPollNext > ciPOLLMAX)
+		{
+			iPollNext = 1;
+		}
+	}
+}
+
+CHANGE	Poll_Seed
+{
+	if(Poll_Seed <= ciPollMax)
+	{
+		iPollNext = Poll_Seed;
+		iNoSignal = 0;
+		cancelwait(wNoSignal);
+	}
+}
+
+CHANGE From_Device$
+{
+	if(iFlag1 = 0)
+	{
+		iFlag1 = 1;
+		while(find("\x0D", From_Device$) > 0)
+		{
+			sTemp = remove("\x0D", From_Device$);
+			iTemp = atoi(sTemp);
+			if(Volume_Poll_Sent = 1)
+			{
+				if(iTemp = 0)
+				{
+					iMute = 1;
+					Volume_Mute_Off_Fb = 0;
+					Volume_Mute_On_Fb = 1;
+					if(iMuteSent = 1)
+					{
+						iMuteSent = 0;
+					}
+					else
+					{
+						iVol = iTemp;
+						Volume_Level = iVol;
+					}
+				}
+				else
+				{
+					iVol = iTemp;
+					Volume_Level = iVol;
+					if(iMute = 1)
+					{
+						iMute = 0;
+						Volume_Mute_On_Fb = 0;
+						Volume_Mute_Off_Fb = 1;
+					}
+				}
+			}
+			else if(Lamp_Hours_Sent = 1)
+			{
+				Lamp_Hours = iTemp;
+			}
+			sTemp = "";
+		}
+		iFlag1 = 0;
+	}
+}
+/***********************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+***********************************************************************************/
+Function Main()
+{
+	iVolCount = 0;
+	iFlag1 = 0;
+	iMute = 0;
+	Volume_Mute_On_Fb = 0;
+	Volume_Mute_Off_Fb = 1;
+	iVol = 0;
+	Volume_Level = iVol;
+	iPollNext = 1;
+	iNoSignal = 0;
+}
