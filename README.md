@@ -10,4 +10,4 @@ Training Class information and code samples from X-Series through 4-Series proce
 
 ![Untitled 002](https://github.com/user-attachments/assets/216c9b67-90b8-4e74-85a7-8ccda488ee9e)
 
-[Book appointment with Speerfish](https://speerfish-denver.square.site/s/appointments)
+[Book Crestron appointment with Speerfish](https://speerfish-denver.square.site/s/appointments)
