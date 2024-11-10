@@ -1,0 +1,278 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:
+System Name:
+System Number:
+Programmer:
+Comments:
+*/
+
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+// #ENABLE_DYNAMIC
+// #SYMBOL_NAME ""
+// #HINT ""
+#DEFINE_CONSTANT MaxElements 21 
+#DEFINE_CONSTANT MaxFieldSize 35
+#DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+/*
+#HELP_BEGIN
+   (add additional lines of help lines)
+#HELP_END
+*/
+
+/*******************************************************************************************
+  Include Libraries
+  (Uncomment and include additional libraries as needed)
+*******************************************************************************************/
+// #CRESTRON_LIBRARY ""
+// #USER_LIBRARY ""
+
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+// DIGITAL_INPUT 
+ANALOG_INPUT Index;
+ 
+// STRING_INPUT 
+// BUFFER_INPUT 
+ 
+ 
+// DIGITAL_OUTPUT 
+ANALOG_OUTPUT Index_Fb;
+
+
+STRING_OUTPUT Album_Art;
+STRING_OUTPUT Song_Name;
+STRING_OUTPUT Band_Name;
+STRING_OUTPUT Album_Name;
+
+		
+
+// LONG_INTEGER
+// SIGNED_INTEGER
+// SIGNED_LONG_INTEGER
+// STRING
+string AlbumArtArray[MaxElements][MaxFieldSize];
+string AlbumNameArray[MaxElements][MaxFieldSize];
+string BandNameArray[MaxElements][MaxFieldSize];
+string SongNameArray[MaxElements][MaxFieldSize];
+
+
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+
+
+Function Init()
+{
+ 
+ AlbumArtArray[0] 	= "";
+ AlbumNameArray[0] = "";
+ BandNameArray[0] 	= "";
+ SongNameArray[0] 	= "";
+  
+ AlbumArtArray[1] 	= "Back In Black.jpg";
+ AlbumNameArray[1] = "Back In Black";
+ BandNameArray[1] 	= "AC DC";
+ SongNameArray[1] 	= "You Shook Me All Night Long";
+ 
+ AlbumArtArray[2] 	= "The Colour And The Shape.jpg";
+ AlbumNameArray[2] = "The Colour And The Shape";
+ BandNameArray[2] 	= "Foo Fighters";
+ SongNameArray[2] 	= "Up In Arms";
+
+ AlbumArtArray[3] 	= "A Rush Of Blood To The Head.jpg";
+ AlbumNameArray[3] = "A Rush Of Blood To The Head";
+ BandNameArray[3] 	= "Coldplay";
+ SongNameArray[3] 	= "Clocks"; 
+
+ AlbumArtArray[4] 	= "Welcome Interstate Managers.jpg";
+ AlbumNameArray[4] = "Welcome Interstate Managers";
+ BandNameArray[4] 	= "Fountains Of Wayne";
+ SongNameArray[4] 	= "No Better Place";
+
+ AlbumArtArray[5] 	= "Money For Nothing.jpg";
+ AlbumNameArray[5] = "Money For Nothing";
+ BandNameArray[5] 	= "Dire Straits";
+ SongNameArray[5] 	= "Sultans Of Swing";
+ 
+ AlbumArtArray[6] 	= "Greatest Hits.jpg";
+ AlbumNameArray[6] = "Greatest Hits";
+ BandNameArray[6] 	= "The Doors";
+ SongNameArray[6] 	= "Light My Fire";
+ 
+ AlbumArtArray[7] 	= "American Idiot.jpg";
+ AlbumNameArray[7] = "American Idiot";
+ BandNameArray[7] 	= "Green Day";
+ SongNameArray[7] 	= "Give Me Novacaine";
+ 
+ AlbumArtArray[8] 	= "Elephant.jpg";
+ AlbumNameArray[8] = "Elephant";
+ BandNameArray[8] 	= "The White Stripes";
+ SongNameArray[8] 	= "Little Acorns";
+ 
+ AlbumArtArray[9] 	= "Appetite For Destruction.jpg";
+ AlbumNameArray[9] = "Appetite For Destruction";
+ BandNameArray[9] 	= "Guns N' Roses";
+ SongNameArray[9] 	= "Paradise City";
+ 
+ AlbumArtArray[10] 	= "Out Of Time.jpg";
+ AlbumNameArray[10] = "Out Of Time";
+ BandNameArray[10] 	= "R.E.M.";
+ SongNameArray[10] 	= "Shiny Happy People";
+ 
+ AlbumArtArray[11] 	= "Hybrid Theory.jpg";
+ AlbumNameArray[11] = "Hybrid Theory";
+ BandNameArray[11] 	= "Linkin Park";
+ SongNameArray[11] 	= "Forgotten";
+ 
+ AlbumArtArray[12] 	= "Graduation.jpg";
+ AlbumNameArray[12] = "Graduation";
+ BandNameArray[12] 	= "Kanye West";
+ SongNameArray[12] 	= "The Glory";
+ 
+ AlbumArtArray[13] 	= "Joshua Tree.jpg";
+ AlbumNameArray[13] = "Joshua Tree";
+ BandNameArray[13] 	= "U2";
+ SongNameArray[13] 	= "With Or Without You";
+ 
+ AlbumArtArray[14] 	= "Automatic For The People.jpg";
+ AlbumNameArray[14] = "Automatic For The People";
+ BandNameArray[14] 	= "R.E.M.";
+ SongNameArray[14] 	= "Man On The Moon";
+ 
+ AlbumArtArray[15] 	= "The Best Of Both Worlds.jpg";
+ AlbumNameArray[15] = "The Best Of Both Worlds";
+ BandNameArray[15] 	= "Van Halen";
+ SongNameArray[15] 	= "Jump";
+ 
+ AlbumArtArray[16] 	= "One Cell In The Sea.jpg";
+ AlbumNameArray[16] = "One Cell In The Sea";
+ BandNameArray[16] 	= "A Fine Frenzy";
+ SongNameArray[16] 	= "Whisper";
+
+ AlbumArtArray[17] 	= "Back to Black.jpg";
+ AlbumNameArray[17] = "Back to Black";
+ BandNameArray[17] 	= "Amy Winehouse";
+ SongNameArray[17] 	= "Just Friends";
+
+ AlbumArtArray[18] 	= "Highly Evolved.jpg";
+ AlbumNameArray[18] = "Highly Evolved";
+ BandNameArray[18] 	= "The Vines";
+ SongNameArray[18] 	= "Get Free";
+
+ AlbumArtArray[19] 	= "Is This It.jpg";
+ AlbumNameArray[19] = "Is This It";
+ BandNameArray[19] 	= "The Strokes";
+ SongNameArray[19] 	= "Someday";
+
+ AlbumArtArray[20] 	= "The Mouse and the Mask.jpg";
+ AlbumNameArray[20] = "The Mouse and the Mask";
+ BandNameArray[20] 	= "DangerDoom";
+ SongNameArray[20] 	= "Sofa King";
+
+ AlbumArtArray[21] 	= "The Rising Tied.jpg";
+ AlbumNameArray[21] = "The Rising Tied";
+ BandNameArray[21] 	= "Fort Minor";
+ SongNameArray[21] 	= "Remember The Name";
+
+
+}
+
+Function RetriveSongInfo()
+{
+ Album_Art = AlbumArtArray[Index];
+ Song_Name = SongNameArray[Index];
+ Band_Name = BandNameArray[Index];
+ Album_Name = AlbumNameArray[Index];
+
+}
+
+
+/*
+Integer_Function MyIntFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return (0);
+}
+*/
+
+/*
+String_Function MyStrFunction1()
+{
+    // TODO:  Add local variable declarations here
+
+    // TODO:  Add code here
+
+    Return ("");
+}
+*/
+
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+/*
+PUSH input
+{
+    // TODO:  Add code here
+}
+*/
+
+/*
+RELEASE input
+{
+    // TODO:  Add code here
+}
+*/
+
+
+CHANGE Index
+{
+  if (Index <= MaxElements)
+  	{
+  		call RetriveSongInfo();
+  		wait (10)
+  		{
+  			Index_Fb = Index;
+  		}
+	}
+}
+
+
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+
+Function Main()
+{
+    call Init();
+    // TODO:  Add code here
+    // Initialize declared global and local variables/arrays as needed.
+
+    // WaitForInitializationComplete();
+    // If you are reading any Input or Output variables, uncomment
+    //   the WaitForInitializationComplete statement above and read
+    //   them afterwards.  Input/Output variables will not have
+    //   their correct values set until after the logic processor
+    //   runs and propagates the values to them.
+}
+
+
