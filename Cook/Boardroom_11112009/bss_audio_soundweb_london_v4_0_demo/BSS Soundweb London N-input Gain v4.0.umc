@@ -1,0 +1,469 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.11.09
+IntStrVrs=2
+MinSMWVrs=2.02.05
+MinTIOVrs=0
+SavedBy=SMW2.11.09
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=BSS Soundweb London N-input Gain v4.0.umc
+DbVr=20.03.008.00
+DvcDbVr=20.05.014.00
+PgmNm=PAC
+DlrNm=Crestron Electronics
+CltNm=BSS Soundweb London N-input Gain v4.0
+Incl=362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,767,830,883,1032,1062,1079,1134,1157,1199,1220,1222,1299,1348,1439,1472,1473,1499,167,168,216,225,248,249,266,
+McNm=BSS Soundweb London N-input Gain v3
+SmVr=584
+DvVr=584
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+PdfHelp=BSS Soundweb London N-input Gain v4.0 Help.pdf
+APg=1
+FltTmp=1
+FpCS=0
+Cmn1=BSS Soundweb London Blu\\\\This modules controls a "N-input Gain"||1
+Cmn2=object in a Soundweb program.\\Each object in a Soundweb program||1
+Cmn3=is given an object number. \\You have to specify the object id of||1
+Cmn4=the "N-input Gain" object that is to be controlled. (objectID parameter)\\
+Cmn5=\\The TX and RX of this module should be connected to a "BSS Soundweb||1
+Cmn6=Node.umc" module.\\This "Node" module needs to have it's "Node"||1
+Cmn7=parameter set to the node of the Soundweb device to \\control.\\
+Cmn8=\\All analog input and outputs range from 0d to 65535d (0% to 100%)\\
+Cmn9=\\When the "subscribe" input is held HIGH, all functions (called||1
+Cmn10=state variables) of this object will be \\subscribed to, and the||1
+Cmn11=feedback will be real.  If subscribe signal goes low, the Soundweb||1
+Cmn12=London will \\not report feedback.\\\\With the "input" analog input||1
+Cmn13=you can specify which input on the "N-input Gain" object you want||1
+Cmn14=\\to control. \\\\\\INPUTS \\------\\gain:        set the gain value||1
+Cmn15=(-inf to 10) of the currently selected input        \\mute:||5
+Cmn16=||3pulse to mute the currently selected input         \\unmute:||1
+Cmn17=||5pulse to unmute  of the currently selected input        \\polarityOn:
+Cmn18=||2pulse to set polarity of the currently selected input on\\polarityOff:
+Cmn19=||1pulse to set polarity of the currently selected input off\\\\\\
+Cmn20=subscribe:   subscribe to all functions (state variables) of the||1
+Cmn21=object.  When this signal\\             is held HIGH the feedback||1
+Cmn22=will be real.  When LOW feedback will not be reported.\\\\input:
+Cmn23=||7specify which input of the "N-input Gain" object is to be||1
+Cmn24=controlled\\\\rx:          connected to the "modulesRx" of the correct||1
+Cmn25="BSS Soundweb Node.umc" module\\\\\\OUTPUTS\\-------\\gain_fb:||2
+Cmn26=||3gain feedback of the currently selected input        \\mute_fb:
+Cmn27=||5mute feedback of the currently selected input        \\polarity_fb:
+Cmn28=||1polarity feedback of the currently selected input        \\\\\\
+Cmn29=tx:          connected to the "modulesTx" of the correct "BSS Soundweb||1
+Cmn30=Node.umc" module\\\\\\\\PARAMETERS\\----------\\oobjectID:    specifies||1
+Cmn31=which objectID is to be controlled. (3 bytes, for example: "\x00\x00\x01")||1
+Cmn32=||3\\             (get this information from the BSS programmer).
+Cmn33=||2These bytes are ALWAYS the 4th, 5th,\\             and 6th bytes||1
+Cmn34=of the HiQnet address.  The HiQnet address is given in Hex in the||1
+Cmn35=properties\\             window of every processing object.  Do||1
+Cmn36=not take the address from the DI toolbar because\\             of||1
+Cmn37=reserved character substitutions.\\\\             For example: The||1
+Cmn38=first processing object placed in the design will have the following||1
+Cmn39=address\\             (if the Node address is \x74\x01) 0x740103000100.
+Cmn40=||2So the Object ID in this scenario will be\\              entered||1
+Cmn41=as \x00\x01\x00.\\\\             \\
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Symbol
+Name=BSS Soundweb London N-input Gain v4.0
+Code=1
+SmplCName=BSS Soundweb London N-input Gain v4.0.umc
+Smpl-C=3
+CompilerTimePrecision=Single_Or_Double_Precision
+Exclusions=1,19,20,21,88,89,310,718,756,854,
+Hint=BSS Soundweb London N-input Gain v4.0
+SMWRev=2.02.05
+TIORev=0
+S+=1
+HelpID=1055
+PdfHelp=BSS Soundweb London N-input Gain v4.0 Help.pdf
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+NumFixedInputs=14
+NumFixedOutputs=14
+NumFixedParams=1
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=34
+InputSigType1=Analog
+InputSigType2=Digital|Analog|Serial|String
+InputSigType3=Digital
+InputSigType4=Digital
+InputSigType5=Digital|Analog|Serial|String
+InputSigType6=Digital
+InputSigType7=Digital
+InputSigType8=Digital|Analog|Serial|String
+InputSigType9=Digital
+InputSigType10=Digital|Analog|Serial|String
+InputSigType11=Digital|Analog|Serial|String
+InputSigType12=Analog
+InputSigType13=Digital|Analog|Serial|String
+InputSigType14=Serial
+OutputSigType1=Analog
+OutputSigType2=Digital|Analog|Serial|String
+OutputSigType3=Digital
+OutputSigType4=Digital|Analog|Serial|String
+OutputSigType5=Digital|Analog|Serial|String
+OutputSigType6=Digital
+OutputSigType7=Digital|Analog|Serial|String
+OutputSigType8=Digital|Analog|Serial|String
+OutputSigType9=Digital|Analog|Serial|String
+OutputSigType10=Digital|Analog|Serial|String
+OutputSigType11=Digital|Analog|Serial|String
+OutputSigType12=Digital|Analog|Serial|String
+OutputSigType13=Digital|Analog|Serial|String
+OutputSigType14=Serial
+ParamSigType1=String
+InputCue1=gain
+InputCue2=[~UNUSED~]
+InputCue3=mute
+InputCue4=unMute
+InputCue5=[~UNUSED~]
+InputCue6=polarityOn
+InputCue7=polarityOff
+InputCue8=[~UNUSED~]
+InputCue9=subscribe
+InputCue10=[~UNUSED~]
+InputCue11=[~UNUSED~]
+InputCue12=input
+InputCue13=[~UNUSED~]
+InputCue14=rx
+OutputCue1=gain_fb
+OutputCue2=[~UNUSED~]
+OutputCue3=mute_fb
+OutputCue4=[~UNUSED~]
+OutputCue5=[~UNUSED~]
+OutputCue6=polarity_fb
+OutputCue7=[~UNUSED~]
+OutputCue8=[~UNUSED~]
+OutputCue9=[~UNUSED~]
+OutputCue10=[~UNUSED~]
+OutputCue11=[~UNUSED~]
+OutputCue12=[~UNUSED~]
+OutputCue13=[~UNUSED~]
+OutputCue14=tx
+ParamCue1=objectID
+FileName=BSS Soundweb London N-input Gain v4.0.umc
+]
+[
+ObjTp=Sm
+H=1
+SmC=157
+Nm=Central Control Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=2
+SmC=157
+Nm=Network Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=3
+SmC=157
+Nm=Ethernet
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=4
+SmC=156
+Nm=Logic
+ObjVer=1
+CF=2
+mC=4
+C1=11
+C2=8
+C3=9
+C4=10
+]
+[
+ObjTp=Sm
+H=5
+SmC=157
+Nm=DefineArguments
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mC=1
+C1=6
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=6
+SmC=55
+ObjVer=1
+PrH=5
+CF=2
+n1I=14
+n1O=14
+mI=14
+I1=6
+I2=15
+I3=4
+I4=5
+I5=15
+I6=7
+I7=10
+I8=15
+I9=12
+I10=15
+I11=15
+I12=18
+I13=15
+I14=17
+mO=14
+tO=14
+O1=19
+O2=15
+O3=14
+O4=15
+O5=15
+O6=16
+O7=15
+O8=15
+O9=15
+O10=15
+O11=15
+O12=15
+O13=15
+O14=8
+mP=1
+P1=objectID
+]
+[
+ObjTp=Sm
+H=8
+SmC=89
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n1O=1
+Cmn1=Object Id\\
+mI=1
+I1=2
+mO=1
+tO=1
+O1=9
+mP=1
+P1=#objectID
+]
+[
+ObjTp=Sm
+H=9
+SmC=24
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n1O=1
+Cmn1=Gain\\
+mI=1
+I1=6
+mO=1
+tO=1
+O1=11
+mP=3
+P1=201d
+P2=
+P3=0d
+]
+[
+ObjTp=Sm
+H=10
+SmC=24
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n1O=1
+Cmn1=Gain fb\\
+mI=1
+I1=20
+mO=1
+tO=1
+O1=19
+mP=3
+P1=100%
+P2=200d
+P3=0d
+]
+[
+ObjTp=Sm
+H=11
+SmC=103
+Nm=BSS Soundweb London N-input Gain v4.0.usp
+ObjVer=1
+PrH=4
+CF=2
+n1I=5
+n2I=4
+n1O=2
+mI=9
+I1=4
+I2=5
+I3=7
+I4=10
+I5=12
+I6=11
+I7=9
+I8=18
+I9=17
+mO=4
+tO=4
+O1=14
+O2=16
+O3=20
+O4=8
+mP=1
+P1=
+]
+[
+ObjTp=Sg
+H=4
+Nm=mute
+]
+[
+ObjTp=Sg
+H=5
+Nm=unMute
+]
+[
+ObjTp=Sg
+H=6
+Nm=gain
+SgTp=2
+]
+[
+ObjTp=Sg
+H=7
+Nm=polarityOn
+]
+[
+ObjTp=Sg
+H=8
+Nm=tx
+SgTp=4
+]
+[
+ObjTp=Sg
+H=9
+Nm=objectIDParam
+SgTp=4
+]
+[
+ObjTp=Sg
+H=10
+Nm=polarityOff
+]
+[
+ObjTp=Sg
+H=11
+Nm=gainScaled
+SgTp=2
+]
+[
+ObjTp=Sg
+H=12
+Nm=subscribe
+]
+[
+ObjTp=Sg
+H=14
+Nm=mute_fb
+]
+[
+ObjTp=Sg
+H=15
+Nm=[~UNUSED~]
+SgTp=31
+]
+[
+ObjTp=Sg
+H=16
+Nm=polarity_fb
+]
+[
+ObjTp=Sg
+H=17
+Nm=rx
+SgTp=4
+]
+[
+ObjTp=Sg
+H=18
+Nm=input
+SgTp=2
+]
+[
+ObjTp=Sg
+H=19
+Nm=gain_fb
+SgTp=2
+]
+[
+ObjTp=Sg
+H=20
+Nm=gain_fbNotScaled
+SgTp=2
+]

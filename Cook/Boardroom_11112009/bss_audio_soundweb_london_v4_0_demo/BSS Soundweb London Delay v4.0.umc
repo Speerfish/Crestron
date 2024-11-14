@@ -1,0 +1,311 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.11.09
+IntStrVrs=2
+MinSMWVrs=2.02.05
+MinTIOVrs=0
+SavedBy=SMW2.11.09
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=BSS Soundweb London Delay v4.0.umc
+DbVr=20.03.008.00
+DvcDbVr=20.05.014.00
+PgmNm=PAC
+DlrNm=Crestron Electronics
+CltNm=BSS Soundweb London Delay v4.0
+Incl=362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,767,830,883,1032,1062,1079,1134,1157,1199,1220,1222,1299,1348,1439,1472,1473,1499,
+McNm=BSS Soundweb London Delay v3
+SmVr=584
+DvVr=584
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+PdfHelp=BSS Soundweb London Delay v4.0 Help.pdf
+APg=1
+FltTmp=1
+FpCS=0
+Cmn1=BSS Soundweb London Blu\\\\This modules controls a "Delay" object||1
+Cmn2=in a Soundweb program.\\Each object in a Soundweb program is given||1
+Cmn3=an object number. \\You have to specify the object id of the "Delay"||1
+Cmn4=object that is to be controlled. (objectID parameter)\\\\The TX||1
+Cmn5=and RX of this module should be connected to a "BSS Soundweb Node.
+Cmn6=umc" module.\\This "Node" module needs to have it's "Node" parameter||1
+Cmn7=set to the node of the Soundweb device to \\control.\\\\When the||1
+Cmn8="subscribe" input is held HIGH, all functions (called state variables)||1
+Cmn9=of this object will be \\subscribed to, and the feedback will be||1
+Cmn10=real.  If subscribe signal goes low, the Soundweb London will \\
+Cmn11=not report feedback.\\\\INPUTS \\------\\delay:       set delay||1
+Cmn12=value in tenths of milliseconds. Ranging from 0d (0,0 ms) to 27200d||1
+Cmn13=(2720,0 ms)\\\\subscribe:   subscribe to all functions (state variables)||1
+Cmn14=of the object\\unsubscribe: unsubscribe to all functions (state||1
+Cmn15=variables) of the object\\\\rx:          connected to the "modulesRx"||1
+Cmn16=of the correct "BSS Soundweb Node.umc" module\\\\\\OUTPUTS\\----
+Cmn17=---\\delay_fb:    delay feedback\\\\tx:          connected to the||1
+Cmn18="modulesTx" of the correct "BSS Soundweb Node.umc" module\\\\\\\\
+Cmn19=PARAMETERS\\----------\\objectID:    specifies which objectID is||1
+Cmn20=to be controlled. (3 bytes, for example: "\x00\x00\x01")    \\||2
+Cmn21=||;(get this information from the BSS programmer).  These||1
+Cmn22=bytes are ALWAYS the 4th, 5th,\\             and 6th bytes of the||1
+Cmn23=HiQnet address.  The HiQnet address is given in Hex in the properties\\
+Cmn24=||=window of every processing object.  Do not take the||1
+Cmn25=address from the DI toolbar because\\             of reserved character||1
+Cmn26=substitutions.\\\\             For example: The first processing||1
+Cmn27=object placed in the design will have the following address\\||3
+Cmn28=||:(if the Node address is \x74\x01) 0x740103000100.  So||1
+Cmn29=the Object ID in this scenario will be\\              entered as||1
+Cmn30=\x00\x01\x00.			\\             \\
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Symbol
+Name=BSS Soundweb London Delay v4.0
+Code=1
+SmplCName=BSS Soundweb London Delay v4.0.umc
+Smpl-C=3
+CompilerTimePrecision=Single_Or_Double_Precision
+Exclusions=1,19,20,21,88,89,167,168,179,216,225,248,249,266,310,718,756,854,
+Hint=BSS Soundweb London Delay v4.0
+SMWRev=2.02.05
+TIORev=0
+S+=1
+HelpID=1055
+PdfHelp=BSS Soundweb London Delay v4.0 Help.pdf
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+NumFixedInputs=6
+NumFixedOutputs=6
+NumFixedParams=1
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=34
+InputSigType1=Analog
+InputSigType2=Digital|Analog|Serial|String
+InputSigType3=Digital
+InputSigType4=Digital|Analog|Serial|String
+InputSigType5=Digital|Analog|Serial|String
+InputSigType6=Serial
+OutputSigType1=Analog
+OutputSigType2=Digital|Analog|Serial|String
+OutputSigType3=Digital|Analog|Serial|String
+OutputSigType4=Digital|Analog|Serial|String
+OutputSigType5=Digital|Analog|Serial|String
+OutputSigType6=Serial
+ParamSigType1=String
+InputCue1=delay
+InputCue2=[~UNUSED~]
+InputCue3=subscribe
+InputCue4=[~UNUSED~]
+InputCue5=[~UNUSED~]
+InputCue6=rx
+OutputCue1=delay_fb
+OutputCue2=[~UNUSED~]
+OutputCue3=[~UNUSED~]
+OutputCue4=[~UNUSED~]
+OutputCue5=[~UNUSED~]
+OutputCue6=tx
+ParamCue1=objectID
+FileName=BSS Soundweb London Delay v4.0.umc
+]
+[
+ObjTp=Sm
+H=1
+SmC=157
+Nm=Central Control Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=2
+SmC=157
+Nm=Network Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=3
+SmC=157
+Nm=Ethernet
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=4
+SmC=156
+Nm=Logic
+ObjVer=1
+CF=2
+mC=2
+C1=7
+C2=8
+]
+[
+ObjTp=Sm
+H=5
+SmC=157
+Nm=DefineArguments
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mC=1
+C1=6
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=6
+SmC=55
+ObjVer=1
+PrH=5
+CF=2
+n1I=6
+n1O=6
+mI=6
+I1=8
+I2=4
+I3=6
+I4=4
+I5=4
+I6=11
+mO=6
+tO=6
+O1=9
+O2=4
+O3=4
+O4=4
+O5=4
+O6=10
+mP=1
+P1=objectID
+]
+[
+ObjTp=Sm
+H=7
+SmC=103
+Nm=BSS Soundweb London Delay v4.0.usp
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n2I=3
+mI=4
+I1=6
+I2=8
+I3=5
+I4=11
+mO=2
+tO=2
+O1=9
+O2=10
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=8
+SmC=89
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n1O=1
+mI=1
+I1=2
+mO=1
+tO=1
+O1=5
+mP=1
+P1=#objectID
+]
+[
+ObjTp=Sg
+H=4
+Nm=[~UNUSED~]
+SgTp=31
+]
+[
+ObjTp=Sg
+H=5
+Nm=objectIDParam
+SgTp=4
+]
+[
+ObjTp=Sg
+H=6
+Nm=subscribe
+]
+[
+ObjTp=Sg
+H=8
+Nm=delay
+SgTp=2
+]
+[
+ObjTp=Sg
+H=9
+Nm=delay_fb
+SgTp=2
+]
+[
+ObjTp=Sg
+H=10
+Nm=tx
+SgTp=4
+]
+[
+ObjTp=Sg
+H=11
+Nm=rx
+SgTp=4
+]

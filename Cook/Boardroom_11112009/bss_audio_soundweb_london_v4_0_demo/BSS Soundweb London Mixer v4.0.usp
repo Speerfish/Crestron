@@ -1,0 +1,373 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "BSS Soundweb London Mixer v4.0"
+// #HINT ""
+// #DEFINE_CONSTANT
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+#HELP_BEGIN
+Only to be used with the "BSS Soundweb Mixer.umc" module
+#HELP_END
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT mute$, unMute$;
+DIGITAL_INPUT polarityOn$, polarityOff$;
+DIGITAL_INPUT subscribe$;
+DIGITAL_INPUT soloOn$, soloOff$;
+DIGITAL_INPUT routeToGroup$[8];
+ANALOG_INPUT gain$, pan$;
+STRING_INPUT objectID$[3];
+ANALOG_INPUT input$;
+BUFFER_INPUT rx$[400];
+ANALOG_INPUT aux$[4];
+
+DIGITAL_OUTPUT mute_fb$, polarity_fb$, solo_fb$;
+DIGITAL_OUTPUT routeToGroup_fb$[4];
+ANALOG_OUTPUT gain_fb$, pan_fb$;
+STRING_OUTPUT tx$;                           
+ANALOG_OUTPUT aux_fb$[4];
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER stateVar, stateVarSub, stateVarUnSub,subscribe;
+INTEGER xRoute, xAux, xSubscribe, xUnSubscribe;
+STRING returnString[4];
+INTEGER returnI,volumeInput, rxSV;
+INTEGER xOK;
+STRING tempString[40];
+/*******************************************************************************************
+  Functions
+  (Add any additional functions here)
+  Note:  Functions must be physically placed before the location in
+         the code that calls them.
+*******************************************************************************************/
+String_Function iToVolumePercent(INTEGER int)
+{                 
+	if (int MOD 2 = 0)
+	{                   
+		returnString = "\x00" + chr(int/2) + "\x00\x00";
+	}
+	else 
+	{
+		returnString = "\x00" + chr(int/2) + "\x80\x00";
+	} 	
+    Return (returnString);
+}
+
+Integer_Function volumePercentToI(STRING str)
+{                     
+	if (!(mid(str, 3, 1) = "\x00"))
+	{                   
+		returnI = (byte(str, 2)*2)+1;
+	}
+	else 
+	{
+		returnI = byte(str, 2)*2;
+	} 	
+   Return (returnI);
+}
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+PUSH mute$
+{        
+	stateVar = ((input$-1) * 100) + 1;
+	makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x01\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));
+	if(subscribe)
+	{
+ 		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //Subscribe MUTE
+		processlogic();
+	}
+}
+
+PUSH unMute$
+{
+	stateVar = ((input$-1) * 100) + 1;
+	makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));
+	if(subscribe)
+	{
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //Subscribe MUTE
+		processlogic();
+	}
+}
+
+PUSH polarityOn$
+{        
+	stateVar = ((input$-1) * 100) + 3;
+	makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x01\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));
+	if(subscribe)
+	{
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //Subscribe POLARITY
+		processlogic();
+	}
+}
+
+PUSH polarityOff$
+{
+	stateVar = ((input$-1) * 100) + 3;
+	makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));
+	if(subscribe)
+	{
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //Subscribe POLARITY
+		processlogic();
+	}
+}
+
+PUSH soloOn$
+{        
+	stateVar = ((input$-1) * 100) + 4;
+	makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x01\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));
+	if(subscribe)
+	{
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //SOLO
+		processlogic();
+	}
+}
+
+PUSH soloOff$
+{
+	stateVar = ((input$-1) * 100) + 4;
+	makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));
+	if(subscribe)
+	{
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //SOLO
+		processlogic();
+	}
+}
+
+PUSH routeToGroup$
+{
+	xRoute = getLastModifiedArrayIndex();
+	if (xRoute <= 4)
+	{ 
+		stateVar = ((input$-1) * 100) + 40 + xRoute-1;
+		makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x01\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));		
+   	if(subscribe)
+		{
+			makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //ROUTE
+			processlogic();
+		}
+	}
+	else
+	{
+		stateVar = ((input$-1) * 100) + 40 + xRoute-5;
+		makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));		
+   	if(subscribe)
+		{
+			makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //ROUTE
+			processlogic();
+		}
+	}
+}
+
+CHANGE gain$
+{
+	if(volumeInput <> gain$)
+	{
+		stateVar = (input$-1) * 100;
+		volumeInput = gain$;
+		gain_fb$ = gain$;
+		makeString(tx$, "\x8D\x00\x00\x03%s%s%s%s\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)), iToVolumePercent(gain$));
+	}
+}
+
+CHANGE pan$
+{
+	stateVar = ((input$-1) * 100) + 2;
+	makeString(tx$, "\x8D\x00\x00\x03%s%s%s%s\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)), iToVolumePercent(pan$));
+	if(subscribe)
+	{
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //PAN
+		processlogic();
+	}
+}
+  
+CHANGE aux$
+{         
+	xAux = getLastModifiedArrayIndex();
+	stateVar = ((input$-1) * 100) + 20 + (xAux-1);
+	makeString(tx$, "\x8D\x00\x00\x03%s%s%s%s\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)), iToVolumePercent(aux$[xAux]));
+	if(subscribe)
+	{
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVar)), chr(low(stateVar)));  //AUX
+		processlogic();
+	}
+}
+  
+PUSH subscribe$
+{           
+	wait(20)
+	{
+		xSubscribe = (input$-1) * 100;
+		stateVarSub = xSubscribe;
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //GAIN
+		processlogic();
+		stateVarSub = xSubscribe + 1;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //MUTE
+		processlogic();
+		stateVarSub = xSubscribe + 2;
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //PAN
+		processlogic();
+		stateVarSub = xSubscribe + 3;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //POLARITY
+		processlogic();
+		stateVarSub = xSubscribe + 20;
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //AUX1
+		processlogic();
+		stateVarSub = xSubscribe + 21;
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //AUX2
+		processlogic();
+		stateVarSub = xSubscribe + 22;
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //AUX3
+		processlogic();
+		stateVarSub = xSubscribe + 23;
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //AUX4
+		processlogic();
+		stateVarSub = xSubscribe + 40;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //ROUTE1
+		processlogic();
+		stateVarSub = xSubscribe + 41;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //ROUTE2
+		processlogic();
+		stateVarSub = xSubscribe + 42;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //ROUTE3
+		processlogic();
+		stateVarSub = xSubscribe + 43;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //ROUTE4
+		processlogic();
+		stateVarSub = xSubscribe + 4;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //SOLO
+		processlogic();
+		stateVarSub = xSubscribe + 5;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //OVERRIDE
+		processlogic();
+		stateVarSub = xSubscribe + 6;
+		makeString(tx$, "\x8E\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //OFF GAIN
+		processlogic();	
+		stateVarSub = xSubscribe + 7;
+		makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //AUTO
+		processlogic();	
+		subscribe = subscribe$;
+	}
+}  
+
+RELEASE subscribe$
+{
+	xUnSubscribe = (input$-1) * 100;
+	stateVarUnSub = xUnSubscribe;
+	makeString(tx$, "\x8F\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //GAIN
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 1;
+	makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //MUTE
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 2;
+	makeString(tx$, "\x8F\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //PAN
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 3;
+	makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //POLARITY
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 20;
+	makeString(tx$, "\x8F\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //AUX1
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 21;
+	makeString(tx$, "\x8F\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //AUX2
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 22;
+	makeString(tx$, "\x8F\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //AUX3
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 23;
+	makeString(tx$, "\x8F\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //AUX4
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 40;
+	makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //ROUTE1
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 41;
+	makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //ROUTE2
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 42;
+	makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //ROUTE3
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 43;
+	makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //ROUTE4
+	processlogic();
+	stateVarUnSub = xUnSubscribe + 4;
+	makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarUnSub)), chr(low(stateVarUnSub)));  //SOLO
+	processlogic();
+	subscribe = subscribe$;
+}  
+
+CHANGE rx$
+{
+	if (xOK)
+	{	
+		xOK = 0;
+		while (len(rx$))
+		{
+			if(find("\x03\x03\x03\x03\x03", rx$))
+			{ 
+				tempString = remove("\x03\x03\x03\x03\x03", rx$);
+				if ((mid(tempString, 6, 3) = "\x00\x00\x00") || (mid(tempString, 6, 3) = objectID$))
+				{  
+					rxSV = ((byte(tempString, 9) * 256 ) + byte(tempString, 10));
+					if ((rxSV / 100) = input$ - 1)
+					{   
+						switch (rxSV MOD 100)
+						{
+							case (0): 
+							{	
+								volumeInput = volumePercentToI(mid(tempString, 11, 4));
+								gain_fb$ = volumeInput;
+							}
+							case (1): mute_fb$ = byte(tempString, 14);
+							case (2): pan_fb$ = volumePercentToI(mid(tempString, 11, 4));
+							case (3): polarity_fb$ = byte(tempString, 14);
+							case (20): aux_fb$[1] = volumePercentToI(mid(tempString, 11, 4));
+							case (21): aux_fb$[2] = volumePercentToI(mid(tempString, 11, 4));
+							case (22): aux_fb$[3] = volumePercentToI(mid(tempString, 11, 4));
+							case (23): aux_fb$[4] = volumePercentToI(mid(tempString, 11, 4));
+							case (40): routeToGroup_fb$[1] = byte(tempString, 14);
+							case (41): routeToGroup_fb$[2] = byte(tempString, 14);
+							case (42): routeToGroup_fb$[3] = byte(tempString, 14);
+							case (43): routeToGroup_fb$[4] = byte(tempString, 14);
+							case (4): solo_fb$ = byte(tempString, 14);
+						}
+					}
+				}
+				clearbuffer(tempString);
+			}
+		}
+		xOK = 1;
+	}	
+}
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+	xOK = 1;
+	subscribe = 0;
+}

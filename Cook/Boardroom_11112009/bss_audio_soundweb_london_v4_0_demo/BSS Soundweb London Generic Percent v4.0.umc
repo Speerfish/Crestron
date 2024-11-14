@@ -1,0 +1,367 @@
+[
+Version=1
+]
+[
+ObjTp=FSgntr
+Sgntr=UserMacro
+RelVrs=2.11.09
+IntStrVrs=2
+MinSMWVrs=2.02.05
+MinTIOVrs=0
+SavedBy=SMW2.11.09
+]
+[
+ObjTp=Hd
+S0Nd=1
+S1Nd=2
+SLNd=3
+PrNm=BSS Soundweb London Generic Percent v4.0.umc
+DbVr=20.03.008.00
+DvcDbVr=20.05.014.00
+PgmNm=PAC
+DlrNm=Crestron Electronics
+CltNm=BSS Soundweb London Generic Percent v4.0
+Incl=362,378,380,405,407,408,409,478,522,537,554,586,590,611,624,767,830,883,1032,1062,1079,1134,1157,1199,1220,1222,1299,1348,1439,1472,1473,1499,167,168,216,225,248,249,266,
+McNm=BSS Soundweb London Generic Percent v3
+SmVr=584
+DvVr=584
+TpN1=1
+TpN2=2
+TpN3=3
+TpN4=4
+TpN5=5
+PdfHelp=BSS Soundweb London Generic Percent v4.0 Help.pdf
+APg=1
+FltTmp=1
+FpCS=0
+Cmn1=BSS Soundweb London Blu\\\\This module can control a basically every||1
+Cmn2=stateVariable of every object in a Soundweb program\\by means of||1
+Cmn3=the SETSVPERCENT command.\\\\Each object in a Soundweb program is||1
+Cmn4=given an object number. \\You have to specify the object id of the||1
+Cmn5=object that is to be controlled. (objectID serial input)\\Then you||1
+Cmn6=have to specify the stateVariable that is to be controlled. (stateVariable||1
+Cmn7=analog input)\\All this information should be derived from the Soundweb||1
+Cmn8=integrator.\\\\After that, you can change the value of this stateVariable||1
+Cmn9=(value analog input).\\When "value" is set to 0d, the stateVariable||1
+Cmn10=will be set to 0%.\\When "value" is set to 65535d, the stateVariable||1
+Cmn11=will be set to 100%.\\In other words 0% = 0% and 100% = 100%.\\\\
+Cmn12=The TX and RX of this module should be connected to a "BSS Soundweb||1
+Cmn13=Node.umc" module.\\\\When the "subscribe" input is held HIGH, all||1
+Cmn14=functions (called state variables) of this object will be \\subscribed||1
+Cmn15=to, and the feedback will be real.  If subscribe signal goes low,||1
+Cmn16=the Soundweb London will \\not report feedback.\\\\INPUTS \\----
+Cmn17=--\\value:           set the stateVariable's value (0d to 65535d)||1
+Cmn18=||8\\\\objectID:        set the object to control (for example||1
+Cmn19="\x00\x01\x01")\\stateVariable:   set the stateVariable to control||1
+Cmn20=(for example 1d) \\\\\\subscribe:                   subscribe to||1
+Cmn21=all functions (state variables) of the object.  When this signal\\
+Cmn22=is held HIGH the feedback will be real.  When LOW feedback will||1
+Cmn23=not be reported.\\\\rx:              connected to the "modulesRx"||1
+Cmn24=of the correct "BSS Soundweb Node.umc" module\\\\\\OUTPUTS\\----
+Cmn25=---\\value_fb:    value feedback\\\\tx:          connected to the||1
+Cmn26="modulesTx" of the correct "BSS Soundweb Node.umc" module
+]
+[
+ObjTp=Bk
+Nm1=\
+Sx1=0
+Sy1=0
+Mx1=0
+]
+[
+ObjTp=Symbol
+Name=BSS Soundweb London Generic Percent v4.0
+Code=1
+SmplCName=BSS Soundweb London Generic Percent v4.0.umc
+Smpl-C=3
+CompilerTimePrecision=Single_Or_Double_Precision
+Exclusions=1,19,20,21,88,89,310,718,756,854,
+Hint=BSS Soundweb London Generic Percent v4.0
+SMWRev=2.02.05
+TIORev=0
+S+=1
+HelpID=1055
+PdfHelp=BSS Soundweb London Generic Percent v4.0 Help.pdf
+APg=1
+StdCmd=0
+FltTmp=1
+FpCS=0
+NumFixedInputs=9
+NumFixedOutputs=9
+MinVariableInputs=0
+MinVariableInputsList2=0
+MinVariableInputsList3=0
+MinVariableOutputs=0
+MinVariableOutputsList2=0
+MinVariableOutputsList3=0
+MinVariableParams=0
+SymbolTree=34
+InputSigType1=Analog
+InputSigType2=Digital|Analog|Serial|String
+InputSigType3=Serial
+InputSigType4=Analog
+InputSigType5=Digital|Analog|Serial|String
+InputSigType6=Digital
+InputSigType7=Digital|Analog|Serial|String
+InputSigType8=Digital|Analog|Serial|String
+InputSigType9=Serial
+OutputSigType1=Analog
+OutputSigType2=Digital|Analog|Serial|String
+OutputSigType3=Digital|Analog|Serial|String
+OutputSigType4=Digital|Analog|Serial|String
+OutputSigType5=Digital|Analog|Serial|String
+OutputSigType6=Digital|Analog|Serial|String
+OutputSigType7=Digital|Analog|Serial|String
+OutputSigType8=Digital|Analog|Serial|String
+OutputSigType9=Serial
+ParamSigType1=Time|Percent|Constant|String|FileName|HexAddress|Any
+InputCue1=value
+InputCue2=[~UNUSED~]
+InputCue3=objectID
+InputCue4=stateVariable
+InputCue5=[~UNUSED~]
+InputCue6=subscribe
+InputCue7=[~UNUSED~]
+InputCue8=[~UNUSED~]
+InputCue9=rx
+OutputCue1=value_fb
+OutputCue2=[~UNUSED~]
+OutputCue3=[~UNUSED~]
+OutputCue4=[~UNUSED~]
+OutputCue5=[~UNUSED~]
+OutputCue6=[~UNUSED~]
+OutputCue7=[~UNUSED~]
+OutputCue8=[~UNUSED~]
+OutputCue9=tx
+ParamCue1=p1
+FileName=BSS Soundweb London Generic Percent v4.0.umc
+]
+[
+ObjTp=Sm
+H=1
+SmC=157
+Nm=Central Control Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=2
+SmC=157
+Nm=Network Modules
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=3
+SmC=157
+Nm=Ethernet
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=4
+SmC=156
+Nm=Logic
+ObjVer=1
+CF=2
+mC=3
+C1=7
+C2=9
+C3=10
+]
+[
+ObjTp=Sm
+H=5
+SmC=157
+Nm=DefineArguments
+ObjVer=1
+CF=2
+n1I=1
+n1O=1
+mC=1
+C1=6
+mI=1
+mO=1
+tO=1
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=6
+SmC=55
+ObjVer=1
+PrH=5
+CF=2
+n1I=9
+n1O=9
+mI=9
+I1=4
+I2=15
+I3=7
+I4=10
+I5=15
+I6=12
+I7=15
+I8=15
+I9=17
+mO=9
+tO=9
+O1=5
+O2=15
+O3=15
+O4=15
+O5=15
+O6=15
+O7=15
+O8=15
+O9=8
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=7
+SmC=103
+Nm=BSS Soundweb London Generic Percent v4.0.usp
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n2I=4
+mI=5
+I1=12
+I2=6
+I3=7
+I4=10
+I5=17
+mO=2
+tO=2
+O1=11
+O2=8
+mP=1
+P1=
+]
+[
+ObjTp=Sm
+H=9
+SmC=24
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n1O=1
+Cmn1=Gain\\
+mI=1
+I1=4
+mO=1
+tO=1
+O1=6
+mP=3
+P1=201d
+P2=
+P3=0d
+]
+[
+ObjTp=Sm
+H=10
+SmC=24
+ObjVer=1
+PrH=4
+CF=2
+n1I=1
+n1O=1
+Cmn1=Gain Fb\\
+mI=1
+I1=11
+mO=1
+tO=1
+O1=5
+mP=3
+P1=100%
+P2=200d
+P3=0d
+]
+[
+ObjTp=Sg
+H=4
+Nm=value
+SgTp=2
+]
+[
+ObjTp=Sg
+H=5
+Nm=value_fb
+SgTp=2
+]
+[
+ObjTp=Sg
+H=6
+Nm=valueScaled
+SgTp=2
+]
+[
+ObjTp=Sg
+H=7
+Nm=objectID
+SgTp=4
+]
+[
+ObjTp=Sg
+H=8
+Nm=tx
+SgTp=4
+]
+[
+ObjTp=Sg
+H=10
+Nm=stateVariable
+SgTp=2
+]
+[
+ObjTp=Sg
+H=11
+Nm=value_fbNotScaled
+SgTp=2
+]
+[
+ObjTp=Sg
+H=12
+Nm=subscribe
+]
+[
+ObjTp=Sg
+H=15
+Nm=[~UNUSED~]
+SgTp=31
+]
+[
+ObjTp=Sg
+H=17
+Nm=rx
+SgTp=4
+]

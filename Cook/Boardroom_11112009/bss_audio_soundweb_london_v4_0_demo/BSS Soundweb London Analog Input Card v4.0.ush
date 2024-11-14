@@ -1,0 +1,85 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.10
+  InclDatVrs=1.69
+  CrossCplrVrs=1.2
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=Only to be used with the "BSS Soundweb Analog Input Card.umc" module
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,310,718,756,854,
+  Name=BSS Soundweb London Analog Input Card v4.0
+  SmplCName=BSS Soundweb London Analog Input Card v4.0.usp
+  Code=1
+  SysRev5=3.083
+  SMWRev=2.02.05
+  InputCue1=subscribe$
+  InputSigType1=Digital
+  InputCue2=phantomSwitch$[#]
+  InputSigType2=Digital
+  OutputCue1=phantomSwitch_fb$[#]
+  OutputSigType1=Digital
+  InputList2Cue1=card$
+  InputList2SigType1=Analog
+  InputList2Cue2=rx$
+  InputList2SigType2=Serial
+  InputList2Cue3=meterRate$
+  InputList2SigType3=Analog
+  InputList2Cue4=value$[#]
+  InputList2SigType4=Analog
+  OutputList2Cue1=tx$
+  OutputList2SigType1=Serial
+  OutputList2Cue2=value_fb$[#]
+  OutputList2SigType2=Analog
+  ParamCue1=[Reference Name]
+  MinVariableInputs=2
+  MaxVariableInputs=9
+  MinVariableInputsList2=4
+  MaxVariableInputsList2=23
+  MinVariableOutputs=1
+  MaxVariableOutputs=8
+  MinVariableOutputsList2=2
+  MaxVariableOutputsList2=21
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=32
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlusShortSaveName=BS0408~1.UF
+  SPlusLongSaveName=BSS SOUNDWEB LONDON ANALOG INPUT CARD V4.0.UF
+  SPlus2CompiledName=S2_BSS_Soundweb_London_Analog_Input_Card_v4_0
+  SymJam=NonExclusive
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]

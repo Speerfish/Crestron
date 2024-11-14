@@ -1,0 +1,151 @@
+/*******************************************************************************************
+  SIMPL+ Module Information
+  (Fill in comments below)
+*******************************************************************************************/
+/*
+Dealer Name:	Crestron Electronics
+System Name:
+System Number:
+Programmer:		PAC
+Comments:
+*/
+/*******************************************************************************************
+  Compiler Directives
+  (Uncomment and declare compiler directives as needed)
+*******************************************************************************************/
+#SYMBOL_NAME "BSS Soundweb London Matrix Router v4.0"
+// #HINT ""
+#DEFINE_CONSTANT MAXOUTPUT   48
+#DEFINE_CONSTANT MAXOUTPUTx2 96
+// #CATEGORY "" 
+#DEFAULT_VOLATILE
+// #DEFAULT_NONVOLATILE
+#ENABLE_STACK_CHECKING
+
+#HELP_BEGIN
+Only to be used with the "BBS Soundweb Matrix Router.umc" module
+#HELP_END
+/*******************************************************************************************
+  DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
+  (Uncomment and declare inputs and outputs as needed)
+*******************************************************************************************/
+DIGITAL_INPUT subscribe$;
+DIGITAL_INPUT onOff$[MAXOUTPUTx2];
+ANALOG_INPUT input$, iMAXOUTPUT;
+STRING_INPUT objectID$[3];
+BUFFER_INPUT rx$[400];
+
+DIGITAL_OUTPUT onOff_fb$[MAXOUTPUTx2];
+STRING_OUTPUT tx$;
+/*******************************************************************************************
+  Global Variables
+  (Uncomment and declare global variables as needed)
+  Note:  Be sure to initialize all declared STRING variables as needed
+         For example, in Function Main: myString = "";
+*******************************************************************************************/
+INTEGER i,subscribe;
+INTEGER xOK;
+STRING tempString[40];
+INTEGER stateVarOnOff, stateVarSub, stateVarReceive, x;
+/*******************************************************************************************
+  Event Handlers
+  (Uncomment and declare additional event handlers as needed)
+*******************************************************************************************/
+PUSH onOff$
+{                                  
+	stateVarOnOff = getLastModifiedArrayIndex();
+	if (stateVarOnOff <= 48)
+	{   
+		stateVarOnOff = ((stateVarOnOff-1)*128) + (input$-1);
+		makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x01\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarOnOff)), chr(low(stateVarOnOff)));
+		if(subscribe)
+		{
+     	makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarOnOff)), chr(low(stateVarOnOff)));  //ON OFF
+			processlogic();
+		}
+	}
+	else
+	{
+		stateVarOnOff = ((stateVarOnOff-49)*128) + (input$-1);
+		makeString(tx$, "\x88\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarOnOff)), chr(low(stateVarOnOff)));
+		if(subscribe)
+		{
+     	makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarOnOff)), chr(low(stateVarOnOff)));  //ON OFF
+			processlogic();
+		}
+	}
+}
+
+PUSH subscribe$
+{              
+	wait(20)
+	{	
+		stateVarSub = input$-1;
+		for (i = 1 to iMAXOUTPUT)
+		{   
+			stateVarSub = input$-1 + ((i-1) * 128);
+			makeString(tx$, "\x89\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //ON OFF
+			processlogic();
+			delay(5);
+		}
+		subscribe = subscribe$;
+	}
+}  
+
+RELEASE subscribe$
+{
+	stateVarSub = input$-1;
+	for (i = 1 to iMAXOUTPUT)
+	{   
+		stateVarSub = input$-1 + ((i-1) * 128);
+		makeString(tx$, "\x8A\x00\x00\x03%s%s%s\x00\x00\x00\x00\x03\x03\x03\x03\x03", objectID$, chr(high(stateVarSub)), chr(low(stateVarSub)));  //ON OFF
+		processlogic();
+		delay(5);
+	}
+	subscribe = subscribe$;
+}  
+
+CHANGE rx$
+{
+	if (xOK)
+	{	
+		xOK = 0;
+		while (len(rx$))
+		{         
+			if(find("\x03\x03\x03\x03\x03", rx$))
+			{ 
+				tempString = remove("\x03\x03\x03\x03\x03", rx$);
+				if ((mid(tempString, 6, 3) = "\x00\x00\x00") || (mid(tempString, 6, 3) = objectID$))
+				{                               
+					stateVarReceive = (byte(tempString, 9) * 256) + byte(tempString, 10);
+					if ((stateVarReceive MOD 128) = input$-1)
+					{
+						if (byte(tempString, 14))
+						{
+							onOff_fb$[(stateVarReceive / 128) + 49] = 0;														
+							onOff_fb$[(stateVarReceive / 128) + 1] = 1;							
+						}
+						else
+						{
+							onOff_fb$[(stateVarReceive / 128) + 1] = 0;							
+							onOff_fb$[(stateVarReceive / 128) + 49] = 1;							
+						}					
+					}
+				}
+				clearbuffer(tempString);					
+			}    	
+			
+		}
+		xOK = 1;
+	}	
+}
+/*******************************************************************************************
+  Main()
+  Uncomment and place one-time startup code here
+  (This code will get called when the system starts up)
+*******************************************************************************************/
+Function Main()
+{
+	xOK = 1;
+	subscribe = 0;
+}

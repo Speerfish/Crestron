@@ -1,0 +1,81 @@
+[BEGIN]
+  Version=1
+[END]
+[BEGIN]
+  ObjTp=FSgntr
+  Sgntr=UserSPlus
+  RelVrs=1
+  IntStrVrs=1
+  SPlusVrs=3.03.10
+  InclDatVrs=1.69
+  CrossCplrVrs=1.2
+[END]
+[BEGIN]
+  ObjTp=Hd
+  Cmn1=BSS Soundweb London\\\\This modules controls the "Parameter presets"||1
+  Cmn2=of a Soundweb London device.\\As "Parameter presets" don't have||1
+  Cmn3=an object Id, there's no need for it in this module.\\\\The TX of||1
+  Cmn4=this module should be connected directly to the RS232 or IP comm||1
+  Cmn5=port.  Do\\NOT connect this to the NODE module.\\\\You cannot subscribe||1
+  Cmn6=to presets\\\\Use Alt+ to expand the signals to accomodate the number||1
+  Cmn7=of presets needed.\\\\INPUTS \\------\\recallPreset$[X]: pulse to||1
+  Cmn8=recall preset X\\\\OUTPUTS\\-------\\tx:               connected||1
+  Cmn9=directly to the RS232 or IP comm port
+[END]
+[BEGIN]
+  ObjTp=Symbol
+  Exclusions=1,19,20,21,88,89,310,718,756,854,
+  Name=BSS Soundweb London Parameter Presets v4.0
+  SmplCName=BSS Soundweb London Parameter Presets v4.0.usp
+  Code=1
+  SysRev5=3.083
+  SMWRev=2.02.05
+  InputCue1=recallPreset$_0
+  InputSigType1=Digital
+  InputCue2=recallPreset$[#]
+  InputSigType2=Digital
+  OutputList2Cue1=tx$
+  OutputList2SigType1=Serial
+  ParamCue1=[Reference Name]
+  MinVariableInputs=2
+  MaxVariableInputs=256
+  MinVariableInputsList2=0
+  MaxVariableInputsList2=0
+  MinVariableOutputs=0
+  MaxVariableOutputs=0
+  MinVariableOutputsList2=1
+  MaxVariableOutputsList2=1
+  MinVariableParams=0
+  MaxVariableParams=0
+  Expand=expand_separately
+  Expand2=expand_separately
+  ProgramTree=Logic
+  SymbolTree=34
+  Hint=
+  PdfHelp=
+  HelpID= 
+  Render=4
+  Smpl-C=16
+  CompilerCode=-48
+  CompilerParamCode=27
+  CompilerParamCode5=14
+  NumFixedParams=1
+  Pp1=1
+  MPp=1
+  NVStorage=10
+  ParamSigType1=String
+  SmplCInputCue1=o#
+  SmplCOutputCue1=i#
+  SmplCInputList2Cue1=an#
+  SmplCOutputList2Cue1=ai#
+  SPlusShortSaveName=BSBD9A~1.UF
+  SPlusLongSaveName=BSS SOUNDWEB LONDON PARAMETER PRESETS V4.0.UF
+  SPlus2CompiledName=S2_BSS_Soundweb_London_Parameter_Presets_v4_0
+  SymJam=NonExclusive
+[END]
+[BEGIN]
+  ObjTp=Dp
+  H=1
+  Tp=1
+  NoS=False
+[END]
